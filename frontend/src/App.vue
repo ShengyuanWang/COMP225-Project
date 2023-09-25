@@ -5,13 +5,17 @@ import TheWelcome from './components/TheWelcome.vue'
 
 <template>
   <div>
-    <h1>Hi, Carissa!!!!!! Oh my god!!!!!!!!!</h1>
+    <h1>Hi, MIRACAL!!!!!! Oh my god!!!!!!!!!</h1>
   </div>
 </template>
 
 <style scoped>
 header {
   line-height: 1.5;
+}
+
+h1 {
+  color: red;
 }
 
 .logo {
