@@ -5,7 +5,7 @@ import TheWelcome from './components/TheWelcome.vue'
 
 <template>
   <div>
-    Hi, Carissa!!!!!! Oh my god!!!!!!!!!
+    <h1>Hi, Carissa!!!!!! Oh my god!!!!!!!!!</h1>
   </div>
 </template>
 
