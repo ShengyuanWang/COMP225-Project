@@ -1,4 +1,7 @@
-<script setup>
+<script>
+export default {
+  name: "Vindex"
+}
 
 </script>
 
@@ -10,7 +13,7 @@
       </div>
     </div>
     <div class="center">
-      <img src="/src/view/index/img/logo.png" alt="Center Image">
+      <img src="/src/assets/logo.png" alt="Center Image">
     </div>
     <div class="pop-up">
       <p class="question"> Are you over 21 ?</p>
@@ -37,15 +40,17 @@
   display: flex;
   justify-content: center; /* Center horizontally */
   align-items: center; /* Center vertically */
-  //height: 200px; /* Optional: Makes the container the full height of the viewport for vertical centering */
+//height: 200px; /* Optional: Makes the container the full height of the viewport for vertical centering */
   position: relative;
   margin-left: 40px;
   margin-right: 40px;
+  margin-bottom: 20px;
 }
 
 .question {
   font-size: 30px;
   text-align: center;
+  color: black;
 }
 
 .btn {
