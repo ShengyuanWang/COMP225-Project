@@ -10,7 +10,7 @@
       </div>
     </div>
     <div class="center">
-      <img src="./img/logo.png" alt="Center Image">
+      <img src="/src/view/index/img/logo.png" alt="Center Image">
     </div>
     <div class="pop-up">
       <p class="question"> Are you over 21 ?</p>
