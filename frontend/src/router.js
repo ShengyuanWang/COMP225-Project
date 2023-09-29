@@ -7,7 +7,7 @@ import Vlogin from './views/login/Vlogin.vue'
 // 定义路由
 const routes = [
     {
-        path: '/index',
+        path: '/',
         name: 'Vindex',
         component: Vindex
     },
