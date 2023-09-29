@@ -1,7 +1,32 @@
 <script>
-export default {
-  name: "Vindex"
-}
+  import router from "../../router";
+  import {reactive} from "vue";
+
+  export default {
+    setup() {
+      const obj = reactive({
+        underage: 0
+      })
+      function onClickYes() {
+        console.log("click yes");
+        router.push('search');
+        return 0;
+      }
+
+      function onClickNo() {
+        console.log("click no");
+        obj.underage = 1;
+        return 0;
+      }
+      return {
+        obj,
+        onClickYes,
+        onClickNo
+      }
+    },
+  }
+
+
 
 </script>
 
@@ -9,7 +34,7 @@ export default {
   <div>
     <div style="display: flex; justify-content: center; align-items: center; position: relative;">
       <div class="title">
-        BOOK + WINE
+        <p v-if="obj.underage">BOOK + JUICE</p> <p v-else>BOOK + WINE</p>
       </div>
     </div>
     <div class="center">
@@ -18,8 +43,8 @@ export default {
     <div class="pop-up">
       <p class="question"> Are you over 21 ?</p>
       <div class="center">
-        <div class="btn"><el-button type="primary" size="large"><p>Yes</p></el-button></div>
-        <div class="btn"><el-button type="primary" size="large"><p>No</p></el-button></div>
+        <div class="btn"><el-button type="primary" size="large" @click="onClickYes()"><p>Yes</p></el-button></div>
+        <div class="btn"><el-button type="primary" size="large" @click="onClickNo()"><p>No</p></el-button></div>
       </div>
     </div>
   </div>

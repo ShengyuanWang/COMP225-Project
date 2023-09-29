@@ -3,7 +3,7 @@ import {createRouter, createWebHistory} from 'vue-router'
 const routerHistory = createWebHistory()
 
 import Vindex from './views/index/Vindex.vue'
-import Vlogin from './views/login/Vlogin.vue'
+import Vsearch from './views/search/Vsearch.vue'
 // 定义路由
 const routes = [
     {
@@ -12,9 +12,9 @@ const routes = [
         component: Vindex
     },
     {
-        path: '/login',
-        name: 'Vlogin',
-        component: Vlogin
+        path: '/search',
+        name: 'Vsearch',
+        component: Vsearch
     },
 ]
 
