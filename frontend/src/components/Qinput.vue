@@ -1,25 +1,56 @@
 <script setup>
 import { ref } from 'vue'
+import { Search } from '@element-plus/icons-vue'
 const input = ref('')
+const select = ref('')
+const value = ref()
+const data = [
+  {
+    value:'1'
+  },
+  {
+    value:'2'
+  }
+]
 </script>
 
 <template>
   <div class="inp">
-    <el-input
-        v-model="input"
-        clearable
-        placeholder="Enter book title here..."
-    />
+    <div class="mt-4">
+      <el-input
+          v-model="input"
+          placeholder="Please input"
+          class="input-with-select"
+          size="large"
+      >
+        <template #prepend>
+          <el-select v-model="value" :data="data" size="large" style="width:120px;">
+            <el-option v-for="item in data" :value="item.value">
+            </el-option>
+          </el-select>
+        </template>
+        <template #append>
+          <el-button :icon="Search" size="large"/>
+        </template>
+      </el-input>
+    </div>
   </div>
+
 
 </template>
 
 <style scoped>
 .inp {
-  width: 60%;
-  margin-top: 30%;
+  width: 800px;
+  margin-top: 200px;
   margin-left: auto;
   margin-right: auto;
+  height: 100px;
 }
+img {
+  width: 60px;
+}
+
+
 </style>
 

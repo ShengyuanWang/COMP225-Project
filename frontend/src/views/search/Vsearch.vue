@@ -9,7 +9,7 @@
 import Qinput from "../../components/Qinput.vue";
 
 export default {
-  name: "Vlogin",
+  name: "Vsearch",
   components: {Qinput}
 }
 </script>
