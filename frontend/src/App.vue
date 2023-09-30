@@ -15,6 +15,7 @@ export default {
 
 <template>
 <div class="fullscreen">
+  <Menu></Menu>
   <router-view></router-view>
 </div>
 

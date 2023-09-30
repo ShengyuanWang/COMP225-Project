@@ -4,6 +4,7 @@ const routerHistory = createWebHistory()
 
 import Vindex from './views/index/Vindex.vue'
 import Vsearch from './views/search/Vsearch.vue'
+import Vtest from './views/test/Vtest.vue'
 // 定义路由
 const routes = [
     {
@@ -15,6 +16,11 @@ const routes = [
         path: '/search',
         name: 'Vsearch',
         component: Vsearch
+    },
+    {
+        path: '/test',
+        name: 'Vtest',
+        component: Vtest
     },
 ]
 

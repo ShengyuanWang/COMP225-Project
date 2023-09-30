@@ -46,6 +46,7 @@ const data = [
   margin-left: auto;
   margin-right: auto;
   height: 100px;
+  z-index:2;
 }
 img {
   width: 60px;

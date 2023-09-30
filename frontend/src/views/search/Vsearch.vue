@@ -1,21 +1,27 @@
 <template>
-  <div>
+
+  <div class="search">
     <Qinput></Qinput>
   </div>
+
+
 
 </template>
 
 <script>
 import Qinput from "../../components/Qinput.vue";
+import Menu from "../../components/Menu.vue";
 
 export default {
   name: "Vsearch",
-  components: {Qinput}
+  components: {Menu, Qinput}
 }
 </script>
 
 <style scoped>
-Qinput {
 
+.search {
+  display: flex;
+  position: relative;
 }
 </style>
