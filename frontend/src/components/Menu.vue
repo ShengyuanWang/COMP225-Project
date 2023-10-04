@@ -1,5 +1,5 @@
 <template>
-  <div class="menu" style="border: none">
+  <div class="menu">
       <div @click="isCollapse = !isCollapse" class="menu_icon"></div>
     <el-menu
         default-active="2"
@@ -7,9 +7,9 @@
         :collapse="isCollapse"
         @open="handleOpen"
         @close="handleClose"
-        style="margin-left:14px; margin-top:5px;background-color: #C3BCB3;"
+        style="margin-left:14px; margin-top:5px;background-color: #C3BCB3; border:none;"
     >
-      <el-sub-menu index="1" style="background-color: #C3BCB3; border: none;">
+      <el-sub-menu index="1" style="background-color: #C3BCB3;">
         <template #title>
           <el-icon ><location /></el-icon>
           <span>Navigator One</span>
