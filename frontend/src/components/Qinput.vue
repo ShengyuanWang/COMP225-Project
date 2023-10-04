@@ -1,21 +1,31 @@
 <script setup>
 import { ref } from 'vue'
 import { Search } from '@element-plus/icons-vue'
-const input = ref('')
+const input = ref(400)
 const select = ref('')
-const value = ref(200)
+const value = ref(400)
+// 400 default 35 active
 const data = [
   {
-    value:'1'
+    value:'cocktail'
   },
   {
-    value:'2'
+    value:'wine'
+  },
+  {
+    value:'beer'
+  },
+  {
+    value:'spirits'
   }
 ]
+const onClick  = () => {
+  input.value = 35;
+}
 </script>
 
 <template>
-  <div class="inp" :style="{marginTop: value+'px'}">
+  <div class="inp" :style="{marginTop: input+'px'}">
     <div class="mt-4">
       <el-input
           v-model="input"
@@ -24,13 +34,13 @@ const data = [
           size="large"
       >
         <template #prepend>
-          <el-select v-model="value" :data="data" size="large" style="width:120px;">
+          <el-select v-model="value" :data="data" size="large" style="width:120px;" @click="onClick">
             <el-option v-for="item in data" :value="item.value">
             </el-option>
           </el-select>
         </template>
-        <template #append>
-          <el-button :icon="Search" size="large"/>
+        <template #append  >
+          <el-button :icon="Search" size="large" type="primary" @click="onClick"/>
         </template>
       </el-input>
     </div>
