@@ -1,47 +1,45 @@
 <template>
-  <div class="menu">
-  <el-radio-group v-model="isCollapse" style="margin-bottom: 20px">
-    <el-radio-button :label="false">expand</el-radio-button>
-    <el-radio-button :label="true">collapse</el-radio-button>
-  </el-radio-group>
-  <el-menu
-      default-active="2"
-      class="el-menu-vertical-demo"
-      :collapse="isCollapse"
-      @open="handleOpen"
-      @close="handleClose"
-  >
-    <el-sub-menu index="1">
-      <template #title>
-        <el-icon><location /></el-icon>
-        <span>Navigator One</span>
-      </template>
-      <el-menu-item-group>
-        <template #title><span>Group One</span></template>
-        <el-menu-item index="1-1">item one</el-menu-item>
-        <el-menu-item index="1-2">item two</el-menu-item>
-      </el-menu-item-group>
-      <el-menu-item-group title="Group Two">
-        <el-menu-item index="1-3">item three</el-menu-item>
-      </el-menu-item-group>
-      <el-sub-menu index="1-4">
-        <template #title><span>item four</span></template>
-        <el-menu-item index="1-4-1">item one</el-menu-item>
+  <div class="menu" style="border: none">
+      <div @click="isCollapse = !isCollapse" class="menu_icon"></div>
+    <el-menu
+        default-active="2"
+        class="el-menu-vertical-demo"
+        :collapse="isCollapse"
+        @open="handleOpen"
+        @close="handleClose"
+        style="margin-left:14px; margin-top:5px;background-color: #C3BCB3;"
+    >
+      <el-sub-menu index="1" style="background-color: #C3BCB3; border: none;">
+        <template #title>
+          <el-icon ><location /></el-icon>
+          <span>Navigator One</span>
+        </template>
+        <el-menu-item-group>
+          <template #title><span>Group One</span></template>
+          <el-menu-item index="1-1">item one</el-menu-item>
+          <el-menu-item index="1-2">item two</el-menu-item>
+        </el-menu-item-group>
+        <el-menu-item-group title="Group Two">
+          <el-menu-item index="1-3">item three</el-menu-item>
+        </el-menu-item-group>
+        <el-sub-menu index="1-4">
+          <template #title><span>item four</span></template>
+          <el-menu-item index="1-4-1">item one</el-menu-item>
+        </el-sub-menu>
       </el-sub-menu>
-    </el-sub-menu>
-    <el-menu-item index="2">
-      <el-icon><icon-menu /></el-icon>
-      <template #title>Navigator Two</template>
-    </el-menu-item>
-    <el-menu-item index="3" disabled>
-      <el-icon><document /></el-icon>
-      <template #title>Navigator Three</template>
-    </el-menu-item>
-    <el-menu-item index="4">
-      <el-icon><setting /></el-icon>
-      <template #title>Navigator Four</template>
-    </el-menu-item>
-  </el-menu>
+      <el-menu-item index="2">
+        <el-icon><icon-menu /></el-icon>
+        <template #title>Navigator Two</template>
+      </el-menu-item>
+      <el-menu-item index="3" disabled>
+        <el-icon><document /></el-icon>
+        <template #title>Navigator Three</template>
+      </el-menu-item>
+      <el-menu-item index="4">
+        <el-icon><setting /></el-icon>
+        <template #title>Navigator Four</template>
+      </el-menu-item>
+    </el-menu>
   </div>
 </template>
 
@@ -57,6 +55,7 @@ import {
 const isCollapse = ref(true)
 const handleOpen = (key: string, keyPath: string[]) => {
   console.log(key, keyPath)
+  console.log(isCollapse)
 }
 const handleClose = (key: string, keyPath: string[]) => {
   console.log(key, keyPath)
@@ -70,11 +69,26 @@ const handleClose = (key: string, keyPath: string[]) => {
 }
 .menu {
   list-style-type: none;
-  margin: 0;
+  margin-top: 30px;
   padding: 0;
   height: 100%; /* 全屏高度 */
   position: fixed;
   overflow: auto; /* 如果导航栏选项多，允许滚动 */
-  z-index: 100;
+  z-index: 1;
+  overflow-x: hidden;
+  background-color: #C3BCB3;
 }
+.menu_icon{
+  width: 60px;
+  height: 40px;
+  border-top: 3px solid #000000;
+  border-bottom: 3px solid #000000;
+  padding: 15.5px 0;
+  background-clip: content-box;
+  background-color: #000000;
+  margin-left: 15px;
+  margin-top: 10px;
+}
+
+
 </style>
