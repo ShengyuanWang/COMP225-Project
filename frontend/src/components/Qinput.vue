@@ -3,7 +3,7 @@ import { ref } from 'vue'
 import { Search } from '@element-plus/icons-vue'
 const input = ref('')
 const select = ref('')
-const value = ref()
+const value = ref(200)
 const data = [
   {
     value:'1'
@@ -15,7 +15,7 @@ const data = [
 </script>
 
 <template>
-  <div class="inp">
+  <div class="inp" :style="{marginTop: value+'px'}">
     <div class="mt-4">
       <el-input
           v-model="input"
@@ -42,7 +42,7 @@ const data = [
 <style scoped>
 .inp {
   width: 800px;
-  margin-top: 200px;
+  margin-top: 400px;
   margin-left: auto;
   margin-right: auto;
   height: 100px;
