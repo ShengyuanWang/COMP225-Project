@@ -1,9 +1,9 @@
 <script setup>
 import { ref } from 'vue'
 import { Search } from '@element-plus/icons-vue'
-const input = ref(400)
+const place = ref(400)
 const select = ref('')
-const value = ref(400)
+const input = ref('aaa')
 // 400 default 35 active
 const data = [
   {
@@ -20,12 +20,12 @@ const data = [
   }
 ]
 const onClick  = () => {
-  input.value = 35;
+  place.value = 35;
 }
 </script>
 
 <template>
-  <div class="inp" :style="{marginTop: input+'px'}">
+  <div class="inp" :style="{marginTop: place+'px'}">
     <div class="mt-4">
       <el-input
           v-model="input"
