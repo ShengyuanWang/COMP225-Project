@@ -11,21 +11,38 @@
     >
       <el-sub-menu index="1" style="background-color: #C3BCB3;">
         <template #title>
-          <el-icon ><location /></el-icon>
-          <span>Navigator One</span>
+          <el-icon><location /></el-icon>
+          <span>cocktail</span>
         </template>
-        <el-menu-item-group class="bg_c">
-          <template #title><span>Group One</span></template>
-          <el-menu-item index="1-1">item one</el-menu-item>
-          <el-menu-item index="1-2">item two</el-menu-item>
-        </el-menu-item-group>
-        <el-menu-item-group class="bg_c">
-          <template #title><span>Group Two</span></template>
-          <el-menu-item index="2-1">item one</el-menu-item>
-          <el-menu-item index="2-2">item two</el-menu-item>
-        </el-menu-item-group>
+<!--        <el-menu-item-group class="bg_c">-->
+<!--          <template #title><span>Group One</span></template>-->
+<!--          <el-menu-item index="1-1">item one</el-menu-item>-->
+<!--          <el-menu-item index="1-2">item two</el-menu-item>-->
+<!--        </el-menu-item-group>-->
+<!--        <el-menu-item-group class="bg_c">-->
+<!--          <template #title><span>Group Two</span></template>-->
+<!--          <el-menu-item index="2-1">item one</el-menu-item>-->
+<!--          <el-menu-item index="2-2">item two</el-menu-item>-->
+<!--        </el-menu-item-group>-->
+      </el-sub-menu>
+      <el-sub-menu index="2" style="background-color: #C3BCB3;">
+        <template #title>
+          <span>wine</span>
+        </template>
+      </el-sub-menu>
+      <el-sub-menu index="3" style="background-color: #C3BCB3;">
+        <template #title>
+          <span>beer</span>
+        </template>
+      </el-sub-menu>
+      <el-sub-menu index="4" style="background-color: #C3BCB3;">
+        <template #title>
+          <span>spirits</span>
+        </template>
       </el-sub-menu>
     </el-menu>
+
+
   </div>
 </template>
 
