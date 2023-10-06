@@ -2,7 +2,7 @@
 import { ref } from 'vue'
 import { Search } from '@element-plus/icons-vue'
 const place = ref(400)
-const select = ref('')
+const value = ref('')
 const input = ref('aaa')
 // 400 default 35 active
 const data = [

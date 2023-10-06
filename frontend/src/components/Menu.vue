@@ -1,52 +1,54 @@
 <template>
-  <div class="menu bg_c">
-      <div @click="isCollapse = !isCollapse" class="menu_icon"></div>
-    <el-menu
-        default-active="2"
-        class="el-menu-vertical-demo bg_c"
-        :collapse="isCollapse"
-        @open="handleOpen"
-        @close="handleClose"
-        style="margin-left:14px; margin-top:5px;background-color: #C3BCB3; border:none;"
-    >
-      <el-sub-menu index="1" style="background-color: #C3BCB3;">
-        <template #title>
-          <el-icon><location /></el-icon>
-          <span>cocktail</span>
-        </template>
-<!--        <el-menu-item-group class="bg_c">-->
-<!--          <template #title><span>Group One</span></template>-->
-<!--          <el-menu-item index="1-1">item one</el-menu-item>-->
-<!--          <el-menu-item index="1-2">item two</el-menu-item>-->
-<!--        </el-menu-item-group>-->
-<!--        <el-menu-item-group class="bg_c">-->
-<!--          <template #title><span>Group Two</span></template>-->
-<!--          <el-menu-item index="2-1">item one</el-menu-item>-->
-<!--          <el-menu-item index="2-2">item two</el-menu-item>-->
-<!--        </el-menu-item-group>-->
-      </el-sub-menu>
-      <el-sub-menu index="2" style="background-color: #C3BCB3;">
-        <template #title>
-          <span>wine</span>
-        </template>
-      </el-sub-menu>
-      <el-sub-menu index="3" style="background-color: #C3BCB3;">
-        <template #title>
-          <span>beer</span>
-        </template>
-      </el-sub-menu>
-      <el-sub-menu index="4" style="background-color: #C3BCB3;">
-        <template #title>
-          <span>spirits</span>
-        </template>
-      </el-sub-menu>
-    </el-menu>
+  <div class="menu" :style="{width: w+ 'px', backgroundColor:menuColor}">
+      <div @click="handleCollapse" class="menu_icon" :style="{marginLeft:w-90+'px',marginRight:'40px'}"></div>
+    <div v-if="!isCollapse">
+      <el-menu
+          default-active="2"
+          class="el-menu-vertical-demo el-collapse"
+          @open="handleOpen"
+          @close="handleClose"
+          :style="{marginLeft:'14px', marginTop:'5px', border:'none', backgroundColor:menuColor}"
+      >
+        <el-sub-menu index="1" class="bg-c">
+          <template #title>
+            <el-icon><location /></el-icon>
+            <span>cocktail</span>
+          </template>
+          <!--        <el-menu-item-group class="bg_c">-->
+          <!--          <template #title><span>Group One</span></template>-->
+          <!--          <el-menu-item index="1-1">item one</el-menu-item>-->
+          <!--          <el-menu-item index="1-2">item two</el-menu-item>-->
+          <!--        </el-menu-item-group>-->
+          <!--        <el-menu-item-group class="bg_c">-->
+          <!--          <template #title><span>Group Two</span></template>-->
+          <!--          <el-menu-item index="2-1">item one</el-menu-item>-->
+          <!--          <el-menu-item index="2-2">item two</el-menu-item>-->
+          <!--        </el-menu-item-group>-->
+        </el-sub-menu>
+        <el-sub-menu index="2" class="bg-c">
+          <template #title>
+            <span>wine</span>
+          </template>
+        </el-sub-menu>
+        <el-sub-menu index="3" class="bg-c">
+          <template #title>
+            <span>beer</span>
+          </template>
+        </el-sub-menu>
+        <el-sub-menu index="4" class="bg-c">
+          <template #title>
+            <span>spirits</span>
+          </template>
+        </el-sub-menu>
+      </el-menu>
+    </div>
+
 
 
   </div>
 </template>
 
-<script lang="ts" setup>
+<script setup>
 import { ref } from 'vue'
 import {
   Document,
@@ -56,23 +58,42 @@ import {
 } from '@element-plus/icons-vue'
 
 const isCollapse = ref(true)
-const handleOpen = (key: string, keyPath: string[]) => {
+const w = ref(100)
+const menuColor = ref('#C3BCB3')
+const handleOpen = (key, keyPath) => {
   console.log(key, keyPath)
   console.log(isCollapse)
 }
-const handleClose = (key: string, keyPath: string[]) => {
+const handleClose = (key, keyPath) => {
   console.log(key, keyPath)
 }
+
+const handleCollapse = () =>{
+  isCollapse.value = !isCollapse.value
+  console.log(w);
+  if (w.value == 100) {
+    w.value = 400
+    menuColor.value = '#636466'
+  } else {
+    w.value = 100
+    menuColor.value = '#C3BCB3'
+  }
+}
+
+
 </script>
 
 <style>
 .el-menu-vertical-demo:not(.el-menu--collapse) {
-  width: 200px;
+  width: 350px;
   min-height: 400px;
+  background-color: #636466;
+}
+.el-collapse {
+  background-color: #636466;
 }
 .menu {
   list-style-type: none;
-  margin-top: 30px;
   padding: 0;
   height: 100%; /* 全屏高度 */
   position: fixed;
@@ -82,19 +103,15 @@ const handleClose = (key: string, keyPath: string[]) => {
   background-color: #C3BCB3;
 }
 .menu_icon{
-  width: 60px;
   height: 40px;
-  border-top: 3px solid #000000;
-  border-bottom: 3px solid #000000;
+  border-top: 3px solid black;
+  border-bottom: 3px solid black;
   padding: 15.5px 0;
   background-clip: content-box;
-  background-color: #000000;
-  margin-left: 15px;
-  margin-top: 10px;
+  background-color: black;
+  margin-top: 30px;
+  margin-left: 10px;
 }
 
-.bg_c {
-  background-color: #C3BCB3;
-}
 
 </style>
