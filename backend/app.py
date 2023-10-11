@@ -263,7 +263,9 @@ def get_isbn(title, api_key=API_KEY):
         data = requests.get(base_url, params=params).json()
         first_book =  data['items'][0]
         volume_info = first_book.get('volumeInfo', {})
-        return volume_info.get('industryIdentifiers', [])[0].get('identifier')
+        isbn = volume_info.get('industryIdentifiers', [])[0]
+        if isbn.get("type") == "ISBN_13":
+            return isbn.get("identifier")
     except:
         return None
 
