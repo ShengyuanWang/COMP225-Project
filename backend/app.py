@@ -1,8 +1,12 @@
 from flask import Flask, request, render_template
 from markupsafe import escape
-from book_data import get_isbn, get_book_data, get_genre_list
 import json
 import random
+import requests
+
+API_KEY = "AIzaSyAHHByDAWIAvXhTNkajTqazMhBUO045aS0"
+GENRES = ["fantasy fiction", "historical fiction", "horror", "thriller", "science fiction", 
+          "action & adventure", "romance", "mystery fiction"] # genres found in json
 
 app = Flask(__name__) 
 
@@ -14,7 +18,7 @@ def get_book():
     """
     if request.method == "POST":
         book = escape(request.form.get("book"))
-        return display_testing(book) # change function to change display
+        return display_pairing(book) # change function to change display
     return render_template("home.html")
 
 def display_book_data(book):
@@ -25,16 +29,19 @@ def display_book_data(book):
     """
     isbn = get_isbn(book)
     if isbn is not None:
-        data = get_book_data(isbn, filter=True)
-        title = get_data_point(data, "title")
-        authors = get_data_point(data, "authors")
-        description = get_data_point(data, "description")
-        genres = get_data_point(data, "genres")
-        date = get_data_point(data, "publication_date")
-        publisher = get_data_point(data, "publisher")
-        cover_link = get_data_point(data, "cover_thumbnail")
-        return render_template("home.html", title=title, isbn=isbn, authors=authors, publisher=publisher,
-                                date=date, genres=genres, description=description, cover_link=cover_link)
+        data = get_book_data(isbn, True)
+        if data is not None:
+            title = get_data_point(data, "title")
+            authors = get_data_point(data, "authors")
+            description = get_data_point(data, "description")
+            genres = get_data_point(data, "genres")
+            date = get_data_point(data, "publication_date")
+            publisher = get_data_point(data, "publisher")
+            cover_link = get_data_point(data, "cover_thumbnail")
+            return render_template("home.html", title=title, isbn=isbn, authors=authors, publisher=publisher,
+                                    date=date, genres=genres, description=description, cover_link=cover_link)
+        else:
+            return render_template("home.html", error=f"No data could be found for your input, {book} (ISBN: {isbn}).")
     else:
         return render_template("home.html", error="Your book title was not valid.")
 
@@ -46,16 +53,22 @@ def display_pairing(book):
     """
     isbn = get_isbn(book)
     if isbn is not None:
-        data = get_book_data(isbn, filter=True)
-        title = get_book_data(data, "title")
-        authors = get_book_data(data, "authors")
-        genres = get_book_data(data, "genres", False)
-        cover_link = get_book_data(data, "cover_thumbnail")
-        pairing = choose_drink(get_matching_drinks(genres))
-        return render_template("home.html", title=title, authors=authors, pairing=pairing, 
-                               cover_link=cover_link)
+        data = get_book_data(isbn, False)
+        if data is not None:
+            title = get_data_point(data, "title")
+            authors = get_data_point(data, "authors")
+            list_genres = get_data_point(data, "genres", False)
+            filtered_genres = filter_genres(list_genres)
+            cover_link = get_data_point(data, "cover_thumbnail")
+            drinks = get_matching_drinks(filtered_genres)
+            pairing = choose_drink(drinks)
+            return render_template("home.html", user_input=book, title=title, isbn=isbn, authors=authors, 
+                                cover_link=cover_link, pairing=pairing)
+        else:
+            return render_template("home.html", error=f"No data could be found for your input, {book} (ISBN: {isbn}).")
     else:
-        return render_template("home.html", error="Your book title was not valid.")
+        return render_template("home.html", error=f"The isbn for your input, {book}, could not be found \
+                               in the google books API.")
 
 def display_testing(book):
     """
@@ -66,22 +79,25 @@ def display_testing(book):
     """
     isbn = get_isbn(book)
     if isbn is not None:
-        data = get_book_data(isbn, filter=False)
-        title = get_data_point(data, "title")
-        authors = get_data_point(data, "authors")
-        description = get_data_point(data, "description")
-        str_genres = get_data_point(data, "genres")
-        list_genres = get_data_point(data, "genres", False)
-        filtered_genres = filter_genres(list_genres)
-        date = get_data_point(data, "publication_date")
-        publisher = get_data_point(data, "publisher")
-        cover_link = get_data_point(data, "cover_thumbnail")
-        drinks = get_matching_drinks(filtered_genres)
-        pairing = choose_drink(drinks)
-        return render_template("home.html", user_input=book, title=title, isbn=isbn, authors=authors, publisher=publisher, 
-                               date=date, genres=str_genres, filtered_genres=filtered_genres, 
-                               description=description, cover_link=cover_link, drinks=drinks, 
-                               pairing=pairing)
+        data = get_book_data(isbn, False)
+        if data is not None:
+            title = get_data_point(data, "title")
+            authors = get_data_point(data, "authors")
+            description = get_data_point(data, "description")
+            str_genres = get_data_point(data, "genres")
+            list_genres = get_data_point(data, "genres", False)
+            filtered_genres = filter_genres(list_genres)
+            date = get_data_point(data, "publication_date")
+            publisher = get_data_point(data, "publisher")
+            cover_link = get_data_point(data, "cover_thumbnail")
+            drinks = get_matching_drinks(filtered_genres)
+            pairing = choose_drink(drinks)
+            return render_template("home.html", user_input=book, title=title, isbn=isbn, authors=authors, publisher=publisher, 
+                                date=date, genres=str_genres, filtered_genres=filtered_genres, 
+                                description=description, cover_link=cover_link, drinks=drinks, 
+                                pairing=pairing)
+        else:
+            return render_template("home.html", error=f"No data could be found for your input, {book} (ISBN: {isbn}).")
     else:
         return render_template("home.html", error=f"The isbn for your input, {book}, could not be found \
                                in the google books API.")
@@ -142,15 +158,115 @@ def filter_genres(unfiltered_genres):
     :returns: list of genres only containg genres found in json, or "no filtered genres" 
         if no genres found.
     """
-    genre_list = get_genre_list()
     filtered_genres = []
     for genre in unfiltered_genres:
-        if genre in genre_list:
+        if genre in GENRES:
             filtered_genres.append(genre)
     if len(filtered_genres) > 0:
         return filtered_genres
     else:
         return "no filtered genres"
+
+def get_genres(isbn, filter=True):
+    """
+    Gets genres for a given book using open library API.
+    :param isbn: isbn of book
+    :param filter: flag to filter genres to only be genres found in json
+    :param genres: genres found in json
+    :returns: list of genres, or None if no genres found
+    """
+    base_url = "https://openlibrary.org/api/books"
+    params = {
+        "bibkeys": f"ISBN:{isbn}",
+        "format": "json",
+        "jscmd": "data"
+    }
+    json = requests.get(base_url, params=params).json()
+
+    try:
+        data = json.get(f"ISBN:{isbn}", {})
+        subjects = data.get('subjects', ['N/A'])
+        names = []
+        for subject in subjects:
+            subjects_split = [word.strip().lower() for word in subject["name"].split(',')]
+            for name in subjects_split:
+                if filter:
+                    if name in GENRES:
+                        names.append(name)
+                else:
+                    names.append(name)
+
+        return list(set(names))
+
+    except:
+        return None
+
+def get_book_data(isbn, filter=True, api_key=API_KEY):
+    """
+    Gets book data for an isbn using google books api. 
+    :param isbn: isbn of book
+    :param filter: flag to filter book genres to only be genres found in json
+    :param api_key: google books api key
+    :returns: dictonary with book data, or None if cannot find book data
+    """
+    base_url = "https://www.googleapis.com/books/v1/volumes"
+    params = {
+        "q": f"isbn:{isbn}",
+        "key": api_key
+    }
+    data = requests.get(base_url, params=params).json()
+
+    try:
+        volume_info = data["items"][0]["volumeInfo"]
+
+        data_dict = {}
+        data_dict["isbn"] = isbn
+        data_dict["genres"] = get_genres(isbn, filter=filter)
+
+        if "title" in list(volume_info.keys()):
+            data_dict["title"] = volume_info["title"]
+
+        if "authors" in list(volume_info.keys()):
+            data_dict["authors"] = volume_info["authors"]
+
+        if "description" in list(volume_info.keys()):
+            data_dict["description"] = volume_info["description"]
+
+        if "publishedDate" in list(volume_info.keys()):
+            data_dict["publication_date"] = volume_info["publishedDate"]
+
+        if "publisher" in list(volume_info.keys()):
+            data_dict["publisher"] = volume_info["publisher"]
+
+        if "imageLinks" in list(volume_info.keys()) and "smallThumbnail" in list(volume_info["imageLinks"].keys()):
+            data_dict["cover_thumbnail"] = volume_info["imageLinks"]["smallThumbnail"]
+
+        return data_dict
+
+    except:
+        return None
+
+
+def get_isbn(title, api_key=API_KEY):
+    """
+    Gets isbn for a book using google api.
+    :param title: user-inputted title of book
+    :param api_key: google books api key
+    :returns: isbn of book, or None if no isbn found
+    """
+    base_url = 'https://www.googleapis.com/books/v1/volumes'
+    params = {
+        'q': f'intitle:{title}',
+        'key': api_key
+    }
+    try:
+        data = requests.get(base_url, params=params).json()
+        first_book =  data['items'][0]
+        volume_info = first_book.get('volumeInfo', {})
+        return volume_info.get('industryIdentifiers', [])[0].get('identifier')
+
+    except:
+        return None
 
 if __name__ == "__main__":
     app.run(port=8000)
