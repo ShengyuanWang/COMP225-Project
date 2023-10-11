@@ -1,6 +1,9 @@
 COMP225-Project
 ===
 
+[Frontend Link](https://comp-225-project.vercel.app/)
+[Backend API Link]()
+
 # To Start
 
 **Clone the project**  
