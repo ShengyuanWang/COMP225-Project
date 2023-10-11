@@ -1,0 +1,58 @@
+<!doctype html>
+<title>Home</title>
+<h1> Enter the name of your book </h1>
+<form action="{{ url_for("get_book")}}" method="post">
+  <input type="text" id="book" name="book" placeholder=""> 
+  <button type="submit">Submit</button>
+</form>
+{% if user_input %}
+  <p> User input: {{ user_input }}</p>
+{% endif %}
+
+{% if isbn %}
+  <p> ISBN: {{ isbn }}</p>
+{% endif %}
+
+{% if title %}
+  <p> Title: {{ title }}</p>
+{% endif %}
+
+{% if authors %}
+  <p> Author(s): {{ authors }}</p>
+{% endif %}
+
+{% if publisher %}
+  <p> Publisher: {{ publisher }}</p>
+{% endif %}
+
+{% if date %}
+  <p> Publication date: {{ date }}</p>
+{% endif %}
+
+{% if genres %}
+  <p> Genre(s): {{ genres }}</p>
+{% endif %}
+
+{% if filtered_genres %}
+  <p> Filtered genres(s): {{ filtered_genres }}</p>
+{% endif %}
+
+{% if description %}
+  <p> Description: {{ description }}</p>
+{% endif %}
+
+{% if pairing %}
+  <p> Pairing: {{ pairing }}</p>
+{% endif %}
+
+{% if drinks %}
+  <p> All drinks: {{ drinks }}</p>
+{% endif %}
+
+{% if cover_link %}
+  <img src="{{ cover_link }}"/> 
+{% endif %}
+
+{% if error %}
+  <p> {{ error }} </p>
+{% endif %}
