@@ -18,7 +18,7 @@ def get_book():
     """
     if request.method == "POST":
         book = escape(request.form.get("book"))
-        return display_pairing(book) # change function to change display
+        return display_testing(book) # change function to change display
     return render_template("home.html")
 
 def display_book_data(book):
@@ -260,12 +260,12 @@ def get_isbn(title, api_key=API_KEY):
         'key': api_key
     }
     try:
-        data = requests.get(base_url, params=params).json()
-        first_book =  data['items'][0]
-        volume_info = first_book.get('volumeInfo', {})
-        isbn = volume_info.get('industryIdentifiers', [])[0]
-        if isbn.get("type") == "ISBN_13":
-            return isbn.get("identifier")
+        data = requests.get(base_url, params=params).json()['items']
+        for entry in data:
+            volume_info = entry.get('volumeInfo', {})
+            isbn = volume_info.get('industryIdentifiers', [])[0]
+            if isbn.get("type") == "ISBN_13":
+                return isbn.get("identifier")
     except:
         return None
 
