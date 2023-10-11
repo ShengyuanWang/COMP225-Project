@@ -1,8 +1,8 @@
 COMP225-Project
 ===
 
-[Frontend Link](https://comp-225-project.vercel.app/)
-[Backend API Link]()
+[Frontend Link](https://comp-225-project.vercel.app/)  
+[Backend API Link](https://comp-225-project-backend.vercel.app/)
 
 # To Start
 
