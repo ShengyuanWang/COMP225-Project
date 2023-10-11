@@ -159,13 +159,13 @@ def filter_genres(unfiltered_genres):
         if no genres found.
     """
     filtered_genres = []
-    for genre in unfiltered_genres:
-        if genre in GENRES:
-            filtered_genres.append(genre)
-    if len(filtered_genres) > 0:
-        return filtered_genres
-    else:
-        return "no filtered genres"
+    if unfiltered_genres is not None:
+        for genre in unfiltered_genres:
+            if genre in GENRES:
+                filtered_genres.append(genre)
+        if len(filtered_genres) > 0:
+                return filtered_genres
+    return "no filtered genres"
 
 def get_genres(isbn, filter=True):
     """
@@ -264,9 +264,9 @@ def get_isbn(title, api_key=API_KEY):
         first_book =  data['items'][0]
         volume_info = first_book.get('volumeInfo', {})
         return volume_info.get('industryIdentifiers', [])[0].get('identifier')
-
     except:
         return None
+
 
 if __name__ == "__main__":
     app.run(port=8000)
