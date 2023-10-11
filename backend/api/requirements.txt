@@ -1,0 +1,6 @@
+Flask
+requests
+jinja2
+pyjson
+pyrandom
+markupsafe
