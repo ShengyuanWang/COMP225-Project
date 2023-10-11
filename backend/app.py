@@ -14,7 +14,7 @@ def get_book():
     """
     if request.method == "POST":
         book = escape(request.form.get("book"))
-        return display_pairing(book) # change function to change display
+        return display_testing(book) # change function to change display
     return render_template("home.html")
 
 def display_book_data(book):
@@ -26,13 +26,13 @@ def display_book_data(book):
     isbn = get_isbn(book)
     if isbn is not None:
         data = get_book_data(isbn, filter=True)
-        title = format_book_data(data, "title")
-        authors = format_book_data(data, "authors")
-        description = format_book_data(data, "description")
-        genres = format_book_data(data, "genres")
-        date = format_book_data(data, "publication_date")
-        publisher = format_book_data(data, "publisher")
-        cover_link = format_book_data(data, "cover_thumbnail")
+        title = get_data_point(data, "title")
+        authors = get_data_point(data, "authors")
+        description = get_data_point(data, "description")
+        genres = get_data_point(data, "genres")
+        date = get_data_point(data, "publication_date")
+        publisher = get_data_point(data, "publisher")
+        cover_link = get_data_point(data, "cover_thumbnail")
         return render_template("home.html", title=title, isbn=isbn, authors=authors, publisher=publisher,
                                 date=date, genres=genres, description=description, cover_link=cover_link)
     else:
@@ -47,10 +47,10 @@ def display_pairing(book):
     isbn = get_isbn(book)
     if isbn is not None:
         data = get_book_data(isbn, filter=True)
-        title = format_book_data(data, "title")
-        authors = format_book_data(data, "authors")
-        genres = format_book_data(data, "genres", False)
-        cover_link = format_book_data(data, "cover_thumbnail")
+        title = get_book_data(data, "title")
+        authors = get_book_data(data, "authors")
+        genres = get_book_data(data, "genres", False)
+        cover_link = get_book_data(data, "cover_thumbnail")
         pairing = choose_drink(get_matching_drinks(genres))
         return render_template("home.html", title=title, authors=authors, pairing=pairing, 
                                cover_link=cover_link)
@@ -98,7 +98,7 @@ def get_matching_drinks(genres):
     with open("book-alcohol-pairings.json", "r") as f:
         pairings = json.load(f)
     matched_drinks = []        
-    if len(genres) > 0:
+    if genres is not None and len(genres) > 0:
         for drink in pairings["alcohols"]:
             for genre in genres:
                 if genre in drink["genres"]:
