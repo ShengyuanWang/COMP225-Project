@@ -21,6 +21,11 @@ def get_book():
         return display_testing(book) # change function to change display
     return render_template("home.html")
 
+
+@app.route('/test/', methods=["GET"])
+def search():
+    return "test"
+
 def display_book_data(book):
     """
     Displays all data for a given book
