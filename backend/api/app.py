@@ -3,12 +3,14 @@ from markupsafe import escape
 import json
 import random
 import requests
+from flask_cors import CORS
 
 API_KEY = "AIzaSyAHHByDAWIAvXhTNkajTqazMhBUO045aS0"
 GENRES = ["fantasy fiction", "historical fiction", "horror", "thriller", "science fiction", 
           "action & adventure", "romance", "mystery fiction"] # genres found in json
 
-app = Flask(__name__) 
+app = Flask(__name__)
+CORS(app)
 
 @app.route('/', methods =["GET", "POST"])
 def get_book():
