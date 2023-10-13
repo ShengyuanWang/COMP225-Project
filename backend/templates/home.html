@@ -5,6 +5,9 @@
   <input type="text" id="book" name="book" placeholder=""> 
   <button type="submit">Submit</button>
 </form>
+{% if user_input %}
+  <p> User input: {{ user_input }}</p>
+{% endif %}
 
 {% if isbn %}
   <p> ISBN: {{ isbn }}</p>
@@ -48,8 +51,4 @@
 
 {% if cover_link %}
   <img src="{{ cover_link }}"/> 
-{% endif %}
-
-{% if error %}
-  <p> {{ error }} </p>
 {% endif %}
