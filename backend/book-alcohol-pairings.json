@@ -18,6 +18,11 @@
 
         },
         {
+            "name": "Blue Lagoon",
+            "type":"Cocktail",
+            "genres":["science fiction"]
+        },
+        {
             "name": "Mojito",
             "type": "Cocktail",
             "genres": ["romance", "action & adventure"]
@@ -30,10 +35,35 @@
 
         },
         {
+            "name":"Cosmopolitan",
+            "type":"Cocktail",
+            "genres":["romance"]  
+        },
+        {
+            "name":"Aperol Spritz",
+            "type": "Cocktail",
+            "genres":["romance"]
+        },
+        {
             "name": "Moscow Mule",
             "type": "Cocktail",
-            "genres": ["action & adventure"]
+            "genres": ["action & adventure","romance"]
 
+        },
+        {
+            "name":"Espresso Martini",
+            "type":"Cocktail",
+            "genres":["historical fiction","mystery fiction"]
+        },
+        {
+            "name":"Vodka Cranberry",
+            "type":"Cocktail",
+            "genres":["romance","mystery fiction"]
+        }
+        {
+            "name":"Sex on the Beach",
+            "type":"Cocktail",
+            "genres":["romance"]
         },
         {
             "name": "Sangira",
@@ -174,6 +204,11 @@
 
         },
         {
+            "name":"Rumchata",
+            "type":"Spirits",
+            "genres":["mystery fiction"]
+        },
+        {
             "name": "Tequila",
             "type": "Spirits",
             "genres": ["action & adventure"]
@@ -202,6 +237,11 @@
             "type": "Spirits",
             "genres": ["historical fiction"]
 
+        },
+        {
+            "name": "Curaçao",
+            "type": "Spirits",
+            "genres":["science fiction"]
         },
         {
             "name": "Brandy",
