@@ -46,16 +46,15 @@ class Book:
         self.data = self.query_api_book_data()
         self.genres = self.query_api_genres()
 
-    def save_pairing_as_json(self, file_name="pairing.json"):
-        json_dict = {}
-        json_dict["title"] = self.get_title()
-        json_dict["authors"] = self.get_authors()
-        json_dict["genres"] = self.get_filtered_genres()
-        json_dict["cover_link"] = self.get_cover_link()
-        json_dict["pairing"] = self.get_pairing()
+    def get_pairing_as_dict(self):
+        pairing = {}
+        pairing["title"] = self.get_title()
+        pairing["authors"] = self.get_authors()
+        pairing["genres"] = self.get_filtered_genres()
+        pairing["cover_link"] = self.get_cover_link()
+        pairing["pairing"] = self.get_pairing()
         
-        with open(file_name, "w") as f:
-            json.dump(json_dict , f, indent=4) 
+        return pairing 
 
     def get_pairing(self, no_match="Bud Light"):
         drinks = self.get_matching_drinks()
