@@ -1,5 +1,6 @@
 from flask import Flask, request, render_template
 from markupsafe import escape
+import os
 import json
 import random
 import requests
@@ -33,23 +34,25 @@ def get_book():
 
 @app.route('/test/', methods=["GET"])
 def search():
-    book = Book("ss")
-    with open(book.json_file, "r") as f:
+    book = Book("Dune")
+    book.save_pairing_as_json()
+    with open(book.get_pairing_file(), "r") as f:
         pairings = json.load(f)
     return pairings
 
 class Book:
-    def __init__ (self, user_input, json_file="book-alcohol-pairings.json", api_key=API_KEY, filter_genres=GENRES):
+    def __init__ (self, user_input, alchool_data_file="book-alcohol-pairings.json", pairing_file="pairing.json", api_key=API_KEY, official_jsons=GENRES):
         self.user_input = user_input
+        self.alchool_data_file = alchool_data_file
+        self.pairing_file = os.path.join(os.getcwd(), pairing_file)
         self.api_key = api_key
-        self.json_file = json_file
-        self.filter_genres = filter_genres
+        self.official_jsons = official_jsons
 
         self.isbn = self.query_api_isbn(self.user_input)
         self.data = self.query_api_book_data()
         self.genres = self.query_api_genres()
 
-    def save_pairing_as_json(self, file_name="pairing.json"):
+    def save_pairing_as_json(self):
         pairing = {}
         pairing["title"] = self.get_title()
         pairing["authors"] = self.get_authors()
@@ -57,7 +60,7 @@ class Book:
         pairing["cover_link"] = self.get_cover_link()
         pairing["pairing"] = self.get_pairing()
 
-        with open(file_name, "w") as f:
+        with open(self.pairing_file, "w") as f:
             json.dump(pairing , f, indent=4)
         return pairing
 
@@ -71,7 +74,7 @@ class Book:
 
     def get_matching_drinks(self):
         genres = self.get_genres()
-        with open(self.json_file, "r") as f:
+        with open(self.alchool_data_file, "r") as f:
             pairings = json.load(f)
         matched_drinks = []
 
@@ -138,7 +141,7 @@ class Book:
     def get_filtered_genres(self):
         filtered_genres = []
         for genre in self.genres:
-            if genre in self.filter_genres:
+            if genre in self.official_jsons:
                     filtered_genres.append(genre)
         return filtered_genres
 
@@ -183,10 +186,12 @@ class Book:
 
     def get_user_input(self):
         return self.user_input
+    
+    def get_pairing_file(self):
+        return self.pairing_file
 
     def get_genres(self):
         return self.genres
-
 
 if __name__ == "__main__":
     app.run(port=8000)
