@@ -22,7 +22,7 @@ def get_book():
     if request.method == "POST":
         user_input = escape(request.form.get("book"))
         book = Book(user_input)
-        # book.save_pairing_as_json()
+        book.save_pairing_as_json()
         return render_template("home.html", user_input=book.get_user_input(), title=book.get_title(), isbn=book.get_isbn(),
                         authors=book.get_authors(), publisher=book.get_publisher(),
                         date=book.get_publication_date(), genres=book.get_genres(),
@@ -59,7 +59,7 @@ class Book:
 
         with open(file_name, "w") as f:
             json.dump(pairing , f, indent=4)
-        return pairing 
+        return pairing
 
     def get_pairing(self, no_match="Bud Light"):
         drinks = self.get_matching_drinks()
