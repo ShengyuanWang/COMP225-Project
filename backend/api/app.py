@@ -18,17 +18,17 @@ def get_book():
     Handles user input and displays results
     :returns: renders home.html template
     """
+
     if request.method == "POST":
         user_input = escape(request.form.get("book"))
         book = Book(user_input)
         # book.save_pairing_as_json()
         return render_template("home.html", user_input=book.get_user_input(), title=book.get_title(), isbn=book.get_isbn(),
-                        authors=book.get_authors(), publisher=book.get_publisher(), 
-                        date=book.get_publication_date(), genres=book.get_genres(), 
+                        authors=book.get_authors(), publisher=book.get_publisher(),
+                        date=book.get_publication_date(), genres=book.get_genres(),
                         filtered_genres=book.get_filtered_genres(), description=book.get_description(),
                         cover_link=book.get_cover_link(), drinks=book.get_matching_drinks(),
                         pairing=book.get_pairing())
-     
     return render_template("home.html")
 
 @app.route('/test/', methods=["GET"])
