@@ -33,7 +33,10 @@ def get_book():
 
 @app.route('/test/', methods=["GET"])
 def search():
-    return "test"
+    book = Book("ss")
+    with open(book.json_file, "r") as f:
+        pairings = json.load(f)
+    return pairings
 
 class Book:
     def __init__ (self, user_input, json_file="book-alcohol-pairings.json", api_key=API_KEY, filter_genres=GENRES):
