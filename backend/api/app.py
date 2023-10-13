@@ -6,10 +6,10 @@ import requests
 from flask_cors import CORS
 
 API_KEY = "AIzaSyAHHByDAWIAvXhTNkajTqazMhBUO045aS0"
-GENRES = ["fantasy fiction", "historical fiction", "horror", "thriller", "science fiction", 
-          "action & adventure", "romance", "mystery fiction"] 
+GENRES = ["fantasy fiction", "historical fiction", "horror", "thriller", "science fiction",
+          "action & adventure", "romance", "mystery fiction"]
 
-app = Flask(__name__) 
+app = Flask(__name__)
 CORS(app)
 
 @app.route('/', methods =["GET", "POST"])
@@ -23,12 +23,12 @@ def get_book():
         book = Book(user_input)
         book.save_pairing_as_json()
         return render_template("home.html", user_input=book.get_user_input(), title=book.get_title(), isbn=book.get_isbn(),
-                        authors=book.get_authors(), publisher=book.get_publisher(), 
-                        date=book.get_publication_date(), genres=book.get_genres(), 
+                        authors=book.get_authors(), publisher=book.get_publisher(),
+                        date=book.get_publication_date(), genres=book.get_genres(),
                         filtered_genres=book.get_filtered_genres(), description=book.get_description(),
                         cover_link=book.get_cover_link(), drinks=book.get_matching_drinks(),
                         pairing=book.get_pairing())
-     
+
     return render_template("home.html")
 
 @app.route('/test/', methods=["GET"])
@@ -40,20 +40,22 @@ class Book:
         self.user_input = user_input
         self.api_key = api_key
         self.json_file = json_file
-        self.filter_genres = filter_genres 
+        self.filter_genres = filter_genres
 
         self.isbn = self.query_api_isbn(self.user_input)
         self.data = self.query_api_book_data()
         self.genres = self.query_api_genres()
 
-    def get_pairing_as_dict(self):
+    def save_pairing_as_json(self, file_name="pairing.json"):
         pairing = {}
         pairing["title"] = self.get_title()
         pairing["authors"] = self.get_authors()
         pairing["genres"] = self.get_filtered_genres()
         pairing["cover_link"] = self.get_cover_link()
         pairing["pairing"] = self.get_pairing()
-        
+
+        with open(file_name, "w") as f:
+            json.dump(pairing , f, indent=4)
         return pairing 
 
     def get_pairing(self, no_match="Bud Light"):
@@ -68,22 +70,22 @@ class Book:
         genres = self.get_genres()
         with open(self.json_file, "r") as f:
             pairings = json.load(f)
-        matched_drinks = []        
-        
+        matched_drinks = []
+
         if genres is not None and len(genres) > 0:
             for drink in pairings["alcohols"]:
                 for genre in genres:
                     if genre in drink["genres"]:
                         matched_drinks.append(drink)
         return matched_drinks
-   
+
     def query_api_isbn(self, title):
         base_url = 'https://www.googleapis.com/books/v1/volumes'
         params = {
             'q': f'intitle:{title}',
             'key': self.api_key
         }
-        
+
         try:
             data = requests.get(base_url, params=params).json()['items']
             for entry in data:
@@ -93,7 +95,7 @@ class Book:
                     return isbn.get("identifier")
         except:
             return ""
-    
+
     def query_api_book_data(self):
         base_url = "https://www.googleapis.com/books/v1/volumes"
         params = {
@@ -108,7 +110,7 @@ class Book:
                 return {}
         else:
             return {}
-        
+
     def query_api_genres(self):
         base_url = "https://openlibrary.org/api/books"
         params = {
@@ -116,7 +118,7 @@ class Book:
             "format": "json",
             "jscmd": "data"
         }
-        
+
         try:
             json = requests.get(base_url, params=params).json()
             data = json.get(f"ISBN:{self.isbn}", {})
@@ -129,7 +131,7 @@ class Book:
             return list(set(names))
         except:
             return []
-    
+
     def get_filtered_genres(self):
         filtered_genres = []
         for genre in self.genres:
@@ -154,7 +156,7 @@ class Book:
             return self.data["description"]
         else:
             return ""
-    
+
     def get_publisher(self):
         if "publisher" in list(self.data.keys()):
             return self.data["publisher"]
@@ -172,13 +174,13 @@ class Book:
             if "smallThumbnail" in list(self.data["imageLinks"].keys()):
                 return self.data["imageLinks"]["smallThumbnail"]
         return ""
-    
+
     def get_isbn(self):
         return self.isbn
-    
+
     def get_user_input(self):
         return self.user_input
-    
+
     def get_genres(self):
         return self.genres
 
