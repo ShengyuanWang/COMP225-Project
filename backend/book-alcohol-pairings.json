@@ -6,6 +6,16 @@
             "genres": ["mystery fiction", "historical fiction"]
         },
         {
+            "name":"Margarita",
+            "type":"Cocktail",
+            "genres":["romance", "action & adventure"]
+        },
+        {
+            "name":"Manhattan",
+            "type":"Cocktail",
+            "genres":["mystery fiction", "historical fiction", "thriller"]
+        },
+        {
             "name": "Martini",
             "type": "Cocktail",
             "genres": ["science fiction", "mystery fiction", "romance"]
@@ -144,10 +154,20 @@
 
         },
         {
+            "name":"Tempranillo",
+            "type":"Wine",
+            "genres":["historical fiction", "fantasy fiction", "mystery fiction"]
+        },
+        {
             "name": "Zinfandel",
             "type": "Wine",
-            "genres": ["romance"]
+            "genres": ["romance", "mystery fiction", "thriller", "historical fiction"]
 
+        },
+        {
+            "name":"Prosecco",
+            "type":"Wine",
+            "genres":["romance"]
         },
         {
             "name": "Cabernet Sauvignon",
@@ -204,6 +224,11 @@
 
         },
         {
+            "name":"Malt Liquor",
+            "type":"Spirits",
+            "genres":["mystery fiction"]
+        },
+        {
             "name":"Rumchata",
             "type":"Spirits",
             "genres":["mystery fiction"]
@@ -225,6 +250,11 @@
             "type": "Spirits",
             "genres": ["action & adventure"]
 
+        },
+        {
+            "name":"Bacardi",
+            "type":"Spirits",
+            "genres":["action & adventure", "historical fiction", "romance"]
         },
         {
             "name": "Bourbon",
