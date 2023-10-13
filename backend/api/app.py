@@ -32,11 +32,7 @@ def get_book():
 
 @app.route('/test/', methods=["GET"])
 def search():
-    book = Book("Dune")
-    book.save_pairing_as_json()
-    with open(book.get_pairing_file(), "r") as f:
-        pairings = json.load(f)
-    return pairings
+    return Book("Dune").get_pairing_dict()
 
 class Book:
     def __init__ (self, user_input, alchool_data_file="book-alcohol-pairings.json", pairing_file="pairing.json", api_key=API_KEY, official_jsons=GENRES):
@@ -50,16 +46,13 @@ class Book:
         self.data = self.query_api_book_data()
         self.genres = self.query_api_genres()
 
-    def save_pairing_as_json(self):
+    def get_pairing_dict(self):
         pairing = {}
         pairing["title"] = self.get_title()
         pairing["authors"] = self.get_authors()
         pairing["genres"] = self.get_filtered_genres()
         pairing["cover_link"] = self.get_cover_link()
         pairing["pairing"] = self.get_pairing()
-
-        with open(self.pairing_file, "r+") as f:
-            json.dump(pairing, f, indent=4)
         
         return pairing
 
