@@ -1,6 +1,5 @@
 from flask import Flask, request, render_template
 from markupsafe import escape
-import os
 import json
 import random
 import requests
@@ -43,7 +42,7 @@ class Book:
     def __init__ (self, user_input, alchool_data_file="book-alcohol-pairings.json", pairing_file="pairing.json", api_key=API_KEY, official_jsons=GENRES):
         self.user_input = user_input
         self.alchool_data_file = alchool_data_file
-        self.pairing_file = os.path.join(os.getcwd(), pairing_file)
+        self.pairing_file = pairing_file
         self.api_key = api_key
         self.official_jsons = official_jsons
 
@@ -59,8 +58,9 @@ class Book:
         pairing["cover_link"] = self.get_cover_link()
         pairing["pairing"] = self.get_pairing()
 
-        with open(self.pairing_file, "w") as f:
-            json.dump(pairing , f, indent=4)
+        with open(self.pairing_file, "r+") as f:
+            json.dump(pairing, f, indent=4)
+        
         return pairing
 
     def get_pairing(self, no_match="Bud Light"):
