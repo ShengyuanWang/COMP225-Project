@@ -31,7 +31,7 @@ const drinks = [
             '1/4 lemon',
             'mint leaves'
         ],
-    url: "src/assets/images/drink1.png"
+    url: "https://i.ibb.co/989gpGR/drink1.png"
   }, {
     name: 'SAZERAC',
     instruction:
@@ -43,7 +43,7 @@ const drinks = [
             '1 splash absinthe',
             'lemon peel'
         ],
-    url: "src/assets/images/drink2.png"
+    url: "https://i.ibb.co/989gpGR/drink1.png"
   }
 ];
 

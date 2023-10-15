@@ -9,7 +9,7 @@ import MatchResult from "@/components/MatchResult.vue";
     <Qinput place="40"></Qinput>
   </div>
   <div class="match_result">
-    <MatchResult url="src/assets/images/drink1.png"></MatchResult>
+    <MatchResult url="https://i.ibb.co/989gpGR/drink1.png"></MatchResult>
   </div>
 
 </template>
