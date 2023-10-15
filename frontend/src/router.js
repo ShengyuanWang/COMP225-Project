@@ -4,7 +4,8 @@ const routerHistory = createWebHistory()
 
 import Vindex from './views/index/Vindex.vue'
 import Vsearch from './views/search/Vsearch.vue'
-import Vtest from './views/test/Vtest.vue'
+import Vshow from './views/show/Vshow.vue'
+import Vmatch from "@/views/match/Vmatch.vue";
 // 定义路由
 const routes = [
     {
@@ -18,11 +19,18 @@ const routes = [
         component: Vsearch
     },
     {
-        path: '/test',
-        name: 'Vtest',
-        component: Vtest
+        path: '/show',
+        name: 'Vshow',
+        component: Vshow
     },
+    {
+        path: "/match",
+        component: Vmatch,
+        name: Vmatch
+    }
+
 ]
+
 
 // 创建路由器
 const router = createRouter({

@@ -1,7 +1,7 @@
 <template>
 
   <div class="search">
-    <Qinput></Qinput>
+    <Qinput move place="350"></Qinput>
   </div>
 
 

@@ -1,7 +1,11 @@
 <script setup>
 import { ref } from 'vue'
 import { Search } from '@element-plus/icons-vue'
-const place = ref(400)
+const props = defineProps({
+  move: Boolean,
+  place: String
+})
+const place = ref(props.place)
 const value = ref('')
 const input = ref('aaa')
 // 400 default 35 active
@@ -20,8 +24,11 @@ const data = [
   }
 ]
 const onClick  = () => {
-  place.value = 35;
+  if (props.move) {
+    place.value = 35;
+  }
 }
+console.log(outerHeight)
 </script>
 
 <template>
@@ -52,7 +59,6 @@ const onClick  = () => {
 <style scoped>
 .inp {
   width: 800px;
-  margin-top: 400px;
   margin-left: auto;
   margin-right: auto;
   height: 100px;

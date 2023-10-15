@@ -22,25 +22,29 @@ getData()
 console.log(res)
 
 const drinks = [
-    {
-      name: 'whiskey',
-      instruction: 'whiskey-instruction'
-    },{
-    name: 'burbon',
-    instruction: 'burbon-instruction'
-  },{
-    name: 'whiskey1',
-    instruction: 'whiskey1-instruction'
-  },{
-    name: 'whiskey3',
-    instruction: 'whiskey-instruction'
-  },{
-    name: 'burbon4',
-    instruction: 'burbon-instruction'
-  },{
-    name: 'whiskey5',
-    instruction: 'whiskey1-instruction'
-  },
+  {
+    name: "WHISKEY SMASH",
+    instruction:
+        [
+            '2 oz. bourbon whiskey',
+            '3/4 oz. simple syrup',
+            '1/4 lemon',
+            'mint leaves'
+        ],
+    url: "src/assets/images/drink1.png"
+  }, {
+    name: 'SAZERAC',
+    instruction:
+        [
+            '2 oz. cognac',
+            '1 splash rye whiskey',
+            '5 dashes Peychaud’s bitters',
+            '1 sugar cube',
+            '1 splash absinthe',
+            'lemon peel'
+        ],
+    url: "src/assets/images/drink2.png"
+  }
 ];
 
 
@@ -50,7 +54,7 @@ const drinks = [
 
 <perfect-scrollbar class="show">
   <div class="drink-table" >
-    <drink-item v-for="drink in drinks" :name="drink.name" :instruction="drink.instruction">{{drink.name}}}</drink-item>
+    <drink-item v-for="drink in drinks" :name="drink.name" :instruction="drink.instruction" :url="drink.url">{{drink.name}}}</drink-item>
   </div>
 </perfect-scrollbar>
 

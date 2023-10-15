@@ -1,23 +1,22 @@
 <script setup>
 const props = defineProps({
   name: String,
-  instruction: String
+  instruction: String,
+  url: String
 })
 </script>
 
 <template>
   <div class="drink-item">
-    <div class="drink-image"> <el-image src="src/assets/images/drink.png" fit="cover"/></div>
+    <div class="drink-image"> <el-image :src="props.url" fit="cover"/></div>
     <div class="drink-instructions">
       <div class="drink-name">
         {{props.name}}
       </div>
       <div class="instruction">
-        {{props.instruction}}
-<!--        <p>- 20z.burbon whiskey</p>-->
-<!--        <p>- 20z.burbon whiskey</p>-->
-<!--        <p>- 20z.burbon whiskey</p>-->
-<!--        <p>- 20z.burbon whiskey</p>-->
+        <ul>
+          <li v-for="item in props.instruction">{{item}}}</li>
+        </ul>
       </div>
 
     </div>
@@ -26,20 +25,20 @@ const props = defineProps({
 
 <style scoped>
 .drink-item {
-  width: 340px;
-  height: 560px;
+  width: 360px;
+  height: 650px;
   background-color: blue;
   margin: 10px;
 }
 .drink-image {
   width: 100%;
-  height: 350px;
+  height: 370px;
   background-color: green;
   padding: 10px;
 }
 .drink-instructions {
   width: 100%;
-  height: 200px;
+  height: 280px;
   background-color: purple;
   padding: 10px;
 }
