@@ -1,7 +1,10 @@
 <script setup>
 const props = defineProps({
-  url: String
+  url: String,
+  name: String,
+  rating: Number
 })
+
 </script>
 
 <template>
@@ -9,14 +12,11 @@ const props = defineProps({
   <el-image :src="props.url" fit="cover"/>
 </div>
   <div class="detail">
-    <div class="name">Red Wine</div>
+    <div class="name">{{ props.name }}</div>
     <div class="rate">
       <p>Match Rating</p>
-      <el-icon :size="35"><StarFilled /></el-icon>
-      <el-icon :size="35"><StarFilled /></el-icon>
-      <el-icon :size="35"><StarFilled /></el-icon>
-      <el-icon :size="35"><StarFilled /></el-icon>
-      <el-icon :size="35" color="white"><StarFilled /></el-icon>
+      <el-icon :size="35" v-for="(item, index) in parseInt(props.rating)"><StarFilled /></el-icon>
+      <el-icon :size="35" color="white" v-for="(item , index) in 5-parseInt(props.rating)"><StarFilled /></el-icon>
     </div>
     <div class="description">
       <p>Description (bobobobobobobobobobobobobob)</p>

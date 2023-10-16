@@ -11,11 +11,11 @@ const props = defineProps({
     <div class="drink-image"> <el-image :src="props.url" fit="cover"/></div>
     <div class="drink-instructions">
       <div class="drink-name">
-        {{props.name}}
+        {{ props.name }}
       </div>
       <div class="instruction">
         <ul>
-          <li v-for="item in props.instruction">{{item}}}</li>
+          <li v-for="item in props.instruction">{{ item }}</li>
         </ul>
       </div>
 

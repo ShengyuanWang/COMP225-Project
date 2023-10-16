@@ -44,7 +44,52 @@ const drinks = [
             'lemon peel'
         ],
     url: "https://i.ibb.co/989gpGR/drink1.png"
+  }, {
+    name: "WHISKEY SMASH",
+    instruction:
+        [
+          '2 oz. bourbon whiskey',
+          '3/4 oz. simple syrup',
+          '1/4 lemon',
+          'mint leaves'
+        ],
+    url: "https://i.ibb.co/989gpGR/drink1.png"
+  }, {
+    name: 'SAZERAC',
+    instruction:
+        [
+          '2 oz. cognac',
+          '1 splash rye whiskey',
+          '5 dashes Peychaud’s bitters',
+          '1 sugar cube',
+          '1 splash absinthe',
+          'lemon peel'
+        ],
+    url: "https://i.ibb.co/989gpGR/drink1.png"
+  }, {
+    name: "WHISKEY SMASH",
+    instruction:
+        [
+          '2 oz. bourbon whiskey',
+          '3/4 oz. simple syrup',
+          '1/4 lemon',
+          'mint leaves'
+        ],
+    url: "https://i.ibb.co/989gpGR/drink1.png"
+  }, {
+    name: 'SAZERAC',
+    instruction:
+        [
+          '2 oz. cognac',
+          '1 splash rye whiskey',
+          '5 dashes Peychaud’s bitters',
+          '1 sugar cube',
+          '1 splash absinthe',
+          'lemon peel'
+        ],
+    url: "https://i.ibb.co/989gpGR/drink1.png"
   }
+
 ];
 
 
@@ -73,7 +118,7 @@ const drinks = [
   display: flex;
   position: relative;
   flex-flow: wrap;
-  padding-left: 30px;
+  padding-left: 10px;
   padding-top: 10px;
 }
 
