@@ -97,11 +97,23 @@
             "sentiment": 0.7
         },
         {
+            "name":"Gimlet",
+            "type":"Cocktail",
+            "genres":["historical fiction", "mystery fiction", "thriller"],
+            "sentiment":0.6
+        },
+        {
             "name": "Spiced Wine",
             "type": "Cocktail",
             "genres": ["fantasy fiction"],
             "sentiment": 0.5
 
+        },
+        {
+            "name":"Negroni",
+            "type":"Cocktail",
+            "genres":["mystery fiction","historical fiction","thriller"],
+            "sentiment":0.5
         },
         {
             "name": "Gin and Tonic",
@@ -239,10 +251,34 @@
             "sentiment": 0.6
         },
         {
+            "name":"Lager",
+            "type":"Beer",
+            "genres":["action & adventure","humorous","mystery fiction"],
+            "sentiment":0.5
+        },
+        {
+            "name":"Porter",
+            "type":"Beer",
+            "genres":["historical fiction","mystery fiction","fantasy fiction"],
+            "sentiment":0.4
+        },
+        {
+            "name":"Ale",
+            "type":"Beer",
+            "genres":["fantasy fiction","historical fiction","mystery fiction","action & adventure"],
+            "sentiment":0.5
+        },
+        {
             "name": "Dark Rum",
             "type": "Spirits",
             "genres": ["action & adventure", "mystery fiction", "thriller"]
 
+        },
+        {
+            "name":"Witbier",
+            "type":"Beer",
+            "genres":["romance","mystery fiction","humorous"],
+            "sentiment":0.7
         },
         {
             "name": "Whiskey",
