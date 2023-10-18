@@ -337,13 +337,13 @@
         {
             "name": "Curaçao",
             "type": "Spirits",
-            "genres":["science fiction"],
+            "genres":["science fiction", "mystery fiction","romance","action & adventure"],
             "sentiment":0.7
         },
         {
             "name": "Brandy",
             "type": "Spirits",
-            "genres": ["historical fiction"],
+            "genres": ["historical fiction", "mystery fiction","thriller","romance"],
             "sentiment":0.6
         },
         {
