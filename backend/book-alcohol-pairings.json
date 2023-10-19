@@ -319,7 +319,7 @@
         {
             "name":"Bacardi",
             "type":"Spirits",
-            "genres":["action & adventure", "historical fiction", "romance"],
+            "genres":["action & adventure", "romance"],
             "sentiment":0.4
         },
         {
