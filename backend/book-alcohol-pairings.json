@@ -45,7 +45,7 @@
         {
             "name": "Bloody Mary",
             "type": "Cocktail",
-            "genres": ["horror","mystery fiction","travel","thriller"],
+            "genres": ["horror","mystery fiction","travel","thriller","classics","france"],
             "sentiment": 0.5
         },
         {
@@ -247,7 +247,7 @@
         {
             "name": "Guiness",
             "type": "Beer",
-            "genres": ["fantasy fiction", "historical fiction", "mystery fiction", "thriller"],
+            "genres": ["ireland","irish literature","classics","fantasy fiction", "historical fiction", "mystery fiction", "thriller"],
             "sentiment": 0.6
         },
         {
@@ -307,7 +307,7 @@
         {
             "name": "Gin",
             "type": "Spirits",
-            "genres": ["historical fiction", "action & adventure","travel","espionage"],
+            "genres": ["classics","20th century","historical fiction", "action & adventure","travel","espionage"],
             "sentiment":-0.5
         },
         {
@@ -343,7 +343,7 @@
         {
             "name": "Brandy",
             "type": "Spirits",
-            "genres": ["espionage","historical fiction", "mystery fiction","thriller","romance"],
+            "genres": ["classics","19th century","1800s","espionage","historical fiction", "mystery fiction","thriller","romance"],
             "sentiment":0.6
         },
         {
