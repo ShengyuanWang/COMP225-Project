@@ -6,6 +6,7 @@ import Vindex from './views/index/Vindex.vue'
 import Vsearch from './views/search/Vsearch.vue'
 import Vshow from './views/show/Vshow.vue'
 import Vmatch from "@/views/match/Vmatch.vue";
+import Vdetail from "@/views/detail/Vdetail.vue";
 // 定义路由
 const routes = [
     {
@@ -27,6 +28,11 @@ const routes = [
         path: "/match",
         component: Vmatch,
         name: Vmatch
+    },
+    {
+        path: "/detail",
+        component: Vdetail,
+        name: Vdetail
     }
 
 ]

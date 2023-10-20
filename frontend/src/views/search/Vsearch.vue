@@ -8,14 +8,8 @@
 
 </template>
 
-<script>
-import Qinput from "../../components/Qinput.vue";
-import Menu from "../../components/Menu.vue";
+<script setup>
 
-export default {
-  name: "Vsearch",
-  components: {Menu, Qinput}
-}
 </script>
 
 <style scoped>

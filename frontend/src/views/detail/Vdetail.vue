@@ -5,8 +5,8 @@ import MatchResult from "@/components/MatchResult.vue";
 import { useRoute } from 'vue-router'
 //首先在setup中定义
 const route = useRoute()
-let stars = route.query.stars;
 let name = route.query.name;
+let instruction = route.query.instruction;
 </script>
 
 <template>
@@ -14,7 +14,7 @@ let name = route.query.name;
     <Qinput place="40"></Qinput>
   </div>
   <div class="match_result">
-    <MatchResult url="https://i.ibb.co/989gpGR/drink1.png" :name=name :rating=stars></MatchResult>
+    <Detail url="https://i.ibb.co/989gpGR/drink1.png" :name=name :instruction=instruction></Detail>
   </div>
 
 </template>
@@ -35,4 +35,4 @@ let name = route.query.name;
   background-color: blue;
   margin-left: 150px;
 }
-</style>
+</style>yle>

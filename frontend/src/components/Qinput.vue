@@ -1,32 +1,34 @@
 <script setup>
 import { ref } from 'vue'
 import { Search } from '@element-plus/icons-vue'
+import router from "@/router";
 const props = defineProps({
   move: Boolean,
   place: String
 })
 const place = ref(props.place)
-const value = ref('')
-const input = ref('aaa')
+const value = ref('Books')
+const input = ref('')
 // 400 default 35 active
 const data = [
   {
-    value:'cocktail'
+    value:'Books'
   },
   {
-    value:'wine'
+    value:'Movies'
   },
   {
-    value:'beer'
+    value:'TV Shows'
   },
   {
-    value:'spirits'
+    value:'Music'
   }
 ]
 const onClick  = () => {
   if (props.move) {
-    place.value = 35;
+    place.value = 60;
   }
+  router.push({path:'match', query: {name: 'SAZERAC', url:'https://i.ibb.co/989gpGR/drink1.png', stars:'5'}})
 }
 console.log(outerHeight)
 </script>
@@ -36,12 +38,12 @@ console.log(outerHeight)
     <div class="mt-4">
       <el-input
           v-model="input"
-          placeholder="Please input"
+          placeholder="Please input the name of the book"
           class="input-with-select"
           size="large"
       >
         <template #prepend>
-          <el-select v-model="value" :data="data" size="large" style="width:120px;" @click="onClick">
+          <el-select v-model="value" :data="data" size="large" style="width:120px;">
             <el-option v-for="item in data" :value="item.value">
             </el-option>
           </el-select>
