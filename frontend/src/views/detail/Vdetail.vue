@@ -3,8 +3,8 @@
 import Qinput from "@/components/Qinput.vue";
 import MatchResult from "@/components/MatchResult.vue";
 import { useRoute } from 'vue-router'
-//首先在setup中定义
 const route = useRoute()
+
 let name = route.query.name;
 let instruction = route.query.instruction;
 </script>

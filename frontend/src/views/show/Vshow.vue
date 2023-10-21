@@ -1,11 +1,12 @@
 <script setup>
-
 import Menu from "../../components/Menu.vue";
 import {getCurrentInstance} from "vue";
 import { useRouter } from 'vue-router'
 import DrinkItem from "@/components/DrinkItem.vue";
 import {tabNavEmits} from "element-plus";
 const { proxy } = getCurrentInstance()
+const router = useRouter()
+
 const res = {}
 const getData = () => {
   var api="https://comp-225-project-backend.vercel.app/test/";
@@ -22,8 +23,6 @@ const getData = () => {
   router.push({ path: 'detail', query: {name: drinks[1].name, instruction:drinks[1].instruction}})
 }
 console.log(res)
-//首先在setup中定义
-const router = useRouter()
 
 const drinks = [
   {

@@ -85,25 +85,23 @@
 </template>
 
 <script setup>
+// import required packages
 import { ref } from 'vue'
-import {
-  Document,
-  Menu as IconMenu,
-  Location,
-  Setting,
-} from '@element-plus/icons-vue'
-import {all} from "axios";
 import router from "@/router";
-const showPreference = ref(false)
-const isCollapse = ref(true)
-const w = ref(100)
-const menuColor = ref('#C3BCB3')
+
+
+const showPreference = ref(false) // const for whether show the preference list
+const isCollapse = ref(true) // const for side-menu collapse action
+const w = ref(100) // handle the distance to the left for the icon
+const menuColor = ref('#C3BCB3') // handle the color for the menu
+// array for drink preference | default : false
 const preference  = ref({
   beer: false,
   wine: false,
   spirits: false,
   cocktails: false
 })
+// array for allergy preference | default : false
 const allergy  = ref({
   treenuts: false,
   peanuts: false,
@@ -111,14 +109,19 @@ const allergy  = ref({
   seasame: false,
   other: false
 })
+
+// function for handle the collapse action for the sub-menu
 const handleOpen = (key, keyPath) => {
   console.log(key, keyPath)
   console.log(isCollapse)
 }
+
+// function for handle the close action for the sub-menu
 const handleClose = (key, keyPath) => {
   console.log(key, keyPath)
 }
 
+// function for handle the close action for the menu
 const handleCollapse = () =>{
   isCollapse.value = !isCollapse.value
   showPreference.value = false
@@ -132,15 +135,18 @@ const handleCollapse = () =>{
   }
 }
 
+// function to handle click action for the preference
 const setPreference = () => {
   showPreference.value = true
 }
 
+// function handle the action on click the menu icon
 const clickMenu = () => {
   console.log('Click Menu');
   router.push({ path: 'show'})
 }
 
+// function handle the click action for the search icon
 const clickMatch = () => {
   console.log('Click Match')
   router.push({ path: 'search'})

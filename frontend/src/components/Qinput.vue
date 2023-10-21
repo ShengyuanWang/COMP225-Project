@@ -1,10 +1,13 @@
 <script setup>
+// import the required packages
 import { ref } from 'vue'
 import { Search } from '@element-plus/icons-vue'
 import router from "@/router";
+
+// set the props for the search bar
 const props = defineProps({
-  move: Boolean,
-  place: String
+  move: Boolean, // whether it should move
+  place: String // the place of the search bar
 })
 const place = ref(props.place)
 const value = ref('Books')
