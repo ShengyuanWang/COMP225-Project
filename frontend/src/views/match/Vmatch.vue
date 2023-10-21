@@ -1,9 +1,11 @@
 <script setup>
+// import required packages
 import Qinput from "@/components/Qinput.vue";
 import MatchResult from "@/components/MatchResult.vue";
 import { useRoute } from 'vue-router'
 const route = useRoute()
 
+// get the variables from route url
 let stars = route.query.stars;
 let name = route.query.name;
 </script>

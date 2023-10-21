@@ -1,12 +1,14 @@
 <script setup>
-
+// import the required packages
 import Qinput from "@/components/Qinput.vue";
 import MatchResult from "@/components/MatchResult.vue";
 import { useRoute } from 'vue-router'
 const route = useRoute()
 
+// get the data from route url
 let name = route.query.name;
 let instruction = route.query.instruction;
+
 </script>
 
 <template>
