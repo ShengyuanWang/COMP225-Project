@@ -6,8 +6,8 @@ import { useRoute } from 'vue-router'
 const route = useRoute()
 
 // get the variables from route url
-let stars = route.query.stars;
-let name = route.query.name;
+const stars = route.query.stars;
+const name = route.query.name;
 </script>
 
 <template>

@@ -36,7 +36,7 @@ def get_book():
 def search1(bookname):
     """Return pairing dictonary for testing of frontend intergration."""
     book = Book(bookname)
-    return book.get_pairing()
+    return book.get_pairing_json_obj()
 
 
 class Book:
