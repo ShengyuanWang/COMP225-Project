@@ -32,10 +32,12 @@ def get_book():
                         pairing=book.get_pairing())
     return render_template("home.html")
 
-@app.route('/test/', methods=["GET"])
-def search():
+@app.route('/test/<bookname>', methods=["GET"])
+def search1(bookname):
     """Return pairing dictonary for testing of frontend intergration."""
-    return Book("Dune").get_pairing_json_obj()
+    book = Book(bookname)
+    return book.get_pairing()
+
 
 class Book:
     def __init__ (self, user_input, alchool_data_file="book-alcohol-pairings.json", api_key=API_KEY, official_genres=GENRES, no_match_drink="Bud Light"):
@@ -80,7 +82,7 @@ class Book:
         drinks = self.get_matching_drinks()
         if len(drinks) > 0:
             ran_drink = random.choice(drinks)
-            return ran_drink["name"]
+            return ran_drink['name']
         else:
             return self.no_match_drink
 
