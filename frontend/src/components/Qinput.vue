@@ -44,10 +44,10 @@ const onClick  = () => {
     //请求失败的回调函数
     console.log(err)
   })
-  router.afterEach((to, from, next) => {
-    window.location.reload()
-    console.log('true')
-  })
+  // router.afterEach((to, from, next) => {
+  //   window.location.reload()
+  //   console.log('true')
+  // })
 }
 console.log(outerHeight)
 </script>
