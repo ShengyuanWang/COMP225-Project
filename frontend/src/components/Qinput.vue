@@ -39,15 +39,16 @@ const onClick  = () => {
     //请求成功的回调函数
     console.log(api)
     console.log('finish')
-    router.push({path:'match', query: {name:res.data, url:'https://i.ibb.co/989gpGR/drink1.png', stars:'5'}})
+    console.log(res)
+    router.push({path:'match', query: {name:res.data.pairing, url:'https://i.ibb.co/989gpGR/drink1.png', stars:'5'}})
   }).catch((err)=>{
     //请求失败的回调函数
     console.log(err)
   })
-  // router.afterEach((to, from, next) => {
-  //   window.location.reload()
-  //   console.log('true')
-  // })
+  router.afterEach((to, from, next) => {
+    window.location.reload()
+    console.log('true')
+  })
 }
 console.log(outerHeight)
 </script>
