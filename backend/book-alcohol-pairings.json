@@ -9,7 +9,7 @@
         {
             "name":"Margarita",
             "type":"Cocktail",
-            "genres":["romance", "action & adventure","humorous","travel"],
+            "genres":["romance","love", "action & adventure","humorous","travel"],
             "sentiment": 0.7
         },
         {
@@ -21,25 +21,25 @@
         {
             "name": "Martini",
             "type": "Cocktail",
-            "genres": ["science fiction", "mystery fiction", "romance"],
+            "genres": ["science fiction", "mystery fiction", "romance", "love"],
             "sentiment":0.7
         },
         {
             "name": "Piña Colada",
             "type": "Cocktail",
-            "genres": ["romance", "humorous"], 
+            "genres": ["romance", "love", "humorous"], 
             "sentiment": 0.8
         },
         {
             "name": "Blue Lagoon",
             "type":"Cocktail",
-            "genres":["science fiction","romance","travel"],
+            "genres":["science fiction","romance","love","travel"],
             "sentiment": 0.8
         },
         {
             "name": "Mojito",
             "type": "Cocktail",
-            "genres": ["romance", "action & adventure", "humorous"],
+            "genres": ["romance","love", "action & adventure", "humorous"],
             "sentiment": 0.7
         },
         {
@@ -51,19 +51,19 @@
         {
             "name":"Cosmopolitan",
             "type":"Cocktail",
-            "genres":["romance","mystery fiction"],
+            "genres":["romance","love","mystery fiction"],
             "sentiment": 0.8
         },
         {
             "name":"Aperol Spritz",
             "type": "Cocktail",
-            "genres":["romance","humorous"],
+            "genres":["romance","love","humorous"],
             "sentiment": 0.7
         },
         {
             "name": "Moscow Mule",
             "type": "Cocktail",
-            "genres": ["action & adventure","romance"],
+            "genres": ["action & adventure","romance","love"],
             "sentiment": 0.7
         },
         {
@@ -75,19 +75,19 @@
         {
             "name":"Vodka Cranberry",
             "type":"Cocktail",
-            "genres":["romance","mystery fiction","thriller"],
+            "genres":["romance","love","mystery fiction","thriller"],
             "sentiment": 0.7
         },
         {
             "name":"Sex on the Beach",
             "type":"Cocktail",
-            "genres":["romance","travel"],
+            "genres":["romance","love","travel"],
             "sentiment": 0.7
         },
         {
             "name": "Sangria",
             "type": "Cocktail",
-            "genres": ["romance","travel","thriller", "mystery fiction","action & adventure"],  
+            "genres": ["romance","love","travel","thriller", "mystery fiction","action & adventure"],  
             "sentiment": 0.6
         },
         {
@@ -130,43 +130,43 @@
         {
             "name":"Mimosa",
             "type":"Cocktail",
-            "genres":["humorous", "romance", "mystery fiction","travel"],
+            "genres":["humorous", "romance","love", "mystery fiction","travel"],
             "sentiment":0.7
         },
         {
             "name":"Daiquiri",
             "type":"Cocktail",
-            "genres":["travel","humorous", "action & adventure", "romance", "mystery fiction"],
+            "genres":["travel","humorous", "action & adventure", "romance","love", "mystery fiction"],
             "sentiment":0.7
         },
         {
             "name": "Moscato",
             "type": "Wine",
-            "genres": ["romance","humorous"],
+            "genres": ["romance","love","humorous"],
             "sentiment":0.7
         },
         {
             "name": "Pinot Noir",
             "type": "Wine",
-            "genres": ["romance", "mystery fiction"],
+            "genres": ["romance","love", "mystery fiction"],
             "sentiment": 0.6
         },
         {
             "name": "Merlot",
             "type": "Wine",
-            "genres": ["romance", "mystery fiction", "science fiction"],
+            "genres": ["romance","love", "mystery fiction", "science fiction"],
             "sentiment": 0.6
         },
         {
             "name": "Rosé",
             "type": "Wine",
-            "genres": ["romance", "humorous"],
+            "genres": ["romance","love", "humorous"],
             "sentiment": 0.7
         },
         {
             "name": "Chardonnay",
             "type": "Wine",
-            "genres": ["romance","mystery fiction","historical fiction"],
+            "genres": ["romance","love","mystery fiction","historical fiction"],
             "sentiment":0.6
 
         },
@@ -179,13 +179,13 @@
         {
             "name": "Sherry",
             "type": "Wine",
-            "genres": ["romance","mystery fiction","humorous","historical fiction"],
+            "genres": ["romance","love","mystery fiction","humorous","historical fiction"],
             "sentiment":0.5
         },
         {
             "name": "Champagne",
             "type": "Wine",
-            "genres": ["romance"],
+            "genres": ["romance","love"],
             "sentiment": 1
         },
         {
@@ -197,13 +197,13 @@
         {
             "name": "Zinfandel",
             "type": "Wine",
-            "genres": ["romance", "mystery fiction", "thriller", "historical fiction"],
+            "genres": ["romance","love", "mystery fiction", "thriller", "historical fiction"],
             "sentiment": 0.6
         },
         {
             "name":"Prosecco",
             "type":"Wine",
-            "genres":["romance","humorous","travel"],
+            "genres":["romance","love","humorous","travel"],
             "sentiment": 0.9
         },
         {
@@ -215,13 +215,13 @@
         {
             "name": "Syrah",
             "type": "Wine",
-            "genres": ["romance", "mystery fiction"],
+            "genres": ["romance","love", "mystery fiction"],
             "sentiment":0.6
         },
         {
             "name": "Malbec",
             "type": "Wine",
-            "genres": ["romance", "mystery fiction", "horror"],
+            "genres": ["romance","love", "mystery fiction", "horror"],
             "sentiment":0.6
         },
         {
@@ -277,7 +277,7 @@
         {
             "name":"Witbier",
             "type":"Beer",
-            "genres":["romance","mystery fiction","humorous","travel"],
+            "genres":["romance","love","mystery fiction","humorous","travel"],
             "sentiment":0.7
         },
         {
@@ -295,7 +295,7 @@
         {
             "name":"Rumchata",
             "type":"Spirits",
-            "genres":["mystery fiction", "romance","humorous"],
+            "genres":["mystery fiction", "romance","love","humorous"],
             "sentiment":0.6
         },
         {
@@ -313,13 +313,13 @@
         {
             "name": "White Rum",
             "type": "Spirits",
-            "genres": ["action & adventure","romance","travel","historical fiction"],
+            "genres": ["action & adventure","romance","love","travel","historical fiction"],
             "sentiment": 0.7 
         },
         {
             "name":"Bacardi",
             "type":"Spirits",
-            "genres":["action & adventure", "romance"],
+            "genres":["action & adventure", "romance","love"],
             "sentiment":0.4
         },
         {
@@ -337,13 +337,13 @@
         {
             "name": "Curaçao",
             "type": "Spirits",
-            "genres":["travel","science fiction", "mystery fiction","romance","action & adventure"],
+            "genres":["travel","science fiction", "mystery fiction","romance","love","action & adventure"],
             "sentiment":0.7
         },
         {
             "name": "Brandy",
             "type": "Spirits",
-            "genres": ["classics","19th century","1800s","espionage","historical fiction", "mystery fiction","thriller","romance"],
+            "genres": ["classics","19th century","1800s","espionage","historical fiction", "mystery fiction","thriller","romance","love"],
             "sentiment":0.6
         },
         {
