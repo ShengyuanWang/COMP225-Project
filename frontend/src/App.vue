@@ -1,22 +1,26 @@
-<script>
-export default {
-  methods: {
-    // toggleFullscreen() {
-    //   let element = document.querySelector('.fullscreen');
-    //   if (document.fullscreenElement) {
-    //     document.exitFullscreen();
-    //   } else {
-    //     element.requestFullscreen();
-    //   }
-    // }
-  }
-}
+<script setup>
+// export default {
+//   methods: {
+//     // toggleFullscreen() {
+//     //   let element = document.querySelector('.fullscreen');
+//     //   if (document.fullscreenElement) {
+//     //     document.exitFullscreen();
+//     //   } else {
+//     //     element.requestFullscreen();
+//     //   }
+//     // }
+//   }
+// }
+import {useRoute} from "vue-router";
+const route = useRoute()
+console.log('this is', route.path)
+
 </script>
 
 <template>
 <div class="fullscreen">
   <Menu></Menu>
-  <router-view></router-view>
+  <router-view :key="route.path"></router-view>
 </div>
 
 

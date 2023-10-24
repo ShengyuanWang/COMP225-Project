@@ -1,32 +1,54 @@
 <script setup>
-import { ref } from 'vue'
+// import the required packages
+import {getCurrentInstance, ref} from 'vue'
 import { Search } from '@element-plus/icons-vue'
+import router from "@/router";
+import axios from "axios";
+
+// set the props for the search bar
 const props = defineProps({
-  move: Boolean,
-  place: String
+  move: Boolean, // whether it should move
+  place: String // the place of the search bar
 })
+const {proxy} = getCurrentInstance()
 const place = ref(props.place)
-const value = ref('')
-const input = ref('aaa')
+const value = ref('Books')
+const input = ref('')
 // 400 default 35 active
 const data = [
   {
-    value:'cocktail'
+    value:'Books'
   },
   {
-    value:'wine'
+    value:'Movies'
   },
   {
-    value:'beer'
+    value:'TV Shows'
   },
   {
-    value:'spirits'
+    value:'Music'
   }
 ]
 const onClick  = () => {
   if (props.move) {
-    place.value = 35;
+    place.value = 60;
   }
+  var api="https://comp-225-project-backend.vercel.app/test/" + input.value;
+  //2.使用axios 进行get请求
+  proxy.axios.get(api).then((res)=>{
+    //请求成功的回调函数
+    console.log(api)
+    console.log('finish')
+    console.log(res)
+    router.push({path:'match', query: {name:res.data.pairing, url:'https://i.ibb.co/989gpGR/drink1.png', stars:'5'}})
+  }).catch((err)=>{
+    //请求失败的回调函数
+    console.log(err)
+  })
+  router.afterEach((to, from, next) => {
+    window.location.reload()
+    console.log('true')
+  })
 }
 console.log(outerHeight)
 </script>
@@ -36,12 +58,12 @@ console.log(outerHeight)
     <div class="mt-4">
       <el-input
           v-model="input"
-          placeholder="Please input"
+          placeholder="Please input the name of the book"
           class="input-with-select"
           size="large"
       >
         <template #prepend>
-          <el-select v-model="value" :data="data" size="large" style="width:120px;" @click="onClick">
+          <el-select v-model="value" :data="data" size="large" style="width:120px;">
             <el-option v-for="item in data" :value="item.value">
             </el-option>
           </el-select>
