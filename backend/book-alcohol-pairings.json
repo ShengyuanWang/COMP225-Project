@@ -227,7 +227,7 @@
         {
             "name": "Mead",
             "type": "Wine",
-            "genres": ["england","ireland","irish","fantasy fiction","fantasy", "historical fiction","history","historical"],
+            "genres": ["england","ireland","fantasy fiction","fantasy", "historical fiction","history","historical"],
             "sentiment":0.8
 
         },
@@ -247,7 +247,7 @@
         {
             "name": "Guiness",
             "type": "Beer",
-            "genres": ["ireland","irish","classics","classic literature","classic","fantasy fiction","fantasy", "historical fiction","history","historical","mystery fiction","mystery", "thriller","thrillers","suspense","drama"],
+            "genres": ["ireland","classics","classic literature","classic","fantasy fiction","fantasy", "historical fiction","history","historical","mystery fiction","mystery", "thriller","thrillers","suspense","drama"],
             "sentiment": 0.6
         },
         {
@@ -271,13 +271,13 @@
         {
             "name":"Baileys",
             "type":"Spirits",
-            "genres":["romance","love","love stories","romance fiction","mystery fiction","mystery","ireland","irish","friendship"],
+            "genres":["romance","love","love stories","romance fiction","mystery fiction","mystery","ireland","friendship"],
             "sentiment":0.75
         },
         {
             "name":"Poitín",
             "type":"Spirits",
-            "genres":["ireland","irish","historical fiction","history","historical","thriller","thrillers","suspense","crime"],
+            "genres":["ireland","historical fiction","history","historical","thriller","thrillers","suspense","crime"],
             "sentiment":0.5
 
         },
