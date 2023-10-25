@@ -15,7 +15,7 @@
         {
             "name":"Manhattan",
             "type":"Cocktail",
-            "genres":["espionage","spies","mystery fiction","mystery", "historical fiction","history","historical", "thriller","thrillers","suspense","biographical","biographies"],
+            "genres":["united states","espionage","spies","mystery fiction","mystery", "historical fiction","history","historical", "thriller","thrillers","suspense","biographical","biographies"],
             "sentiment": 0.6
         },
         {
@@ -45,7 +45,7 @@
         {
             "name": "Bloody Mary",
             "type": "Cocktail",
-            "genres": ["horror","mystery fiction","mystery","travel","thriller","thrillers","suspense","classics","classic literature","france"],
+            "genres": ["horror","mystery fiction","mystery","travel","thriller","thrillers","suspense","classics","classic literature","classic","france"],
             "sentiment": 0.5
         },
         {
@@ -247,7 +247,7 @@
         {
             "name": "Guiness",
             "type": "Beer",
-            "genres": ["ireland","irish","classics","classic literature","fantasy fiction","fantasy", "historical fiction","history","historical","mystery fiction","mystery", "thriller","thrillers","suspense","drama"],
+            "genres": ["ireland","irish","classics","classic literature","classic","fantasy fiction","fantasy", "historical fiction","history","historical","mystery fiction","mystery", "thriller","thrillers","suspense","drama"],
             "sentiment": 0.6
         },
         {
@@ -321,7 +321,7 @@
         {
             "name": "Gin",
             "type": "Spirits",
-            "genres": ["england","classics","classic literature","20th century","historical fiction","history","historical","action & adventure","adventure","travel","espionage","spies","thriller","thrillers","suspense"],
+            "genres": ["england","classics","classic literature","classic","20th century","historical fiction","history","historical","action & adventure","adventure","travel","espionage","spies","thriller","thrillers","suspense"],
             "sentiment":-0.5
         },
         {
@@ -339,7 +339,7 @@
         {
             "name": "Bourbon",
             "type": "Spirits",
-            "genres": ["science fiction","science-fiction","horror","biographical","biographies"],
+            "genres": ["science fiction","science-fiction","horror","biographical","biographies","kentucky","united states"],
             "sentiment":0.7
         },
         {
@@ -357,7 +357,7 @@
         {
             "name": "Brandy",
             "type": "Spirits",
-            "genres": ["adventure","classics","classic literature","19th century","espionage","spies","historical fiction","history","historical","mystery fiction","mystery","thriller","thrillers","suspense","romance","love","romance fiction"],
+            "genres": ["adventure","classics","classic literature","classic","19th century","espionage","spies","historical fiction","history","historical","mystery fiction","mystery","thriller","thrillers","suspense","romance","love","romance fiction"],
             "sentiment":0.6
         },
         {
