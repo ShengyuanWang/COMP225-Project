@@ -9,7 +9,7 @@ from flask_cors import CORS
 API_KEY = "AIzaSyAHHByDAWIAvXhTNkajTqazMhBUO045aS0" 
 
  # update this when new genres added to alcohol json
-GENRES = ["fantasy fiction", "historical fiction", "horror", "thriller", "science fiction",
+GENRES = ["fantasy fiction", "historical fiction", "horror", "thriller", "thrillers","science fiction",
           "action & adventure", "romance", "mystery fiction"]
 
 app = Flask(__name__)
