@@ -10,7 +10,7 @@ API_KEY = "AIzaSyAHHByDAWIAvXhTNkajTqazMhBUO045aS0"
 
  # update this when new genres added to alcohol json
 GENRES = ["fantasy fiction", "historical fiction", "horror", "thriller", "science fiction",
-          "action & adventure", "romance", "mystery fiction"]
+          "action & adventure", "romance", "mystery fiction","humorous","drama","travel","classics","espionage"]
 
 app = Flask(__name__)
 CORS(app)
@@ -48,7 +48,7 @@ class Book:
         user_input -- string of title inputted by user
         alcohol_data_file -- json dump containing data for alcohol (default "book-alcohol-pairings.json")
         api_key -- string of api key for google api (default API_KEY constant) 
-        offical_genres -- list of genres used in alchool data file (default OFFICAL_GENRES constant) 
+        offical_genres -- list of genres used in alcohol data file (default OFFICAL_GENRES constant) 
         no_match_drink -- string of drink to use if no pairing found (default "Bud Light")
         """
         self.user_input = user_input
