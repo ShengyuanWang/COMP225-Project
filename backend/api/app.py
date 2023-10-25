@@ -16,7 +16,7 @@ GENRES = ["fantasy fiction", "historical fiction", "horror", "thriller", "scienc
           "romance fiction","love stories","science-fiction","spies","spy stories","history",
           "historical","classic","classic literature","biographical","biographies","adventure",
           "comedy","humor","humorous fiction","fantasy","mystery","caribbean area","ireland",
-          "england","france","spain","united states"]
+          "england","france","spain","united states","friendship","crime"]
 
 app = Flask(__name__)
 CORS(app)
