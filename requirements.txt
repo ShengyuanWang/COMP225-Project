@@ -5,3 +5,4 @@ jinja2
 pyjson
 pyrandom
 flask_cors
+pytest
