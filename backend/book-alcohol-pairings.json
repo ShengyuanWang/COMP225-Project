@@ -99,7 +99,7 @@
         {
             "name": "Sonic Screwdriver",
             "type": "Cocktail",
-            "genres": ["science fiction","science-fiction","action & adventure","adventure","adventure stories"],
+            "genres": ["science fiction","science-fiction","epic","action & adventure","adventure","adventure stories"],
             "sentiment": 0.7
         },
         {
@@ -247,7 +247,7 @@
         {
             "name":"Tempranillo",
             "type":"Wine",
-            "genres":["historical fiction","history","historical","fantasy fiction","fantasy", "mystery fiction","mystery","thriller","thrillers",
+            "genres":["epic","historical fiction","history","historical","fantasy fiction","fantasy", "mystery fiction","mystery","thriller","thrillers",
                 "suspense","drama","drama (dramatic works by one author)","biographical","biographies","biography","adventure","adventure stories","spain"],
             "sentiment": 0.3
         },
@@ -269,7 +269,7 @@
             "name": "Cabernet Sauvignon",
             "type": "Wine",
             "genres": ["science fiction","science-fiction","mystery fiction","mystery", "historical fiction","history","historical","france",
-                "united states","california"],
+                "united states","california","epic"],
             "sentiment": 0.6
         },
         {
@@ -327,7 +327,7 @@
             "name":"Ale",
             "type":"Beer",
             "genres":["fantasy fiction","fantasy","historical fiction","history","historical","mystery fiction","mystery","action & adventure",
-                "adventure","adventure stories"],
+                "adventure","adventure stories","epic"],
             "sentiment":0.5
         },
         {
