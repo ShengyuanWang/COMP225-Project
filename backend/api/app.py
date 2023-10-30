@@ -13,11 +13,11 @@ API_KEY = "AIzaSyAHHByDAWIAvXhTNkajTqazMhBUO045aS0"
 GENRES = ["fantasy fiction", "historical fiction", "horror", "thriller", "science fiction",
           "action & adventure", "romance", "mystery fiction",
           # added by Miriam later on:
-          "humorous","drama","travel","classics","espionage","suspense","thrillers","love",
+          "satire","humorous","drama","travel","classics","espionage","suspense","thrillers","love",
           "romance fiction","love stories","science-fiction","spies","spy stories","history",
           "historical","classic","classic literature","biographical","biographies","adventure",
           "comedy","humor","humorous fiction","fantasy","mystery","caribbean area","ireland",
-          "england","france","spain","united states","friendship","crime"]
+          "england","france","spain","united states","friendship","crime","romantic comedy"]
 
 app = Flask(__name__)
 CORS(app)
