@@ -3,256 +3,766 @@
         {
             "name": "Old Fashion",
             "type": "Cocktail",
-            "genres": ["mystery fiction", "historical fiction"]
+            "genres": ["mystery fiction", "historical fiction"],
+            "instructions": [
+                "2 oz. bourbon or rye whiskey",
+                "1 sugar cube",
+                "2 dashes Angostura bitters",
+                "Orange or lemon twist",
+                "Ice",
+                "A few dashes of plain water (optional)"]
         },
         {
             "name": "Martini",
             "type": "Cocktail",
-            "genres": ["science fiction", "mystery fiction", "romance"]
-
+            "genres": ["science fiction", "mystery fiction", "romance"],
+            "instructions": [
+                "2 oz. gin or vodka",
+                "1/2 oz. dry vermouth",
+                "Lemon twist or olive for garnish",
+                "Ice"
+            ]
         },
         {
             "name": "Piña Colada",
             "type": "Cocktail",
-            "genres": ["romance"] 
-
+            "genres": ["romance"],
+            "instructions": [
+                "2 oz. white rum",
+                "3 oz. pineapple juice",
+                "1 oz. coconut cream",
+                "1 cup crushed ice",
+                "Pineapple slice and maraschino cherry for garnish"
+            ]
         },
         {
             "name": "Blue Lagoon",
             "type":"Cocktail",
-            "genres":["science fiction"]
+            "genres":["science fiction"],
+            "instructions": [
+                "1 1/2 oz. vodka",
+                "1/2 oz. blue curaçao",
+                "Lemonade",
+                "Lemon slice and maraschino cherry for garnish",
+                "Ice"
+            ]
+
         },
         {
             "name": "Mojito",
             "type": "Cocktail",
-            "genres": ["romance", "action & adventure"]
+            "genres": ["romance", "action & adventure"],
+            "instructions": [
+                "2 oz. white rum",
+                "1 oz. lime juice",
+                "2 tsp. sugar",
+                "6 mint leaves",
+                "Club soda",
+                "Mint sprig for garnish",
+                "Ice"
+            ]
 
         },
         {
             "name": "Bloody Mary",
             "type": "Cocktail",
-            "genres": ["horror"]
+            "genres": ["horror"],
+            "instructions": [
+                "1 1/2 oz. vodka",
+                "3 oz. tomato juice",
+                "1/2 oz. lemon juice",
+                "Worcestershire sauce",
+                "Tabasco sauce",
+                "Celery salt",
+                "Pepper",
+                "Celery stalk and lemon wedge for garnish",
+                "Ice"
+            ]
 
         },
         {
             "name":"Cosmopolitan",
             "type":"Cocktail",
-            "genres":["romance"]  
+            "genres":["romance"],
+            "instructions": [
+                "1 1/2 oz. vodka",
+                "1 oz. cranberry juice",
+                "1/2 oz. triple sec",
+                "1/2 oz. lime juice",
+                "Lime wedge for garnish",
+                "Ice"
+            ]
         },
         {
             "name":"Aperol Spritz",
             "type": "Cocktail",
-            "genres":["romance"]
+            "genres":["romance"],
+            "instructions": [
+                "3 oz. Prosecco",
+                "2 oz. Aperol",
+                "1 oz. soda water",
+                "Orange slice for garnish",
+                "Ice"
+            ]
         },
         {
             "name": "Moscow Mule",
             "type": "Cocktail",
-            "genres": ["action & adventure","romance"]
+            "genres": ["action & adventure","romance"],
+            "instructions": [
+                "2 oz. vodka",
+                "1/2 oz. lime juice",
+                "4 oz. ginger beer",
+                "Lime wedge for garnish",
+                "Ice"
+            ]
 
         },
         {
             "name":"Espresso Martini",
             "type":"Cocktail",
-            "genres":["historical fiction","mystery fiction"]
+            "genres":["historical fiction","mystery fiction"],
+            "instructions": [
+                "1 1/2 oz. vodka",
+                "1 oz. Kahlúa",
+                "1 oz. espresso",
+                "3 coffee beans for garnish",
+                "Ice"
+            ]
         },
         {
             "name":"Vodka Cranberry",
             "type":"Cocktail",
-            "genres":["romance","mystery fiction"]
+            "genres":["romance","mystery fiction"],
+            "instructions": [
+                "2 oz. vodka",
+                "4 oz. cranberry juice",
+                "Lime wedge for garnish",
+                "Ice"
+            ]
         },
         {
             "name":"Sex on the Beach",
             "type":"Cocktail",
-            "genres":["romance"]
+            "genres":["romance"],
+            "instructions": [
+                "1 1/2 oz. vodka",
+                "1/2 oz. peach schnapps",
+                "2 oz. orange juice",
+                "2 oz. cranberry juice",
+                "Orange slice and maraschino cherry for garnish",
+                "Ice"
+            ]
         },
         {
             "name": "Sangira",
             "type": "Cocktail",
-            "genres": ["romance"]
+            "genres": ["romance"],
+            "instructions": [
+                "1 bottle of red wine",
+                "1/4 cup brandy",
+                "1/4 cup orange liqueur",
+                "1/4 cup orange juice",
+                "1/4 cup simple syrup",
+                "1/2 cup sliced strawberries",
+                "1/2 cup raspberries",
+                "1/2 cup blackberries",
+                "1 sliced orange",
+                "1 sliced lemon",
+                "1 sliced lime",
+                "Ice"
+            ]
 
         },
         {
             "name": "Sonic Screwdriver",
             "type": "Cocktail",
-            "genres": ["science fiction"]
+            "genres": ["science fiction"],
+            "instructions": [
+                "1 1/2 oz. vodka",
+                "5 oz. orange juice",
+                "Orange slice for garnish",
+                "Ice"
+            ]
 
         },
         {
             "name": "Spiced Wine",
             "type": "Cocktail",
-            "genres": ["fantasy fiction"]
-
+            "genres": ["fantasy fiction"],
+            "instructions": [
+                "1 bottle of red wine",
+                "1/4 cup brandy",
+                "1/4 cup honey",
+                "1 sliced orange",
+                "1 sliced lemon",
+                "1 sliced lime",
+                "1 cinnamon stick",
+                "1 star anise",
+                "1 tsp. whole cloves",
+                "1 tsp. whole allspice",
+                "1 tsp. whole black peppercorns",
+                "1 tsp. whole cardamom pods",
+                "1 tsp. juniper berries"
+            ]
         },
         {
             "name": "Gin and Tonic",
             "type": "Cocktail",
-            "genres": ["mystery fiction", "thriller"]
+            "genres": ["mystery fiction", "thriller"],
+            "instructions": [
+                "2 oz. gin",
+                "4 oz. tonic water",
+                "Lime wedge for garnish",
+                "Ice"
+            ]
 
         },
         {
             "name": "Dark and Stormy",
             "type": "Cocktail",
-            "genres": ["mystery fiction", "thriller"]
+            "genres": ["mystery fiction", "thriller"],
+            "instructions": [
+                "2 oz. dark rum",
+                "3 oz. ginger beer",
+                "Lime wedge for garnish",
+                "Ice"
+            ]
 
         },
         {
             "name": "Moscato",
             "type": "Wine",
-            "genres": ["romance"]
+            "genres": ["romance"],
+            "instructions": [
+                "1 bottle of Moscato",
+                "1/4 cup brandy",
+                "1/4 cup orange liqueur",
+                "1/4 cup orange juice",
+                "1/4 cup simple syrup",
+                "1/2 cup sliced strawberries",
+                "1/2 cup raspberries",
+                "1/2 cup blackberries",
+                "1 sliced orange",
+                "1 sliced lemon",
+                "1 sliced lime",
+                "Ice"
+            ]
 
         },
         {
             "name": "Pinot Noir",
             "type": "Wine",
-            "genres": ["romance", "mystery fiction"]
+            "genres": ["romance", "mystery fiction"],
+            "instructions": [
+                "1 bottle of Pinot Noir",
+                "1/4 cup brandy",
+                "1/4 cup orange liqueur",
+                "1/4 cup orange juice",
+                "1/4 cup simple syrup",
+                "1/2 cup sliced strawberries",
+                "1/2 cup raspberries",
+                "1/2 cup blackberries",
+                "1 sliced orange",
+                "1 sliced lemon",
+                "1 sliced lime",
+                "Ice"
+            ]
 
         },
         {
             "name": "Merlot",
             "type": "Wine",
-            "genres": ["romance", "mystery fiction", "science fiction"]
+            "genres": ["romance", "mystery fiction", "science fiction"],
+            "instructions": [
+                "1 bottle of Merlot",
+                "1/4 cup brandy",
+                "1/4 cup orange liqueur",
+                "1/4 cup orange juice",
+                "1/4 cup simple syrup",
+                "1/2 cup sliced strawberries",
+                "1/2 cup raspberries",
+                "1/2 cup blackberries",
+                "1 sliced orange",
+                "1 sliced lemon",
+                "1 sliced lime",
+                "Ice"
+            ]
 
         },
         {
             "name": "Rosé",
             "type": "Wine",
-            "genres": ["romance"]
+            "genres": ["romance"],
+            "instructions": [
+                "1 bottle of Rosé",
+                "1/4 cup brandy",
+                "1/4 cup orange liqueur",
+                "1/4 cup orange juice",
+                "1/4 cup simple syrup",
+                "1/2 cup sliced strawberries",
+                "1/2 cup raspberries",
+                "1/2 cup blackberries",
+                "1 sliced orange",
+                "1 sliced lemon",
+                "1 sliced lime",
+                "Ice"
+            ]
 
         },
         {
             "name": "Chardonnay",
             "type": "Wine",
-            "genres": ["romance"]
+            "genres": ["romance"],
+            "instructions": [
+                "1 bottle of Chardonnay",
+                "1/4 cup brandy",
+                "1/4 cup orange liqueur",
+                "1/4 cup orange juice",
+                "1/4 cup simple syrup",
+                "1/2 cup sliced strawberries",
+                "1/2 cup raspberries",
+                "1/2 cup blackberries",
+                "1 sliced orange",
+                "1 sliced lemon",
+                "1 sliced lime",
+                "Ice"
+            ]
 
         },
         {
             "name": "Dry Vermouth",
             "type": "Wine",
-            "genres": ["science fiction"]
+            "genres": ["science fiction"],
+            "instructions": [
+                "1 bottle of Dry Vermouth",
+                "1/4 cup brandy",
+                "1/4 cup orange liqueur",
+                "1/4 cup orange juice",
+                "1/4 cup simple syrup",
+                "1/2 cup sliced strawberries",
+                "1/2 cup raspberries",
+                "1/2 cup blackberries",
+                "1 sliced orange",
+                "1 sliced lemon",
+                "1 sliced lime",
+                "Ice"
+            ]
 
         },
         {
             "name": "Sherry",
             "type": "Wine",
-            "genres": ["romance"]
+            "genres": ["romance"],
+            "instructions": [
+                "1 bottle of Sherry",
+                "1/4 cup brandy",
+                "1/4 cup orange liqueur",
+                "1/4 cup orange juice",
+                "1/4 cup simple syrup",
+                "1/2 cup sliced strawberries",
+                "1/2 cup raspberries",
+                "1/2 cup blackberries",
+                "1 sliced orange",
+                "1 sliced lemon",
+                "1 sliced lime",
+                "Ice"
+            ]
 
         },
         {
             "name": "Champagne",
             "type": "Wine",
-            "genres": ["romance"]
+            "genres": ["romance"],
+            "instructions": [
+                "1 bottle of Champagne",
+                "1/4 cup brandy",
+                "1/4 cup orange liqueur",
+                "1/4 cup orange juice",
+                "1/4 cup simple syrup",
+                "1/2 cup sliced strawberries",
+                "1/2 cup raspberries",
+                "1/2 cup blackberries",
+                "1 sliced orange",
+                "1 sliced lemon",
+                "1 sliced lime",
+                "Ice"
+            ]
 
         },
         {
             "name": "Zinfandel",
             "type": "Wine",
-            "genres": ["romance"]
+            "genres": ["romance"],
+            "instructions": [
+                "1 bottle of Zinfandel",
+                "1/4 cup brandy",
+                "1/4 cup orange liqueur",
+                "1/4 cup orange juice",
+                "1/4 cup simple syrup",
+                "1/2 cup sliced strawberries",
+                "1/2 cup raspberries",
+                "1/2 cup blackberries",
+                "1 sliced orange",
+                "1 sliced lemon",
+                "1 sliced lime",
+                "Ice"
+            ]
 
         },
         {
             "name": "Cabernet Sauvignon",
             "type": "Wine",
-            "genres": ["science fiction"]
+            "genres": ["science fiction"],
+            "instructions": [
+                "1 bottle of Cabernet Sauvignon",
+                "1/4 cup brandy",
+                "1/4 cup orange liqueur",
+                "1/4 cup orange juice",
+                "1/4 cup simple syrup",
+                "1/2 cup sliced strawberries",
+                "1/2 cup raspberries",
+                "1/2 cup blackberries",
+                "1 sliced orange",
+                "1 sliced lemon",
+                "1 sliced lime",
+                "Ice"
+            ]
 
         },
         {
             "name": "Syrah",
             "type": "Wine",
-            "genres": ["romance", "mystery fiction"]
+            "genres": ["romance", "mystery fiction"],
+            "instructions": [
+                "1 bottle of Syrah",
+                "1/4 cup brandy",
+                "1/4 cup orange liqueur",
+                "1/4 cup orange juice",
+                "1/2 cup sliced strawberries",
+                "1/2 cup raspberries",
+                "1/2 cup blackberries",
+                "1 sliced orange",
+                "1 sliced lemon",
+                "Ice"
+            ]
 
         },
         {
             "name": "Malbec",
             "type": "Wine",
-            "genres": ["romance", "mystery fiction", "horror"]
+            "genres": ["romance", "mystery fiction", "horror"],
+            "instructions": [
+                "1 bottle of Malbec",
+                "1/4 cup brandy",
+                "1/4 cup orange liqueur",
+                "1/4 cup orange juice",
+                "1/2 cup sliced strawberries",
+                "1/2 cup raspberries",
+                "1/2 cup blackberries",
+                "1 sliced orange",
+                "1 sliced lemon",
+                "Ice"
+            ]
 
         },
         {
             "name": "Mead",
             "type": "Wine",
-            "genres": ["fantasy fiction", "historical fiction"]
+            "genres": ["fantasy fiction", "historical fiction"],
+            "instructions": [
+                "1 bottle of Mead",
+                "1/4 cup brandy",
+                "1/4 cup orange liqueur",
+                "1/4 cup orange juice",
+                "1/2 cup sliced strawberries",
+                "1/2 cup raspberries",
+                "1/2 cup blackberries",
+                "1 sliced orange",
+                "1 sliced lemon",
+                "Ice"
+            ]
 
         },
         {
             "name": "Stout",
             "type": "Beer",
-            "genres": ["action & adventure", "horror", "thriller"]
+            "genres": ["action & adventure", "horror", "thriller"],
+            "instructions": [
+                "1 bottle of Stout",
+                "1/4 cup brandy",
+                "1/4 cup orange liqueur",
+                "1/4 cup orange juice",
+                "1/4 cup simple syrup",
+                "1/2 cup sliced strawberries",
+                "1/2 cup raspberries",
+                "1/2 cup blackberries",
+                "1 sliced orange",
+                "1 sliced lemon",
+                "1 sliced lime",
+                "Ice"
+
+            ]
 
         },
         {
             "name": "IPA",
             "type": "Beer",
-            "genres": ["action & adventure", "thriller"]
+            "genres": ["action & adventure", "thriller"],
+            "instructions": [
+                "1 bottle of IPA",
+                "1/4 cup brandy",
+                "1/4 cup orange liqueur",
+                "1/4 cup orange juice",
+                "1/4 cup simple syrup",
+                "1/2 cup sliced strawberries",
+                "1/2 cup raspberries",
+                "1/2 cup blackberries",
+                "1 sliced orange",
+                "1 sliced lemon",
+                "1 sliced lime",
+                "Ice"
+
+            ]
 
         },
         {
             "name": "Guiness",
             "type": "Beer",
-            "genres": ["fantasy fiction"]
+            "genres": ["fantasy fiction"],
+            "instructions": [
+                "1 bottle of Guiness",
+                "1/4 cup brandy",
+                "1/4 cup orange liqueur",
+                "1/4 cup orange juice",
+                "1/4 cup simple syrup",
+                "1/2 cup sliced strawberries",
+                "1/2 cup raspberries",
+                "1/2 cup blackberries",
+                "1 sliced orange",
+                "1 sliced lemon",
+                "1 sliced lime",
+                "Ice"
+
+            ]
 
         },
         {
             "name": "Dark Rum",
             "type": "Spirits",
-            "genres": ["action & adventure", "mystery fiction", "thriller"]
+            "genres": ["action & adventure", "mystery fiction", "thriller"],
+            "instructions": [
+                "1 bottle of Dark Rum",
+                "1/4 cup brandy",
+                "1/4 cup orange liqueur",
+                "1/4 cup orange juice",
+                "1/4 cup simple syrup",
+                "1/2 cup sliced strawberries",
+                "1/2 cup raspberries",
+                "1/2 cup blackberries",
+                "1 sliced orange",
+                "1 sliced lemon",
+                "1 sliced lime",
+                "Ice"
+            ]
 
         },
         {
             "name": "Whiskey",
             "type": "Spirits",
-            "genres": ["horror", "science fiction", "action & adventure", "historical fiction"]
+            "genres": ["horror", "science fiction", "action & adventure", "historical fiction"],
+            "instructions": [
+                "1 bottle of Whiskey",
+                "1/4 cup brandy",
+                "1/4 cup orange liqueur",
+                "1/4 cup orange juice",
+                "1/4 cup simple syrup",
+                "1/2 cup sliced strawberries",
+                "1/2 cup raspberries",
+                "1/2 cup blackberries",
+                "1 sliced orange",
+                "1 sliced lemon",
+                "1 sliced lime",
+                "Ice"
+            ]
 
         },
         {
             "name":"Rumchata",
             "type":"Spirits",
-            "genres":["mystery fiction"]
+            "genres":["mystery fiction"],
+            "instructions":[
+                "1 bottle of Rumchata",
+                "1/4 cup brandy",
+                "1/4 cup orange liqueur",
+                "1/4 cup orange juice",
+                "1/4 cup simple syrup",
+                "1/2 cup sliced strawberries",
+                "1/2 cup raspberries",
+                "1/2 cup blackberries",
+                "1 sliced orange",
+                "1 sliced lemon",
+                "1 sliced lime",
+                "Ice"
+            ]
         },
         {
             "name": "Tequila",
             "type": "Spirits",
-            "genres": ["action & adventure"]
+            "genres": ["action & adventure"],
+            "instructions": [
+                "1 bottle of Tequila",
+                "1/4 cup brandy",
+                "1/4 cup orange liqueur",
+                "1/4 cup orange juice",
+                "1/4 cup simple syrup",
+                "1/2 cup sliced strawberries",
+                "1/2 cup raspberries",
+                "1/2 cup blackberries",
+                "1 sliced orange",
+                "1 sliced lemon",
+                "1 sliced lime",
+                "Ice"
+            ]
 
         },
         {
             "name": "Gin",
             "type": "Spirits",
-            "genres": ["historical fiction"]
+            "genres": ["historical fiction"],
+            "instructions": [
+                "1 bottle of Gin",
+                "1/4 cup brandy",
+                "1/4 cup orange liqueur",
+                "1/4 cup orange juice",
+                "1/4 cup simple syrup",
+                "1/2 cup sliced strawberries",
+                "1/2 cup raspberries",
+                "1/2 cup blackberries",
+                "1 sliced orange",
+                "1 sliced lemon",
+                "1 sliced lime",
+                "Ice"
+            ]
 
         },
         {
             "name": "White Rum",
             "type": "Spirits",
-            "genres": ["action & adventure"]
+            "genres": ["action & adventure"],
+            "instructions": [
+                "1 bottle of White Rum",
+                "1/4 cup brandy",
+                "1/4 cup orange liqueur",
+                "1/4 cup orange juice",
+                "1/4 cup simple syrup",
+                "1/2 cup sliced strawberries",
+                "1/2 cup raspberries",
+                "1/2 cup blackberries",
+                "1 sliced orange",
+                "1 sliced lemon",
+                "1 sliced lime",
+                "Ice"
+            ]
 
         },
         {
             "name": "Bourbon",
             "type": "Spirits",
-            "genres": ["science fiction","horror"]
+            "genres": ["science fiction","horror"],
+            "instructions": [
+                "1 bottle of Bourbon",
+                "1/4 cup brandy",
+                "1/4 cup orange liqueur",
+                "1/4 cup orange juice",
+                "1/4 cup simple syrup",
+                "1/2 cup sliced strawberries",
+                "1/2 cup raspberries",
+                "1/2 cup blackberries",
+                "1 sliced orange",
+                "1 sliced lemon",
+                "1 sliced lime",
+                "Ice"
+            ]
 
         },
         {
             "name": "Absinthe",
             "type": "Spirits",
-            "genres": ["historical fiction"]
+            "genres": ["historical fiction"],
+            "instructions": [
+                "1 bottle of Absinthe",
+                "1/4 cup brandy",
+                "1/4 cup orange liqueur",
+                "1/4 cup orange juice",
+                "1/4 cup simple syrup",
+                "1/2 cup sliced strawberries",
+                "1/2 cup raspberries",
+                "1/2 cup blackberries",
+                "1 sliced orange",
+                "1 sliced lemon",
+                "1 sliced lime",
+                "Ice"
+            ]
 
         },
         {
             "name": "Curaçao",
             "type": "Spirits",
-            "genres":["science fiction"]
+            "genres":["science fiction"],
+            "instructions": [
+                "1 bottle of Curaçao",
+                "1/4 cup brandy",
+                "1/4 cup orange liqueur",
+                "1/4 cup orange juice",
+                "1/4 cup simple syrup",
+                "1/2 cup sliced strawberries",
+                "1/2 cup raspberries",
+                "1/2 cup blackberries",
+                "1 sliced orange",
+                "1 sliced lemon",
+                "1 sliced lime",
+                "Ice"
+            ]
         },
         {
             "name": "Brandy",
             "type": "Spirits",
-            "genres": ["historical fiction"]
+            "genres": ["historical fiction"],
+            "instructions": [
+                "1 bottle of Brandy",
+                "1/4 cup brandy",
+                "1/4 cup orange liqueur",
+                "1/4 cup orange juice",
+                "1/4 cup simple syrup",
+                "1/2 cup sliced strawberries",
+                "1/2 cup raspberries",
+                "1/2 cup blackberries",
+                "1 sliced orange",
+                "1 sliced lemon",
+                "1 sliced lime",
+                "Ice"
+            ]
 
         },
         {
             "name": "Cider",
             "type": "Other",
-            "genres": ["fantasy fiction"]
+            "genres": ["fantasy fiction"],
+            "instructions": [
+                "1 bottle of Cider",
+                "1/4 cup brandy",
+                "1/4 cup orange liqueur",
+                "1/4 cup orange juice",
+                "1/4 cup simple syrup",
+                "1/2 cup sliced strawberries",
+                "1/2 cup raspberries",
+                "1/2 cup blackberries",
+                "1 sliced orange",
+                "1 sliced lemon",
+                "1 sliced lime",
+                "Ice"
+            ]
 
         }
     ]
