@@ -1,14 +1,16 @@
 <script setup>
+// set up the props for passing in variables
 const props = defineProps({
-  url: String,
-  name: String,
-  rating: Number,
-  instruction: Array
+  url: String, // the url for the image
+  name: String, // the name of the drink
+  rating: Number, // the rating for the matching drink
+  instruction: Array // the instructions for how to make the drink
 })
 
 </script>
 
 <template>
+  <!--  detailed drink starts here-->
   <div class="pic">
     <el-image :src="props.url" fit="cover"/>
   </div>
@@ -24,13 +26,8 @@ const props = defineProps({
       <p>(bobobobobobobobobobobobobob)</p>
       <p>(bobobobobobobobobobobobobob)</p>
     </div>
-    <div class="btns">
-      <span class="btn"><el-icon :size="50" color="White"><Download /></el-icon></span>
-      <span class="btn"><el-icon :size="50" color="White"><Share /></el-icon></span>
-      <span class="btn"><el-icon :size="50" color="White"><Refresh /></el-icon></span>
-    </div>
-
   </div>
+  <!--  detailed drink ends here-->
 </template>
 
 <style scoped>

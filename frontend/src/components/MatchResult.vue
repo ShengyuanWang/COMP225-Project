@@ -1,12 +1,16 @@
 <script setup>
+// import required packages
 import {ElNotification} from "element-plus";
 import { h } from 'vue'
+
+// set up props for matching result
 const props = defineProps({
-  url: String,
-  name: String,
-  rating: Number
+  url: String, // the url for the image
+  name: String, // the name of drink item
+  rating: Number // the rating for the match
 })
 
+// handling the click action for the download icon
 const clickDownload = () => {
   console.log('Click Download')
   ElNotification({
@@ -15,6 +19,7 @@ const clickDownload = () => {
   })
 }
 
+// handling the click action for the share icon
 const clickShare = () => {
   console.log('Click Share')
   ElNotification({
@@ -23,6 +28,7 @@ const clickShare = () => {
   })
 }
 
+// handling the click action for the change icon
 const clickChange = () => {
   console.log('Click Change')
   ElNotification({
@@ -30,8 +36,6 @@ const clickChange = () => {
     message: h('i', { style: 'color: teal' }, 'You have successfully change another matching result'),
   })
 }
-
-
 </script>
 
 <template>

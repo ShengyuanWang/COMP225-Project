@@ -1,30 +1,27 @@
-<script>
+<script setup>
+  // import packages required
   import router from "../../router";
   import {reactive} from "vue";
 
-  export default {
-    setup() {
-      const obj = reactive({
-        underage: 0
-      })
-      function onClickYes() {
-        console.log("click yes");
-        router.push('search');
-        return 0;
-      }
+  // define objects
+  const obj = reactive({
+    underage: 0
+  })
 
-      function onClickNo() {
-        console.log("click no");
-        obj.underage = 1;
-        return 0;
-      }
-      return {
-        obj,
-        onClickYes,
-        onClickNo
-      }
-    },
+  // function for handling click yes btn
+  const onClickYes = () => {
+    console.log("click yes");
+    router.push('search');
+    return 0;
   }
+
+  // function for handling click no btn
+  const onClickNo = () => {
+    console.log("click no");
+    obj.underage = 1;
+    return 0;
+  }
+
 
 
 

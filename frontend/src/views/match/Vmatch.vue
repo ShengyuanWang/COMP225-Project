@@ -1,12 +1,13 @@
 <script setup>
-
+// import required packages
 import Qinput from "@/components/Qinput.vue";
 import MatchResult from "@/components/MatchResult.vue";
 import { useRoute } from 'vue-router'
-//首先在setup中定义
 const route = useRoute()
-let stars = route.query.stars;
-let name = route.query.name;
+
+// get the variables from route url
+const stars = route.query.stars;
+const name = route.query.name;
 </script>
 
 <template>

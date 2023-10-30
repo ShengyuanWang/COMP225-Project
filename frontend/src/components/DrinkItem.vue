@@ -1,8 +1,9 @@
 <script setup>
+// set up props for Drink items
 const props = defineProps({
-  name: String,
-  instruction: String,
-  url: String
+  name: String, // the name of the drink
+  instruction: String, // the instruction about how to make the drink
+  url: String // the url for the image of the drink
 })
 </script>
 
