@@ -10,7 +10,8 @@
                 "2 dashes Angostura bitters",
                 "Orange or lemon twist",
                 "Ice",
-                "A few dashes of plain water (optional)"]
+                "A few dashes of plain water (optional)"],
+            "information": "An Old Fashioned is a timeless classic cocktail. To craft this iconic drink, start by placing a sugar cube in an old-fashioned glass and saturating it with 2 dashes of Angostura bitters. If you prefer a sweeter variant, add a few dashes of plain water to help dissolve the sugar. Gently muddle the sugar and bitters until the sugar is dissolved. Fill the glass with ice cubes, and then pour in 2 oz. of your choice of bourbon or rye whiskey. Stir the mixture gently to combine the ingredients, and garnish with a twist of orange or lemon peel, expressing the citrus oils over the drink for an added aroma. Alternatively, you can use an olive as a garnish. The result is a beautifully simple yet sophisticated cocktail that's all about savoring the rich flavors of the whiskey."
         },
         {
             "name": "Martini",
@@ -21,7 +22,8 @@
                 "1/2 oz. dry vermouth",
                 "Lemon twist or olive for garnish",
                 "Ice"
-            ]
+            ],
+            "information": "The martini is one of the most iconic cocktails of all time. To craft this classic drink, start by chilling a cocktail glass in the freezer for at least 10 minutes. Then, fill a mixing glass with ice cubes and pour in 2 oz. of gin or vodka. Add 1/2 oz. of dry vermouth, and stir the mixture gently to combine the ingredients. Next, strain the mixture into the chilled cocktail glass. Garnish with a lemon twist or olive, and serve. The result is a beautifully simple yet sophisticated cocktail that's all about savoring the rich flavors of the liquor."
         },
         {
             "name": "Piña Colada",
@@ -33,7 +35,8 @@
                 "1 oz. coconut cream",
                 "1 cup crushed ice",
                 "Pineapple slice and maraschino cherry for garnish"
-            ]
+            ],
+            "information": "The piña colada is a classic tropical cocktail with rum, pineapple and coconut milk. To make a piña colada, start by adding 2 oz. of white rum, 3 oz. of pineapple juice and 1 oz. of coconut cream to a blender. Then, add 1 cup of crushed ice and blend the mixture until it's smooth. Pour the drink into a glass, and garnish with a pineapple slice and maraschino cherry. The result is a beautifully simple yet sophisticated cocktail that's all about savoring the rich flavors of the liquor."
         },
         {
             "name": "Blue Lagoon",
@@ -45,7 +48,8 @@
                 "Lemonade",
                 "Lemon slice and maraschino cherry for garnish",
                 "Ice"
-            ]
+            ],
+            "information": "The Blue Lagoon is a classic cocktail with vodka, blue curaçao and lemonade. To make a Blue Lagoon, start by adding 1 1/2 oz. of vodka and 1/2 oz. of blue curaçao to a highball glass filled with ice. Then, fill the glass with lemonade and stir the mixture gently to combine the ingredients. Garnish with a lemon slice and maraschino cherry, and serve. The result is a beautifully simple yet sophisticated cocktail that's all about savoring the rich flavors of the liquor."
 
         },
         {
@@ -60,7 +64,8 @@
                 "Club soda",
                 "Mint sprig for garnish",
                 "Ice"
-            ]
+            ],
+            "information": "The mojito is a classic Cuban cocktail with rum, mint and lime juice. To make a mojito, start by adding 2 oz. of white rum, 1 oz. of lime juice, 2 tsp. of sugar and 6 mint leaves to a highball glass. Then, gently muddle the mint leaves with a muddler or wooden spoon. Next, fill the glass with ice cubes and top it off with club soda. Stir the mixture gently to combine the ingredients, and garnish with a mint sprig. The result is a beautifully simple yet sophisticated cocktail that's all about savoring the rich flavors of the liquor."
 
         },
         {
@@ -77,7 +82,8 @@
                 "Pepper",
                 "Celery stalk and lemon wedge for garnish",
                 "Ice"
-            ]
+            ],
+            "information": "The Bloody Mary is a classic brunch cocktail with vodka, tomato juice and a combination of spices and flavorings. To make a Bloody Mary, start by adding 1 1/2 oz. of vodka, 3 oz. of tomato juice and 1/2 oz. of lemon juice to a highball glass. Then, add a few dashes of Worcestershire sauce, Tabasco sauce, celery salt and pepper. Stir the mixture gently to combine the ingredients, and garnish with a celery stalk and lemon wedge. The result is a beautifully simple yet sophisticated cocktail that's all about savoring the rich flavors of the liquor."
 
         },
         {
@@ -91,7 +97,8 @@
                 "1/2 oz. lime juice",
                 "Lime wedge for garnish",
                 "Ice"
-            ]
+            ],
+            "information": "The cosmopolitan is a classic cocktail with vodka, triple sec, cranberry juice and lime juice. To make a cosmopolitan, start by adding 1 1/2 oz. of vodka, 1 oz. of cranberry juice, 1/2 oz. of triple sec and 1/2 oz. of lime juice to a cocktail shaker filled with ice. Then, shake the mixture vigorously for 10 to 15 seconds. Strain the mixture into a chilled cocktail glass, and garnish with a lime wedge. The result is a beautifully simple yet sophisticated cocktail that's all about savoring the rich flavors of the liquor."
         },
         {
             "name":"Aperol Spritz",
@@ -103,7 +110,8 @@
                 "1 oz. soda water",
                 "Orange slice for garnish",
                 "Ice"
-            ]
+            ],
+            "information": "The Aperol spritz is a classic Italian cocktail with Prosecco, Aperol and soda water. To make an Aperol spritz, start by adding 3 oz. of Prosecco, 2 oz. of Aperol and 1 oz. of soda water to a wine glass filled with ice. Then, stir the mixture gently to combine the ingredients, and garnish with an orange slice. The result is a beautifully simple yet sophisticated cocktail that's all about savoring the rich flavors of the liquor."
         },
         {
             "name": "Moscow Mule",
@@ -115,7 +123,8 @@
                 "4 oz. ginger beer",
                 "Lime wedge for garnish",
                 "Ice"
-            ]
+            ],
+            "information": "The Moscow Mule is a refreshing and zesty cocktail with a signature copper mug presentation. To craft this drink, start by filling a copper mug or highball glass with ice. Squeeze the juice from half a lime into the glass, and drop the spent lime shell in. Then, pour in 2 oz. of vodka. Top it off with approximately 4 oz. of ginger beer, or adjust to your preferred level of ginger flavor. Give it a gentle stir to mix the ingredients. To garnish, add a lime wheel or wedge for an extra burst of citrus aroma. The Moscow Mule is known for its crisp and tangy taste, making it a popular choice for a refreshing and enjoyable cocktail."
 
         },
         {
@@ -128,7 +137,8 @@
                 "1 oz. espresso",
                 "3 coffee beans for garnish",
                 "Ice"
-            ]
+            ],
+            "information": "The espresso martini is a classic cocktail with vodka, Kahlúa and espresso. To make an espresso martini, start by adding 1 1/2 oz. of vodka, 1 oz. of Kahlúa and 1 oz. of espresso to a cocktail shaker filled with ice. Then, shake the mixture vigorously for 10 to 15 seconds. Strain the mixture into a chilled cocktail glass, and garnish with 3 coffee beans. The result is a beautifully simple yet sophisticated cocktail that's all about savoring the rich flavors of the liquor."
         },
         {
             "name":"Vodka Cranberry",
@@ -139,7 +149,8 @@
                 "4 oz. cranberry juice",
                 "Lime wedge for garnish",
                 "Ice"
-            ]
+            ],
+            "information": "The vodka cranberry is a classic cocktail with vodka and cranberry juice. To make a vodka cranberry, start by adding 2 oz. of vodka and 4 oz. of cranberry juice to a highball glass filled with ice. Then, stir the mixture gently to combine the ingredients, and garnish with a lime wedge. The result is a beautifully simple yet sophisticated cocktail that's all about savoring the rich flavors of the liquor."
         },
         {
             "name":"Sex on the Beach",
@@ -152,7 +163,8 @@
                 "2 oz. cranberry juice",
                 "Orange slice and maraschino cherry for garnish",
                 "Ice"
-            ]
+            ],
+            "information": "Sex on the Beach is a tropical and fruity cocktail that's both colorful and delightful. To create this cocktail, start by filling a highball glass with ice. Pour in 1.5 oz. of vodka and 3/4 oz. of peach schnapps. Add 2 oz. of cranberry juice and 2 oz. of orange juice. Give it a gentle stir to mix the ingredients and create the vibrant layered look. To garnish, you can add a maraschino cherry and a slice of orange or a twist of orange peel. The result is a sweet and fruity concoction that's perfect for sipping by the beach or on a sunny day. Enjoy your Sex on the Beach!"
         },
         {
             "name": "Sangira",
@@ -171,7 +183,8 @@
                 "1 sliced lemon",
                 "1 sliced lime",
                 "Ice"
-            ]
+            ],
+            "information": "Sangria is a classic cocktail with red wine, brandy and fruit. To make sangria, start by adding 1/4 cup of brandy, 1/4 cup of orange liqueur, 1/4 cup of orange juice and 1/4 cup of simple syrup to a pitcher. Then, add 1/2 cup of sliced strawberries, 1/2 cup of raspberries and 1/2 cup of blackberries. Next, add 1 sliced orange, 1 sliced lemon and 1 sliced lime. Finally, pour in 1 bottle of red wine. Stir the mixture gently to combine the ingredients, and chill in the refrigerator for at least 4 hours. The result is a beautifully simple yet sophisticated cocktail that's all about savoring the rich flavors of the liquor."
 
         },
         {
@@ -183,7 +196,8 @@
                 "5 oz. orange juice",
                 "Orange slice for garnish",
                 "Ice"
-            ]
+            ],
+            "information": "The Sonic Screwdriver is a refreshing and zesty cocktail with a signature copper mug presentation. To craft this drink, start by filling a copper mug or highball glass with ice. Squeeze the juice from half a lime into the glass, and drop the spent lime shell in. Then, pour in 2 oz. of vodka. Top it off with approximately 4 oz. of ginger beer, or adjust to your preferred level of ginger flavor. Give it a gentle stir to mix the ingredients. To garnish, add a lime wheel or wedge for an extra burst of citrus aroma. The Sonic Screwdriver is known for its crisp and tangy taste, making it a popular choice for a refreshing and enjoyable cocktail."
 
         },
         {
@@ -204,7 +218,8 @@
                 "1 tsp. whole black peppercorns",
                 "1 tsp. whole cardamom pods",
                 "1 tsp. juniper berries"
-            ]
+            ],
+            "information": "Spiced wine is a classic cocktail with red wine, brandy and spices. To make spiced wine, start by adding 1/4 cup of brandy and 1/4 cup of honey to a saucepan. Then, add 1 sliced orange, 1 sliced lemon and 1 sliced lime. Next, add 1 cinnamon stick, 1 star anise, 1 tsp. of whole cloves, 1 tsp. of whole allspice, 1 tsp. of whole black peppercorns, 1 tsp. of whole cardamom pods and 1 tsp. of juniper berries. Finally, pour in 1 bottle of red wine. Heat the mixture over medium heat until it reaches a simmer. Then, reduce the heat to low and simmer for 15 minutes. Strain the mixture into a pitcher, and serve warm. The result is a beautifully simple yet sophisticated cocktail that's all about savoring the rich flavors of the liquor."
         },
         {
             "name": "Gin and Tonic",
@@ -215,7 +230,8 @@
                 "4 oz. tonic water",
                 "Lime wedge for garnish",
                 "Ice"
-            ]
+            ],
+            "information": "The Gin and Tonic is a classic cocktail with a signature copper mug presentation. To craft this drink, start by filling a copper mug or highball glass with ice. Squeeze the juice from half a lime into the glass, and drop the spent lime shell in. Then, pour in 2 oz. of gin. Top it off with approximately 4 oz. of tonic water, or adjust to your preferred level of tonic flavor. Give it a gentle stir to mix the ingredients. To garnish, add a lime wheel or wedge for an extra burst of citrus aroma. The Gin and Tonic is known for its crisp and tangy taste, making it a popular choice for a refreshing and enjoyable cocktail."
 
         },
         {
@@ -227,7 +243,8 @@
                 "3 oz. ginger beer",
                 "Lime wedge for garnish",
                 "Ice"
-            ]
+            ],
+            "information": "The Dark and Stormy is a classic cocktail with a signature copper mug presentation. To craft this drink, start by filling a copper mug or highball glass with ice. Squeeze the juice from half a lime into the glass, and drop the spent lime shell in. Then, pour in 2 oz. of dark rum. Top it off with approximately 3 oz. of ginger beer, or adjust to your preferred level of ginger flavor. Give it a gentle stir to mix the ingredients. To garnish, add a lime wheel or wedge for an extra burst of citrus aroma. The Dark and Stormy is known for its crisp and tangy taste, making it a popular choice for a refreshing and enjoyable cocktail."
 
         },
         {
@@ -247,7 +264,8 @@
                 "1 sliced lemon",
                 "1 sliced lime",
                 "Ice"
-            ]
+            ],
+            "information": "Moscato is a sweet white wine with a signature copper mug presentation. To craft this drink, start by filling a copper mug or highball glass with ice. Squeeze the juice from half a lime into the glass, and drop the spent lime shell in. Then, pour in 2 oz. of vodka. Top it off with approximately 4 oz. of ginger beer, or adjust to your preferred level of ginger flavor. Give it a gentle stir to mix the ingredients. To garnish, add a lime wheel or wedge for an extra burst of citrus aroma. The Moscato is known for its crisp and tangy taste, making it a popular choice for a refreshing and enjoyable cocktail."
 
         },
         {
@@ -267,7 +285,8 @@
                 "1 sliced lemon",
                 "1 sliced lime",
                 "Ice"
-            ]
+            ],
+            "information": "Pinot Noir is a dry red wine with a signature copper mug presentation. To craft this drink, start by filling a copper mug or highball glass with ice. Squeeze the juice from half a lime into the glass, and drop the spent lime shell in. Then, pour in 2 oz. of vodka. Top it off with approximately 4 oz. of ginger beer, or adjust to your preferred level of ginger flavor. Give it a gentle stir to mix the ingredients. To garnish, add a lime wheel or wedge for an extra burst of citrus aroma. The Pinot Noir is known for its crisp and tangy taste, making it a popular choice for a refreshing and enjoyable cocktail."
 
         },
         {
@@ -287,7 +306,8 @@
                 "1 sliced lemon",
                 "1 sliced lime",
                 "Ice"
-            ]
+            ],
+            "information": "Merlot is a dry red wine with a signature copper mug presentation. To craft this drink, start by filling a copper mug or highball glass with ice. Squeeze the juice from half a lime into the glass, and drop the spent lime shell in. Then, pour in 2 oz. of vodka. Top it off with approximately 4 oz. of ginger beer, or adjust to your preferred level of ginger flavor. Give it a gentle stir to mix the ingredients. To garnish, add a lime wheel or wedge for an extra burst of citrus aroma. The Merlot is known for its crisp and tangy taste, making it a popular choice for a refreshing and enjoyable cocktail."
 
         },
         {
@@ -307,7 +327,8 @@
                 "1 sliced lemon",
                 "1 sliced lime",
                 "Ice"
-            ]
+            ],
+            "information": "To make homemade rosé wine, start with red wine (usually a light red, such as Pinot Noir or Grenache) and white wine (like Chardonnay or Sauvignon Blanc). Experiment with different proportions until you achieve the color and taste you desire. Blend the red and white wines in a glass container and stir gently. Allow the mixture to rest for a few hours, periodically tasting to find the right balance. Once satisfied, strain and transfer your homemade rosé to a clean bottle. Chill and serve your refreshing homemade rosé wine."
 
         },
         {
@@ -327,7 +348,8 @@
                 "1 sliced lemon",
                 "1 sliced lime",
                 "Ice"
-            ]
+            ],
+            "information": "To make homemade Chardonnay wine, start by harvesting Chardonnay grapes when they are ripe. Crush the grapes to extract the juice and transfer it to a fermentation vessel. Add a suitable wine yeast, and allow fermentation to take place. After fermentation, transfer the wine to oak barrels for aging, usually for several months. Monitor the aging process, tasting occasionally, until you achieve the desired flavor profile. Finally, bottle your homemade Chardonnay and allow it to rest for a period before enjoying your unique creation responsibly."
 
         },
         {
@@ -347,7 +369,8 @@
                 "1 sliced lemon",
                 "1 sliced lime",
                 "Ice"
-            ]
+            ],
+            "information": "To make homemade dry vermouth, start with a neutral white wine as the base. Infuse the wine with a blend of botanicals, such as wormwood, chamomile, coriander, and citrus peels, among others. You can also adjust the choice of botanicals to suit your taste. Allow the infusion to rest in a glass container for several weeks, periodically tasting to achieve the desired flavor and aroma. Once you're satisfied, strain the liquid to remove the botanicals, and your homemade dry vermouth is ready to use in classic cocktails like the Martini or the Negroni."
 
         },
         {
@@ -367,7 +390,8 @@
                 "1 sliced lemon",
                 "1 sliced lime",
                 "Ice"
-            ]
+            ],
+            "information": "To make homemade sherry-style wine, start with a base wine, often a dry white wine. Add a distilled spirit, such as brandy, to fortify the wine. Allow the fortified wine to age in wooden barrels, such as oak or chestnut, in a solera system for several years. The aging process and blending with older and younger wines develop the unique sherry flavors. The specific aging period and solera system details will depend on the type of sherry you want to create, whether it's Fino, Amontillado, Oloroso, or another style. Once the desired flavor and aroma are achieved, bottle your homemade sherry and allow it to rest before savoring your personal sherry creation responsibly."
 
         },
         {
@@ -387,7 +411,8 @@
                 "1 sliced lemon",
                 "1 sliced lime",
                 "Ice"
-            ]
+            ],
+            "information": "To make a Champagne-style sparkling wine at home, start with white wine grapes like Chardonnay or Pinot Blanc. Harvest the grapes when they're ripe and gently press them to extract the juice. Ferment the juice in a stainless steel or glass container, ensuring a dry, crisp base wine. Once fermentation is complete, transfer the wine to bottles and add a mixture of yeast and sugar to create the bubbles. Seal the bottles with crown caps and allow the wine to undergo a second fermentation in the bottle, resulting in natural carbonation. Age the wine for several months to develop flavors, and then carefully disgorge the yeast sediment. Cork the bottles with sparkling wine corks, wire cages, and foil caps. Your homemade sparkling wine is ready to chill and enjoy responsibly."
 
         },
         {
@@ -407,7 +432,8 @@
                 "1 sliced lemon",
                 "1 sliced lime",
                 "Ice"
-            ]
+            ],
+            "information": "To make homemade Zinfandel wine, start by harvesting ripe Zinfandel grapes. Crush the grapes to extract the juice and transfer it to a fermentation vessel. Add a suitable wine yeast, and allow fermentation to take place. During fermentation, monitor and manage temperature and other factors to extract the desired flavors. Once fermentation is complete, transfer the wine to oak barrels for aging, which can vary from several months to several years, depending on the style of Zinfandel you want to create. Taste periodically and fine-tune your wine. Finally, bottle your homemade Zinfandel and allow it to age further before savoring your unique creation responsibly."
 
         },
         {
@@ -427,7 +453,8 @@
                 "1 sliced lemon",
                 "1 sliced lime",
                 "Ice"
-            ]
+            ],
+            "information": "To make homemade Cabernet Sauvignon wine, start by harvesting ripe Cabernet Sauvignon grapes. Crush the grapes to extract the juice and transfer it to a fermentation vessel. Add a suitable wine yeast, and allow fermentation to take place. Monitor temperature and other factors to extract the desired flavors. After fermentation, transfer the wine to oak barrels for aging, which can range from several months to several years, depending on your desired style. Taste the wine periodically and adjust as needed. Finally, bottle your homemade Cabernet Sauvignon and allow it to age further before enjoying your unique creation responsibly."
 
         },
         {
@@ -445,7 +472,8 @@
                 "1 sliced orange",
                 "1 sliced lemon",
                 "Ice"
-            ]
+            ],
+            "information": "To make homemade Syrah wine, start by harvesting ripe Syrah grapes. Crush the grapes to extract the juice and transfer it to a fermentation vessel. Add a suitable wine yeast, and allow fermentation to take place. Monitor temperature and other factors to extract the desired flavors. After fermentation, transfer the wine to oak barrels for aging, which can vary from several months to several years, depending on the style you want to create. Taste the wine periodically and adjust as needed. Finally, bottle your homemade Syrah and allow it to age further before enjoying your unique creation responsibly."
 
         },
         {
@@ -463,7 +491,8 @@
                 "1 sliced orange",
                 "1 sliced lemon",
                 "Ice"
-            ]
+            ],
+            "information": "To make homemade Malbec-style wine, start by harvesting ripe Malbec grapes. Crush the grapes to extract the juice and transfer it to a fermentation vessel. Add a suitable wine yeast, and allow fermentation to take place, monitoring temperature and other factors to extract the desired flavors. After fermentation, transfer the wine to oak barrels for aging, which can vary from several months to several years, depending on your desired style. Taste the wine periodically and adjust as needed. Finally, bottle your homemade Malbec-style wine and allow it to age further before enjoying your unique creation responsibly."
 
         },
         {
@@ -481,7 +510,8 @@
                 "1 sliced orange",
                 "1 sliced lemon",
                 "Ice"
-            ]
+            ],
+            "information": "To make homemade mead, start by sanitizing all equipment to prevent contamination. Mix together honey and water in a ratio of around 2.5 to 3 pounds of honey per gallon of water, or adjust for desired sweetness. Heat the mixture to dissolve the honey, and then cool it to room temperature. Transfer it to a clean fermentation vessel, add yeast suitable for mead, and seal the vessel with an airlock. Allow the mead to ferment, which can take several weeks to several months, depending on your recipe. Once fermentation is complete, transfer the mead to bottles, allowing it to age for at least several months to develop flavors. Your homemade mead is ready to enjoy responsibly."
 
         },
         {
@@ -502,7 +532,8 @@
                 "1 sliced lime",
                 "Ice"
 
-            ]
+            ],
+            "information": "To make homemade stout beer, start by selecting suitable grains like roasted barley, chocolate malt, and others. Crush and mix the grains to create a mash. Boil the mash with hops to add bitterness and flavor. Cool the liquid, transfer it to a fermentation vessel, and add a suitable yeast for stouts. Allow fermentation to take place, monitoring temperature and other factors. Once fermentation is complete, bottle the beer and allow it to carbonate naturally by adding priming sugar or force carbonation. Let the stout age for a few weeks to develop its flavors, and it's ready to enjoy responsibly."
 
         },
         {
@@ -523,7 +554,8 @@
                 "1 sliced lime",
                 "Ice"
 
-            ]
+            ],
+            "information": "To make homemade IPA, start by boiling a mix of malt extract and water, then add hops for flavor and aroma. Cool the mixture and transfer it to a fermenter, adding yeast to initiate fermentation. Let it ferment for about one to two weeks. After fermentation, bottle the beer and allow it to carbonate for another one to two weeks. Your homemade IPA is ready to chill and enjoy."
 
         },
         {
@@ -544,7 +576,8 @@
                 "1 sliced lime",
                 "Ice"
 
-            ]
+            ],
+            "information": "To make homemade stout-style beer, you'll need ingredients such as pale malt, roasted barley, hops, yeast, and water. Start by mashing the grains in hot water to extract sugars, then boil the wort while adding hops for bitterness. Cool the wort, transfer it to a fermentation vessel, and pitch yeast. Allow fermentation for about a week, then bottle your beer. Carbonation develops during bottle conditioning, which can take several weeks. Once ready, chill your homemade stout and enjoy a dark, rich brew."
 
         },
         {
@@ -564,7 +597,8 @@
                 "1 sliced lemon",
                 "1 sliced lime",
                 "Ice"
-            ]
+            ],
+            "information": "To make a homemade dark rum-style spirit, start with a neutral spirit, such as high-proof rum or vodka. Add caramelized sugar or molasses to darken the color and create a rich flavor. You can also infuse the spirit with oak chips to mimic the aging process. Allow the mixture to rest in a glass container for a few weeks, periodically tasting to achieve the desired color and flavor. Once satisfied, strain the liquid to remove the oak chips, and your homemade dark rum-style spirit is ready for use in cocktails or recipes."
 
         },
         {
@@ -584,7 +618,8 @@
                 "1 sliced lemon",
                 "1 sliced lime",
                 "Ice"
-            ]
+            ],
+            "information": "Creating homemade whiskey is a complex and highly regulated process that involves distillation and aging in oak barrels. It's not practical to provide detailed instructions for making whiskey at home due to the intricate and regulated nature of the process. If you're interested in distilling spirits, I strongly recommend researching local laws and regulations and seeking guidance from experts in the field to ensure legal and safe practices. Homemade distillation can be dangerous and may be subject to legal restrictions in many regions. Always exercise caution and follow the applicable laws and guidelines when working with spirits and distillation."
 
         },
         {
@@ -604,7 +639,8 @@
                 "1 sliced lemon",
                 "1 sliced lime",
                 "Ice"
-            ]
+            ],
+            "information":"To make homemade RumChata-inspired cream liqueur, combine 1 cup of white rum, 1/2 cup of sweetened condensed milk, 1/2 cup of whole milk, 2 teaspoons of ground cinnamon, and a teaspoon of vanilla extract in a blender. Blend the ingredients until well combined. Transfer the mixture to a glass container or bottle and refrigerate. Shake before serving, and enjoy your homemade RumChata-inspired cream liqueur over ice or in cocktails like a RumChata White Russian."
         },
         {
             "name": "Tequila",
@@ -623,7 +659,8 @@
                 "1 sliced lemon",
                 "1 sliced lime",
                 "Ice"
-            ]
+            ],
+            "information": "To make a homemade agave spirit inspired by tequila, start by harvesting mature agave plants. Extract the agave cores, or piñas, and roast them to extract their juice. Ferment the juice in a fermentation vessel with a suitable yeast. After fermentation, distill the liquid to increase its alcohol content. Collect the distilled liquid, known as 'mezcal,' which can be further aged if desired. Bottle your homemade mezcal-inspired spirit and enjoy responsibly."
 
         },
         {
@@ -643,7 +680,8 @@
                 "1 sliced lemon",
                 "1 sliced lime",
                 "Ice"
-            ]
+            ],
+            "information": "To make homemade gin, start with a neutral spirit, such as vodka. Add a blend of botanicals, including juniper berries, coriander, citrus peel, and various herbs and spices, to infuse the spirit with flavor. Allow the mixture to rest in a glass container for several weeks, periodically tasting to achieve the desired botanical balance. Once satisfied, strain the liquid to remove the botanicals, and your homemade gin is ready to use in cocktails or enjoy responsibly."
 
         },
         {
@@ -663,7 +701,8 @@
                 "1 sliced lemon",
                 "1 sliced lime",
                 "Ice"
-            ]
+            ],
+            "information": "To make homemade white rum, start with a neutral spirit, such as high-proof vodka. Add molasses or sugarcane juice to the spirit, and mix well. Let the mixture sit in a glass container for a few weeks to develop the desired flavors. Once the flavors have melded to your liking, strain the liquid to remove any solid particles. Your homemade white rum is now ready to use in cocktails or enjoy responsibly."
 
         },
         {
@@ -683,7 +722,8 @@
                 "1 sliced lemon",
                 "1 sliced lime",
                 "Ice"
-            ]
+            ],
+            "information": "To make homemade bourbon, you'll need corn, malted barley, and rye or wheat. Grind the grains and mix them with water to create a mash. Add yeast to ferment the mash, then distill it in a copper still to separate the alcohol. Collect the distilled liquid, known as 'white dog' or 'new make spirit.' Age this spirit in new charred oak barrels for a minimum of two years, although longer aging improves the flavor. Once aged, your homemade bourbon is ready for bottling and enjoying responsibly."
 
         },
         {
@@ -703,7 +743,8 @@
                 "1 sliced lemon",
                 "1 sliced lime",
                 "Ice"
-            ]
+            ],
+            "information": "To make homemade absinthe, gather dried wormwood, anise, fennel, and other botanicals like hyssop and lemon balm. Crush the herbs and add them to a neutral spirit, typically high-proof alcohol. Let the mixture steep for several weeks, occasionally shaking it to infuse the flavors. Afterward, filter the liquid to remove the solid particles. To create the traditional green color, you can add a chlorophyll-rich herb or use a coloring step if desired. Adjust the absinthe's potency by diluting it with water to your preference. Your homemade absinthe is ready to enjoy, but remember to use it responsibly and diluted, typically with a water drip."
 
         },
         {
@@ -723,7 +764,8 @@
                 "1 sliced lemon",
                 "1 sliced lime",
                 "Ice"
-            ]
+            ],
+            "information": "To make homemade Curaçao liqueur, start by gathering the zest of several oranges and allowing it to dry. Next, combine the dried orange zest with a neutral spirit, such as vodka or rum, in a glass container. Add spices like coriander and a sweetener such as simple syrup. Let the mixture infuse for several weeks, periodically shaking it. Once the flavors have melded to your liking, strain the liqueur and transfer it to a clean glass bottle. Your homemade Curaçao liqueur is ready to add a citrusy, orange-flavored twist to your cocktails."
         },
         {
             "name": "Brandy",
@@ -742,7 +784,8 @@
                 "1 sliced lemon",
                 "1 sliced lime",
                 "Ice"
-            ]
+            ],
+            "information": "To make homemade brandy, start with quality wine, such as a fruity red or white wine. Pour the wine into a copper pot still and heat it to distill the alcohol. Collect the distilled alcohol, known as \"wine spirits,\" and age it in oak barrels for at least a year, although longer aging enhances the flavor. Dilute with water to achieve your desired alcohol content, and store in a glass container. Your homemade brandy is ready to enjoy, sip responsibly."
 
         },
         {
@@ -762,7 +805,8 @@
                 "1 sliced lemon",
                 "1 sliced lime",
                 "Ice"
-            ]
+            ],
+            "information": "Wash and chop apples, then press to extract juice. Add sugar (1/2 to 1 cup per gallon) for sweetness. Introduce cider yeast, ferment in a sealed vessel until no more bubbles, transfer to bottles, age, and refrigerate. Enjoy your cider responsibly."
 
         }
     ]
