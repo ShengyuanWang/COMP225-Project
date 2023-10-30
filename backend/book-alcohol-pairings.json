@@ -120,7 +120,7 @@
             "name":"Negroni",
             "type":"Cocktail",
             "genres":["espionage","spy stories","spies","mystery fiction","mystery","historical fiction","history","historical","thriller",
-                "thrillers","suspense","biographical","biographies"],
+                "thrillers","suspense","biographical","biographies","italy"],
             "sentiment":0.5
         },
         {
@@ -158,26 +158,26 @@
         {
             "name": "Pinot Noir",
             "type": "Wine",
-            "genres": ["romance","love","love stories","romance fiction", "mystery fiction","mystery"],
+            "genres": ["romance","love","love stories","romance fiction", "mystery fiction","mystery","france","united states"],
             "sentiment": 0.6
         },
         {
             "name": "Merlot",
             "type": "Wine",
-            "genres": ["romance","love","love stories","romance fiction", "mystery fiction","mystery", "science fiction","science-fiction"],
+            "genres": ["romance","love","love stories","romance fiction", "mystery fiction","mystery", "science fiction","science-fiction","france"],
             "sentiment": 0.6
         },
         {
             "name": "Rosé",
             "type": "Wine",
-            "genres": ["romance","love","love stories","romance fiction", "humorous","humor","humorous fiction","comedy"],
+            "genres": ["romance","love","love stories","romance fiction", "humorous","humor","humorous fiction","comedy","france","spain"],
             "sentiment": 0.7
         },
         {
             "name": "Chardonnay",
             "type": "Wine",
             "genres": ["romance","love","love stories","romance fiction","mystery fiction","mystery","historical fiction","history","historical",
-                "drama"],
+                "drama","france","united states"],
             "sentiment":0.6
 
         },
@@ -185,7 +185,7 @@
             "name": "Dry Vermouth",
             "type": "Wine",
             "genres": ["science fiction","science-fiction","mystery fiction","mystery","historical fiction","history","historical","espionage",
-                "spy stories","spies","thriller","thrillers","suspense"],
+                "spy stories","spies","thriller","thrillers","suspense","france","spain","italy"],
             "sentiment":-0.5
         },
         {
@@ -212,25 +212,27 @@
             "name": "Zinfandel",
             "type": "Wine",
             "genres": ["romance","love","love stories","romance fiction", "mystery fiction","mystery", "thriller","thrillers","suspense", 
-                "historical fiction","history","historical","drama","adventure"],
+                "historical fiction","history","historical","drama","adventure","california","united states"],
             "sentiment": 0.6
         },
         {
             "name":"Prosecco",
             "type":"Wine",
-            "genres":["romance","love","love stories","romance fiction","humorous","humor","humorous fiction","comedy","travel","adventure"],
+            "genres":["romance","love","love stories","romance fiction","humorous","humor","humorous fiction","comedy","travel","adventure",
+                "italy"],
             "sentiment": 0.9
         },
         {
             "name": "Cabernet Sauvignon",
             "type": "Wine",
-            "genres": ["science fiction","science-fiction","mystery fiction","mystery", "historical fiction","history","historical"],
+            "genres": ["science fiction","science-fiction","mystery fiction","mystery", "historical fiction","history","historical","france",
+                "united states","california"],
             "sentiment": 0.6
         },
         {
             "name": "Syrah",
             "type": "Wine",
-            "genres": ["romance","love","love stories","romance fiction", "mystery fiction","mystery"],
+            "genres": ["romance","love","love stories","romance fiction", "mystery fiction","mystery","france","australia"],
             "sentiment":0.6
         },
         {
