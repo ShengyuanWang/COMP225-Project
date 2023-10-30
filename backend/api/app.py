@@ -4,6 +4,7 @@ import json
 import random
 import requests
 from flask_cors import CORS
+import re
 
 # DO NOT make this public, keep in private github
 API_KEY = "AIzaSyAHHByDAWIAvXhTNkajTqazMhBUO045aS0" 
@@ -24,12 +25,13 @@ def get_book():
     if request.method == "POST":
         user_input = escape(request.form.get("book"))
         book = Book(user_input)
-        return render_template("home.html", user_input=book.get_user_input(), title=book.get_title(), isbn=book.get_isbn(),
-                        authors=book.get_authors(), publisher=book.get_publisher(),
-                        date=book.get_publication_date(), genres=book.get_genres(),
-                        filtered_genres=book.get_filtered_genres(), description=book.get_description(),
-                        cover_link=book.get_cover_link(), drinks=book.get_matching_drinks(),
-                        pairing=book.get_pairing())
+        return render_template("home.html", user_input=book.get_user_input(), title=book.get_title(),
+                                isbn_list=book.get_isbn_list(), isbn=book.get_isbn(),
+                                authors=book.get_authors(), publisher=book.get_publisher(),
+                                date=book.get_publication_date(), genres=book.get_genres(),
+                                filtered_genres=book.get_filtered_genres(), description=book.get_description(),
+                                cover_link=book.get_cover_link(), drinks=book.get_matching_drinks(),
+                                pairing=book.get_pairing())
     return render_template("home.html")
 
 @app.route('/test/', methods=["GET"])
@@ -55,7 +57,8 @@ class Book:
         self.official_genres = official_genres
         self.no_match_drink = no_match_drink
 
-        self.isbn = self.query_api_isbn(self.user_input)
+        self.isbn_list = self.query_api_isbn(self.user_input)
+        self.isbn = self.select_isbn(self.isbn_list)
         self.data = self.query_api_book_data()
         self.genres = self.query_api_genres()
 
@@ -102,29 +105,30 @@ class Book:
         return matched_drinks
 
     def query_api_isbn(self, title):
-        """Return isbn of book as a string, or an empty string 
-        if api query fails. Queries google books api using user inputted title.
-        Will return first isbn found for book that is in the ISBN_13 format.
-        
-        Keyword arguments:
-        title -- book title inputted by user
-        """
         base_url = 'https://www.googleapis.com/books/v1/volumes'
         params = {
             'q': f'intitle:{title}',
             'key': self.api_key
         }
-
-        try:
+        isbns = []
+        try:            
             data = requests.get(base_url, params=params).json()['items']
+            title = ""
+            counter = 0
             for entry in data:
                 volume_info = entry.get('volumeInfo', {})
                 isbn = volume_info.get('industryIdentifiers', [])[0]
                 if isbn.get("type") == "ISBN_13":
-                    return isbn.get("identifier")
-            return ""
+                    if counter == 0:
+                        title = self.filter_title(volume_info["title"])
+                        isbns.append(isbn.get("identifier"))
+                    if self.filter_title(volume_info["title"]) == title:
+                        isbns.append(isbn.get("identifier"))
+                    counter += 1
+            return isbns
         except:
-            return ""
+            return isbns
+    
 
     def query_api_book_data(self):
         """Return a dict of book data, or an empty dictonary 
@@ -149,25 +153,45 @@ class Book:
         """Return a list of all genres the book has, or an empty list 
         if api query fails. Queries openlibrary api using isbn. 
         """
-        base_url = "https://openlibrary.org/api/books"
-        params = {
-            "bibkeys": f"ISBN:{self.isbn}",
-            "format": "json",
-            "jscmd": "data"
-        }
-
+        genres = []
         try:
-            json = requests.get(base_url, params=params).json()
-            data = json.get(f"ISBN:{self.isbn}", {})
-            subjects = data.get('subjects', ['N/A'])
-            names = []
-            for subject in subjects:
-                subjects_split = [word.strip().lower() for word in subject["name"].split(',')]
-                for name in subjects_split:
-                    names.append(name)
-            return list(set(names))
+            for isbn in self.isbn_list:
+                base_url = "https://openlibrary.org/api/books"
+                params = {
+                    "bibkeys": f"ISBN:{isbn}",
+                    "format": "json",
+                    "jscmd": "data"
+                }
+                json = requests.get(base_url, params=params).json()
+                data = json.get(f"ISBN:{isbn}", {})
+                subjects = data.get('subjects', ['N/A'])
+                names = []
+                for subject in subjects:
+                    if isinstance(subject, dict):
+                        subjects_split = [word.strip().lower() for word in subject["name"].split(',')]
+                        for name in subjects_split:
+                            names.append(name)
+                genres += names
+            return genres
         except:
-            return []
+            return genres
+    
+    def filter_title(self, title):
+        """Cleans up titles to not include some common stop words, so that the titles 
+        can be more easily matched. Used when looking for genres across all 
+        versions of a book.
+        """
+        words = title.split()    
+        filtered_words = [word for word in words if word.lower() not in ["and", "a", "the"]]
+        filtered_phrase = ' '.join(filtered_words)
+        return filtered_phrase
+    
+    def select_isbn(self, isbns):
+        """Selects the first isbn from the list of isbns."""
+        if len(isbns) > 0:
+            return isbns[0]
+        else:
+            return ""
 
     def get_filtered_genres(self):
         """Return a list of all the offical genres the book has or an empty list 
@@ -233,8 +257,13 @@ class Book:
         return ""
 
     def get_isbn(self):
-        """Return the instance variable containing the book's ibsn."""
+        """Return the instance variable containing the book's ibsn, will be the 
+        first one found in the google books api query."""
         return self.isbn
+
+    def get_isbn_list(self):
+        """Return the instance variable containing the list of the books's ibsns."""
+        return self.isbn_list
 
     def get_user_input(self):
         """Return the instance variable containing the title the user inputed."""
@@ -247,7 +276,7 @@ class Book:
         return self.genres
 
     def get_no_match_drink(self):
-        """Return the instance variable containingthe drink that will be used if 
+        """Return the instance variable containing the drink that will be used if 
         no pairing is found.
         """
         return self.no_match_drink
