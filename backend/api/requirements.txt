@@ -5,3 +5,4 @@ pyjson
 pyrandom
 markupsafe
 flask_cors
+pytest

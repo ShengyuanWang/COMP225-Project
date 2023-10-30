@@ -10,7 +10,11 @@
 {% endif %}
 
 {% if isbn %}
-  <p> ISBN: {{ isbn }}</p>
+  <p> First ISBN: {{ isbn }}</p>
+{% endif %}
+
+{% if isbn_list %}
+  <p> ISBN List: {{ isbn_list }}</p>
 {% endif %}
 
 {% if title %}
