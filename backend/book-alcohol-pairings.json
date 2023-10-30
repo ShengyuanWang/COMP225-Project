@@ -9,8 +9,8 @@
         {
             "name":"Margarita",
             "type":"Cocktail",
-            "genres":["mexico","romance","love","love stories","romance fiction","action & adventure","adventure","humorous","humor",
-                "humorous fiction","comedy","travel"],
+            "genres":["mexico","romance","love","love stories","romance fiction","action & adventure","adventure","adventure stories",
+                "humorous","humor","humorous fiction","comedy","travel"],
             "sentiment": 0.7
         },
         {
@@ -36,14 +36,14 @@
         {
             "name": "Blue Lagoon",
             "type":"Cocktail",
-            "genres":["science fiction","science-fiction","romance","love","love stories","romance fiction","travel","adventure"],
+            "genres":["science fiction","science-fiction","romance","love","love stories","romance fiction","travel","adventure","adventure stories"],
             "sentiment": 0.8
         },
         {
             "name": "Mojito",
             "type": "Cocktail",
-            "genres": ["caribbean area","cuba","romance","love","love stories","romance fiction","action & adventure", "humorous","humor",
-                "humorous fiction","comedy"],
+            "genres": ["caribbean area","cuba","romance","love","love stories","romance fiction","action & adventure", "adventure","adventure stories",
+                "humorous","humor","humorous fiction","comedy"],
             "sentiment": 0.7
         },
         {
@@ -99,7 +99,7 @@
         {
             "name": "Sonic Screwdriver",
             "type": "Cocktail",
-            "genres": ["science fiction","science-fiction","action & adventure","adventure"],
+            "genres": ["science fiction","science-fiction","action & adventure","adventure","adventure stories"],
             "sentiment": 0.7
         },
         {
@@ -112,7 +112,7 @@
         {
             "name": "Spiced Wine",
             "type": "Cocktail",
-            "genres": ["friendship","fantasy fiction","fantasy", "historical fiction","history","historical","adventure"],
+            "genres": ["friendship","fantasy fiction","fantasy", "historical fiction","history","historical","adventure","adventure stories"],
             "sentiment": 0.5
 
         },
@@ -146,7 +146,7 @@
             "name":"Daiquiri",
             "type":"Cocktail",
             "genres":["caribbean area","cuba","travel","humorous","humor","humorous fiction","comedy", "action & adventure","adventure", 
-                "romance","love","love stories","romance fiction","mystery fiction","mystery"],
+                "adventure stories","romance","love","love stories","romance fiction","mystery fiction","mystery"],
             "sentiment":0.7
         },
         {
@@ -205,21 +205,21 @@
             "name":"Tempranillo",
             "type":"Wine",
             "genres":["historical fiction","history","historical","fantasy fiction","fantasy", "mystery fiction","mystery","thriller","thrillers",
-                "suspense","drama","biographical","biographies","adventure","spain"],
+                "suspense","drama","biographical","biographies","adventure","adventure stories","spain"],
             "sentiment": 0.3
         },
         {
             "name": "Zinfandel",
             "type": "Wine",
             "genres": ["romance","love","love stories","romance fiction", "mystery fiction","mystery", "thriller","thrillers","suspense", 
-                "historical fiction","history","historical","drama","adventure","california","united states"],
+                "historical fiction","history","historical","drama","adventure","adventure stories","california","united states"],
             "sentiment": 0.6
         },
         {
             "name":"Prosecco",
             "type":"Wine",
             "genres":["romance","love","love stories","romance fiction","humorous","humor","humorous fiction","comedy","travel","adventure",
-                "italy"],
+                "adventure stories","italy"],
             "sentiment": 0.9
         },
         {
@@ -246,7 +246,6 @@
             "type": "Wine",
             "genres": ["england","ireland","fantasy fiction","fantasy", "historical fiction","history","historical"],
             "sentiment":0.8
-
         },
         {
             "name": "Stout",
@@ -271,7 +270,8 @@
         {
             "name":"Lager",
             "type":"Beer",
-            "genres":["friendship","action & adventure","adventure","humorous","humor","humorous fiction","comedy","mystery fiction","mystery"],
+            "genres":["friendship","action & adventure","adventure","adventure stories","humorous","humor","humorous fiction","comedy",
+                "mystery fiction","mystery"],
             "sentiment":0.5
         },
         {
@@ -284,7 +284,7 @@
             "name":"Ale",
             "type":"Beer",
             "genres":["fantasy fiction","fantasy","historical fiction","history","historical","mystery fiction","mystery","action & adventure",
-                "adventure"],
+                "adventure","adventure stories"],
             "sentiment":0.5
         },
         {
@@ -336,27 +336,28 @@
         {
             "name": "Tequila",
             "type": "Spirits",
-            "genres": ["mexico","crime","action & adventure","adventure", "travel","thriller","thrillers","suspense"],
+            "genres": ["mexico","crime","action & adventure","adventure","adventure stories", "travel","thriller","thrillers","suspense"],
             "sentiment":0.3
         },
         {
             "name": "Gin",
             "type": "Spirits",
             "genres": ["england","classics","classic literature","classic","20th century","historical fiction","history","historical",
-                "action & adventure","adventure","travel","espionage","spy stories","spies","thriller","thrillers","suspense"],
+                "action & adventure","adventure","adventure stories","travel","espionage","spy stories","spies","thriller","thrillers","suspense"],
             "sentiment":-0.5
         },
         {
             "name": "White Rum",
             "type": "Spirits",
-            "genres": ["caribbean area","pirates","action & adventure","adventure","romance","love","love stories","romance fiction",
-                "travel","historical fiction","history","historical"],
+            "genres": ["caribbean area","pirates","action & adventure","adventure","adventure stories","romance","love","love stories",
+                "romance fiction","travel","historical fiction","history","historical"],
             "sentiment": 0.7 
         },
         {
             "name":"Bacardi",
             "type":"Spirits",
-            "genres":["cuba","caribbean area","action & adventure","adventure", "romance","love","love stories","romance fiction","pirates"],
+            "genres":["cuba","caribbean area","action & adventure","adventure","adventure stories", "romance","love","love stories",
+                "romance fiction","pirates"],
             "sentiment":0.4
         },
         {
@@ -376,19 +377,20 @@
             "name": "Curaçao",
             "type": "Spirits",
             "genres":["caribbean area","travel","science fiction","science-fiction", "mystery fiction","mystery","romance","love",
-                "love stories","romance fiction","action & adventure","adventure"],
+                "love stories","romance fiction","action & adventure","adventure","adventure stories"],
             "sentiment":0.7
         },
         {
             "name": "Brandy",
             "type": "Spirits",
-            "genres": ["adventure","classics","classic literature","classic","19th century","espionage","spy stories","spies",
-                "historical fiction","history","historical","mystery fiction","mystery","thriller","thrillers","suspense","romance","love","love stories","romance fiction"],
+            "genres": ["adventure","adventure stories","classics","classic literature","classic","19th century","espionage","spy stories","spies",
+                "historical fiction","history","historical","mystery fiction","mystery","thriller","thrillers","suspense","romance","love","love stories",
+                "romance fiction"],
             "sentiment":0.6
         },
         {
             "name": "Cider",
-            "type": "Other",
+            "type": "Wine",
             "genres": ["fantasy fiction","fantasy","humorous","humor","humorous fiction","comedy"],
             "sentiment":0.7
         }
