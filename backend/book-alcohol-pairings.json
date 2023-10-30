@@ -10,7 +10,7 @@
             "name":"Margarita",
             "type":"Cocktail",
             "genres":["mexico","romance","love","love stories","romance fiction","action & adventure","adventure","adventure stories",
-                "humorous","humor","humorous fiction","comedy","travel"],
+                "humorous","humor","humorous fiction","comedy","travel","satire"],
             "sentiment": 0.7
         },
         {
@@ -62,7 +62,7 @@
         {
             "name":"Aperol Spritz",
             "type": "Cocktail",
-            "genres":["romance","love","love stories","romance fiction","humorous","humor","humorous fiction","comedy"],
+            "genres":["romance","love","love stories","romance fiction","humorous","humor","humorous fiction","comedy","italy"],
             "sentiment": 0.7
         },
         {
@@ -148,6 +148,35 @@
             "genres":["caribbean area","cuba","travel","humorous","humor","humorous fiction","comedy", "action & adventure","adventure", 
                 "adventure stories","romance","love","love stories","romance fiction","mystery fiction","mystery"],
             "sentiment":0.7
+        },
+        {
+            "name":"Irish Coffee",
+            "type":"Cocktail",
+            "genres":["mystery fiction","mystery","romance fiction","romance","love","love stories","travel","classics","classic literature",
+                "classic","biographical","biographies","ireland"],
+            "sentiment":0.8
+        },
+        {
+            "name":"Paloma",
+            "type":"Cocktail",
+            "genres":["travel","mexico","biographical","biographies","adventure","adventure stories","mystery fiction","mystery","thriller",
+                "thrillers","suspense","romance","romance fiction","love stories","love","humor","humorous fiction","humorous","comedy",
+                "satire"],
+            "sentiment":0.7
+        },
+        {
+            "name":"Pisco Sour",
+            "type":"Cocktail",
+            "genres":["travel","adventure","adventure stories","historical fiction","historical","history","mystery fiction","mystery","thriller",
+                "thrillers","suspense","biographical","biographies","peru"],
+            "sentiment":0.8
+        },
+        {
+            "name":"Amaretto Sour",
+            "type":"Cocktail",
+            "genres":["romance fiction","romance","love stories","love","historical fiction","historical","history","mystery fiction","mystery",
+                "thriller","thrillers","suspense","biographical","biographies","humor","humorous fiction","humorous","comedy","satire"],
+            "sentiment":0.8
         },
         {
             "name": "Moscato",
@@ -261,7 +290,7 @@
 
         },
         {
-            "name": "Guiness",
+            "name": "Guinness",
             "type": "Beer",
             "genres": ["ireland","classics","classic literature","classic","fantasy fiction","fantasy", "historical fiction","history",
                 "historical","mystery fiction","mystery", "thriller","thrillers","suspense","drama"],
