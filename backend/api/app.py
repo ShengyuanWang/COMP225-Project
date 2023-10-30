@@ -56,11 +56,7 @@ class Book:
         user_input -- string of title inputted by user
         alcohol_data_file -- json dump containing data for alcohol (default "book-alcohol-pairings.json")
         api_key -- string of api key for google api (default API_KEY constant) 
-<<<<<<< Updated upstream
         offical_genres -- list of genres used in alcohol data file (default OFFICAL_GENRES constant) 
-=======
-        offical_genres -- list of genres used in alcohol data file (default OFFICAL_GENRES constant)
->>>>>>> Stashed changes
         no_match_drink -- string of drink to use if no pairing found (default "Bud Light")
         """
         self.user_input = user_input
