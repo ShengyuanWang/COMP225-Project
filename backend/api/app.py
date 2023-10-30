@@ -46,7 +46,7 @@ def search1(bookname):
 
 
 class Book:
-    def __init__ (self, user_input, alchool_data_file="book-alcohol-pairings.json", api_key=API_KEY, official_genres=GENRES, no_match_drink="Bud Light"):
+    def __init__ (self, user_input, alcohol_data_file="book-alcohol-pairings.json", api_key=API_KEY, official_genres=GENRES, no_match_drink="Bud Light"):
         """ This class represents a book. Once an object of this class is initiated, that object can be
         used to query book data and get pairings for the book.
         
@@ -54,11 +54,15 @@ class Book:
         user_input -- string of title inputted by user
         alcohol_data_file -- json dump containing data for alcohol (default "book-alcohol-pairings.json")
         api_key -- string of api key for google api (default API_KEY constant) 
+<<<<<<< Updated upstream
         offical_genres -- list of genres used in alcohol data file (default OFFICAL_GENRES constant) 
+=======
+        offical_genres -- list of genres used in alcohol data file (default OFFICAL_GENRES constant)
+>>>>>>> Stashed changes
         no_match_drink -- string of drink to use if no pairing found (default "Bud Light")
         """
         self.user_input = user_input
-        self.alchool_data_file = alchool_data_file
+        self.alcohol_data_file = alcohol_data_file
         self.api_key = api_key
         self.official_genres = official_genres
         self.no_match_drink = no_match_drink
@@ -98,7 +102,7 @@ class Book:
         dictonaries. 
         """
         genres = self.get_filtered_genres()
-        with open(self.alchool_data_file, "r") as f:
+        with open(self.alcohol_data_file, "r") as f:
             pairings = json.load(f)
         matched_drinks = []
 
