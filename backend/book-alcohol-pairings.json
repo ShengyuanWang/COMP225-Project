@@ -200,7 +200,8 @@
         {
             "name": "Moscato",
             "type": "Wine",
-            "genres": ["friendship","female friendship","romance","love","love stories","romance fiction","humorous","humor","humorous fiction","comedy","italy","france"],
+            "genres": ["friendship","female friendship","romance","love","love stories","romance fiction","humorous","humor","humorous fiction","comedy","italy",
+                "france","coming of age"],
             "sentiment":0.7
         },
         {
@@ -323,7 +324,7 @@
             "name":"Lager",
             "type":"Beer",
             "genres":["friendship","male friendship","female friendship","action & adventure","adventure","adventure stories","humorous","humor","humorous fiction",
-                "comedy","mystery fiction","mystery"],
+                "comedy","mystery fiction","mystery","coming of age"],
             "sentiment":0.5
         },
         {
@@ -377,7 +378,7 @@
             "name":"Malt Liquor",
             "type":"Spirits",
             "genres":["crime","mystery fiction","mystery","thriller","thrillers", "suspense","mysteries & detective stories","mystery and detective stories",
-                "detective and mystery stories","mystery & detective"],
+                "detective and mystery stories","mystery & detective","coming of age"],
             "sentiment":-0.5
         },
         {
