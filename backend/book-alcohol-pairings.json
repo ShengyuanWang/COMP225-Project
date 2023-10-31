@@ -58,7 +58,7 @@
             "name":"Cosmopolitan",
             "type":"Cocktail",
             "genres":["romance","love","love stories","romance fiction","mystery fiction","mystery","mysteries & detective stories","mystery and detective stories",
-                "detective and mystery stories"],
+                "detective and mystery stories","friendship","female friendship"],
             "sentiment": 0.8
         },
         {
@@ -142,7 +142,7 @@
         {
             "name":"Mimosa",
             "type":"Cocktail",
-            "genres":["friendship","humorous","humor","humorous fiction","comedy", "romance","love","love stories","romance fiction", "mystery fiction",
+            "genres":["friendship","female friendship","humorous","humor","humorous fiction","comedy", "romance","love","love stories","romance fiction", "mystery fiction",
                 "mystery","mysteries & detective stories","mystery and detective stories","detective and mystery stories","travel","romantic comedy"],
             "sentiment":0.7
         },
@@ -199,7 +199,7 @@
         {
             "name": "Moscato",
             "type": "Wine",
-            "genres": ["friendship","romance","love","love stories","romance fiction","humorous","humor","humorous fiction","comedy","italy","france"],
+            "genres": ["friendship","female friendship","romance","love","love stories","romance fiction","humorous","humor","humorous fiction","comedy","italy","france"],
             "sentiment":0.7
         },
         {
@@ -318,7 +318,7 @@
         {
             "name":"Lager",
             "type":"Beer",
-            "genres":["friendship","action & adventure","adventure","adventure stories","humorous","humor","humorous fiction","comedy",
+            "genres":["friendship","male friendship","female friendship","action & adventure","adventure","adventure stories","humorous","humor","humorous fiction","comedy",
                 "mystery fiction","mystery"],
             "sentiment":0.5
         },
@@ -338,7 +338,7 @@
         {
             "name":"Baileys",
             "type":"Spirits",
-            "genres":["romance","love","love stories","romance fiction","mystery fiction","mystery","ireland","friendship"],
+            "genres":["romance","love","love stories","romance fiction","mystery fiction","mystery","ireland","friendship","female friendship"],
             "sentiment":0.75
         },
         {
