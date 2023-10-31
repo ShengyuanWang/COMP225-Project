@@ -200,6 +200,21 @@
             "sentiment":0.7
         },
         {
+            "name":"Whiskey Sour",
+            "type":"Cocktail",
+            "genres":["classic","classic literature","classical literature","classics","biographical","biographies","biography","historical fiction","historical",
+                "history","action & adventure","adventure and adventurers","adventure stories","adventure"],
+            "sentiment":0.7
+        },
+        {
+            "name":"French 75",
+            "type":"Cocktail",
+            "genres":["historical fiction","historical","history","romance fiction","romance","love stories","love","mysteries & detective stories",
+                "mystery & detective","mystery and detective stories","mystery fiction","mystery","detective and mystery stories","biographical","biographies",
+                "biography","classic literature","classic","classical literature","classics"],
+            "sentiment":0.8
+        },
+        {
             "name": "Moscato",
             "type": "Wine",
             "genres": ["friendship","female friendship","romance","love","love stories","romance fiction","humorous","humor","humorous fiction","comedy","italy",
