@@ -35,7 +35,7 @@ def test_get_matching_drinks():
     valid_book_drinks = book_valid.get_matching_drinks()
     drink_1 = valid_book_drinks[0]
     assert  len(valid_book_drinks) > 0
-    assert list(drink_1.keys()) == ["name", "type", "genres", "instructions"]
+    assert list(drink_1.keys()) == ["name", "type", "genres", "instructions", "information"]
     assert type(drink_1["name"]) == str
     assert type(drink_1["type"]) == str
     assert len(drink_1["genres"]) >= 1
