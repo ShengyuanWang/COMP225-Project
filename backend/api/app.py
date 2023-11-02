@@ -19,6 +19,9 @@ GENRES = ["fantasy fiction", "historical fiction", "horror", "thriller", "scienc
           "comedy","humor","humorous fiction","fantasy","mystery","caribbean area","ireland",
           "england","france","spain","united states","friendship","crime","romantic comedy"]
 
+# drink for when there are no matches 
+BUD_LIGHT = {"pairing":"Bud Light", "instructions": ["Just pop open the can."], "information": "Classic American Beer."}
+
 app = Flask(__name__)
 CORS(app)
 
@@ -48,7 +51,7 @@ def search1(bookname):
 
 
 class Book:
-    def __init__ (self, user_input, alcohol_data_file="book-alcohol-pairings.json", api_key=API_KEY, official_genres=GENRES, no_match_drink="Bud Light"):
+    def __init__ (self, user_input, alcohol_data_file="book-alcohol-pairings.json", api_key=API_KEY, official_genres=GENRES, no_match_drink=BUD_LIGHT):
         """ This class represents a book. Once an object of this class is initiated, that object can be
         used to query book data and get pairings for the book.
         
@@ -79,8 +82,9 @@ class Book:
         pairing["authors"] = self.get_authors()
         pairing["genres"] = self.get_filtered_genres()
         pairing["cover_link"] = self.get_cover_link()
-        pairing["pairing"] = self.get_pairing()
-        
+        pairing["pairing"] = self.get_pairing()["pairing"]
+        pairing["instructions"] = self.get_pairing()["instructions"]
+        pairing["information"] = self.get_pairing()["information"]
         return json.dumps(pairing)
 
     def get_pairing(self):
@@ -89,11 +93,15 @@ class Book:
         returns the drink specfied as the no-match drink.
         """
         drinks = self.get_matching_drinks()
+        drink_dict = {}
         if len(drinks) > 0:
             ran_drink = random.choice(drinks)
-            return ran_drink['name']
+            drink_dict["pairing"] = ran_drink["name"]
+            drink_dict["instructions"] = ran_drink["instructions"]
+            drink_dict["information"] = ran_drink["information"]
+            return drink_dict
         else:
-            return self.no_match_drink
+            return self.get_no_match_drink()
 
     def get_matching_drinks(self):
         """ Return list of drinks that match book based on data in json file. 
@@ -303,8 +311,8 @@ class Book:
         return self.genres
 
     def get_no_match_drink(self):
-        """Return the instance variable containing the drink that will be used if 
-        no pairing is found.
+        """Return the instance variable containing the drink object that will be used if 
+        no pairing is found. Must have the keys pairing, instructions, information.
         """
         return self.no_match_drink
 
