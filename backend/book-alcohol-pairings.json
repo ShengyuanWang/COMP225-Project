@@ -51,7 +51,7 @@
         {
             "name": "Bloody Mary",
             "type": "Cocktail",
-            "genres": ["horror","mystery fiction","mystery","travel","thriller","thrillers","suspense","classics","classic literature",
+            "genres": ["horror","horror fiction","horror stories","horror tales","mystery fiction","mystery","travel","thriller","thrillers","suspense","classics","classic literature",
                 "classic","classical literature","france"],
             "sentiment": 0.5
         },
@@ -309,7 +309,7 @@
         {
             "name": "Malbec",
             "type": "Wine",
-            "genres": ["romance","love","love stories","romance fiction", "mystery fiction","mystery", "horror","france","argentina"],
+            "genres": ["romance","love","love stories","romance fiction", "mystery fiction","mystery", "horror","horror fiction","horror stories","horror tales","france","argentina"],
             "sentiment":0.6
         },
         {
@@ -321,7 +321,7 @@
         {
             "name": "Stout",
             "type": "Beer",
-            "genres": ["action & adventure", "horror", "thriller","thrillers","suspense"],
+            "genres": ["action & adventure", "horror","horror fiction","horror stories","horror tales","thriller","thrillers","suspense"],
             "sentiment": 0.6
         },
         {
@@ -388,7 +388,7 @@
         {
             "name": "Whiskey",
             "type": "Spirits",
-            "genres": ["horror", "science fiction","science-fiction", "action & adventure", "historical fiction","history","historical","biographical",
+            "genres": ["horror","horror fiction","horror stories","horror tales","science fiction","science-fiction", "action & adventure", "historical fiction","history","historical","biographical",
                 "biographies","biography"],
             "sentiment": 0.6
         },
@@ -436,13 +436,13 @@
         {
             "name": "Bourbon",
             "type": "Spirits",
-            "genres": ["science fiction","science-fiction","horror","biographical","biographies","biography","kentucky","united states"],
+            "genres": ["science fiction","science-fiction","horror","horror fiction","horror stories","horror tales","biographical","biographies","biography","kentucky","united states"],
             "sentiment":0.7
         },
         {
             "name": "Absinthe",
             "type": "Spirits",
-            "genres": ["france","historical fiction","history","historical","horror", "mystery fiction","mystery","thriller","thrillers",
+            "genres": ["france","historical fiction","history","historical","horror","horror fiction","horror stories","horror tales","mystery fiction","mystery","thriller","thrillers",
                 "suspense","biographical","biographies","biography"],
             "sentiment":-0.5
         },
