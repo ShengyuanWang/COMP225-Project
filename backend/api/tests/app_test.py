@@ -35,11 +35,24 @@ def test_get_matching_drinks():
     valid_book_drinks = book_valid.get_matching_drinks()
     drink_1 = valid_book_drinks[0]
     assert  len(valid_book_drinks) > 0
-    assert list(drink_1.keys()) == ["name", "type", "genres"]
+    assert list(drink_1.keys()) == ["name", "type", "genres", "instructions"]
     assert type(drink_1["name"]) == str
     assert type(drink_1["type"]) == str
     assert len(drink_1["genres"]) >= 1
     assert book_invalid.get_matching_drinks() == []
+
+def test_split_subjects():
+    assert book_valid.split_subjects([]) == []
+    assert book_valid.split_subjects([{"name":"a"}]) == ["a"]
+    assert book_valid.split_subjects([{"name":"-"}]) == []
+    assert book_valid.split_subjects([{"name":"()"}]) == []
+    assert book_valid.split_subjects([{"name":"a"}, {"name":"b"}]) == ["a","b"]
+    assert book_valid.split_subjects([{"name":"Abc"}, {"name":"BbBB"}]) == ["abc","bbbb"]
+    assert book_valid.split_subjects([{"name":"aa   "}, {"name":"   bb"}]) == ["aa","bb"]
+    assert book_valid.split_subjects([{"name":"aa-bb"}, {"name":"cc"}]) == ["aa","bb", "cc"]
+    assert book_valid.split_subjects([{"name":"aa—-bb"}, {"name":"cc"}]) == ["aa","bb", "cc"]
+    assert book_valid.split_subjects([{"name":"aa(bb)"}, {"name":"cc"}]) == ["aa","bb", "cc"]
+    assert book_valid.split_subjects([{"name":"(aa)"}]) == ["aa"]
 
 def test_filter_title():
     assert book_valid.filter_title("heLLo and WORLD!") == "heLLo WORLD!"
@@ -95,11 +108,11 @@ def test_get_user_input():
 
 def test_get_genres():
     assert "fiction" in book_valid.get_genres()
-    assert "dune (imaginary place)" in book_valid.get_genres()
+    assert "imaginary place" in book_valid.get_genres()
     assert "science fiction" in book_valid.get_genres()
     assert book_invalid.get_genres() == []
     assert "women in england" in book_multiversion.get_genres()
-    assert "man-woman relationships" in book_multiversion.get_genres()
+    assert "brothers and sisters" in book_multiversion.get_genres()
 
 def test_get_no_matching_drinks():
     no_match = Book("Three Body Problem", no_match_drink="water")

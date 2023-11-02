@@ -172,23 +172,42 @@ class Book:
                 }
                 json = requests.get(base_url, params=params).json()
                 data = json.get(f"ISBN:{isbn}", {})
-                subjects = data.get('subjects', ['N/A'])
-                names = []
-                for subject in subjects:
-                    if isinstance(subject, dict):
-                        subjects_split = [word.strip().lower() for word in subject["name"].split(',')]
-                        for name in subjects_split:
-                            names.append(name)
+                names = self.split_subjects(data.get('subjects', ['N/A']))                
                 genres += names
             return genres
         except:
             return genres
     
+    def split_subjects(self, subjects):
+        """ This function takes a list of dictonaries of book subjects and splits the subject names 
+        into smaller parts. The dictonaries must have at least the key "name". Subject names 
+        will be split based on commas, dashes, em dashes. Phrases inside parenthese will also
+        be extracted. Subject names will be made lowercase and trailing spaces are removed.
+        """
+        names = []
+        for subject in subjects:
+            if isinstance(subject, dict):
+                regex_split = re.split(r"[,—–-]", subject["name"])
+                for word in regex_split:
+                    word = word.strip().lower()
+                    if "(" in word:
+                        part_split = word.split("(")
+                        names.append(part_split[0])
+                        if len(part_split) > 1 and len(part_split[1]) > 1:
+                            if part_split[1][len(part_split[1])-1] == ")":
+                                names.append(part_split[1][:len(part_split[1])-1])
+                            else:
+                                names.append(part_split[1])
+                    else:
+                        names.append(word.strip())
+        return [name for name in names if name != ""]
+
     def filter_title(self, title):
         """Cleans up titles to not include some common stop words, so that the titles 
         can be more easily matched. Used when looking for genres across all 
         versions of a book.
         """
+        # idea: find titles based on author and key words from titles
         words = title.split()    
         filtered_words = [word for word in words if word.lower() not in ["and", "a", "the"]]
         filtered_phrase = ' '.join(filtered_words)
