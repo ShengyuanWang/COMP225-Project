@@ -82,9 +82,10 @@ class Book:
         pairing["authors"] = self.get_authors()
         pairing["genres"] = self.get_filtered_genres()
         pairing["cover_link"] = self.get_cover_link()
-        pairing["name"] = self.get_pairing()["name"]
-        pairing["instructions"] = self.get_pairing()["instructions"]
-        pairing["information"] = self.get_pairing()["information"]
+        pairing_dict = self.get_pairing()
+        pairing["name"] = pairing_dict["name"]
+        pairing["instructions"] = pairing_dict["instructions"]
+        pairing["information"] = pairing_dict["information"]
         return json.dumps(pairing)
 
     def get_pairing(self):
