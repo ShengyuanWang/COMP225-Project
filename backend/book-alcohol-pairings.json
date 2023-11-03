@@ -10,7 +10,7 @@
             "name":"Margarita",
             "type":"Cocktail",
             "genres":["mexico","romance","love","love stories","romance fiction","action & adventure","adventure","adventure stories",
-                "adventure and adventurers","humorous","humor","humorous fiction","comedy","travel","satire"],
+                "adventure and adventurers","humorous","humor","humorous fiction","comedy","travel","satire","satirical literature"],
             "sentiment": 0.7
         },
         {
@@ -168,7 +168,7 @@
             "type":"Cocktail",
             "genres":["travel","mexico","biographical","biographies","biography","biography & autobiography","adventure","adventure stories","adventure and adventurers",
                 "mystery fiction","mystery","thriller","thrillers","suspense","romance","romance fiction","love stories","love","humor","humorous fiction","humorous","comedy",
-                "satire"],
+                "satire","satirical literature"],
             "sentiment":0.7
         },
         {
@@ -183,7 +183,7 @@
             "type":"Cocktail",
             "genres":["romance fiction","romance","love stories","love","historical fiction","historical","history","mystery fiction","mystery",
                 "thriller","thrillers","suspense","biographical","biographies","biography","biography & autobiography","humor","humorous fiction","humorous","comedy",
-                "satire"],
+                "satire","satirical literature"],
             "sentiment":0.8
         },
         {
