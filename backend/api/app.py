@@ -97,17 +97,8 @@ class Book:
         if len(drinks) > 0:
             ran_drink = random.choice(drinks)
             drink_dict["name"] = ran_drink["name"]
-            
-            if "instructions" in list(drink_dict.keys()):
-                drink_dict["instructions"] = ran_drink["instructions"]
-            else:
-                drink_dict["instructions"] = []
-            
-            if "information" in list(drink_dict.keys()):
-                drink_dict["information"] = ran_drink["information"]
-            else:
-                drink_dict["information"] = ""
-            
+            drink_dict["instructions"] = ran_drink["instructions"]
+            drink_dict["information"] = ran_drink["information"]
             return drink_dict
         else:
             return self.get_no_match_drink()
@@ -126,7 +117,8 @@ class Book:
             for drink in pairings["alcohols"]:
                 for genre in genres:
                     if genre in drink["genres"]:
-                        if all(key in drink for key in ["name", "type", "genres"]):
+                        if all(key in drink for key in ["name", "type", "genres", "instructions", "information"]):
+                            print(drink.keys())
                             matched_drinks.append(drink)
         return matched_drinks
 
