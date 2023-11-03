@@ -40,7 +40,7 @@ def get_book():
                                 date=book.get_publication_date(), genres=book.get_genres(),
                                 filtered_genres=book.get_filtered_genres(), description=book.get_description(),
                                 cover_link=book.get_cover_link(), drinks=[drink["name"] for drink in book.get_matching_drinks()],
-                                name=book.get_pairing()["name"], instructions=book.get_pairing()["instructions"], information=book.get_pairing()["information"])
+                                pairing=book.get_pairing())
     return render_template("home.html")
 
 @app.route('/test/<bookname>', methods=["GET"])
@@ -51,7 +51,7 @@ def search1(bookname):
 
 
 class Book:
-    def __init__ (self, user_input, alcohol_data_file="book-alcohol-pairings.json", api_key=API_KEY, official_genres=GENRES, no_match_drink=BUD_LIGHT):
+    def __init__ (self, user_input, alcohol_data_file="../book-alcohol-pairings.json", api_key=API_KEY, official_genres=GENRES, no_match_drink=BUD_LIGHT):
         """ This class represents a book. Once an object of this class is initiated, that object can be
         used to query book data and get pairings for the book.
         
@@ -118,7 +118,6 @@ class Book:
                 for genre in genres:
                     if genre in drink["genres"]:
                         if all(key in drink for key in ["name", "type", "genres", "instructions", "information"]):
-                            print(drink.keys())
                             matched_drinks.append(drink)
         return matched_drinks
 

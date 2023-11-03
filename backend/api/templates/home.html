@@ -45,16 +45,8 @@
   <p> Description: {{ description }}</p>
 {% endif %}
 
-{% if name %}
-  <p> Pairing name: {{ name }}</p>
-{% endif %}
-
-{% if instructions %}
-  <p> Pairing instructions: {{ instructions }}</p>
-{% endif %}
-
-{% if information %}
-  <p> Pairing information: {{ information }}</p>
+{% if pairing %}
+  <p> Pairing: {{ pairing }}</p>
 {% endif %}
 
 {% if drinks %}
@@ -64,3 +56,4 @@
 {% if cover_link %}
   <img src="{{ cover_link }}"/> 
 {% endif %}
+
