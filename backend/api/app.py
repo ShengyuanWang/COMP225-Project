@@ -117,7 +117,7 @@ class Book:
             for drink in pairings["alcohols"]:
                 for genre in genres:
                     if genre in drink["genres"]:
-                        if list(drink.keys()) == ["name", "type", "genres", "instructions", "information"]:
+                        if all(key in drink for key in ["name", "type", "genres", "instructions", "information"]):
                             matched_drinks.append(drink)
         return matched_drinks
 
