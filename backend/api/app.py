@@ -51,7 +51,7 @@ def search1(bookname):
 
 
 class Book:
-    def __init__ (self, user_input, alcohol_data_file="../book-alcohol-pairings.json", api_key=API_KEY, official_genres=GENRES, no_match_drink=BUD_LIGHT):
+    def __init__ (self, user_input, alcohol_data_file="book-alcohol-pairings.json", api_key=API_KEY, official_genres=GENRES, no_match_drink=BUD_LIGHT):
         """ This class represents a book. Once an object of this class is initiated, that object can be
         used to query book data and get pairings for the book.
         
