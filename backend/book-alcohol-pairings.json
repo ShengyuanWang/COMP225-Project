@@ -10,7 +10,7 @@
             "name":"Margarita",
             "type":"Cocktail",
             "genres":["mexico","romance","love","love stories","romance fiction","action & adventure","adventure","adventure stories",
-                "adventure and adventurers","humorous","humor","humorous fiction","comedy","travel","satire"],
+                "adventure and adventurers","humorous","humor","humorous fiction","comedy","travel","satire","satirical literature"],
             "sentiment": 0.7
         },
         {
@@ -18,7 +18,7 @@
             "type":"Cocktail",
             "genres":["united states","espionage","spy stories","spies","mystery fiction","mystery","mysteries & detective stories","mystery and detective stories",
                 "detective and mystery stories","mystery & detective","historical fiction","history", "historical", "thriller","thrillers","suspense","biographical",
-                "biographies","biography"],
+                "biographies","biography","biography & autobiography"],
             "sentiment": 0.6
         },
         {
@@ -51,8 +51,8 @@
         {
             "name": "Bloody Mary",
             "type": "Cocktail",
-            "genres": ["horror","horror fiction","horror stories","horror tales","mystery fiction","mystery","travel","thriller","thrillers","suspense","classics","classic literature",
-                "classic","classical literature","france"],
+            "genres": ["horror","horror fiction","horror stories","horror tales","mystery fiction","mystery","travel","thriller","thrillers","suspense","classics",
+                "classic fiction","classic literature","classic","classical literature","france"],
             "sentiment": 0.5
         },
         {
@@ -110,7 +110,7 @@
             "type":"Cocktail",
             "genres":["espionage","spy stories","spies","historical fiction","history","historical","mystery fiction","mystery", 
                 "mysteries & detective stories","mystery and detective stories","detective and mystery stories","mystery & detective","thriller","thrillers",
-                "suspense","biographical","biographies","biography"],
+                "suspense","biographical","biographies","biography","biography & autobiography"],
             "sentiment":0.6
         },
         {
@@ -126,7 +126,7 @@
             "type":"Cocktail",
             "genres":["espionage","spy stories","spies","mystery fiction","mystery","mysteries & detective stories","mystery and detective stories",
                 "detective and mystery stories","mystery & detective","historical fiction","history","historical","thriller","thrillers","suspense","biographical",
-                "biographies","biography","italy"],
+                "biographies","biography","biography & autobiography","italy"],
             "sentiment":0.5
         },
         {
@@ -159,36 +159,37 @@
         {
             "name":"Irish Coffee",
             "type":"Cocktail",
-            "genres":["mystery fiction","mystery","romance fiction","romance","love","love stories","travel","classics","classic literature",
-                "classic","classical literature","biographical","biographies","biography","ireland","romantic comedy"],
+            "genres":["mystery fiction","mystery","romance fiction","romance","love","love stories","travel","classics","classic fiction","classic literature",
+                "classic","classical literature","biographical","biographies","biography","biography & autobiography","ireland","romantic comedy"],
             "sentiment":0.8
         },
         {
             "name":"Paloma",
             "type":"Cocktail",
-            "genres":["travel","mexico","biographical","biographies","biography","adventure","adventure stories","adventure and adventurers","mystery fiction",
-                "mystery","thriller","thrillers","suspense","romance","romance fiction","love stories","love","humor","humorous fiction","humorous","comedy",
-                "satire"],
+            "genres":["travel","mexico","biographical","biographies","biography","biography & autobiography","adventure","adventure stories","adventure and adventurers",
+                "mystery fiction","mystery","thriller","thrillers","suspense","romance","romance fiction","love stories","love","humor","humorous fiction","humorous","comedy",
+                "satire","satirical literature"],
             "sentiment":0.7
         },
         {
             "name":"Pisco Sour",
             "type":"Cocktail",
             "genres":["travel","adventure","adventure stories","adventure and adventurers","historical fiction","historical","history","mystery fiction","mystery",
-                "thriller","thrillers","suspense","biographical","biographies","biography","peru"],
+                "thriller","thrillers","suspense","biographical","biographies","biography","biography & autobiography","peru"],
             "sentiment":0.8
         },
         {
             "name":"Amaretto Sour",
             "type":"Cocktail",
             "genres":["romance fiction","romance","love stories","love","historical fiction","historical","history","mystery fiction","mystery",
-                "thriller","thrillers","suspense","biographical","biographies","biography","humor","humorous fiction","humorous","comedy","satire"],
+                "thriller","thrillers","suspense","biographical","biographies","biography","biography & autobiography","humor","humorous fiction","humorous","comedy",
+                "satire","satirical literature"],
             "sentiment":0.8
         },
         {
             "name":"Long Islance Ice Tea",
             "type":"Cocktail",
-            "genres":["long island (n.y.)","united states","mystery fiction","mystery","thriller","thrillers","suspense","classic","classics",
+            "genres":["long island (n.y.)","united states","mystery fiction","mystery","thriller","thrillers","suspense","classic","classics","classic fiction",
                 "classic literature","classical literature","fantasy fiction","fantasy","fantasy in fiction","science fiction","science-fiction"],
             "sentiment":-0.15
         },
@@ -196,14 +197,15 @@
             "name":"Mai Tai",
             "type":"Cocktail",
             "genres":["adventure stories","adventure","adventure and adventurers","travel","mystery fiction","mystery","biographical","biographies","biography",
-                "romance","romance fiction","love stories","love","historical fiction","historical","history"],
+                "biography & autobiography","romance","romance fiction","love stories","love","historical fiction","historical","history"],
             "sentiment":0.7
         },
         {
             "name":"Whiskey Sour",
             "type":"Cocktail",
-            "genres":["classic","classic literature","classical literature","classics","biographical","biographies","biography","historical fiction","historical",
-                "history","action & adventure","adventure and adventurers","adventure stories","adventure"],
+            "genres":["classic","classic literature","classical literature","classics","classic fiction","biographical","biographies","biography",
+                "biography & autobiography","historical fiction","historical","history","action & adventure","adventure and adventurers","adventure stories",
+                "adventure"],
             "sentiment":0.7
         },
         {
@@ -211,7 +213,7 @@
             "type":"Cocktail",
             "genres":["historical fiction","historical","history","romance fiction","romance","love stories","love","mysteries & detective stories",
                 "mystery & detective","mystery and detective stories","mystery fiction","mystery","detective and mystery stories","biographical","biographies",
-                "biography","classic literature","classic","classical literature","classics"],
+                "biography","biography & autobiography","classic literature","classic","classical literature","classics","classic fiction"],
             "sentiment":0.8
         },
         {
@@ -267,15 +269,15 @@
         {
             "name": "Champagne",
             "type": "Wine",
-            "genres": ["france","romance","love","love stories","romance fiction","biographical","biographies","biography"],
+            "genres": ["france","romance","love","love stories","romance fiction","biographical","biographies","biography","biography & autobiography"],
             "sentiment": 1
         },
         {
             "name":"Tempranillo",
             "type":"Wine",
             "genres":["epic","historical fiction","history","historical","fantasy fiction","fantasy","fantasy in fiction","mystery fiction","mystery","thriller",
-                "thrillers","suspense","drama","drama (dramatic works by one author)","biographical","biographies","biography","adventure","adventure stories",
-                "adventure and adventurers","spain"],
+                "thrillers","suspense","drama","drama (dramatic works by one author)","biographical","biographies","biography","biography & autobiography",
+                "adventure","adventure stories","adventure and adventurers","spain"],
             "sentiment": 0.3
         },
         {
@@ -327,14 +329,14 @@
         {
             "name": "IPA",
             "type": "Beer",
-            "genres": ["action & adventure", "thriller","thrillers","suspense","biographical","biographies","biography"],
+            "genres": ["action & adventure", "thriller","thrillers","suspense","biographical","biographies","biography","biography & autobiography"],
             "sentiment":-0.3
 
         },
         {
             "name": "Guinness",
             "type": "Beer",
-            "genres": ["ireland","classics","classic literature","classic","classical literature","fantasy fiction","fantasy","fantasy in fiction","historical fiction",
+            "genres": ["ireland","classics","classic fiction","classic literature","classic","classical literature","fantasy fiction","fantasy","fantasy in fiction","historical fiction",
                 "history","historical","mystery fiction","mystery", "thriller","thrillers","suspense","drama","drama (dramatic works by one author)"],
             "sentiment": 0.6
         },
@@ -389,7 +391,7 @@
             "name": "Whiskey",
             "type": "Spirits",
             "genres": ["horror","horror fiction","horror stories","horror tales","science fiction","science-fiction", "action & adventure", "historical fiction","history","historical","biographical",
-                "biographies","biography"],
+                "biographies","biography","biography & autobiography"],
             "sentiment": 0.6
         },
         {
@@ -414,9 +416,9 @@
         {
             "name": "Gin",
             "type": "Spirits",
-            "genres": ["england","classics","classic literature","classic","classical literature","20th century","historical fiction","history","historical",
-                "action & adventure","adventure","adventure stories","adventure and adventurers","travel","espionage","spy stories","spies","thriller","thrillers",
-                "suspense"],
+            "genres": ["england","classics","classic fiction","classic literature","classic","classical literature","20th century","historical fiction","history",
+                "historical","action & adventure","adventure","adventure stories","adventure and adventurers","travel","espionage","spy stories","spies","thriller",
+                "thrillers","suspense"],
             "sentiment":-0.5
         },
         {
@@ -436,14 +438,15 @@
         {
             "name": "Bourbon",
             "type": "Spirits",
-            "genres": ["science fiction","science-fiction","horror","horror fiction","horror stories","horror tales","biographical","biographies","biography","kentucky","united states"],
+            "genres": ["science fiction","science-fiction","horror","horror fiction","horror stories","horror tales","biographical","biographies","biography",
+                "biography & autobiography","kentucky","united states"],
             "sentiment":0.7
         },
         {
             "name": "Absinthe",
             "type": "Spirits",
             "genres": ["france","historical fiction","history","historical","horror","horror fiction","horror stories","horror tales","mystery fiction","mystery","thriller","thrillers",
-                "suspense","biographical","biographies","biography"],
+                "suspense","biographical","biographies","biography","biography & autobiography"],
             "sentiment":-0.5
         },
         {
@@ -456,9 +459,9 @@
         {
             "name": "Brandy",
             "type": "Spirits",
-            "genres": ["adventure","adventure stories","adventure and adventurers","classics","classic literature","classic","classical literature","19th century",
-                "espionage","spy stories","spies","historical fiction","history","historical","mystery fiction","mystery","thriller","thrillers","suspense","romance",
-                "love","love stories","romance fiction"],
+            "genres": ["adventure","adventure stories","adventure and adventurers","classics","classic fiction","classic literature","classic","classical literature",
+                "19th century","espionage","spy stories","spies","historical fiction","history","historical","mystery fiction","mystery","thriller","thrillers",
+                "suspense","romance","love","love stories","romance fiction"],
             "sentiment":0.6
         },
         {
