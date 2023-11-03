@@ -40,7 +40,7 @@ def get_book():
                                 date=book.get_publication_date(), genres=book.get_genres(),
                                 filtered_genres=book.get_filtered_genres(), description=book.get_description(),
                                 cover_link=book.get_cover_link(), drinks=[drink["name"] for drink in book.get_matching_drinks()],
-                                pairing=book.get_pairing())
+                                name=book.get_pairing()["name"], instructions=book.get_pairing()["instructions"], information=book.get_pairing()["information"])
     return render_template("home.html")
 
 @app.route('/test/<bookname>', methods=["GET"])
@@ -117,7 +117,8 @@ class Book:
             for drink in pairings["alcohols"]:
                 for genre in genres:
                     if genre in drink["genres"]:
-                        matched_drinks.append(drink)
+                        if list(drink.keys()) == ["name", "type", "genres", "instructions", "information"]:
+                            matched_drinks.append(drink)
         return matched_drinks
 
     def query_api_isbn(self, title):
