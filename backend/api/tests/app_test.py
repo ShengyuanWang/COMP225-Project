@@ -14,21 +14,27 @@ def test_get_pairing_json_obj():
     names_of_drinks = [drink["name"] for drink in book_valid.get_matching_drinks()]
     valid_dict = json.loads(book_valid.get_pairing_json_obj())
     invalid_dict = json.loads(book_invalid.get_pairing_json_obj())
+    assert list(valid_dict.keys()) == ["title", "authors", "genres", "cover_link", "name", "instructions", "information"]
+    assert type(valid_dict["instructions"]) is list 
+    assert type(valid_dict["information"]) is str 
+    assert type(valid_dict["name"]) is str 
     assert valid_dict["title"] == "Dune"
     assert valid_dict["authors"] == ["Frank Herbert"]
     assert list(set(valid_dict["genres"])) == ["science fiction"]
     assert valid_dict["cover_link"].startswith("http://books.google.com/books/content?id=ydQiDQAAQBAJ&printsec=frontcover&img=1&zoom=5&edge=curl&source=gbs_api")
-    assert valid_dict["pairing"] in names_of_drinks
+    assert valid_dict["name"] in names_of_drinks
+    assert list(invalid_dict.keys()) == ["title", "authors", "genres", "cover_link", "name", "instructions", "information"]
     assert invalid_dict["title"] == ""
     assert invalid_dict["authors"] == []
     assert invalid_dict["genres"] == []
     assert invalid_dict["cover_link"] == ""
-    assert invalid_dict["pairing"] == book_invalid.get_no_match_drink()
-
+    assert invalid_dict["name"] == book_invalid.get_no_match_drink()["name"]
+    assert invalid_dict["instructions"] == book_invalid.get_no_match_drink()["instructions"]
+    assert invalid_dict["information"] == book_invalid.get_no_match_drink()["information"]
 
 def test_get_pairing():
     names_of_drinks = [drink["name"] for drink in book_valid.get_matching_drinks()]
-    assert book_valid.get_pairing() in names_of_drinks
+    assert book_valid.get_pairing()["name"] in names_of_drinks
     assert book_invalid.get_pairing() == book_invalid.get_no_match_drink()
 
 def test_get_matching_drinks():
@@ -115,6 +121,8 @@ def test_get_genres():
     assert "brothers and sisters" in book_multiversion.get_genres()
 
 def test_get_no_matching_drinks():
-    no_match = Book("Three Body Problem", no_match_drink="water")
-    assert no_match.get_no_match_drink() == "water"
-    assert book_valid.get_no_match_drink() =="Bud Light"
+    no_match = Book("wqertvfghj", no_match_drink={"name":"water", "instructions":["no"], "information":"none"})
+    assert no_match.get_no_match_drink()["name"] == "water"
+    assert no_match.get_no_match_drink()["instructions"] == ["no"]
+    assert no_match.get_no_match_drink()["information"] == "none"
+
