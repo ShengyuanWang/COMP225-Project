@@ -20,7 +20,7 @@ GENRES = ["fantasy fiction", "historical fiction", "horror", "thriller", "scienc
           "england","france","spain","united states","friendship","crime","romantic comedy"]
 
 # drink for when there are no matches 
-BUD_LIGHT = {"pairing":"Bud Light", "instructions": ["Just pop open the can."], "information": "Classic American Beer."}
+BUD_LIGHT = {"name":"Bud Light", "instructions": ["Just pop open the can."], "information": "Classic American Beer."}
 
 app = Flask(__name__)
 CORS(app)
@@ -39,7 +39,7 @@ def get_book():
                                 authors=book.get_authors(), publisher=book.get_publisher(),
                                 date=book.get_publication_date(), genres=book.get_genres(),
                                 filtered_genres=book.get_filtered_genres(), description=book.get_description(),
-                                cover_link=book.get_cover_link(), drinks=book.get_matching_drinks(),
+                                cover_link=book.get_cover_link(), drinks=[drink["name"] for drink in book.get_matching_drinks()],
                                 pairing=book.get_pairing())
     return render_template("home.html")
 
@@ -82,7 +82,7 @@ class Book:
         pairing["authors"] = self.get_authors()
         pairing["genres"] = self.get_filtered_genres()
         pairing["cover_link"] = self.get_cover_link()
-        pairing["pairing"] = self.get_pairing()["pairing"]
+        pairing["name"] = self.get_pairing()["name"]
         pairing["instructions"] = self.get_pairing()["instructions"]
         pairing["information"] = self.get_pairing()["information"]
         return json.dumps(pairing)
@@ -96,7 +96,7 @@ class Book:
         drink_dict = {}
         if len(drinks) > 0:
             ran_drink = random.choice(drinks)
-            drink_dict["pairing"] = ran_drink["name"]
+            drink_dict["name"] = ran_drink["name"]
             drink_dict["instructions"] = ran_drink["instructions"]
             drink_dict["information"] = ran_drink["information"]
             return drink_dict
@@ -312,7 +312,7 @@ class Book:
 
     def get_no_match_drink(self):
         """Return the instance variable containing the drink object that will be used if 
-        no pairing is found. Must have the keys pairing, instructions, information.
+        no pairing is found. Must have the keys name, instructions, information.
         """
         return self.no_match_drink
 
