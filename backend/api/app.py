@@ -43,6 +43,20 @@ def get_book():
                                 pairing=book.get_pairing())
     return render_template("home.html")
 
+def get_genres():
+    """" Extracts genres and makes json with all of them"""
+
+    with open('book-alcohol-pairings.json') as input_file:
+        data = json.load(input_file)
+
+    extracted_data = {
+        "genre": data.get("genre"),
+        "sentiment": data.get("sentiment")
+    }
+
+    with open('output.json', 'r') as output_file:
+        json.dump(extracted_data, output_file, indent=4)
+
 @app.route('/test/<bookname>', methods=["GET"])
 def search1(bookname):
     """Return pairing dictonary for testing of frontend intergration."""
@@ -320,3 +334,4 @@ class Book:
 
 if __name__ == "__main__":
     app.run(port=8000)
+    get_genres()
