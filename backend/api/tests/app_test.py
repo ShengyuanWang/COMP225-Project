@@ -66,13 +66,21 @@ def test_get_matching_drinks():
     valid_book_drinks = book_valid.get_matching_drinks()
     drink_1 = valid_book_drinks[0]
     assert len(valid_book_drinks) > 0
-    assert list(drink_1.keys()) == ["name", "type", "genres", "instructions", "information"]
+    assert list(drink_1.keys()) == ["name", "type", "genres", "sentiment", "instructions", "information"]
     assert type(drink_1["name"]) is str
     assert type(drink_1["type"]) is str
     assert type(drink_1["genres"])is list
     assert type(drink_1["instructions"]) is list
     assert type(drink_1["information"])is str
     assert book_invalid.get_matching_drinks() == []
+
+def test_get_sentiment():
+    assert book_invalid.get_sentiment() == 0
+    score = book_valid.get_sentiment()
+    assert type(score) is float 
+    assert len(str(score).split('.')[1]) if '.' in str(score) else 0 == 2
+    assert score < .5 
+    assert score > .0
 
 def test_query_api_isbn():
     assert type(book_valid.query_api_isbns(book_valid.get_user_input())) is list 
