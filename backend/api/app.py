@@ -68,7 +68,7 @@ class Book:
         self.official_genres = official_genres
         self.no_match_drink = no_match_drink
 
-        self.isbn_list = self.query_api_isbn(self.user_input)
+        self.isbn_list = self.query_api_isbns(self.user_input)
         self.isbn = self.select_isbn(self.isbn_list)
         self.data = self.query_api_book_data()
         self.genres = self.query_api_genres()
@@ -111,18 +111,18 @@ class Book:
         """
         genres = self.get_filtered_genres()
         with open(self.alcohol_data_file, "r") as f:
-            pairings = json.load(f)
+            drinks = json.load(f)
         matched_drinks = []
 
         if genres is not None and len(genres) > 0:
-            for drink in pairings["alcohols"]:
+            for drink in drinks["alcohols"]:
                 for genre in genres:
                     if genre in drink["genres"]:
                         if all(key in drink for key in ["name", "type", "genres", "instructions", "information"]):
                             matched_drinks.append(drink)
         return matched_drinks
 
-    def query_api_isbn(self, title):
+    def query_api_isbns(self, title):
         base_url = 'https://www.googleapis.com/books/v1/volumes'
         params = {
             'q': f'intitle:{title}',
