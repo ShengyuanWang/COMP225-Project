@@ -456,7 +456,7 @@
                 "france","coming of age","contemporary fiction","contemporary"],
             "sentiment":0.7,
             "instructions":["TBA"],
-            "information":"TBA"
+            "information":"Pour yourself a glass!"
         },
         {
             "name": "Pinot Noir",
@@ -464,7 +464,7 @@
             "genres": ["romance","love","love stories","romance fiction", "mystery fiction","mystery","france","united states"],
             "sentiment": 0.6,
             "instructions":["TBA"],
-            "information":"TBA"
+            "information":"Pour yourself a glass!"
         },
         {
             "name": "Merlot",
@@ -473,7 +473,7 @@
                 "gothic"],
             "sentiment": 0.6,
             "instructions":["TBA"],
-            "information":"TBA"
+            "information":"Pour yourself a glass!"
         },
         {
             "name": "Rosé",
@@ -481,7 +481,7 @@
             "genres": ["romance","love","love stories","romance fiction", "humorous","humor","humorous fiction","comedy","france","spain"],
             "sentiment": 0.7,
             "instructions":["TBA"],
-            "information":"TBA"
+            "information":"Pour yourself a glass!"
         },
         {
             "name": "Chardonnay",
@@ -491,7 +491,7 @@
                 "france","united states","contemporary fiction","contemporary"],
             "sentiment":0.6,
             "instructions":["TBA"],
-            "information":"TBA"
+            "information":"Pour yourself a glass!"
         },
         {
             "name": "Dry Vermouth",
@@ -501,7 +501,7 @@
                 "thrillers","suspense","france","spain","italy"],
             "sentiment":-0.5,
             "instructions":["TBA"],
-            "information":"TBA"
+            "information":"Pour yourself a glass!"
         },
         {
             "name": "Sherry",
@@ -511,7 +511,7 @@
                 "spain"],
             "sentiment":0.5,
             "instructions":["TBA"],
-            "information":"TBA"
+            "information":"Pour yourself a glass!"
         },
         {
             "name": "Champagne",
@@ -520,7 +520,7 @@
                 "contemporary fiction"],
             "sentiment": 1,
             "instructions":["TBA"],
-            "information":"TBA"
+            "information":"Pour yourself a glass!"
         },
         {
             "name":"Tempranillo",
@@ -530,7 +530,7 @@
                 "adventure","adventure stories","adventure and adventurers","spain","contemporary fiction","contemporary"],
             "sentiment": 0.3,
             "instructions":["TBA"],
-            "information":"TBA"
+            "information":"Pour yourself a glass!"
         },
         {
             "name": "Zinfandel",
@@ -540,7 +540,7 @@
                 "united states", "supernatural","paranormal fiction","paranormal","contemporary fiction","contemporary"],
             "sentiment": 0.6,
             "instructions":["TBA"],
-            "information":"TBA"
+            "information":"Pour yourself a glass!"
         },
         {
             "name":"Prosecco",
@@ -549,7 +549,7 @@
                 "adventure stories","adventure and adventurers","italy","contemporary fiction","contemporary"],
             "sentiment": 0.9,
             "instructions":["TBA"],
-            "information":"TBA"
+            "information":"Pour yourself a glass!"
         },
         {
             "name": "Cabernet Sauvignon",
@@ -558,7 +558,7 @@
                 "united states","california","epic"],
             "sentiment": 0.6,
             "instructions":["TBA"],
-            "information":"TBA"
+            "information":"Pour yourself a glass!"
         },
         {
             "name": "Syrah",
@@ -567,7 +567,7 @@
                 "paranormal"],
             "sentiment":0.6,
             "instructions":["TBA"],
-            "information":"TBA"
+            "information":"Pour yourself a glass!"
         },
         {
             "name": "Malbec",
@@ -576,7 +576,7 @@
                 "france","argentina","supernatural","paranormal fiction","paranormal","gothic fiction","gothic"],
             "sentiment":0.6,
             "instructions":["TBA"],
-            "information":"TBA"
+            "information":"Pour yourself a glass!"
         },
         {
             "name": "Mead",
@@ -808,7 +808,7 @@
                 "action & adventure","adventure and adventurers","adventure stories","adventure"],
             "sentiment":0.7,
             "instructions":["TBA"],
-            "information":"TBA"
+            "information":"Pour yourself a glass!"
         }
     ]
 }
