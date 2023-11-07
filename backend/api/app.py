@@ -197,7 +197,7 @@ class Book:
         names = []
         for subject in subjects:
             if isinstance(subject, dict):
-                regex_split = re.split(r"[,—–]", subject["name"])
+                regex_split = re.split(r"[,—–-]", subject["name"])
                 for word in regex_split:
                     word = word.strip().lower()
                     if "(" in word:
