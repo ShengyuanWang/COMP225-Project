@@ -108,7 +108,7 @@
             "name": "Bloody Mary",
             "type": "Cocktail",
             "genres": ["horror","horror fiction","horror stories","horror tales","mystery fiction","mystery","travel","thriller","thrillers","suspense","classics",
-                "classic fiction","classic literature","classic","classical literature","france","dracula","vampires"],
+                "classic fiction","classic literature","classic","classical literature","france","dracula","vampires","vampire novels"],
             "sentiment": 0.5,
             "instructions": [
                 "1 1/2 oz. vodka",
@@ -213,7 +213,7 @@
             "name": "Sangria",
             "type": "Cocktail",
             "genres": ["romance","love","love stories","romance fiction","travel","thriller","thrillers","suspense","mystery fiction",
-                "mystery","action & adventure","spain","contemporary fiction","contemporary"],  
+                "mystery","action & adventure","spain","contemporary fiction","contemporary","vampires","vampire novels"],  
             "sentiment": 0.6,
             "instructions": [
                 "1 bottle of red wine",
@@ -258,7 +258,7 @@
             "name": "Spiced Wine",
             "type": "Cocktail",
             "genres": ["friendship","fantasy fiction","fantasy","fantasy in fiction","historical fiction","history","historical","adventure","adventure stories",
-                "adventure and adventurers"],
+                "adventure and adventurers", "demons"],
             "sentiment": 0.5,
             "instructions": [
                 "1 bottle of red wine",
@@ -308,7 +308,8 @@
         {
             "name": "Dark and Stormy",
             "type": "Cocktail",
-            "genres": ["mystery fiction","mystery", "thriller","thrillers","suspense","gothic fiction","gothic","historical fiction","historical","history"],
+            "genres": ["mystery fiction","mystery", "thriller","thrillers","suspense","gothic fiction","gothic","gothic & horror","historical fiction","historical",
+                "history","werewolves"],
             "sentiment": 0.6,
             "instructions": [
                 "2 oz. dark rum",
@@ -443,8 +444,8 @@
         {
             "name":"Vampire's Kiss",
             "type":"Cocktail",
-            "genres":["vampires","dracula","supernatural","gothic","gothic fiction","horror fiction","horror stories","horror tales","horror","fantasy fiction",
-                "fantasy in fiction","fantasy","romance fiction","romance","love","love stories"],
+            "genres":["vampires","vampire novels","dracula","supernatural","gothic","gothic fiction","gothic & horror","horror fiction","horror stories","horror tales","horror","fantasy fiction",
+                "fantasy in fiction","fantasy","romance fiction","romance","love","love stories","demons"],
             "sentiment":0.4,
             "instructions":["TBA"],
             "information":"TBA"
@@ -470,7 +471,7 @@
             "name": "Merlot",
             "type": "Wine",
             "genres": ["romance","love","love stories","romance fiction","mystery fiction","mystery", "science fiction","science-fiction","france","gothic fiction",
-                "gothic","political fiction","political"],
+                "gothic","gothic & horror","political fiction","political","vampires","vampire novels"],
             "sentiment": 0.6,
             "instructions":["TBA"],
             "information":"Pour yourself a glass!"
@@ -555,7 +556,7 @@
             "name": "Cabernet Sauvignon",
             "type": "Wine",
             "genres": ["science fiction","science-fiction","mystery fiction","mystery", "historical fiction","history","historical","france",
-                "united states","california","epic","political fiction","political"],
+                "united states","california","epic","political fiction","political","vampires","vampire novels"],
             "sentiment": 0.6,
             "instructions":["TBA"],
             "information":"Pour yourself a glass!"
@@ -573,7 +574,7 @@
             "name": "Malbec",
             "type": "Wine",
             "genres": ["romance","love","love stories","romance fiction", "mystery fiction","mystery","horror","horror fiction","horror stories","horror tales",
-                "france","argentina","supernatural","paranormal fiction","paranormal","gothic fiction","gothic"],
+                "france","argentina","supernatural","paranormal fiction","paranormal","gothic & horror","gothic fiction","gothic"],
             "sentiment":0.6,
             "instructions":["TBA"],
             "information":"Pour yourself a glass!"
@@ -589,7 +590,7 @@
         {
             "name": "Stout",
             "type": "Beer",
-            "genres": ["action & adventure", "horror","horror fiction","horror stories","horror tales","thriller","thrillers","suspense","gothic fiction","gothic"],
+            "genres": ["action & adventure", "horror","horror fiction","horror stories","horror tales","thriller","thrillers","suspense","gothic & horror","gothic fiction","gothic"],
             "sentiment": 0.6,
             "instructions":["TBA"],
             "information":"TBA"
@@ -685,7 +686,8 @@
         {
             "name": "Dark Rum",
             "type": "Spirits",
-            "genres": ["caribbean area","jamaica","pirates","action & adventure", "mystery fiction","mystery", "thriller","thrillers","suspense"],
+            "genres": ["caribbean area","jamaica","pirates","action & adventure", "mystery fiction","mystery", "thriller","thrillers","suspense",
+                "werewolves","demons"],
             "sentiment":0.6,
             "instructions":["TBA"],
             "information":"TBA"
@@ -705,7 +707,7 @@
             "type": "Spirits",
             "genres": ["horror","horror fiction","horror stories","horror tales","science fiction","science-fiction", "action & adventure", "historical fiction",
                 "history","historical","biographical","biographies","biography","biography & autobiography","supernatural","paranormal fiction","paranormal","gothic",
-                "gothic fiction","political","political fiction"],
+                "gothic fiction","gothic & horror","political","political fiction","werewolves","demons"],
             "sentiment": 0.6,
             "instructions":["TBA"],
             "information":"TBA"
@@ -768,7 +770,7 @@
             "name": "Bourbon",
             "type": "Spirits",
             "genres": ["science fiction","science-fiction","horror","horror fiction","horror stories","horror tales","biographical","biographies","biography",
-                "biography & autobiography","kentucky","united states","political fiction","political"],
+                "biography & autobiography","kentucky","united states","political fiction","political","vampires","vampire novels"],
             "sentiment":0.7,
             "instructions":["TBA"],
             "information":"TBA"
@@ -777,7 +779,8 @@
             "name": "Absinthe",
             "type": "Spirits",
             "genres": ["france","historical fiction","history","historical","horror","horror fiction","horror stories","horror tales","mystery fiction","mystery","thriller",
-                "thrillers","suspense","supernatural","biographical","biographies","biography","biography & autobiography", "supernatural","paranormal","paranormal fiction"],
+                "thrillers","suspense","supernatural","biographical","biographies","biography","biography & autobiography", "supernatural","paranormal","paranormal fiction",
+                "demons"],
             "sentiment":-0.5,
             "instructions":["TBA"],
             "information":"TBA"
