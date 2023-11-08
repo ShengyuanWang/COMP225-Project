@@ -9,7 +9,7 @@ def collect_genres():
     genre_list = []
     for x in data["alcohols"]:
         genre_list+=x["genres"]
-        #print(x)
+        print(x)
     newList =list(set(genre_list))
     
     with open('output.json', 'w') as output_file:
