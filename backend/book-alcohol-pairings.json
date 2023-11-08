@@ -156,7 +156,9 @@
         {
             "name": "Moscow Mule",
             "type": "Cocktail",
-            "genres": ["action & adventure","romance","love","love stories","romance fiction"],
+            "genres": ["action & adventure","romance","love","love stories","romance fiction","travel","romantic comedy","comedy","humor","humorous fiction",
+                "humorous","20th century","historical fiction","historical","history","adventure and adventurers","adventure stories","adventure","quests",
+                "mystery fiction","mystery"],
             "sentiment": 0.7,
             "instructions": [
                 "2 oz. vodka",
@@ -166,6 +168,24 @@
                 "Ice"
             ],
             "information": "The Moscow Mule is a refreshing and zesty cocktail with a signature copper mug presentation. To craft this drink, start by filling a copper mug or highball glass with ice. Squeeze the juice from half a lime into the glass, and drop the spent lime shell in. Then, pour in 2 oz. of vodka. Top it off with approximately 4 oz. of ginger beer, or adjust to your preferred level of ginger flavor. Give it a gentle stir to mix the ingredients. To garnish, add a lime wheel or wedge for an extra burst of citrus aroma. The Moscow Mule is known for its crisp and tangy taste, making it a popular choice for a refreshing and enjoyable cocktail."
+        },
+        {
+            "name":"Pan-Galactic Gargle Blaster",
+            "type":"Cocktail",
+            "genres":["vogons","science fiction","science-fiction","adventure and adventurers","adventure stories","adventure","action & adventure","comedy",
+                "humor","humorous fiction","humorous","satire","comic science fiction","satirical literature"],
+            "sentiment":0.8,
+            "instructions":["TBA"],
+            "information":"TBA"
+        },
+        {
+            "name":"Death in the Afternoon",
+            "type":"Cocktail",
+            "genres":["hemingway","horror fiction","horror stories","horror tales","horror","classic fiction","classic literature","classic",
+                "classical literature","classics","historical fiction","historical","history","20th century","mystery fiction","mystery"],
+            "sentiment":0.15,
+            "instructions":["TBA"],
+            "information":"TBA"
         },
         {
             "name":"Espresso Martini",
@@ -452,10 +472,20 @@
             "information":"TBA"
         },
         {
+            "name":"Black Magic Cocktail",
+            "type":"Cocktail",
+            "genres":["magic","magic in fiction","witchcraft","witches fiction","witches","demons","wizards","wizards fiction","fantasy fiction","fantasy in fiction","fantasy","supernatural",
+                "epic","thriller","thrillers","suspense fiction","suspense","paranormal fiction","paranormal","gothic & horror","gothic fiction","gothic","mysteries & detective stories",
+                "mystery & detective","mystery and detective stories","detective and mystery stories","mystery fiction","mystery"],
+            "sentiment":-0.3,
+            "instructions":["TBA"],
+            "information":"TBA"
+        },
+        {
             "name": "Moscato",
             "type": "Wine",
-            "genres": ["friendship","female friendship","romance","love","love stories","romance fiction","humorous","humor","humorous fiction","comedy","italy",
-                "france","coming of age","contemporary fiction","contemporary"],
+            "genres": ["friendship","female friendship","romance","love","love stories","romance fiction","humorous","humor","humorous fiction",
+                "comedy","italy","france","coming of age","contemporary fiction","contemporary","romantic comedy"],
             "sentiment":0.7,
             "instructions":["TBA"],
             "information":"Pour yourself a glass!"
@@ -518,8 +548,8 @@
         {
             "name": "Champagne",
             "type": "Wine",
-            "genres": ["france","romance","love","love stories","romance fiction","biographical","biographies","biography","biography & autobiography","contemporary",
-                "contemporary fiction"],
+            "genres": ["france","romance","love","love stories","romance fiction","biographical","biographies","biography",
+                "biography & autobiography","contemporary","contemporary fiction","romantic comedy","comedy","humor","humorous fiction","humorous"],
             "sentiment": 1,
             "instructions":["TBA"],
             "information":"Pour yourself a glass!"
@@ -707,9 +737,10 @@
         {
             "name": "Whiskey",
             "type": "Spirits",
-            "genres": ["horror","horror fiction","horror stories","horror tales","science fiction","science-fiction", "action & adventure", "historical fiction",
-                "history","historical","biographical","biographies","biography","biography & autobiography","supernatural","paranormal fiction","paranormal","gothic",
-                "gothic fiction","gothic & horror","political","political fiction","werewolves","demons"],
+            "genres": ["horror","horror fiction","horror stories","horror tales","science fiction","science-fiction", "action & adventure",
+                "historical fiction","history","historical","biographical","biographies","biography","biography & autobiography","supernatural",
+                "paranormal fiction","paranormal","gothic","gothic fiction","gothic & horror","political","political fiction","werewolves","demons",
+                "classic fiction","classic literature","classic","classical literature","classics"],
             "sentiment": 0.6,
             "instructions":["TBA"],
             "information":"TBA"
