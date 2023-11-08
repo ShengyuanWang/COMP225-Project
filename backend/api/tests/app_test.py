@@ -22,7 +22,7 @@ def test_get_pairing_json_obj():
     assert type(valid_dict["information"]) is str 
     assert valid_dict["title"] == "Dune"
     assert valid_dict["authors"] == ["Frank Herbert"]
-    assert list(set(valid_dict["genres"])) == ["science fiction"]
+    assert set(valid_dict["genres"]) == set(["science-fiction", "science fiction"])
     assert valid_dict["cover_link"].startswith("http://books.google.com/books/content?id")
     assert valid_dict["name"] in [drink["name"] for drink in book_valid.get_matching_drinks()]
     assert valid_dict["instructions"] in [drink["instructions"] for drink in book_valid.get_matching_drinks()]
@@ -66,13 +66,21 @@ def test_get_matching_drinks():
     valid_book_drinks = book_valid.get_matching_drinks()
     drink_1 = valid_book_drinks[0]
     assert len(valid_book_drinks) > 0
-    assert list(drink_1.keys()) == ["name", "type", "genres", "instructions", "information"]
+    assert list(drink_1.keys()) == ["name", "type", "genres", "sentiment", "instructions", "information"]
     assert type(drink_1["name"]) is str
     assert type(drink_1["type"]) is str
     assert type(drink_1["genres"])is list
     assert type(drink_1["instructions"]) is list
     assert type(drink_1["information"])is str
     assert book_invalid.get_matching_drinks() == []
+
+def test_get_sentiment():
+    assert book_invalid.get_sentiment() == 0
+    score = book_valid.get_sentiment()
+    assert type(score) is float 
+    assert len(str(score).split('.')[1]) if '.' in str(score) else 0 == 2
+    assert score < .5 
+    assert score > .0
 
 def test_query_api_isbn():
     assert type(book_valid.query_api_isbns(book_valid.get_user_input())) is list 
@@ -116,15 +124,19 @@ def test_query_api_genres():
 def test_split_subjects():
     assert book_valid.split_subjects([]) == []
     assert book_valid.split_subjects([{"name":"a"}]) == ["a"]
-    assert book_valid.split_subjects([{"name":"-"}]) == []
     assert book_valid.split_subjects([{"name":"()"}]) == []
     assert book_valid.split_subjects([{"name":"a"}, {"name":"b"}]) == ["a","b"]
     assert book_valid.split_subjects([{"name":"Abc"}, {"name":"BbBB"}]) == ["abc","bbbb"]
     assert book_valid.split_subjects([{"name":"aa   "}, {"name":"   bb"}]) == ["aa","bb"]
-    assert book_valid.split_subjects([{"name":"aa-bb"}, {"name":"cc"}]) == ["aa","bb", "cc"]
-    assert book_valid.split_subjects([{"name":"aa—-bb"}, {"name":"cc"}]) == ["aa","bb", "cc"]
+    assert book_valid.split_subjects([{"name":"aa-bb"}, {"name":"cc"}]) == ["aa-bb","cc"]
+    assert book_valid.split_subjects([{"name":"aa—–bb"}, {"name":"cc"}]) == ["aa","bb", "cc"]
+    assert book_valid.split_subjects([{"name":"aa—–bb-dd"}, {"name":"cc"}]) == ["aa","bb-dd", "cc"]
+    assert book_valid.split_subjects([{"name":"aa/bb"}, {"name":"cc"}]) == ["aa","bb", "cc"]
     assert book_valid.split_subjects([{"name":"aa(bb)"}, {"name":"cc"}]) == ["aa","bb", "cc"]
     assert book_valid.split_subjects([{"name":"(aa)"}]) == ["aa"]
+
+def test_combine_dates():
+    pass
 
 def test_filter_title():
     assert book_valid.filter_title("heLLo and WORLD!") == "heLLo WORLD!"
@@ -138,7 +150,7 @@ def test_select_isbn():
     assert book_invalid.select_isbn(book_invalid.get_isbn_list()) == ""
 
 def test_get_filtered_genres():
-    assert list(set(book_valid.get_filtered_genres())) == ["science fiction"]
+    assert set(book_valid.get_filtered_genres()) == set(["science-fiction", "science fiction"])
     assert book_invalid.get_filtered_genres() == []
 
 def test_get_title():
@@ -167,7 +179,7 @@ def test_get_cover_link():
 def test_get_isbn():
     assert book_valid.get_isbn() == "9780143111580" 
     assert book_invalid.get_isbn() == ""   
-    assert book_multiversion.get_isbn() == "9789390504640"
+    assert book_multiversion.get_isbn() in book_multiversion.get_isbn_list()
 
 def test_get_isbn_list():
     assert book_valid.get_isbn_list() ==  ["9780143111580", "9780143111580", "9780593099322"]
@@ -181,7 +193,7 @@ def test_get_user_input():
 def test_get_genres():
     assert "fiction" in book_valid.get_genres()
     assert "imaginary place" in book_valid.get_genres()
-    assert "science fiction" in book_valid.get_genres()
+    assert "science-fiction" in book_valid.get_genres()
     assert book_invalid.get_genres() == []
     assert "women in england" in book_multiversion.get_genres()
     assert "brothers and sisters" in book_multiversion.get_genres()

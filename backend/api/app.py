@@ -5,6 +5,7 @@ import random
 import requests
 from flask_cors import CORS
 import re
+from textblob import TextBlob
 
 # DO NOT make this public, keep in private github
 API_KEY = "AIzaSyAHHByDAWIAvXhTNkajTqazMhBUO045aS0" 
@@ -118,9 +119,14 @@ class Book:
             for drink in drinks["alcohols"]:
                 for genre in genres:
                     if genre in drink["genres"]:
-                        if all(key in drink for key in ["name", "type", "genres", "instructions", "information"]):
+                        if all(key in drink for key in ["name", "type", "genres", "sentiment", "instructions", "information"]):
                             matched_drinks.append(drink)
         return matched_drinks
+
+    def get_sentiment(self):
+        blob = TextBlob(self.get_description())
+        sentiment_score = blob.sentiment.polarity
+        return round(sentiment_score, 2)
 
     def query_api_isbns(self, title):
         base_url = 'https://www.googleapis.com/books/v1/volumes'
@@ -182,7 +188,8 @@ class Book:
                 }
                 json = requests.get(base_url, params=params).json()
                 data = json.get(f"ISBN:{isbn}", {})
-                names = self.split_subjects(data.get('subjects', ['N/A']))                
+                names = self.split_subjects(data.get('subjects', ['N/A']))   
+                names = self.combine_dates(names)             
                 genres += names
             return genres
         except:
@@ -197,7 +204,7 @@ class Book:
         names = []
         for subject in subjects:
             if isinstance(subject, dict):
-                regex_split = re.split(r"[,—–-]", subject["name"])
+                regex_split = re.split(r"[,—–/]", subject["name"])
                 for word in regex_split:
                     word = word.strip().lower()
                     if "(" in word:
@@ -211,6 +218,10 @@ class Book:
                     else:
                         names.append(word.strip())
         return [name for name in names if name != ""]
+    
+    def combine_dates(self, names):
+        # to-do: add code to combine dates
+        return names
 
     def filter_title(self, title):
         """Cleans up titles to not include some common stop words, so that the titles 
@@ -320,4 +331,3 @@ class Book:
 
 if __name__ == "__main__":
     app.run(port=8000)
-    get_genres()
