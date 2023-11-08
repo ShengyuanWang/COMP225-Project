@@ -33,7 +33,7 @@ console.log('this is', route.path)
   left: 0;
   width: 100%;
   height: 100%;
-  background-color: #C3BCB3;
+  background-color: #EAE7DC;
 }
 
 </style>
