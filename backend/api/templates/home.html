@@ -1,9 +1,8 @@
 <!doctype html>
-<html lang="en">
 <title>Home</title>
 <h1> Enter the name of your book </h1>
 <form action="{{ url_for("get_book")}}" method="post">
-  <input type="text" id="book" name="book" label="enter book title" placeholder=""> 
+  <input type="text" id="book" name="book" placeholder=""> 
   <button type="submit">Submit</button>
 </form>
 {% if user_input %}
@@ -61,4 +60,3 @@
 {% if cover_link %}
   <img src="{{ cover_link }}"/> 
 {% endif %}
-</html>
