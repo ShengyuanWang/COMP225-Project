@@ -41,10 +41,10 @@ const handleCollapse = () =>{
   console.log(w);
   if (w.value == 100) {
     w.value = 400
-    menuColor.value = '#636466'
+    menuColor.value = '#D8C3A5'
   } else {
     w.value = 100
-    menuColor.value = '#C3BCB3'
+    menuColor.value = '#D8C3A5'
   }
 }
 
@@ -161,10 +161,10 @@ const clickMatch = () => {
 .el-menu-vertical-demo:not(.el-menu--collapse) {
   width: 350px;
   min-height: 400px;
-  background-color: #636466;
+  background-color: #D8C3A5;
 }
 .el-collapse {
-  background-color: #636466;
+  background-color: #D8C3A5;
 }
 .menu {
   list-style-type: none;
@@ -174,7 +174,7 @@ const clickMatch = () => {
   overflow: auto; /* 如果导航栏选项多，允许滚动 */
   z-index: 1;
   overflow-x: hidden;
-  background-color: #C3BCB3;
+  background-color: #D8C3A5;
 }
 .menu_icon{
   height: 40px;
@@ -189,16 +189,18 @@ const clickMatch = () => {
 .el-menu-vertical-demo:not(.el-menu--collapse) {
   width: 350px;
   min-height: 200px;
-  background-color: #636466;
+  background-color: #D8C3A5;
 }
 h1 {
   font-size: 40px;
   margin-top: 5px;
   margin-left: 30px;
+  color: #E85A4F;
 }
 h2 {
   font-size: 25px;
   margin-left: 30px;
+  color: #E98074;
 }
 .preference {
   color: white

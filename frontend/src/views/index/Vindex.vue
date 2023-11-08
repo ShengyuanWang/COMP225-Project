@@ -31,14 +31,14 @@
   <div>
     <div style="display: flex; justify-content: center; align-items: center; position: relative;">
       <div class="title">
-        <p v-if="obj.underage">BOOK + JUICE</p> <p v-else>BOOK + WINE</p>
+        <h1 style="font-size: 100px" v-if="obj.underage">BOOK + JUICE</h1> <h1 style="font-size: 100px" v-else>BOOK + WINE</h1>
       </div>
     </div>
     <div class="center">
-      <img src="/src/assets/logo.png" alt="Center Image">
+      <img src="/src/assets/logo.png" alt="Group Logo">
     </div>
     <div class="pop-up">
-      <p class="question"> Are you over 21 ?</p>
+      <h2 class="question"> Are you over 21 ?</h2>
       <div class="center">
         <div class="btn"><el-button type="primary" size="large" @click="onClickYes()"><p>Yes</p></el-button></div>
         <div class="btn"><el-button type="primary" size="large" @click="onClickNo()"><p>No</p></el-button></div>
@@ -47,7 +47,7 @@
   </div>
 </template>
 
-<style scss>
+<style>
 .title {
   color: #636466;
   font-size: 100px;
@@ -57,6 +57,9 @@
   margin-bottom: 20px;
   display: block;
 }
+
+
+
 
 .center {
   display: flex;
