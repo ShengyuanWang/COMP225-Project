@@ -138,18 +138,18 @@ const url_link = ref("http://localhost:5173/show");
     <div v-if="!isCollapse && showPreference">
       <h1>Preference</h1>
       <div class="check">
-        <p><el-checkbox v-model="preference.beer" label="Beer" size="large" style="color: white" text-color="#"/></p>
-        <p><el-checkbox v-model="preference.wine" label="Wine" size="large" style="color: white"/></p>
-        <p><el-checkbox v-model="preference.spirits" label="Spirits" size="large" style="color: white"/></p>
-        <p><el-checkbox v-model="preference.cocktails" label="Cocktails" size="large" style="color: white"/></p>
+        <p><el-checkbox v-model="preference.beer" label="Beer" size="large" style="color: black"/></p>
+        <p><el-checkbox v-model="preference.wine" label="Wine" size="large" style="color: black"/></p>
+        <p><el-checkbox v-model="preference.spirits" label="Spirits" size="large" style="color: black"/></p>
+        <p><el-checkbox v-model="preference.cocktails" label="Cocktails" size="large" style="color: black"/></p>
       </div>
       <h1>Allergies</h1>
       <div class="check">
-        <p><el-checkbox v-model="allergy.treenuts" label="Tree Nuts" size="large" style="color: white"/></p>
-        <p><el-checkbox v-model="allergy.peanuts" label="Peanuts" size="large" style="color: white"/></p>
-        <p><el-checkbox v-model="allergy.soy" label="Soy" size="large" style="color: white"/></p>
-        <p><el-checkbox v-model="allergy.seasame" label="Seasame" size="large" style="color: white"/></p>
-        <p><el-checkbox v-model="allergy.other" label="Other" size="large" style="color: white"/></p>
+        <p><el-checkbox v-model="allergy.treenuts" label="Tree Nuts" size="large" style="color: black"/></p>
+        <p><el-checkbox v-model="allergy.peanuts" label="Peanuts" size="large" style="color: black"/></p>
+        <p><el-checkbox v-model="allergy.soy" label="Soy" size="large" style="color: black"/></p>
+        <p><el-checkbox v-model="allergy.seasame" label="Seasame" size="large" style="color: black"/></p>
+        <p><el-checkbox v-model="allergy.other" label="Other" size="large" style="color: black"/></p>
       </div>
     </div>
 
@@ -226,6 +226,20 @@ a {
 
 .check {
   margin-left: 30px;
+}
+.el-checkbox__input.is-checked .el-checkbox__inner,
+.el-checkbox__input.is-indeterminate .el-checkbox__inner {
+  border-color: #992e22 !important;
+  background-color: #992e22 !important;
+}
+.el-checkbox__input.is-checked+.el-checkbox__label{
+  color: #992e22 !important;
+}
+.el-checkbox__inner:hover{
+  border-color: #992e22 !important;
+}
+.el-checkbox__input.is-focus .el-checkbox__inner {
+  border-color: #992e22 !important;
 }
 
 </style>
