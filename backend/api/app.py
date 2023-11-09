@@ -41,7 +41,7 @@ def get_book():
                                 date=book.get_publication_date(), genres=book.get_genres(),
                                 filtered_genres=book.get_filtered_genres(), description=book.get_description(),
                                 cover_link=book.get_cover_link(), drinks=[drink["name"] for drink in book.get_matching_drinks()],
-                                pairing=book.get_pairing(), sentiment=book.get_sentiment())
+                                pairing=book.get_pairing())
     return render_template("home.html")
 
 @app.route('/test/<bookname>', methods=["GET"])
@@ -188,7 +188,8 @@ class Book:
                 }
                 json = requests.get(base_url, params=params).json()
                 data = json.get(f"ISBN:{isbn}", {})
-                names = self.split_subjects(data.get('subjects', ['N/A']))                
+                names = self.split_subjects(data.get('subjects', ['N/A']))   
+                names = self.combine_dates(names)             
                 genres += names
             return genres
         except:
@@ -203,7 +204,7 @@ class Book:
         names = []
         for subject in subjects:
             if isinstance(subject, dict):
-                regex_split = re.split(r"[,—–-]", subject["name"])
+                regex_split = re.split(r"[,—–/]", subject["name"])
                 for word in regex_split:
                     word = word.strip().lower()
                     if "(" in word:
@@ -217,6 +218,10 @@ class Book:
                     else:
                         names.append(word.strip())
         return [name for name in names if name != ""]
+    
+    def combine_dates(self, names):
+        # to-do: add code to combine dates
+        return names
 
     def filter_title(self, title):
         """Cleans up titles to not include some common stop words, so that the titles 
@@ -326,4 +331,3 @@ class Book:
 
 if __name__ == "__main__":
     app.run(port=8000)
-    get_genres()
