@@ -44,7 +44,7 @@ const handleCollapse = () =>{
     menuColor.value = '#D8C3A5'
   } else {
     w.value = 100
-    menuColor.value = '#D8C3A5'
+    menuColor.value = '#C3BCB3'
   }
 }
 
@@ -65,13 +65,14 @@ const clickMatch = () => {
   router.push({ path: 'search'})
 }
 
+const url_link = ref("http://localhost:5173/show");
 
 </script>
 
 
 <template>
   <div class="menu" :style="{width: w+ 'px', backgroundColor:menuColor}">
-      <div @click="handleCollapse" class="menu_icon" :style="{marginLeft:w-90+'px',marginRight:'40px'}"></div>
+      <button name='menu-bar' @click="handleCollapse" class="menu_icon" :style="{marginLeft:w-75+'px',marginRight:'30px',height:'40px',width:'50px'}"></button>
     <div v-if="!isCollapse && !showPreference">
       <h1>Menu</h1>
       <el-menu
@@ -81,24 +82,25 @@ const clickMatch = () => {
           @close="handleClose"
           :style="{marginLeft:'14px', marginTop:'5px', border:'none', backgroundColor:menuColor}"
       >
-        <el-sub-menu index="1" class="bg-c" @click="clickMenu">
+        <el-sub-menu index="1" @click="clickMenu">
           <template #title>
-            <span>cocktail</span>
+            <a :href=url_link>Cocktail</a>
           </template>
         </el-sub-menu>
-        <el-sub-menu index="2" class="bg-c" @click="clickMenu">
+
+        <el-sub-menu index="2" @click="clickMenu">
           <template #title>
-            <span>wine</span>
+            <a :href=url_link>Wine</a>
           </template>
         </el-sub-menu>
-        <el-sub-menu index="3" class="bg-c" @click="clickMenu">
+        <el-sub-menu index="3" @click="clickMenu">
           <template #title>
-            <span>beer</span>
+            <a :href=url_link>Beer</a>
           </template>
         </el-sub-menu>
-        <el-sub-menu index="4" class="bg-c" @click="clickMenu">
+        <el-sub-menu index="4" @click="clickMenu">
           <template #title>
-            <span>spirits</span>
+            <a :href=url_link>Spirits</a>
           </template>
         </el-sub-menu>
       </el-menu>
@@ -111,24 +113,24 @@ const clickMatch = () => {
           @close="handleClose"
           :style="{marginLeft:'14px', marginTop:'5px', border:'none', backgroundColor:menuColor}"
       >
-        <el-sub-menu index="5" class="bg-c" @click="clickMatch">
+        <el-sub-menu index="5" @click="clickMatch">
           <template #title>
-            <span>Books</span>
+            <a :href=url_link>Books</a>
           </template>
         </el-sub-menu>
-        <el-sub-menu index="6" class="bg-c" @click="clickMatch">
+        <el-sub-menu index="6" @click="clickMatch">
           <template #title>
-            <span>Movies</span>
+            <a :href=url_link>Movies</a>
           </template>
         </el-sub-menu>
-        <el-sub-menu index="7" class="bg-c" @click="clickMatch">
+        <el-sub-menu index="7" @click="clickMatch">
           <template #title>
-            <span>TV Shows</span>
+            <a :href=url_link>TV Shows</a>
           </template>
         </el-sub-menu>
-        <el-sub-menu index="8" class="bg-c" @click="clickMatch">
+        <el-sub-menu index="8" @click="clickMatch">
           <template #title>
-            <span>Music</span>
+            <a :href=url_link>Music</a>
           </template>
         </el-sub-menu>
       </el-menu>
@@ -180,11 +182,13 @@ const clickMatch = () => {
   height: 40px;
   border-top: 3px solid black;
   border-bottom: 3px solid black;
+  border-left: 0px;
+  border-right: 0px;
   padding: 15.5px 0;
   background-clip: content-box;
   background-color: black;
-  margin-top: 30px;
-  margin-left: 10px;
+  margin-top: 18px;
+  //margin-left: 10px;
 }
 .el-menu-vertical-demo:not(.el-menu--collapse) {
   width: 350px;
@@ -195,15 +199,23 @@ h1 {
   font-size: 40px;
   margin-top: 5px;
   margin-left: 30px;
-  color: #E85A4F;
+  color: #992e22;
 }
 h2 {
   font-size: 25px;
   margin-left: 30px;
-  color: #E98074;
+  color: #992e22;
+}
+
+menu {
+  padding-inline-start: 10px;
 }
 .preference {
   color: white
+}
+
+a {
+  color: black;
 }
 
 

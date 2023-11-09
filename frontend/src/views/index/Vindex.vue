@@ -37,13 +37,13 @@
     <div class="center">
       <img src="/src/assets/logo.png" alt="Group Logo">
     </div>
-    <div class="pop-up">
-      <h2 class="question"> Are you over 21 ?</h2>
-      <div class="center">
-        <div class="btn"><el-button type="primary" size="large" @click="onClickYes()"><p>Yes</p></el-button></div>
-        <div class="btn"><el-button type="primary" size="large" @click="onClickNo()"><p>No</p></el-button></div>
-      </div>
-    </div>
+<!--    <div class="pop-up">-->
+<!--      <h2 class="question"> Are you over 21 ?</h2>-->
+<!--      <div class="center">-->
+<!--        <div class="btn"><el-button type="primary" size="large" @click="onClickYes()"><p>Yes</p></el-button></div>-->
+<!--        <div class="btn"><el-button type="primary" size="large" @click="onClickNo()"><p>No</p></el-button></div>-->
+<!--      </div>-->
+<!--    </div>-->
   </div>
 </template>
 
