@@ -5,7 +5,7 @@ import random
 import requests
 from flask_cors import CORS
 import re
-#from textblob import TextBlob
+from textblob import TextBlob
 
 # DO NOT make this public, keep in private github
 API_KEY = "AIzaSyAHHByDAWIAvXhTNkajTqazMhBUO045aS0" 
