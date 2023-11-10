@@ -5,20 +5,16 @@ import random
 import requests
 from flask_cors import CORS
 import re
-from textblob import TextBlob
+#from textblob import TextBlob
 
 # DO NOT make this public, keep in private github
 API_KEY = "AIzaSyAHHByDAWIAvXhTNkajTqazMhBUO045aS0" 
 
  # update this when new genres added to alcohol json
-GENRES = ["fantasy fiction", "historical fiction", "horror", "thriller", "science fiction",
-          "action & adventure", "romance", "mystery fiction",
-          # added by Miriam later on:
-          "political fiction","political","satire","humorous","drama","travel","classics","espionage","suspense","thrillers","love",
-          "romance fiction","love stories","science-fiction","spies","spy stories","history",
-          "historical","classic","classic literature","biographical","biographies","adventure",
-          "comedy","humor","humorous fiction","fantasy","mystery","caribbean area","ireland",
-          "england","france","spain","united states","friendship","crime","romantic comedy"]
+
+with open("output.json") as file:
+    jsonData = json.load(file)
+GENRES = jsonData
 
 # drink for when there are no matches 
 BUD_LIGHT = {"name":"Bud Light", "instructions": ["Just pop open the can."], "information": "Classic American Beer."}
