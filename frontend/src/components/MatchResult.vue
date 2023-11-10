@@ -81,7 +81,7 @@ const clickChange = () => {
   margin-top: 120px;
   font-size: 80px;
   font-weight: normal;
-  color: black;
+  color: #992e22;
 }
 .rate {
   margin-top: 5px;

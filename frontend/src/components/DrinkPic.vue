@@ -31,7 +31,7 @@ getDownloadURL(liquid)
 <template>
   <div class="txt" v-if="finish===1">
 
-    <el-image style="width: 200px; position: fixed" :src="liquid_url" fit="fill" />
+    <el-image style="width: 200px; position: fixed" :src="liquid_url" fit="fill" alt="Alcohol Image Onload"/>
 
   </div>
 </template>

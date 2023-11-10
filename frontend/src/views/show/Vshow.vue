@@ -126,9 +126,14 @@ console.log(res)
 <template>
 
 <perfect-scrollbar class="show">
+
   <div class="drink-table" >
     <drink-item v-for="drink in drinks" :name="drink.name" :instruction="drink.instruction" :url="drink.url" @click="getData()">{{drink.name}}}</drink-item>
+    <br>
+    <block style="width: 90%">aaaa</block>
   </div>
+
+
 </perfect-scrollbar>
 
 </template>
@@ -137,17 +142,19 @@ console.log(res)
 .show {
   width: 1730px;
   height: 100%;
-  padding-left: 100px;
-  padding-top: 60px;
+  padding-left: 150px;
+  padding-top: 10px;
 }
 .drink-table {
   width: 1600px;
-  height: 100%;
   display: flex;
   position: relative;
   flex-flow: wrap;
   padding-left: 10px;
   padding-top: 10px;
 }
+
+
+
 
 </style>

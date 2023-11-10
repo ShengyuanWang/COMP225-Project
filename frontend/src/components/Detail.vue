@@ -12,9 +12,9 @@ const props = defineProps({
 <template>
   <!--  detailed drink starts here-->
   <div class="pic">
-    <el-image :src="props.url" fit="cover"/>
+    <el-image :src="props.url" fit="cover" alt="Alcohol Image Onload"/>
   </div>
-  <div class="detail">
+  <div class="pic">
     <div class="name"><h1>{{ props.name }}</h1></div>
     <div class="instruction">
       <ul>
@@ -32,22 +32,18 @@ const props = defineProps({
 
 <style scoped>
 .pic {
-  background-color: pink;
+  background-color: #e0ceb4;
   width: 50%;
   height: 100%;
   padding: 20px;
-}
-.detail {
-  background-color: gray;
-  width: 50%;
-  height: 100%;
-  padding: 20px;
+  opacity: 0.9;
+  //box-shadow: 10px -5px 5px #968163;
 }
 .name {
   margin-top: 10px;
   font-size: 50px;
   font-weight: normal;
-  color: black;
+  color: #992e22;
 }
 .instruction {
   margin-top: 5px;

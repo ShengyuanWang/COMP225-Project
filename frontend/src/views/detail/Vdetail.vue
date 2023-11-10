@@ -34,7 +34,6 @@ let instruction = route.query.instruction;
   flex-flow: wrap;
   padding-left: 30px;
   padding-top: 10px;
-  background-color: blue;
   margin-left: 150px;
 }
 </style>yle>
