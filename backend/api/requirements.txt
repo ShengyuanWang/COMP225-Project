@@ -6,3 +6,4 @@ pyrandom
 markupsafe
 flask_cors
 pytest
+textblob
