@@ -488,6 +488,17 @@
             "information":"TBA"
         },
         {
+            "name":"The Zombie",
+            "type":"Cocktail",
+            "genres":["horror fiction","horror stories","horror tales","horror","action & adventure","adventure and adventurers","adventure stories","adventure",
+                "mysteries & detective stories","mystery & detective","mystery and detective stories","detective and mystery stories","mystery fiction","mystery",
+                "travel","supernatural","paranormal fiction","paranormal","thriller","thrillers","supernatural thrillers","paranormal fiction suspense & thriller",
+                "suspense & thriller","suspense fiction","suspense","pirates","zombies"],
+            "sentiment":0.5,
+            "instructions":["TBA"],
+            "information":"TBA"
+        },
+        {
             "name": "Moscato",
             "type": "Wine",
             "genres": ["friendship","friendship in fiction","female friendship","romance","love","love stories","romance fiction","humorous","humor","humorous fiction",
