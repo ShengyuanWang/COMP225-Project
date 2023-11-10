@@ -158,7 +158,7 @@
             "name": "Moscow Mule",
             "type": "Cocktail",
             "genres": ["action & adventure","romance","love","love stories","romance fiction","travel","romantic comedy","comedy","humor","humorous fiction",
-                "humorous","20th century","historical fiction","historical","history","adventure and adventurers","adventure stories","adventure","quests",
+                "humorous","20th century","historical fiction","historical","history","adventure and adventurers","adventure stories","adventure","quests","quests ",
                 "mystery fiction","mystery"],
             "sentiment": 0.7,
             "instructions": [
@@ -254,7 +254,7 @@
             "name": "Sonic Screwdriver",
             "type": "Cocktail",
             "genres": ["science fiction","science-fiction","epic","epic fantasy","high fantasy","action & adventure","adventure","adventure stories","adventure and adventurers",
-                "quests","fantasy fiction","fantasy in fiction","fantasy"],
+                "quests","quests ","fantasy fiction","fantasy in fiction","fantasy"],
             "sentiment": 0.7,
             "instructions": [
                 "1 1/2 oz. vodka",
@@ -282,7 +282,7 @@
             "name": "Spiced Wine",
             "type": "Cocktail",
             "genres": ["friendship","friendship in fiction","fantasy fiction","fantasy","fantasy in fiction","historical fiction","history","historical","adventure","adventure stories",
-                "adventure and adventurers","demons","witchcraft","witches fiction","witches","magic in fiction","magic","wizards fiction","wizards","magicians"],
+                "adventure and adventurers","demons","witchcraft","witches fiction","witches","magic in fiction","magic","wizards fiction","wizards","magicians","magician"],
             "sentiment": 0.5,
             "instructions": [
                 "1 bottle of red wine",
@@ -478,7 +478,7 @@
         {
             "name":"Black Magic Cocktail",
             "type":"Cocktail",
-            "genres":["magic","magic in fiction","magicians","witchcraft","witches fiction","witches","demons","wizards","wizards fiction","fantasy fiction",
+            "genres":["magic","magic in fiction","magicians","magician","witchcraft","witches fiction","witches","demons","wizards","wizards fiction","fantasy fiction",
                 "fantasy in fiction","fantasy","supernatural","epic","epic fantasy","high fantasy","thriller","thrillers", "suspense & thriller","suspense fiction",
                 "suspense","paranormal fiction","paranormal","gothic & horror","gothic fiction","gothic","mysteries & detective stories","mystery & detective",
                 "mystery and detective stories","detective and mystery stories","mystery fiction","mystery","supernatural thrillers",
@@ -624,7 +624,7 @@
         {
             "name": "Mead",
             "type": "Wine",
-            "genres": ["england","ireland","fantasy fiction","fantasy","fantasy in fiction","historical fiction","history","historical","quests"],
+            "genres": ["england","ireland","fantasy fiction","fantasy","fantasy in fiction","historical fiction","history","historical","quests","quests "],
             "sentiment":0.8,
             "instructions":["TBA"],
             "information":"TBA"
@@ -678,7 +678,7 @@
             "name":"Ale",
             "type":"Beer",
             "genres":["fantasy fiction","fantasy","fantasy in fiction","historical fiction","history","historical","mystery fiction","mystery","action & adventure",
-                "adventure","adventure stories","adventure and adventurers","epic","epic fantasy","high fantasy","quests"],
+                "adventure","adventure stories","adventure and adventurers","epic","epic fantasy","high fantasy","quests","quests "],
             "sentiment":0.5,
             "instructions":["TBA"],
             "information":"TBA"
@@ -696,7 +696,7 @@
             "type":"Spirits",
             "genres":["horror fiction","horror stories","horror tales","horror","science fiction","science-fiction","fantasy fiction","fantasy in fiction",
                 "fantasy","historical fiction","historical","history","travel","18th century","france","mystery","mystery fiction","thriller","thrillers",
-                "suspense & thriller","suspense","suspense fiction","witches","witches fiction","witchcraft","magic","magic in fiction","magicians"],
+                "suspense & thriller","suspense","suspense fiction","witches","witches fiction","witchcraft","magic","magic in fiction","magicians","magician"],
             "sentiment":0.4,
             "instructions":["TBA"],
             "information":"TBA"
@@ -732,7 +732,7 @@
             "name": "Dark Rum",
             "type": "Spirits",
             "genres": ["caribbean area","jamaica","pirates","action & adventure", "mystery fiction","mystery", "thriller","thrillers","suspense & thriller","suspense",
-                "suspense fiction","werewolves","demons","quests"],
+                "suspense fiction","werewolves","demons","quests","quests "],
             "sentiment":0.6,
             "instructions":["TBA"],
             "information":"TBA"
@@ -799,7 +799,7 @@
             "name": "White Rum",
             "type": "Spirits",
             "genres": ["caribbean area","pirates","action & adventure","adventure","adventure stories","adventure and adventurers","romance","love","love stories",
-                "romance fiction","travel","historical fiction","history","historical","quests"],
+                "romance fiction","travel","historical fiction","history","historical","quests","quests "],
             "sentiment": 0.7,
             "instructions":["TBA"],
             "information":"TBA"
