@@ -130,7 +130,7 @@ console.log(res)
   <div class="drink-table" >
     <drink-item v-for="drink in drinks" :name="drink.name" :instruction="drink.instruction" :url="drink.url" @click="getData()">{{drink.name}}}</drink-item>
     <br>
-    <block style="width: 100%">aaaa</block>
+    <block style="width: 90%">aaaa</block>
   </div>
 
 

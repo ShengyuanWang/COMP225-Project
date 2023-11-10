@@ -226,20 +226,22 @@ a {
 
 .check {
   margin-left: 30px;
+  font-size: 20px;
+  font-weight: bold;
 }
 .el-checkbox__input.is-checked .el-checkbox__inner,
 .el-checkbox__input.is-indeterminate .el-checkbox__inner {
-  border-color: #992e22 !important;
-  background-color: #992e22 !important;
+  border-color: #6A1006 !important;
+  background-color: #6A1006 !important;
 }
 .el-checkbox__input.is-checked+.el-checkbox__label{
-  color: #992e22 !important;
+  color: #6A1006 !important;
 }
 .el-checkbox__inner:hover{
-  border-color: #992e22 !important;
+  border-color: #6A1006 !important;
 }
 .el-checkbox__input.is-focus .el-checkbox__inner {
-  border-color: #992e22 !important;
+  border-color: #6A1006 !important;
 }
 
 </style>
