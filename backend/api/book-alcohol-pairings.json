@@ -288,7 +288,7 @@
             "type": "Cocktail",
             "genres": ["friendship","friendship in fiction","fantasy fiction","fantasy","fantasy genre","fantastic fiction","fantasy in fiction","historical fiction",
                 "history","historical","adventure","adventure fiction","adventure stories","adventure and adventurers","demons","witchcraft","witches fiction","witches",
-                "magic in fiction","magic","wizards fiction","wizards","magicians","magician"],
+                "magic in fiction","magic","wizards fiction","wizards","wizardry","magicians","magician"],
             "sentiment": 0.5,
             "instructions": [
                 "1 bottle of red wine",
@@ -340,7 +340,8 @@
             "name": "Dark and Stormy",
             "type": "Cocktail",
             "genres": ["mystery fiction","mystery", "thriller","thrillers","suspense","suspense fiction","suspense & thriller","gothic fiction","gothic",
-                "gothic & horror","historical fiction","historical","history","werewolves","werewolves in fiction","urban fantasy","demonology", "demons"],
+                "gothic & horror","historical fiction","historical","history","werewolves","werewolves in fiction","urban fantasy","demonology","demons","ghost",
+                "ghost stories","ghosts","ghost fiction","occult & supernatural","occult fiction","occult","occultism"],
             "sentiment": 0.6,
             "instructions": [
                 "2 oz. dark rum",
@@ -349,6 +350,17 @@
                 "Ice"
             ],
             "information": "The Dark and Stormy is a classic cocktail with a signature copper mug presentation. To craft this drink, start by filling a copper mug or highball glass with ice. Squeeze the juice from half a lime into the glass, and drop the spent lime shell in. Then, pour in 2 oz. of dark rum. Top it off with approximately 3 oz. of ginger beer, or adjust to your preferred level of ginger flavor. Give it a gentle stir to mix the ingredients. To garnish, add a lime wheel or wedge for an extra burst of citrus aroma. The Dark and Stormy is known for its crisp and tangy taste, making it a popular choice for a refreshing and enjoyable cocktail."
+        },
+        {
+            "name":"Corpse Reviver #2",
+            "type":"Cocktail",
+            "genres":["ghost","ghost stories","ghosts","ghost fiction","zombies","horror fiction","horror stories","horror tales","horror","historical fiction",
+                "historical","history","supernatural","mystery","mystery fiction","mysteries & detective stories","mystery & detective",
+                "mystery and detective stories","detective and mystery stories","1931-1939","occult & supernatural","occult fiction","occult","occultism"],
+            "sentiment":0.2,
+            "instructions":["TBA"],
+            "information":"TBA"
+
         },
         {
             "name":"Mimosa",
@@ -440,9 +452,9 @@
             "information":"TBA"
         },
         {
-            "name":"Long Islance Ice Tea",
+            "name":"Long Islancd Ice Tea",
             "type":"Cocktail",
-            "genres":["long island (n.y.)","united states","mystery fiction","mystery","thriller","thrillers","suspense & thriller","suspense","suspense fiction",
+            "genres":["long island","united states","mystery fiction","mystery","thriller","thrillers","suspense & thriller","suspense","suspense fiction",
                 "classic","classics","classic fiction","classic literature","classical literature","fantasy fiction","fantasy","fantasy genre","fantastic fiction",
                 "fantasy in fiction","erotic fiction","erotic passion","erotic stories","erotica","n.y."],
             "sentiment":-0.15,
@@ -493,11 +505,11 @@
         {
             "name":"Black Magic Cocktail",
             "type":"Cocktail",
-            "genres":["magic","magic in fiction","magicians","magician","witchcraft","witches fiction","witches","demons","wizards","wizards fiction","fantasy fiction",
+            "genres":["magic","magic in fiction","magicians","magician","witchcraft","witches fiction","witches","demons","wizards","wizardry","wizards fiction","fantasy fiction",
                 "fantasy in fiction","fantasy","fantasy genre","fantastic fiction","supernatural","epic","epic fantasy","high fantasy","thriller","thrillers",
                 "suspense & thriller","suspense fiction","suspense","paranormal fiction","paranormal","gothic & horror","gothic fiction","gothic",
                 "mysteries & detective stories","mystery & detective","mystery and detective stories","detective and mystery stories","mystery fiction","mystery",
-                "supernatural thrillers","paranormal fiction suspense & thriller"],
+                "supernatural thrillers","paranormal fiction suspense & thriller","occult & supernatural","occult fiction","occult","occultism"],
             "sentiment":0.4,
             "instructions":["TBA"],
             "information":"TBA"
@@ -517,8 +529,28 @@
             "name":"Witches' Brew",
             "type":"Cocktail",
             "genres":["horror fiction","horror stories","horror tales","horror","fantasy fiction","fantasy in fiction","fantasy","fantasy genre","fantastic fiction",
-                "magic in fiction","magic","witchcraft","witches fiction","witches","wizards","wizards fiction","mystery fiction","mystery"],
+                "magic in fiction","magic","witchcraft","witches fiction","witches","wizards","wizards fiction","wizardry","mystery fiction","mystery","occult & supernatural",
+                "occult fiction","occult","occultism"],
             "sentiment":0.5,
+            "instructions":["TBA"],
+            "information":"TBA"
+        },
+        {
+            "name":"Astro Pop",
+            "type":"Cocktail",
+            "genres":["aliens","science fiction","science-fiction","action & adventure","adventure and adventurers","adventure fiction","adventure fiction",
+                "adventure stories","adventure","comedy","humor","humorous fiction","humorous"],
+            "sentiment":0.6,
+            "instructions":["TBA"],
+            "information":"TBA"
+        },
+        {
+            "name":"Tequila Sunrise",
+            "type":"Cocktail",
+            "genres":["romance fiction","romance literature","romance","love & romance","love stories","love","travel","mystery fiction","mystery",
+                "adventure and adventurers","adventure fiction","adventure stories","adventure","action & adventure","mexico","contemporary fiction",
+                "contemporary","california"],
+            "sentiment":0.65,
             "instructions":["TBA"],
             "information":"TBA"
         },
@@ -536,7 +568,7 @@
             "type": "Wine",
             "genres": ["romance","love","love stories","love & romance","romance fiction","romance literature","mystery fiction","mystery","france","united states",
                 "erotica","erotic stories","erotic passion","erotic fiction","mysteries & detective stories","mystery & detective","mystery and detective stories",
-                "detective and mystery stories"],
+                "detective and mystery stories","vampire novels","vampires"],
             "sentiment": 0.6,
             "instructions":["TBA"],
             "information":"Pour yourself a glass!"
@@ -606,7 +638,7 @@
             "genres":["epic","epic fantasy","high fantasy","historical fiction","history","historical","fantasy fiction","fantasy","fantasy genre","fantastic fiction",
                 "fantasy in fiction","mystery fiction","mystery","thriller","thrillers","suspense & thriller","suspense","suspense fiction","drama","drama ",
                 "biographical","biographies","biography","biography & autobiography","adventure","adventure fiction","adventure stories","adventure and adventurers",
-                "spain","contemporary fiction","contemporary"],
+                "spain","contemporary fiction","contemporary","vampire novels","vampires"],
             "sentiment": 0.3,
             "instructions":["TBA"],
             "information":"Pour yourself a glass!"
@@ -617,7 +649,7 @@
             "genres": ["romance","love","love stories","love & romance","romance fiction","romance literature","mystery fiction","mystery", "thriller","thrillers",
                 "suspense & thriller","suspense","suspense fiction","historical fiction","history","historical","historical romance","drama","drama ","adventure",
                 "adventure fiction","adventure stories","adventure and adventurers","california","united states", "supernatural","paranormal fiction","paranormal",
-                "contemporary fiction","contemporary","erotica","erotic stories","erotic passion","erotic fiction","supernatural thrillers",
+                "contemporary fiction","contemporary","erotica","erotic stories","erotic passion","erotic fiction","supernatural thrillers","vampire novels","vampires",
                 "paranormal fiction suspense & thriller"],
             "sentiment": 0.6,
             "instructions":["TBA"],
@@ -647,7 +679,7 @@
             "type": "Wine",
             "genres": ["romance","love","love stories","love & romance","romance fiction","romance literature","mystery fiction","mystery","france","australia",
                 "supernatural","paranormal fiction","paranormal","erotica","erotic stories","erotic passion","erotic fiction","mysteries & detective stories",
-                "mystery & detective","mystery and detective stories","detective and mystery stories"],
+                "mystery & detective","mystery and detective stories","detective and mystery stories","vampire novels","vampires"],
             "sentiment":0.6,
             "instructions":["TBA"],
             "information":"Pour yourself a glass!"
@@ -657,7 +689,8 @@
             "type": "Wine",
             "genres": ["romance","love","love stories","love & romance","romance fiction","romance literature","mystery fiction","mystery","horror","horror fiction",
                 "horror stories","horror tales","france","argentina","supernatural","paranormal fiction","paranormal","gothic & horror","gothic fiction","gothic",
-                "mysteries & detective stories","mystery & detective","mystery and detective stories","mystery and detective stories","detective and mystery stories"],
+                "mysteries & detective stories","mystery & detective","mystery and detective stories","mystery and detective stories","detective and mystery stories",
+                "vampire novels","vampires"],
             "sentiment":0.6,
             "instructions":["TBA"],
             "information":"Pour yourself a glass!"
@@ -743,7 +776,7 @@
             "genres":["horror fiction","horror stories","horror tales","horror","science fiction","science-fiction","fantasy fiction","fantasy in fiction","fantasy",
                 "fantastic fiction","fantasy genre","historical fiction","historical","history","travel","18th century","france","mystery","mystery fiction","thriller",
                 "thrillers","suspense & thriller","suspense","suspense fiction","witches","witches fiction","witchcraft","magic","magic in fiction","magicians",
-                "magician"],
+                "magician","occult & supernatural","occult fiction","occult","occultism"],
             "sentiment":0.4,
             "instructions":["TBA"],
             "information":"TBA"
@@ -876,7 +909,8 @@
             "type": "Spirits",
             "genres": ["france","historical fiction","history","historical","horror","horror fiction","horror stories","horror tales","mystery fiction","mystery",
                 "thriller","thrillers","suspense & thriller","suspense","suspense fiction","biographical","biographies","biography","biography & autobiography",
-                "supernatural","paranormal","paranormal fiction","demons","psychological","psychology","psychological fiction"],
+                "supernatural","paranormal","paranormal fiction","demons","psychological","psychology","psychological fiction","occult & supernatural",
+                "occult fiction","occult","occultism"],
             "sentiment":-0.5,
             "instructions":["TBA"],
             "information":"TBA"
