@@ -37,7 +37,7 @@ def get_book():
                                 date=book.get_publication_date(), genres=book.get_genres(),
                                 filtered_genres=book.get_filtered_genres(), description=book.get_description(),
                                 cover_link=book.get_cover_link(), drinks=[drink["name"] for drink in book.get_matching_drinks()],
-                                pairing=book.get_pairing())
+                                pairing=book.get_pairing(), sentiment=book.get_sentiment())
     return render_template("home.html")
 
 @app.route('/test/<bookname>', methods=["GET"])
@@ -69,6 +69,7 @@ class Book:
         self.isbn = self.select_isbn(self.isbn_list)
         self.data = self.query_api_book_data()
         self.genres = self.query_api_genres()
+        self.rolled_pairings = []
 
     def get_pairing_json_obj(self):
         """ Returns a json object containing book data and pairing for
@@ -87,17 +88,35 @@ class Book:
 
     def get_pairing(self):
         """ Return pairing for book. Takes matching drink and 
-        randomly returns one drink as the pairing. If no drink is found,
-        returns the drink specfied as the no-match drink.
+         returns drink with sentiment score most similar to book. 
+        If no matching drinks, returns the drink specfied as the no-match drink.
         """
         drinks = self.get_matching_drinks()
-        drink_dict = {}
+        sentiment = self.get_sentiment()
+        
         if len(drinks) > 0:
-            ran_drink = random.choice(drinks)
-            drink_dict["name"] = ran_drink["name"]
-            drink_dict["instructions"] = ran_drink["instructions"]
-            drink_dict["information"] = ran_drink["information"]
-            return drink_dict
+            pairing = min(drinks, key=lambda drink: abs(drink["sentiment"] - sentiment))
+            self.rolled_pairings.append(pairing)
+            return pairing
+        else:
+            return self.get_no_match_drink()
+        
+    def reroll_pairing(self):
+        """Untested.
+        Returns the matching drink with the sentiement closest to the book, but excluding 
+        drinks that have already been shown to user. If all macthing drinks have been 
+        shown to user, returns a drink at random. If no matching drinks, returns no-match drink.
+        """
+        drinks = self.get_matching_drinks()
+        sentiment = self.get_sentiment()
+        drinks_filtered = [drink for drink in drinks if drink not in self.rolled_pairings]
+        
+        if len(drinks_filtered) > 0:
+            pairing = min(drinks_filtered, key=lambda drink: abs(drink["sentiment"] - sentiment))
+            self.rolled_pairings.append(pairing)
+            return pairing
+        elif len(drinks) > 0:
+            return random.choice(drinks)
         else:
             return self.get_no_match_drink()
 
@@ -120,10 +139,22 @@ class Book:
         return matched_drinks
 
     def get_sentiment(self):
-        blob = TextBlob(self.get_description())
-        sentiment_score = blob.sentiment.polarity
-        return round(sentiment_score, 2)
+        """
+        Uses TextBlob to get the sentiment score of the book.
+        Gets the sentinent score of the unfiltered genres and the description,
+        then averages them together and rounds to two decimal places.
+        """
+        genres = ",".join(self.get_genres())
+        genre_blob = TextBlob(genres)
+        genre_sent = genre_blob.sentiment.polarity
 
+        desc = self.get_description()
+        desc_blob = TextBlob(desc)
+        desc_sent = desc_blob.sentiment.polarity
+
+        sentiment = (genre_sent + desc_sent) / 2
+        return round((sentiment), 2) 
+    
     def query_api_isbns(self, title):
         base_url = 'https://www.googleapis.com/books/v1/volumes'
         params = {
@@ -185,6 +216,7 @@ class Book:
                 json = requests.get(base_url, params=params).json()
                 data = json.get(f"ISBN:{isbn}", {})
                 names = self.split_subjects(data.get('subjects', ['N/A']))   
+                print(names)
                 names = self.combine_dates(names)             
                 genres += names
             return genres
@@ -215,9 +247,22 @@ class Book:
                         names.append(word.strip())
         return [name for name in names if name != ""]
     
-    def combine_dates(self, names):
-        # to-do: add code to combine dates
-        return names
+    def combine_dates(self, list_of_genres):
+        newGenres = []
+        print(list_of_genres)
+        for name in list_of_genres:
+            #print(name)
+            #if '9' in name or '2' in name or '3' in name or '4' in name or '5' in name and ('-' in name):
+                #name = name.split('-')
+            if '1939-1945' in name:
+                #World war II/20th century for 1939-1945
+                newGenres.append('world war ii')
+                newGenres.append('20th century')
+            else:
+                newGenres.append(name) 
+
+        #print(newGenres)
+        return newGenres
 
     def filter_title(self, title):
         """Cleans up titles to not include some common stop words, so that the titles 

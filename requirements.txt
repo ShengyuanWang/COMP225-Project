@@ -6,3 +6,4 @@ pyjson
 pyrandom
 flask_cors
 pytest
+textblob
