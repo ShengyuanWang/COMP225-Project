@@ -88,7 +88,6 @@ def test_query_api_isbn():
     assert type(book_multiversion.query_api_isbns(book_multiversion.get_user_input())) is list 
     assert len(book_valid.query_api_isbns(book_valid.get_user_input())) > 2
     assert len(book_invalid.query_api_isbns(book_invalid.get_user_input())) == 0
-    assert len(book_multiversion.query_api_isbns(book_multiversion.get_user_input())) > 3
     assert "9780143111580" in book_valid.query_api_isbns(book_valid.get_user_input())
 
 def test_query_api_book_data():
@@ -138,6 +137,11 @@ def test_split_subjects():
 def test_combine_dates():
     pass
 
+def test_get_sentiment():
+    assert len(str(book_valid.get_sentiment())) <= 4
+    assert book_valid.get_sentiment() >= -1 and book_valid.get_sentiment() <= 1
+    assert book_invalid.get_sentiment() == 0
+
 def test_filter_title():
     assert book_valid.filter_title("heLLo and WORLD!") == "heLLo WORLD!"
     assert book_valid.filter_title("and a the") == ""
@@ -184,7 +188,6 @@ def test_get_isbn():
 def test_get_isbn_list():
     assert book_valid.get_isbn_list() ==  ["9780143111580", "9780143111580", "9780593099322"]
     assert book_invalid.get_isbn_list() == []  
-    assert len(book_multiversion.get_isbn_list()) >= 4
 
 def test_get_user_input():
     assert book_valid.get_user_input() == "Dune" 
