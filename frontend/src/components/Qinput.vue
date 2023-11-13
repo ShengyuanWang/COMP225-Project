@@ -18,15 +18,6 @@ const input = ref('')
 const data = [
   {
     value:'Books'
-  },
-  {
-    value:'Movies'
-  },
-  {
-    value:'TV Shows'
-  },
-  {
-    value:'Music'
   }
 ]
 const onClick  = () => {
@@ -40,7 +31,7 @@ const onClick  = () => {
     console.log(api)
     console.log('finish')
     console.log(res)
-    router.push({path:'match', query: {name:res.data.pairing, url:'https://i.ibb.co/989gpGR/drink1.png', stars:'5'}})
+    router.push({path:'match', query: {name:res.data.name, url:'https://i.ibb.co/989gpGR/drink1.png', stars:'5'}})
   }).catch((err)=>{
     //请求失败的回调函数
     console.log(err)
@@ -80,14 +71,14 @@ console.log(outerHeight)
 
 <style scoped>
 .inp {
-  width: 800px;
+  width: 50vw;
   margin-left: auto;
   margin-right: auto;
-  height: 100px;
+  height: 10vh;
   z-index:2;
 }
 img {
-  width: 60px;
+  width: 3.5vw;
 }
 
 

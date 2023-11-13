@@ -46,8 +46,8 @@ const clickChange = () => {
     <div class="name"><h1>{{ props.name }}</h1></div>
     <div class="rate">
       <h2>Match Rating</h2>
-      <el-icon :size="35" v-for="(item, index) in parseInt(props.rating)"><StarFilled /></el-icon>
-      <el-icon :size="35" color="white" v-for="(item , index) in 5-parseInt(props.rating)"><StarFilled /></el-icon>
+      <el-icon size="2vw" v-for="(item, index) in parseInt(props.rating)"><StarFilled /></el-icon>
+      <el-icon size="2vw" color="white" v-for="(item , index) in 5-parseInt(props.rating)"><StarFilled /></el-icon>
     </div>
     <div class="description">
       <p>Slice the lemon quarter into three wedges. Rinse off a couple sprigs of mint (or just one if foregoing the garnish).
@@ -56,9 +56,9 @@ const clickChange = () => {
         add the second sprig of mint as a garnish (if desired), and enjoy.</p>
     </div>
     <div class="btns">
-      <span class="btn" @click="clickDownload"><el-icon :size="50" color="White"><Download /></el-icon></span>
-      <span class="btn" @click="clickShare"><el-icon :size="50" color="White"><Share /></el-icon></span>
-      <span class="btn" @click="clickChange"><el-icon :size="50" color="White"><Refresh /></el-icon></span>
+      <span class="btn" @click="clickDownload"><el-icon size="3vw" color="Black"><Download /></el-icon></span>
+      <span class="btn" @click="clickShare"><el-icon size="3vw" color="Black"><Share /></el-icon></span>
+      <span class="btn" @click="clickChange"><el-icon size="3vw" color="Black"><Refresh /></el-icon></span>
     </div>
 
   </div>
@@ -66,54 +66,55 @@ const clickChange = () => {
 
 <style scoped>
 .pic {
-  background-color: pink;
+  background-color: #e0ceb4;
   width: 50%;
   height: 100%;
-  padding: 20px;
+  padding: 1vw;
 }
 .detail {
-  background-color: gray;
+  background-color: #e0ceb4;
   width: 50%;
   height: 100%;
-  padding: 10px;
+  padding: 0.5vw;
 }
 .name {
-  margin-top: 120px;
-  font-size: 80px;
+  margin-top: 12vh;
+  font-size: 3vw;
   font-weight: normal;
   color: #992e22;
+  margin-left: 1vw;
 }
 .rate {
-  margin-top: 5px;
-  margin-left: 40px;
+  margin-top: 0.5vh;
+  margin-left: 2.5vw;
   color: black;
 }
 
 h2 {
-  margin-left: 5px;
-  font-size: 30px;
+  margin-left: 0.3vw;
+  font-size: 2vw;
   font-weight: normal;
 }
 .description {
-  margin-top: 10px;
-  margin-left: 50px;
-  width: 500px;
+  margin-top: 1vh;
+  margin-left: 3vw;
+  width: 30vw;
   font-size: medium;
   color: black;
 }
 h1 {
-  font-size: 80px;
+  font-size: 4vw;
 }
 .btns {
-  width: 250px;
-  height: 50px;
+  width: 15vw;
+  height: 5vh;
   position: absolute;
-  right: 20px;
-  bottom: 50px;
+  right: 1vw;
+  bottom: 5vh;
 }
 .btn {
-  height: 50px;
-  width: 50px;
-  margin-right: 25px;
+  height: 5vw;
+  width: 3vw;
+  margin-right: 1.5vw;
 }
 </style>

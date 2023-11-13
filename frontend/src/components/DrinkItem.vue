@@ -26,34 +26,34 @@ const props = defineProps({
 
 <style scoped>
 .drink-item {
-  width: 360px;
-  height: 650px;
-  margin-top: 20px;
-  margin-right: 20px;
-  box-shadow: 10px 5px 6px #968163;
+  width: 20vw;
+  height: 65vh;
+  margin-top: 2vh;
+  margin-right: 1vw;
+  box-shadow: 1vh 0.5vh 0.5vh #968163;
 }
 .drink-image {
   width: 100%;
-  height: 370px;
+  height: 37vh;
   background-color: #D8C3A5;
-  padding: 10px;
+  padding: 1vh;
 }
 .drink-instructions {
   width: 100%;
-  height: 280px;
+  height: 28vh;
   background-color: #c2ae91;
-  padding: 10px;
+  padding: 1vh;
 }
 .drink-name {
-  font-size: 25px;
+  font-size: 2vw;
   color: #992e22;
   font-weight: bold;
 }
 .instruction {
   color: black;
-  font-size: 15px;
-  padding-top: 10px;
-  padding-left: 20px;
+  font-size: 1vw;
+  padding-top: 1vh;
+  padding-left: 1vw;
 }
 
 </style>

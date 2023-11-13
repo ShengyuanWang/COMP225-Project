@@ -35,46 +35,35 @@ const props = defineProps({
   background-color: #e0ceb4;
   width: 50%;
   height: 100%;
-  padding: 20px;
+  padding: 2vh;
   opacity: 0.9;
   //box-shadow: 10px -5px 5px #968163;
 }
 .name {
-  margin-top: 10px;
-  font-size: 50px;
+  margin-top: 1vh;
+  font-size: 3vw;
   font-weight: normal;
   color: #992e22;
 }
 .instruction {
-  margin-top: 5px;
-  font-size: 20px;
+  margin-top: 0.5vh;
+  font-size: 1.4vw;
   font-weight: bolder;
-  margin-left: 20px;
+  margin-left: 1vw;
   color: black;
 }
 h2 {
-  font-size: 30px;
+  font-size: 2vw;
   font-weight: normal;
 }
 .description {
-  margin-left: 40px;
-  margin-top: 10px;
-  font-size: 20px;
+  margin-left: 2vw;
+  margin-top: 1vh;
+  font-size: 1vw;
   color: black;
 }
 h1 {
-  font-size: 80px;
+  font-size: 5vw;
 }
-.btns {
-  width: 250px;
-  height: 50px;
-  position: absolute;
-  right: 20px;
-  bottom: 50px;
-}
-.btn {
-  height: 50px;
-  width: 50px;
-  margin-right: 25px;
-}
+
 </style>

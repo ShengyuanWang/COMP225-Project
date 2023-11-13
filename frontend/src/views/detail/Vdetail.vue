@@ -23,17 +23,17 @@ let instruction = route.query.instruction;
 
 <style scoped>
 .header {
-  height: 60px;
+  height: 6ch;
   width: 100%;
 }
 .match_result {
-  width: 1450px;
-  height: 850px;
+  width: 80vw;
+  height: 85vh;
   display: flex;
   position: relative;
   flex-flow: wrap;
-  padding-left: 30px;
-  padding-top: 10px;
-  margin-left: 150px;
+  padding-left: 2vw;
+  padding-top: 1vh;
+  margin-left: 11vw;
 }
-</style>yle>
+</style>

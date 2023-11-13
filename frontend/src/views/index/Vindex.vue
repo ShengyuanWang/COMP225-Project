@@ -31,7 +31,7 @@
   <div>
     <div style="display: flex; justify-content: center; align-items: center; position: relative;">
       <div class="title">
-        <h1 style="font-size: 100px" v-if="obj.underage">BOOK + JUICE</h1> <h1 style="font-size: 100px" v-else>BOOK + WINE</h1>
+        <h1 style="font-size: 7vw" v-if="obj.underage">BOOK + JUICE</h1> <h1 style="font-size: 7vw" v-else>BOOK + WINE</h1>
       </div>
     </div>
     <div class="center">
@@ -50,11 +50,11 @@
 <style>
 .title {
   color: #636466;
-  font-size: 100px;
+  font-size: 7vw;
   text-align: center;
   font-weight: bold;
-  margin-top: 20px;
-  margin-bottom: 20px;
+  margin-top: 2vh;
+  margin-bottom: 2vh;
   display: block;
 }
 
@@ -67,19 +67,19 @@
   align-items: center; /* Center vertically */
 //height: 200px; /* Optional: Makes the container the full height of the viewport for vertical centering */
   position: relative;
-  margin-left: 40px;
-  margin-right: 40px;
-  margin-bottom: 20px;
+  margin-left: 3vw;
+  margin-right: 3vw;
+  margin-bottom: 2vh;
 }
 
 .question {
-  font-size: 30px;
+  font-size: 2vw;
   text-align: center;
   color: black;
 }
 
 .btn {
-  margin-right: 50px;
+  margin-right: 3vw;
 }
 
 

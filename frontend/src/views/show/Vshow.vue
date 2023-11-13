@@ -140,18 +140,18 @@ console.log(res)
 
 <style scoped>
 .show {
-  width: 1730px;
+  width: 95vw;
   height: 100%;
-  padding-left: 150px;
-  padding-top: 10px;
+  padding-left: 8vw;
+  padding-top: 1vh;
 }
 .drink-table {
-  width: 1600px;
+  width: 90vw;
   display: flex;
   position: relative;
   flex-flow: wrap;
-  padding-left: 10px;
-  padding-top: 10px;
+  padding-left: 1vh;
+  padding-top: 1vh;
 }
 
 

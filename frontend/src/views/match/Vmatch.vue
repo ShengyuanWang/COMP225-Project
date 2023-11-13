@@ -22,18 +22,17 @@ const name = route.query.name;
 
 <style scoped>
 .header {
-  height: 60px;
+  height: 6vh;
   width: 100%;
 }
 .match_result {
-  width: 1450px;
-  height: 850px;
+  width: 80vw;
+  height: 85vh;
   display: flex;
   position: relative;
   flex-flow: wrap;
-  padding-left: 30px;
-  padding-top: 10px;
-  background-color: blue;
-  margin-left: 150px;
+  padding-left: 2vw;
+  padding-top: 1vh;
+  margin-left: 11vw;
 }
 </style>
