@@ -18,7 +18,7 @@ getDownloadURL(liquid)
       console.log('success');
       liquid_url.value = metadata;
       finish.value = 1;
-      console.log(liquid_url);
+      console.log(liquid_url.value);
       console.log(finish);
     })
     .catch((error) => {

@@ -9,7 +9,7 @@ const props = defineProps({
 
 <template>
   <div class="drink-item">
-    <div class="drink-image"> <el-image :src="props.url" fit="cover" alt="Alcohol Image Onload"/></div>
+    <div class="drink-image"> <img :src="props.url" alt="Alcohol Image Onload"/></div>
     <div class="drink-instructions">
       <h1 class="drink-name">
         {{ props.name }}
@@ -34,13 +34,20 @@ const props = defineProps({
 }
 .drink-image {
   width: 100%;
-  height: 37vh;
+  height: 35vh;
   background-color: #D8C3A5;
   padding: 1vh;
+  text-align: center;
 }
+
+img {
+  height: 100%;
+  aspect-ratio: 1/2;
+}
+
 .drink-instructions {
   width: 100%;
-  height: 28vh;
+  height: 30vh;
   background-color: #c2ae91;
   padding: 1vh;
 }

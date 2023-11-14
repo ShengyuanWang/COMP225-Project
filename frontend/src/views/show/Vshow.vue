@@ -146,7 +146,7 @@ onLoad()
 
 
   <div class="drink-table" >
-    <drink-item v-for="drink in drinks" :name="drink.name" :instruction="drink.instructions" url="https://i.ibb.co/989gpGR/drink1.png" @click="getData(drink)">{{drink.name}}}</drink-item>
+    <drink-item v-for="drink in drinks" :name="drink.name" :instruction="drink.instructions" url="https://firebasestorage.googleapis.com/v0/b/comp225-810dc.appspot.com/o/images%2FredWine.png?alt=media&token=2af7d5ed-b1e1-4382-95fe-2cdcc62fa79e" @click="getData(drink)">{{drink.name}}}</drink-item>
     <br>
     <block style="width: 90%">aaaa</block>
   </div>
