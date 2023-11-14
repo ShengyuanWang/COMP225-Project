@@ -65,11 +65,15 @@
   display: flex;
   justify-content: center; /* Center horizontally */
   align-items: center; /* Center vertically */
-//height: 200px; /* Optional: Makes the container the full height of the viewport for vertical centering */
+  //width: 20vw; /* Optional: Makes the container the full height of the viewport for vertical centering */
   position: relative;
   margin-left: 3vw;
   margin-right: 3vw;
   margin-bottom: 2vh;
+}
+
+.center img {
+  width: 30vw;
 }
 
 .question {
