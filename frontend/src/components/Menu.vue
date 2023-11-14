@@ -53,6 +53,10 @@ const setPreference = () => {
   showPreference.value = true
 }
 
+const showDetail = (type) => {
+  console.log(type)
+}
+
 // function handle the action on click the menu icon
 const clickMenu = () => {
   console.log('Click Menu');
@@ -100,7 +104,7 @@ const url_link = ref("http://localhost:5173/show");
         </el-sub-menu>
         <el-sub-menu index="4" @click="clickMenu">
           <template #title>
-            <a :href=url_link>Spirits</a>
+            <a href="#" @click="showDetail('Spirits')">Spirits</a>
           </template>
         </el-sub-menu>
       </el-menu>
