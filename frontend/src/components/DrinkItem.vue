@@ -45,13 +45,13 @@ const props = defineProps({
   padding: 1vh;
 }
 .drink-name {
-  font-size: 2vw;
+  font-size: 1.5vw;
   color: #992e22;
   font-weight: bold;
 }
 .instruction {
   color: black;
-  font-size: 1vw;
+  font-size: 1.5vh;
   padding-top: 1vh;
   padding-left: 1vw;
 }

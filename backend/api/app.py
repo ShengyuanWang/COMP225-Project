@@ -46,6 +46,13 @@ def search1(bookname):
     book = Book(bookname)
     return book.get_pairing_json_obj()
 
+@app.route('/getAlcohol', methods=["GET"])
+def get_alcohol():
+    with open('book-alcohol-pairings.json', "r") as f:
+        drinks = json.load(f)
+    return json.dumps(drinks)
+
+
 
 class Book:
     def __init__ (self, user_input, alcohol_data_file="book-alcohol-pairings.json", api_key=API_KEY, official_genres=GENRES, no_match_drink=BUD_LIGHT):
