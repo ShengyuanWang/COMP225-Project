@@ -37,13 +37,13 @@
     <div class="center">
       <img src="/src/assets/logo.png" alt="Group Logo">
     </div>
-<!--    <div class="pop-up">-->
-<!--      <h2 class="question"> Are you over 21 ?</h2>-->
-<!--      <div class="center">-->
-<!--        <div class="btn"><el-button type="primary" size="large" @click="onClickYes()"><p>Yes</p></el-button></div>-->
-<!--        <div class="btn"><el-button type="primary" size="large" @click="onClickNo()"><p>No</p></el-button></div>-->
-<!--      </div>-->
-<!--    </div>-->
+    <div class="pop-up">
+      <h2 class="question"> Are you over 21 ?</h2>
+      <div class="center">
+        <div class="btn"><el-button type="primary" size="large" @click="onClickYes()"><p>Yes</p></el-button></div>
+        <div class="btn"><el-button type="primary" size="large" @click="onClickNo()"><p>No</p></el-button></div>
+      </div>
+    </div>
   </div>
 </template>
 
@@ -67,9 +67,7 @@
   align-items: center; /* Center vertically */
   //width: 20vw; /* Optional: Makes the container the full height of the viewport for vertical centering */
   position: relative;
-  margin-left: 3vw;
-  margin-right: 3vw;
-  margin-bottom: 2vh;
+  margin: 2vh 3vw;
 }
 
 .center img {
@@ -84,6 +82,11 @@
 
 .btn {
   margin-right: 3vw;
+}
+
+.center .el-button {
+  background-color: #992e22 !important;
+  border-color: #992e22 !important;
 }
 
 
