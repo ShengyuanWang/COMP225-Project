@@ -3,7 +3,7 @@
   import router from "../../router";
 
   // define objects
-  const obj = ref({
+  const obj = reactive({
     underage: 0
   })
 
