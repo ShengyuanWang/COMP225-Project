@@ -1,14 +1,13 @@
 <script setup>
 // import the required packages
 import Qinput from "@/components/Qinput.vue";
-import MatchResult from "@/components/MatchResult.vue";
 import { useRoute } from 'vue-router'
 const route = useRoute()
 
 // get the data from route url
 let name = route.query.name;
 let instruction = route.query.instruction;
-
+let description = route.query.description;
 </script>
 
 <template>
@@ -16,24 +15,24 @@ let instruction = route.query.instruction;
     <Qinput place="40"></Qinput>
   </div>
   <div class="match_result">
-    <Detail url="https://i.ibb.co/989gpGR/drink1.png" :name=name :instruction=instruction></Detail>
+    <Detail url="https://i.ibb.co/989gpGR/drink1.png" :name=name :instruction=instruction :description=description></Detail>
   </div>
-
 </template>
 
-<style scoped>
+<style>
 .header {
-  height: 60px;
+  height: 6ch;
   width: 100%;
 }
+
 .match_result {
-  width: 1450px;
-  height: 850px;
+  width: 80vw;
+  height: 85vh;
   display: flex;
   position: relative;
   flex-flow: wrap;
-  padding-left: 30px;
-  padding-top: 10px;
-  margin-left: 150px;
+  padding-left: 2vw;
+  padding-top: 1vh;
+  margin-left: 11vw;
 }
-</style>yle>
+</style>

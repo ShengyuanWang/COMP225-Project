@@ -8,6 +8,7 @@ const route = useRoute()
 // get the variables from route url
 const stars = route.query.stars;
 const name = route.query.name;
+const description = route.query.description;
 </script>
 
 <template>
@@ -15,25 +16,24 @@ const name = route.query.name;
     <Qinput place="40"></Qinput>
   </div>
   <div class="match_result">
-    <MatchResult url="https://i.ibb.co/989gpGR/drink1.png" :name=name :rating=stars></MatchResult>
+    <MatchResult url="https://i.ibb.co/989gpGR/drink1.png" :name=name :rating=stars :description=description></MatchResult>
   </div>
-
 </template>
 
 <style scoped>
 .header {
-  height: 60px;
+  height: 6vh;
   width: 100%;
 }
+
 .match_result {
-  width: 1450px;
-  height: 850px;
+  width: 80vw;
+  height: 85vh;
   display: flex;
   position: relative;
   flex-flow: wrap;
-  padding-left: 30px;
-  padding-top: 10px;
-  background-color: blue;
-  margin-left: 150px;
+  padding-left: 2vw;
+  padding-top: 1vh;
+  margin-left: 11vw;
 }
 </style>

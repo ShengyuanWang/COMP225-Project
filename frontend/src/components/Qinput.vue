@@ -3,54 +3,40 @@
 import {getCurrentInstance, ref} from 'vue'
 import { Search } from '@element-plus/icons-vue'
 import router from "@/router";
-import axios from "axios";
+const {proxy} = getCurrentInstance()
 
 // set the props for the search bar
 const props = defineProps({
   move: Boolean, // whether it should move
   place: String // the place of the search bar
 })
-const {proxy} = getCurrentInstance()
-const place = ref(props.place)
+const place = ref(props.place)  // placeholder
 const value = ref('Books')
 const input = ref('')
 // 400 default 35 active
 const data = [
   {
     value:'Books'
-  },
-  {
-    value:'Movies'
-  },
-  {
-    value:'TV Shows'
-  },
-  {
-    value:'Music'
   }
 ]
+
+
+// functions
 const onClick  = () => {
   if (props.move) {
     place.value = 60;
   }
   var api="https://comp-225-project-backend.vercel.app/test/" + input.value;
-  //2.使用axios 进行get请求
+  // use axios to get
   proxy.axios.get(api).then((res)=>{
-    //请求成功的回调函数
     console.log(api)
     console.log('finish')
     console.log(res)
-    router.push({path:'match', query: {name:res.data.pairing, url:'https://i.ibb.co/989gpGR/drink1.png', stars:'5'}})
+    router.push({path:'match', query: {name:res.data.name, url:'https://i.ibb.co/989gpGR/drink1.png', stars:'5', description:res.data.information}})
   }).catch((err)=>{
-    //请求失败的回调函数
     console.log(err)
   })
-  router.afterEach((to, from, next) => {
-    window.location.reload()
-    console.log('true')
-  })
 }
-console.log(outerHeight)
 </script>
 
 <template>
@@ -74,22 +60,19 @@ console.log(outerHeight)
       </el-input>
     </div>
   </div>
-
-
 </template>
 
 <style scoped>
 .inp {
-  width: 800px;
+  width: 50vw;
   margin-left: auto;
   margin-right: auto;
-  height: 100px;
+  height: 10vh;
   z-index:2;
 }
+
 img {
-  width: 60px;
+  width: 3.5vw;
 }
-
-
 </style>
 

@@ -3,10 +3,12 @@
 import { ref } from 'vue'
 import router from "@/router";
 
+// non-static variables
 const showPreference = ref(false) // const for whether show the preference list
 const isCollapse = ref(true) // const for side-menu collapse action
-const w = ref(100) // handle the distance to the left for the icon
+const w = ref(6) // handle the distance to the left for the icon vw
 const menuColor = ref('#C3BCB3') // handle the color for the menu
+
 // array for drink preference | default : false
 const preference  = ref({
   beer: false,
@@ -14,6 +16,7 @@ const preference  = ref({
   spirits: false,
   cocktails: false
 })
+
 // array for allergy preference | default : false
 const allergy  = ref({
   treenuts: false,
@@ -39,11 +42,11 @@ const handleCollapse = () =>{
   isCollapse.value = !isCollapse.value
   showPreference.value = false
   console.log(w);
-  if (w.value == 100) {
-    w.value = 400
+  if (w.value === 6) {
+    w.value = 22
     menuColor.value = '#D8C3A5'
   } else {
-    w.value = 100
+    w.value = 6
     menuColor.value = '#C3BCB3'
   }
 }
@@ -53,10 +56,11 @@ const setPreference = () => {
   showPreference.value = true
 }
 
+
 // function handle the action on click the menu icon
-const clickMenu = () => {
+const clickMenu = (type) => {
   console.log('Click Menu');
-  router.push({ path: 'show'})
+  router.push({ path: 'show', query: {type: type}})
 }
 
 // function handle the click action for the search icon
@@ -71,8 +75,8 @@ const url_link = ref("http://localhost:5173/show");
 
 
 <template>
-  <div class="menu" :style="{width: w+ 'px', backgroundColor:menuColor}">
-      <button name='menu-bar' @click="handleCollapse" class="menu_icon" :style="{marginLeft:w-75+'px',marginRight:'30px',height:'40px',width:'50px'}"></button>
+  <div class="menu" :style="{width: w+ 'vw', backgroundColor:menuColor}">
+      <button name='menu-bar' @click="handleCollapse" class="menu_icon" :style="{marginLeft:w-4.5+'vw',marginRight:'2vw',height:'4vh',width:'3vw'}"></button>
     <div v-if="!isCollapse && !showPreference">
       <h1>Menu</h1>
       <el-menu
@@ -80,62 +84,30 @@ const url_link = ref("http://localhost:5173/show");
           class="el-menu-vertical-demo el-collapse"
           @open="handleOpen"
           @close="handleClose"
-          :style="{marginLeft:'14px', marginTop:'5px', border:'none', backgroundColor:menuColor}"
+          :style="{marginLeft:'1vw', marginTop:'0.5vh', border:'none', backgroundColor:menuColor}"
       >
-        <el-sub-menu index="1" @click="clickMenu">
+        <el-sub-menu index="1" @click="clickMenu('Cocktail')">
           <template #title>
-            <a :href=url_link>Cocktail</a>
+            <a href="#">Cocktail</a>
           </template>
         </el-sub-menu>
 
-        <el-sub-menu index="2" @click="clickMenu">
+        <el-sub-menu index="2" @click="clickMenu('Wine')">
           <template #title>
-            <a :href=url_link>Wine</a>
+            <a href="#">Wine</a>
           </template>
         </el-sub-menu>
-        <el-sub-menu index="3" @click="clickMenu">
+        <el-sub-menu index="3" @click="clickMenu('Beer')">
           <template #title>
-            <a :href=url_link>Beer</a>
+            <a href="#">Beer</a>
           </template>
         </el-sub-menu>
-        <el-sub-menu index="4" @click="clickMenu">
+        <el-sub-menu index="4" @click="clickMenu('Spirits')">
           <template #title>
-            <a :href=url_link>Spirits</a>
-          </template>
-        </el-sub-menu>
-      </el-menu>
-      <h2 @click="setPreference">Set Preference</h2>
-      <h1>Match</h1>
-      <el-menu
-          default-active="2"
-          class="el-menu-vertical-demo el-collapse"
-          @open="handleOpen"
-          @close="handleClose"
-          :style="{marginLeft:'14px', marginTop:'5px', border:'none', backgroundColor:menuColor}"
-      >
-        <el-sub-menu index="5" @click="clickMatch">
-          <template #title>
-            <a :href=url_link>Books</a>
-          </template>
-        </el-sub-menu>
-        <el-sub-menu index="6" @click="clickMatch">
-          <template #title>
-            <a :href=url_link>Movies</a>
-          </template>
-        </el-sub-menu>
-        <el-sub-menu index="7" @click="clickMatch">
-          <template #title>
-            <a :href=url_link>TV Shows</a>
-          </template>
-        </el-sub-menu>
-        <el-sub-menu index="8" @click="clickMatch">
-          <template #title>
-            <a :href=url_link>Music</a>
+            <a href="#">Spirits</a>
           </template>
         </el-sub-menu>
       </el-menu>
-    </div>
-    <div v-if="!isCollapse && showPreference">
       <h1>Preference</h1>
       <div class="check">
         <p><el-checkbox v-model="preference.beer" label="Beer" size="large" style="color: black"/></p>
@@ -152,8 +124,6 @@ const url_link = ref("http://localhost:5173/show");
         <p><el-checkbox v-model="allergy.other" label="Other" size="large" style="color: black"/></p>
       </div>
     </div>
-
-
   </div>
 </template>
 
@@ -161,74 +131,26 @@ const url_link = ref("http://localhost:5173/show");
 
 <style>
 .el-menu-vertical-demo:not(.el-menu--collapse) {
-  width: 350px;
-  min-height: 400px;
+  width: 20.5vw;
+  min-height: 40vh;
   background-color: #D8C3A5;
 }
+
 .el-collapse {
   background-color: #D8C3A5;
 }
-.menu {
-  list-style-type: none;
-  padding: 0;
-  height: 100%; /* 全屏高度 */
-  position: fixed;
-  overflow: auto; /* 如果导航栏选项多，允许滚动 */
-  z-index: 1;
-  overflow-x: hidden;
-  background-color: #D8C3A5;
-}
-.menu_icon{
-  height: 40px;
-  border-top: 3px solid black;
-  border-bottom: 3px solid black;
-  border-left: 0px;
-  border-right: 0px;
-  padding: 15.5px 0;
-  background-clip: content-box;
-  background-color: black;
-  margin-top: 18px;
-  //margin-left: 10px;
-}
+
 .el-menu-vertical-demo:not(.el-menu--collapse) {
-  width: 350px;
-  min-height: 200px;
+  width: 20.5vw;
+  min-height: 20vh;
   background-color: #D8C3A5;
 }
-h1 {
-  font-size: 40px;
-  margin-top: 5px;
-  margin-left: 30px;
-  color: #992e22;
-}
-h2 {
-  font-size: 25px;
-  margin-left: 30px;
-  color: #992e22;
-}
-
-menu {
-  padding-inline-start: 10px;
-}
-.preference {
-  color: white
-}
-
-a {
-  color: black;
-}
-
 
 .el-checkbox__label{
-  height: 24px;
-  font-size: 20px !important;
+  height: 2.4vh;
+  font-size: 1vw !important;
 }
 
-.check {
-  margin-left: 30px;
-  font-size: 20px;
-  font-weight: bold;
-}
 .el-checkbox__input.is-checked .el-checkbox__inner,
 .el-checkbox__input.is-indeterminate .el-checkbox__inner {
   border-color: #6A1006 !important;
@@ -244,4 +166,59 @@ a {
   border-color: #6A1006 !important;
 }
 
+.menu {
+  list-style-type: none;
+  padding: 0;
+  height: 100%;
+  position: fixed;
+  overflow: auto;
+  z-index: 1;
+  overflow-x: hidden;
+  background-color: #D8C3A5;
+}
+
+.menu_icon{
+  height: 4vh;
+  border-top: 0.3vh solid black;
+  border-bottom: 0.3vh solid black;
+  border-left: 0px;
+  border-right: 0px;
+  padding: 1.6vh 0;
+  background-clip: content-box;
+  background-color: black;
+  margin-top: 1.8vh;
+  //margin-left: 10px;
+}
+
+
+h1 {
+  font-size: 2.5vw;
+  margin-top: 0.5vh;
+  margin-left: 1.7vw;
+  color: #992e22;
+}
+
+h2 {
+  font-size: 1.5vw;
+  margin-left: 1.7vw;
+  color: #992e22;
+}
+
+menu {
+  padding-inline-start: 0.5vw;
+}
+
+.preference {
+  color: white
+}
+
+a {
+  color: black;
+}
+
+.check {
+  margin-left: 2vw;
+  font-size: 1.3vw;
+  font-weight: bold;
+}
 </style>

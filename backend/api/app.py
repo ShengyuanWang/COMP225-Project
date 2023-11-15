@@ -46,6 +46,18 @@ def search1(bookname):
     book = Book(bookname)
     return book.get_pairing_json_obj()
 
+@app.route('/getAlcohol/<types>', methods=["GET"])
+def get_alcohol(types):
+    with open('book-alcohol-pairings.json', "r") as f:
+        drinks = json.load(f)
+
+    drinks_filtered = []
+    for drink in drinks['alcohols']:
+        if drink["type"] == types:
+            drinks_filtered.append(drink)
+    return json.dumps(drinks_filtered)
+
+
 
 class Book:
     def __init__ (self, user_input, alcohol_data_file="book-alcohol-pairings.json", api_key=API_KEY, official_genres=GENRES, no_match_drink=BUD_LIGHT):
@@ -216,6 +228,7 @@ class Book:
                 json = requests.get(base_url, params=params).json()
                 data = json.get(f"ISBN:{isbn}", {})
                 names = self.split_subjects(data.get('subjects', ['N/A']))   
+                print(names)
                 names = self.combine_dates(names)             
                 genres += names
             return genres
@@ -246,9 +259,22 @@ class Book:
                         names.append(word.strip())
         return [name for name in names if name != ""]
     
-    def combine_dates(self, names):
-        # to-do: add code to combine dates
-        return names
+    def combine_dates(self, list_of_genres):
+        newGenres = []
+        print(list_of_genres)
+        for name in list_of_genres:
+            #print(name)
+            #if '9' in name or '2' in name or '3' in name or '4' in name or '5' in name and ('-' in name):
+                #name = name.split('-')
+            if '1939-1945' in name:
+                #World war II/20th century for 1939-1945
+                newGenres.append('world war ii')
+                newGenres.append('20th century')
+            else:
+                newGenres.append(name) 
+
+        #print(newGenres)
+        return newGenres
 
     def filter_title(self, title):
         """Cleans up titles to not include some common stop words, so that the titles 
