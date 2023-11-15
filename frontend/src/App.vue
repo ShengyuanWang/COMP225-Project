@@ -1,7 +1,6 @@
 <script setup>
 import {useRoute} from "vue-router";
 const route = useRoute()
-console.log('this is', route.path)
 </script>
 
 <template>

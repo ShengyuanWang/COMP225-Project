@@ -1,7 +1,7 @@
 <script setup>
   // import packages required
   import router from "../../router";
-
+  import {reactive} from 'vue';
   // define objects
   const obj = reactive({
     underage: 0
