@@ -3,10 +3,12 @@
 import { ref } from 'vue'
 import router from "@/router";
 
+// non-static variables
 const showPreference = ref(false) // const for whether show the preference list
 const isCollapse = ref(true) // const for side-menu collapse action
-const w = ref(6) // handle the distance to the left for the icon
+const w = ref(6) // handle the distance to the left for the icon vw
 const menuColor = ref('#C3BCB3') // handle the color for the menu
+
 // array for drink preference | default : false
 const preference  = ref({
   beer: false,
@@ -14,6 +16,7 @@ const preference  = ref({
   spirits: false,
   cocktails: false
 })
+
 // array for allergy preference | default : false
 const allergy  = ref({
   treenuts: false,
@@ -39,7 +42,7 @@ const handleCollapse = () =>{
   isCollapse.value = !isCollapse.value
   showPreference.value = false
   console.log(w);
-  if (w.value == 6) {
+  if (w.value === 6) {
     w.value = 22
     menuColor.value = '#D8C3A5'
   } else {
@@ -121,8 +124,6 @@ const url_link = ref("http://localhost:5173/show");
         <p><el-checkbox v-model="allergy.other" label="Other" size="large" style="color: black"/></p>
       </div>
     </div>
-
-
   </div>
 </template>
 
@@ -134,70 +135,22 @@ const url_link = ref("http://localhost:5173/show");
   min-height: 40vh;
   background-color: #D8C3A5;
 }
+
 .el-collapse {
   background-color: #D8C3A5;
 }
-.menu {
-  list-style-type: none;
-  padding: 0;
-  height: 100%; /* 全屏高度 */
-  position: fixed;
-  overflow: auto; /* 如果导航栏选项多，允许滚动 */
-  z-index: 1;
-  overflow-x: hidden;
-  background-color: #D8C3A5;
-}
-.menu_icon{
-  height: 4vh;
-  border-top: 0.3vh solid black;
-  border-bottom: 0.3vh solid black;
-  border-left: 0px;
-  border-right: 0px;
-  padding: 1.6vh 0;
-  background-clip: content-box;
-  background-color: black;
-  margin-top: 1.8vh;
-  //margin-left: 10px;
-}
+
 .el-menu-vertical-demo:not(.el-menu--collapse) {
   width: 20.5vw;
   min-height: 20vh;
   background-color: #D8C3A5;
 }
-h1 {
-  font-size: 2.5vw;
-  margin-top: 0.5vh;
-  margin-left: 1.7vw;
-  color: #992e22;
-}
-h2 {
-  font-size: 1.5vw;
-  margin-left: 1.7vw;
-  color: #992e22;
-}
-
-menu {
-  padding-inline-start: 0.5vw;
-}
-.preference {
-  color: white
-}
-
-a {
-  color: black;
-}
-
 
 .el-checkbox__label{
   height: 2.4vh;
   font-size: 1vw !important;
 }
 
-.check {
-  margin-left: 2vw;
-  font-size: 1.3vw;
-  font-weight: bold;
-}
 .el-checkbox__input.is-checked .el-checkbox__inner,
 .el-checkbox__input.is-indeterminate .el-checkbox__inner {
   border-color: #6A1006 !important;
@@ -213,4 +166,59 @@ a {
   border-color: #6A1006 !important;
 }
 
+.menu {
+  list-style-type: none;
+  padding: 0;
+  height: 100%;
+  position: fixed;
+  overflow: auto;
+  z-index: 1;
+  overflow-x: hidden;
+  background-color: #D8C3A5;
+}
+
+.menu_icon{
+  height: 4vh;
+  border-top: 0.3vh solid black;
+  border-bottom: 0.3vh solid black;
+  border-left: 0px;
+  border-right: 0px;
+  padding: 1.6vh 0;
+  background-clip: content-box;
+  background-color: black;
+  margin-top: 1.8vh;
+  //margin-left: 10px;
+}
+
+
+h1 {
+  font-size: 2.5vw;
+  margin-top: 0.5vh;
+  margin-left: 1.7vw;
+  color: #992e22;
+}
+
+h2 {
+  font-size: 1.5vw;
+  margin-left: 1.7vw;
+  color: #992e22;
+}
+
+menu {
+  padding-inline-start: 0.5vw;
+}
+
+.preference {
+  color: white
+}
+
+a {
+  color: black;
+}
+
+.check {
+  margin-left: 2vw;
+  font-size: 1.3vw;
+  font-weight: bold;
+}
 </style>

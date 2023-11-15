@@ -1,7 +1,6 @@
 <script setup>
 // import the required packages
 import Qinput from "@/components/Qinput.vue";
-import MatchResult from "@/components/MatchResult.vue";
 import { useRoute } from 'vue-router'
 const route = useRoute()
 
@@ -9,7 +8,6 @@ const route = useRoute()
 let name = route.query.name;
 let instruction = route.query.instruction;
 let description = route.query.description;
-
 </script>
 
 <template>
@@ -19,14 +17,14 @@ let description = route.query.description;
   <div class="match_result">
     <Detail url="https://i.ibb.co/989gpGR/drink1.png" :name=name :instruction=instruction :description=description></Detail>
   </div>
-
 </template>
 
-<style scoped>
+<style>
 .header {
   height: 6ch;
   width: 100%;
 }
+
 .match_result {
   width: 80vw;
   height: 85vh;

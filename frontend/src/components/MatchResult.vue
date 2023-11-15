@@ -7,7 +7,9 @@ import { h } from 'vue'
 const props = defineProps({
   url: String, // the url for the image
   name: String, // the name of drink item
-  rating: Number // the rating for the match
+  rating: Number, // the rating for the match
+  description: String // the description for the match
+
 })
 
 // handling the click action for the download icon
@@ -50,10 +52,7 @@ const clickChange = () => {
       <el-icon size="2vw" color="white" v-for="(item , index) in 5-parseInt(props.rating)"><StarFilled /></el-icon>
     </div>
     <div class="description">
-      <p>Slice the lemon quarter into three wedges. Rinse off a couple sprigs of mint (or just one if foregoing the garnish).
-      Throw the mint leaves in a cocktail shaker (I usually use six leaves or so, but adjust to taste). Add the lemon wedges and simple syrup,
-      then muddle. Finally, add the whiskey and some ice. Shake vigorously until the shaker is nice and frosty. Strain into a rocks glass filled with ice,
-        add the second sprig of mint as a garnish (if desired), and enjoy.</p>
+      <p>{{description}}</p>
     </div>
     <div class="btns">
       <span class="btn" @click="clickDownload"><el-icon size="3vw" color="Black"><Download /></el-icon></span>
@@ -71,19 +70,22 @@ const clickChange = () => {
   height: 100%;
   padding: 1vw;
 }
+
 .detail {
   background-color: #e0ceb4;
   width: 50%;
   height: 100%;
   padding: 0.5vw;
 }
+
 .name {
-  margin-top: 12vh;
-  font-size: 3vw;
+  margin-top: 3vh;
+  font-size: 2vw;
   font-weight: normal;
   color: #992e22;
   margin-left: 1vw;
 }
+
 .rate {
   margin-top: 0.5vh;
   margin-left: 2.5vw;
@@ -95,6 +97,7 @@ h2 {
   font-size: 2vw;
   font-weight: normal;
 }
+
 .description {
   margin-top: 1vh;
   margin-left: 3vw;
@@ -102,9 +105,11 @@ h2 {
   font-size: medium;
   color: black;
 }
+
 h1 {
-  font-size: 4vw;
+  font-size: 3vw;
 }
+
 .btns {
   width: 15vw;
   height: 5vh;
@@ -112,6 +117,7 @@ h1 {
   right: 1vw;
   bottom: 5vh;
 }
+
 .btn {
   height: 5vw;
   width: 3vw;

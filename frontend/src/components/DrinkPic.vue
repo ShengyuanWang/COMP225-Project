@@ -1,38 +1,41 @@
 <script setup>
+// default import from firebase
 import { storage } from '/src/firebase.js'
 import { ref as storageRef, getMetadata, getDownloadURL } from "firebase/storage";
+// packages from vue
 import { ref } from 'vue';
+
+// send property to father components
 const props = defineProps({
   liquid: String, // the instruction about how to make the drink
   pos: String
 })
-const imagesRef = storageRef(storage, 'images');
-const liquid = storageRef(storage, 'images/'+ props.liquid+'.png');
-const glass_url = ref('');
-const liquid_url = ref('');
-const finish = ref(0);
 
-getDownloadURL(liquid)
+// non-static variables
+const liquid = storageRef(storage, 'images/'+ props.liquid+'.png'); // the firebase url
+const liquid_url = ref(''); // the ture image access url
+
+// functions
+onload = () => {
+  // function running on load
+  loadImage();
+}
+
+const loadImage = () => {
+  // load image according to liquid name
+  getDownloadURL(liquid)
     .then((metadata) => {
-      // Metadata now contains the metadata for 'images/forest.jpg'
-      console.log('success');
       liquid_url.value = metadata;
-      finish.value = 1;
-      console.log(liquid_url.value);
-      console.log(finish);
     })
     .catch((error) => {
-      // Uh-oh, an error occurred!
+      console.log('error occured for loadImage');
     });
-
-
+}
 </script>
 
 <template>
-  <div class="txt" v-if="finish===1">
-
+  <div class="txt">
     <el-image style="width: 15vw; position: fixed" :src="liquid_url" fit="fill" alt="Alcohol Image Onload"/>
-
   </div>
 </template>
 
@@ -43,6 +46,4 @@ getDownloadURL(liquid)
   height: 20vh;
   width: 20vw;
 }
-
-
 </style>

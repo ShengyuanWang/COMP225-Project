@@ -19,7 +19,6 @@ const props = defineProps({
           <li v-for="item in props.instruction.slice(0, 4)">{{ item }}</li>
         </ul>
       </div>
-
     </div>
   </div>
 </template>
@@ -51,16 +50,17 @@ img {
   background-color: #c2ae91;
   padding: 1vh;
 }
+
 .drink-name {
   font-size: 1.5vw;
   color: #992e22;
   font-weight: bold;
 }
+
 .instruction {
   color: black;
   font-size: 1.5vh;
   padding-top: 1vh;
   padding-left: 1vw;
 }
-
 </style>

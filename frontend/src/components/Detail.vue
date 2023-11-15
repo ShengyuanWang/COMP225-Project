@@ -5,9 +5,8 @@ const props = defineProps({
   name: String, // the name of the drink
   rating: Number, // the rating for the matching drink
   instruction: Array, // the instructions for how to make the drink
-  description: String,
+  description: String, // the description for the drink
 })
-
 </script>
 
 <template>
@@ -17,11 +16,6 @@ const props = defineProps({
   </div>
   <div class="pic">
     <div class="name"><h1>{{ props.name }}</h1></div>
-<!--    <div class="instruction">-->
-<!--      <ul>-->
-<!--        <li v-for="ins in instruction">{{ins}}</li>-->
-<!--      </ul>-->
-<!--    </div>-->
     <div class="description">
       <p style="font-size: 1.2vw;">{{description}}</p>
     </div>
@@ -36,33 +30,28 @@ const props = defineProps({
   height: 100%;
   padding: 2vh;
   opacity: 0.9;
-  //box-shadow: 10px -5px 5px #968163;
 }
+
 .name {
   margin-top: 1vh;
   font-size: 3vw;
   font-weight: normal;
   color: #992e22;
 }
-.instruction {
-  margin-top: 0.5vh;
-  font-size: 1.4vw;
-  font-weight: bolder;
-  margin-left: 1vw;
-  color: black;
+
+h1 {
+  font-size: 5vw;
 }
+
 h2 {
   font-size: 2vw;
   font-weight: normal;
 }
+
 .description {
   margin-left: 2vw;
   margin-top: 2vh;
   font-size: 1vw;
   color: black;
 }
-h1 {
-  font-size: 5vw;
-}
-
 </style>

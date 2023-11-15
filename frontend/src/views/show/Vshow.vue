@@ -13,6 +13,10 @@ const res = {}
 // get the data from route url
 let type = route.query.type;
 
+onload = () => {
+  onLoad();
+}
+
 const onLoad = () => {
   var api = "https://comp-225-project-backend.vercel.app/getAlcohol/" + type;
   console.log(api);
@@ -22,7 +26,7 @@ const onLoad = () => {
     show.value = 1;
   }).catch((err)=>{
     //请求失败的回调函数
-    console.log(err)
+    console.log(err);
   })
 }
 
@@ -32,26 +36,20 @@ const getData = (drink) => {
   //2.使用axios 进行get请求
   proxy.axios.get(api).then((res)=>{
     //请求成功的回调函数
-    console.log(res)
-    console.log(api)
+    console.log(res);
+    console.log(api);
   }).catch((err)=>{
     //请求失败的回调函数
-    console.log(err)
+    console.log(err);
   })
-
   router.push({ path: 'detail', query: {name: drink.name, instruction:drink.instructions, description:drink.information}});
 }
-
-onLoad()
 
 
 </script>
 
 <template>
-
 <perfect-scrollbar class="show" v-if="show===1">
-
-
   <div class="drink-table" >
     <drink-item v-for="drink in drinks"
                 :name="drink.name"
@@ -63,10 +61,7 @@ onLoad()
     <br>
     <block style="width: 90%">aaaa</block>
   </div>
-
-
 </perfect-scrollbar>
-
 </template>
 
 <style scoped>
@@ -76,6 +71,7 @@ onLoad()
   padding-left: 8vw;
   padding-top: 1vh;
 }
+
 .drink-table {
   width: 90vw;
   display: flex;
@@ -84,8 +80,4 @@ onLoad()
   padding-left: 1vh;
   padding-top: 1vh;
 }
-
-
-
-
 </style>

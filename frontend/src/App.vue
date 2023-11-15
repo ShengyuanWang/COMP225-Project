@@ -1,20 +1,7 @@
 <script setup>
-// export default {
-//   methods: {
-//     // toggleFullscreen() {
-//     //   let element = document.querySelector('.fullscreen');
-//     //   if (document.fullscreenElement) {
-//     //     document.exitFullscreen();
-//     //   } else {
-//     //     element.requestFullscreen();
-//     //   }
-//     // }
-//   }
-// }
 import {useRoute} from "vue-router";
 const route = useRoute()
 console.log('this is', route.path)
-
 </script>
 
 <template>
@@ -22,8 +9,6 @@ console.log('this is', route.path)
   <Menu></Menu>
   <router-view :key="route.fullPath"></router-view>
 </div>
-
-
 </template>
 
 <style scoped>
@@ -35,5 +20,4 @@ console.log('this is', route.path)
   height: 100vh;
   background-color: #EAE7DC;
 }
-
 </style>

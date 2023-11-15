@@ -1,10 +1,9 @@
 <script setup>
   // import packages required
   import router from "../../router";
-  import {reactive} from "vue";
 
   // define objects
-  const obj = reactive({
+  const obj = ref({
     underage: 0
   })
 
@@ -58,9 +57,6 @@
   display: block;
 }
 
-
-
-
 .center {
   display: flex;
   justify-content: center; /* Center horizontally */
@@ -88,6 +84,4 @@
   background-color: #992e22 !important;
   border-color: #992e22 !important;
 }
-
-
 </style>
