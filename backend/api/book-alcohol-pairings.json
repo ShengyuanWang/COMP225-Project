@@ -813,7 +813,7 @@
             "name": "Dark Rum",
             "type": "Spirits",
             "genres": ["caribbean area","jamaica","pirates","action & adventure", "mystery fiction","mystery", "thriller","thrillers","suspense & thriller","suspense",
-                "suspense fiction","werewolves","werewolves in fiction","demons","quests","quests "],
+                "suspense fiction","werewolves","werewolves in fiction","demons","quests","quests ","colonial period"],
             "sentiment":0.6,
             "instructions":["TBA"],
             "information":"TBA"
@@ -881,7 +881,7 @@
             "type": "Spirits",
             "genres": ["caribbean area","pirates","action & adventure","adventure","adventure fiction","adventure stories","adventure and adventurers","romance","love",
                 "love stories","love & romance","romance fiction","romance literature","travel","historical fiction","history","historical","quests","quests ",
-                "historical romance"],
+                "historical romance","colonial period"],
             "sentiment": 0.7,
             "instructions":["TBA"],
             "information":"TBA"
@@ -939,7 +939,8 @@
             "name": "Hard Cider",
             "type": "Wine",
             "genres": ["fantasy fiction","fantasy","fantasy genre","fantastic fiction","fantasy in fiction","humorous","humor","humorous fiction","comedy",
-                "contemporary fiction","contemporary","action & adventure","adventure and adventurers","adventure stories","adventure","adventure fiction"],
+                "contemporary fiction","contemporary","action & adventure","adventure and adventurers","adventure stories","adventure","adventure fiction",
+                "colonial period"],
             "sentiment":0.7,
             "instructions":["TBA"],
             "information":"Pour yourself a glass!"
