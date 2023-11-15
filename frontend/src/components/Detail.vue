@@ -4,7 +4,8 @@ const props = defineProps({
   url: String, // the url for the image
   name: String, // the name of the drink
   rating: Number, // the rating for the matching drink
-  instruction: Array // the instructions for how to make the drink
+  instruction: Array, // the instructions for how to make the drink
+  description: String,
 })
 
 </script>
@@ -16,15 +17,13 @@ const props = defineProps({
   </div>
   <div class="pic">
     <div class="name"><h1>{{ props.name }}</h1></div>
-    <div class="instruction">
-      <ul>
-        <li v-for="ins in instruction">{{ins}}</li>
-      </ul>
-    </div>
+<!--    <div class="instruction">-->
+<!--      <ul>-->
+<!--        <li v-for="ins in instruction">{{ins}}</li>-->
+<!--      </ul>-->
+<!--    </div>-->
     <div class="description">
-      <p>Description (bobobobobobobobobobobobobob)</p>
-      <p>(bobobobobobobobobobobobobob)</p>
-      <p>(bobobobobobobobobobobobobob)</p>
+      <p style="font-size: 1.2vw;">{{description}}</p>
     </div>
   </div>
   <!--  detailed drink ends here-->
@@ -58,7 +57,7 @@ h2 {
 }
 .description {
   margin-left: 2vw;
-  margin-top: 1vh;
+  margin-top: 2vh;
   font-size: 1vw;
   color: black;
 }

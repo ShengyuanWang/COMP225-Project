@@ -20,7 +20,7 @@ console.log('this is', route.path)
 <template>
 <div class="fullscreen">
   <Menu></Menu>
-  <router-view :key="route.path"></router-view>
+  <router-view :key="route.fullPath"></router-view>
 </div>
 
 

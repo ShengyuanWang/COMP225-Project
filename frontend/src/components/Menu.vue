@@ -53,14 +53,11 @@ const setPreference = () => {
   showPreference.value = true
 }
 
-const showDetail = (type) => {
-  console.log(type)
-}
 
 // function handle the action on click the menu icon
-const clickMenu = () => {
+const clickMenu = (type) => {
   console.log('Click Menu');
-  router.push({ path: 'show'})
+  router.push({ path: 'show', query: {type: type}})
 }
 
 // function handle the click action for the search icon
@@ -86,25 +83,25 @@ const url_link = ref("http://localhost:5173/show");
           @close="handleClose"
           :style="{marginLeft:'1vw', marginTop:'0.5vh', border:'none', backgroundColor:menuColor}"
       >
-        <el-sub-menu index="1" @click="clickMenu">
+        <el-sub-menu index="1" @click="clickMenu('Cocktail')">
           <template #title>
-            <a :href=url_link>Cocktail</a>
+            <a href="#">Cocktail</a>
           </template>
         </el-sub-menu>
 
-        <el-sub-menu index="2" @click="clickMenu">
+        <el-sub-menu index="2" @click="clickMenu('Wine')">
           <template #title>
-            <a :href=url_link>Wine</a>
+            <a href="#">Wine</a>
           </template>
         </el-sub-menu>
-        <el-sub-menu index="3" @click="clickMenu">
+        <el-sub-menu index="3" @click="clickMenu('Beer')">
           <template #title>
-            <a :href=url_link>Beer</a>
+            <a href="#">Beer</a>
           </template>
         </el-sub-menu>
-        <el-sub-menu index="4" @click="clickMenu">
+        <el-sub-menu index="4" @click="clickMenu('Spirits')">
           <template #title>
-            <a href="#" @click="showDetail('Spirits')">Spirits</a>
+            <a href="#">Spirits</a>
           </template>
         </el-sub-menu>
       </el-menu>
