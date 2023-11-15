@@ -46,11 +46,16 @@ def search1(bookname):
     book = Book(bookname)
     return book.get_pairing_json_obj()
 
-@app.route('/getAlcohol', methods=["GET"])
-def get_alcohol():
+@app.route('/getAlcohol/<types>', methods=["GET"])
+def get_alcohol(types):
     with open('book-alcohol-pairings.json', "r") as f:
         drinks = json.load(f)
-    return json.dumps(drinks)
+
+    drinks_filtered = []
+    for drink in drinks['alcohols']:
+        if drink["type"] == types:
+            drinks_filtered.append(drink)
+    return json.dumps(drinks_filtered)
 
 
 
