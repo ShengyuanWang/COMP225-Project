@@ -4,10 +4,7 @@ import DrinkPic from "@/components/DrinkPic.vue";
 
 <template>
   <DrinkPic liquid="redWine"></DrinkPic>
-
 </template>
 
 <style>
-
-
 </style>
