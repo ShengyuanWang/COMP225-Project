@@ -125,14 +125,14 @@ class Book:
         If no drinks match, returns an empty list. Drinks are represented as
         dictonaries. 
         """
-        genres = self.get_filtered_genres()
+        drink_genre = self.get_filtered_genres()
         with open(self.alcohol_data_file, "r") as f:
             drinks = json.load(f)
         matched_drinks = []
 
-        if genres is not None and len(genres) > 0:
+        if drink_genre is not None and len(drink_genre) > 0:
             for drink in drinks["alcohols"]:
-                for genre in genres:
+                for genre in drink_genre:
                     if genre in drink["genres"]:
                         if all(key in drink for key in ["name", "type", "genres", "sentiment", "instructions", "information"]):
                             matched_drinks.append(drink)
@@ -215,54 +215,76 @@ class Book:
                 }
                 json = requests.get(base_url, params=params).json()
                 data = json.get(f"ISBN:{isbn}", {})
-                names = self.split_subjects(data.get('subjects', ['N/A']))   
-                print(names)
-                names = self.combine_dates(names)             
-                genres += names
+                
+                names_split = self.split_subjects(data.get('subjects', ['N/A'])) 
+                print('names_split length')
+                print(len(names_split))  
+                names_dates_combined = self.combine_dates(names_split)             
+                genres += names_dates_combined
             return genres
         except:
             return genres
     
-    def split_subjects(self, subjects):
+    def split_subjects(self, subjects_to_split):
         """ This function takes a list of dictonaries of book subjects and splits the subject names 
         into smaller parts. The dictonaries must have at least the key "name". Subject names 
         will be split based on commas, dashes, em dashes. Phrases inside parenthese will also
         be extracted. Subject names will be made lowercase and trailing spaces are removed.
         """
-        names = []
-        for subject in subjects:
+        new_names_split = []
+        for subject in subjects_to_split:
             if isinstance(subject, dict):
                 regex_split = re.split(r"[,—–/]", subject["name"])
                 for word in regex_split:
                     word = word.strip().lower()
                     if "(" in word:
                         part_split = word.split("(")
-                        names.append(part_split[0])
+                        new_names_split.append(part_split[0])
                         if len(part_split) > 1 and len(part_split[1]) > 1:
                             if part_split[1][len(part_split[1])-1] == ")":
-                                names.append(part_split[1][:len(part_split[1])-1])
+                                new_names_split.append(part_split[1][:len(part_split[1])-1])
                             else:
-                                names.append(part_split[1])
+                                new_names_split.append(part_split[1])
                     else:
-                        names.append(word.strip())
-        return [name for name in names if name != ""]
+                        new_names_split.append(word.strip())
+        return [new_name for new_name in new_names_split if new_name != ""]
     
+        
     def combine_dates(self, list_of_genres):
-        newGenres = []
-        print(list_of_genres)
-        for name in list_of_genres:
-            #print(name)
-            #if '9' in name or '2' in name or '3' in name or '4' in name or '5' in name and ('-' in name):
-                #name = name.split('-')
-            if '1939-1945' in name:
+        updated_date_genres = []
+        print('list length of genres')
+        print(len(list_of_genres))
+        #print(list_of_genres)
+        for genre_x in list_of_genres:
+            print('in loop')
+            if '1939-1945' in genre_x:
+                print('in if')
                 #World war II/20th century for 1939-1945
-                newGenres.append('world war ii')
-                newGenres.append('20th century')
+                updated_date_genres.append('world war ii')
+                updated_date_genres.append('20th century')
+            #elif '1675' in genre_x:
+             #   print('in elif')
+                #print(genre_x)
+                #date_range = re.sub(r'[^0-9-]', '', genre_x)
+                #txt = date_range.split('-')
+              #  txt = genre_x.split('-')
+               # start_year = int(txt[0])
+                #end_year = int[txt[1]]
+                #print("start and end years")
+                #print(start_year, end_year)
+                #if 1699 >= start_year>=1600:
+                #    updated_date_genres.append('17th century')
+                #if 1699 >= end_year>=1600:
+               #     updated_date_genres.append('17th century')
+               # print("in elif genres")
+              #  print(updated_date_genres)
             else:
-                newGenres.append(name) 
-
-        #print(newGenres)
-        return newGenres
+                print('in else')
+                print(genre_x)
+                updated_date_genres.append(genre_x)
+#["king philip's war", '1675-1676', 'impressment', 'essex county ', 'mass.', 'massachusetts', 'history', 'new england', 'history', 'colonial period', 'ca. 1600-1775']
+        print(updated_date_genres)
+        return updated_date_genres
 
     def filter_title(self, title):
         """Cleans up titles to not include some common stop words, so that the titles 
