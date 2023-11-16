@@ -5,6 +5,7 @@ import random
 import requests
 from flask_cors import CORS
 import re
+import heapq
 from textblob import TextBlob
 
 # DO NOT make this public, keep in private github
@@ -36,7 +37,7 @@ def get_book():
                                 authors=book.get_authors(), publisher=book.get_publisher(),
                                 date=book.get_publication_date(), genres=book.get_genres(),
                                 filtered_genres=book.get_filtered_genres(), description=book.get_description(),
-                                cover_link=book.get_cover_link(), drinks=[drink["name"] for drink in book.get_matching_drinks()],
+                                cover_link=book.get_cover_link(), drinks=[drink["name"] for drink in book.get_top_drink_matches(book.get_matching_drinks())],
                                 pairing=book.get_pairing(), sentiment=book.get_sentiment())
     return render_template("home.html")
 
@@ -46,6 +47,23 @@ def search1(bookname):
     book = Book(bookname)
     return book.get_pairing_json_obj()
 
+class DrinkWrapper():
+    def __init__(self, drink_data, priority):
+        """This is wrapper class for drink data for creating the priority queue.
+        It contains a cutsom comparator which python's heapq needs to create a 
+        priority queue, as a tuple with priority and a dict confuses it. 
+        """
+        self.priority = priority
+        self.drink_data = drink_data
+
+    def get_drink_data(self):
+        return self.drink_data 
+    
+    def __str__(self):
+        return f"Priority: {self.priority}, Data: {self.drink_data}"
+
+    def __lt__(self, other):
+        return self.priority < other.priority
 
 class Book:
     def __init__ (self, user_input, alcohol_data_file="book-alcohol-pairings.json", api_key=API_KEY, official_genres=GENRES, no_match_drink=BUD_LIGHT):
@@ -69,7 +87,6 @@ class Book:
         self.isbn = self.select_isbn(self.isbn_list)
         self.data = self.query_api_book_data()
         self.genres = self.query_api_genres()
-        self.rolled_pairings = []
 
     def get_pairing_json_obj(self):
         """ Returns a json object containing book data and pairing for
@@ -91,61 +108,53 @@ class Book:
          returns drink with sentiment score most similar to book. 
         If no matching drinks, returns the drink specfied as the no-match drink.
         """
-        drinks = self.get_matching_drinks()
+        all_drinks = self.get_matching_drinks()
+        top_drink_matches = self.get_top_drink_matches(all_drinks)
         sentiment = self.get_sentiment()
         
-        if len(drinks) > 0:
-            pairing = min(drinks, key=lambda drink: abs(drink["sentiment"] - sentiment))
-            self.rolled_pairings.append(pairing)
+        if len(top_drink_matches) > 0:
+            pairing = min(top_drink_matches, key=lambda drink_match: abs(drink_match["sentiment"] - sentiment))
             return pairing
-        else:
-            return self.get_no_match_drink()
-        
-    def reroll_pairing(self):
-        """Untested.
-        Returns the matching drink with the sentiement closest to the book, but excluding 
-        drinks that have already been shown to user. If all macthing drinks have been 
-        shown to user, returns a drink at random. If no matching drinks, returns no-match drink.
-        """
-        drinks = self.get_matching_drinks()
-        sentiment = self.get_sentiment()
-        drinks_filtered = [drink for drink in drinks if drink not in self.rolled_pairings]
-        
-        if len(drinks_filtered) > 0:
-            pairing = min(drinks_filtered, key=lambda drink: abs(drink["sentiment"] - sentiment))
-            self.rolled_pairings.append(pairing)
-            return pairing
-        elif len(drinks) > 0:
-            return random.choice(drinks)
         else:
             return self.get_no_match_drink()
 
     def get_matching_drinks(self):
-        """ Return list of drinks that match book based on data in json file. 
-        If no drinks match, returns an empty list. Drinks are represented as
-        dictonaries. 
+        """ Return priority queue of drinks that match book based on data in json file. 
+        If no drinks match, returns an empty list.  Priority is based on how many genres are 
+        shared between the book and drink. Drinks are added to the priority queue by wrapping 
+        them in the DrinkWrapper class, which contains a custom comparator. The priority queue
+        is implmented with python's heapq module and is a max-heap.
         """
-        genres = self.get_filtered_genres()
+        book_genres = self.get_filtered_genres()
         with open(self.alcohol_data_file, "r") as f:
             drinks = json.load(f)
         matched_drinks = []
+        heapq.heapify(matched_drinks)
 
-        if genres is not None and len(genres) > 0:
+        if book_genres is not None and len(book_genres) > 0:
             for drink in drinks["alcohols"]:
-                for genre in genres:
-                    if genre in drink["genres"]:
-                        if all(key in drink for key in ["name", "type", "genres", "sentiment", "instructions", "information"]):
-                            matched_drinks.append(drink)
+                shared_genre_count = 0
+                for drink_genre in drink["genres"]:
+                    if drink_genre in book_genres:
+                        shared_genre_count += 0
+                heapq.heappush(matched_drinks, DrinkWrapper(drink, -1*shared_genre_count))
         return matched_drinks
+    
+    def get_top_drink_matches(self, drink_heap):
+        """ Takes the max heap of the drink and returns the drink data dicts that share the 
+        highest priority.
+        """
+        top_priority = heapq.nsmallest(1, drink_heap)[0].priority if drink_heap else None
+        top_matches = [drink_obj.get_drink_data() for drink_obj in drink_heap if drink_obj.priority == top_priority]
+        return top_matches
 
     def get_sentiment(self):
-        """
-        Uses TextBlob to get the sentiment score of the book.
+        """ Uses TextBlob to get the sentiment score of the book.
         Gets the sentinent score of the unfiltered genres and the description,
         then averages them together and rounds to two decimal places.
         """
-        genres = ",".join(self.get_genres())
-        genre_blob = TextBlob(genres)
+        genres_string = ",".join(self.get_genres())
+        genre_blob = TextBlob(genres_string)
         genre_sent = genre_blob.sentiment.polarity
 
         desc = self.get_description()
@@ -156,6 +165,11 @@ class Book:
         return round((sentiment), 2) 
     
     def query_api_isbns(self, title):
+        """ Gets all isbns for a given book using google book API and user input.
+        Assumes the correct title is the first result, and from there, ignoring  
+        major stop words and common punctutaion, returns a list of all isbns
+        that share the same title as the first result.
+        """
         base_url = 'https://www.googleapis.com/books/v1/volumes'
         params = {
             'q': f'intitle:{title}',
@@ -182,7 +196,7 @@ class Book:
     
 
     def query_api_book_data(self):
-        """Return a dict of book data, or an empty dictonary 
+        """ Return a dict of book data, or an empty dictonary 
         if api query fails. Queries google books api using isbn. 
         """
         base_url = "https://www.googleapis.com/books/v1/volumes"
@@ -221,6 +235,17 @@ class Book:
             return genres
         except:
             return genres
+        
+    def filter_title(self, title):
+        """Cleans up titles to not include some common stop words, so that the titles 
+        can be more easily matched. Used when looking for genres across all 
+        versions of a book.
+        """
+        # idea: find titles based on author and key words from titles
+        words = title.split()    
+        filtered_words = [word for word in words if word.lower() not in ["and", "a", "the"]]
+        filtered_phrase = ' '.join(filtered_words)
+        return filtered_phrase
     
     def split_subjects(self, subjects):
         """ This function takes a list of dictonaries of book subjects and splits the subject names 
@@ -249,17 +274,6 @@ class Book:
     def combine_dates(self, names):
         # to-do: add code to combine dates
         return names
-
-    def filter_title(self, title):
-        """Cleans up titles to not include some common stop words, so that the titles 
-        can be more easily matched. Used when looking for genres across all 
-        versions of a book.
-        """
-        # idea: find titles based on author and key words from titles
-        words = title.split()    
-        filtered_words = [word for word in words if word.lower() not in ["and", "a", "the"]]
-        filtered_phrase = ' '.join(filtered_words)
-        return filtered_phrase
     
     def select_isbn(self, isbns):
         """Selects the first isbn from the list of isbns."""
@@ -289,7 +303,8 @@ class Book:
 
     def get_authors(self):
         """Using book data dictonary, return list of authors found for the book, 
-        or an empty list if no authors were found."""
+        or an empty list if no authors were found.
+        """
         if "authors" in list(self.data.keys()):
             return self.data["authors"]
         else:
@@ -297,7 +312,8 @@ class Book:
 
     def get_description(self):
         """Using book data dictonary, return description found for the book, 
-        or an empty string if no description was found."""
+        or an empty string if no description was found.
+        """
         if "description" in list(self.data.keys()):
             return self.data["description"]
         else:
@@ -333,7 +349,8 @@ class Book:
 
     def get_isbn(self):
         """Return the instance variable containing the book's ibsn, will be the 
-        first one found in the google books api query."""
+        first one found in the google books api query.
+        """
         return self.isbn
 
     def get_isbn_list(self):
