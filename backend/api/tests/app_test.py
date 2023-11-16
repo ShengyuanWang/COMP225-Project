@@ -24,9 +24,9 @@ def test_get_pairing_json_obj():
     assert valid_dict["authors"] == ["Frank Herbert"]
     assert set(valid_dict["genres"]) == set(["science-fiction", "science fiction"])
     assert valid_dict["cover_link"].startswith("http://books.google.com/books/content?id")
-    assert valid_dict["name"] in [drink["name"] for drink in book_valid.get_matching_drinks()]
-    assert valid_dict["instructions"] in [drink["instructions"] for drink in book_valid.get_matching_drinks()]
-    assert valid_dict["information"] in [drink["information"] for drink in book_valid.get_matching_drinks()]
+    assert valid_dict["name"] in [drink.get_drink_data()["name"] for drink in book_valid.get_matching_drinks()]
+    assert valid_dict["instructions"] in [drink.get_drink_data()["instructions"] for drink in book_valid.get_matching_drinks()]
+    assert valid_dict["information"] in [drink.get_drink_data()["information"] for drink in book_valid.get_matching_drinks()]
 
     invalid_dict = json.loads(book_invalid.get_pairing_json_obj())
     assert list(invalid_dict.keys()) == ["title", "authors", "genres", "cover_link", "name", "instructions", "information"]
@@ -50,9 +50,9 @@ def test_get_pairing():
     assert type(valid_pairing["name"]) is str
     assert type(valid_pairing["instructions"]) is list
     assert type(valid_pairing["information"]) is str
-    assert valid_pairing["name"] in [drink["name"] for drink in book_valid.get_matching_drinks()]
-    assert valid_pairing["instructions"] in [drink["instructions"] for drink in book_valid.get_matching_drinks()]
-    assert valid_pairing["information"] in [drink["information"] for drink in book_valid.get_matching_drinks()]
+    assert valid_pairing["name"] in [drink.get_drink_data()["name"] for drink in book_valid.get_matching_drinks()]
+    assert valid_pairing["instructions"] in [drink.get_drink_data()["instructions"] for drink in book_valid.get_matching_drinks()]
+    assert valid_pairing["information"] in [drink.get_drink_data()["information"] for drink in book_valid.get_matching_drinks()]
 
     invalid_pairing = book_invalid.get_pairing()
     assert type(invalid_pairing["name"]) is str
@@ -64,7 +64,7 @@ def test_get_pairing():
 
 def test_get_matching_drinks():
     valid_book_drinks = book_valid.get_matching_drinks()
-    drink_1 = valid_book_drinks[0]
+    drink_1 = valid_book_drinks[0].get_drink_data()
     assert len(valid_book_drinks) > 0
     assert list(drink_1.keys()) == ["name", "type", "genres", "sentiment", "instructions", "information"]
     assert type(drink_1["name"]) is str
