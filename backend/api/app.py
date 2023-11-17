@@ -231,7 +231,6 @@ class Book:
                 names_split = self.split_subjects(data.get('subjects', ['N/A'])) 
                 names_dates_combined = self.combine_dates(names_split)             
                 genres += names_dates_combined
-                #genres+=names_split
             return genres
         except:
             return genres
@@ -262,36 +261,32 @@ class Book:
     
     def combine_dates(self,list_of_genres):
         updated_date_genres = []
-        print('old genres')
-        print(list_of_genres)
         for genre_x in list_of_genres:
             if '1939-1945' in genre_x:
-            #world war II/20th century for 1939-1945
+                #world war II/20th century for 1939-1945
                 updated_date_genres.append('world war ii')
                 updated_date_genres.append('20th century')
             elif ('-' in genre_x) and ('1' in genre_x):
-            #For date ranges, adds a century tag for both start and end dates in a range
+                #For date ranges, adds a century tag for both start and end dates in a range
                 date_range = re.sub(r'[^0-9-]', '', genre_x)
                 txt = date_range.split('-')
                 if txt and txt[0].isdigit():
-                    start_year = int(txt[0])
+                    start_year = int(txt[0])   
                     updated_date_genres.append(self.get_century_tag(start_year))
-                    print(self.get_century_tag(start_year))
-                if txt and txt[1].isdigit():
-                    end_year = int(txt[1])
-                    updated_date_genres.append(self.get_century_tag(end_year))
+                    if txt and txt[1].isdigit():
+                        #only add a second century tag if the end date is in a different century than the start date
+                        end_year = int(txt[1])
+                        if (self.get_century_tag(start_year)) != (self.get_century_tag(end_year)):
+                            updated_date_genres.append(self.get_century_tag(end_year))
+
             elif('1'in genre_x and not '-' in genre_x):
-            #For single years (rather than date ranges)
+                #For single years (rather than date ranges)
                 date = re.sub(r'\D', '', genre_x)
                 if date.isdigit:
-                    print('after digit')
                     date =int(date)
-                    print('after casting')
                     updated_date_genres.append(self.get_century_tag(date))
-                    print('after century')
             else:
                 updated_date_genres.append(genre_x)
-        #print(updated_date_genres)
         return updated_date_genres
 
     def get_century_tag(self,year):
