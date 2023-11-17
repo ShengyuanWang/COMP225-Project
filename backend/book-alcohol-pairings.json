@@ -1,0 +1,958 @@
+{
+    "alcohols": [
+        {
+            "name": "Old Fashion",
+            "type": "Cocktail",
+            "genres": ["mystery fiction","mystery", "historical fiction","history","historical","classic fiction","classic literature","classic","classical literature",
+                "classics","psychological","psychology","psychological fiction","biographical","biographies","biography & autobiography","biography","urban fantasy",
+                "mysteries & detective stories","mystery & detective","mystery and detective stories","detective and mystery stories"],
+            "sentiment": 0.6,
+            "instructions": [
+                "2 oz. bourbon or rye whiskey",
+                "1 sugar cube",
+                "2 dashes Angostura bitters",
+                "Orange or lemon twist",
+                "Ice",
+                "A few dashes of plain water (optional)"],
+            "information": "An Old Fashioned is a timeless classic cocktail. To craft this iconic drink, start by placing a sugar cube in an old-fashioned glass and saturating it with 2 dashes of Angostura bitters. If you prefer a sweeter variant, add a few dashes of plain water to help dissolve the sugar. Gently muddle the sugar and bitters until the sugar is dissolved. Fill the glass with ice cubes, and then pour in 2 oz. of your choice of bourbon or rye whiskey. Stir the mixture gently to combine the ingredients, and garnish with a twist of orange or lemon peel, expressing the citrus oils over the drink for an added aroma. Alternatively, you can use an olive as a garnish. The result is a beautifully simple yet sophisticated cocktail that's all about savoring the rich flavors of the whiskey."
+        },
+        {
+            "name":"Margarita",
+            "type":"Cocktail",
+            "genres":["mexico","romance","love","love stories","love & romance","romance fiction","romance literature","man-woman relationships","lgbtq romance","gay love",
+                "action & adventure","adventure","adventure stories","adventure and adventurers","adventure fiction","humorous","humor","humorous fiction","comedy",
+                "travel","satire","satirical literature","contemporary fiction","contemporary"],
+            "sentiment": 0.7,
+            "instructions":[
+                "2 oz tequila",
+                "1 oz freshly squeezed lime juice",
+                "1 oz orange liqueur (such as triple sec or Cointreau)",
+                "1/2 oz simple syrup (optional, adjust based on taste preference)",
+                "Salt (for rimming the glass)",
+                "Lime wedges (for garnish)",
+                "Ice"],
+            "information":"A Margarita is a popular and classic cocktail known for its refreshing taste. To make this iconic drink, use the following instructions: Prepare the glass by running a lime wedge around the rim, then dip the rim into salt to coat it. Fill the glass with ice. Fill a cocktail shaker with ice. Add the tequila, freshly squeezed lime juice, orange liqueur, and simple syrup (if using) to the shaker. Shake well for about 15-20 seconds to chill the mixture. Strain the mixture into the prepared glass over fresh ice. Garnish with a lime wedge."
+        },
+        {
+            "name":"Manhattan",
+            "type":"Cocktail",
+            "genres":["united states","usa","espionage","spy stories","spies","mystery fiction","mystery","mysteries & detective stories","mystery and detective stories",
+                "detective and mystery stories","mystery & detective","historical fiction","history", "historical", "thriller","thrillers","suspense","suspense fiction",
+                "suspense & thriller","biographical","biographies","biography","biography & autobiography","19th century"],
+            "sentiment": 0.6,
+            "instructions":["2 oz rye whiskey or bourbon",
+                "1 oz sweet vermouth",
+                "2 dashes Angostura bitters",
+                "Maraschino cherry or orange twist (for garnish)",
+                "Ice"],
+            "information":"A Manhattan is a classic cocktail that's been around for well over a century. It's known for its simple yet sophisticated taste. To make a Manhattan, follow this simple recipe: Fill a mixing glass or cocktail shaker with ice. Pour in the rye whiskey, sweet vermouth, and add the dashes of Angostura bitters. Stir well (for about 30 seconds) or shake gently to chill the mixture. Strain the mixture into a chilled cocktail glass (typically a coupe glass or a martini glass). Garnish the drink with a maraschino cherry or an orange twist. You can express the oils from the orange twist over the drink by giving it a gentle twist to release the aroma."
+        },
+        {
+            "name": "Martini",
+            "type": "Cocktail",
+            "genres": ["science fiction","science-fiction", "mystery fiction","mystery", "romance", "love","love stories","love & romance","man-woman relationships",
+                "romance fiction","lgbtq romance","gay love","romance literature","psychological","psychology","psychological fiction"],
+            "sentiment":0.7,
+            "instructions": [
+                "2 oz. gin or vodka",
+                "1/2 oz. dry vermouth",
+                "Lemon twist or olive for garnish",
+                "Ice"
+            ],
+            "information": "The martini is one of the most iconic cocktails of all time. To craft this classic drink, start by chilling a cocktail glass in the freezer for at least 10 minutes. Then, fill a mixing glass with ice cubes and pour in 2 oz. of gin or vodka. Add 1/2 oz. of dry vermouth, and stir the mixture gently to combine the ingredients. Next, strain the mixture into the chilled cocktail glass. Garnish with a lemon twist or olive, and serve. The result is a beautifully simple yet sophisticated cocktail that's all about savoring the rich flavors of the liquor."
+        },
+        {
+            "name": "Piña Colada",
+            "type": "Cocktail",
+            "genres": ["romance", "love","love stories","love & romance","romance fiction","lgbtq romance","gay love","romance literature","man-woman relationships","humorous","humor",
+                "humorous fiction","comedy","caribbean area","puerto rico"], 
+            "sentiment": 0.8,
+            "instructions": [
+                "2 oz. white rum",
+                "3 oz. pineapple juice",
+                "1 oz. coconut cream",
+                "1 cup crushed ice",
+                "Pineapple slice and maraschino cherry for garnish"
+            ],
+            "information": "The piña colada is a classic tropical cocktail with rum, pineapple and coconut milk. To make a piña colada, start by adding 2 oz. of white rum, 3 oz. of pineapple juice and 1 oz. of coconut cream to a blender. Then, add 1 cup of crushed ice and blend the mixture until it's smooth. Pour the drink into a glass, and garnish with a pineapple slice and maraschino cherry. The result is a beautifully simple yet sophisticated cocktail that's all about savoring the rich flavors of the liquor."
+        },
+        {
+            "name": "Blue Lagoon",
+            "type":"Cocktail",
+            "genres":["science fiction","science-fiction","romance","love","love stories","love & romance","romance fiction","lgbtq romance","gay love","romance literature","man-woman relationships",
+                "travel","adventure","adventure fiction","adventure stories","adventure and adventurers","aliens"],
+            "sentiment": 0.8,
+            "instructions": [
+                "1 1/2 oz. vodka",
+                "1/2 oz. blue curaçao",
+                "Lemonade",
+                "Lemon slice and maraschino cherry for garnish",
+                "Ice"
+            ],
+            "information": "The Blue Lagoon is a classic cocktail with vodka, blue curaçao and lemonade. To make a Blue Lagoon, start by adding 1 1/2 oz. of vodka and 1/2 oz. of blue curaçao to a highball glass filled with ice. Then, fill the glass with lemonade and stir the mixture gently to combine the ingredients. Garnish with a lemon slice and maraschino cherry, and serve. The result is a beautifully simple yet sophisticated cocktail that's all about savoring the rich flavors of the liquor."
+        },
+        {
+            "name": "Mojito",
+            "type": "Cocktail",
+            "genres": ["caribbean area","cuba","romance","love","love stories","love & romance","man-woman relationships","romance fiction","lgbtq romance","gay love","romance literature",
+                "action & adventure","adventure","adventure fiction","adventure stories","adventure and adventurers","humorous","humor","humorous fiction","comedy"],
+            "sentiment": 0.7,
+            "instructions": [
+                "2 oz. white rum",
+                "1 oz. lime juice",
+                "2 tsp. sugar",
+                "6 mint leaves",
+                "Club soda",
+                "Mint sprig for garnish",
+                "Ice"
+            ],
+            "information": "The mojito is a classic Cuban cocktail with rum, mint and lime juice. To make a mojito, start by adding 2 oz. of white rum, 1 oz. of lime juice, 2 tsp. of sugar and 6 mint leaves to a highball glass. Then, gently muddle the mint leaves with a muddler or wooden spoon. Next, fill the glass with ice cubes and top it off with club soda. Stir the mixture gently to combine the ingredients, and garnish with a mint sprig. The result is a beautifully simple yet sophisticated cocktail that's all about savoring the rich flavors of the liquor."
+        },
+        {
+            "name": "Bloody Mary",
+            "type": "Cocktail",
+            "genres": ["horror","horror fiction","horror stories","horror tales","mystery fiction","mystery","travel","thriller","thrillers","suspense",
+                "suspense fiction","suspense & thriller","classics","classic fiction","classic literature","classic","classical literature","france","dracula",
+                "vampires","vampire novels","zombies","demons","demonology"],
+            "sentiment": 0.5,
+            "instructions": [
+                "1 1/2 oz. vodka",
+                "3 oz. tomato juice",
+                "1/2 oz. lemon juice",
+                "Worcestershire sauce",
+                "Tabasco sauce",
+                "Celery salt",
+                "Pepper",
+                "Celery stalk and lemon wedge for garnish",
+                "Ice"
+            ],
+            "information": "The Bloody Mary is a classic brunch cocktail with vodka, tomato juice and a combination of spices and flavorings. To make a Bloody Mary, start by adding 1 1/2 oz. of vodka, 3 oz. of tomato juice and 1/2 oz. of lemon juice to a highball glass. Then, add a few dashes of Worcestershire sauce, Tabasco sauce, celery salt and pepper. Stir the mixture gently to combine the ingredients, and garnish with a celery stalk and lemon wedge. The result is a beautifully simple yet sophisticated cocktail that's all about savoring the rich flavors of the liquor."
+        },
+        {
+            "name":"Cosmopolitan",
+            "type":"Cocktail",
+            "genres":["romance","love","love stories","love & romance","man-woman relationships","romance fiction","lgbtq romance","gay love","romance literature","mystery fiction","mystery",
+                "mysteries & detective stories","mystery and detective stories","detective and mystery stories","mystery & detective","friendship",
+                "friendship in fiction","female friendship","contemporary fiction","contemporary","urban fantasy"],
+            "sentiment": 0.8,
+            "instructions": [
+                "1 1/2 oz. vodka",
+                "1 oz. cranberry juice",
+                "1/2 oz. triple sec",
+                "1/2 oz. lime juice",
+                "Lime wedge for garnish",
+                "Ice"
+            ],
+            "information": "The cosmopolitan is a classic cocktail with vodka, triple sec, cranberry juice and lime juice. To make a cosmopolitan, start by adding 1 1/2 oz. of vodka, 1 oz. of cranberry juice, 1/2 oz. of triple sec and 1/2 oz. of lime juice to a cocktail shaker filled with ice. Then, shake the mixture vigorously for 10 to 15 seconds. Strain the mixture into a chilled cocktail glass, and garnish with a lime wedge. The result is a beautifully simple yet sophisticated cocktail that's all about savoring the rich flavors of the liquor."
+        },
+        {
+            "name":"Aperol Spritz",
+            "type": "Cocktail",
+            "genres":["fantasy fiction","fantasy in fiction","fantasy","fantastic fiction","fantasy genre","romance","love","love stories","love & romance",
+                "man-woman relationships","romance fiction","lgbtq romance","gay love","romance literature","humorous","humor","humorous fiction","comedy","italy","20th century"],
+            "sentiment": 0.7,
+            "instructions": [
+                "3 oz. Prosecco",
+                "2 oz. Aperol",
+                "1 oz. soda water",
+                "Orange slice for garnish",
+                "Ice"
+            ],
+            "information": "The Aperol spritz is a classic Italian cocktail with Prosecco, Aperol and soda water. To make an Aperol spritz, start by adding 3 oz. of Prosecco, 2 oz. of Aperol and 1 oz. of soda water to a wine glass filled with ice. Then, stir the mixture gently to combine the ingredients, and garnish with an orange slice. The result is a beautifully simple yet sophisticated cocktail that's all about savoring the rich flavors of the liquor."
+        },
+        {
+            "name": "Moscow Mule",
+            "type": "Cocktail",
+            "genres": ["action & adventure","romance","love","love stories","love & romance","man-woman relationships","romance fiction","lgbtq romance","gay love","romance literature","travel",
+                "romantic comedy","comedy","humor","humorous fiction","humorous","20th century","historical fiction","historical","history","adventure and adventurers",
+                "adventure stories","adventure","adventure fiction","quests","quests ","mystery fiction","mystery","historical romance"],
+            "sentiment": 0.7,
+            "instructions": [
+                "2 oz. vodka",
+                "1/2 oz. lime juice",
+                "4 oz. ginger beer",
+                "Lime wedge for garnish",
+                "Ice"
+            ],
+            "information": "The Moscow Mule is a refreshing and zesty cocktail with a signature copper mug presentation. To craft this drink, start by filling a copper mug or highball glass with ice. Squeeze the juice from half a lime into the glass, and drop the spent lime shell in. Then, pour in 2 oz. of vodka. Top it off with approximately 4 oz. of ginger beer, or adjust to your preferred level of ginger flavor. Give it a gentle stir to mix the ingredients. To garnish, add a lime wheel or wedge for an extra burst of citrus aroma. The Moscow Mule is known for its crisp and tangy taste, making it a popular choice for a refreshing and enjoyable cocktail."
+        },
+        {
+            "name":"Pan-Galactic Gargle Blaster",
+            "type":"Cocktail",
+            "genres":["vogons","science fiction","science-fiction","adventure and adventurers","adventure stories","adventure","adventure fiction","action & adventure",
+                "comedy","humor","humorous fiction","humorous","satire","comic science fiction","satirical literature"],
+            "sentiment":0.8,
+            "instructions":["TBA"],
+            "information":"TBA"
+        },
+        {
+            "name":"Death in the Afternoon",
+            "type":"Cocktail",
+            "genres":["hemingway","horror fiction","horror stories","horror tales","horror","classic fiction","classic literature","classic","classical literature",
+                "classics","historical fiction","historical","history","20th century","mystery fiction","mystery"],
+            "sentiment":0.2,
+            "instructions":["TBA"],
+            "information":"TBA"
+        },
+        {
+            "name":"Espresso Martini",
+            "type":"Cocktail",
+            "genres":["historical fiction","history","historical","mystery fiction","mystery","travel"],
+            "sentiment": 0.8,
+            "instructions": [
+                "1 1/2 oz. vodka",
+                "1 oz. Kahlúa",
+                "1 oz. espresso",
+                "3 coffee beans for garnish",
+                "Ice"
+            ],
+            "information": "The espresso martini is a classic cocktail with vodka, Kahlúa and espresso. To make an espresso martini, start by adding 1 1/2 oz. of vodka, 1 oz. of Kahlúa and 1 oz. of espresso to a cocktail shaker filled with ice. Then, shake the mixture vigorously for 10 to 15 seconds. Strain the mixture into a chilled cocktail glass, and garnish with 3 coffee beans. The result is a beautifully simple yet sophisticated cocktail that's all about savoring the rich flavors of the liquor."
+        },
+        {
+            "name":"Vodka Cranberry",
+            "type":"Cocktail",
+            "genres":["romance","love","love stories","love & romance","man-woman relationships","romance fiction","lgbtq romance","gay love","romance literature","mystery fiction","mystery",
+                "thriller","thrillers","suspense & thriller","suspense","suspense fiction"],
+            "sentiment": 0.7,
+            "instructions": [
+                "2 oz. vodka",
+                "4 oz. cranberry juice",
+                "Lime wedge for garnish",
+                "Ice"
+            ],
+            "information": "The vodka cranberry is a classic cocktail with vodka and cranberry juice. To make a vodka cranberry, start by adding 2 oz. of vodka and 4 oz. of cranberry juice to a highball glass filled with ice. Then, stir the mixture gently to combine the ingredients, and garnish with a lime wedge. The result is a beautifully simple yet sophisticated cocktail that's all about savoring the rich flavors of the liquor."
+        },
+        {
+            "name":"Sex on the Beach",
+            "type":"Cocktail",
+            "genres":["romance","love","love stories","love & romance","man-woman relationships","romance fiction","lgbtq romance","gay love","romance literature","travel","contemporary fiction",
+                "contemporary","suspense","suspense fiction","erotica","erotic stories","erotic passion","erotic fiction"],
+            "sentiment": 0.7,
+            "instructions": [
+                "1 1/2 oz. vodka",
+                "1/2 oz. peach schnapps",
+                "2 oz. orange juice",
+                "2 oz. cranberry juice",
+                "Orange slice and maraschino cherry for garnish",
+                "Ice"
+            ],
+            "information": "Sex on the Beach is a tropical and fruity cocktail that's both colorful and delightful. To create this cocktail, start by filling a highball glass with ice. Pour in 1.5 oz. of vodka and 3/4 oz. of peach schnapps. Add 2 oz. of cranberry juice and 2 oz. of orange juice. Give it a gentle stir to mix the ingredients and create the vibrant layered look. To garnish, you can add a maraschino cherry and a slice of orange or a twist of orange peel. The result is a sweet and fruity concoction that's perfect for sipping by the beach or on a sunny day. Enjoy your Sex on the Beach!"
+        },
+        {
+            "name": "Sangria",
+            "type": "Cocktail",
+            "genres": ["romance","love","love stories","love & romance","man-woman relationships","romance fiction","lgbtq romance","gay love","romance literature","travel","thriller","thrillers",
+                "suspense & thriller","suspense","suspense fiction","mystery fiction","mystery","action & adventure","spain","contemporary fiction","contemporary",
+                "vampires","vampire novels"],  
+            "sentiment": 0.6,
+            "instructions": [
+                "1 bottle of red wine",
+                "1/4 cup brandy or orange liqueur",
+                "2 tablespoons sugar",
+                "2 cups chopped mixed fruits (e.g., oranges, lemons, limes, apples, berries)",
+                "1 sliced orange",
+                "1 sliced lemon",
+                "2 cups carbonated water or lemon-lime soda (for serving, optional)",
+                "Ice"
+            ],
+            "information": "Sangria is a classic cocktail with red wine, brandy and fruit. To make sangria, start by combining the red wine, brandy, or orange liqueur, and sugar. Stir well to dissolve the sugar. Add the mixed chopped fruits, orange slices, and lemon slices. Mix gently. Cover the mixture and refridgerate for at least 2-4 hours. To serve, fill glasses with ice. Pour the sangria into the glasses, making sure to include some fruit pieces in each serving. Top each glass with a splash of carbonated water or lemon-lime soda for a bit of fizz (optional)." 
+        },
+        {
+            "name": "Sonic Screwdriver",
+            "type": "Cocktail",
+            "genres": ["science fiction","science-fiction","epic","epic fantasy","high fantasy","action & adventure","adventure","adventure stories","adventure fiction",
+                "adventure and adventurers","quests","quests ","fantasy fiction","fantasy in fiction","fantasy","fantasy genre","fantastic fiction"],
+            "sentiment": 0.7,
+            "instructions": [
+                "1 1/2 oz. vodka",
+                "5 oz. orange juice",
+                "Orange slice for garnish",
+                "Ice"
+            ],
+            "information": "The Sonic Screwdriver is a refreshing and zesty cocktail with a signature copper mug presentation. To craft this drink, start by filling a copper mug or highball glass with ice. Squeeze the juice from half a lime into the glass, and drop the spent lime shell in. Then, pour in 2 oz. of vodka. Top it off with approximately 4 oz. of ginger beer, or adjust to your preferred level of ginger flavor. Give it a gentle stir to mix the ingredients. To garnish, add a lime wheel or wedge for an extra burst of citrus aroma. The Sonic Screwdriver is known for its crisp and tangy taste, making it a popular choice for a refreshing and enjoyable cocktail."
+        },
+        {
+            "name":"Gimlet",
+            "type":"Cocktail",
+            "genres":["espionage","spy stories","spies","historical fiction","history","historical","mystery fiction","mystery", "mysteries & detective stories",
+                "mystery and detective stories","detective and mystery stories","mystery & detective","thriller","thrillers","suspense & thriller","suspense",
+                "suspense fiction","biographical","biographies","biography","biography & autobiography"],
+            "sentiment":0.6,
+            "instructions":["2 oz gin",
+                "3/4 oz freshly squeezed lime juice",
+                "3/4 oz simple syrup",
+                "Lime wheel or twist (for garnish)",
+                "Ice"],
+            "information":"A Gimlet is a classic cocktail known for its simplicity and refreshing taste. To make this tangy cocktail, start by filling the cocktail shaker with ice. Add the gin, freshly squeezed lime juice, and simple syrup to the shaker. Shake well for about 15-20 seconds to chill the mixture. Strain the mixture into a chilled cocktail glass (such as a coupe glass or a martini glass) over fresh ice. Garnish the drink with a lime wheel or a twist."
+        },
+        {
+            "name": "Spiced Wine",
+            "type": "Cocktail",
+            "genres": ["friendship","friendship in fiction","fantasy fiction","fantasy","fantasy genre","fantastic fiction","fantasy in fiction","historical fiction",
+                "history","historical","adventure","adventure fiction","adventure stories","adventure and adventurers","demons","witchcraft","witches fiction","witches",
+                "magic in fiction","magic","wizards fiction","wizards","wizardry","magicians","magician"],
+            "sentiment": 0.5,
+            "instructions": [
+                "1 bottle of red wine",
+                "1/4 cup brandy",
+                "1/4 cup honey",
+                "1 sliced orange",
+                "1 sliced lemon",
+                "1 sliced lime",
+                "1 cinnamon stick",
+                "1 star anise",
+                "1 tsp. whole cloves",
+                "1 tsp. whole allspice",
+                "1 tsp. whole black peppercorns",
+                "1 tsp. whole cardamom pods",
+                "1 tsp. juniper berries"
+            ],
+            "information": "Spiced wine is a classic cocktail with red wine, brandy and spices. To make spiced wine, start by adding 1/4 cup of brandy and 1/4 cup of honey to a saucepan. Then, add 1 sliced orange, 1 sliced lemon and 1 sliced lime. Next, add 1 cinnamon stick, 1 star anise, 1 tsp. of whole cloves, 1 tsp. of whole allspice, 1 tsp. of whole black peppercorns, 1 tsp. of whole cardamom pods and 1 tsp. of juniper berries. Finally, pour in 1 bottle of red wine. Heat the mixture over medium heat until it reaches a simmer. Then, reduce the heat to low and simmer for 15 minutes. Strain the mixture into a pitcher, and serve warm. The result is a beautifully simple yet sophisticated cocktail that's all about savoring the rich flavors of the liquor."
+        },
+        {
+            "name":"Negroni",
+            "type":"Cocktail",
+            "genres":["espionage","spy stories","spies","mystery fiction","mystery","mysteries & detective stories","mystery and detective stories",
+                "detective and mystery stories","mystery & detective","historical fiction","history","historical","thriller","thrillers","suspense","suspense fiction",
+                "suspense & thriller","biographical","biographies","biography","biography & autobiography","italy","20th century"],
+            "sentiment":0.5,
+            "instructions":[
+                "1 oz gin",
+                "1 oz Campari",
+                "1 oz sweet vermouth",
+                "Orange peel (for garnish)",
+                "Ice"],
+            "information":"A Negroni is a bold, classic Italian cocktail known for its balance of bitter and sweet flavors. To make a Negroni: Fill a mixing glass or a shaker with ice. Add the gin, Campari, and sweet vermouth to the shaker. Stir well for about 20-30 seconds to chill the mixture. Some variations involve stirring over ice for dilution. Strain the mixture into a rocks glass filled with ice or into a chilled cocktail glass. Express the oils from the orange peel over the drink by holding it over the glass and giving it a gentle twist. Then, garnish the drink with the peel."
+        },
+        {
+            "name": "Gin and Tonic",
+            "type": "Cocktail",
+            "genres": ["mystery fiction","mystery", "thriller","thrillers","suspense","suspense fiction","suspense & thriller","psychological","psychology",
+                "psychological fiction","historical fiction","historical","history","classic fiction","classic literature","classic","classical literature","classics",
+                "mysteries & detective stories","mystery & detective","mystery and detective stories","detective and mystery stories","mystery fiction","mystery",
+                "romantic comedy","action & adventure","adventure and adventurers","adventure fiction","adventure stories","adventure","world war ii","biographical",
+                "biographies","biography & autobiography","biography","20th century"],
+            "sentiment": 0.7,
+            "instructions": [
+                "2 oz. gin",
+                "4 oz. tonic water",
+                "Lime wedge for garnish",
+                "Ice"
+            ],
+            "information": "The Gin and Tonic is a classic cocktail with a signature copper mug presentation. To craft this drink, start by filling a copper mug or highball glass with ice. Squeeze the juice from half a lime into the glass, and drop the spent lime shell in. Then, pour in 2 oz. of gin. Top it off with approximately 4 oz. of tonic water, or adjust to your preferred level of tonic flavor. Give it a gentle stir to mix the ingredients. To garnish, add a lime wheel or wedge for an extra burst of citrus aroma. The Gin and Tonic is known for its crisp and tangy taste, making it a popular choice for a refreshing and enjoyable cocktail."
+        },
+        {
+            "name": "Dark and Stormy",
+            "type": "Cocktail",
+            "genres": ["mystery fiction","mystery", "thriller","thrillers","suspense","suspense fiction","suspense & thriller","gothic fiction","gothic",
+                "gothic & horror","historical fiction","historical","history","werewolves","werewolves in fiction","urban fantasy","demonology","demons","ghost",
+                "ghost stories","ghosts","ghost fiction","occult & supernatural","occult fiction","occult","occultism"],
+            "sentiment": 0.6,
+            "instructions": [
+                "2 oz. dark rum",
+                "3 oz. ginger beer",
+                "Lime wedge for garnish",
+                "Ice"
+            ],
+            "information": "The Dark and Stormy is a classic cocktail with a signature copper mug presentation. To craft this drink, start by filling a copper mug or highball glass with ice. Squeeze the juice from half a lime into the glass, and drop the spent lime shell in. Then, pour in 2 oz. of dark rum. Top it off with approximately 3 oz. of ginger beer, or adjust to your preferred level of ginger flavor. Give it a gentle stir to mix the ingredients. To garnish, add a lime wheel or wedge for an extra burst of citrus aroma. The Dark and Stormy is known for its crisp and tangy taste, making it a popular choice for a refreshing and enjoyable cocktail."
+        },
+        {
+            "name":"Corpse Reviver #2",
+            "type":"Cocktail",
+            "genres":["ghost","ghost stories","ghosts","ghost fiction","zombies","horror fiction","horror stories","horror tales","horror","historical fiction",
+                "historical","history","supernatural","mystery","mystery fiction","mysteries & detective stories","mystery & detective",
+                "mystery and detective stories","detective and mystery stories","1931-1939","occult & supernatural","occult fiction","occult","occultism"],
+            "sentiment":0.2,
+            "instructions":["TBA"],
+            "information":"TBA"
+
+        },
+        {
+            "name":"Mimosa",
+            "type":"Cocktail",
+            "genres":["friendship","female friendship","friendship in fiction","humorous","humor","humorous fiction","comedy", "romance","love","love stories",
+                "love & romance","man-woman relationships","romance fiction","lgbtq romance","gay love","romance literature","mystery fiction","mystery","mysteries & detective stories",
+                "mystery and detective stories","detective and mystery stories","mystery & detective","travel","romantic comedy","contemporary fiction","contemporary"],
+            "sentiment":0.7,
+            "instructions":[
+                "2 oz orange juice",
+                "4 oz champagne or sparkling wine",
+                "Orange slice or twist (for garnish)"],
+            "information":"A Mimosa is a classic and popular cocktail. To make this refreshing drink, follow this recipe: Chill the orange juice and the champagne or sparkling wine in advance. In a champagne flute or a wine glass, pour the chilled orange juice. Top it off with the chilled champagne or sparkling wine. Gently stir to combine, though some prefer to leave it unstirred to maintain the bubbly effervescence. Garnish the drink with an orange slice or twist."
+        },
+        {
+            "name":"Daiquiri",
+            "type":"Cocktail",
+            "genres":["caribbean area","cuba","travel","humorous","humor","humorous fiction","comedy", "action & adventure","adventure", "adventure fiction",
+                "adventure stories","adventure and adventurers","romance","love","love stories","love & romance","man-woman relationships","romance fiction","lgbtq romance","gay love",
+                "romance literature","mystery fiction","mystery"],
+            "sentiment":0.7,
+            "instructions":[
+                "2 oz white rum",
+                "3/4 oz freshly squeezed lime juice",
+                "1/2 oz simple syrup",
+                "Lime wheel or wedge (for garnish)",
+                "Ice"],
+            "information":"A Daiquiri is a classic cocktail known for its simplicity and refreshing taste. To make a classic Daiquiri, fill a cocktail shaker with ice. Add the white rum, freshly squeezed lime juice, and simple syrup to the shaker. Shake well for about 15-20 seconds to chill the mixture. Strain the mixture into a chilled cocktail glass, such as a coupe glass or a martini glass. Garnish the drink with a lime wheel or wedge."
+        },
+        {
+            "name":"Irish Coffee",
+            "type":"Cocktail",
+            "genres":["mystery fiction","mystery","romance fiction","lgbtq romance","gay love","romance literature","romance","love","love stories","love & romance","man-woman relationships",
+                "travel","classics","classic fiction","classic literature","classic","classical literature","biographical","biographies","biography",
+                "biography & autobiography","ireland","romantic comedy"],
+            "sentiment":0.8,
+            "instructions":[
+                "1 1/2 oz Irish whiskey",
+                "6 oz hot brewed coffee",
+                "2 teaspoons brown sugar",
+                "Whipped cream"],
+            "information":"Irish coffee is a warm and comforting cocktail that combines coffee, Irish whiskey, sugar, and topped with whipped cream. To make Irish Coffee, start by brewing your favorite coffee. Pour it into a pre-warmed glass or mug. Add the brown sugar to the hot coffee and stir until dissolved. Stir in the Irish whiskey. Top the coffee with a generous dollop of whipped cream. You can garnish the whipped cream with a sprinkle of cocoa powder or nutmeg for added flavor if desired. The key to a good Irish coffee is using freshly brewed hot coffee, quality Irish whiskey, and properly whipped cream to top it off."
+        },
+        {
+            "name":"Paloma",
+            "type":"Cocktail",
+            "genres":["travel","mexico","biographical","biographies","biography","biography & autobiography","adventure","adventure fiction","adventure stories",
+                "adventure and adventurers","mystery fiction","mystery","thriller","thrillers","suspense & thriller","suspense","suspense fiction","romance",
+                "romance fiction","lgbtq romance","gay love","romance literature","love stories","love & romance","man-woman relationships","love","humor","humorous fiction","humorous","comedy",
+                "satire","satirical literature","romantic comedy"],
+            "sentiment":0.7,
+            "instructions":[
+                "2 oz tequila (blanco or reposado)",
+                "1/2 oz freshly squeezed lime juice",
+                "Grapefruit soda OR 3 oz grapefruit juice and 1 1/2 oz soda water",
+                "Salt or chili powder (for rimming the glass, optional)",
+                "Lime wedge or wheel (for garnish)",
+                "Ice"],
+            "information":"A Paloma is a refreshing and popular cocktail that originates from Mexico. Follow this recipe to make a Paloma: Fill the glass with ice. In a shaker, combine the tequila, freshly squeezed lime juice, and grapefruit juice. Shake well to mix the ingredients thoroughly. Strain the mixture into the prepared glass over ice. If using grapefruit soda, top off the glass with it. If not, use grapefruit juice and add soda water. Garnish the drink with a lime wedge or wheel."
+        },
+        {
+            "name":"Pisco Sour",
+            "type":"Cocktail",
+            "genres":["travel","adventure","adventure stories","adventure fiction","adventure and adventurers","historical fiction","historical","history",
+                "mystery fiction","mystery","thriller","thrillers","suspense & thriller","suspense","suspense fiction","biographical","biographies","biography",
+                "biography & autobiography","peru"],
+            "sentiment":0.8,
+            "instructions":["TBA"],
+            "information":"TBA"
+        },
+        {
+            "name":"Alien Brain Hemorrhage",
+            "type":"Cocktail",
+            "genres":["supernatural","science fiction","science-fiction","horror fiction","horror stories","horror tales","horror","fantasy fiction","fantasy in fiction",
+                "fantasy","fantasy genre","fantastic fiction","thriller","thrillers","suspense","suspense fiction","supernatural thrillers","suspense & thriller",
+                "paranormal fiction suspense & thriller","zombies","aliens"],
+            "sentiment":0.4,
+            "instructions":["TBA"],
+            "information":"TBA"
+        },
+        {
+            "name":"Amaretto Sour",
+            "type":"Cocktail",
+            "genres":["romance fiction","lgbtq romance","gay love","romance literature","romance","love stories","love & romance","man-woman relationships","love","historical fiction",
+                "historical","history","mystery fiction","mystery","thriller","thrillers","suspense","suspense & thriller","suspense fiction","biographical",
+                "biographies","biography","biography & autobiography","humor","humorous fiction","humorous","comedy","satire","satirical literature",
+                "historical romance","20th century"],
+            "sentiment":0.8,
+            "instructions":["TBA"],
+            "information":"TBA"
+        },
+        {
+            "name":"Long Islancd Ice Tea",
+            "type":"Cocktail",
+            "genres":["long island","united states","usa","mystery fiction","mystery","thriller","thrillers","suspense & thriller","suspense","suspense fiction",
+                "classic","classics","classic fiction","classic literature","classical literature","fantasy fiction","fantasy","fantasy genre","fantastic fiction",
+                "fantasy in fiction","erotic fiction","erotic passion","erotic stories","erotica","n.y."],
+            "sentiment":-0.15,
+            "instructions":["TBA"],
+            "information":"TBA"
+        },
+        {
+            "name":"Mai Tai",
+            "type":"Cocktail",
+            "genres":["adventure stories","adventure","adventure fiction","adventure and adventurers","travel","mystery fiction","mystery","biographical","biographies",
+                "biography","biography & autobiography","romance","romance fiction","lgbtq romance","gay love","romance literature","love stories","love & romance","man-woman relationships",
+                "love","historical fiction","historical","history","historical romance"],
+            "sentiment":0.7,
+            "instructions":["TBA"],
+            "information":"TBA"
+        },
+        {
+            "name":"Whiskey Sour",
+            "type":"Cocktail",
+            "genres":["classic","classic literature","classical literature","classics","classic fiction","biographical","biographies","biography",
+                "biography & autobiography","historical fiction","historical","history","action & adventure","adventure and adventurers","adventure stories",
+                "adventure","adventure fiction"],
+            "sentiment":0.7,
+            "instructions":["TBA"],
+            "information":"TBA"
+        },
+        {
+            "name":"French 75",
+            "type":"Cocktail",
+            "genres":["historical fiction","historical","history","romance fiction","lgbtq romance","gay love","romance literature","romance","love stories","love & romance","man-woman relationships",
+                "love & romance","love","mysteries & detective stories","mystery & detective","mystery and detective stories","mystery fiction","mystery",
+                "detective and mystery stories","biographical","biographies","historical romance","biography","biography & autobiography","classic literature","classic",
+                "classical literature","classics","classic fiction"],
+            "sentiment":0.8,
+            "instructions":["TBA"],
+            "information":"TBA"
+        },
+        {
+            "name":"Vampire's Kiss",
+            "type":"Cocktail",
+            "genres":["vampires","vampire novels","dracula","supernatural","gothic","gothic fiction","gothic & horror","horror fiction","horror stories","horror tales",
+                "horror","fantasy fiction","fantasy in fiction","fantasy","fantasy genre","fantastic fiction","romance fiction","lgbtq romance","gay love","romance literature","romance","love",
+                "love & romance","man-woman relationships","love stories","demons"],
+            "sentiment":0.4,
+            "instructions":["TBA"],
+            "information":"TBA"
+        },
+        {
+            "name":"Black Magic Cocktail",
+            "type":"Cocktail",
+            "genres":["magic","magic in fiction","magicians","magician","witchcraft","witches fiction","witches","demons","wizards","wizardry","wizards fiction","fantasy fiction",
+                "fantasy in fiction","fantasy","fantasy genre","fantastic fiction","supernatural","epic","epic fantasy","high fantasy","thriller","thrillers",
+                "suspense & thriller","suspense fiction","suspense","paranormal fiction","paranormal","gothic & horror","gothic fiction","gothic",
+                "mysteries & detective stories","mystery & detective","mystery and detective stories","detective and mystery stories","mystery fiction","mystery",
+                "supernatural thrillers","paranormal fiction suspense & thriller","occult & supernatural","occult fiction","occult","occultism"],
+            "sentiment":0.4,
+            "instructions":["TBA"],
+            "information":"TBA"
+        },
+        {
+            "name":"The Zombie",
+            "type":"Cocktail",
+            "genres":["horror fiction","horror stories","horror tales","horror","action & adventure","adventure and adventurers","adventure stories","adventure",
+                "adventure fiction","mysteries & detective stories","mystery & detective","mystery and detective stories","detective and mystery stories",
+                "mystery fiction","mystery","travel","supernatural","paranormal fiction","paranormal","thriller","thrillers","supernatural thrillers",
+                "paranormal fiction suspense & thriller","suspense & thriller","suspense fiction","suspense","pirates","pirates in fiction","zombies"],
+            "sentiment":0.5,
+            "instructions":["TBA"],
+            "information":"TBA"
+        },
+        {
+            "name":"Witches' Brew",
+            "type":"Cocktail",
+            "genres":["horror fiction","horror stories","horror tales","horror","fantasy fiction","fantasy in fiction","fantasy","fantasy genre","fantastic fiction",
+                "magic in fiction","magic","witchcraft","witches fiction","witches","wizards","wizards fiction","wizardry","mystery fiction","mystery","occult & supernatural",
+                "occult fiction","occult","occultism"],
+            "sentiment":0.5,
+            "instructions":["TBA"],
+            "information":"TBA"
+        },
+        {
+            "name":"Astro Pop",
+            "type":"Cocktail",
+            "genres":["aliens","science fiction","science-fiction","action & adventure","adventure and adventurers","adventure fiction","adventure fiction",
+                "adventure stories","adventure","comedy","humor","humorous fiction","humorous"],
+            "sentiment":0.6,
+            "instructions":["TBA"],
+            "information":"TBA"
+        },
+        {
+            "name":"Tequila Sunrise",
+            "type":"Cocktail",
+            "genres":["romance fiction","lgbtq romance","gay love","romance literature","romance","love & romance","man-woman relationships","love stories","love","travel","mystery fiction",
+                "mystery","adventure and adventurers","adventure fiction","adventure stories","adventure","action & adventure","mexico","contemporary fiction",
+                "contemporary","california"],
+            "sentiment":0.65,
+            "instructions":["TBA"],
+            "information":"TBA"
+        },
+        {
+            "name": "Moscato",
+            "type": "Wine",
+            "genres": ["friendship","friendship in fiction","female friendship","romance","love","love stories","love & romance","man-woman relationships",
+                "romance fiction","lgbtq romance","gay love","romance literature","humorous","humor","humorous fiction","comedy","italy","france","coming of age","contemporary fiction",
+                "contemporary","romantic comedy"],
+            "sentiment":0.7,
+            "instructions":["TBA"],
+            "information":"Pour yourself a glass!"
+        },
+        {
+            "name": "Pinot Noir",
+            "type": "Wine",
+            "genres": ["romance","love","love stories","love & romance","man-woman relationships","romance fiction","lgbtq romance","gay love","romance literature","mystery fiction","mystery",
+                "france","united states","usa","erotica","erotic stories","erotic passion","erotic fiction","mysteries & detective stories","mystery & detective",
+                "mystery and detective stories","detective and mystery stories","vampire novels","vampires"],
+            "sentiment": 0.6,
+            "instructions":["TBA"],
+            "information":"Pour yourself a glass!"
+        },
+        {
+            "name": "Merlot",
+            "type": "Wine",
+            "genres": ["romance","love","love stories","love & romance","man-woman relationships","romance fiction","lgbtq romance","gay love","romance literature","mystery fiction","mystery",
+                "science fiction","science-fiction","france","gothic fiction","gothic","gothic & horror","political fiction","political","vampires","vampire novels",
+                "erotica","erotic stories","erotic passion","erotic fiction","psychological","psychology","psychological fiction"],
+            "sentiment": 0.6,
+            "instructions":["TBA"],
+            "information":"Pour yourself a glass!"
+        },
+        {
+            "name": "Rosé",
+            "type": "Wine",
+            "genres": ["romance","love","love stories","love & romance","man-woman relationships","romance fiction","lgbtq romance","gay love","romance literature","humorous","humor",
+                "humorous fiction","comedy","france","spain"],
+            "sentiment": 0.7,
+            "instructions":["TBA"],
+            "information":"Pour yourself a glass!"
+        },
+        {
+            "name": "Chardonnay",
+            "type": "Wine",
+            "genres": ["romance","love","love stories","love & romance","man-woman relationships","romance fiction","lgbtq romance","gay love","romance literature","mystery fiction","mystery",
+                "mysteries & detective stories","mystery and detective stories","detective and mystery stories","mystery & detective","historical fiction","history",
+                "historical","drama","drama ","historical romance","france","united states","usa","contemporary fiction","contemporary"],
+            "sentiment":0.6,
+            "instructions":["TBA"],
+            "information":"Pour yourself a glass!"
+        },
+        {
+            "name": "Dry Vermouth",
+            "type": "Wine",
+            "genres": ["science fiction","science-fiction","mystery fiction","mystery","mysteries & detective stories","mystery and detective stories",
+                "detective and mystery stories","mystery & detective","historical fiction","history","historical","espionage","spy stories","spies","thriller",
+                "thrillers","suspense & thriller","suspense","suspense fiction","france","spain","italy"],
+            "sentiment":-0.5,
+            "instructions":["TBA"],
+            "information":"Pour yourself a glass!"
+        },
+        {
+            "name": "Sherry",
+            "type": "Wine",
+            "genres": ["romance","love","love stories","love & romance","man-woman relationships","romance fiction","lgbtq romance","gay love","romance literature","mystery fiction","mystery",
+                "mysteries & detective stories","mystery and detective stories","detective and mystery stories","mystery & detective","humorous","humor",
+                "humorous fiction","comedy","historical fiction","history","historical","historical romance","spain","romantic comedy"],
+            "sentiment":0.5,
+            "instructions":["TBA"],
+            "information":"Pour yourself a glass!"
+        },
+        {
+            "name": "Champagne",
+            "type": "Wine",
+            "genres": ["france","romance","love","love stories","love & romance","man-woman relationships","romance fiction","lgbtq romance","gay love","romance literature","biographical",
+                "biographies","biography","biography & autobiography","contemporary","contemporary fiction","romantic comedy","comedy","humor","humorous fiction",
+                "humorous","erotica","erotic stories","erotic passion","erotic fiction"],
+            "sentiment": 1,
+            "instructions":["TBA"],
+            "information":"Pour yourself a glass!"
+        },
+        {
+            "name":"Tempranillo",
+            "type":"Wine",
+            "genres":["epic","epic fantasy","high fantasy","historical fiction","history","historical","fantasy fiction","fantasy","fantasy genre","fantastic fiction",
+                "fantasy in fiction","mystery fiction","mystery","thriller","thrillers","suspense & thriller","suspense","suspense fiction","drama","drama ",
+                "biographical","biographies","biography","biography & autobiography","adventure","adventure fiction","adventure stories","adventure and adventurers",
+                "spain","contemporary fiction","contemporary","vampire novels","vampires"],
+            "sentiment": 0.3,
+            "instructions":["TBA"],
+            "information":"Pour yourself a glass!"
+        },
+        {
+            "name": "Zinfandel",
+            "type": "Wine",
+            "genres": ["romance","love","love stories","love & romance","man-woman relationships","romance fiction","lgbtq romance","gay love","romance literature","mystery fiction","mystery", "thriller","thrillers",
+                "suspense & thriller","suspense","suspense fiction","historical fiction","history","historical","historical romance","drama","drama ","adventure",
+                "adventure fiction","adventure stories","adventure and adventurers","california","united states","usa","supernatural","paranormal fiction","paranormal",
+                "contemporary fiction","contemporary","erotica","erotic stories","erotic passion","erotic fiction","supernatural thrillers","vampire novels","vampires",
+                "paranormal fiction suspense & thriller"],
+            "sentiment": 0.6,
+            "instructions":["TBA"],
+            "information":"Pour yourself a glass!"
+        },
+        {
+            "name":"Prosecco",
+            "type":"Wine",
+            "genres":["romantic comedy","romance","love","love stories","love & romance","man-woman relationships","romance fiction","lgbtq romance","gay love","romance literature","humorous","humor","humorous fiction",
+                "comedy","travel","adventure","adventure fiction","adventure stories","adventure and adventurers","italy","contemporary fiction","contemporary"],
+            "sentiment": 0.9,
+            "instructions":["TBA"],
+            "information":"Pour yourself a glass!"
+        },
+        {
+            "name": "Cabernet Sauvignon",
+            "type": "Wine",
+            "genres": ["science fiction","science-fiction","mystery fiction","mystery", "historical fiction","history","historical","france","united states","usa",
+                "california","epic","epic fantasy","high fantasy","political fiction","political","vampires","vampire novels","psychological","psychology",
+                "psychological fiction"],
+            "sentiment": 0.6,
+            "instructions":["TBA"],
+            "information":"Pour yourself a glass!"
+        },
+        {
+            "name": "Syrah",
+            "type": "Wine",
+            "genres": ["romance","love","love stories","love & romance","man-woman relationships","romance fiction","lgbtq romance","gay love","romance literature","mystery fiction","mystery","france","australia",
+                "supernatural","paranormal fiction","paranormal","erotica","erotic stories","erotic passion","erotic fiction","mysteries & detective stories",
+                "mystery & detective","mystery and detective stories","detective and mystery stories","vampire novels","vampires"],
+            "sentiment":0.6,
+            "instructions":["TBA"],
+            "information":"Pour yourself a glass!"
+        },
+        {
+            "name": "Malbec",
+            "type": "Wine",
+            "genres": ["romance","love","love stories","love & romance","man-woman relationships","romance fiction","lgbtq romance","gay love","romance literature","mystery fiction","mystery","horror","horror fiction",
+                "horror stories","horror tales","france","argentina","supernatural","paranormal fiction","paranormal","gothic & horror","gothic fiction","gothic",
+                "mysteries & detective stories","mystery & detective","mystery and detective stories","mystery and detective stories","detective and mystery stories",
+                "vampire novels","vampires"],
+            "sentiment":0.6,
+            "instructions":["TBA"],
+            "information":"Pour yourself a glass!"
+        },
+        {
+            "name": "Mead",
+            "type": "Wine",
+            "genres": ["england","ireland","fantasy fiction","fantasy","fantasy genre","fantastic fiction","fantasy in fiction","historical fiction","history",
+                "historical","quests","quests "],
+            "sentiment":0.8,
+            "instructions":["TBA"],
+            "information":"TBA"
+        },
+        {
+            "name": "Stout",
+            "type": "Beer",
+            "genres": ["action & adventure", "horror","horror fiction","horror stories","horror tales","thriller","thrillers","suspense & thriller","suspense",
+                "suspense fiction","gothic & horror","gothic fiction","gothic"],
+            "sentiment": 0.6,
+            "instructions":["TBA"],
+            "information":"TBA"
+        },
+        {
+            "name": "IPA",
+            "type": "Beer",
+            "genres": ["action & adventure", "thriller","thrillers","suspense & thriller","suspense","suspense fiction","biographical","biographies","biography",
+                "biography & autobiography"],
+            "sentiment":-0.3,
+            "instructions":["TBA"],
+            "information":"TBA"
+
+        },
+        {
+            "name": "Guinness",
+            "type": "Beer",
+            "genres": ["ireland","classics","classic fiction","classic literature","classic","classical literature","fantasy fiction","fantasy","fantasy genre",
+                "fantastic fiction","fantasy in fiction","historical fiction","history","historical","mystery fiction","mystery", "thriller","thrillers",
+                "suspense & thriller","suspense","suspense fiction","drama","drama "],
+            "sentiment": 0.6,
+            "instructions":["TBA"],
+            "information":"TBA"
+        },
+        {
+            "name":"Lager",
+            "type":"Beer",
+            "genres":["friendship","friendship in fiction","male friendship","female friendship","action & adventure","adventure","adventure fiction",
+                "adventure stories","adventure and adventurers","humorous","humor","humorous fiction","comedy","mystery fiction","mystery","coming of age",
+                "contemporary fiction","contemporary"],
+            "sentiment":0.5,
+            "instructions":["TBA"],
+            "information":"TBA"
+        },
+        {
+            "name":"Porter",
+            "type":"Beer",
+            "genres":["historical fiction","history","historical","mystery fiction","mystery","fantasy fiction","fantasy","fantasy genre","fantastic fiction",
+                "fantasy in fiction","19th century"],
+            "sentiment":0.4,
+            "instructions":["TBA"],
+            "information":"TBA"
+        },
+        {
+            "name":"Ale",
+            "type":"Beer",
+            "genres":["fantasy fiction","fantasy","fantasy genre","fantastic fiction","fantasy in fiction","historical fiction","history","historical","mystery fiction",
+                "mystery","action & adventure","adventure","adventure fiction","adventure stories","adventure and adventurers","epic","epic fantasy","high fantasy",
+                "quests","quests "],
+            "sentiment":0.5,
+            "instructions":["TBA"],
+            "information":"TBA"
+        },
+        {
+            "name":"Soju",
+            "type":"Spirits",
+            "genres":["contemporary","coming of age","contemporary fiction","romantic comedy","travel","historical fiction","history","historical","korea"],
+            "sentiment":0.4,
+            "instructions":["TBA"],
+            "information":"TBA"
+        },
+        {
+            "name":"Green Chartreuse",
+            "type":"Spirits",
+            "genres":["horror fiction","horror stories","horror tales","horror","science fiction","science-fiction","fantasy fiction","fantasy in fiction","fantasy",
+                "fantastic fiction","fantasy genre","historical fiction","historical","history","travel","18th century","france","mystery","mystery fiction","thriller",
+                "thrillers","suspense & thriller","suspense","suspense fiction","witches","witches fiction","witchcraft","magic","magic in fiction","magicians",
+                "magician","occult & supernatural","occult fiction","occult","occultism"],
+            "sentiment":0.4,
+            "instructions":["TBA"],
+            "information":"TBA"
+        },
+        {
+            "name":"Vodka",
+            "type":"Spirits",
+            "genres":["travel","historical fiction","historical","history","biographical","biographies","biography & autobiography","biography","russia","russia ",
+                "ukraine","poland","contemporary fiction","contemporary","mystery fiction","mystery","world war ii","20th century","soviet union"],
+            "sentiment":-0.2,
+            "instructions":["TBA"],
+            "information":"TBA"
+        },
+        {
+            "name":"Baileys",
+            "type":"Spirits",
+            "genres":["romance","love","love stories","love & romance","man-woman relationships","romance fiction","lgbtq romance","gay love","romance literature","mystery fiction","mystery","ireland","friendship",
+                "friendship in fiction","female friendship","contemporary fiction","contemporary"],
+            "sentiment":0.75,
+            "instructions":["TBA"],
+            "information":"TBA"
+        },
+        {
+            "name":"Poitín",
+            "type":"Spirits",
+            "genres":["ireland","historical fiction","history","historical","thriller","thrillers","suspense & thriller","suspense","suspense fiction","crime",
+                "crime fiction"],
+            "sentiment":0.5,
+            "instructions":["TBA"],
+            "information":"TBA"
+
+        },
+        {
+            "name": "Dark Rum",
+            "type": "Spirits",
+            "genres": ["caribbean area","jamaica","pirates","pirates in fiction","action & adventure", "mystery fiction","mystery", "thriller","thrillers",
+                "suspense & thriller","suspense","suspense fiction","werewolves","werewolves in fiction","demons","quests","quests ","colonial period","18th century"],
+            "sentiment":0.6,
+            "instructions":["TBA"],
+            "information":"TBA"
+
+        },
+        {
+            "name":"Witbier",
+            "type":"Beer",
+            "genres":["romance","love","love stories","love & romance","man-woman relationships","romance fiction","lgbtq romance","gay love","romance literature","mystery fiction","mystery",
+                "humorous","humor","humorous fiction","comedy","travel","contemporary fiction","contemporary"],
+            "sentiment":0.7,
+            "instructions":["TBA"],
+            "information":"TBA"
+        },
+        {
+            "name": "Whiskey",
+            "type": "Spirits",
+            "genres": ["horror","horror fiction","horror stories","horror tales","science fiction","science-fiction", "action & adventure",
+                "historical fiction","history","historical","biographical","biographies","biography","biography & autobiography","supernatural",
+                "paranormal fiction","paranormal","gothic","gothic fiction","gothic & horror","political","political fiction","werewolves","werewolves in fiction",
+                "demons","classic fiction","classic literature","classic","classical literature","classics","urban fantasy","frontier and pioneer life","18th century",
+                "19th century"],
+            "sentiment": 0.6,
+            "instructions":["TBA"],
+            "information":"TBA"
+        },
+        {
+            "name":"Malt Liquor",
+            "type":"Spirits",
+            "genres":["crime","crime fiction","mystery fiction","mystery","thriller","thrillers","suspense & thriller","suspense","suspense fiction",
+                "mysteries & detective stories","mystery and detective stories","detective and mystery stories","mystery & detective","coming of age"],
+            "sentiment":-0.5,
+            "instructions":["TBA"],
+            "information":"TBA"
+        },
+        {
+            "name":"Rumchata",
+            "type":"Spirits",
+            "genres":["mystery fiction","mystery", "romance","love","love stories","love & romance","man-woman relationships","romance fiction","lgbtq romance","gay love","romance literature",
+                "humorous","humor","humorous fiction","comedy","contemporary fiction","contemporary"],
+            "sentiment":0.6,
+            "instructions":["TBA"],
+            "information":"TBA"
+        },
+        {
+            "name": "Tequila",
+            "type": "Spirits",
+            "genres": ["mexico","crime","crime fiction","action & adventure","adventure","adventure fiction","adventure stories","adventure and adventurers","travel",
+                "thriller","thrillers","suspense & thriller","suspense","suspense fiction"],
+            "sentiment":0.3,
+            "instructions":["TBA"],
+            "information":"TBA"
+        },
+        {
+            "name": "Gin",
+            "type": "Spirits",
+            "genres": ["england","classics","classic fiction","classic literature","classic","classical literature","20th century","historical fiction","history",
+                "historical","action & adventure","adventure","adventure fiction","adventure stories","adventure and adventurers","travel","espionage","spy stories",
+                "spies","thriller","thrillers","suspense & thriller","suspense","suspense fiction"],
+            "sentiment":-0.5,
+            "instructions":["TBA"],
+            "information":"TBA"
+        },
+        {
+            "name": "White Rum",
+            "type": "Spirits",
+            "genres": ["caribbean area","pirates","pirates in fiction","action & adventure","adventure","adventure fiction","adventure stories",
+                "adventure and adventurers","romance","love","love stories","love & romance","man-woman relationships","romance fiction","lgbtq romance","gay love","romance literature","travel",
+                "historical fiction","history","historical","quests","quests ","historical romance","colonial period","18th century"],
+            "sentiment": 0.7,
+            "instructions":["TBA"],
+            "information":"TBA"
+        },
+        {
+            "name":"Bacardi",
+            "type":"Spirits",
+            "genres":["cuba","caribbean area","action & adventure","adventure","adventure fiction","adventure stories","adventure and adventurers","romance","love",
+                "love stories","love & romance","man-woman relationships","romance fiction","lgbtq romance","gay love","romance literature","pirates","pirates in fiction"],
+            "sentiment":0.4,
+            "instructions":["TBA"],
+            "information":"TBA"
+        },
+        {
+            "name": "Bourbon",
+            "type": "Spirits",
+            "genres": ["science fiction","science-fiction","horror","horror fiction","horror stories","horror tales","biographical","biographies","biography",
+                "biography & autobiography","kentucky","united states","usa","political fiction","political","vampires","vampire novels"],
+            "sentiment":0.7,
+            "instructions":["TBA"],
+            "information":"TBA"
+        },
+        {
+            "name": "Absinthe",
+            "type": "Spirits",
+            "genres": ["france","historical fiction","history","historical","horror","horror fiction","horror stories","horror tales","mystery fiction","mystery",
+                "thriller","thrillers","suspense & thriller","suspense","suspense fiction","biographical","biographies","biography","biography & autobiography",
+                "supernatural","paranormal","paranormal fiction","demons","psychological","psychology","psychological fiction","occult & supernatural",
+                "occult fiction","occult","occultism"],
+            "sentiment":-0.5,
+            "instructions":["TBA"],
+            "information":"TBA"
+        },
+        {
+            "name": "Curaçao",
+            "type": "Spirits",
+            "genres":["caribbean area","travel","science fiction","science-fiction", "mystery fiction","mystery","romance","love","love stories","romance fiction","lgbtq romance","gay love",
+                "love & romance","man-woman relationships","romance literature","action & adventure","adventure","adventure fiction","adventure stories",
+                "adventure and adventurers"],
+            "sentiment":0.7,
+            "instructions":["TBA"],
+            "information":"TBA"
+        },
+        {
+            "name": "Brandy",
+            "type": "Spirits",
+            "genres": ["adventure","adventure fiction","adventure stories","adventure and adventurers","classics","classic fiction","classic literature","classic",
+                "classical literature","19th century","espionage","spy stories","spies","historical fiction","history","historical","mystery fiction","mystery",
+                "thriller","thrillers","suspense & thriller","suspense","suspense fiction","romance","love","love stories","love & romance","man-woman relationships",
+                "romance fiction","lgbtq romance","gay love","romance literature","historical romance","world war ii","20th century","18th century"],
+            "sentiment":0.6,
+            "instructions":["TBA"],
+            "information":"TBA"
+        },
+        {
+            "name": "Hard Cider",
+            "type": "Wine",
+            "genres": ["fantasy fiction","fantasy","fantasy genre","fantastic fiction","fantasy in fiction","humorous","humor","humorous fiction","comedy",
+                "contemporary fiction","contemporary","action & adventure","adventure and adventurers","adventure stories","adventure","adventure fiction",
+                "colonial period","18th century","19th century","frontier and pioneer life","united states","usa"],
+            "sentiment":0.7,
+            "instructions":["TBA"],
+            "information":"Pour yourself a glass!"
+        }
+    ]
+}
