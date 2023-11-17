@@ -1,6 +1,6 @@
 <script setup>
 
-import {getCurrentInstance, ref} from "vue";
+import {getCurrentInstance, ref, onBeforeMount} from "vue";
 import { useRouter, useRoute } from 'vue-router'
 import DrinkItem from "@/components/DrinkItem.vue";
 const { proxy } = getCurrentInstance()
@@ -11,11 +11,9 @@ const drinks = ref({})
 const res = {}
 
 // get the data from route url
-let type = route.query.type;
+const type = route.query.type;
 
-onload = () => {
-  onLoad();
-}
+
 
 const onLoad = () => {
   var api = "https://comp-225-project-backend.vercel.app/getAlcohol/" + type;
@@ -46,6 +44,10 @@ const getData = (drink) => {
 }
 
 
+onBeforeMount(()=>{
+  onLoad();
+})
+
 </script>
 
 <template>
@@ -59,7 +61,7 @@ const getData = (drink) => {
                 @click="getData(drink)"
     >{{drink.name}}}</drink-item>
     <br>
-    <block style="width: 90%">aaaa</block>
+    <div style="width: 90%">aaaa</div>
   </div>
 </perfect-scrollbar>
 </template>

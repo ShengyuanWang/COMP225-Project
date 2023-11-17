@@ -54,11 +54,11 @@ const clickChange = () => {
     <div class="description">
       <p>{{description}}</p>
     </div>
-    <div class="btns">
-      <span class="btn" @click="clickDownload"><el-icon size="3vw" color="Black"><Download /></el-icon></span>
-      <span class="btn" @click="clickShare"><el-icon size="3vw" color="Black"><Share /></el-icon></span>
-      <span class="btn" @click="clickChange"><el-icon size="3vw" color="Black"><Refresh /></el-icon></span>
-    </div>
+<!--    <div class="btns">-->
+<!--      <span class="btn" @click="clickDownload"><el-icon size="3vw" color="Black"><Download /></el-icon></span>-->
+<!--      <span class="btn" @click="clickShare"><el-icon size="3vw" color="Black"><Share /></el-icon></span>-->
+<!--      <span class="btn" @click="clickChange"><el-icon size="3vw" color="Black"><Refresh /></el-icon></span>-->
+<!--    </div>-->
 
   </div>
 </template>

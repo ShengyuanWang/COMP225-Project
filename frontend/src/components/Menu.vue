@@ -1,7 +1,9 @@
 <script setup>
 // import required packages
 import { ref } from 'vue'
-import router from "@/router";
+import { useRouter, useRoute } from 'vue-router'
+const router = useRouter()
+const route = useRoute()
 
 // non-static variables
 const showPreference = ref(false) // const for whether show the preference list
@@ -58,9 +60,11 @@ const setPreference = () => {
 
 
 // function handle the action on click the menu icon
-const clickMenu = (type) => {
+const clickMenu = (gene) => {
   console.log('Click Menu');
-  router.push({ path: 'show', query: {type: type}})
+  console.log(route.fullPath);
+  router.push({ path: 'show', query: {type: gene}});
+  console.log(route.fullPath);
 }
 
 // function handle the click action for the search icon
@@ -69,7 +73,7 @@ const clickMatch = () => {
   router.push({ path: 'search'})
 }
 
-const url_link = ref("http://localhost:5173/show");
+
 
 </script>
 
@@ -78,7 +82,7 @@ const url_link = ref("http://localhost:5173/show");
   <div class="menu" :style="{width: w+ 'vw', backgroundColor:menuColor}">
       <button name='menu-bar' @click="handleCollapse" class="menu_icon" :style="{marginLeft:w-4.5+'vw',marginRight:'2vw',height:'4vh',width:'3vw'}"></button>
     <div v-if="!isCollapse && !showPreference">
-      <h1>Menu</h1>
+      <h1 @click="clickMatch()">Menu</h1>
       <el-menu
           default-active="2"
           class="el-menu-vertical-demo el-collapse"

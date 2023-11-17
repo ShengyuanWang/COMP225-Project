@@ -1,12 +1,19 @@
 <script setup>
-import {useRoute} from "vue-router";
-const route = useRoute()
+import { computed } from '@vue/runtime-core';
+import { useRoute } from 'vue-router';
+
+const route = useRoute();
+const key = computed(() => {
+  return route.fullPath
+});
+
 </script>
 
 <template>
 <div class="fullscreen">
   <Menu></Menu>
-  <router-view :key="route.fullPath"></router-view>
+  <router-view :key="key"></router-view>
+
 </div>
 </template>
 
