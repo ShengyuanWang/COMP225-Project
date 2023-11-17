@@ -47,18 +47,30 @@
 {% endif %}
 
 {% if sentiment %}
-  <p> sentiment: {{ sentiment }}</p>
+  <p> Sentiment: {{ sentiment }}</p>
 {% endif %}
 
 {% if pairing %}
   <p> Pairing: {{ pairing }}</p>
 {% endif %}
 
-{% if drinks %}
-  <p> All drinks: {{ drinks }}</p>
+{% if pairing_json_obj %}
+  <p> Pairing Json Obj: {{ pairing_json_obj }}</p>
+{% endif %}
+
+{% if top_matches %}
+  <p> Top matches: {{ top_matches }}</p>
 {% endif %}
 
 {% if cover_link %}
   <img src="{{ cover_link }}"/> 
 {% endif %}
+
+{% if all_matches %}
+<p> Heap of matches: </p>
+{% for ele in all_matches %}
+  <p> {{ ele }}</p>
+{% endfor %}
+{% endif %}
+
 </html>

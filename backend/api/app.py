@@ -1,12 +1,11 @@
 from flask import Flask, request, render_template
 from markupsafe import escape
-import json
-import random
-import requests
 from flask_cors import CORS
+from textblob import TextBlob
+import json
+import requests
 import re
 import heapq
-from textblob import TextBlob
 
 # DO NOT make this public, keep in private github
 API_KEY = "AIzaSyAHHByDAWIAvXhTNkajTqazMhBUO045aS0" 
@@ -37,27 +36,33 @@ def get_book():
                                 authors=book.get_authors(), publisher=book.get_publisher(),
                                 date=book.get_publication_date(), genres=book.get_genres(),
                                 filtered_genres=book.get_filtered_genres(), description=book.get_description(),
-                                cover_link=book.get_cover_link(), drinks=[drink["name"] for drink in book.get_top_drink_matches(book.get_matching_drinks())],
-                                pairing=book.get_pairing(), sentiment=book.get_sentiment())
+                                cover_link=book.get_cover_link(), pairing_json_obj=book.get_pairing_json_obj(), 
+                                top_matches=[drink["name"] for drink in book.get_top_drink_matches(book.get_matching_drinks())],
+                                all_matches=book.drink_heap_to_ordered_list(book.get_matching_drinks()), 
+                                pairing=book.get_pairing(),  sentiment=book.get_sentiment())
     return render_template("home.html")
 
 @app.route('/test/<bookname>', methods=["GET"])
 def search1(bookname):
     """Return pairing dictonary for testing of frontend intergration."""
+    # bookname = bookname.replace("%20", " ")
     book = Book(bookname)
     return book.get_pairing_json_obj()
 
 class DrinkWrapper():
     def __init__(self, drink_data, priority):
-        """This is wrapper class for drink data for creating the priority queue.
+        """ This is wrapper class for drink data for creating the priority queue.
         It contains a cutsom comparator which python's heapq needs to create a 
-        priority queue, as a tuple with priority and a dict confuses it. 
+        priority queue.
         """
         self.priority = priority
         self.drink_data = drink_data
 
     def get_drink_data(self):
         return self.drink_data 
+
+    def get_priority(self):
+        return self.priority 
     
     def __str__(self):
         return f"Priority: {self.priority}, Data: {self.drink_data}"
@@ -93,6 +98,7 @@ class Book:
         use in frontend.
         """
         pairing = {}
+        pairing["user_input"] = self.get_user_input()
         pairing["title"] = self.get_title()
         pairing["authors"] = self.get_authors()
         pairing["genres"] = self.get_filtered_genres()
@@ -117,11 +123,14 @@ class Book:
             return pairing
         else:
             return self.get_no_match_drink()
-
+       
     def get_matching_drinks(self):
         """ Return priority queue of drinks that match book based on data in json file. 
-        If no drinks match, returns an empty list.  Priority is based on how many genres are 
-        shared between the book and drink. Drinks are added to the priority queue by wrapping 
+        If no drinks match, returns an empty list. Prority is based both on how many genres
+        a book and drink share and how many they don't share.
+        It's calculated like this:
+            number of shared genres - (.1 * number of genres not shared )
+        Drinks are added to the priority queue by wrapping 
         them in the DrinkWrapper class, which contains a custom comparator. The priority queue
         is implmented with python's heapq module and is a max-heap.
         """
@@ -134,19 +143,46 @@ class Book:
         if book_genres is not None and len(book_genres) > 0:
             for drink in drinks["alcohols"]:
                 shared_genre_count = 0
+                unshared_genre_count = 0
                 for drink_genre in drink["genres"]:
                     if drink_genre in book_genres:
-                        shared_genre_count += 0
-                heapq.heappush(matched_drinks, DrinkWrapper(drink, -1*shared_genre_count))
+                        shared_genre_count += 1
+                    else:
+                        unshared_genre_count += .1
+                if shared_genre_count > 0:
+                    genre_count = round(shared_genre_count - (unshared_genre_count), 2)
+                    heapq.heappush(matched_drinks, DrinkWrapper(drink, genre_count))
+        heapq.heapify(matched_drinks)
         return matched_drinks
     
-    def get_top_drink_matches(self, drink_heap):
+    def get_top_drink_matches(self, drink_heap, range=.2):
         """ Takes the max heap of the drink and returns the drink data dicts that share the 
         highest priority.
         """
-        top_priority = heapq.nsmallest(1, drink_heap)[0].priority if drink_heap else None
-        top_matches = [drink_obj.get_drink_data() for drink_obj in drink_heap if drink_obj.priority == top_priority]
+        top_priority = heapq.nlargest(1, drink_heap)[0].get_priority() if drink_heap else None
+        top_matches = []
+        for drink_obj in drink_heap:
+            if drink_obj.priority >= top_priority - range:
+                top_matches.append(drink_obj.get_drink_data())
+
+        if len(top_matches) < 3:
+            heap_list = self.drink_heap_to_ordered_list(drink_heap)
+            if len(heap_list) >=  3:
+                top_matches = [drink_obj.get_drink_data() for drink_obj in heap_list[:3]]
+            else:
+                top_matches = [drink_obj.get_drink_data() for drink_obj in heap_list[:len(heap_list)]]
+       
         return top_matches
+
+    def drink_heap_to_ordered_list(self, drink_heap):
+        """ Turns a heap into an ordered list, where the first element in the list 
+        is the entry in the heap with the highest priority."""
+        secure_copy = drink_heap[:]
+        ordered_list = []
+        while secure_copy:
+            element = heapq.heappop(secure_copy)
+            ordered_list.append(element)
+        return ordered_list[::-1]
 
     def get_sentiment(self):
         """ Uses TextBlob to get the sentiment score of the book.
@@ -215,7 +251,7 @@ class Book:
             return {}
 
     def query_api_genres(self):
-        """Return a list of all genres the book has, or an empty list 
+        """ Return a list of all genres the book has, or an empty list 
         if api query fails. Queries openlibrary api using isbn. 
         """
         genres = []
@@ -237,7 +273,7 @@ class Book:
             return genres
         
     def filter_title(self, title):
-        """Cleans up titles to not include some common stop words, so that the titles 
+        """ Cleans up titles to not include some common stop words, so that the titles 
         can be more easily matched. Used when looking for genres across all 
         versions of a book.
         """
@@ -276,14 +312,14 @@ class Book:
         return names
     
     def select_isbn(self, isbns):
-        """Selects the first isbn from the list of isbns."""
+        """ Selects the first isbn from the list of isbns."""
         if len(isbns) > 0:
             return isbns[0]
         else:
             return ""
 
     def get_filtered_genres(self):
-        """Return a list of all the offical genres the book has or an empty list 
+        """ Return a list of all the offical genres the book has or an empty list 
         if the book has no offical genres.
         """
         filtered_genres = []
@@ -293,7 +329,7 @@ class Book:
         return filtered_genres
 
     def get_title(self):
-        """Using book data dictonary, return title found for the book, 
+        """ Using book data dictonary, return title found for the book, 
         or an empty string if no title was found.
         """
         if "title" in list(self.data.keys()):
@@ -302,7 +338,7 @@ class Book:
             return ""
 
     def get_authors(self):
-        """Using book data dictonary, return list of authors found for the book, 
+        """ Using book data dictonary, return list of authors found for the book, 
         or an empty list if no authors were found.
         """
         if "authors" in list(self.data.keys()):
@@ -311,7 +347,7 @@ class Book:
             return []
 
     def get_description(self):
-        """Using book data dictonary, return description found for the book, 
+        """ Using book data dictonary, return description found for the book, 
         or an empty string if no description was found.
         """
         if "description" in list(self.data.keys()):
@@ -320,7 +356,7 @@ class Book:
             return ""
 
     def get_publisher(self):
-        """Using book data dictonary, return publisher found for the book, or 
+        """ Using book data dictonary, return publisher found for the book, or 
         an empty string if no publisher was found.
         """
         if "publisher" in list(self.data.keys()):
@@ -329,7 +365,7 @@ class Book:
             return ""
 
     def get_publication_date(self):
-        """Using book data dictonary, return publication date found for the book, 
+        """ Using book data dictonary, return publication date found for the book, 
         or an empty string if no publication date was found.
         """
         if "publishedDate" in list(self.data.keys()):
@@ -338,7 +374,7 @@ class Book:
             return ""
 
     def get_cover_link(self):
-        """Using book data dictonary, return the link to the 
+        """ Using book data dictonary, return the link to the 
         small thumbnail image of the book's cover, or an empty string if no 
         thumnbail was found.
         """
@@ -362,13 +398,13 @@ class Book:
         return self.user_input
 
     def get_genres(self):
-        """Return the instance variable containing a list of all genres found 
+        """ Return the instance variable containing a list of all genres found 
         for book.
         """
         return self.genres
 
     def get_no_match_drink(self):
-        """Return the instance variable containing the drink object that will be used if 
+        """ Return the instance variable containing the drink object that will be used if 
         no pairing is found. Must have the keys name, instructions, information.
         """
         return self.no_match_drink

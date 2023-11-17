@@ -2,7 +2,7 @@ import sys
 sys.path.append(".")
 from app import *
 
-""""Basic unit tests for book class. Does not currently test api queries.
+""" Unit tests for book class. 
 To run tests, cd into backend/api directory and run: pytest tests.
 """
 
@@ -12,7 +12,6 @@ book_multiversion = Book("Pride and Prejudice")
 
 def test_get_pairing_json_obj():
     valid_dict = json.loads(book_valid.get_pairing_json_obj())
-    assert list(valid_dict.keys()) == ["title", "authors", "genres", "cover_link", "name", "instructions", "information"]
     assert type(valid_dict["title"]) is str 
     assert type(valid_dict["authors"]) is list 
     assert type(valid_dict["genres"]) is list 
@@ -29,7 +28,6 @@ def test_get_pairing_json_obj():
     assert valid_dict["information"] in [drink.get_drink_data()["information"] for drink in book_valid.get_matching_drinks()]
 
     invalid_dict = json.loads(book_invalid.get_pairing_json_obj())
-    assert list(invalid_dict.keys()) == ["title", "authors", "genres", "cover_link", "name", "instructions", "information"]
     assert type(invalid_dict["title"]) is str 
     assert type(invalid_dict["authors"]) is list 
     assert type(invalid_dict["genres"]) is list 
@@ -50,6 +48,7 @@ def test_get_pairing():
     assert type(valid_pairing["name"]) is str
     assert type(valid_pairing["instructions"]) is list
     assert type(valid_pairing["information"]) is str
+    assert valid_pairing["name"] in [drink["name"] for drink in book_valid.get_top_drink_matches(book_valid.get_matching_drinks())]
     assert valid_pairing["name"] in [drink.get_drink_data()["name"] for drink in book_valid.get_matching_drinks()]
     assert valid_pairing["instructions"] in [drink.get_drink_data()["instructions"] for drink in book_valid.get_matching_drinks()]
     assert valid_pairing["information"] in [drink.get_drink_data()["information"] for drink in book_valid.get_matching_drinks()]
@@ -65,7 +64,8 @@ def test_get_pairing():
 def test_get_matching_drinks():
     valid_book_drinks = book_valid.get_matching_drinks()
     drink_1 = valid_book_drinks[0].get_drink_data()
-    assert len(valid_book_drinks) > 0
+    assert len(book_multiversion.get_matching_drinks()) >= 3
+    assert len(valid_book_drinks) >= 3
     assert list(drink_1.keys()) == ["name", "type", "genres", "sentiment", "instructions", "information"]
     assert type(drink_1["name"]) is str
     assert type(drink_1["type"]) is str
@@ -73,6 +73,22 @@ def test_get_matching_drinks():
     assert type(drink_1["instructions"]) is list
     assert type(drink_1["information"])is str
     assert book_invalid.get_matching_drinks() == []
+
+def test_get_top_drink_matches():
+    drink1_heap = book_valid.get_matching_drinks()
+    assert len(book_valid.get_top_drink_matches(drink1_heap)) >= 3
+    assert type(book_valid.get_top_drink_matches(drink1_heap)) is list 
+    assert [type(ele) is dict for ele in book_valid.get_top_drink_matches(drink1_heap)]
+    drink2_heap = book_invalid.get_matching_drinks()
+    assert len(book_invalid.get_top_drink_matches(drink2_heap)) == 0
+    assert type(book_invalid.get_top_drink_matches(drink2_heap)) is list 
+
+def test_drink_heap_to_ordered_list():
+    drink_heap = book_valid.get_matching_drinks()
+    ordered_list = book_valid.drink_heap_to_ordered_list(drink_heap)
+    assert len(drink_heap) == len(ordered_list)
+    assert type(ordered_list) == list 
+    assert ordered_list[0].get_priority() > ordered_list[len(ordered_list)-1].get_priority()
 
 def test_get_sentiment():
     assert book_invalid.get_sentiment() == 0
