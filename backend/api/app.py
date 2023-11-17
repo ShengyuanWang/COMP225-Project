@@ -263,17 +263,21 @@ class Book:
         """takes in the list of genres and turns all of the date genres into century genres. Works for single dates and date ranges. 
         Returns the updated list of genres"""
         updated_date_genres = []
+        print('OG list')
+        print(list_of_genres)
         for genre_x in list_of_genres:
             if '1939-1945' in genre_x:
                 #'world war ii'/'20th century' for '1939-1945'
                 updated_date_genres.append('world war ii')
                 updated_date_genres.append('20th century')
-            elif ('-' in genre_x) and ('1' in genre_x):
+            elif ('-' in genre_x) and ('1' in genre_x) and not ('.' in genre_x):
                 #For date ranges, adds a century tag for both start and end dates in a range. If both the start and end are in the 
                 #same century, the tag is only added once
                 date_range = re.sub(r'[^0-9-]', '', genre_x)
                 txt = date_range.split('-')
-                if txt and txt[0].isdigit():
+                if len(txt)>2:          # to help avoid including genres that are just the publication date
+                    updated_date_genres.append(genre_x)
+                elif txt and txt[0].isdigit():
                     start_year = int(txt[0])   
                     updated_date_genres.append(self.get_century_tag(start_year))
                     if txt and txt[1].isdigit():
@@ -289,6 +293,8 @@ class Book:
                     updated_date_genres.append(self.get_century_tag(date))
             else:
                 updated_date_genres.append(genre_x)
+        print('updated list')
+        print(updated_date_genres)
         return updated_date_genres
 
     def get_century_tag(self,year):
