@@ -45,7 +45,7 @@ def get_book():
 @app.route('/test/<bookname>', methods=["GET"])
 def search1(bookname):
     """Return pairing dictonary for testing of frontend intergration."""
-    # bookname = bookname.replace("%20", " ")
+    bookname = bookname.replace("%20", " ")
     book = Book(bookname)
     return book.get_pairing_json_obj()
 
