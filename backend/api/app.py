@@ -229,11 +229,11 @@ class Book:
                 data = json.get(f"ISBN:{isbn}", {})
                 
                 names_split = self.split_subjects(data.get('subjects', ['N/A'])) 
-                print('names_split length')
-                print(len(names_split))  
+                #print('names_split length')
+                #print(len(names_split))  
                 names_dates_combined = self.combine_dates(names_split)             
                 genres += names_dates_combined
-                genres+=names_split
+                #genres+=names_split
             return genres
         except:
             return genres
@@ -266,37 +266,30 @@ class Book:
     
     def combine_dates(self, list_of_genres):
         updated_date_genres = []
-        #print('list length of genres')
-        #print(len(list_of_genres))
-        #print(list_of_genres)
         for genre_x in list_of_genres:
-            #print('in loop')
             if '1939-1945' in genre_x:
                 print('in if')
-                #World war II/20th century for 1939-1945
+                #world war II/20th century for 1939-1945
                 updated_date_genres.append('world war ii')
                 updated_date_genres.append('20th century')
-            elif '1675' in genre_x:
+            elif '-' in genre_x:
+                #For century tags, adds a century tag for both start and end dates in a range
                 print('in elif')
                 print(genre_x)
                 date_range = re.sub(r'[^0-9-]', '', genre_x)
                 txt = date_range.split('-')
-                txt = genre_x.split('-')
                 start_year = int(txt[0])
                 end_year = int(txt[1])
-                print("start and end years")
-                print(start_year, end_year)
+                
                 if 1699 >= start_year>=1600:
                     updated_date_genres.append('17th century')
                 if 1699 >= end_year>=1600:
                     updated_date_genres.append('17th century')
-                print("in elif genres")
-                print(updated_date_genres)
+
             else:
                 print('in else')
-                #print(genre_x)
                 updated_date_genres.append(genre_x)
-        print(updated_date_genres)
+        #print(updated_date_genres)
         return updated_date_genres
 
     def filter_title(self, title):
