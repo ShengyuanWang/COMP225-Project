@@ -260,14 +260,17 @@ class Book:
         return [new_name for new_name in new_names_split if new_name != ""]
     
     def combine_dates(self,list_of_genres):
+        """takes in the list of genres and turns all of the date genres into century genres. Works for single dates and date ranges. 
+        Returns the updated list of genres"""
         updated_date_genres = []
         for genre_x in list_of_genres:
             if '1939-1945' in genre_x:
-                #world war II/20th century for 1939-1945
+                #'world war ii'/'20th century' for '1939-1945'
                 updated_date_genres.append('world war ii')
                 updated_date_genres.append('20th century')
             elif ('-' in genre_x) and ('1' in genre_x):
-                #For date ranges, adds a century tag for both start and end dates in a range
+                #For date ranges, adds a century tag for both start and end dates in a range. If both the start and end are in the 
+                #same century, the tag is only added once
                 date_range = re.sub(r'[^0-9-]', '', genre_x)
                 txt = date_range.split('-')
                 if txt and txt[0].isdigit():
@@ -278,7 +281,6 @@ class Book:
                         end_year = int(txt[1])
                         if (self.get_century_tag(start_year)) != (self.get_century_tag(end_year)):
                             updated_date_genres.append(self.get_century_tag(end_year))
-
             elif('1'in genre_x and not '-' in genre_x):
                 #For single years (rather than date ranges)
                 date = re.sub(r'\D', '', genre_x)
