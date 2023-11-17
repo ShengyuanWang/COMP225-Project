@@ -30,7 +30,7 @@
   <div>
     <div style="display: flex; justify-content: center; align-items: center; position: relative;">
       <div class="title">
-        <h1 style="font-size: 7vw" v-if="obj.underage">BOOK + JUICE</h1> <h1 style="font-size: 7vw" v-else>BOOK + WINE</h1>
+        <h1 style="font-size: 7vw" v-if="obj.underage">BOOK + JUICE</h1> <h1 style="font-size: min(7vw, 10vh)" v-else>BOOK + WINE</h1>
       </div>
     </div>
     <div class="center">
@@ -67,7 +67,7 @@
 }
 
 .center img {
-  width: 30vw;
+  width: min(30vw, 40vh);
 }
 
 .question {
