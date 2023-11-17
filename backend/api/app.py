@@ -260,7 +260,7 @@ class Book:
                         new_names_split.append(word.strip())
         return [new_name for new_name in new_names_split if new_name != ""]
     
-    def combine_dates(self, list_of_genres):
+    def combine_dates(self,list_of_genres):
         updated_date_genres = []
         print('old genres')
         print(list_of_genres)
@@ -273,35 +273,37 @@ class Book:
             #For date ranges, adds a century tag for both start and end dates in a range
                 date_range = re.sub(r'[^0-9-]', '', genre_x)
                 txt = date_range.split('-')
-                start_year = int(txt[0])
-                end_year = int(txt[1])
-                
-                if (2000 > start_year>=1900) or (2000 > end_year>=1900):
-                    updated_date_genres.append('20th century')
-                if (1900 > start_year>=1800) or (1900 > end_year>=1800):
-                    updated_date_genres.append('19th century')
-                if (1800 > start_year>=1700) or (1800 > end_year>=1700):
-                    updated_date_genres.append('18th century')
-                if (1700 > start_year>=1600) or (1700 > end_year>=1600):
-                    updated_date_genres.append('17th century')
-                
-            elif '1' in genre_x and not '-' in genre_x:
-            #for single years (rather than ranges)
-                year = re.sub(r'[^0-9-]', '', genre_x)
-                year = int(year)
-                if 2000> year >= 1900:
-                    updated_date_genres.append('20th century')
-                if 1900> year >= 1800:
-                    updated_date_genres.append('19th century')
-                if 1800> year >= 1700:
-                    updated_date_genres.append('18th century')
-                if 1700> year >= 1600:
-                    updated_date_genres.append('17th century')
+                if txt and txt[0].isdigit():
+                    start_year = int(txt[0])
+                    updated_date_genres.append(self.get_century_tag(start_year))
+                    print(self.get_century_tag(start_year))
+                if txt and txt[1].isdigit():
+                    end_year = int(txt[1])
+                    updated_date_genres.append(self.get_century_tag(end_year))
+            elif('1'in genre_x and not '-' in genre_x):
+            #For single years (rather than date ranges)
+                date = re.sub(r'\D', '', genre_x)
+                if date.isdigit:
+                    print('after digit')
+                    date =int(date)
+                    print('after casting')
+                    updated_date_genres.append(self.get_century_tag(date))
+                    print('after century')
             else:
                 updated_date_genres.append(genre_x)
-        print('new genres')
-        print(updated_date_genres)
+        #print(updated_date_genres)
         return updated_date_genres
+
+    def get_century_tag(self,year):
+        if 2000 > year >= 1900:
+            return '20th century'
+        if 1900 > year >= 1800:
+            return '19th century'
+        if 1800 > year >= 1700:
+            return '18th century'
+        if 1700 > year >= 1600:
+            return '17th century'
+        return ''
 
     def filter_title(self, title):
         """Cleans up titles to not include some common stop words, so that the titles 
