@@ -17,7 +17,7 @@ with open("output.json") as file:
 GENRES = jsonData
 
 # drink for when there are no matches 
-BUD_LIGHT = {"name":"Bud Light", "instructions": ["Just pop open the can."], "information": "Classic American Beer."}
+BUD_LIGHT = {"name":"Bud Light", "ingredients": ["Can of bud light"], "instructions": "Just pop open the can."}
 
 app = Flask(__name__)
 CORS(app)
@@ -70,6 +70,19 @@ class DrinkWrapper():
     def __lt__(self, other):
         return self.priority < other.priority
 
+@app.route('/getAlcohol/<types>', methods=["GET"])
+def get_alcohol(types):
+    with open('book-alcohol-pairings.json', "r") as f:
+        drinks = json.load(f)
+
+    drinks_filtered = []
+    for drink in drinks['alcohols']:
+        if drink["type"] == types:
+            drinks_filtered.append(drink)
+    return json.dumps(drinks_filtered)
+
+
+
 class Book:
     def __init__ (self, user_input, alcohol_data_file="book-alcohol-pairings.json", api_key=API_KEY, official_genres=GENRES, no_match_drink=BUD_LIGHT):
         """ This class represents a book. Once an object of this class is initiated, that object can be
@@ -105,8 +118,8 @@ class Book:
         pairing["cover_link"] = self.get_cover_link()
         pairing_dict = self.get_pairing()
         pairing["name"] = pairing_dict["name"]
+        pairing["ingredients"] = pairing_dict["ingredients"]
         pairing["instructions"] = pairing_dict["instructions"]
-        pairing["information"] = pairing_dict["information"]
         return json.dumps(pairing)
 
     def get_pairing(self):
@@ -265,9 +278,10 @@ class Book:
                 }
                 json = requests.get(base_url, params=params).json()
                 data = json.get(f"ISBN:{isbn}", {})
-                names = self.split_subjects(data.get('subjects', ['N/A']))   
-                names = self.combine_dates(names)             
-                genres += names
+                
+                names_split = self.split_subjects(data.get('subjects', ['N/A'])) 
+                names_dates_combined = self.combine_dates(names_split)             
+                genres += names_dates_combined
             return genres
         except:
             return genres
@@ -283,33 +297,81 @@ class Book:
         filtered_phrase = ' '.join(filtered_words)
         return filtered_phrase
     
-    def split_subjects(self, subjects):
+    def split_subjects(self, subjects_to_split):
         """ This function takes a list of dictonaries of book subjects and splits the subject names 
         into smaller parts. The dictonaries must have at least the key "name". Subject names 
         will be split based on commas, dashes, em dashes. Phrases inside parenthese will also
         be extracted. Subject names will be made lowercase and trailing spaces are removed.
         """
-        names = []
-        for subject in subjects:
+        new_names_split = []
+        for subject in subjects_to_split:
             if isinstance(subject, dict):
                 regex_split = re.split(r"[,—–/]", subject["name"])
                 for word in regex_split:
                     word = word.strip().lower()
                     if "(" in word:
                         part_split = word.split("(")
-                        names.append(part_split[0])
+                        new_names_split.append(part_split[0])
                         if len(part_split) > 1 and len(part_split[1]) > 1:
                             if part_split[1][len(part_split[1])-1] == ")":
-                                names.append(part_split[1][:len(part_split[1])-1])
+                                new_names_split.append(part_split[1][:len(part_split[1])-1])
                             else:
-                                names.append(part_split[1])
+                                new_names_split.append(part_split[1])
                     else:
-                        names.append(word.strip())
-        return [name for name in names if name != ""]
+                        new_names_split.append(word.strip())
+        return [new_name for new_name in new_names_split if new_name != ""]
     
-    def combine_dates(self, names):
-        # to-do: add code to combine dates
-        return names
+    def combine_dates(self,list_of_genres):
+        updated_date_genres = []
+        for genre_x in list_of_genres:
+            if '1939-1945' in genre_x:
+                #world war II/20th century for 1939-1945
+                updated_date_genres.append('world war ii')
+                updated_date_genres.append('20th century')
+            elif ('-' in genre_x) and ('1' in genre_x):
+                #For date ranges, adds a century tag for both start and end dates in a range
+                date_range = re.sub(r'[^0-9-]', '', genre_x)
+                txt = date_range.split('-')
+                if txt and txt[0].isdigit():
+                    start_year = int(txt[0])   
+                    updated_date_genres.append(self.get_century_tag(start_year))
+                    if txt and txt[1].isdigit():
+                        #only add a second century tag if the end date is in a different century than the start date
+                        end_year = int(txt[1])
+                        if (self.get_century_tag(start_year)) != (self.get_century_tag(end_year)):
+                            updated_date_genres.append(self.get_century_tag(end_year))
+
+            elif('1'in genre_x and not '-' in genre_x):
+                #For single years (rather than date ranges)
+                date = re.sub(r'\D', '', genre_x)
+                if date.isdigit:
+                    date =int(date)
+                    updated_date_genres.append(self.get_century_tag(date))
+            else:
+                updated_date_genres.append(genre_x)
+        return updated_date_genres
+
+    def get_century_tag(self,year):
+        if 2000 > year >= 1900:
+            return '20th century'
+        if 1900 > year >= 1800:
+            return '19th century'
+        if 1800 > year >= 1700:
+            return '18th century'
+        if 1700 > year >= 1600:
+            return '17th century'
+        return ''
+
+    def filter_title(self, title):
+        """Cleans up titles to not include some common stop words, so that the titles 
+        can be more easily matched. Used when looking for genres across all 
+        versions of a book.
+        """
+        # idea: find titles based on author and key words from titles
+        words = title.split()    
+        filtered_words = [word for word in words if word.lower() not in ["and", "a", "the"]]
+        filtered_phrase = ' '.join(filtered_words)
+        return filtered_phrase
     
     def select_isbn(self, isbns):
         """ Selects the first isbn from the list of isbns."""

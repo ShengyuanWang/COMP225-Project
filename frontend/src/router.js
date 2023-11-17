@@ -28,17 +28,17 @@ const routes = [
     {
         path: "/match",
         component: Vmatch,
-        name: Vmatch
+        name: 'Vmatch'
     },
     {
         path: "/detail",
         component: Vdetail,
-        name: Vdetail
+        name: 'Vdetail'
     },
     {
         path: "/test",
         component: Vtest,
-        name: Vtest
+        name: 'Vtest'
     }
 
 ]
