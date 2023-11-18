@@ -7,3 +7,6 @@
 /dataSources/
 /dataSources.local.xml
 env/*
+.venv/*
+.DS_STORE
+backend/api/.DS_STORE
