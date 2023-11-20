@@ -347,14 +347,14 @@ class Book:
                 elif txt and txt[0].isdigit():
                     start_year = int(txt[0])   
                     updated_date_genres.append(self.get_century_tag(start_year))
-                    updated_date_genres.append(self.get_decade_tag(start_year))
+                    #updated_date_genres.append(self.get_decade_tag(start_year))
                     if txt and txt[1].isdigit():
                         #only add a second century tag and/or decade tag if the end date is in a different century than the start date
                         end_year = int(txt[1])
                         if (self.get_century_tag(start_year)) != (self.get_century_tag(end_year)):
                             updated_date_genres.append(self.get_century_tag(end_year))
                         if (self.get_decade_tag(start_year)) != (self.get_decade_tag(end_year)):
-                            updated_date_genres.append(self.get_decade_tag(end_year))
+                            updated_date_genres.append(self.get_decade_tag_range(start_year,end_year))
                         
             elif('1'in genre_x and not '-' in genre_x  and not ('=' in genre_x)):
                 #For single years (rather than date ranges)
@@ -368,6 +368,21 @@ class Book:
         #print('updated list')
         #print(updated_date_genres)
         return updated_date_genres
+    def get_decade_tag_range(self, start_year, end_year):
+        if (1920>start_year>=1910) and (1920>end_year>=1910):
+            return '1910s'
+        elif (1930>start_year>=1920) and (1930>end_year>=1920):
+            return '1920s'
+        elif (1940>start_year>=1930) and (1940>end_year>=1930):
+            return '1930s'
+        elif (1950>start_year>=1940) and (1950>end_year>=1940):
+            return '1940s'
+        elif (1960>start_year>=1950) and (1960>end_year>=1950):
+            return '1950s'
+        elif (1970>start_year>=1960) and (1970>end_year>=1960):
+            return '1960s'
+        else:
+            return ''
     def get_decade_tag(self, year):
         if 1920>year>=1910:
             return '1910s'
