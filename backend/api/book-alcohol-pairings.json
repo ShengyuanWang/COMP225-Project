@@ -5,8 +5,8 @@
             "type": "Cocktail",
             "genres": ["mystery fiction","mystery", "historical fiction","history","historical","classic fiction","classic literature","classic","classical literature",
                 "classics","psychological","psychology","psychological fiction","detective and mystery stories","mystery & detective","mysteries & detective stories",
-                "mystery and detective stories","biographical","biographies","biography & autobiography","biography","personal narratives","memoir","biography & memoir",
-                "19th century","1910s","1920s","1950s","20th century"],
+                "mystery and detective stories","biographical","biographies","biography & autobiography","biography","personal narratives","memoir","personal memoirs","biography & memoir",
+                "19th century","1910s","1920s","1950s","nineteen fifties","20th century"],
             "sentiment": 0.6,
             "ingredients": [
                 "2 oz. bourbon or rye whiskey",
@@ -20,7 +20,7 @@
         {
             "name":"Margarita",
             "type":"Cocktail",
-            "genres":["mexico","romance", "lesbian love story","lesbian romance novel", "man-woman relationships", "man-woman relationships","love","love stories","love & romance","romance fiction","romance literature",
+            "genres":["mexico","romance", "lesbian love story","lesbian romance novel", "man-woman relationships","man-woman relations","love","love stories","love & romance","romance fiction","romance literature",
                 "gay love", "lgbt romance","action & adventure","adventure","adventure stories","adventure and adventurers","adventure fiction","humorous","humor",
                 "humorous fiction","comedy","travel","satire","satirical literature","contemporary fiction","contemporary","20th century","1960s"],
             "sentiment": 0.7,
@@ -39,7 +39,7 @@
             "type":"Cocktail",
             "genres":["united states","usa","espionage","spy stories","spies","mystery fiction","mystery","mysteries & detective stories","mystery and detective stories",
                 "detective and mystery stories","mystery & detective","historical fiction","history", "historical", "thriller","thrillers","suspense","suspense fiction",
-                "suspense & thriller","biographical","biographies","biography","personal narratives","memoir","biography & memoir","biography & autobiography","19th century",
+                "suspense & thriller","biographical","biographies","biography","personal narratives","memoir","personal memoirs","biography & memoir","biography & autobiography","19th century",
                 "20th century","1920s"],
             "sentiment": 0.6,
             "ingredients":["2 oz rye whiskey or bourbon",
@@ -52,9 +52,9 @@
         {
             "name": "Martini",
             "type": "Cocktail",
-            "genres": ["science fiction","science-fiction", "mystery fiction","mystery", "romance", "lesbian love story","lesbian romance novel", "man-woman relationships", "love","love stories","love & romance",
+            "genres": ["science fiction","science-fiction", "mystery fiction","mystery", "romance", "lesbian love story","lesbian romance novel", "man-woman relationships","man-woman relations", "love","love stories","love & romance",
                 "romance fiction","romance literature", "gay love", "lgbt romance","psychological","psychology","psychological fiction","world war ii","20th century",
-                "1910s","1940s","1930s","1950s","1960s"],
+                "1910s","1940s","1930s","1950s","nineteen fifties","1960s"],
             "sentiment":0.7,
             "ingredients": [
                 "2 oz. gin or vodka",
@@ -67,7 +67,7 @@
         {
             "name": "Piña Colada",
             "type": "Cocktail",
-            "genres": ["romance", "lesbian love story","lesbian romance novel", "man-woman relationships", "love","love stories","love & romance","romance fiction","romance literature", "gay love", "lgbt romance","humorous","humor","humorous fiction","comedy",
+            "genres": ["romance", "lesbian love story","lesbian romance novel", "man-woman relationships","man-woman relations", "love","love stories","love & romance","romance fiction","romance literature", "gay love", "lgbt romance","humorous","humor","humorous fiction","comedy",
                 "caribbean area","puerto rico","1960s"],
             "sentiment": 0.8,
             "ingredients": [
@@ -82,7 +82,7 @@
         {
             "name": "Blue Lagoon",
             "type":"Cocktail",
-            "genres":["science fiction","science-fiction","romance", "lesbian love story","lesbian romance novel", "man-woman relationships","love","love stories","love & romance","romance fiction","romance literature", "gay love", "lgbt romance","travel","adventure",
+            "genres":["science fiction","science-fiction","romance", "lesbian love story","lesbian romance novel", "man-woman relationships","man-woman relations","love","love stories","love & romance","romance fiction","romance literature", "gay love", "lgbt romance","travel","adventure",
                 "adventure fiction","adventure stories","adventure and adventurers","aliens"],
             "sentiment": 0.8,
             "ingredients": [
@@ -97,7 +97,7 @@
         {
             "name": "Mojito",
             "type": "Cocktail",
-            "genres": ["caribbean area","cuba","romance", "lesbian love story","lesbian romance novel", "man-woman relationships","love","love stories","love & romance","romance fiction","romance literature", "gay love", "lgbt romance","action & adventure","adventure",
+            "genres": ["caribbean area","cuba","romance", "lesbian love story","lesbian romance novel", "man-woman relationships","man-woman relations","love","love stories","love & romance","romance fiction","romance literature", "gay love", "lgbt romance","action & adventure","adventure",
                 "adventure fiction","adventure stories","adventure and adventurers","humorous","humor","humorous fiction","comedy"],
             "sentiment": 0.7,
             "ingredients": [
@@ -134,7 +134,7 @@
         {
             "name":"Cosmopolitan",
             "type":"Cocktail",
-            "genres":["romance", "lesbian love story","lesbian romance novel", "man-woman relationships","love","love stories","love & romance","romance fiction","romance literature", "gay love", "lgbt romance","mystery fiction","mystery","mysteries & detective stories",
+            "genres":["romance", "lesbian love story","lesbian romance novel", "man-woman relationships","man-woman relations","love","love stories","love & romance","romance fiction","romance literature", "gay love", "lgbt romance","mystery fiction","mystery","mysteries & detective stories",
                 "mystery and detective stories","detective and mystery stories","mystery & detective","friendship","friendship in fiction","female friendship",
                 "contemporary fiction","contemporary","urban fantasy","20th century"],
             "sentiment": 0.8,
@@ -151,7 +151,7 @@
         {
             "name":"Aperol Spritz",
             "type": "Cocktail",
-            "genres":["fantasy fiction","fantasy in fiction","fantasy","fantastic fiction","fantasy genre","romance", "lesbian love story","lesbian romance novel", "man-woman relationships","love","love stories","love & romance",
+            "genres":["fantasy fiction","fantasy in fiction","fantasy","fantastic fiction","fantasy genre","romance", "lesbian love story","lesbian romance novel", "man-woman relationships","man-woman relations","love","love stories","love & romance",
                 "romance fiction","romance literature", "gay love", "lgbt romance","humorous","humor","humorous fiction","comedy","italy","20th century"],
             "sentiment": 0.7,
             "ingredients": [
@@ -166,7 +166,7 @@
         {
             "name": "Moscow Mule",
             "type": "Cocktail",
-            "genres": ["action & adventure","romance", "lesbian love story","lesbian romance novel", "man-woman relationships","love","love stories","love & romance","romance fiction","romance literature", "gay love", "lgbt romance","travel","romantic comedy","comedy",
+            "genres": ["action & adventure","romance", "lesbian love story","lesbian romance novel", "man-woman relationships","man-woman relations","love","love stories","love & romance","romance fiction","romance literature", "gay love", "lgbt romance","travel","romantic comedy","comedy",
                 "humor","humorous fiction","humorous","historical fiction","historical","history","adventure and adventurers","adventure stories",
                 "adventure","adventure fiction","quests","quests ","mystery fiction","mystery","historical romance","1940s","20th century"],
             "sentiment": 0.7,
@@ -240,7 +240,7 @@
         {
             "name":"Vodka Cranberry",
             "type":"Cocktail",
-            "genres":["romance", "lesbian love story","lesbian romance novel", "man-woman relationships","love","love stories","love & romance","romance fiction","romance literature", "gay love", "lgbt romance","mystery fiction","mystery","thriller","thrillers",
+            "genres":["romance", "lesbian love story","lesbian romance novel", "man-woman relationships","man-woman relations","love","love stories","love & romance","romance fiction","romance literature", "gay love", "lgbt romance","mystery fiction","mystery","thriller","thrillers",
                 "suspense & thriller","suspense","suspense fiction"],
             "sentiment": 0.7,
             "ingredients": [
@@ -254,7 +254,7 @@
         {
             "name":"Sex on the Beach",
             "type":"Cocktail",
-            "genres":["romance", "lesbian love story","lesbian romance novel", "man-woman relationships","love","love stories","love & romance","romance fiction","romance literature", "gay love", "lgbt romance","travel","contemporary fiction","contemporary","suspense",
+            "genres":["romance", "lesbian love story","lesbian romance novel", "man-woman relationships","man-woman relations","love","love stories","love & romance","romance fiction","romance literature", "gay love", "lgbt romance","travel","contemporary fiction","contemporary","suspense",
                 "suspense fiction","erotica","erotic stories","erotic passion","erotic fiction"],
             "sentiment": 0.7,
             "ingredients": [
@@ -270,7 +270,7 @@
         {
             "name": "Sangria",
             "type": "Cocktail",
-            "genres": ["romance", "lesbian love story","lesbian romance novel", "man-woman relationships","love","love stories","love & romance","romance fiction","romance literature", "gay love", "lgbt romance","travel","thriller","thrillers","suspense & thriller",
+            "genres": ["romance", "lesbian love story","lesbian romance novel", "man-woman relationships","man-woman relations","love","love stories","love & romance","romance fiction","romance literature", "gay love", "lgbt romance","travel","thriller","thrillers","suspense & thriller",
                 "suspense","suspense fiction","mystery fiction","mystery","action & adventure","spain","contemporary fiction","contemporary","vampires","vampire novels"],
             "sentiment": 0.6,
             "ingredients": [
@@ -304,7 +304,7 @@
             "type":"Cocktail",
             "genres":["espionage","spy stories","spies","historical fiction","history","historical","mystery fiction","mystery", "mysteries & detective stories",
                 "mystery and detective stories","detective and mystery stories","mystery & detective","thriller","thrillers","suspense & thriller","suspense",
-                "suspense fiction","biographical","biographies","biography","personal narratives","memoir","biography & memoir","biography & autobiography","1940s",
+                "suspense fiction","biographical","biographies","biography","personal narratives","memoir","personal memoirs","biography & memoir","biography & autobiography","1940s",
                 "20th century","1960s"],
             "sentiment":0.6,
             "ingredients":["2 oz gin",
@@ -343,7 +343,7 @@
             "type":"Cocktail",
             "genres":["espionage","spy stories","spies","mystery fiction","mystery","mysteries & detective stories","mystery and detective stories",
                 "detective and mystery stories","mystery & detective","historical fiction","history","historical","thriller","thrillers","suspense","suspense fiction",
-                "suspense & thriller","biographical","biographies","biography","personal narratives","memoir","biography & memoir","biography & autobiography","italy",
+                "suspense & thriller","biographical","biographies","biography","personal narratives","memoir","personal memoirs","biography & memoir","biography & autobiography","italy",
                 "20th century","1940s"],
             "sentiment":0.5,
             "ingredients":[
@@ -359,7 +359,7 @@
             "type": "Cocktail",
             "genres": ["mystery fiction","mystery", "thriller","thrillers","suspense","suspense fiction","suspense & thriller","psychological","psychology",
                 "psychological fiction","mysteries & detective stories","mystery & detective","mystery and detective stories","detective and mystery stories",
-                "travel","romantic comedy","biographical","biographies","biography & autobiography","biography","personal narratives","memoir","biography & memoir",
+                "travel","romantic comedy","biographical","biographies","biography & autobiography","biography","personal narratives","memoir","personal memoirs","biography & memoir",
                 "classic fiction","classic literature","classic","classical literature","classics","adventure and adventurers","action & adventure","adventure fiction",
                 "adventure stories","adventure","world war ii","20th century","world war i","1910s","1940s","1930s","1960s"],
             "sentiment": 0.7,
@@ -406,7 +406,7 @@
         {
             "name":"Mimosa",
             "type":"Cocktail",
-            "genres":["friendship","female friendship","friendship in fiction","humorous","humor","humorous fiction","comedy", "romance", "lesbian love story","lesbian romance novel", "man-woman relationships","love","love stories",
+            "genres":["friendship","female friendship","friendship in fiction","humorous","humor","humorous fiction","comedy", "romance", "lesbian love story","lesbian romance novel", "man-woman relationships","man-woman relations","love","love stories",
                 "love & romance","romance fiction","romance literature", "gay love", "lgbt romance","mystery fiction","mystery","mysteries & detective stories","mystery and detective stories",
                 "detective and mystery stories","mystery & detective","travel","romantic comedy","contemporary fiction","contemporary"],
             "sentiment":0.7,
@@ -420,7 +420,7 @@
             "name":"Daiquiri",
             "type":"Cocktail",
             "genres":["caribbean area","cuba","travel","humorous","humor","humorous fiction","comedy", "action & adventure","adventure", "adventure fiction",
-                "adventure stories","adventure and adventurers","romance", "lesbian love story","lesbian romance novel", "man-woman relationships","love","love stories","love & romance","romance fiction",
+                "adventure stories","adventure and adventurers","romance", "lesbian love story","lesbian romance novel", "man-woman relationships","man-woman relations","love","love stories","love & romance","romance fiction",
                 "romance literature", "gay love", "lgbt romance","mystery fiction","mystery","1940s","1960s"],
             "sentiment":0.7,
             "ingredients":[
@@ -434,8 +434,8 @@
         {
             "name":"Irish Coffee",
             "type":"Cocktail",
-            "genres":["mystery fiction","mystery","romance fiction","romance literature", "gay love", "lgbt romance","romance", "lesbian love story","lesbian romance novel", "man-woman relationships","love","love stories","love & romance","travel","classics",
-                "classic fiction","classic literature","classic","classical literature","biographical","biographies","biography","personal narratives","memoir","biography & memoir","biography & autobiography","ireland",
+            "genres":["mystery fiction","mystery","romance fiction","romance literature", "gay love", "lgbt romance","romance", "lesbian love story","lesbian romance novel", "man-woman relationships","man-woman relations","love","love stories","love & romance","travel","classics",
+                "classic fiction","classic literature","classic","classical literature","biographical","biographies","biography","personal narratives","memoir","personal memoirs","biography & memoir","biography & autobiography","ireland",
                 "romantic comedy"],
             "sentiment":0.8,
             "ingredients":[
@@ -448,8 +448,8 @@
         {
             "name":"Paloma",
             "type":"Cocktail",
-            "genres":["travel","mexico","biographical","biographies","biography","personal narratives","memoir","biography & memoir","biography & autobiography","adventure","adventure fiction","adventure stories",
-                "adventure and adventurers","mystery fiction","mystery","thriller","thrillers","suspense & thriller","suspense","suspense fiction","romance", "lesbian love story","lesbian romance novel", "man-woman relationships",
+            "genres":["travel","mexico","biographical","biographies","biography","personal narratives","memoir","personal memoirs","biography & memoir","biography & autobiography","adventure","adventure fiction","adventure stories",
+                "adventure and adventurers","mystery fiction","mystery","thriller","thrillers","suspense & thriller","suspense","suspense fiction","romance", "lesbian love story","lesbian romance novel", "man-woman relationships","man-woman relations",
                 "romance fiction","romance literature", "gay love", "lgbt romance","love stories","love & romance","love","humor","humorous fiction","humorous","comedy","satire",
                 "satirical literature","romantic comedy"],
             "sentiment":0.7,
@@ -466,7 +466,7 @@
             "name":"Pisco Sour",
             "type":"Cocktail",
             "genres":["travel","adventure","adventure stories","adventure fiction","adventure and adventurers","historical fiction","historical","history",
-                "mystery fiction","mystery","thriller","thrillers","suspense & thriller","suspense","suspense fiction","biographical","biographies","biography","personal narratives","memoir","biography & memoir",
+                "mystery fiction","mystery","thriller","thrillers","suspense & thriller","suspense","suspense fiction","biographical","biographies","biography","personal narratives","memoir","personal memoirs","biography & memoir",
                 "biography & autobiography","peru"],
             "sentiment":0.8,
             "ingredients":["2 oz Pisco",
@@ -495,8 +495,8 @@
         {
             "name":"Amaretto Sour",
             "type":"Cocktail",
-            "genres":["romance fiction","romance literature", "gay love", "lgbt romance","romance", "lesbian love story","lesbian romance novel", "man-woman relationships","love stories","love & romance","love","historical fiction","historical","history",
-                "mystery fiction","mystery","thriller","thrillers","suspense","suspense & thriller","suspense fiction","biographical","biographies","biography","personal narratives","memoir","biography & memoir",
+            "genres":["romance fiction","romance literature", "gay love", "lgbt romance","romance", "lesbian love story","lesbian romance novel", "man-woman relationships","man-woman relations","love stories","love & romance","love","historical fiction","historical","history",
+                "mystery fiction","mystery","thriller","thrillers","suspense","suspense & thriller","suspense fiction","biographical","biographies","biography","personal narratives","memoir","personal memoirs","biography & memoir",
                 "biography & autobiography","humor","humorous fiction","humorous","comedy","satire","satirical literature","historical romance","20th century"],
             "sentiment":0.8,
             "ingredients":["2 oz Amaretto",
@@ -531,8 +531,8 @@
             "name":"Mai Tai",
             "type":"Cocktail",
             "genres":["adventure stories","adventure","adventure fiction","adventure and adventurers","travel","mystery fiction","mystery","biographical","biographies",
-                "biography","personal narratives","memoir","biography & memoir","biography & autobiography","romance", "lesbian love story","lesbian romance novel", "man-woman relationships","romance fiction","romance literature", "gay love", "lgbt romance","love stories","love & romance","love","historical fiction",
-                "historical","history","historical romance","20th century","1950s","1960s"],
+                "biography","personal narratives","memoir","personal memoirs","biography & memoir","biography & autobiography","romance", "lesbian love story","lesbian romance novel", "man-woman relationships","man-woman relations","romance fiction","romance literature", "gay love", "lgbt romance","love stories","love & romance","love","historical fiction",
+                "historical","history","historical romance","20th century","1950s","nineteen fifties","1960s"],
             "sentiment":0.7,
             "ingredients":["2 oz White rum",
                 "3/4 oz Fresh lime juice",
@@ -548,7 +548,7 @@
             "name":"Whiskey Sour",
             "type":"Cocktail",
             "genres":["classic","classic literature","classical literature","classics","classic fiction","biographical","biographies","biography","personal narratives",
-                "memoir","biography & memoir","biography & autobiography","historical fiction","historical","history","action & adventure","adventure and adventurers",
+                "memoir","personal memoirs","biography & memoir","biography & autobiography","historical fiction","historical","history","action & adventure","adventure and adventurers",
                 "adventure stories","adventure","adventure fiction","1930s","20th century","1960s"],
             "sentiment":0.7,
             "ingredients":["2 oz Bourbon or Rye whiskey",
@@ -562,10 +562,10 @@
         {
             "name":"French 75",
             "type":"Cocktail",
-            "genres":["historical fiction","historical","history","romance fiction","romance literature", "gay love", "lgbt romance","romance", "lesbian love story","lesbian romance novel", "man-woman relationships",
+            "genres":["historical fiction","historical","history","romance fiction","romance literature", "gay love", "lgbt romance","romance", "lesbian love story","lesbian romance novel", "man-woman relationships","man-woman relations",
                 "love stories","love & romance","love & romance","love","mysteries & detective stories","mystery & detective","mystery and detective stories",
                 "mystery fiction","mystery","detective and mystery stories","biographical","biographies","historical romance","biography","personal narratives",
-                "memoir","biography & memoir","biography & autobiography","classic literature","classic","classical literature","classics","classic fiction","1920s",
+                "memoir","personal memoirs","biography & memoir","biography & autobiography","classic literature","classic","classical literature","classics","classic fiction","1920s",
                 "20th century"],
             "sentiment":0.8,
             "ingredients":["1 1/2 oz Gin",
@@ -581,7 +581,7 @@
             "name":"Vampire's Kiss",
             "type":"Cocktail",
             "genres":["vampires","vampire novels","dracula","supernatural","gothic","gothic fiction","gothic & horror","horror fiction","horror stories","horror tales",
-                "horror","fantasy fiction","fantasy in fiction","fantasy","fantasy genre","fantastic fiction","romance fiction","romance literature", "gay love", "lgbt romance","romance", "lesbian love story","lesbian romance novel", "man-woman relationships","love",
+                "horror","fantasy fiction","fantasy in fiction","fantasy","fantasy genre","fantastic fiction","romance fiction","romance literature", "gay love", "lgbt romance","romance", "lesbian love story","lesbian romance novel", "man-woman relationships","man-woman relations","love",
                 "love & romance","love stories","demons"],
             "sentiment":0.4,
             "ingredients":["1 1/2 oz Vodka",
@@ -616,7 +616,7 @@
             "genres":["horror fiction","horror stories","horror tales","horror","action & adventure","adventure and adventurers","adventure stories","adventure",
                 "adventure fiction","mysteries & detective stories","mystery & detective","mystery and detective stories","detective and mystery stories",
                 "mystery fiction","mystery","travel","supernatural","paranormal fiction","paranormal","thriller","thrillers","supernatural thrillers",
-                "paranormal fiction suspense & thriller","suspense & thriller","suspense fiction","suspense","pirates","zombies","20th century","1950s","1960s"],
+                "paranormal fiction suspense & thriller","suspense & thriller","suspense fiction","suspense","pirates","zombies","20th century","1950s","frankenstein","nineteen fifties","1960s"],
             "sentiment":0.5,
             "ingredients":["1 1/2 oz Light rum",
                 "1 1/2 oz Dark rum",
@@ -668,7 +668,7 @@
         {
             "name":"Tequila Sunrise",
             "type":"Cocktail",
-            "genres":["romance fiction","romance literature", "gay love", "lgbt romance","romance", "lesbian love story","lesbian romance novel", "man-woman relationships","love & romance","love stories","love","travel","mystery fiction","mystery",
+            "genres":["romance fiction","romance literature", "gay love", "lgbt romance","romance", "lesbian love story","lesbian romance novel", "man-woman relationships","man-woman relations","love & romance","love stories","love","travel","mystery fiction","mystery",
                 "adventure and adventurers","adventure fiction","adventure stories","adventure","action & adventure","mexico","contemporary fiction",
                 "contemporary","california"],
             "sentiment":0.65,
@@ -683,7 +683,7 @@
         {
             "name": "Moscato",
             "type": "Wine",
-            "genres": ["friendship","friendship in fiction","female friendship","romance", "lesbian love story","lesbian romance novel", "man-woman relationships","love","love stories","love & romance","romance fiction","romance literature", "gay love", "lgbt romance",
+            "genres": ["friendship","friendship in fiction","female friendship","romance", "lesbian love story","lesbian romance novel", "man-woman relationships","man-woman relations","love","love stories","love & romance","romance fiction","romance literature", "gay love", "lgbt romance",
                 "humorous","humor","humorous fiction","comedy","italy","france","coming of age","contemporary fiction","contemporary","romantic comedy"],
             "sentiment":0.7,
             "ingredients":[""],
@@ -692,7 +692,7 @@
         {
             "name": "Pinot Noir",
             "type": "Wine",
-            "genres": ["romance", "lesbian love story","lesbian romance novel", "man-woman relationships","love","love stories","love & romance","romance fiction","romance literature", "gay love", "lgbt romance","mystery fiction","mystery","france","united states","usa",
+            "genres": ["romance", "lesbian love story","lesbian romance novel", "man-woman relationships","man-woman relations","love","love stories","love & romance","romance fiction","romance literature", "gay love", "lgbt romance","mystery fiction","mystery","france","united states","usa",
                 "erotica","erotic stories","erotic passion","erotic fiction","mysteries & detective stories","mystery & detective","mystery and detective stories",
                 "detective and mystery stories","vampire novels","vampires"],
             "sentiment": 0.6,
@@ -702,7 +702,7 @@
         {
             "name": "Merlot",
             "type": "Wine",
-            "genres": ["romance", "lesbian love story","lesbian romance novel", "man-woman relationships","love","love stories","love & romance","romance fiction","romance literature", "gay love", "lgbt romance","mystery fiction","mystery", "science fiction",
+            "genres": ["romance", "lesbian love story","lesbian romance novel", "man-woman relationships","man-woman relations","love","love stories","love & romance","romance fiction","romance literature", "gay love", "lgbt romance","mystery fiction","mystery", "science fiction",
                 "science-fiction","france","gothic fiction","gothic","gothic & horror","political fiction","political","vampires","vampire novels","erotica",
                 "erotic stories","erotic passion","erotic fiction","psychological","psychology","psychological fiction"],
             "sentiment": 0.6,
@@ -712,7 +712,7 @@
         {
             "name": "Rosé",
             "type": "Wine",
-            "genres": ["romance", "lesbian love story","lesbian romance novel", "man-woman relationships","love","love stories","love & romance","romance fiction","romance literature", "gay love", "lgbt romance","humorous","humor","humorous fiction","comedy","france",
+            "genres": ["romance", "lesbian love story","lesbian romance novel", "man-woman relationships","man-woman relations","love","love stories","love & romance","romance fiction","romance literature", "gay love", "lgbt romance","humorous","humor","humorous fiction","comedy","france",
                 "spain"],
             "sentiment": 0.7,
             "ingredients":[""],
@@ -721,9 +721,9 @@
         {
             "name": "Chardonnay",
             "type": "Wine",
-            "genres": ["romance", "lesbian love story","lesbian romance novel", "man-woman relationships","love","love stories","love & romance","romance fiction","romance literature", "gay love", "lgbt romance","mystery fiction","mystery",
+            "genres": ["romance", "lesbian love story","lesbian romance novel", "man-woman relationships","man-woman relations","love","love stories","love & romance","romance fiction","romance literature", "gay love", "lgbt romance","mystery fiction","mystery",
                 "mysteries & detective stories","mystery and detective stories","detective and mystery stories","mystery & detective","historical fiction","history",
-                "historical","drama","drama ","historical romance","france","united states","usa","contemporary fiction","contemporary"],
+                "historical","drama","dramatic works by one author","drama ","historical romance","france","united states","usa","contemporary fiction","contemporary"],
             "sentiment":0.6,
             "ingredients":[""],
             "instructions":"Pour yourself a glass!"
@@ -741,7 +741,7 @@
         {
             "name": "Sherry",
             "type": "Wine",
-            "genres": ["romance", "lesbian love story","lesbian romance novel", "man-woman relationships","love","love stories","love & romance","romance fiction","romance literature", "gay love", "lgbt romance","mystery fiction","mystery","mysteries & detective stories",
+            "genres": ["romance", "lesbian love story","lesbian romance novel", "man-woman relationships","man-woman relations","love","love stories","love & romance","romance fiction","romance literature", "gay love", "lgbt romance","mystery fiction","mystery","mysteries & detective stories",
                 "mystery and detective stories","detective and mystery stories","mystery & detective","humorous","humor","humorous fiction","comedy","historical fiction",
                 "history","historical","historical romance","spain","romantic comedy","17th century","18th century","19th century"],
             "sentiment":0.5,
@@ -751,7 +751,7 @@
         {
             "name": "Champagne",
             "type": "Wine",
-            "genres": ["france","romance", "lesbian love story","lesbian romance novel", "man-woman relationships","love","love stories","love & romance","romance fiction","romance literature", "gay love", "lgbt romance","biographical","biographies","biography","personal narratives","memoir","biography & memoir",
+            "genres": ["france","romance", "lesbian love story","lesbian romance novel", "man-woman relationships","man-woman relations","love","love stories","love & romance","romance fiction","romance literature", "gay love", "lgbt romance","biographical","biographies","biography","personal narratives","memoir","personal memoirs","biography & memoir",
                 "biography & autobiography","contemporary","contemporary fiction","romantic comedy","comedy","humor","humorous fiction","humorous","erotica",
                 "erotic stories","erotic passion","erotic fiction","19th century","20th century","1920s"],
             "sentiment": 1,
@@ -762,8 +762,8 @@
             "name":"Tempranillo",
             "type":"Wine",
             "genres":["epic","epic fantasy","high fantasy","historical fiction","history","historical","fantasy fiction","fantasy","fantasy genre","fantastic fiction",
-                "fantasy in fiction","mystery fiction","mystery","thriller","thrillers","suspense & thriller","suspense","suspense fiction","drama","drama ",
-                "biographical","biographies","biography","personal narratives","memoir","biography & memoir","biography & autobiography","adventure","adventure fiction","adventure stories","adventure and adventurers",
+                "fantasy in fiction","mystery fiction","mystery","thriller","thrillers","suspense & thriller","suspense","suspense fiction","drama","dramatic works by one author","drama ",
+                "biographical","biographies","biography","personal narratives","memoir","personal memoirs","biography & memoir","biography & autobiography","adventure","adventure fiction","adventure stories","adventure and adventurers",
                 "spain","contemporary fiction","contemporary","vampire novels","vampires"],
             "sentiment": 0.3,
             "ingredients":[""],
@@ -772,8 +772,8 @@
         {
             "name": "Zinfandel",
             "type": "Wine",
-            "genres": ["romance", "lesbian love story","lesbian romance novel", "man-woman relationships","love","love stories","love & romance","romance fiction","romance literature", "gay love", "lgbt romance","mystery fiction","mystery", "thriller","thrillers",
-                "suspense & thriller","suspense","suspense fiction","historical fiction","history","historical","historical romance","drama","drama ","adventure",
+            "genres": ["romance", "lesbian love story","lesbian romance novel", "man-woman relationships","man-woman relations","love","love stories","love & romance","romance fiction","romance literature", "gay love", "lgbt romance","mystery fiction","mystery", "thriller","thrillers",
+                "suspense & thriller","suspense","suspense fiction","historical fiction","history","historical","historical romance","drama","dramatic works by one author","drama ","adventure",
                 "adventure fiction","adventure stories","adventure and adventurers","california","united states","usa", "supernatural","paranormal fiction","paranormal",
                 "contemporary fiction","contemporary","erotica","erotic stories","erotic passion","erotic fiction","supernatural thrillers","vampire novels","vampires",
                 "paranormal fiction suspense & thriller","1960s"],
@@ -784,7 +784,7 @@
         {
             "name":"Prosecco",
             "type":"Wine",
-            "genres":["romantic comedy","romance", "lesbian love story","lesbian romance novel", "man-woman relationships","love","love stories","love & romance","romance fiction","romance literature", "gay love", "lgbt romance","humorous","humor","humorous fiction",
+            "genres":["romantic comedy","romance", "lesbian love story","lesbian romance novel", "man-woman relationships","man-woman relations","love","love stories","love & romance","romance fiction","romance literature", "gay love", "lgbt romance","humorous","humor","humorous fiction",
                 "comedy","travel","adventure","adventure fiction","adventure stories","adventure and adventurers","italy","contemporary fiction","contemporary"],
             "sentiment": 0.9,
             "ingredients":[""],
@@ -803,7 +803,7 @@
         {
             "name": "Syrah",
             "type": "Wine",
-            "genres": ["romance", "lesbian love story","lesbian romance novel", "man-woman relationships","love","love stories","love & romance","romance fiction","romance literature", "gay love", "lgbt romance","mystery fiction","mystery","france","australia",
+            "genres": ["romance", "lesbian love story","lesbian romance novel", "man-woman relationships","man-woman relations","love","love stories","love & romance","romance fiction","romance literature", "gay love", "lgbt romance","mystery fiction","mystery","france","australia",
                 "supernatural","paranormal fiction","paranormal","erotica","erotic stories","erotic passion","erotic fiction","mysteries & detective stories",
                 "mystery & detective","mystery and detective stories","detective and mystery stories","vampire novels","vampires"],
             "sentiment":0.6,
@@ -813,7 +813,7 @@
         {
             "name": "Malbec",
             "type": "Wine",
-            "genres": ["romance", "lesbian love story","lesbian romance novel", "man-woman relationships","love","love stories","love & romance","romance fiction","romance literature", "gay love", "lgbt romance","mystery fiction","mystery","horror","horror fiction",
+            "genres": ["romance", "lesbian love story","lesbian romance novel", "man-woman relationships","man-woman relations","love","love stories","love & romance","romance fiction","romance literature", "gay love", "lgbt romance","mystery fiction","mystery","horror","horror fiction",
                 "horror stories","horror tales","france","argentina","supernatural","paranormal fiction","paranormal","gothic & horror","gothic fiction","gothic",
                 "mysteries & detective stories","mystery & detective","mystery and detective stories","mystery and detective stories","detective and mystery stories",
                 "vampire novels","vampires","1960s"],
@@ -824,7 +824,7 @@
         {
             "name": "Mead",
             "type": "Wine",
-            "genres": ["england","ireland","fantasy fiction","fantasy","fantasy genre","fantastic fiction","fantasy in fiction","historical fiction","history",
+            "genres": ["england","england in fiction","ireland","fantasy fiction","fantasy","fantasy genre","fantastic fiction","fantasy in fiction","historical fiction","history",
                 "historical","quests","quests ","17th century"],
             "sentiment":0.8,
             "ingredients":["Fruits (Optional)",
@@ -844,7 +844,7 @@
         {
             "name": "IPA",
             "type": "Beer",
-            "genres": ["action & adventure", "thriller","thrillers","suspense & thriller","suspense","suspense fiction","biographical","biographies","biography","personal narratives","memoir","biography & memoir",
+            "genres": ["action & adventure", "thriller","thrillers","suspense & thriller","suspense","suspense fiction","biographical","biographies","biography","personal narratives","memoir","personal memoirs","biography & memoir",
                 "biography & autobiography"],
             "sentiment":-0.3,
             "ingredients":[""],
@@ -856,7 +856,7 @@
             "type": "Beer",
             "genres": ["ireland","classics","classic fiction","classic literature","classic","classical literature","fantasy fiction","fantasy","fantasy genre",
                 "fantastic fiction","fantasy in fiction","historical fiction","history","historical","mystery fiction","mystery", "thriller","thrillers",
-                "suspense & thriller","suspense","suspense fiction","drama","drama "],
+                "suspense & thriller","suspense","suspense fiction","drama","dramatic works by one author","drama "],
             "sentiment": 0.6,
             "ingredients":[""],
             "instructions":"Serve slightly chilled in a pint glass using the double pour process. For the first pour, fill the glass three-quarters full. Let the beer settle before topping it off with the second pour, which completes the filling of the glass and allows the creamy head to form."
@@ -866,7 +866,7 @@
             "type":"Beer",
             "genres":["friendship","friendship in fiction","male friendship","female friendship","action & adventure","adventure","adventure fiction",
                 "adventure stories","adventure and adventurers","humorous","humor","humorous fiction","comedy","mystery fiction","mystery","coming of age",
-                "contemporary fiction","contemporary","1930s","1940s","1950s","1960s"],
+                "contemporary fiction","contemporary","1930s","1940s","1950s","nineteen fifties","1960s"],
             "sentiment":0.5,
             "ingredients":["Lemon or lime garnish (optional)"],
             "instructions":"Lager is best served cold. Aim for a moderate and controlled pour to minimize excessive foaming, resulting in a nice, frothy head. Add lemon or lime garnish if desired."
@@ -885,7 +885,7 @@
             "type":"Beer",
             "genres":["fantasy fiction","fantasy","fantasy genre","fantastic fiction","fantasy in fiction","historical fiction","history","historical","mystery fiction",
                 "mystery","action & adventure","adventure","adventure fiction","adventure stories","adventure and adventurers","epic","epic fantasy","high fantasy",
-                "quests","quests ","1930s","1940s","1950s","1960s"],
+                "quests","quests ","1930s","1940s","1950s","nineteen fifties","1960s"],
             "sentiment":0.5,
             "ingredients":[""],
             "instructions":"Depending on what style of ale you are drinking, desired temperature can vary. In general, it is served at a slightly warmer temperature, and should be poured in a controlled manner."
@@ -913,8 +913,8 @@
             "name":"Vodka",
             "type":"Spirits",
             "genres":["travel","historical fiction","historical","history","biographical","biographies","biography & autobiography","biography","personal narratives",
-                "memoir","biography & memoir","russia","ukraine","poland","contemporary fiction","contemporary","mystery fiction","mystery","world war ii",
-                "20th century","19th century","18th century","1940s"],
+                "memoir","personal memoirs","biography & memoir","russia","russia ","ukraine","poland","contemporary fiction","contemporary","mystery fiction","mystery","world war ii",
+                "20th century","19th century","18th century","1940s","soviet union"],
             "sentiment":-0.2,
             "ingredients":["Lemon wedge (optional)"],
             "instructions":"Vodka is often served in a shot glass. Enjoy taking a shot with a chaser or a lemon wedge."
@@ -922,7 +922,7 @@
         {
             "name":"Baileys",
             "type":"Spirits",
-            "genres":["romance", "lesbian love story","lesbian romance novel", "man-woman relationships","love","love stories","love & romance","romance fiction","romance literature", "gay love", "lgbt romance","mystery fiction","mystery","ireland","friendship",
+            "genres":["romance", "lesbian love story","lesbian romance novel", "man-woman relationships","man-woman relations","love","love stories","love & romance","romance fiction","romance literature", "gay love", "lgbt romance","mystery fiction","mystery","ireland","friendship",
                 "friendship in fiction","female friendship","contemporary fiction","contemporary"],
             "sentiment":0.75,
             "ingredients":[""],
@@ -942,7 +942,7 @@
             "name": "Dark Rum",
             "type": "Spirits",
             "genres": ["caribbean area","jamaica","pirates","action & adventure", "mystery fiction","mystery", "thriller","thrillers","suspense & thriller","suspense",
-                "suspense fiction","werewolves","werewolves in fiction","demons","quests","quests ","colonial period","18th century","world war i","1910s"],
+                "suspense fiction","werewolves","werewolves in fiction","demons","quests","quests ","colonial period","18th century","world war i","1910s","sea stories","sailors"],
             "sentiment":0.6,
             "ingredients":[""],
             "instructions":"Dark rum is can be enjoyed at room temperature, over ice, or added to hot beverages during colder months."
@@ -951,7 +951,7 @@
         {
             "name":"Witbier",
             "type":"Beer",
-            "genres":["romance", "lesbian love story","lesbian romance novel", "man-woman relationships","love","love stories","love & romance","romance fiction","romance literature", "gay love", "lgbt romance","mystery fiction","mystery","humorous","humor",
+            "genres":["romance", "lesbian love story","lesbian romance novel", "man-woman relationships","man-woman relations","love","love stories","love & romance","romance fiction","romance literature", "gay love", "lgbt romance","mystery fiction","mystery","humorous","humor",
                 "humorous fiction","comedy","travel","contemporary fiction","contemporary"],
             "sentiment":0.7,
             "ingredients":["TBA"],
@@ -961,7 +961,7 @@
             "name": "Whiskey",
             "type": "Spirits",
             "genres": ["horror","horror fiction","horror stories","horror tales","science fiction","science-fiction", "action & adventure",
-                "historical fiction","history","historical","biographical","biographies","biography","personal narratives","memoir","biography & memoir","biography & autobiography","supernatural",
+                "historical fiction","history","historical","biographical","biographies","biography","personal narratives","memoir","personal memoirs","biography & memoir","biography & autobiography","supernatural",
                 "paranormal fiction","paranormal","gothic","gothic fiction","gothic & horror","political","political fiction","werewolves","werewolves in fiction",
                 "demons","classic fiction","classic literature","classic","classical literature","classics","urban fantasy","18th century","19th century",
                 "frontier and pioneer life"],
@@ -981,7 +981,7 @@
         {
             "name":"Rumchata",
             "type":"Spirits",
-            "genres":["mystery fiction","mystery", "romance", "lesbian love story","lesbian romance novel", "man-woman relationships","love","love stories","love & romance","romance fiction","romance literature", "gay love", "lgbt romance","humorous","humor",
+            "genres":["mystery fiction","mystery", "romance", "lesbian love story","lesbian romance novel", "man-woman relationships","man-woman relations","love","love stories","love & romance","romance fiction","romance literature", "gay love", "lgbt romance","humorous","humor",
                 "humorous fiction","comedy","contemporary fiction","contemporary"],
             "sentiment":0.6,
             "ingredients":["TBA"],
@@ -999,7 +999,7 @@
         {
             "name": "Gin",
             "type": "Spirits",
-            "genres": ["england","classics","classic fiction","classic literature","classic","classical literature","20th century","historical fiction","history",
+            "genres": ["england","england in fiction","classics","classic fiction","classic literature","classic","classical literature","20th century","historical fiction","history",
                 "historical","action & adventure","adventure","adventure fiction","adventure stories","adventure and adventurers","travel","espionage","spy stories",
                 "spies","thriller","thrillers","suspense & thriller","suspense","suspense fiction","17th century"],
             "sentiment":-0.5,
@@ -1009,9 +1009,9 @@
         {
             "name": "White Rum",
             "type": "Spirits",
-            "genres": ["caribbean area","pirates","action & adventure","adventure","adventure fiction","adventure stories","adventure and adventurers","romance", "lesbian love story","lesbian romance novel", "man-woman relationships","love",
+            "genres": ["caribbean area","pirates","action & adventure","adventure","adventure fiction","adventure stories","adventure and adventurers","romance", "lesbian love story","lesbian romance novel", "man-woman relationships","man-woman relations","love",
                 "love stories","love & romance","romance fiction","romance literature", "gay love", "lgbt romance","travel","historical fiction","history","historical","quests","quests ",
-                "historical romance","colonial period","18th century","world war i","1910s"],
+                "historical romance","colonial period","18th century","world war i","1910s","sailors","sea stories"],
             "sentiment": 0.7,
             "ingredients":["TBA"],
             "instructions":"TBA"
@@ -1019,7 +1019,7 @@
         {
             "name":"Bacardi",
             "type":"Spirits",
-            "genres":["cuba","caribbean area","action & adventure","adventure","adventure fiction","adventure stories","adventure and adventurers","romance", "lesbian love story","lesbian romance novel", "man-woman relationships","love",
+            "genres":["cuba","caribbean area","action & adventure","adventure","adventure fiction","adventure stories","adventure and adventurers","romance", "lesbian love story","lesbian romance novel", "man-woman relationships","man-woman relations","love",
                 "love stories","love & romance","romance fiction","romance literature", "gay love", "lgbt romance","pirates"],
             "sentiment":0.4,
             "ingredients":["TBA"],
@@ -1028,7 +1028,7 @@
         {
             "name": "Bourbon",
             "type": "Spirits",
-            "genres": ["science fiction","science-fiction","horror","horror fiction","horror stories","horror tales","biographical","biographies","biography","personal narratives","memoir","biography & memoir",
+            "genres": ["science fiction","science-fiction","horror","horror fiction","horror stories","horror tales","biographical","biographies","biography","personal narratives","memoir","personal memoirs","biography & memoir",
                 "biography & autobiography","kentucky","united states","usa","political fiction","political","vampires","vampire novels"],
             "sentiment":0.7,
             "ingredients":["TBA"],
@@ -1038,7 +1038,7 @@
             "name": "Absinthe",
             "type": "Spirits",
             "genres": ["france","historical fiction","history","historical","horror","horror fiction","horror stories","horror tales","mystery fiction","mystery",
-                "thriller","thrillers","suspense & thriller","suspense","suspense fiction","biographical","biographies","biography","personal narratives","memoir","biography & memoir","biography & autobiography",
+                "thriller","thrillers","suspense & thriller","suspense","suspense fiction","biographical","biographies","biography","personal narratives","memoir","personal memoirs","biography & memoir","biography & autobiography",
                 "supernatural","paranormal","paranormal fiction","demons","psychological","psychology","psychological fiction","occult & supernatural",
                 "occult fiction","occult","occultism","19th century"],
             "sentiment":-0.5,
@@ -1048,7 +1048,7 @@
         {
             "name": "Curaçao",
             "type": "Spirits",
-            "genres":["caribbean area","travel","science fiction","science-fiction", "mystery fiction","mystery","romance", "lesbian love story","lesbian romance novel", "man-woman relationships","love","love stories","romance fiction",
+            "genres":["caribbean area","travel","science fiction","science-fiction", "mystery fiction","mystery","romance", "lesbian love story","lesbian romance novel", "man-woman relationships","man-woman relations","love","love stories","romance fiction",
                 "love & romance","romance literature", "gay love", "lgbt romance","action & adventure","adventure","adventure fiction","adventure stories","adventure and adventurers"],
             "sentiment":0.7,
             "ingredients":["TBA"],
@@ -1059,7 +1059,7 @@
             "type": "Spirits",
             "genres": ["adventure","adventure fiction","adventure stories","adventure and adventurers","classics","classic fiction","classic literature","classic",
                 "classical literature","19th century","espionage","spy stories","spies","historical fiction","history","historical","mystery fiction","mystery",
-                "thriller","thrillers","suspense & thriller","suspense","suspense fiction","romance", "lesbian love story","lesbian romance novel", "man-woman relationships","love","love stories","love & romance",
+                "thriller","thrillers","suspense & thriller","suspense","suspense fiction","romance", "lesbian love story","lesbian romance novel", "man-woman relationships","man-woman relations","love","love stories","love & romance",
                 "romance fiction","romance literature", "gay love", "lgbt romance","historical romance","17th century","world war ii","20th century","18th century",
                 "world war i","1910s","1940s"],
             "sentiment":0.6,
