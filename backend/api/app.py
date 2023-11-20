@@ -375,6 +375,12 @@ class Book:
             return '1920s'
         elif 1940>year>=1930:
             return '1930s'
+        elif 1950>year>=1940:
+            return '1940s'
+        elif 1960>year>=1950:
+            return '1950s'
+        elif 1970>year>=1960:
+            return '1960s'
         else:
             return ''
     def get_century_tag(self,year):
