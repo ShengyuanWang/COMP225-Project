@@ -17,7 +17,7 @@ with open("output.json") as file:
 GENRES = jsonData
 
 # drink for when there are no matches 
-BUD_LIGHT = {"name":"Bud Light", "ingredients": ["Can of bud light"], "instructions": "Just pop open the can."}
+BUD_LIGHT = {"name":"Bud Light", "ingredients": ["Can of bud light"], "instructions": "Just pop open the can.", "allergens":["gluten"]}
 
 app = Flask(__name__)
 CORS(app)
