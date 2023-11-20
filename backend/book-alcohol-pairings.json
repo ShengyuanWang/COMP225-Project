@@ -837,8 +837,8 @@
             "genres": ["action & adventure", "thriller","thrillers","suspense & thriller","suspense","suspense fiction","biographical","biographies","biography",
                 "biography & autobiography"],
             "sentiment":-0.3,
-            "ingredients":["TBA"],
-            "instructions":"TBA"
+            "ingredients":[""],
+            "instructions":"Serve IPA cool, but not ice-cold. Aim for a moderate, controlled pour. Pouring too aggressively can result in excessive foam, and a healthy head is desired to enhance the beer's aroma."
 
         },
         {
@@ -848,8 +848,8 @@
                 "fantastic fiction","fantasy in fiction","historical fiction","history","historical","mystery fiction","mystery", "thriller","thrillers",
                 "suspense & thriller","suspense","suspense fiction","drama","drama "],
             "sentiment": 0.6,
-            "ingredients":["TBA"],
-            "instructions":"TBA"
+            "ingredients":[""],
+            "instructions":"Serve slightly chilled in a pint glass using the double pour process. For the first pour, fill the glass three-quarters full. Let the beer settle before topping it off with the second pour, which completes the filling of the glass and allows the creamy head to form."
         },
         {
             "name":"Lager",
@@ -858,8 +858,8 @@
                 "adventure stories","adventure and adventurers","humorous","humor","humorous fiction","comedy","mystery fiction","mystery","coming of age",
                 "contemporary fiction","contemporary"],
             "sentiment":0.5,
-            "ingredients":["TBA"],
-            "instructions":"TBA"
+            "ingredients":["Lemon or lime garnish (optional)"],
+            "instructions":"Lager is best served cold. Aim for a moderate and controlled pour to minimize excessive foaming, resulting in a nice, frothy head. Add lemon or lime garnish if desired."
         },
         {
             "name":"Porter",
@@ -867,8 +867,8 @@
             "genres":["historical fiction","history","historical","mystery fiction","mystery","fantasy fiction","fantasy","fantasy genre","fantastic fiction",
                 "fantasy in fiction","19th century"],
             "sentiment":0.4,
-            "ingredients":["TBA"],
-            "instructions":"TBA"
+            "ingredients":[""],
+            "instructions":"Porter is best served at a slightly warmer temperature. When pouring, aim for a moderate and controlled pour to achieve a good balance between beer and head."
         },
         {
             "name":"Ale",
@@ -877,16 +877,16 @@
                 "mystery","action & adventure","adventure","adventure fiction","adventure stories","adventure and adventurers","epic","epic fantasy","high fantasy",
                 "quests","quests "],
             "sentiment":0.5,
-            "ingredients":["TBA"],
-            "instructions":"TBA"
+            "ingredients":[""],
+            "instructions":"Depending on what style of ale you are drinking, desired temperature can vary. In general, it is served at a slightly warmer temperature, and should be poured in a controlled manner."
         },
         {
             "name":"Soju",
             "type":"Spirits",
             "genres":["contemporary","coming of age","contemporary fiction","romantic comedy","travel","historical fiction","history","historical","korea"],
             "sentiment":0.4,
-            "ingredients":["TBA"],
-            "instructions":"TBA"
+            "ingredients":[""],
+            "instructions":"Soju is a traditional Korean distilled spirit with a mild flavor. It is best enjoyed straight out of the refrigerator and poured as a shot. There are several flavors of soju (typically fruit flavors) that can be served either the same way or in a cocktail."
         },
         {
             "name":"Green Chartreuse",
@@ -896,8 +896,8 @@
                 "thrillers","suspense & thriller","suspense","suspense fiction","witches","witches fiction","witchcraft","magic","magic in fiction","magicians",
                 "magician","occult & supernatural","occult fiction","occult","occultism"],
             "sentiment":0.4,
-            "ingredients":["TBA"],
-            "instructions":"TBA"
+            "ingredients":[""],
+            "instructions":"Green Chartreuse is a herbal liqueur that is typically served chilled in a small liqueur glass. Its intense flavors are usually enjoyed after a meal."
         },
         {
             "name":"Vodka",
@@ -905,8 +905,8 @@
             "genres":["travel","historical fiction","historical","history","biographical","biographies","biography & autobiography","biography","russia","ukraine",
                 "poland","contemporary fiction","contemporary","mystery fiction","mystery"],
             "sentiment":-0.2,
-            "ingredients":["TBA"],
-            "instructions":"TBA"
+            "ingredients":["Lemon wedge (optional)"],
+            "instructions":"Vodka is often served in a shot glass. Enjoy taking a shot with a chaser or a lemon wedge."
         },
         {
             "name":"Baileys",
@@ -914,8 +914,8 @@
             "genres":["romance","love","love stories","love & romance","romance fiction","romance literature","mystery fiction","mystery","ireland","friendship",
                 "friendship in fiction","female friendship","contemporary fiction","contemporary"],
             "sentiment":0.75,
-            "ingredients":["TBA"],
-            "instructions":"TBA"
+            "ingredients":[""],
+            "instructions":"Baileys is a creamy liqueur often served chilled, and is popularly enjoyed in coffee. It also pairs well with dessert, such as ice cream and cheesecake."
         },
         {
             "name":"Poitín",
@@ -923,8 +923,8 @@
             "genres":["ireland","historical fiction","history","historical","thriller","thrillers","suspense & thriller","suspense","suspense fiction","crime",
                 "crime fiction"],
             "sentiment":0.5,
-            "ingredients":["TBA"],
-            "instructions":"TBA"
+            "ingredients":[""],
+            "instructions":"Poitín is best consumed at room temperature. Some people prefer it chilled or add a small amount of water."
 
         },
         {
@@ -933,8 +933,8 @@
             "genres": ["caribbean area","jamaica","pirates","action & adventure", "mystery fiction","mystery", "thriller","thrillers","suspense & thriller","suspense",
                 "suspense fiction","werewolves","werewolves in fiction","demons","quests","quests "],
             "sentiment":0.6,
-            "ingredients":["TBA"],
-            "instructions":"TBA"
+            "ingredients":[""],
+            "instructions":"Dark rum is can be enjoyed at room temperature, over ice, or added to hot beverages during colder months."
 
         },
         {
