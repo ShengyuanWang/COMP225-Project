@@ -32,7 +32,7 @@ const onClick  = () => {
     console.log(api)
     console.log('finish')
     console.log(res)
-    router.push({path:'match', query: {name:res.data.name, url:'https://i.ibb.co/989gpGR/drink1.png', stars:'5', description:res.data.information}})
+    router.push({path:'match', query: {name:res.data.name, url:'https://i.ibb.co/989gpGR/drink1.png', stars:'5', description:res.data.instructions}})
   }).catch((err)=>{
     console.log(err)
   })
