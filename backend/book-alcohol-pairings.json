@@ -954,8 +954,8 @@
             "genres":["romance", "man-woman relationships","love","love stories","love & romance","romance fiction","romance literature", "gay love", "lgbt romance","mystery fiction","mystery","humorous","humor",
                 "humorous fiction","comedy","travel","contemporary fiction","contemporary"],
             "sentiment":0.7,
-            "ingredients":["TBA"],
-            "instructions":"TBA"
+            "ingredients":[""],
+            "instructions":"Witbier is a Belgian-style wheat beer best served chilled, but not too cold. Aim for a controlled pour to create a moderate and froty head by pouring down the side of the glass initially then straightening the glass as you pour."
         },
         {
             "name": "Whiskey",
@@ -966,26 +966,26 @@
                 "demons","classic fiction","classic literature","classic","classical literature","classics","urban fantasy","18th century","19th century",
                 "frontier and pioneer life"],
             "sentiment": 0.6,
-            "ingredients":["TBA"],
-            "instructions":"TBA"
+            "ingredients":[""],
+            "instructions":"Whiskey is usually served on the rocks (over ice) in a snifter or tulip glass."
         },
         {
             "name":"Malt Liquor",
-            "type":"Spirits",
+            "type":"Beer",
             "genres":["crime","crime fiction","mystery fiction","mystery","thriller","thrillers","suspense & thriller","suspense","suspense fiction",
                 "mysteries & detective stories","mystery and detective stories","detective and mystery stories","mystery & detective","coming of age"],
             "sentiment":-0.5,
-            "ingredients":["TBA"],
-            "instructions":"TBA"
+            "ingredients":[""],
+            "instructions":"Malt liquor is sometimes enjoyed straight from the container, but can also be poured into a pint glass or beer mug to appreciate its color, carbonation, and aroma."
         },
         {
-            "name":"Rumchata",
+            "name":"RumChata",
             "type":"Spirits",
             "genres":["mystery fiction","mystery", "romance", "man-woman relationships","love","love stories","love & romance","romance fiction","romance literature", "gay love", "lgbt romance","humorous","humor",
                 "humorous fiction","comedy","contemporary fiction","contemporary"],
             "sentiment":0.6,
-            "ingredients":["TBA"],
-            "instructions":"TBA"
+            "ingredients":[""],
+            "instructions":"RumChata is a cream liqueuer known for its blend of Carribean rum and horchata, a traditional Mexican drink made from rice, vanilla, and cinnamon. It can be enjoyed straight from the refigerator or poured over ice."
         },
         {
             "name": "Tequila",
@@ -993,8 +993,10 @@
             "genres": ["mexico","crime","crime fiction","action & adventure","adventure","adventure fiction","adventure stories","adventure and adventurers","travel",
                 "thriller","thrillers","suspense & thriller","suspense","suspense fiction"],
             "sentiment":0.3,
-            "ingredients":["TBA"],
-            "instructions":"TBA"
+            "ingredients":["Citrus wedge (optional)",
+            "Salt (optional)"
+            ],
+            "instructions":"Tequila is usually enjoyed by licking salt, taking the shot, then biting into a wedge of lime or lemon."
         },
         {
             "name": "Gin",
@@ -1013,8 +1015,8 @@
                 "love stories","love & romance","romance fiction","romance literature", "gay love", "lgbt romance","travel","historical fiction","history","historical","quests","quests ",
                 "historical romance","colonial period","18th century","world war i","1910s"],
             "sentiment": 0.7,
-            "ingredients":["TBA"],
-            "instructions":"TBA"
+            "ingredients":[""],
+            "instructions":"White rum is a popular spirit often served in a variety of cocktails and is rarely enjoyed by itself."
         },
         {
             "name":"Bacardi",
@@ -1022,8 +1024,8 @@
             "genres":["cuba","caribbean area","action & adventure","adventure","adventure fiction","adventure stories","adventure and adventurers","romance", "man-woman relationships","love",
                 "love stories","love & romance","romance fiction","romance literature", "gay love", "lgbt romance","pirates"],
             "sentiment":0.4,
-            "ingredients":["TBA"],
-            "instructions":"TBA"
+            "ingredients":[""],
+            "instructions":"Bacardi is a brand of rum that is typically enjoyed with mixers. Although it can be taken as a shot, it is commonly served with coke."
         },
         {
             "name": "Bourbon",
@@ -1031,8 +1033,8 @@
             "genres": ["science fiction","science-fiction","horror","horror fiction","horror stories","horror tales","biographical","biographies","biography","personal narratives","memoir","biography & memoir",
                 "biography & autobiography","kentucky","united states","usa","political fiction","political","vampires","vampire novels"],
             "sentiment":0.7,
-            "ingredients":["TBA"],
-            "instructions":"TBA"
+            "ingredients":[""],
+            "instructions":"Bourbon is an American whiskey that is best enjoyed on the rocks (over ice)."
         },
         {
             "name": "Absinthe",
@@ -1042,8 +1044,11 @@
                 "supernatural","paranormal","paranormal fiction","demons","psychological","psychology","psychological fiction","occult & supernatural",
                 "occult fiction","occult","occultism","19th century"],
             "sentiment":-0.5,
-            "ingredients":["TBA"],
-            "instructions":"TBA"
+            "ingredients":["Sugar cube",
+            "Cold water",
+            "Fountain or carafe (for dripping water)"
+            ],
+            "instructions":"There is a unique process to enjoying absinthe that involves sugar and cold water. Pour 1 to 1.5 ounces of absinthe into an absinthe glass. Rest the absinthe spoon across the rim of the glass, with a sugar cube placed on top of it. Slowly drip cold water onto the sugar cube in a thin stream to gradually dissolve the sugar and mix with the absinthe. Enjoy!"
         },
         {
             "name": "Curaçao",
@@ -1051,8 +1056,8 @@
             "genres":["caribbean area","travel","science fiction","science-fiction", "mystery fiction","mystery","romance", "man-woman relationships","love","love stories","romance fiction",
                 "love & romance","romance literature", "gay love", "lgbt romance","action & adventure","adventure","adventure fiction","adventure stories","adventure and adventurers"],
             "sentiment":0.7,
-            "ingredients":["TBA"],
-            "instructions":"TBA"
+            "ingredients":[""],
+            "instructions":"Curaçao is a citrus-flavored liqueur used in a wide range of cocktails, but can be enjoyed in shots and shooters or with a citrus slice."
         },
         {
             "name": "Brandy",
@@ -1063,8 +1068,8 @@
                 "romance fiction","romance literature", "gay love", "lgbt romance","historical romance","17th century","world war ii","20th century","18th century",
                 "world war i","1910s","1940s"],
             "sentiment":0.6,
-            "ingredients":["TBA"],
-            "instructions":"TBA"
+            "ingredients":[""],
+            "instructions":"Brandy is a distilled wine served in a snifter or tulip glass, sometimes on the rocks (over ice)."
         },
         {
             "name": "Hard Cider",
@@ -1073,8 +1078,8 @@
                 "contemporary fiction","contemporary","action & adventure","adventure and adventurers","adventure stories","adventure","adventure fiction",
                 "colonial period","18th century","historical fiction","historical","history"],
             "sentiment":0.7,
-            "ingredients":["TBA"],
-            "instructions":"Pour yourself a glass!"
+            "ingredients":[""],
+            "instructions":"Hard cider is commonly served chilled straight from the bottle or can."
         }
     ]
 }
