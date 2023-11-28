@@ -1057,7 +1057,8 @@
                 "interplanetary voyages","space travel"],
             "sentiment":0.4,
             "ingredients":[""],
-            "instructions":"Green Chartreuse is a herbal liqueur that is typically served chilled in a small liqueur glass. Its intense flavors are usually enjoyed after a meal."
+            "instructions":"Green Chartreuse is a herbal liqueur that is typically served chilled in a small liqueur glass. Its intense flavors are usually enjoyed after a meal.",
+            "allergens": []
         },
         {
             "name":"Vodka",
