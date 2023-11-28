@@ -73,6 +73,12 @@ def test_get_matching_drinks():
     assert type(drink_1["ingredients"]) is list
     assert type(drink_1["instructions"])is str
     assert book_invalid.get_matching_drinks() == []
+    
+    # testing allergy feature
+    book_no_allergy = Book("On Great Fields", ["gluten"]) 
+    book_allergy = Book("On Great Fields") 
+    assert book_no_allergy.get_pairing()["name"] == "Soju"
+    assert book_allergy.get_pairing()["name"] == "Porter"
 
 def test_get_top_drink_matches():
     drink1_heap = book_valid.get_matching_drinks()

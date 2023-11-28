@@ -30,7 +30,7 @@ def get_book():
 
     if request.method == "POST":
         user_input = escape(request.form.get("book"))
-        book = Book(user_input)
+        book = Book(user_input, ["gluten"])
         return render_template("home.html", user_input=book.get_user_input(), title=book.get_title(),
                                 isbn_list=book.get_isbn_list(), isbn=book.get_isbn(),
                                 authors=book.get_authors(), publisher=book.get_publisher(),
@@ -82,9 +82,8 @@ def get_alcohol(types):
     return json.dumps(drinks_filtered)
 
 
-
 class Book:
-    def __init__ (self, user_input, alcohol_data_file="book-alcohol-pairings.json", api_key=API_KEY, official_genres=GENRES, no_match_drink=BUD_LIGHT):
+    def __init__ (self, user_input, user_allergies=[], alcohol_data_file="book-alcohol-pairings.json", api_key=API_KEY, official_genres=GENRES, no_match_drink=BUD_LIGHT):
         """ This class represents a book. Once an object of this class is initiated, that object can be
         used to query book data and get pairings for the book.
         
@@ -96,6 +95,8 @@ class Book:
         no_match_drink -- string of drink to use if no pairing found (default "Bud Light")
         """
         self.user_input = user_input
+        self.user_allergies = user_allergies
+
         self.alcohol_data_file = alcohol_data_file
         self.api_key = api_key
         self.official_genres = official_genres
@@ -120,7 +121,18 @@ class Book:
         pairing["name"] = pairing_dict["name"]
         pairing["ingredients"] = pairing_dict["ingredients"]
         pairing["instructions"] = pairing_dict["instructions"]
+        # pairing["pairing_rerolls"] = self.get_rerolls_as_dict(pairings[1:])
         return json.dumps(pairing)
+
+    # def get_rerolls_as_dict(self, drinks):
+    #     reroll_list = []
+    #     for drink in drinks:
+    #         drink_dict = {}
+    #         drink_dict["name"] = drink["name"]
+    #         drink_dict["ingredients"] = drink["ingredients"]
+    #         drink_dict["instructions"] = drink["instructions"]
+    #         reroll_list.append(drink_dict)
+    #     return reroll_list
 
     def get_pairing(self):
         """ Return pairing for book. Takes matching drink and 
@@ -133,9 +145,11 @@ class Book:
         
         if len(top_drink_matches) > 0:
             pairing = min(top_drink_matches, key=lambda drink_match: abs(drink_match["sentiment"] - sentiment))
+            # return sorted(top_drink_matches, key=lambda drink_match: abs(drink_match["sentiment"] - sentiment))
             return pairing
         else:
             return self.get_no_match_drink()
+            # return [self.get_no_match_drink()] * 4 
        
     def get_matching_drinks(self):
         """ Return priority queue of drinks that match book based on data in json file. 
@@ -155,18 +169,21 @@ class Book:
 
         if book_genres is not None and len(book_genres) > 0:
             for drink in drinks["alcohols"]:
-                shared_genre_count = 0
-                unshared_genre_count = 0
-                for drink_genre in drink["genres"]:
-                    if drink_genre in book_genres:
-                        shared_genre_count += 1
-                    else:
-                        unshared_genre_count += .1
-                if shared_genre_count > 0:
-                    genre_count = round(shared_genre_count - (unshared_genre_count), 2)
-                    heapq.heappush(matched_drinks, DrinkWrapper(drink, genre_count))
+                print(drink)
+                if not any(allergen in drink["allergens"] for allergen in self.user_allergies):
+                    shared_genre_count = 0
+                    unshared_genre_count = 0
+                    for drink_genre in drink["genres"]:
+                        if drink_genre in book_genres:
+                            shared_genre_count += 1
+                        else:
+                            unshared_genre_count += .1
+                    if shared_genre_count > 0:
+                        genre_count = round(shared_genre_count - (unshared_genre_count), 2)
+                        heapq.heappush(matched_drinks, DrinkWrapper(drink, genre_count))
         heapq.heapify(matched_drinks)
         return matched_drinks
+
     
     def get_top_drink_matches(self, drink_heap, range=.2):
         """ Takes the max heap of the drink and returns the drink data dicts that share the 
