@@ -345,7 +345,9 @@ class Book:
         print('OG list')
         print(list_of_genres)
         for genre_x in list_of_genres:
-            if '1939-1945' in genre_x:
+            if 'early works to 1800' in genre_x:
+                updated_date_genres.append(genre_x)
+            elif '1939-1945' in genre_x:
                 #'world war ii'/'20th century' for '1939-1945'
                 updated_date_genres.append('world war ii')
                 updated_date_genres.append('20th century')
@@ -364,14 +366,14 @@ class Book:
                 elif txt and txt[0].isdigit():
                     start_year = int(txt[0])   
                     updated_date_genres.append(self.get_century_tag(start_year))
-                    #updated_date_genres.append(self.get_decade_tag(start_year))
+                    updated_date_genres.append(self.get_decade_tag(start_year))
                     if txt and txt[1].isdigit():
                         #only add a second century tag and/or decade tag if the end date is in a different century than the start date
                         end_year = int(txt[1])
                         if (self.get_century_tag(start_year)) != (self.get_century_tag(end_year)):
                             updated_date_genres.append(self.get_century_tag(end_year))
-                        if (self.get_decade_tag(start_year)) != (self.get_decade_tag(end_year)):
-                            updated_date_genres.append(self.get_decade_tag_range(start_year,end_year))
+                        #f (self.get_decade_tag(start_year)) != (self.get_decade_tag(end_year)):
+                            #updated_date_genres.append(self.get_decade_tag(end_year))
                         
             elif('1'in genre_x and not '-' in genre_x  and not ('=' in genre_x)):
                 #For single years (rather than date ranges)
