@@ -13,10 +13,10 @@ const menuColor = ref('#C3BCB3') // handle the color for the menu
 
 // array for drink preference | default : false
 const preference  = ref({
-  beer: false,
-  wine: false,
-  spirits: false,
-  cocktails: false
+  beer: true,
+  wine: true,
+  spirits: true,
+  cocktails: true
 })
 
 // array for allergy preference | default : false
@@ -72,7 +72,6 @@ const clickMatch = () => {
   console.log('Click Match')
   router.push({ path: 'search'})
 }
-
 
 
 </script>
