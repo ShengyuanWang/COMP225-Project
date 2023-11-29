@@ -47,6 +47,7 @@ const onClick  = () => {
           placeholder="Please input the name of the book"
           class="input-with-select"
           size="large"
+          @keyup.enter="onClick"
       >
         <template #prepend>
           <el-select v-model="value" :data="data" size="large" style="width:120px;">
