@@ -17,7 +17,7 @@ with open("output.json") as file:
 GENRES = jsonData
 
 # drink for when there are no matches 
-BUD_LIGHT = {"name":"Bud Light", "ingredients": ["Can of bud light"], "instructions": "Just pop open the can.", "allergens":["gluten"]}
+BUD_LIGHT = {"name":"Bud Light", "type":"beer", "ingredients": ["Can of bud light"], "instructions": "Just pop open the can.", "allergens":["gluten"]}
 
 app = Flask(__name__)
 CORS(app)
@@ -30,7 +30,7 @@ def get_book():
 
     if request.method == "POST":
         user_input = escape(request.form.get("book"))
-        book = Book(user_input, ["gluten"])
+        book = Book(user_input, [], ["beer", "wine", "spirits", "cocktails"])
         return render_template("home.html", user_input=book.get_user_input(), title=book.get_title(),
                                 isbn_list=book.get_isbn_list(), isbn=book.get_isbn(),
                                 authors=book.get_authors(), publisher=book.get_publisher(),
@@ -83,7 +83,7 @@ def get_alcohol(types):
 
 
 class Book:
-    def __init__ (self, user_input, user_allergies=[], alcohol_data_file="book-alcohol-pairings.json", api_key=API_KEY, official_genres=GENRES, no_match_drink=BUD_LIGHT):
+    def __init__ (self, user_input, user_allergies=[], user_types=["beer", "wine", "spirits", "cocktails"], alcohol_data_file="book-alcohol-pairings.json", api_key=API_KEY, official_genres=GENRES, no_match_drink=BUD_LIGHT):
         """ This class represents a book. Once an object of this class is initiated, that object can be
         used to query book data and get pairings for the book.
         
@@ -96,6 +96,7 @@ class Book:
         """
         self.user_input = user_input
         self.user_allergies = user_allergies
+        self.user_types = user_types
 
         self.alcohol_data_file = alcohol_data_file
         self.api_key = api_key
@@ -119,20 +120,10 @@ class Book:
         pairing["cover_link"] = self.get_cover_link()
         pairing_dict = self.get_pairing()
         pairing["name"] = pairing_dict["name"]
+        pairing["type"] = pairing_dict["type"]
         pairing["ingredients"] = pairing_dict["ingredients"]
         pairing["instructions"] = pairing_dict["instructions"]
-        # pairing["pairing_rerolls"] = self.get_rerolls_as_dict(pairings[1:])
         return json.dumps(pairing)
-
-    # def get_rerolls_as_dict(self, drinks):
-    #     reroll_list = []
-    #     for drink in drinks:
-    #         drink_dict = {}
-    #         drink_dict["name"] = drink["name"]
-    #         drink_dict["ingredients"] = drink["ingredients"]
-    #         drink_dict["instructions"] = drink["instructions"]
-    #         reroll_list.append(drink_dict)
-    #     return reroll_list
 
     def get_pairing(self):
         """ Return pairing for book. Takes matching drink and 
@@ -145,11 +136,9 @@ class Book:
         
         if len(top_drink_matches) > 0:
             pairing = min(top_drink_matches, key=lambda drink_match: abs(drink_match["sentiment"] - sentiment))
-            # return sorted(top_drink_matches, key=lambda drink_match: abs(drink_match["sentiment"] - sentiment))
             return pairing
         else:
             return self.get_no_match_drink()
-            # return [self.get_no_match_drink()] * 4 
        
     def get_matching_drinks(self):
         """ Return priority queue of drinks that match book based on data in json file. 
@@ -169,18 +158,18 @@ class Book:
 
         if book_genres is not None and len(book_genres) > 0:
             for drink in drinks["alcohols"]:
-                print(drink)
-                if not any(allergen in drink["allergens"] for allergen in self.user_allergies):
-                    shared_genre_count = 0
-                    unshared_genre_count = 0
-                    for drink_genre in drink["genres"]:
-                        if drink_genre in book_genres:
-                            shared_genre_count += 1
-                        else:
-                            unshared_genre_count += .1
-                    if shared_genre_count > 0:
-                        genre_count = round(shared_genre_count - (unshared_genre_count), 2)
-                        heapq.heappush(matched_drinks, DrinkWrapper(drink, genre_count))
+                if drink["type"].lower() in self.user_types:
+                    if not any(allergen in drink["allergens"] for allergen in self.user_allergies):
+                        shared_genre_count = 0
+                        unshared_genre_count = 0
+                        for drink_genre in drink["genres"]:
+                            if drink_genre in book_genres:
+                                shared_genre_count += 1
+                            else:
+                                unshared_genre_count += .1
+                        if shared_genre_count > 0:
+                            genre_count = round(shared_genre_count - (unshared_genre_count), 2)
+                            heapq.heappush(matched_drinks, DrinkWrapper(drink, genre_count))
         heapq.heapify(matched_drinks)
         return matched_drinks
 

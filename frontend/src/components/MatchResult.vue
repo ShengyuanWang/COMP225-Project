@@ -46,11 +46,11 @@ const clickChange = () => {
 </div>
   <div class="detail">
     <div class="name"><h1>{{ props.name }}</h1></div>
-    <div class="rate">
-      <h2>Match Rating</h2>
-      <el-icon size="2vw" v-for="(item, index) in parseInt(props.rating)"><StarFilled /></el-icon>
-      <el-icon size="2vw" color="white" v-for="(item , index) in 5-parseInt(props.rating)"><StarFilled /></el-icon>
-    </div>
+<!--    <div class="rate">-->
+<!--      <h2>Match Rating</h2>-->
+<!--      <el-icon size="2vw" v-for="(item, index) in parseInt(props.rating)"><StarFilled /></el-icon>-->
+<!--      <el-icon size="2vw" color="white" v-for="(item , index) in 5-parseInt(props.rating)"><StarFilled /></el-icon>-->
+<!--    </div>-->
     <div class="description">
       <p>{{description}}</p>
     </div>
