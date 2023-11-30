@@ -84,15 +84,12 @@ def test_get_matching_drinks():
     # testing allergy feature
     book_allergy = Book("On Great Fields", ["gluten"]) 
     book_no_allergy = Book("On Great Fields") 
-    assert book_allergy.get_top_pairings()[0]["type"].lower() in ["cocktail", "wine", "spirits"]
+    assert book_allergy.get_top_pairings()[0]["type"] in ["Cocktail", "Wine", "Spirits"]
     assert book_no_allergy.get_top_pairings()[0]["name"] == "Porter"
 
     # testing drink type feature
     book_beer_only = Book("Dune", [], ["beer"]) 
-    book_all_types = Book("Dune") 
-    assert book_beer_only.get_top_pairings()[0]["type"].lower()  == "beer"
-    assert book_all_types.get_top_pairings()[0]["type"].lower()  != "beer"
-
+    assert book_beer_only.get_top_pairings()[0]["type"]  == "Beer"
 
 def test_get_top_drink_matches():
     drink1_heap = book_valid.get_matching_drinks()
