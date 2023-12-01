@@ -28,9 +28,10 @@ def collect_genre_frequency():
                 genre_freq[element] = genre_freq[element] +1
             else:
                 genre_freq[element] = 1
+    sorted_genre_freq = sorted(genre_freq.items(), key=lambda x: x[1], reverse=True)
 
     with open('genre_freq.json', 'w') as output_file:
-        json.dump(genre_freq, output_file, indent=4)
+        json.dump(sorted_genre_freq, output_file, indent=4)
         #for key, value in genre_freq.items():
      #   print("% d : % d" % (key, value))
  
