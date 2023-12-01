@@ -86,7 +86,7 @@ def get_alcohol(types):
 
 
 class Book:
-    def __init__ (self, user_input, user_allergies=[], user_types=["Beer", "Wine", "Spirits", "Cocktail"], alcohol_data_file="book-alcohol-pairings.json", api_key=API_KEY, official_genres=GENRES, no_match_drink=BUD_LIGHT):
+    def __init__ (self, user_input, user_allergies=[], user_types=["Beer", "Wine", "Spirits", "Cocktail"], alcohol_data_file="book-alcohol-pairings.json", synonyms_data_file="synonyms_lookup.json", api_key=API_KEY, official_genres=GENRES, no_match_drink=BUD_LIGHT):
         """ This class represents a book. Once an object of this class is initiated, that object can be
         used to query book data and get pairings for the book.
         
@@ -101,7 +101,12 @@ class Book:
         self.user_allergies = user_allergies
         self.user_types = user_types
 
-        self.alcohol_data_file = alcohol_data_file
+        with open(synonyms_data_file, "r") as f:
+            self.synonyms = json.load(f)
+        
+        with open(alcohol_data_file, "r") as f:
+            self.alcohol = json.load(f)
+
         self.api_key = api_key
         self.official_genres = official_genres
         self.no_match_drink = no_match_drink
@@ -155,20 +160,18 @@ class Book:
         is implmented with python's heapq module and is a max-heap.
         """
         book_genres = self.get_filtered_genres()
-        with open(self.alcohol_data_file, "r") as f:
-            drinks = json.load(f)
         matched_drinks = []
         heapq.heapify(matched_drinks)
 
         if book_genres is not None and len(book_genres) > 0:
-            for drink in drinks["alcohols"]:
+            for drink in self.alcohol["alcohols"]:
                 if drink["type"] in self.user_types:
                     if not any(allergen in drink["allergens"] for allergen in self.user_allergies):
                         shared_genre_count = 0
                         unshared_genre_count = 0
                         for genre in book_genres:
-                            if genre in drink["key genres"]:
-                                shared_genre_count += 1.5
+                            if genre in drink["key genres"] :
+                                shared_genre_count += 2
                             elif genre in drink["genres"]:
                                 shared_genre_count += 1
                             else:
@@ -190,7 +193,6 @@ class Book:
             if drink_obj.priority >= top_priority - range:
                 top_matches.append(drink_obj.get_drink_data())
 
-        # if len(top_matches) >= number_of_matches:
         heap_list = self.drink_heap_to_ordered_list(drink_heap)
         if len(heap_list) >=  number_of_matches:
             top_matches = [drink_obj.get_drink_data() for drink_obj in heap_list[:number_of_matches]]
@@ -448,10 +450,18 @@ class Book:
         """
         filtered_genres = []
         for genre in self.genres:
-            if genre in self.official_genres:
-                    filtered_genres.append(genre)
+            sub_genre = self.subsitute_genre(genre)
+            if sub_genre in self.official_genres:
+                    filtered_genres.append(sub_genre)
         return filtered_genres
 
+    def subsitute_genre(self, genre):
+        if genre in self.synonyms.keys():
+            sub = self.synonyms.get(genre)
+            print(f"sub: {genre} -> {sub}")
+            return sub
+        return genre
+             
     def get_title(self):
         """ Using book data dictonary, return title found for the book, 
         or an empty string if no title was found.

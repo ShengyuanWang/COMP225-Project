@@ -33,7 +33,7 @@ onMounted(()=>{
     <Qinput place="40"></Qinput>
   </div>
   <div class="loading" v-show="!showResult">
-    <h1>Loading Result ....</h1>
+    <h1 style="padding-left: 20vw; padding-top: 20vh; font-size: 40px">Loading Result ....</h1>
   </div>
   <div class="match_result" v-show="showResult">
     <MatchResult url="https://i.ibb.co/989gpGR/drink1.png" :name=name :rating=stars :description=description></MatchResult>
@@ -66,5 +66,7 @@ onMounted(()=>{
   padding-left: 2vw;
   padding-top: 1vh;
   margin-left: 11vw;
+  text-align: center;
+
 }
 </style>
