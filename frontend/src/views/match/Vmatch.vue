@@ -3,7 +3,8 @@
 import Qinput from "@/components/Qinput.vue";
 import MatchResult from "@/components/MatchResult.vue";
 import { useRoute } from 'vue-router'
-import { ref } from 'vue'
+import {onBeforeMount, onMounted, ref} from 'vue'
+
 const route = useRoute()
 
 // get the variables from route url
@@ -12,11 +13,19 @@ const name = route.query.name;
 const description = route.query.description;
 const showResult = ref(false)
 const show = () => {
-  setTimeout(()=> {
-    showResult.value = true;
-  }, 2000)
+  showResult.value = true
+
 }
-show()
+
+onMounted(()=>{
+  setTimeout(() => {
+    show()
+  }, 2000);
+  console.log('mounted');
+})
+
+
+
 </script>
 
 <template>
@@ -24,7 +33,7 @@ show()
     <Qinput place="40"></Qinput>
   </div>
   <div class="loading" v-show="!showResult">
-    <h1>Loading...Please Wait</h1>
+    <h1 style="padding-left: 20vw; padding-top: 20vh; font-size: 40px">Loading Result ....</h1>
   </div>
   <div class="match_result" v-show="showResult">
     <MatchResult url="https://i.ibb.co/989gpGR/drink1.png" :name=name :rating=stars :description=description></MatchResult>
@@ -57,5 +66,7 @@ show()
   padding-left: 2vw;
   padding-top: 1vh;
   margin-left: 11vw;
+  text-align: center;
+
 }
 </style>
