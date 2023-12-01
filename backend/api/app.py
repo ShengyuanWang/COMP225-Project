@@ -15,6 +15,9 @@ API_KEY = "AIzaSyAHHByDAWIAvXhTNkajTqazMhBUO045aS0"
 with open("output.json") as file:
     jsonData = json.load(file)
 GENRES = jsonData
+with open("key-genre-list.json") as file:
+    keyJsonData = json.load(file)
+KEY_GENRES = keyJsonData
 
 # drink for when there are no matches 
 BUD_LIGHT = {"name":"Bud Light", "type":"Beer", "ingredients": ["Can of bud light"], "instructions": "Just pop open the can.", "allergens":["gluten"]}
