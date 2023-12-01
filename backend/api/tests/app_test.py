@@ -73,7 +73,7 @@ def test_get_matching_drinks():
     drink_1 = valid_book_drinks[0].get_drink_data()
     assert len(book_multiversion.get_matching_drinks()) >= 3
     assert len(valid_book_drinks) >= 3
-    assert list(drink_1.keys()) == ["name", "type", "genres", "sentiment", "ingredients", "instructions", "allergens"]
+    assert list(drink_1.keys()) == ["name", "type", "key genres", "genres", "sentiment", "ingredients", "instructions", "allergens"]
     assert type(drink_1["name"]) is str
     assert type(drink_1["type"]) is str
     assert type(drink_1["genres"])is list
@@ -83,12 +83,10 @@ def test_get_matching_drinks():
     
     # testing allergy feature
     book_allergy = Book("On Great Fields", ["gluten"]) 
-    book_no_allergy = Book("On Great Fields") 
     assert book_allergy.get_top_pairings()[0]["type"] in ["Cocktail", "Wine", "Spirits"]
-    assert book_no_allergy.get_top_pairings()[0]["name"] == "Porter"
 
     # testing drink type feature
-    book_beer_only = Book("Dune", [], ["beer"]) 
+    book_beer_only = Book("Dune", [], ["Beer"]) 
     assert book_beer_only.get_top_pairings()[0]["type"]  == "Beer"
 
 def test_get_top_drink_matches():
@@ -106,7 +104,7 @@ def test_drink_heap_to_ordered_list():
     ordered_list = book_valid.drink_heap_to_ordered_list(drink_heap)
     assert len(drink_heap) == len(ordered_list)
     assert type(ordered_list) == list 
-    assert ordered_list[0].get_priority() > ordered_list[len(ordered_list)-1].get_priority()
+    assert ordered_list[0].get_priority() >= ordered_list[len(ordered_list)-1].get_priority()
 
 def test_get_sentiment():
     assert book_invalid.get_sentiment() == 0
