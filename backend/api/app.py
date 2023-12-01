@@ -17,7 +17,7 @@ with open("output.json") as file:
 GENRES = jsonData
 
 # drink for when there are no matches 
-BUD_LIGHT = {"name":"Bud Light", "type":"beer", "ingredients": ["Can of bud light"], "instructions": "Just pop open the can.", "allergens":["gluten"]}
+BUD_LIGHT = {"name":"Bud Light", "type":"Beer", "ingredients": ["Can of bud light"], "instructions": "Just pop open the can.", "allergens":["gluten"]}
 
 app = Flask(__name__)
 CORS(app)
@@ -30,7 +30,7 @@ def get_book():
 
     if request.method == "POST":
         user_input = escape(request.form.get("book"))
-        book = Book(user_input, [], ["beer", "wine", "spirits", "cocktails"])
+        book = Book(user_input)
         return render_template("home.html", user_input=book.get_user_input(), title=book.get_title(),
                                 isbn_list=book.get_isbn_list(), isbn=book.get_isbn(),
                                 authors=book.get_authors(), publisher=book.get_publisher(),
@@ -83,7 +83,7 @@ def get_alcohol(types):
 
 
 class Book:
-    def __init__ (self, user_input, user_allergies=[], user_types=["beer", "wine", "spirits", "cocktails"], alcohol_data_file="book-alcohol-pairings.json", api_key=API_KEY, official_genres=GENRES, no_match_drink=BUD_LIGHT):
+    def __init__ (self, user_input, user_allergies=[], user_types=["Beer", "Wine", "Spirits", "Cocktail"], alcohol_data_file="book-alcohol-pairings.json", api_key=API_KEY, official_genres=GENRES, no_match_drink=BUD_LIGHT):
         """ This class represents a book. Once an object of this class is initiated, that object can be
         used to query book data and get pairings for the book.
         
@@ -159,12 +159,14 @@ class Book:
 
         if book_genres is not None and len(book_genres) > 0:
             for drink in drinks["alcohols"]:
-                if drink["type"].lower() in self.user_types:
+                if drink["type"] in self.user_types:
                     if not any(allergen in drink["allergens"] for allergen in self.user_allergies):
                         shared_genre_count = 0
                         unshared_genre_count = 0
-                        for drink_genre in drink["genres"]:
-                            if drink_genre in book_genres:
+                        for genre in book_genres:
+                            if genre in drink["key genres"]:
+                                shared_genre_count += 1.5
+                            elif genre in drink["genres"]:
                                 shared_genre_count += 1
                             else:
                                 unshared_genre_count += .1
@@ -185,12 +187,12 @@ class Book:
             if drink_obj.priority >= top_priority - range:
                 top_matches.append(drink_obj.get_drink_data())
 
-        if len(top_matches) < number_of_matches:
-            heap_list = self.drink_heap_to_ordered_list(drink_heap)
-            if len(heap_list) >=  number_of_matches:
-                top_matches = [drink_obj.get_drink_data() for drink_obj in heap_list[:number_of_matches]]
-            else:
-                top_matches = [drink_obj.get_drink_data() for drink_obj in heap_list[:len(heap_list)]]
+        # if len(top_matches) >= number_of_matches:
+        heap_list = self.drink_heap_to_ordered_list(drink_heap)
+        if len(heap_list) >=  number_of_matches:
+            top_matches = [drink_obj.get_drink_data() for drink_obj in heap_list[:number_of_matches]]
+        else:
+            top_matches = [drink_obj.get_drink_data() for drink_obj in heap_list[:len(heap_list)]]
 
         return sorted(top_matches, key=lambda drink_match: abs(drink_match["sentiment"] - sentiment))
        
@@ -333,8 +335,8 @@ class Book:
         """takes in the list of genres and turns all of the date genres into century genres. Works for single dates and date ranges. 
         Returns the updated list of genres"""
         updated_date_genres = []
-        print('OG list')
-        print(list_of_genres)
+        # print('OG list')
+        # print(list_of_genres)
         for genre_x in list_of_genres:
             if 'early works to 1800' in genre_x:
                 updated_date_genres.append(genre_x)
