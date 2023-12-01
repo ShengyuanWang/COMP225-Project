@@ -37,9 +37,9 @@ def get_book():
                                 date=book.get_publication_date(), genres=book.get_genres(),
                                 filtered_genres=book.get_filtered_genres(), description=book.get_description(),
                                 cover_link=book.get_cover_link(), pairing_json_obj=book.get_pairing_json_obj(), 
-                                top_matches=[drink["name"] for drink in book.get_top_drink_matches(book.get_matching_drinks())],
+                                top_matches=[drink["name"] for drink in book.get_top_drink_matches(book.get_matching_drinks(),book.get_sentiment())],
                                 all_matches=book.drink_heap_to_ordered_list(book.get_matching_drinks()), 
-                                pairing=book.get_pairing(),  sentiment=book.get_sentiment())
+                                pairing=book.get_top_pairings()[0],  sentiment=book.get_sentiment())
     return render_template("home.html")
 
 @app.route('/test/<bookname>', methods=["GET"])
@@ -118,27 +118,28 @@ class Book:
         pairing["authors"] = self.get_authors()
         pairing["genres"] = self.get_filtered_genres()
         pairing["cover_link"] = self.get_cover_link()
-        pairing_dict = self.get_pairing()
+        top_pairings = self.get_top_pairings()
+        pairing_dict = top_pairings[0]
         pairing["name"] = pairing_dict["name"]
         pairing["type"] = pairing_dict["type"]
         pairing["ingredients"] = pairing_dict["ingredients"]
         pairing["instructions"] = pairing_dict["instructions"]
+        pairing["rerolls"] = top_pairings[:len(top_pairings)]
         return json.dumps(pairing)
 
-    def get_pairing(self):
+    def get_top_pairings(self):
         """ Return pairing for book. Takes matching drink and 
          returns drink with sentiment score most similar to book. 
         If no matching drinks, returns the drink specfied as the no-match drink.
         """
         all_drinks = self.get_matching_drinks()
-        top_drink_matches = self.get_top_drink_matches(all_drinks)
         sentiment = self.get_sentiment()
+        top_pairings = self.get_top_drink_matches(all_drinks, sentiment)
         
-        if len(top_drink_matches) > 0:
-            pairing = min(top_drink_matches, key=lambda drink_match: abs(drink_match["sentiment"] - sentiment))
-            return pairing
+        if len(top_pairings) > 0:
+            return top_pairings
         else:
-            return self.get_no_match_drink()
+            return [self.get_no_match_drink()] * 4         
        
     def get_matching_drinks(self):
         """ Return priority queue of drinks that match book based on data in json file. 
@@ -174,9 +175,9 @@ class Book:
         return matched_drinks
 
     
-    def get_top_drink_matches(self, drink_heap, range=.2):
+    def get_top_drink_matches(self, drink_heap, sentiment, range=.2, number_of_matches=4):
         """ Takes the max heap of the drink and returns the drink data dicts that share the 
-        highest priority.
+        highest priority sorted by how much they alisgn .
         """
         top_priority = heapq.nlargest(1, drink_heap)[0].get_priority() if drink_heap else None
         top_matches = []
@@ -184,14 +185,15 @@ class Book:
             if drink_obj.priority >= top_priority - range:
                 top_matches.append(drink_obj.get_drink_data())
 
-        if len(top_matches) < 3:
+        if len(top_matches) < number_of_matches:
             heap_list = self.drink_heap_to_ordered_list(drink_heap)
-            if len(heap_list) >=  3:
-                top_matches = [drink_obj.get_drink_data() for drink_obj in heap_list[:3]]
+            if len(heap_list) >=  number_of_matches:
+                top_matches = [drink_obj.get_drink_data() for drink_obj in heap_list[:number_of_matches]]
             else:
                 top_matches = [drink_obj.get_drink_data() for drink_obj in heap_list[:len(heap_list)]]
+
+        return sorted(top_matches, key=lambda drink_match: abs(drink_match["sentiment"] - sentiment))
        
-        return top_matches
 
     def drink_heap_to_ordered_list(self, drink_heap):
         """ Turns a heap into an ordered list, where the first element in the list 

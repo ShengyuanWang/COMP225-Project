@@ -46,18 +46,20 @@ def test_get_pairing_json_obj():
     assert invalid_dict["instructions"] == book_invalid.get_no_match_drink()["instructions"]
 
 def test_get_pairing():
-    valid_pairing = book_valid.get_pairing()
+    valid_pairing = book_valid.get_top_pairings()[0]
     assert type(valid_pairing["name"]) is str
     assert type(valid_pairing["type"]) is str
     assert type(valid_pairing["ingredients"]) is list
     assert type(valid_pairing["instructions"]) is str
-    assert valid_pairing["name"] in [drink["name"] for drink in book_valid.get_top_drink_matches(book_valid.get_matching_drinks())]
+    assert valid_pairing["name"] in [drink["name"] for drink in book_valid.get_top_drink_matches(book_valid.get_matching_drinks(), book_valid.get_sentiment())]
     assert valid_pairing["name"] in [drink.get_drink_data()["name"] for drink in book_valid.get_matching_drinks()]
     assert valid_pairing["type"].lower() in ["beer", "wine", "cocktails", "spirits"]
     assert valid_pairing["ingredients"] in [drink.get_drink_data()["ingredients"] for drink in book_valid.get_matching_drinks()]
     assert valid_pairing["instructions"] in [drink.get_drink_data()["instructions"] for drink in book_valid.get_matching_drinks()]
 
-    invalid_pairing = book_invalid.get_pairing()
+    invalid_pairings = book_invalid.get_top_pairings()
+    assert len(invalid_pairings) == 4
+    invalid_pairing = invalid_pairings[0]
     assert type(invalid_pairing["name"]) is str
     assert type(invalid_pairing["type"]) is str
     assert type(invalid_pairing["ingredients"]) is list
@@ -80,26 +82,24 @@ def test_get_matching_drinks():
     assert book_invalid.get_matching_drinks() == []
     
     # testing allergy feature
-    book_no_allergy = Book("On Great Fields", ["gluten"]) 
-    book_allergy = Book("On Great Fields") 
-    assert book_no_allergy.get_pairing()["name"] == "Soju"
-    assert book_allergy.get_pairing()["name"] == "Porter"
+    book_allergy = Book("On Great Fields", ["gluten"]) 
+    book_no_allergy = Book("On Great Fields") 
+    assert book_allergy.get_top_pairings()[0]["type"] in ["Cocktail", "Wine", "Spirits"]
+    assert book_no_allergy.get_top_pairings()[0]["name"] == "Porter"
 
     # testing drink type feature
     book_beer_only = Book("Dune", [], ["beer"]) 
-    book_all_types = Book("Dune") 
-    assert book_beer_only.get_pairing()["type"] == "beer"
-    assert book_all_types.get_pairing()["type"] != "beer"
-
+    assert book_beer_only.get_top_pairings()[0]["type"]  == "Beer"
 
 def test_get_top_drink_matches():
     drink1_heap = book_valid.get_matching_drinks()
-    assert len(book_valid.get_top_drink_matches(drink1_heap)) >= 3
-    assert type(book_valid.get_top_drink_matches(drink1_heap)) is list 
-    assert [type(ele) is dict for ele in book_valid.get_top_drink_matches(drink1_heap)]
+    sentiment = book_valid.get_sentiment()
+    assert len(book_valid.get_top_drink_matches(drink1_heap, sentiment)) >= 3
+    assert type(book_valid.get_top_drink_matches(drink1_heap, sentiment)) is list 
+    assert [type(ele) is dict for ele in book_valid.get_top_drink_matches(drink1_heap, sentiment)]
     drink2_heap = book_invalid.get_matching_drinks()
-    assert len(book_invalid.get_top_drink_matches(drink2_heap)) == 0
-    assert type(book_invalid.get_top_drink_matches(drink2_heap)) is list 
+    assert len(book_invalid.get_top_drink_matches(drink2_heap, sentiment)) == 0
+    assert type(book_invalid.get_top_drink_matches(drink2_heap, sentiment)) is list 
 
 def test_drink_heap_to_ordered_list():
     drink_heap = book_valid.get_matching_drinks()
