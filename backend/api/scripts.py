@@ -79,3 +79,7 @@ def collect_genres():
     
     with open('output.json', 'w') as output_file:
         json.dump(newList, output_file, indent=4)
+
+collect_genres()
+collect_key_genres()
+collect_genre_frequency()
