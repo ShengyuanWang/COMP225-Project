@@ -40,16 +40,6 @@ def collect_genre_frequency():
 
     with open('genre_freq.json', 'w') as output_file:
         json.dump(sorted_genre_freq, output_file, indent=4)
-        #for key, value in genre_freq.items():
-     #   print("% d : % d" % (key, value))
- 
-# Driver function
-#if __name__ == "__main__":
-    #my_list = [1, 1, 1, 5, 5, 3, 1, 3, 3, 1, 4, 4, 4, 2, 2, 2, 2]
-    #for x in data["alcohols"]:
-      #  genre_freq+=x["genres"]
-     #   print(x)
-    #newList =list(set(genre_list))   
 
 def collect_key_genres():
     """" Extracts key genres and makes json with all of them"""
