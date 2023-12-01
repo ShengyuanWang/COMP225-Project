@@ -15,11 +15,8 @@ API_KEY = "AIzaSyAHHByDAWIAvXhTNkajTqazMhBUO045aS0"
 with open("output.json") as file:
     jsonData = json.load(file)
 GENRES = jsonData
-with open("key-genre-list.json") as file:
-    keyJsonData = json.load(file)
-KEY_GENRES = keyJsonData
-with open("key-genre-list.json") as file:
-    keyJsonData = json.load(file)
+
+
 
 
 # drink for when there are no matches 
