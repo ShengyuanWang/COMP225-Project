@@ -458,7 +458,6 @@ class Book:
     def subsitute_genre(self, genre):
         if genre in self.synonyms.keys():
             sub = self.synonyms.get(genre)
-            print(f"sub: {genre} -> {sub}")
             return sub
         return genre
              
