@@ -12,7 +12,7 @@ API_KEY = "AIzaSyAHHByDAWIAvXhTNkajTqazMhBUO045aS0"
 
  # update this when new genres added to alcohol json
 
-with open("output.json") as file:
+with open("all_genres.json") as file:
     jsonData = json.load(file)
 GENRES = jsonData
 

@@ -1,42 +1,42 @@
 [
     [
-        "mystery fiction",
-        59
-    ],
-    [
         "mystery",
         59
     ],
     [
-        "historical fiction",
-        39
-    ],
-    [
-        "history",
-        39
+        "mystery fiction",
+        59
     ],
     [
         "lgbtq history",
-        39
+        38
     ],
     [
-        "history and criticism",
-        39
+        "historical fiction",
+        38
     ],
     [
-        "historical",
-        39
+        "lgbt romance",
+        38
     ],
     [
-        "love & romance",
-        39
+        "lesbian love story",
+        38
+    ],
+    [
+        "man-woman relations",
+        38
+    ],
+    [
+        "action & adventure",
+        38
     ],
     [
         "romance",
         38
     ],
     [
-        "lesbian love story",
+        "gay love",
         38
     ],
     [
@@ -48,87 +48,15 @@
         38
     ],
     [
-        "man-woman relations",
-        38
-    ],
-    [
-        "love",
-        38
-    ],
-    [
-        "love stories",
-        38
-    ],
-    [
-        "romance fiction",
-        38
-    ],
-    [
-        "romance literature",
-        38
-    ],
-    [
-        "gay love",
-        38
-    ],
-    [
-        "lgbt romance",
-        38
-    ],
-    [
-        "adventure",
-        35
-    ],
-    [
-        "adventure stories",
-        35
-    ],
-    [
-        "adventure and adventurers",
-        35
-    ],
-    [
-        "adventure and adventurers in fiction",
-        35
-    ],
-    [
-        "adventure fiction",
-        35
-    ],
-    [
         "voyages and travels",
-        34
-    ],
-    [
-        "suspense",
-        33
-    ],
-    [
-        "suspense fiction",
         33
     ],
     [
         "thriller",
-        32
+        33
     ],
     [
-        "thrillers",
-        32
-    ],
-    [
-        "suspense & thriller",
-        32
-    ],
-    [
-        "action & adventure",
-        30
-    ],
-    [
-        "action and adventure fiction",
-        30
-    ],
-    [
-        "travel",
+        "travels",
         30
     ],
     [
@@ -136,35 +64,15 @@
         30
     ],
     [
-        "travels",
+        "travel",
         30
-    ],
-    [
-        "contemporary fiction",
-        26
-    ],
-    [
-        "contemporary",
-        26
     ],
     [
         "humorous",
         23
     ],
     [
-        "humor",
-        23
-    ],
-    [
-        "comedy",
-        23
-    ],
-    [
-        "humorous stories",
-        23
-    ],
-    [
-        "humorous fiction",
+        "contemporary fiction",
         23
     ],
     [
@@ -172,27 +80,11 @@
         22
     ],
     [
-        "mystery and detective stories",
+        "biography & memoir",
         21
     ],
     [
-        "personal narratives",
-        21
-    ],
-    [
-        "memoir",
-        21
-    ],
-    [
-        "personal memoirs",
-        21
-    ],
-    [
-        "detective and mystery stories",
-        20
-    ],
-    [
-        "mystery & detective",
+        "20th century",
         20
     ],
     [
@@ -200,47 +92,15 @@
         20
     ],
     [
-        "biographical",
-        20
-    ],
-    [
-        "biographies",
-        20
-    ],
-    [
-        "autobiographical fiction",
-        20
-    ],
-    [
-        "biography & autobiography",
-        20
-    ],
-    [
-        "biography",
-        20
-    ],
-    [
         "lgbtq biography and memoir",
         20
-    ],
-    [
-        "biography & memoir",
-        20
-    ],
-    [
-        "20th century",
-        20
-    ],
-    [
-        "science fiction",
-        19
     ],
     [
         "science fiction & fantasy",
         19
     ],
     [
-        "science-fiction",
+        "science fiction",
         19
     ],
     [
@@ -248,43 +108,11 @@
         18
     ],
     [
-        "fantasy in fiction",
-        18
-    ],
-    [
-        "fantasy",
-        18
-    ],
-    [
-        "fantastic fiction",
-        18
-    ],
-    [
-        "fantasy genre",
-        18
-    ],
-    [
-        "classic fiction",
-        15
-    ],
-    [
-        "classic literature",
-        15
-    ],
-    [
-        "classic",
-        15
-    ],
-    [
-        "classical literature",
-        15
+        "noir",
+        16
     ],
     [
         "classics",
-        15
-    ],
-    [
-        "fiction classics",
         15
     ],
     [
@@ -292,43 +120,23 @@
         14
     ],
     [
-        "horror fiction",
-        14
-    ],
-    [
-        "horror stories",
-        14
-    ],
-    [
-        "horror tales",
-        14
-    ],
-    [
         "france",
         13
     ],
     [
-        "france in fiction",
-        13
+        "nineteen forties",
+        11
     ],
     [
-        "adult romance",
-        12
+        "1940s",
+        11
     ],
     [
         "vampires",
         11
     ],
     [
-        "vampire novels",
-        11
-    ],
-    [
-        "vampires in fiction",
-        11
-    ],
-    [
-        "vampire literature",
+        "adult romance",
         11
     ],
     [
@@ -336,35 +144,19 @@
         11
     ],
     [
-        "supernatural",
+        "paranormal",
         11
-    ],
-    [
-        "dystopian fiction",
-        10
-    ],
-    [
-        "dystopias",
-        10
     ],
     [
         "dystopian",
         10
     ],
     [
-        "1940s",
-        10
-    ],
-    [
-        "nineteen forties",
+        "nineteen sixties",
         10
     ],
     [
         "1960s",
-        10
-    ],
-    [
-        "nineteen sixties",
         10
     ],
     [
@@ -376,7 +168,7 @@
         9
     ],
     [
-        "female friendship in fiction",
+        "hard-boiled",
         9
     ],
     [
@@ -384,11 +176,7 @@
         9
     ],
     [
-        "interstellar travel",
-        9
-    ],
-    [
-        "interplanetary voyages",
+        "female friendship in fiction",
         9
     ],
     [
@@ -404,10 +192,6 @@
         9
     ],
     [
-        "steampunk fiction",
-        9
-    ],
-    [
         "18th century",
         9
     ],
@@ -417,10 +201,6 @@
     ],
     [
         "hard science fiction",
-        8
-    ],
-    [
-        "friendship in fiction",
         8
     ],
     [
@@ -440,10 +220,6 @@
         8
     ],
     [
-        "drama ",
-        8
-    ],
-    [
         "drama",
         8
     ],
@@ -452,39 +228,7 @@
         8
     ],
     [
-        "erotic stories",
-        8
-    ],
-    [
-        "erotic passion",
-        8
-    ],
-    [
-        "erotic fiction",
-        8
-    ],
-    [
-        "paranormal fiction",
-        8
-    ],
-    [
-        "paranormal",
-        8
-    ],
-    [
         "psychological",
-        7
-    ],
-    [
-        "psychology",
-        7
-    ],
-    [
-        "psychological fiction",
-        7
-    ],
-    [
-        "united states",
         7
     ],
     [
@@ -492,15 +236,11 @@
         7
     ],
     [
+        "united states",
+        7
+    ],
+    [
         "caribbean area",
-        7
-    ],
-    [
-        "quests",
-        7
-    ],
-    [
-        "voyage",
         7
     ],
     [
@@ -512,7 +252,7 @@
         7
     ],
     [
-        "epic",
+        "epic fantasy",
         7
     ],
     [
@@ -524,11 +264,11 @@
         7
     ],
     [
-        "epic fantasy",
+        "epic",
         7
     ],
     [
-        "gothic fiction",
+        "gothic & horror",
         7
     ],
     [
@@ -540,12 +280,16 @@
         7
     ],
     [
-        "gothic & horror",
+        "drama ",
         7
     ],
     [
         "dramatic works by one author",
         7
+    ],
+    [
+        "nineteen fifties",
+        6
     ],
     [
         "1910s",
@@ -556,39 +300,11 @@
         6
     ],
     [
-        "nineteen fifties",
-        6
-    ],
-    [
         "espionage",
         6
     ],
     [
-        "spy stories",
-        6
-    ],
-    [
-        "spies",
-        6
-    ],
-    [
         "high fantasy",
-        6
-    ],
-    [
-        "occult & supernatural",
-        6
-    ],
-    [
-        "occult",
-        6
-    ],
-    [
-        "occult fiction",
-        6
-    ],
-    [
-        "occultism",
         6
     ],
     [
@@ -600,11 +316,19 @@
         5
     ],
     [
+        "urban",
+        5
+    ],
+    [
         "1930s",
         5
     ],
     [
         "nineteen thirties",
+        5
+    ],
+    [
+        "world war ii",
         5
     ],
     [
@@ -616,15 +340,7 @@
         5
     ],
     [
-        "cuba in fiction",
-        5
-    ],
-    [
         "italy",
-        5
-    ],
-    [
-        "italy in fiction",
         5
     ],
     [
@@ -632,15 +348,19 @@
         5
     ],
     [
-        "spain in fiction",
-        5
-    ],
-    [
         "domestic fiction",
         5
     ],
     [
+        "magicians",
+        5
+    ],
+    [
         "sagas",
+        5
+    ],
+    [
+        "occult fiction",
         5
     ],
     [
@@ -649,10 +369,6 @@
     ],
     [
         "ireland",
-        5
-    ],
-    [
-        "ireland in fiction",
         5
     ],
     [
@@ -668,20 +384,8 @@
         5
     ],
     [
-        "magical realism",
-        5
-    ],
-    [
         "17th century",
         5
-    ],
-    [
-        "mexico",
-        4
-    ],
-    [
-        "mexico in fiction",
-        4
     ],
     [
         "satire",
@@ -692,7 +396,7 @@
         4
     ],
     [
-        "world war ii",
+        "mexico",
         4
     ],
     [
@@ -700,7 +404,7 @@
         4
     ],
     [
-        "extraterrestrial beings",
+        "zombies in fiction",
         4
     ],
     [
@@ -708,23 +412,7 @@
         4
     ],
     [
-        "zombies in fiction",
-        4
-    ],
-    [
-        "witchcraft",
-        4
-    ],
-    [
-        "witches fiction",
-        4
-    ],
-    [
-        "witches",
-        4
-    ],
-    [
-        "magic in fiction",
+        "urban fantasy",
         4
     ],
     [
@@ -732,11 +420,7 @@
         4
     ],
     [
-        "world war i",
-        4
-    ],
-    [
-        "england in fiction",
+        "witches",
         4
     ],
     [
@@ -744,7 +428,15 @@
         4
     ],
     [
+        "world war i",
+        4
+    ],
+    [
         "great britain",
+        4
+    ],
+    [
+        "ghosts",
         4
     ],
     [
@@ -752,19 +444,7 @@
         4
     ],
     [
-        "crime novel",
-        4
-    ],
-    [
-        "crime",
-        4
-    ],
-    [
         "criminals in fiction",
-        4
-    ],
-    [
-        "criminals",
         4
     ],
     [
@@ -772,15 +452,11 @@
         4
     ],
     [
-        "pirates in fiction",
+        "magical realism",
         4
     ],
     [
         "first loves",
-        4
-    ],
-    [
-        "first loves in fiction",
         4
     ],
     [
@@ -804,11 +480,7 @@
         3
     ],
     [
-        "urban fantasy",
-        3
-    ],
-    [
-        "wizards fiction",
+        "middle ages",
         3
     ],
     [
@@ -816,55 +488,11 @@
         3
     ],
     [
-        "wizardry",
-        3
-    ],
-    [
-        "magicians",
-        3
-    ],
-    [
-        "magician",
-        3
-    ],
-    [
-        "magicians in fiction",
-        3
-    ],
-    [
-        "middle ages",
-        3
-    ],
-    [
-        "middle ages in fiction",
-        3
-    ],
-    [
-        "werewolves",
-        3
-    ],
-    [
         "werewolves in fiction",
         3
     ],
     [
-        "ghost",
-        3
-    ],
-    [
-        "ghost stories",
-        3
-    ],
-    [
-        "horror and ghost stories",
-        3
-    ],
-    [
-        "ghosts",
-        3
-    ],
-    [
-        "ghost fiction",
+        "werewolves",
         3
     ],
     [
@@ -880,19 +508,15 @@
         3
     ],
     [
+        "great depression",
+        2
+    ],
+    [
         "n.y.",
         2
     ],
     [
-        "urban",
-        2
-    ],
-    [
         "puerto rico",
-        2
-    ],
-    [
-        "puerto rico in fiction",
         2
     ],
     [
@@ -905,10 +529,6 @@
     ],
     [
         "comic science fiction",
-        2
-    ],
-    [
-        "classical & medieval",
         2
     ],
     [
@@ -928,23 +548,11 @@
         2
     ],
     [
-        "vikings in fiction",
-        2
-    ],
-    [
         "northern europe in fiction",
         2
     ],
     [
         "soviet union",
-        2
-    ],
-    [
-        "soviet union in fiction",
-        2
-    ],
-    [
-        "soviet union. in fiction",
         2
     ],
     [
@@ -968,6 +576,14 @@
         1
     ],
     [
+        "occult",
+        1
+    ],
+    [
+        "chile in fiction",
+        1
+    ],
+    [
         "peru",
         1
     ],
@@ -977,10 +593,6 @@
     ],
     [
         "chile",
-        1
-    ],
-    [
-        "chile in fiction",
         1
     ],
     [
@@ -996,23 +608,15 @@
         1
     ],
     [
-        "australia in fiction",
-        1
-    ],
-    [
         "argentina",
         1
     ],
     [
-        "argentina in fiction",
+        "norse mythology",
         1
     ],
     [
         "epic poetry",
-        1
-    ],
-    [
-        "norse mythology",
         1
     ],
     [
@@ -1028,27 +632,7 @@
         1
     ],
     [
-        "korea in fiction",
-        1
-    ],
-    [
-        "korean fiction",
-        1
-    ],
-    [
-        "russia",
-        1
-    ],
-    [
-        "russia in fiction",
-        1
-    ],
-    [
-        "russia ",
-        1
-    ],
-    [
-        "ukraine",
+        "poland",
         1
     ],
     [
@@ -1056,7 +640,11 @@
         1
     ],
     [
-        "poland",
+        "ukraine",
+        1
+    ],
+    [
+        "russia",
         1
     ],
     [
@@ -1064,11 +652,11 @@
         1
     ],
     [
-        "jamaica",
+        "jamaica in fiction",
         1
     ],
     [
-        "jamaica in fiction",
+        "jamaica",
         1
     ],
     [

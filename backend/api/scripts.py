@@ -1,7 +1,7 @@
 import json
 
 def collect_all_genres():
-    """" Extracts genres and makes json with all of them"""
+    """" Extracts genres from key_genres and genres and makes json with all of them"""
 
     with open('book-alcohol-pairings.json') as input_file:
         data = json.load(input_file)
@@ -11,11 +11,14 @@ def collect_all_genres():
         genre_list+= x["genres"] + x["key genres"]
     newList = list(set(genre_list))
     
-    with open('output.json', 'w') as output_file:
+    with open('all_genres.json', 'w') as output_file:
         json.dump(newList, output_file, indent=4)
 
-def transform_json(input_file):
-    with open(input_file, 'r') as f:
+def update_synonyms_lookup():
+    """ Using the synonyms.json file, updates the synonyms_lookup.json file that 
+    app.py uses since it is more efficent
+    """
+    with open("synonyms.json", 'r') as f:
         original_json = json.load(f)
 
     transformed_data = {value: key for key, values in original_json.items() for value in values}
@@ -23,8 +26,9 @@ def transform_json(input_file):
     with open("synonyms_lookup.json", 'w') as f:
         json.dump(transformed_data, f, indent=2)
 
-def clean_up_synonyms(input_file):
-    with open(input_file, 'r') as f:
+def clean_up_synonyms_in_json():
+    """ Using the synonyms.json file, removes synonyms from the json. Updates both alcohol json files. """
+    with open('book-alcohol-pairings.json', 'r') as f:
         input_data = json.load(f)
     
     with open("synonyms.json", 'r') as f:
@@ -70,7 +74,10 @@ def clean_up_synonyms(input_file):
 
     formatted_json = '\n'.join(fixed_lines)
 
-    with open('book-alcohol-pairingsv2.json', 'w') as json_file:
+    with open('book-alcohol-pairings.json', 'w') as json_file:
+        json_file.write(formatted_json)
+    
+    with open('../book-alcohol-pairings.json', 'w') as json_file:
         json_file.write(formatted_json)
 
 def collect_genre_frequency():
@@ -90,16 +97,6 @@ def collect_genre_frequency():
 
     with open('genre_freq.json', 'w') as output_file:
         json.dump(sorted_genre_freq, output_file, indent=4)
-        #for key, value in genre_freq.items():
-     #   print("% d : % d" % (key, value))
- 
-# Driver function
-#if __name__ == "__main__":
-    #my_list = [1, 1, 1, 5, 5, 3, 1, 3, 3, 1, 4, 4, 4, 2, 2, 2, 2]
-    #for x in data["alcohols"]:
-      #  genre_freq+=x["genres"]
-     #   print(x)
-    #newList =list(set(genre_list))   
 
 def collect_key_genres():
     """" Extracts key genres and makes json with all of them"""
@@ -116,7 +113,7 @@ def collect_key_genres():
     with open('key_genres.json', 'w') as output_file:
         json.dump(newList, output_file, indent=4)
 
-def collect_genres():
+def c():
     """" Extracts genres and makes json with all of them"""
 
     with open('book-alcohol-pairings.json') as input_file:
@@ -127,7 +124,13 @@ def collect_genres():
         genre_list+= x["genres"]
     newList = list(set(genre_list))
     
-    with open('output.json', 'w') as output_file:
+    with open('genres.json', 'w') as output_file:
         json.dump(newList, output_file, indent=4)
 
+# runs all util functions to make sure everything is up to date
 collect_all_genres()
+collect_key_genres()
+collect_key_genres()
+collect_genre_frequency()
+update_synonyms_lookup()
+clean_up_synonyms_in_json()

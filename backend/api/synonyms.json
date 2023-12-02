@@ -8,7 +8,8 @@
     "paranormal": ["paranormal fiction","supernatural"],
     "occult": ["occult & supernatural","occult fiction","occultism"],
     "ghosts": ["ghost","ghost stories","horror and ghost stories","ghost fiction"],
-    "wizards": ["wizardry","wizards fiction"],
+    "wizards": ["wizardry","wizards fiction", "wizard"],
+    "magicians": ["magician", "magicians in fiction"],
     "magic": ["magic in fiction"],
     "space travel": ["interstellar travel","interplanetary voyages"],
     "soviet union": ["soviet union in fiction","soviet union. in fiction"],
@@ -45,5 +46,8 @@
     "mystery fiction": ["mystery"],
     "mysteries & detective stories": ["mystery and detective stories", "detective and mystery stories", "mystery & detective"],
     "horror": ["horror fiction", "horror stories", "horror tales", "horror and ghost stories"],
-    "contemporary fiction": ["contemporary"]
+    "contemporary fiction": ["contemporary"],
+    "occult fiction": ["occult"],
+    "crime fiction": ["crime", "criminals", "crime novel", "crime novels"],
+    "voyages": ["quest", "quests", "voyage"]
 }
