@@ -13,6 +13,9 @@ def collect_all_genres():
     
     with open('all_genres.json', 'w') as output_file:
         json.dump(newList, output_file, indent=4)
+    
+    with open('../all_genres.json', 'w') as output_file:
+        json.dump(newList, output_file, indent=4)
 
 def update_synonyms_lookup():
     """ Using the synonyms.json file, updates the synonyms_lookup.json file that 
@@ -25,6 +28,10 @@ def update_synonyms_lookup():
 
     with open("synonyms_lookup.json", 'w') as f:
         json.dump(transformed_data, f, indent=2)
+    
+    with open("../synonyms_lookup.json", 'w') as f:
+        json.dump(transformed_data, f, indent=2)
+    
 
 def clean_up_synonyms_in_json():
     """ Using the synonyms.json file, removes synonyms from the json. Updates both alcohol json files. """
