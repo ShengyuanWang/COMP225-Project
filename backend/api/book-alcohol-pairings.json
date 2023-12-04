@@ -667,9 +667,9 @@
         {
             "name": "The Zombie", 
             "type": "Cocktail", 
-            "key genres": ["zombies","frankenstein"],
+            "key genres": ["zombies","frankenstein "],
             "genres": ["mystery","1950s","20th century","1960s","pirates","zombies","nineteen sixties",
-				"frankenstein","travel","nineteen fifties","thriller","mystery & detective","paranormal","supernatural thrillers",
+				"frankenstein ","travel","nineteen fifties","thriller","mystery & detective","paranormal","supernatural thrillers",
 				"paranormal fiction suspense & thriller","adventure","horror"],
             "sentiment": 0.5, 
             "ingredients": [
