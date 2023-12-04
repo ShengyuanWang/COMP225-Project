@@ -113,6 +113,8 @@
   "adventure fiction": "adventure",
   "adventure and adventurers in fiction": "adventure",
   "action and adventure fiction": "adventure",
+  "explorers": "adventure",
+  "women explorers": "adventure",
   "comedy": "humorous",
   "humor": "humorous",
   "humorous fiction": "humorous",
@@ -176,5 +178,7 @@
   "western stories": "westerns",
   "cowboys": "westerns",
   "western": "westerns",
-  "west ": "westerns"
+  "west ": "westerns",
+  "demons in fiction": "demons",
+  "paranormal romance stories": "paranormal romance"
 }

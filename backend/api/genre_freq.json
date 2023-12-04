@@ -4,11 +4,11 @@
         59
     ],
     [
-        "historical fiction",
-        38
+        "romance",
+        39
     ],
     [
-        "romance",
+        "historical fiction",
         38
     ],
     [
@@ -24,11 +24,11 @@
         33
     ],
     [
-        "humorous",
+        "contemporary fiction",
         23
     ],
     [
-        "contemporary fiction",
+        "humorous",
         23
     ],
     [
@@ -40,11 +40,11 @@
         21
     ],
     [
-        "mystery & detective",
+        "20th century",
         20
     ],
     [
-        "20th century",
+        "mystery & detective",
         20
     ],
     [
@@ -76,11 +76,15 @@
         12
     ],
     [
-        "nineteen forties",
-        11
+        "paranormal",
+        12
     ],
     [
         "1940s",
+        11
+    ],
+    [
+        "nineteen forties",
         11
     ],
     [
@@ -93,10 +97,6 @@
     ],
     [
         "family life",
-        11
-    ],
-    [
-        "paranormal",
         11
     ],
     [
@@ -132,6 +132,10 @@
         9
     ],
     [
+        "romantic suspense",
+        9
+    ],
+    [
         "historical fantasy",
         9
     ],
@@ -156,11 +160,11 @@
         8
     ],
     [
-        "love in adolescence",
+        "adolescence",
         8
     ],
     [
-        "adolescence",
+        "love in adolescence",
         8
     ],
     [
@@ -200,11 +204,11 @@
         7
     ],
     [
-        "1910s",
+        "nineteen fifties",
         6
     ],
     [
-        "nineteen fifties",
+        "1910s",
         6
     ],
     [
@@ -224,11 +228,11 @@
         5
     ],
     [
-        "unrequited love",
+        "nineteen thirties",
         5
     ],
     [
-        "nineteen thirties",
+        "unrequited love",
         5
     ],
     [
@@ -244,6 +248,10 @@
         5
     ],
     [
+        "demonology",
+        5
+    ],
+    [
         "italy",
         5
     ],
@@ -256,11 +264,11 @@
         5
     ],
     [
-        "sagas",
+        "magicians",
         5
     ],
     [
-        "magicians",
+        "sagas",
         5
     ],
     [
@@ -272,11 +280,11 @@
         5
     ],
     [
-        "paranormal fiction suspense & thriller",
+        "supernatural thrillers",
         5
     ],
     [
-        "supernatural thrillers",
+        "paranormal fiction suspense & thriller",
         5
     ],
     [
@@ -316,7 +324,7 @@
         4
     ],
     [
-        "great britain",
+        "world war i",
         4
     ],
     [
@@ -324,7 +332,7 @@
         4
     ],
     [
-        "world war i",
+        "great britain",
         4
     ],
     [
@@ -332,11 +340,15 @@
         4
     ],
     [
+        "criminals",
+        4
+    ],
+    [
         "crime fiction",
         4
     ],
     [
-        "criminals",
+        "paranormal romance",
         4
     ],
     [
@@ -360,11 +372,11 @@
         4
     ],
     [
-        "nineteen twenties",
+        "1920s",
         3
     ],
     [
-        "1920s",
+        "nineteen twenties",
         3
     ],
     [
@@ -412,10 +424,6 @@
         2
     ],
     [
-        "demonology",
-        2
-    ],
-    [
         "comic science fiction",
         2
     ],
@@ -444,11 +452,11 @@
         2
     ],
     [
-        "sea stories",
+        "sailors",
         2
     ],
     [
-        "sailors",
+        "sea stories",
         2
     ],
     [
@@ -460,11 +468,11 @@
         1
     ],
     [
-        "peru",
+        "chile",
         1
     ],
     [
-        "chile",
+        "peru",
         1
     ],
     [
@@ -500,7 +508,7 @@
         1
     ],
     [
-        "ukraine",
+        "russia",
         1
     ],
     [
@@ -508,7 +516,7 @@
         1
     ],
     [
-        "russia",
+        "ukraine",
         1
     ],
     [
