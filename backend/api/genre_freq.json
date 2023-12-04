@@ -12,7 +12,7 @@
         38
     ],
     [
-        "action & adventure",
+        "adventure",
         38
     ],
     [
@@ -40,11 +40,11 @@
         21
     ],
     [
-        "mystery & detective",
+        "20th century",
         20
     ],
     [
-        "20th century",
+        "mystery & detective",
         20
     ],
     [
@@ -52,7 +52,7 @@
         19
     ],
     [
-        "fantasy fiction",
+        "fantasy",
         18
     ],
     [
@@ -72,11 +72,15 @@
         13
     ],
     [
-        "1940s",
-        11
+        "19th century",
+        12
     ],
     [
         "nineteen forties",
+        11
+    ],
+    [
+        "1940s",
         11
     ],
     [
@@ -116,7 +120,7 @@
         9
     ],
     [
-        "19th century",
+        "urban",
         9
     ],
     [
@@ -188,10 +192,6 @@
         7
     ],
     [
-        "quests ",
-        7
-    ],
-    [
         "epic",
         7
     ],
@@ -200,15 +200,15 @@
         7
     ],
     [
+        "nineteen fifties",
+        6
+    ],
+    [
         "1950s",
         6
     ],
     [
         "1910s",
-        6
-    ],
-    [
-        "nineteen fifties",
         6
     ],
     [
@@ -224,7 +224,7 @@
         5
     ],
     [
-        "urban",
+        "nineteen thirties",
         5
     ],
     [
@@ -232,15 +232,11 @@
         5
     ],
     [
-        "world war ii",
-        5
-    ],
-    [
-        "nineteen thirties",
-        5
-    ],
-    [
         "unrequited love",
+        5
+    ],
+    [
+        "world war ii",
         5
     ],
     [
@@ -252,19 +248,19 @@
         5
     ],
     [
-        "domestic fiction",
-        5
-    ],
-    [
         "spain",
         5
     ],
     [
-        "magicians",
+        "domestic fiction",
         5
     ],
     [
         "sagas",
+        5
+    ],
+    [
+        "magicians",
         5
     ],
     [
@@ -296,10 +292,6 @@
         4
     ],
     [
-        "satirical literature",
-        4
-    ],
-    [
         "satire",
         4
     ],
@@ -316,19 +308,19 @@
         4
     ],
     [
-        "witches",
-        4
-    ],
-    [
         "magic",
         4
     ],
     [
-        "world war i",
+        "witches",
         4
     ],
     [
         "england",
+        4
+    ],
+    [
+        "world war i",
         4
     ],
     [
@@ -364,11 +356,15 @@
         4
     ],
     [
-        "nineteen twenties",
-        3
+        "westerns",
+        4
     ],
     [
         "1920s",
+        3
+    ],
+    [
+        "nineteen twenties",
         3
     ],
     [
@@ -377,6 +373,10 @@
     ],
     [
         "middle ages",
+        3
+    ],
+    [
+        "new england",
         3
     ],
     [
@@ -428,6 +428,10 @@
         2
     ],
     [
+        "friendship in adolescence",
+        2
+    ],
+    [
         "vikings",
         2
     ],
@@ -440,11 +444,11 @@
         2
     ],
     [
-        "sea stories",
+        "sailors",
         2
     ],
     [
-        "sailors",
+        "sea stories",
         2
     ],
     [
@@ -456,19 +460,11 @@
         1
     ],
     [
-        "peru in fiction",
-        1
-    ],
-    [
-        "chile in fiction",
+        "peru",
         1
     ],
     [
         "chile",
-        1
-    ],
-    [
-        "peru",
         1
     ],
     [
@@ -504,11 +500,11 @@
         1
     ],
     [
-        "russia",
+        "ukraine",
         1
     ],
     [
-        "ukraine",
+        "russia",
         1
     ],
     [
@@ -517,10 +513,6 @@
     ],
     [
         "jamaica",
-        1
-    ],
-    [
-        "frontier and pioneer life",
         1
     ],
     [

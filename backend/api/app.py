@@ -115,7 +115,7 @@ class Book:
         self.isbn = self.select_isbn(self.isbn_list)
         self.data = self.query_api_book_data()
         self.genres = self.query_api_genres()
-
+        #print(self.genres)
     def get_pairing_json_obj(self):
         """ Returns a json object containing book data and pairing for
         use in frontend.
