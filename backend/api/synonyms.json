@@ -49,7 +49,7 @@
     "humorous": ["comedy", "humor", "humorous fiction", "humorous stories","wit and humour"],
     "fantasy": ["fantasy fiction","fantasy in fiction", "fantastic fiction", "fantasy genre"],
     "gothic": ["gothic fiction","gothic & horror","gothic horror"],
-    "mystery & detective": ["detective","women detectives","criminal investigation","private investigators","private investigator","private investigators in fiction","mystery and detective stories","detective and mystery stories", "mysteries & detective stories","american detective and mystery stories"],
+    "mystery & detective": ["detective","women detectives","criminal investigation","private investigators","private investigator","private investigators in fiction","mystery and detective stories","detective and mystery stories", "mysteries & detective stories"],
     "horror": ["horror fiction", "horror stories", "horror tales","horror and ghost stories"],
     "contemporary fiction": ["contemporary","modern & contemporary fiction "],
     "crime fiction": ["crime", "crime novel","crime novels","crime & mystery"],
@@ -67,12 +67,12 @@
     "satire":["satirical literature"],
     "peru":["peru in fiction"],
     "chile":["chile in fiction"],
-    "noir":["american noir fiction"],
     "california":["california in fiction"],
     "kentucky":["kentucky in fiction"],
     "new england":["new england in fiction"],
     "family life":["family life in fiction"],
     "westerns":["frontier and pioneer life","western stories","cowboys","western","west "],
     "demons":["demons in fiction"],
-    "paranormal romance":["paranormal romance stories"]
+    "paranormal romance":["paranormal romance stories"],
+    "urban":["city life"]
 }
