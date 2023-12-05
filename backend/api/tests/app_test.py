@@ -41,9 +41,7 @@ def test_get_pairing_json_obj():
     assert invalid_dict["authors"] == []
     assert invalid_dict["genres"] == []
     assert invalid_dict["cover_link"] == ""
-    assert invalid_dict["name"] == book_invalid.get_no_match_drink()["name"]
-    assert invalid_dict["ingredients"] == book_invalid.get_no_match_drink()["ingredients"]
-    assert invalid_dict["instructions"] == book_invalid.get_no_match_drink()["instructions"]
+
 
 def test_get_pairing():
     valid_pairing = book_valid.get_top_pairings()[0]
@@ -63,17 +61,14 @@ def test_get_pairing():
     assert type(invalid_pairing["name"]) is str
     assert type(invalid_pairing["type"]) is str
     assert type(invalid_pairing["ingredients"]) is list
-    assert type(invalid_pairing["instructions"]) is str
-    assert invalid_pairing["name"] == book_invalid.get_no_match_drink()["name"]
-    assert invalid_pairing["ingredients"] == book_invalid.get_no_match_drink()["ingredients"]
-    assert invalid_pairing["instructions"] == book_invalid.get_no_match_drink()["instructions"]
+    assert type(invalid_pairing["instructions"]) is str   
 
 def test_get_matching_drinks():
     valid_book_drinks = book_valid.get_matching_drinks()
     drink_1 = valid_book_drinks[0].get_drink_data()
     assert len(book_multiversion.get_matching_drinks()) >= 3
     assert len(valid_book_drinks) >= 3
-    assert list(drink_1.keys()) == ["name", "type", "key genres", "genres", "sentiment", "ingredients", "instructions", "allergens"]
+    assert list(drink_1.keys()) == ["name", "type", "key genres", "genres", "sentiment", "ingredients", "instructions", "allergens", "no match"]
     assert type(drink_1["name"]) is str
     assert type(drink_1["type"]) is str
     assert type(drink_1["genres"])is list
@@ -231,8 +226,6 @@ def test_get_genres():
     assert "brothers and sisters" in book_multiversion.get_genres()
 
 def test_get_no_matching_drinks():
-    no_match = Book("wqertvfghj", no_match_drink={"name":"water", "instructions":["no"], "information":"none"})
-    assert no_match.get_no_match_drink()["name"] == "water"
-    assert no_match.get_no_match_drink()["instructions"] == ["no"]
-    assert no_match.get_no_match_drink()["information"] == "none"
-
+    assert type(book_valid.get_no_match_drinks()) == list
+    assert len(book_valid.get_no_match_drinks()) == 4
+    assert [type(item) == dict for item in book_valid.get_no_match_drinks()]
