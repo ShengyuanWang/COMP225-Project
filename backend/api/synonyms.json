@@ -51,7 +51,7 @@
     "gothic": ["gothic fiction","gothic & horror","gothic horror"],
     "mystery & detective": ["detective","women detectives","detectives","criminal investigation","private investigators","private investigator","private investigators in fiction","mystery and detective stories","detective and mystery stories", "mysteries & detective stories"],
     "horror": ["horror fiction","horror stories","horror tales","horror and ghost stories"],
-    "contemporary fiction": ["contemporary","modern & contemporary fiction "],
+    "contemporary fiction": ["contemporary","modern & contemporary fiction ","modern literature"],
     "crime fiction": ["crime","crime novel","crime novels","crime & mystery"],
     "criminals":["criminals in fiction"],
     "voyages": ["quest","quests","voyage","quests "],
@@ -74,5 +74,6 @@
     "westerns":["frontier and pioneer life","western stories","cowboys","western","west ","cow-boys"],
     "demons":["demons in fiction"],
     "paranormal romance":["paranormal romance stories"],
-    "urban":["city life"]
+    "urban":["city life"],
+    "business":["businessmen","businesswomen","business & economics","corporate culture","women executives"]
 }
