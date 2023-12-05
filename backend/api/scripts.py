@@ -137,7 +137,6 @@ def c():
 # runs all util functions to make sure everything is up to date
 collect_all_genres()
 collect_key_genres()
-collect_key_genres()
-collect_genre_frequency()
+#collect_genre_frequency()
 update_synonyms_lookup()
 clean_up_synonyms_in_json()
