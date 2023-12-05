@@ -17,11 +17,6 @@ with open("all_genres.json") as file:
 GENRES = jsonData
 
 
-
-
-# drink for when there are no matches 
-BUD_LIGHT = {"name":"Bud Light", "type":"Beer", "ingredients": ["Can of bud light"], "instructions": "Just pop open the can.", "allergens":["gluten"]}
-
 app = Flask(__name__)
 CORS(app)
 
@@ -86,7 +81,7 @@ def get_alcohol(types):
 
 
 class Book:
-    def __init__ (self, user_input, user_allergies=[], user_types=["Beer", "Wine", "Spirits", "Cocktail"], alcohol_data_file="book-alcohol-pairings.json", synonyms_data_file="synonyms_lookup.json", api_key=API_KEY, official_genres=GENRES, no_match_drink=BUD_LIGHT):
+    def __init__ (self, user_input, user_allergies=[], user_types=["Beer", "Wine", "Spirits", "Cocktail"], alcohol_data_file="book-alcohol-pairings.json", synonyms_data_file="synonyms_lookup.json", api_key=API_KEY, official_genres=GENRES, no_match_drinks="no_match_drinks.json"):
         """ This class represents a book. Once an object of this class is initiated, that object can be
         used to query book data and get pairings for the book.
         
@@ -106,16 +101,20 @@ class Book:
         
         with open(alcohol_data_file, "r") as f:
             self.alcohol = json.load(f)
+        
+        with open(no_match_drinks, "r") as f:
+            self.no_match_drinks = json.load(f)
 
         self.api_key = api_key
         self.official_genres = official_genres
-        self.no_match_drink = no_match_drink
 
         self.isbn_list = self.query_api_isbns(self.user_input)
         self.isbn = self.select_isbn(self.isbn_list)
         self.data = self.query_api_book_data()
         self.genres = self.query_api_genres()
-        #print(self.genres)
+
+        self.no_match_found = False
+
     def get_pairing_json_obj(self):
         """ Returns a json object containing book data and pairing for
         use in frontend.
@@ -126,12 +125,19 @@ class Book:
         pairing["authors"] = self.get_authors()
         pairing["genres"] = self.get_filtered_genres()
         pairing["cover_link"] = self.get_cover_link()
+        
         top_pairings = self.get_top_pairings()
         pairing_dict = top_pairings[0]
         pairing["name"] = pairing_dict["name"]
         pairing["type"] = pairing_dict["type"]
         pairing["ingredients"] = pairing_dict["ingredients"]
         pairing["instructions"] = pairing_dict["instructions"]
+        
+        if self.no_match_found:
+            pairing["notes"] = "We couldn’t find much information for your book, so the match is based just on the title you entered."
+        else:
+            pairing["notes"] = ""
+        
         pairing["rerolls"] = top_pairings[:len(top_pairings)]
         return json.dumps(pairing)
 
@@ -145,9 +151,10 @@ class Book:
         top_pairings = self.get_top_drink_matches(all_drinks, sentiment)
         
         if len(top_pairings) > 0:
-            return top_pairings
+            return [self.reduce_drink_dict(pairing) for pairing in top_pairings]
         else:
-            return [self.get_no_match_drink()] * 4         
+            self.no_match_found = True
+            return [self.reduce_drink_dict(pairing) for pairing in self.get_no_match_drinks()]     
        
     def get_matching_drinks(self):
         """ Return priority queue of drinks that match book based on data in json file. 
@@ -460,7 +467,21 @@ class Book:
             sub = self.synonyms.get(genre)
             return sub
         return genre
-             
+
+    def get_no_match_drinks(self):
+        """ Return 4 drinks from the no_match_drinks instance variable list"""
+        user_input_blob = TextBlob(self.user_input)
+        user_input_sent = user_input_blob.sentiment.polarity
+        drinks_copy = self.no_match_drinks[:]
+        sorted(drinks_copy, key=lambda drink_match: abs(drink_match["sentiment"] - user_input_sent))
+        return drinks_copy[:4]        
+    
+    def reduce_drink_dict(self, drink_dict):
+        """Takes a drink dict and returns a drink only containing the keys 
+        needed for the pairing object """
+        return {key: drink_dict[key] for key in ["name", "type", "ingredients", "instructions"] 
+                if key in drink_dict}
+
     def get_title(self):
         """ Using book data dictonary, return title found for the book, 
         or an empty string if no title was found.
@@ -535,12 +556,6 @@ class Book:
         for book.
         """
         return self.genres
-
-    def get_no_match_drink(self):
-        """ Return the instance variable containing the drink object that will be used if 
-        no pairing is found. Must have the keys name, instructions, information.
-        """
-        return self.no_match_drink
 
 if __name__ == "__main__":
     app.run(port=8000)
