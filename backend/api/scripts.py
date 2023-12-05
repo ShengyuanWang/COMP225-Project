@@ -169,6 +169,8 @@ def add_new_key_to_json(key, value):
         json_file.write(formatted_json)
 
 # run after updates to json 
+collect_key_genres()
+collect_genre_frequency()
 collect_all_genres()
 # update_no_match_drinks() # not yet implemented 
 
