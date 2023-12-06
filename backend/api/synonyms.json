@@ -39,13 +39,13 @@
     "female friendship":["female friendship in fiction"],
     "male friendship":["male friendship in fiction"],
     "romance": ["love","romance fiction","love & romance","love stories","romance literature","love & romance","man-woman relations","man-woman relationships","lesbian love story","gay love","lgbt romance","lesbian romance novel"],
-    "psychological": ["psychology", "psychological fiction","japanese psychological fiction"],
+    "psychological": ["psychology", "psychological fiction","japanese psychological fiction","english psychological fiction"],
     "science fiction": ["science-fiction","english science fiction","american science fiction","science fiction & fantasy","lgbtq science fiction & fantasy"],
     "thriller": ["suspense","thrillers","suspense fiction","suspense & thriller"],
     "historical fiction": ["history","historical","history and criticism","lgbtq history","lgbtq historical fiction"],
     "classics": ["classic literature","classic","classical literature","classic fiction","fiction classics"],
     "biography & memoir": ["biographical","biographies","biography","biography & autobiography","personal narratives","memoir","personal memoirs","autobiographical fiction","lgbtq biography and memoir","american personal narratives"],
-    "adventure": ["action & adventure","adventure stories","adventure and adventurers","adventure fiction","adventure and adventurers in fiction","adventurers","action and adventure fiction","explorers","women explorers","english adventure stories"],
+    "adventure": ["action & adventure","adventure stories","adventure and adventurers","adventure fiction","adventure and adventurers in fiction","adventurers","action and adventure fiction","explorers","women explorers","english adventure stories","discovery and exploration","spanish adventure fiction"],
     "humorous": ["comedy","humor","humorous fiction","humorous stories","wit and humour","american humorous stories","american wit and humor"],
     "fantasy": ["fantasy fiction","fantasy in fiction","fantastic fiction","fantasy genre","teen fantasy fiction","american fantasy fiction","english fantasy fiction","english fantasy literature"],
     "gothic": ["gothic fiction","gothic & horror","gothic horror"],
@@ -77,5 +77,7 @@
     "urban":["city life"],
     "business":["businessmen","businesswomen","business & economics","corporate culture","women executives"],
     "noir":["american noir fiction"],
-    "germany":["germany in fiction"]
+    "germany":["germany in fiction"],
+    "sea stories":["sailors"]
+
 }
