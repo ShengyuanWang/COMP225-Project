@@ -1186,6 +1186,36 @@
             "no match drink": false
         }, 
         {
+            "name": "Sake", 
+            "type": "Spirits", 
+            "key genres": ["japan","business","samurai"],
+            "genres": ["japan","business","ukiyoe","samurai","travel","historical fantasy","historical fiction",
+                "historical romance","contemporary fiction","kurosawa"],
+            "sentiment": 0.2, 
+            "ingredients": [
+                ""
+            ], 
+            "instructions": "TBA",
+            "allergens": [], 
+            "image": "shot", 
+            "no match drink": false
+        }, 
+        {
+            "name": "Baijiu", 
+            "type": "Spirits", 
+            "key genres": ["china","business"],
+            "genres": ["china","business","historical fiction","travel","mystery","thriller","epic","contemporary fiction",
+                "historical fantasy","qing dynasty "],
+            "sentiment": 0, 
+            "ingredients": [
+                ""
+            ], 
+            "instructions": "TBA",
+            "allergens": ["gluten"], 
+            "image": "shot", 
+            "no match drink": false
+        }, 
+        {
             "name": "Green Chartreuse", 
             "type": "Spirits", 
             "key genres": ["witches","magic","occult","space travel"],

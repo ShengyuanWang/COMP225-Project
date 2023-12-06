@@ -22,7 +22,7 @@
     "drama": ["drama ","dramatic works by one author","british and irish drama "],
     "puerto rico": ["puerto rico in fiction"],
     "erotica": ["erotic stories","erotic passion","erotic fiction"],
-    "italy": ["italy in fiction"],
+    "italy": ["italy in fiction","italians"],
     "australia": ["australia in fiction"],
     "dystopian": ["dystopian fiction","dystopias","dystopian plays"],
     "first loves": ["first loves in fiction"],
@@ -78,6 +78,7 @@
     "business":["businessmen","businesswomen","business & economics","corporate culture","women executives"],
     "noir":["american noir fiction"],
     "germany":["germany in fiction"],
-    "sea stories":["sailors"]
-
+    "sea stories":["sailors"],
+    "china":["china in fiction","chinese fiction"],
+    "japan":["japan in fiction","japanese fiction"]
 }
