@@ -4,6 +4,7 @@ from flask_cors import CORS
 from textblob import TextBlob
 import json
 import requests
+import random
 import re
 import heapq
 
@@ -470,10 +471,16 @@ class Book:
 
     def get_no_match_drinks(self):
         """ Return 4 drinks from the no_match_drinks instance variable list"""
-        user_input_blob = TextBlob(self.user_input)
-        user_input_sent = user_input_blob.sentiment.polarity
+        # if len(self.get_description()) > 0:
+        #     description_blob = TextBlob(self.get_description() )
+        #     no_match_sent = description_blob.sentiment.polarity
+        # else:
+        #     user_input_blob = TextBlob(self.user_input)
+        #     no_match_sent = user_input_blob.sentiment.polarity
+        # print(no_match_sent)
         drinks_copy = self.no_match_drinks[:]
-        sorted(drinks_copy, key=lambda drink_match: abs(drink_match["sentiment"] - user_input_sent))
+        # sorted(drinks_copy, key=lambda drink_match: abs(drink_match["sentiment"] - no_match_sent))
+        random.shuffle(drinks_copy)
         return drinks_copy[:4]        
     
     def reduce_drink_dict(self, drink_dict):
