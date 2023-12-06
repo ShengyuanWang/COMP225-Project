@@ -32,15 +32,15 @@ const getData = (drink) => {
   console.log(drink);
   var api="https://comp-225-project-backend.vercel.app/test/";
   //2.使用axios 进行get请求
-  proxy.axios.get(api).then((res)=>{
-    //请求成功的回调函数
-    console.log(res);
-    console.log(api);
-  }).catch((err)=>{
-    //请求失败的回调函数
-    console.log(err);
-  })
-  router.push({ path: 'detail', query: {name: drink.name, instruction:drink.instructions, description:drink.information}});
+  // proxy.axios.get(api).then((res)=>{
+  //   //请求成功的回调函数
+  //   console.log(res);
+  //   console.log(api);
+  // }).catch((err)=>{
+  //   //请求失败的回调函数
+  //   console.log(err);
+  // })
+  router.push({ path: 'detail', query: {name: drink.name, instruction:drink.ingredients, description:drink.instructions}});
 }
 
 
