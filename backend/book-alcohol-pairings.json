@@ -3,10 +3,10 @@
         {
             "name": "Old Fashioned", 
             "type": "Cocktail", 
-            "key genres": ["great depression","noir","hard-boiled"],
-            "genres": ["1920s","mystery","1950s","nineteen twenties","great depression","20th century",
-				"biography & memoir","noir","classics","19th century","nineteen fifties","psychological","mystery & detective",
-				"dystopian","action","historical fiction","1910s","hard-boiled"],
+            "key genres": ["great depression","noir","hard-boiled","business"],
+            "genres": ["19th century","1950s","mystery & detective","action","1910s","classics","psychological",
+				"nineteen twenties","biography & memoir","hard-boiled","historical fiction","great depression","nineteen fifties",
+				"noir","dystopian","1920s","mystery","20th century","business"],
             "sentiment": 0.6, 
             "ingredients": [
                 "2 oz. bourbon or rye whiskey", 
@@ -17,14 +17,16 @@
                 "A few dashes of plain water (optional)"
             ], 
             "instructions": "An Old Fashioned is a timeless classic cocktail. To craft this iconic drink, start by placing a sugar cube in an old-fashioned glass and saturating it with 2 dashes of Angostura bitters. If you prefer a sweeter variant, add a few dashes of plain water to help dissolve the sugar. Gently muddle the sugar and bitters until the sugar is dissolved. Fill the glass with ice cubes, and then pour in 2 oz. of your choice of bourbon or rye whiskey. Stir the mixture gently to combine the ingredients, and garnish with a twist of orange or lemon peel, expressing the citrus oils over the drink for an added aroma. Alternatively, you can use an olive as a garnish. The result is a beautifully simple yet sophisticated cocktail that's all about savoring the rich flavors of the whiskey.", 
-            "allergens": ["gluten"]
+            "allergens": ["gluten"],
+            "image": "TBA", 
+            "no match drink": false
         }, 
         {
             "name": "Margarita", 
             "type": "Cocktail", 
             "key genres": ["romantic comedy"],
-            "genres": ["humorous","sports","20th century","romantic comedy","contemporary fiction","romance",
-				"satire","mexico","travel","adventure"],
+            "genres": ["travel","humorous","satire","adventure","20th century","romantic comedy","contemporary fiction",
+				"mexico","romance","sports"],
             "sentiment": 0.7, 
             "ingredients": [
                 "2 oz tequila", 
@@ -36,14 +38,16 @@
                 "Ice"
             ], 
             "instructions": "A Margarita is a popular and classic cocktail known for its refreshing taste. To make this iconic drink, use the following ingredients: Prepare the glass by running a lime wedge around the rim, then dip the rim into salt to coat it. Fill the glass with ice. Fill a cocktail shaker with ice. Add the tequila, freshly squeezed lime juice, orange liqueur, and simple syrup (if using) to the shaker. Shake well for about 15-20 seconds to chill the mixture. Strain the mixture into the prepared glass over fresh ice. Garnish with a lime wedge.", 
-            "allergens": []
+            "allergens": [], 
+            "image": "TBA", 
+            "no match drink": false
         }, 
         {
             "name": "Manhattan", 
             "type": "Cocktail", 
             "key genres": ["n.y.","urban"],
-            "genres": ["1920s","mystery","biography & memoir","nineteen twenties","20th century","espionage",
-				"19th century","urban","mystery & detective","n.y.","thriller","historical fiction","united states"
+            "genres": ["nineteen twenties","19th century","n.y.","mystery & detective","biography & memoir",
+				"1920s","united states","thriller","historical fiction","mystery","20th century","espionage","urban"
 				],
             "sentiment": 0.6, 
             "ingredients": [
@@ -54,15 +58,17 @@
                 "Ice"
             ], 
             "instructions": "A Manhattan is a classic cocktail that's been around for well over a century. It's known for its simple yet sophisticated taste. To make a Manhattan, follow this simple recipe: Fill a mixing glass or cocktail shaker with ice. Pour in the rye whiskey, sweet vermouth, and add the dashes of Angostura bitters. Stir well (for about 30 seconds) or shake gently to chill the mixture. Strain the mixture into a chilled cocktail glass (typically a coupe glass or a martini glass). Garnish the drink with a maraschino cherry or an orange twist. You can express the oils from the orange twist over the drink by giving it a gentle twist to release the aroma.", 
-            "allergens": ["gluten"]
+            "allergens": ["gluten"],
+            "image": "TBA", 
+            "no match drink": false
         }, 
         {
             "name": "Martini", 
             "type": "Cocktail", 
             "key genres": ["unrequited love"],
-            "genres": ["20th century","1940s","science fiction","1950s","1960s","world war ii","nineteen forties",
-				"urban","unrequited love","nineteen sixties","romance","nineteen fifties","psychological","hard-boiled",
-				"mystery","hard science fiction","1930s","1910s","nineteen thirties"],
+            "genres": ["1950s","1910s","psychological","nineteen sixties","1940s","world war ii","science fiction",
+				"hard-boiled","1960s","nineteen fifties","hard science fiction","1930s","unrequited love","nineteen thirties",
+				"mystery","20th century","business","urban","nineteen forties","romance"],
             "sentiment": 0.7, 
             "ingredients": [
                 "2 oz. gin or vodka", 
@@ -71,15 +77,17 @@
                 "Ice"
             ], 
             "instructions": "The martini is one of the most iconic cocktails of all time. To craft this classic drink, start by chilling a cocktail glass in the freezer for at least 10 minutes. Then, fill a mixing glass with ice cubes and pour in 2 oz. of gin or vodka. Add 1/2 oz. of dry vermouth, and stir the mixture gently to combine the ingredients. Next, strain the mixture into the chilled cocktail glass. Garnish with a lemon twist or olive, and serve. The result is a beautifully simple yet sophisticated cocktail that's all about savoring the rich flavors of the liquor.", 
-            "allergens": []
+            "allergens": [], 
+            "image": "TBA", 
+            "no match drink": false
         }, 
         {
             "name": "Pi\u00f1a Colada", 
             "type": "Cocktail", 
             "key genres": ["puerto rico","caribbean area","romantic comedy"],
-            "genres": ["humorous","cuba","friendship","1960s","female friendship","nineteen sixties",
-				"puerto rico","romantic comedy","contemporary fiction","romance","caribbean area","travel","historical romance",
-				"adventure"],
+            "genres": ["caribbean area","travel","historical romance","puerto rico","1960s","friendship",
+				"contemporary fiction","adventure","cuba","nineteen sixties","humorous","romance","female friendship",
+				"romantic comedy"],
             "sentiment": 0.8, 
             "ingredients": [
                 "2 oz. white rum", 
@@ -89,13 +97,15 @@
                 "Pineapple slice and maraschino cherry for garnish"
             ], 
             "instructions": "The pi\u00f1a colada is a classic tropical cocktail with rum, pineapple and coconut milk. To make a pi\u00f1a colada, start by adding 2 oz. of white rum, 3 oz. of pineapple juice and 1 oz. of coconut cream to a blender. Then, add 1 cup of crushed ice and blend the mixture until it's smooth. Pour the drink into a glass, and garnish with a pineapple slice and maraschino cherry. The result is a beautifully simple yet sophisticated cocktail that's all about savoring the rich flavors of the liquor.", 
-            "allergens": []
+            "allergens": [], 
+            "image": "TBA", 
+            "no match drink": false
         }, 
         {
             "name": "Blue Lagoon", 
             "type": "Cocktail", 
             "key genres": ["aliens","space travel"],
-            "genres": ["aliens","romance","science fiction","travel","space travel","adventure"],
+            "genres": ["travel","aliens","science fiction","adventure","romance","space travel"],
             "sentiment": 0.8, 
             "ingredients": [
                 "1 1/2 oz. vodka", 
@@ -105,14 +115,16 @@
                 "Ice"
             ], 
             "instructions": "The Blue Lagoon is a classic cocktail with vodka, blue cura\u00e7ao and lemonade. To make a Blue Lagoon, start by adding 1 1/2 oz. of vodka and 1/2 oz. of blue cura\u00e7ao to a highball glass filled with ice. Then, fill the glass with lemonade and stir the mixture gently to combine the ingredients. Garnish with a lemon slice and maraschino cherry, and serve. The result is a beautifully simple yet sophisticated cocktail that's all about savoring the rich flavors of the liquor.", 
-            "allergens": []
+            "allergens": [], 
+            "image": "TBA", 
+            "no match drink": false
         }, 
         {
             "name": "Mojito", 
             "type": "Cocktail", 
             "key genres": ["caribbean area"],
-            "genres": ["adolescence","cuba","love in adolescence","humorous","romantic comedy","romance",
-				"caribbean area","adventure"],
+            "genres": ["caribbean area","love in adolescence","adolescence","adventure","cuba","romantic comedy",
+				"romance","humorous"],
             "sentiment": 0.7, 
             "ingredients": [
                 "2 oz. white rum", 
@@ -124,14 +136,16 @@
                 "Ice"
             ], 
             "instructions": "The mojito is a classic Cuban cocktail with rum, mint and lime juice. To make a mojito, start by adding 2 oz. of white rum, 1 oz. of lime juice, 2 tsp. of sugar and 6 mint leaves to a highball glass. Then, gently muddle the mint leaves with a muddler or wooden spoon. Next, fill the glass with ice cubes and top it off with club soda. Stir the mixture gently to combine the ingredients, and garnish with a mint sprig. The result is a beautifully simple yet sophisticated cocktail that's all about savoring the rich flavors of the liquor.", 
-            "allergens": []
+            "allergens": [], 
+            "image": "TBA", 
+            "no match drink": false
         }, 
         {
             "name": "Bloody Mary", 
             "type": "Cocktail", 
             "key genres": ["vampires","dracula","demonology"],
-            "genres": ["mystery","20th century","zombies","vampires","classics","dracula","demons","demonology",
-				"thriller","travel","france","horror"],
+            "genres": ["france","travel","zombies","dracula","thriller","demons","horror","classics",
+				"vampires","demonology","mystery","20th century"],
             "sentiment": 0.5, 
             "ingredients": [
                 "1 1/2 oz. vodka", 
@@ -145,14 +159,16 @@
                 "Ice"
             ], 
             "instructions": "The Bloody Mary is a classic brunch cocktail with vodka, tomato juice and a combination of spices and flavorings. To make a Bloody Mary, start by adding 1 1/2 oz. of vodka, 3 oz. of tomato juice and 1/2 oz. of lemon juice to a highball glass. Then, add a few dashes of Worcestershire sauce, Tabasco sauce, celery salt and pepper. Stir the mixture gently to combine the ingredients, and garnish with a celery stalk and lemon wedge. The result is a beautifully simple yet sophisticated cocktail that's all about savoring the rich flavors of the liquor.", 
-            "allergens": ["soy","gluten","fish","shellfish"]
+            "allergens": ["soy","gluten","fish","shellfish"],
+            "image": "TBA", 
+            "no match drink": false
         }, 
         {
             "name": "Cosmopolitan", 
             "type": "Cocktail", 
             "key genres": ["urban fantasy"],
-            "genres": ["mystery","friendship","20th century","female friendship","contemporary fiction",
-				"romance","urban","mystery & detective","urban fantasy"],
+            "genres": ["mystery & detective","friendship","urban fantasy","mystery","20th century","urban",
+				"contemporary fiction","romance","female friendship"],
             "sentiment": 0.8, 
             "ingredients": [
                 "1 1/2 oz. vodka", 
@@ -163,14 +179,16 @@
                 "Ice"
             ], 
             "instructions": "The cosmopolitan is a classic cocktail with vodka, triple sec, cranberry juice and lime juice. To make a cosmopolitan, start by adding 1 1/2 oz. of vodka, 1 oz. of cranberry juice, 1/2 oz. of triple sec and 1/2 oz. of lime juice to a cocktail shaker filled with ice. Then, shake the mixture vigorously for 10 to 15 seconds. Strain the mixture into a chilled cocktail glass, and garnish with a lime wedge. The result is a beautifully simple yet sophisticated cocktail that's all about savoring the rich flavors of the liquor.", 
-            "allergens": []
+            "allergens": [], 
+            "image": "TBA", 
+            "no match drink": false
         }, 
         {
             "name": "Aperol Spritz", 
             "type": "Cocktail", 
             "key genres": [], 
-            "genres": ["humorous","biography & memoir","20th century","female friendship","romantic comedy",
-				"contemporary fiction","romance","urban","italy","travel","fantasy"],
+            "genres": ["travel","biography & memoir","contemporary fiction","fantasy","20th century",
+				"italy","romantic comedy","humorous","urban","romance","female friendship"],
             "sentiment": 0.7, 
             "ingredients": [
                 "3 oz. Prosecco", 
@@ -180,14 +198,16 @@
                 "Ice"
             ], 
             "instructions": "The Aperol spritz is a classic Italian cocktail with Prosecco, Aperol and soda water. To make an Aperol spritz, start by adding 3 oz. of Prosecco, 2 oz. of Aperol and 1 oz. of soda water to a wine glass filled with ice. Then, stir the mixture gently to combine the ingredients, and garnish with an orange slice. The result is a beautifully simple yet sophisticated cocktail that's all about savoring the rich flavors of the liquor.", 
-            "allergens": []
+            "allergens": [], 
+            "image": "TBA", 
+            "no match drink": false
         }, 
         {
             "name": "Moscow Mule", 
             "type": "Cocktail", 
             "key genres": ["romantic comedy"],
-            "genres": ["humorous","mystery","20th century","voyages","nineteen forties","romantic comedy",
-				"1940s","romance","travel","historical romance","historical fiction","adventure"],
+            "genres": ["travel","historical romance","voyages","1940s","historical fiction","adventure",
+				"mystery","20th century","romantic comedy","nineteen forties","romance","humorous"],
             "sentiment": 0.7, 
             "ingredients": [
                 "2 oz. vodka", 
@@ -197,14 +217,16 @@
                 "Ice"
             ], 
             "instructions": "The Moscow Mule is a refreshing and zesty cocktail with a signature copper mug presentation. To craft this drink, start by filling a copper mug or highball glass with ice. Squeeze the juice from half a lime into the glass, and drop the spent lime shell in. Then, pour in 2 oz. of vodka. Top it off with approximately 4 oz. of ginger beer, or adjust to your preferred level of ginger flavor. Give it a gentle stir to mix the ingredients. To garnish, add a lime wheel or wedge for an extra burst of citrus aroma. The Moscow Mule is known for its crisp and tangy taste, making it a popular choice for a refreshing and enjoyable cocktail.", 
-            "allergens": []
+            "allergens": [], 
+            "image": "TBA", 
+            "no match drink": false
         }, 
         {
             "name": "Pan-Galactic Gargle Blaster", 
             "type": "Cocktail", 
             "key genres": ["comic science fiction","aliens","vogons"],
-            "genres": ["humorous","science fiction","satire","comic science fiction","aliens","fantasy",
-				"vogons","space travel","adventure"],
+            "genres": ["aliens","vogons","science fiction","satire","space travel","adventure","fantasy",
+				"comic science fiction","humorous"],
             "sentiment": 0.8, 
             "ingredients": [
                 "1 1/2 oz Gin", 
@@ -217,28 +239,32 @@
                 "Lemon twist for garnish"
             ], 
             "instructions": "The Pan-Galactic Gargle Blaster is a cocktail inspired by Douglas Adams' \"The Hitchhiker's Guide to the Galaxy\" series. Fill a shaker with ice cubes. Add the gin, Blue Curacao, Peach Schnapps, Goldschlager, and orange juice to the shaker. Shake the ingredients well to chill the mixture. Strain the mixture into a highball or martini glass filled with ice. Top it off with a splash of club soda for effervescence. Garnish with a twist of lemon.", 
-            "allergens": []
+            "allergens": [], 
+            "image": "TBA", 
+            "no match drink": false
         }, 
         {
             "name": "Death in the Afternoon", 
             "type": "Cocktail", 
             "key genres": ["hemingway"],
-            "genres": ["mystery","hemingway","20th century","classics","travel","historical fiction",
-				"adventure","horror"],
+            "genres": ["travel","historical fiction","horror","classics","adventure","mystery","20th century",
+				"hemingway"],
             "sentiment": 0.2, 
             "ingredients": [
                 "1 1/2 oz Absinthe", 
                 "4 oz Champagne"
             ], 
             "instructions": "The \"Death in the Afternoon\" is a classic cocktail created by Ernest Hemingway. Here's how you can make it: Pour the absinthe into a Champagne flute. Top it off with Champagne.Stir gently to mix, or leave it layered for a more visual effect. Optionally, you can garnish with a lemon twist.", 
-            "allergens": []
+            "allergens": [], 
+            "image": "TBA", 
+            "no match drink": false
         }, 
         {
             "name": "Espresso Martini", 
             "type": "Cocktail", 
             "key genres": ["noir"],
-            "genres": ["mystery","noir","contemporary fiction","science fiction","travel","mystery & detective",
-				"thriller","drama","historical fiction"],
+            "genres": ["travel","mystery & detective","thriller","historical fiction","science fiction",
+				"mystery","contemporary fiction","drama","noir"],
             "sentiment": 0.8, 
             "ingredients": [
                 "1 1/2 oz. vodka", 
@@ -248,13 +274,16 @@
                 "Ice"
             ], 
             "instructions": "The espresso martini is a classic cocktail with vodka, Kahl\u00faa and espresso. To make an espresso martini, start by adding 1 1/2 oz. of vodka, 1 oz. of Kahl\u00faa and 1 oz. of espresso to a cocktail shaker filled with ice. Then, shake the mixture vigorously for 10 to 15 seconds. Strain the mixture into a chilled cocktail glass, and garnish with 3 coffee beans. The result is a beautifully simple yet sophisticated cocktail that's all about savoring the rich flavors of the liquor.", 
-            "allergens": []
+            "allergens": [], 
+            "image": "TBA", 
+            "no match drink": false
         }, 
         {
             "name": "Vodka Cranberry", 
             "type": "Cocktail", 
             "key genres": ["romantic comedy"],
-            "genres": ["humorous","mystery","romantic suspense","romantic comedy","romance","thriller","adventure"],
+            "genres": ["thriller","romantic suspense","adventure","mystery","romantic comedy","romance",
+				"humorous"],
             "sentiment": 0.7, 
             "ingredients": [
                 "2 oz. vodka", 
@@ -263,14 +292,16 @@
                 "Ice"
             ], 
             "instructions": "The vodka cranberry is a classic cocktail with vodka and cranberry juice. To make a vodka cranberry, start by adding 2 oz. of vodka and 4 oz. of cranberry juice to a highball glass filled with ice. Then, stir the mixture gently to combine the ingredients, and garnish with a lime wedge. The result is a beautifully simple yet sophisticated cocktail that's all about savoring the rich flavors of the liquor.", 
-            "allergens": []
+            "allergens": [], 
+            "image": "TBA", 
+            "no match drink": false
         }, 
         {
             "name": "Sex on the Beach", 
             "type": "Cocktail", 
             "key genres": ["erotica","romantic comedy"],
-            "genres": ["humorous","mystery","friendship","romantic suspense","female friendship","adult romance",
-				"romantic comedy","contemporary fiction","erotica","romance","travel","thriller"],
+            "genres": ["adult romance","travel","friendship","thriller","erotica","romantic suspense",
+				"contemporary fiction","mystery","romantic comedy","humorous","romance","female friendship"],
             "sentiment": 0.7, 
             "ingredients": [
                 "1 1/2 oz. vodka", 
@@ -281,15 +312,16 @@
                 "Ice"
             ], 
             "instructions": "Sex on the Beach is a tropical and fruity cocktail that's both colorful and delightful. To create this cocktail, start by filling a highball glass with ice. Pour in 1.5 oz. of vodka and 3/4 oz. of peach schnapps. Add 2 oz. of cranberry juice and 2 oz. of orange juice. Give it a gentle stir to mix the ingredients and create the vibrant layered look. To garnish, you can add a maraschino cherry and a slice of orange or a twist of orange peel. The result is a sweet and fruity concoction that's perfect for sipping by the beach or on a sunny day. Enjoy your Sex on the Beach!", 
-            "allergens": []
+            "allergens": [], 
+            "image": "TBA", 
+            "no match drink": false
         }, 
         {
             "name": "Sangria", 
             "type": "Cocktail", 
             "key genres": ["vampires","spain"],
-            "genres": ["mystery","love in adolescence","romantic suspense","vampires","adult romance",
-				"contemporary fiction","domestic fiction","romance","family life","spain","thriller","travel","adventure"
-				],
+            "genres": ["adult romance","travel","spain","love in adolescence","domestic fiction","family life",
+				"thriller","vampires","romantic suspense","adventure","mystery","contemporary fiction","romance"],
             "sentiment": 0.6, 
             "ingredients": [
                 "1 bottle of red wine", 
@@ -302,13 +334,15 @@
                 "Ice"
             ], 
             "instructions": "Sangria is a classic cocktail with red wine, brandy and fruit. To make sangria, start by combining the red wine, brandy, or orange liqueur, and sugar. Stir well to dissolve the sugar. Add the mixed chopped fruits, orange slices, and lemon slices. Mix gently. Cover the mixture and refridgerate for at least 2-4 hours. To serve, fill glasses with ice. Pour the sangria into the glasses, making sure to include some fruit pieces in each serving. Top each glass with a splash of carbonated water or lemon-lime soda for a bit of fizz (optional).", 
-            "allergens": []
+            "allergens": [], 
+            "image": "TBA", 
+            "no match drink": false
         }, 
         {
             "name": "Sonic Screwdriver", 
             "type": "Cocktail", 
             "key genres": [], 
-            "genres": ["epic","voyages","science fiction","travel","fantasy","space travel","adventure"
+            "genres": ["travel","voyages","epic","science fiction","adventure","fantasy","space travel"
 				],
             "sentiment": 0.7, 
             "ingredients": [
@@ -318,15 +352,17 @@
                 "Ice"
             ], 
             "instructions": "The Sonic Screwdriver is a refreshing and zesty cocktail with a signature copper mug presentation. To craft this drink, start by filling a copper mug or highball glass with ice. Squeeze the juice from half a lime into the glass, and drop the spent lime shell in. Then, pour in 2 oz. of vodka. Top it off with approximately 4 oz. of ginger beer, or adjust to your preferred level of ginger flavor. Give it a gentle stir to mix the ingredients. To garnish, add a lime wheel or wedge for an extra burst of citrus aroma. The Sonic Screwdriver is known for its crisp and tangy taste, making it a popular choice for a refreshing and enjoyable cocktail.", 
-            "allergens": []
+            "allergens": [], 
+            "image": "TBA", 
+            "no match drink": false
         }, 
         {
             "name": "Gimlet", 
             "type": "Cocktail", 
             "key genres": ["noir","hard-boiled"],
-            "genres": ["mystery","biography & memoir","20th century","espionage","1960s","world war ii",
-				"nineteen sixties","noir","nineteen forties","1940s","mystery & detective","thriller","historical fiction",
-				"hard-boiled"],
+            "genres": ["mystery & detective","biography & memoir","hard-boiled","nineteen sixties","1960s",
+				"1940s","thriller","historical fiction","world war ii","mystery","20th century","espionage","nineteen forties",
+				"noir"],
             "sentiment": 0.6, 
             "ingredients": [
                 "2 oz gin", 
@@ -336,14 +372,16 @@
                 "Ice"
             ], 
             "instructions": "A Gimlet is a classic cocktail known for its simplicity and refreshing taste. To make this tangy cocktail, start by filling the cocktail shaker with ice. Add the gin, freshly squeezed lime juice, and simple syrup to the shaker. Shake well for about 15-20 seconds to chill the mixture. Strain the mixture into a chilled cocktail glass (such as a coupe glass or a martini glass) over fresh ice. Garnish the drink with a lime wheel or a twist.", 
-            "allergens": []
+            "allergens": [], 
+            "image": "TBA", 
+            "no match drink": true
         }, 
         {
             "name": "Spiced Wine", 
             "type": "Cocktail", 
             "key genres": ["friendship","magic","middle ages","sagas"],
-            "genres": ["wizards","middle ages","friendship","magicians","witches","ancient","magic","sagas",
-				"family life","demons","fantasy","historical fiction","adventure","historical fantasy"],
+            "genres": ["magicians","ancient","magic","friendship","family life","demons","historical fiction",
+				"witches","sagas","adventure","historical fantasy","fantasy","wizards","middle ages"],
             "sentiment": 0.5, 
             "ingredients": [
                 "1 bottle of red wine", 
@@ -361,15 +399,17 @@
                 "1 tsp. juniper berries"
             ], 
             "instructions": "Spiced wine is a classic cocktail with red wine, brandy and spices. To make spiced wine, start by adding 1/4 cup of brandy and 1/4 cup of honey to a saucepan. Then, add 1 sliced orange, 1 sliced lemon and 1 sliced lime. Next, add 1 cinnamon stick, 1 star anise, 1 tsp. of whole cloves, 1 tsp. of whole allspice, 1 tsp. of whole black peppercorns, 1 tsp. of whole cardamom pods and 1 tsp. of juniper berries. Finally, pour in 1 bottle of red wine. Heat the mixture over medium heat until it reaches a simmer. Then, reduce the heat to low and simmer for 15 minutes. Strain the mixture into a pitcher, and serve warm. The result is a beautifully simple yet sophisticated cocktail that's all about savoring the rich flavors of the liquor.", 
-            "allergens": []
+            "allergens": [], 
+            "image": "TBA", 
+            "no match drink": false
         }, 
         {
             "name": "Negroni", 
             "type": "Cocktail", 
             "key genres": ["italy","espionage","noir"],
-            "genres": ["mystery","biography & memoir","20th century","espionage","noir","nineteen forties",
-				"1940s","mystery & detective","dystopian","thriller","italy","unrequited love","historical fiction",
-				"hard-boiled"],
+            "genres": ["unrequited love","mystery & detective","biography & memoir","dystopian","hard-boiled",
+				"1940s","thriller","historical fiction","mystery","20th century","italy","espionage","nineteen forties",
+				"noir"],
             "sentiment": 0.5, 
             "ingredients": [
                 "1 oz gin", 
@@ -379,16 +419,19 @@
                 "Ice"
             ], 
             "instructions": "A Negroni is a bold, classic Italian cocktail known for its balance of bitter and sweet flavors. To make a Negroni: Fill a mixing glass or a shaker with ice. Add the gin, Campari, and sweet vermouth to the shaker. Stir well for about 20-30 seconds to chill the mixture. Some variations involve stirring over ice for dilution. Strain the mixture into a rocks glass filled with ice or into a chilled cocktail glass. Express the oils from the orange peel over the drink by holding it over the glass and giving it a gentle twist. Then, garnish the drink with the peel.", 
-            "allergens": []
+            "allergens": [], 
+            "image": "TBA", 
+            "no match drink": false
         }, 
         {
             "name": "Gin and Tonic", 
             "type": "Cocktail", 
             "key genres": ["world war i","steampunk","england","great britain","world war ii","noir"],
-            "genres": ["love in adolescence","20th century","adventure","1940s","great britain","biography & memoir",
-				"1960s","world war ii","nineteen forties","new england","thriller","travel","nineteen sixties","romantic comedy",
-				"psychological","mystery & detective","mystery","world war i","england","noir","classics","domestic fiction",
-				"steampunk","hard science fiction","1930s","1910s","nineteen thirties"],
+            "genres": ["mystery & detective","1910s","classics","psychological","great britain","nineteen sixties",
+				"travel","1940s","thriller","world war ii","adventure","england","biography & memoir","love in adolescence",
+				"1960s","domestic fiction","world war i","romantic comedy","hard science fiction","noir","1930s",
+				"new england","steampunk","nineteen thirties","mystery","20th century","business","nineteen forties"
+				],
             "sentiment": 0.7, 
             "ingredients": [
                 "2 oz. gin", 
@@ -397,14 +440,17 @@
                 "Ice"
             ], 
             "instructions": "The Gin and Tonic is a classic cocktail with a signature copper mug presentation. To craft this drink, start by filling a copper mug or highball glass with ice. Squeeze the juice from half a lime into the glass, and drop the spent lime shell in. Then, pour in 2 oz. of gin. Top it off with approximately 4 oz. of tonic water, or adjust to your preferred level of tonic flavor. Give it a gentle stir to mix the ingredients. To garnish, add a lime wheel or wedge for an extra burst of citrus aroma. The Gin and Tonic is known for its crisp and tangy taste, making it a popular choice for a refreshing and enjoyable cocktail.", 
-            "allergens": []
+            "allergens": [], 
+            "image": "TBA", 
+            "no match drink": true
         }, 
         {
             "name": "Dark and Stormy", 
             "type": "Cocktail", 
             "key genres": ["southern gothic"],
-            "genres": ["mystery","gothic","werewolves","southern gothic","urban","occult","ghosts","new england",
-				"demons","thriller","action","demonology","historical fiction","dystopian","urban fantasy"],
+            "genres": ["occult","action","dystopian","gothic","thriller","demons","historical fiction",
+				"werewolves","urban fantasy","ghosts","demonology","mystery","urban","southern gothic","new england"
+				],
             "sentiment": 0.6, 
             "ingredients": [
                 "2 oz. dark rum", 
@@ -413,14 +459,16 @@
                 "Ice"
             ], 
             "instructions": "The Dark and Stormy is a classic cocktail with a signature copper mug presentation. To craft this drink, start by filling a copper mug or highball glass with ice. Squeeze the juice from half a lime into the glass, and drop the spent lime shell in. Then, pour in 2 oz. of dark rum. Top it off with approximately 3 oz. of ginger beer, or adjust to your preferred level of ginger flavor. Give it a gentle stir to mix the ingredients. To garnish, add a lime wheel or wedge for an extra burst of citrus aroma. The Dark and Stormy is known for its crisp and tangy taste, making it a popular choice for a refreshing and enjoyable cocktail.", 
-            "allergens": []
+            "allergens": [], 
+            "image": "TBA", 
+            "no match drink": false
         }, 
         {
             "name": "Corpse Reviver #2", 
             "type": "Cocktail", 
             "key genres": ["occult","ghosts","zombies"],
-            "genres": ["mystery","great depression","zombies","nineteen forties","1940s","occult","ghosts",
-				"mystery & detective","paranormal","historical fiction","dystopian","horror"],
+            "genres": ["occult","mystery & detective","zombies","dystopian","1940s","historical fiction",
+				"horror","great depression","ghosts","paranormal","mystery","nineteen forties"],
             "sentiment": 0.2, 
             "ingredients": [
                 "3/4 oz Gin", 
@@ -431,14 +479,16 @@
                 "Lemon twist for garnish"
             ], 
             "instructions": "The Corpse Reviver #2 is a classic cocktail that dates back to the 1930s and is part of the family of \"Corpse Reviver\" cocktails meant to, as the name suggests, revive the spirits. Here's the recipe for the Corpse Reviver #2: Fill a shaker with ice. Add the gin, Cointreau, Lillet Blanc, and fresh lemon juice to the shaker. Shake well to chill the ingredients. Rinse a chilled cocktail glass with a small amount of absinthe, discarding the excess. Strain the shaken mixture into the prepared glass. Garnish with a lemon twist.", 
-            "allergens": []
+            "allergens": [], 
+            "image": "TBA", 
+            "no match drink": false
         }, 
         {
             "name": "Mimosa", 
             "type": "Cocktail", 
             "key genres": ["romantic comedy","friendship"],
-            "genres": ["humorous","mystery","friendship","female friendship","romantic comedy","contemporary fiction",
-				"domestic fiction","romance","mystery & detective","travel"],
+            "genres": ["travel","mystery & detective","friendship","domestic fiction","contemporary fiction",
+				"mystery","romantic comedy","humorous","romance","female friendship"],
             "sentiment": 0.7, 
             "ingredients": [
                 "2 oz orange juice", 
@@ -446,14 +496,17 @@
                 "Orange slice or twist (for garnish)"
             ], 
             "instructions": "A Mimosa is a classic and popular cocktail. To make this refreshing drink, follow this recipe: Chill the orange juice and the champagne or sparkling wine in advance. In a champagne flute or a wine glass, pour the chilled orange juice. Top it off with the chilled champagne or sparkling wine. Gently stir to combine, though some prefer to leave it unstirred to maintain the bubbly effervescence. Garnish the drink with an orange slice or twist.", 
-            "allergens": []
+            "allergens": [], 
+            "image": "TBA", 
+            "no match drink": false
         }, 
         {
             "name": "Daiquiri", 
             "type": "Cocktail", 
             "key genres": ["caribbean area","cuba","romantic comedy","1940s"],
-            "genres": ["adolescence","cuba","mystery","love in adolescence","humorous","1960s","nineteen sixties",
-				"nineteen forties","romantic comedy","1940s","romance","caribbean area","travel","adventure"],
+            "genres": ["caribbean area","travel","love in adolescence","1940s","1960s","adolescence",
+				"adventure","mystery","cuba","nineteen sixties","nineteen forties","romance","humorous","romantic comedy"
+				],
             "sentiment": 0.7, 
             "ingredients": [
                 "2 oz white rum", 
@@ -463,14 +516,16 @@
                 "Ice"
             ], 
             "instructions": "A Daiquiri is a classic cocktail known for its simplicity and refreshing taste. To make a classic Daiquiri, fill a cocktail shaker with ice. Add the white rum, freshly squeezed lime juice, and simple syrup to the shaker. Shake well for about 15-20 seconds to chill the mixture. Strain the mixture into a chilled cocktail glass, such as a coupe glass or a martini glass. Garnish the drink with a lime wheel or wedge.", 
-            "allergens": []
+            "allergens": [], 
+            "image": "TBA", 
+            "no match drink": false
         }, 
         {
             "name": "Irish Coffee", 
             "type": "Cocktail", 
             "key genres": ["ireland"],
-            "genres": ["mystery","biography & memoir","sports","romantic comedy","classics","ireland",
-				"romance","travel"],
+            "genres": ["travel","ireland","biography & memoir","classics","mystery","romantic comedy",
+				"romance","sports"],
             "sentiment": 0.8, 
             "ingredients": [
                 "1 1/2 oz Irish whiskey", 
@@ -479,14 +534,16 @@
                 "Whipped cream"
             ], 
             "instructions": "Irish coffee is a warm and comforting cocktail that combines coffee, Irish whiskey, sugar, and topped with whipped cream. To make Irish Coffee, start by brewing your favorite coffee. Pour it into a pre-warmed glass or mug. Add the brown sugar to the hot coffee and stir until dissolved. Stir in the Irish whiskey. Top the coffee with a generous dollop of whipped cream. You can garnish the whipped cream with a sprinkle of cocoa powder or nutmeg for added flavor if desired. The key to a good Irish coffee is using freshly brewed hot coffee, quality Irish whiskey, and properly whipped cream to top it off.", 
-            "allergens": ["gluten","lactose"]
+            "allergens": ["gluten","lactose"],
+            "image": "TBA", 
+            "no match drink": false
         }, 
         {
             "name": "Paloma", 
             "type": "Cocktail", 
             "key genres": ["mexico","romantic comedy"],
-            "genres": ["humorous","mystery","biography & memoir","romantic suspense","romantic comedy",
-				"romance","satire","mexico","thriller","travel","adventure"],
+            "genres": ["travel","biography & memoir","thriller","romantic suspense","satire","adventure",
+				"mystery","romantic comedy","mexico","romance","humorous"],
             "sentiment": 0.7, 
             "ingredients": [
                 "2 oz tequila (blanco or reposado)", 
@@ -497,14 +554,16 @@
                 "Ice"
             ], 
             "instructions": "A Paloma is a refreshing and popular cocktail that originates from Mexico. Follow this recipe to make a Paloma: Fill the glass with ice. In a shaker, combine the tequila, freshly squeezed lime juice, and grapefruit juice. Shake well to mix the ingredients thoroughly. Strain the mixture into the prepared glass over ice. If using grapefruit soda, top off the glass with it. If not, use grapefruit juice and add soda water. Garnish the drink with a lime wedge or wheel.", 
-            "allergens": []
+            "allergens": [], 
+            "image": "TBA", 
+            "no match drink": false
         }, 
         {
             "name": "Pisco Sour", 
             "type": "Cocktail", 
             "key genres": [], 
-            "genres": ["peru","mystery","biography & memoir","chile","thriller","travel","historical fiction",
-				"adventure"],
+            "genres": ["travel","biography & memoir","thriller","historical fiction","chile","peru","adventure",
+				"mystery"],
             "sentiment": 0.8, 
             "ingredients": [
                 "2 oz Pisco", 
@@ -515,14 +574,16 @@
                 "Angostura bitters (for garnish)"
             ], 
             "instructions": "The Pisco Sour is a classic cocktail that originated in Peru and Chile. It is known for its balance of sweet, sour, and the frothy texture provided by the egg white. To make it: In a cocktail shaker, combine the Pisco, fresh lime juice, simple syrup, and egg white. Dry shake (shake without ice) vigorously for about 10-15 seconds. This helps create a frothy texture from the egg white. Add ice to the shaker and shake again for another 10-15 seconds to chill the mixture. Strain the cocktail into a chilled glass, typically a rocks glass or a sour glass. Garnish the foam on top with a few drops of Angostura bitters.", 
-            "allergens": ["egg"]
+            "allergens": ["egg"],
+            "image": "TBA", 
+            "no match drink": false
         }, 
         {
             "name": "Alien Brain Hemorrhage", 
             "type": "Cocktail", 
             "key genres": ["aliens","zombies","space travel"],
-            "genres": ["zombies","aliens","space travel","science fiction","thriller","paranormal","fantasy",
-				"supernatural thrillers","paranormal fiction suspense & thriller","horror"],
+            "genres": ["aliens","zombies","paranormal fiction suspense & thriller","supernatural thrillers",
+				"thriller","horror","science fiction","paranormal","fantasy","space travel"],
             "sentiment": 0.4, 
             "ingredients": [
                 "1/2 oz Peach Schnapps", 
@@ -531,14 +592,16 @@
                 "A few drops of Grenadine"
             ], 
             "instructions": "The Alien Brain Hemorrhage is a visually striking and slightly eerie shooter cocktail known for its layered appearance, resembling a brain floating in a colorful liquid. Here's how to make it: Chill a shot glass in the freezer. Pour the Peach Schnapps into the shot glass, filling it about halfway. Gently pour the Baileys Irish Cream on top of the Peach Schnapps. It should form a layer on the surface. Carefully add the Blue Curacao on top of the Baileys layer. It should also form a separate layer. Finally, drop a few drops of Grenadine into the center of the shot. The Grenadine will sink and create the \"hemorrhage\" effect.", 
-            "allergens": ["lactose"]
+            "allergens": ["lactose"],
+            "image": "TBA", 
+            "no match drink": false
         }, 
         {
             "name": "Amaretto Sour", 
             "type": "Cocktail", 
             "key genres": [], 
-            "genres": ["humorous","mystery","biography & memoir","romantic suspense","20th century","adult romance",
-				"romantic comedy","romance","satire","thriller","historical fiction","historical romance"],
+            "genres": ["adult romance","historical romance","biography & memoir","thriller","historical fiction",
+				"romantic suspense","satire","mystery","20th century","romantic comedy","romance","humorous"],
             "sentiment": 0.8, 
             "ingredients": [
                 "2 oz Amaretto", 
@@ -548,15 +611,17 @@
                 "Lemon slice or cherry for garnish (optional)"
             ], 
             "instructions": "The Amaretto Sour is known for its smooth and slightly sweet taste, balanced by the tartness of the fresh lemon juice. Start by filling a shaker with ice. Add the Amaretto, fresh lemon juice, and simple syrup to the shaker. Shake the ingredients well to chill the mixture. Strain the mixture into a rocks glass filled with ice. Garnish with a lemon slice or a cherry if desired.", 
-            "allergens": ["tree nuts"]
+            "allergens": ["tree nuts"],
+            "image": "TBA", 
+            "no match drink": false
         }, 
         {
             "name": "Long Island Iced Tea", 
             "type": "Cocktail", 
             "key genres": ["long island","erotica","southern gothic","noir"],
-            "genres": ["criminals","mystery","epic","romantic suspense","southern gothic","noir","adult romance",
-				"classics","erotica","crime fiction","psychological","long island","n.y.","thriller","fantasy","drama",
-				"historical fiction","united states"],
+            "genres": ["n.y.","adult romance","crime fiction","united states","thriller","epic","erotica",
+				"classics","romantic suspense","psychological","long island","historical fiction","mystery","criminals",
+				"fantasy","southern gothic","drama","noir"],
             "sentiment": -0.15, 
             "ingredients": [
                 "1/2 oz Vodka", 
@@ -571,14 +636,16 @@
                 "Lemon wedge for garnish"
             ], 
             "instructions": "The Long Island Iced Tea is a popular and potent cocktail known for its mix of multiple spirits. Despite its name, it doesn't contain any actual tea. Here's a classic recipe for a Long Island Iced Tea: Fill a shaker with ice cubes. Add the vodka, tequila, rum, gin, triple sec, fresh lemon juice, and simple syrup to the shaker. Shake the ingredients well to chill the mixture. Strain the mixture into a highball glass filled with ice. Top off with cola to your desired level, leaving some room at the top. Stir gently to combine the ingredients. Garnish with a lemon wedge.", 
-            "allergens": []
+            "allergens": [], 
+            "image": "TBA", 
+            "no match drink": false
         }, 
         {
             "name": "Mai Tai", 
             "type": "Cocktail", 
             "key genres": [], 
-            "genres": ["mystery","1950s","biography & memoir","20th century","1960s","adventure","nineteen sixties",
-				"romance","nineteen fifties","travel","historical fiction","historical romance"],
+            "genres": ["1950s","travel","biography & memoir","historical romance","1960s","historical fiction",
+				"adventure","mystery","20th century","nineteen fifties","nineteen sixties","romance"],
             "sentiment": 0.7, 
             "ingredients": [
                 "2 oz White rum", 
@@ -590,14 +657,16 @@
                 "Mint sprig and lime wheel for garnish"
             ], 
             "instructions": "The Mai Tai is a classic tropical cocktail known for its refreshing and fruity flavor. There are different variations of the Mai Tai, but here's a common recipe: Fill a shaker with ice cubes. Add the white rum, fresh lime juice, orange liqueur, and Orgeat syrup to the shaker. Shake the ingredients well to chill the mixture. Strain the mixture into an Old Fashioned glass filled with crushed ice. Float the dark rum on top by gently pouring it over the back of a spoon. Garnish with a mint sprig and a lime wheel.", 
-            "allergens": ["tree nuts"]
+            "allergens": ["tree nuts"],
+            "image": "TBA", 
+            "no match drink": false
         }, 
         {
             "name": "Whiskey Sour", 
             "type": "Cocktail", 
             "key genres": ["steampunk","unrequited love"],
-            "genres": ["biography & memoir","20th century","1960s","nineteen sixties","classics","1930s",
-				"family life","steampunk","unrequited love","historical fiction","adventure","nineteen thirties"],
+            "genres": ["unrequited love","biography & memoir","1960s","steampunk","family life","historical fiction",
+				"classics","adventure","nineteen thirties","20th century","nineteen sixties","1930s"],
             "sentiment": 0.7, 
             "ingredients": [
                 "2 oz Bourbon or Rye whiskey", 
@@ -607,14 +676,16 @@
                 "Lemon slice or cherry for garnish (optional)"
             ], 
             "instructions": "The Whiskey Sour is a classic cocktail that allows the flavor of the whiskey to shine through. To make it, start by filling a shaker with ice cubes. Add the whiskey, fresh lemon juice, and simple syrup to the shaker. Shake the ingredients well to chill the mixture. Strain the mixture into a rocks glass filled with ice. Optionally, garnish with a lemon slice or cherry.", 
-            "allergens": ["gluten"]
+            "allergens": ["gluten"],
+            "image": "TBA", 
+            "no match drink": false
         }, 
         {
             "name": "French 75", 
             "type": "Cocktail", 
             "key genres": ["1920s"],
-            "genres": ["1920s","mystery","biography & memoir","nineteen twenties","20th century","classics",
-				"romance","mystery & detective","historical fiction","historical romance"],
+            "genres": ["nineteen twenties","historical romance","mystery & detective","biography & memoir",
+				"1920s","historical fiction","classics","mystery","20th century","romance"],
             "sentiment": 0.8, 
             "ingredients": [
                 "1 1/2 oz Gin", 
@@ -625,14 +696,16 @@
                 "Lemon twist for garnish"
             ], 
             "instructions": "The French 75 is a delightful and refreshing cocktail, and it's perfect for celebrations or as a sophisticated sipper. To make it, start by filling a shaker with ice cubes. Add the gin, fresh lemon juice, and simple syrup to the shaker. Shake the ingredients well to chill the mixture. Strain the mixture into a Champagne flute or a Collins glass filled with ice. Top off with Champagne or sparkling wine. Gently stir to combine. Garnish with a lemon twist.", 
-            "allergens": []
+            "allergens": [], 
+            "image": "TBA", 
+            "no match drink": false
         }, 
         {
             "name": "Vampire's Kiss", 
             "type": "Cocktail", 
             "key genres": ["vampires","gothic","dracula"],
-            "genres": ["gothic","vampires","paranormal romance","romance","dracula","demons","demonology",
-				"paranormal","fantasy","horror"],
+            "genres": ["paranormal romance","dracula","gothic","demons","horror","vampires","demonology",
+				"paranormal","fantasy","romance"],
             "sentiment": 0.4, 
             "ingredients": [
                 "1 1/2 oz Vodka", 
@@ -643,15 +716,17 @@
                 "Blackberries or a cherry for garnish"
             ], 
             "instructions": "The Vampire's Kiss is characterized by its vibrant red color and sweet-tart flavor profile. Start by filling a shaker with ice cubes. Add the vodka, cranberry juice, grenadine, and triple sec to the shaker. Shake the ingredients well to chill the mixture. Strain the mixture into a martini glass or a rocks glass filled with ice. Garnish with a few blackberries or a cherry.", 
-            "allergens": []
+            "allergens": [], 
+            "image": "TBA", 
+            "no match drink": false
         }, 
         {
             "name": "Black Magic Cocktail", 
             "type": "Cocktail", 
             "key genres": ["witches","occult","demons","wizards","dark magic","gothic","demonology"],
-            "genres": ["gothic","supernatural thrillers","paranormal fiction suspense & thriller","magicians",
-				"thriller","fantasy","wizards","magic","occult","demonology","mystery & detective","paranormal","hard-boiled",
-				"mystery","epic","dark magic","witches","noir","demons"],
+            "genres": ["magicians","mystery & detective","paranormal fiction suspense & thriller","gothic",
+				"supernatural thrillers","epic","paranormal","wizards","magic","thriller","occult","hard-boiled",
+				"witches","demonology","fantasy","noir","demons","mystery","dark magic"],
             "sentiment": 0.4, 
             "ingredients": [
                 "2 oz Black vodka (like Blavod or any other black vodka)", 
@@ -661,15 +736,17 @@
                 "Orange twist or slice for garnish (optional)"
             ], 
             "instructions": "The Black Magic cocktail is known for its dark and mysterious appearance. Here's a simple recipe to make a Black Magic cocktail: Fill a shaker with ice cubes. Add the black vodka, coffee liqueur, and orange liqueur to the shaker. Shake the ingredients well to chill the mixture. Strain the mixture into a rocks glass filled with ice. Optionally, garnish with an orange twist or slice.", 
-            "allergens": []
+            "allergens": [], 
+            "image": "TBA", 
+            "no match drink": false
         }, 
         {
             "name": "The Zombie", 
             "type": "Cocktail", 
-            "key genres": ["zombies","frankenstein"],
-            "genres": ["mystery","1950s","20th century","1960s","pirates","zombies","nineteen sixties",
-				"frankenstein","travel","nineteen fifties","thriller","mystery & detective","paranormal","supernatural thrillers",
-				"paranormal fiction suspense & thriller","adventure","horror"],
+            "key genres": ["zombies","frankenstein "],
+            "genres": ["1950s","travel","zombies","frankenstein ","mystery & detective","pirates","paranormal fiction suspense & thriller",
+				"1960s","supernatural thrillers","thriller","horror","adventure","paranormal","mystery","20th century",
+				"nineteen fifties","nineteen sixties"],
             "sentiment": 0.5, 
             "ingredients": [
                 "1 1/2 oz Light rum", 
@@ -685,15 +762,17 @@
                 "Pineapple slice, cherry, and mint sprig for garnish"
             ], 
             "instructions": "The Zombie cocktail is a classic tiki drink known for its strong and fruity flavors. Here's a recipe for making a Zombie cocktail: In a shaker, combine the light rum, dark rum, apricot brandy, lime juice, pineapple juice, passion fruit juice (or syrup), grenadine, and a dash of Angostura bitters. Fill the shaker with ice and shake the ingredients well to chill the mixture. Strain the mixture into a tall glass filled with crushed ice. Float the 151-proof rum on top by gently pouring it over the back of a spoon to create a layered effect. Garnish with a pineapple slice, cherry, and a mint sprig.", 
-            "allergens": []
+            "allergens": [], 
+            "image": "TBA", 
+            "no match drink": false
         }, 
         {
             "name": "Witches' Brew", 
             "type": "Cocktail", 
             "key genres": ["witches","dark magic","wizards","magic","urban fantasy"],
-            "genres": ["wizards","mystery","dark magic","magicians","witches","magical realism","magic",
-				"urban","occult","urban fantasy","thriller","paranormal","fantasy","supernatural thrillers","paranormal fiction suspense & thriller",
-				"horror"],
+            "genres": ["occult","magicians","magical realism","magic","paranormal fiction suspense & thriller",
+				"supernatural thrillers","thriller","urban fantasy","horror","witches","paranormal","mystery","fantasy",
+				"urban","dark magic","wizards"],
             "sentiment": 0.5, 
             "ingredients": [
                 "2 cups black vodka", 
@@ -708,14 +787,16 @@
                 "Optional: Dry ice (for a smoky effect, handle dry ice with care)"
             ], 
             "instructions": "A Witches' Brew is often a Halloween-themed punch or cocktail with a spooky and colorful presentation. In a large punch bowl, combine the black vodka, triple sec, blackberry schnapps, cranberry juice, lime juice, and simple syrup. Stir well to mix the ingredients. Add ice cubes to the punch bowl. Pour in the ginger ale or lemon-lime soda and stir gently. Garnish the punch with gummy worms, gummy eyeballs, or other Halloween-themed candies. If you want to add a smoky effect, carefully add small pieces of dry ice to the punch. Remember to handle dry ice with care, using gloves or tongs, and never ingest it. Serve the witches' brew in individual glasses.", 
-            "allergens": []
+            "allergens": [], 
+            "image": "TBA", 
+            "no match drink": false
         }, 
         {
             "name": "Astro Pop", 
             "type": "Cocktail", 
             "key genres": ["aliens","space travel"],
-            "genres": ["humorous","voyages","aliens","magical realism","science fiction","travel","fantasy",
-				"space travel","adventure"],
+            "genres": ["aliens","magical realism","travel","voyages","science fiction","space travel",
+				"adventure","fantasy","humorous"],
             "sentiment": 0.6, 
             "ingredients": [
                 "1 oz Absolut Raspberri vodka", 
@@ -724,13 +805,15 @@
                 "1/2 oz Blue Curacao liqueur"
             ], 
             "instructions": "An Astro Pop is a cocktail typically served in a test tube. To make it, add vodka and sour mix to a tumbler with ice to chill. Shake the ingredients and pour in a large shot glass. Use Grenadine and allow to sink to the bottom of the glass. Make sure to pour slowly down the inside of the glass so the finished product is red, blue, and white from bottom to top.", 
-            "allergens": []
+            "allergens": [], 
+            "image": "TBA", 
+            "no match drink": false
         }, 
         {
             "name": "Tequila Sunrise", 
             "type": "Cocktail", 
             "key genres": [], 
-            "genres": ["mystery","california","contemporary fiction","romance","mexico","travel","adventure"
+            "genres": ["travel","adventure","mystery","california","contemporary fiction","mexico","romance"
 				],
             "sentiment": 0.65, 
             "ingredients": [
@@ -741,202 +824,232 @@
                 "Orange slice and maraschino cherry for garnish"
             ], 
             "instructions": "The Tequila Sunrise is a classic cocktail known for its vibrant appearance, with shades resembling a sunrise. Here's a simple recipe for making a Tequila Sunrise: Fill a highball glass with ice cubes. Pour the tequila and orange juice into the glass. Stir the mixture gently to combine. Slowly pour the grenadine syrup over the back of a spoon or by drizzling it down the side of the glass. This will allow the grenadine to settle at the bottom of the glass and gradually rise to create the sunrise effect. Do not stir after adding the grenadine, allowing it to naturally mix with the other ingredients. Garnish with an orange slice and a maraschino cherry. Optionally, you can use a straw to gently stir the colors together before drinking.", 
-            "allergens": []
+            "allergens": [], 
+            "image": "TBA", 
+            "no match drink": false
         }, 
         {
             "name": "Moscato", 
             "type": "Wine", 
             "key genres": ["france"],
-            "genres": ["first loves","adolescence","humorous","friendship","friendship in adolescence",
-				"female friendship","romantic comedy","contemporary fiction","romance","italy","france"],
+            "genres": ["friendship in adolescence","france","first loves","friendship","adolescence",
+				"female friendship","italy","romantic comedy","contemporary fiction","romance","humorous"],
             "sentiment": 0.7, 
             "ingredients": [
                 ""
             ], 
             "instructions": "Pour yourself a glass!", 
-            "allergens": []
+            "allergens": [], 
+            "image": "rose", 
+            "no match drink": false
         }, 
         {
             "name": "Pinot Noir", 
             "type": "Wine", 
             "key genres": ["erotica"],
-            "genres": ["mystery","vampires","adult romance","erotica","romance","family life","mystery & detective",
-				"france","united states"],
+            "genres": ["france","adult romance","mystery & detective","united states","family life","erotica",
+				"vampires","mystery","romance"],
             "sentiment": 0.6, 
             "ingredients": [
                 ""
             ], 
             "instructions": "Pour yourself a glass!", 
-            "allergens": []
+            "allergens": [], 
+            "image": "redWine", 
+            "no match drink": false
         }, 
         {
             "name": "Merlot", 
             "type": "Wine", 
             "key genres": ["erotica","france"],
-            "genres": ["mystery","political","gothic","vampires","adult romance","erotica","romance",
-				"science fiction","family life","psychological","france","dystopian"],
+            "genres": ["france","adult romance","dystopian","gothic","family life","erotica","vampires",
+				"science fiction","psychological","mystery","business","political","romance"],
             "sentiment": 0.6, 
             "ingredients": [
                 ""
             ], 
             "instructions": "Pour yourself a glass!", 
-            "allergens": []
+            "allergens": [], 
+            "image": "redWine", 
+            "no match drink": true
         }, 
         {
             "name": "Ros\u00e9", 
             "type": "Wine", 
             "key genres": ["first loves","france"],
-            "genres": ["first loves","humorous","mystery","love in adolescence","adult romance","romantic comedy",
-				"contemporary fiction","romance","spain","travel","unrequited love","france"],
+            "genres": ["france","adult romance","travel","unrequited love","spain","love in adolescence",
+				"first loves","mystery","romantic comedy","contemporary fiction","romance","humorous"],
             "sentiment": 0.7, 
             "ingredients": [
                 ""
             ], 
             "instructions": "Pour yourself a glass!", 
-            "allergens": []
+            "allergens": [], 
+            "image": "rose", 
+            "no match drink": false
         }, 
         {
             "name": "Chardonnay", 
             "type": "Wine", 
             "key genres": ["france"],
-            "genres": ["mystery","drama","contemporary fiction","domestic fiction","romance","family life",
-				"mystery & detective","historical romance","historical fiction","france","united states"],
+            "genres": ["france","historical romance","mystery & detective","united states","domestic fiction",
+				"family life","historical fiction","mystery","contemporary fiction","drama","romance"],
             "sentiment": 0.6, 
             "ingredients": [
                 ""
             ], 
             "instructions": "Pour yourself a glass!", 
-            "allergens": []
+            "allergens": [], 
+            "image": "whiteWine", 
+            "no match drink": false
         }, 
         {
             "name": "Dry Vermouth", 
             "type": "Wine", 
             "key genres": ["noir"],
-            "genres": ["mystery","espionage","noir","science fiction","spain","mystery & detective","thriller",
-				"italy","historical fiction","france"],
+            "genres": ["france","mystery & detective","spain","thriller","historical fiction","science fiction",
+				"mystery","italy","espionage","noir"],
             "sentiment": -0.5, 
             "ingredients": [
                 ""
             ], 
             "instructions": "Pour yourself a glass!", 
-            "allergens": []
+            "allergens": [], 
+            "image": "martini", 
+            "no match drink": false
         }, 
         {
             "name": "Sherry", 
             "type": "Wine", 
             "key genres": ["spain","england"],
-            "genres": ["17th century","mystery","england","great britain","humorous","18th century","romantic comedy",
-				"romance","19th century","spain","mystery & detective","historical fiction","historical romance"],
+            "genres": ["17th century","19th century","historical romance","mystery & detective","spain",
+				"18th century","historical fiction","mystery","great britain","romantic comedy","england","romance",
+				"humorous"],
             "sentiment": 0.5, 
             "ingredients": [
                 ""
             ], 
             "instructions": "Pour yourself a glass!", 
-            "allergens": []
+            "allergens": [], 
+            "image": "redWine", 
+            "no match drink": false
         }, 
         {
             "name": "Champagne", 
             "type": "Wine", 
             "key genres": ["france","first loves"],
-            "genres": ["first loves","adolescence","love in adolescence","biography & memoir","humorous",
-				"romantic comedy","contemporary fiction","erotica","romance","19th century","family life","steampunk",
-				"france"],
+            "genres": ["france","19th century","biography & memoir","love in adolescence","first loves",
+				"steampunk","adolescence","family life","erotica","romantic comedy","contemporary fiction","romance",
+				"humorous"],
             "sentiment": 1, 
             "ingredients": [
                 ""
             ], 
             "instructions": "Pour yourself a glass!", 
-            "allergens": []
+            "allergens": [], 
+            "image": "champagne", 
+            "no match drink": false
         }, 
         {
             "name": "Tempranillo", 
             "type": "Wine", 
             "key genres": ["spain"],
-            "genres": ["mystery","epic","biography & memoir","romantic suspense","vampires","adult romance",
-				"contemporary fiction","romance","spain","thriller","fantasy","drama","historical fiction","adventure",
-				"historical fantasy"],
+            "genres": ["adult romance","biography & memoir","spain","thriller","epic","historical fiction",
+				"vampires","romantic suspense","adventure","mystery","fantasy","historical fantasy","contemporary fiction",
+				"drama","romance"],
             "sentiment": 0.3, 
             "ingredients": [
                 ""
             ], 
             "instructions": "Pour yourself a glass!", 
-            "allergens": []
+            "allergens": [], 
+            "image": "redWine", 
+            "no match drink": false
         }, 
         {
             "name": "Zinfandel", 
             "type": "Wine", 
             "key genres": [], 
-            "genres": ["mystery","drama","romantic suspense","historical romance","vampires","paranormal romance",
-				"adult romance","california","contemporary fiction","erotica","romance","thriller","historical fiction",
-				"paranormal","supernatural thrillers","paranormal fiction suspense & thriller","adventure","united states"
-				],
+            "genres": ["adult romance","historical romance","paranormal romance","paranormal fiction suspense & thriller",
+				"united states","supernatural thrillers","thriller","erotica","historical fiction","vampires","romantic suspense",
+				"adventure","paranormal","mystery","california","contemporary fiction","drama","romance"],
             "sentiment": 0.6, 
             "ingredients": [
                 ""
             ], 
             "instructions": "Pour yourself a glass!", 
-            "allergens": []
+            "allergens": [], 
+            "image": "redWine", 
+            "no match drink": false
         }, 
         {
             "name": "Prosecco", 
             "type": "Wine", 
             "key genres": ["romantic comedy","first loves"],
-            "genres": ["first loves","adolescence","love in adolescence","humorous","romantic comedy",
-				"contemporary fiction","romance","travel","family life","steampunk","italy","adventure"],
+            "genres": ["travel","love in adolescence","first loves","steampunk","adolescence","family life",
+				"adventure","italy","romantic comedy","contemporary fiction","romance","humorous"],
             "sentiment": 0.9, 
             "ingredients": [
                 ""
             ], 
             "instructions": "Pour yourself a glass!", 
-            "allergens": []
+            "allergens": [], 
+            "image": "champagne", 
+            "no match drink": false
         }, 
         {
             "name": "Cabernet Sauvignon", 
             "type": "Wine", 
             "key genres": [], 
-            "genres": ["mystery","epic","political","vampires","adult romance","california","space travel",
-				"erotica","science fiction","psychological","action","hard science fiction","unrequited love","historical fiction",
-				"france","dystopian","united states"],
+            "genres": ["france","adult romance","action","unrequited love","dystopian","united states",
+				"hard science fiction","epic","erotica","vampires","science fiction","psychological","historical fiction",
+				"mystery","california","business","political","space travel"],
             "sentiment": 0.6, 
             "ingredients": [
                 ""
             ], 
             "instructions": "Pour yourself a glass!", 
-            "allergens": []
+            "allergens": [], 
+            "image": "redWine", 
+            "no match drink": true
         }, 
         {
             "name": "Syrah", 
             "type": "Wine", 
             "key genres": ["australia"],
-            "genres": ["mystery","vampires","paranormal romance","adult romance","erotica","romance",
-				"australia","mystery & detective","paranormal","france","dystopian"],
+            "genres": ["france","adult romance","paranormal romance","mystery & detective","dystopian",
+				"erotica","vampires","australia","paranormal","mystery","romance"],
             "sentiment": 0.6, 
             "ingredients": [
                 ""
             ], 
             "instructions": "Pour yourself a glass!", 
-            "allergens": []
+            "allergens": [], 
+            "image": "redWine", 
+            "no match drink": false
         }, 
         {
             "name": "Malbec", 
             "type": "Wine", 
             "key genres": ["argentina"],
-            "genres": ["mystery","action","gothic","vampires","paranormal romance","france","romance",
-				"mystery & detective","paranormal","argentina","dystopian","horror"],
+            "genres": ["france","action","paranormal romance","mystery & detective","dystopian","gothic",
+				"horror","vampires","paranormal","mystery","argentina","romance"],
             "sentiment": 0.6, 
             "ingredients": [
                 ""
             ], 
             "instructions": "Pour yourself a glass!", 
-            "allergens": []
+            "allergens": [], 
+            "image": "redWine", 
+            "no match drink": true
         }, 
         {
             "name": "Mead", 
             "type": "Wine", 
             "key genres": ["vikings","norse mythology","middle ages","celtic mythology"],
-            "genres": ["norse mythology","great britain","middle ages","england","17th century","voyages",
-				"ancient","ireland","epic poetry","travel","vikings","fantasy","historical fiction","adventure","historical fantasy",
-				"celtic mythology"],
+            "genres": ["17th century","ancient","travel","ireland","voyages","historical fiction","norse mythology",
+				"vikings","epic poetry","adventure","historical fantasy","fantasy","great britain","celtic mythology",
+				"england","middle ages"],
             "sentiment": 0.8, 
             "ingredients": [
                 "Fruits (Optional)", 
@@ -944,299 +1057,357 @@
                 "Herbs (Optional)"
             ], 
             "instructions": "Mead is an alcoholic beverage created by fermenting honey with water, and any of the ingredients above can be added to flavor it!", 
-            "allergens": []
+            "allergens": [], 
+            "image": "whiteWine", 
+            "no match drink": false
         }, 
+        {
+            "name": "Pilsner", 
+            "type": "Beer", 
+            "key genres": ["germany"],
+            "genres": ["adventure","mystery", "contemporary fiction", "humorous", "germany", "friendship in adolescence",
+                "male friendship"],
+            "sentiment": 0.6, 
+            "ingredients": [
+                ""
+            ], 
+            "instructions": "Pilsner is best served cold in a tall narrow glass. When pouring, aim for a moderate and controlled pour to achieve a good balance between beer and head.", 
+            "allergens": ["gluten"],
+            "no match drink": true
+        },
         {
             "name": "Stout", 
             "type": "Beer", 
             "key genres": [], 
-            "genres": ["17th century","mystery","horror","gothic","noir","18th century","classics","science fiction",
-				"thriller","steampunk","hard science fiction","christmas stories","historical fiction","adventure",
-				"hard-boiled","celtic mythology"],
+            "genres": ["17th century","hard-boiled","christmas stories","gothic","steampunk","thriller",
+				"horror","18th century","classics","science fiction","historical fiction","adventure","mystery","hard science fiction",
+				"celtic mythology","noir"],
             "sentiment": 0.6, 
             "ingredients": [
                 ""
             ], 
             "instructions": "Pop open a bottle. Pour chilled at an angle in a pint glass to promote a creamy head.", 
-            "allergens": ["gluten"]
+            "allergens": ["gluten"],
+            "image": "beer", 
+            "no match drink": false
         }, 
         {
             "name": "IPA", 
             "type": "Beer", 
             "key genres": ["sports","urban"],
-            "genres": ["mystery","biography & memoir","sports","noir","science fiction","urban","family life",
-				"new england","thriller","action","adventure"],
+            "genres": ["action","biography & memoir","family life","thriller","science fiction","adventure",
+				"mystery","urban","noir","sports","new england"],
             "sentiment": -0.3, 
             "ingredients": [
                 ""
             ], 
             "instructions": "Serve IPA cool, but not ice-cold. Aim for a moderate, controlled pour. Pouring too aggressively can result in excessive foam, and a healthy head is desired to enhance the beer's aroma.", 
-            "allergens": ["gluten"]
+            "allergens": ["gluten"],
+            "image": "beer", 
+            "no match drink": false
         }, 
         {
             "name": "Guinness", 
             "type": "Beer", 
             "key genres": ["ireland"],
-            "genres": ["mystery","classics","ireland","thriller","fantasy","drama","historical fiction",
-				"historical fantasy"],
+            "genres": ["ireland","thriller","historical fiction","classics","mystery","fantasy","historical fantasy",
+				"drama"],
             "sentiment": 0.6, 
             "ingredients": [
                 ""
             ], 
             "instructions": "Serve slightly chilled in a pint glass using the double pour process. For the first pour, fill the glass three-quarters full. Let the beer settle before topping it off with the second pour, which completes the filling of the glass and allows the creamy head to form.", 
-            "allergens": ["gluten"]
+            "allergens": ["gluten"],
+            "image": "beer", 
+            "no match drink": false
         }, 
         {
             "name": "Lager", 
             "type": "Beer", 
             "key genres": ["sports","friendship"],
-            "genres": ["friendship","1940s","male friendship","1950s","1960s","female friendship","nineteen forties",
-				"sports","nineteen sixties","nineteen fifties","adolescence","humorous","mystery","friendship in adolescence",
-				"contemporary fiction","domestic fiction","1930s","adventure","nineteen thirties"],
+            "genres": ["friendship in adolescence","1950s","nineteen sixties","1940s","friendship","adventure",
+				"1960s","domestic fiction","nineteen fifties","humorous","1930s","female friendship","adolescence",
+				"nineteen thirties","male friendship","mystery","contemporary fiction","nineteen forties","sports"
+				],
             "sentiment": 0.5, 
             "ingredients": [
                 "Lemon or lime garnish (optional)"
             ], 
             "instructions": "Lager is best served cold. Aim for a moderate and controlled pour to minimize excessive foaming, resulting in a nice, frothy head. Add lemon or lime garnish if desired.", 
-            "allergens": ["gluten"]
+            "allergens": ["gluten"],
+            "image": "beer", 
+            "no match drink": true
         }, 
         {
             "name": "Porter", 
             "type": "Beer", 
             "key genres": ["steampunk"],
-            "genres": ["mystery","northern europe in fiction","noir","classics","19th century","fantasy",
-				"ghosts","steampunk","hard science fiction","historical fiction","adventure","historical fantasy",
-				"horror"],
+            "genres": ["19th century","steampunk","historical fiction","horror","classics","northern europe in fiction",
+				"ghosts","adventure","mystery","fantasy","historical fantasy","hard science fiction","noir"],
             "sentiment": 0.4, 
             "ingredients": [
                 ""
             ], 
             "instructions": "Porter is best served at a slightly warmer temperature. When pouring, aim for a moderate and controlled pour to achieve a good balance between beer and head.", 
-            "allergens": ["gluten"]
+            "allergens": ["gluten"],
+            "image": "beer", 
+            "no match drink": false
         }, 
         {
             "name": "Ale", 
             "type": "Beer", 
             "key genres": ["vikings"],
-            "genres": ["middle ages","mystery","epic","1950s","1960s","voyages","nineteen sixties","nineteen forties",
-				"1930s","1940s","travel","nineteen fifties","vikings","fantasy","historical fiction","adventure",
-				"historical fantasy","nineteen thirties"],
+            "genres": ["1950s","travel","voyages","1940s","1960s","epic","historical fiction","vikings",
+				"adventure","nineteen thirties","mystery","fantasy","nineteen fifties","historical fantasy","nineteen sixties",
+				"nineteen forties","1930s","middle ages"],
             "sentiment": 0.5, 
             "ingredients": [
                 ""
             ], 
             "instructions": "Depending on what style of ale you are drinking, desired temperature can vary. In general, it is served at a slightly warmer temperature, and should be poured in a controlled manner.", 
-            "allergens": ["gluten"]
+            "allergens": ["gluten"],
+            "image": "beer", 
+            "no match drink": false
         }, 
         {
             "name": "Soju", 
             "type": "Spirits", 
-            "key genres": ["korea"],
-            "genres": ["adolescence","mystery","love in adolescence","korea","romantic comedy","magical realism",
-				"contemporary fiction","sagas","science fiction","family life","comic science fiction","thriller",
-				"travel","historical fiction","historical fantasy"],
+            "key genres": ["korea","business"],
+            "genres": ["comic science fiction","korea","travel","magical realism","love in adolescence",
+				"adolescence","family life","thriller","historical fiction","science fiction","mystery","historical fantasy",
+				"business","romantic comedy","contemporary fiction","sagas"],
             "sentiment": 0.5, 
             "ingredients": [
                 ""
             ], 
             "instructions": "Soju is a traditional Korean distilled spirit with a mild flavor. It is best enjoyed straight out of the refrigerator and poured as a shot. There are several flavors of soju (typically fruit flavors) that can be served either the same way or in a cocktail.", 
-            "allergens": []
+            "allergens": [], 
+            "image": "shot", 
+            "no match drink": false
         }, 
         {
             "name": "Green Chartreuse", 
             "type": "Spirits", 
             "key genres": ["witches","magic","occult","space travel"],
-            "genres": ["mystery","paranormal","magicians","witches","18th century","space travel","magic",
-				"science fiction","travel","occult","thriller","fantasy","historical fiction","france","historical fantasy",
-				"horror"],
+            "genres": ["occult","magicians","travel","france","magic","thriller","18th century","historical fiction",
+				"horror","science fiction","witches","paranormal","mystery","fantasy","historical fantasy","space travel"
+				],
             "sentiment": 0.4, 
             "ingredients": [
                 ""
             ], 
             "instructions": "Green Chartreuse is a herbal liqueur that is typically served chilled in a small liqueur glass. Its intense flavors are usually enjoyed after a meal.", 
-            "allergens": []
+            "allergens": [], 
+            "image": "greenChartreuse", 
+            "no match drink": false
         }, 
         {
             "name": "Vodka", 
             "type": "Spirits", 
             "key genres": ["soviet union","russia","poland","ukraine"],
-            "genres": ["mystery","northern europe in fiction","biography & memoir","20th century","soviet union",
-				"russia","world war ii","noir","18th century","nineteen forties","1940s","19th century","contemporary fiction",
-				"poland","travel","historical fiction","ukraine"],
+            "genres": ["19th century","travel","biography & memoir","soviet union","1940s","18th century",
+				"world war ii","historical fiction","northern europe in fiction","poland","ukraine","mystery","20th century",
+				"russia","contemporary fiction","nineteen forties","noir"],
             "sentiment": -0.2, 
             "ingredients": [
                 "Lemon wedge (optional)"
             ], 
             "instructions": "Vodka is often served in a shot glass. Enjoy taking a shot with a chaser or a lemon wedge.", 
-            "allergens": []
+            "allergens": [], 
+            "image": "shot", 
+            "no match drink": false
         }, 
         {
             "name": "Baileys", 
             "type": "Spirits", 
             "key genres": ["ireland","christmas stories"],
-            "genres": ["mystery","friendship","female friendship","classics","contemporary fiction","ireland",
-				"romance","christmas stories"],
+            "genres": ["ireland","christmas stories","friendship","classics","mystery","contemporary fiction",
+				"romance","female friendship"],
             "sentiment": 0.75, 
             "ingredients": [
                 ""
             ], 
             "instructions": "Baileys is a creamy liqueur often served chilled, and is popularly enjoyed in coffee. It also pairs well with dessert, such as ice cream and cheesecake.", 
-            "allergens": ["lactose","gluten"]
+            "allergens": ["lactose","gluten"],
+            "image": "rumchata", 
+            "no match drink": false
         }, 
         {
             "name": "Poit\u00edn", 
             "type": "Spirits", 
             "key genres": ["ireland","celtic mythology"],
-            "genres": ["criminals","mystery","ireland","crime fiction","mystery & detective","thriller",
-				"fantasy","drama","historical fiction","celtic mythology"],
+            "genres": ["mystery & detective","ireland","crime fiction","thriller","historical fiction",
+				"mystery","criminals","fantasy","celtic mythology","drama"],
             "sentiment": 0.5, 
             "ingredients": [
                 ""
             ], 
             "instructions": "Poit\u00edn is best consumed at room temperature. Some people prefer it chilled or add a small amount of water.", 
-            "allergens": ["gluten"]
+            "allergens": ["gluten"],
+            "image": "shot", 
+            "no match drink": false
         }, 
         {
             "name": "Dark Rum", 
             "type": "Spirits", 
             "key genres": ["pirates","caribbean area","colonial period"],
-            "genres": ["colonial period","southern gothic","puerto rico","adventure","caribbean area",
-				"travel","thriller","sea stories","cuba","werewolves","voyages","mystery","world war i","pirates",
-				"sailors","noir","18th century","demons","1910s","jamaica"],
+            "genres": ["pirates","18th century","1910s","werewolves","southern gothic","caribbean area",
+				"travel","sailors","thriller","adventure","jamaica","voyages","world war i","colonial period","puerto rico",
+				"noir","sea stories","demons","mystery","cuba"],
             "sentiment": 0.6, 
             "ingredients": [
                 ""
             ], 
             "instructions": "Dark rum is can be enjoyed at room temperature, over ice, or added to hot beverages during colder months.", 
-            "allergens": []
+            "allergens": [], 
+            "image": "whiskey", 
+            "no match drink": false
         }, 
         {
             "name": "Witbier", 
             "type": "Beer", 
             "key genres": [], 
-            "genres": ["humorous","mystery","biography & memoir","female friendship","romantic comedy",
-				"contemporary fiction","romance","travel"],
+            "genres": ["travel","biography & memoir","contemporary fiction","mystery","romantic comedy",
+				"humorous","romance","female friendship"],
             "sentiment": 0.7, 
             "ingredients": [
                 ""
             ], 
             "instructions": "Witbier is a Belgian-style wheat beer best served chilled, but not too cold. Aim for a controlled pour to create a moderate and froty head by pouring down the side of the glass initially then straightening the glass as you pour.", 
-            "allergens": ["gluten"]
+            "allergens": ["gluten"],
+            "image": "beer", 
+            "no match drink": false
         }, 
         {
             "name": "Whiskey", 
             "type": "Spirits", 
             "key genres": ["southern gothic","westerns","urban fantasy","hard-boiled"],
-            "genres": ["gothic","southern gothic","science fiction","urban fantasy","biography & memoir",
-				"political","19th century","urban","action","westerns","celtic mythology","werewolves","paranormal",
-				"hard-boiled","18th century","classics","demons","historical fiction","adventure","horror"],
+            "genres": ["19th century","action","gothic","18th century","werewolves","classics","paranormal",
+				"southern gothic","urban fantasy","horror","science fiction","adventure","celtic mythology","biography & memoir",
+				"hard-boiled","historical fiction","demons","westerns","urban","political"],
             "sentiment": 0.6, 
             "ingredients": [
                 ""
             ], 
             "instructions": "Whiskey is usually served on the rocks (over ice) in a snifter or tulip glass.", 
-            "allergens": ["gluten"]
+            "allergens": ["gluten"],
+            "image": "whiskey", 
+            "no match drink": false
         }, 
         {
             "name": "Malt Liquor", 
             "type": "Beer", 
             "key genres": ["dystopian","urban","noir"],
-            "genres": ["adolescence","criminals","mystery","sports","noir","crime fiction","urban","science fiction",
-				"mystery & detective","thriller","hard science fiction","dystopian"],
+            "genres": ["mystery & detective","dystopian","crime fiction","adolescence","thriller","science fiction",
+				"mystery","criminals","urban","hard science fiction","noir","sports"],
             "sentiment": -0.5, 
             "ingredients": [
                 ""
             ], 
             "instructions": "Malt liquor is sometimes enjoyed straight from the container, but can also be poured into a pint glass or beer mug to appreciate its color, carbonation, and aroma.", 
-            "allergens": ["gluten"]
+            "allergens": ["gluten"],
+            "image": "brandy", 
+            "no match drink": false
         }, 
         {
             "name": "RumChata", 
             "type": "Spirits", 
             "key genres": ["christmas stories"],
-            "genres": ["humorous","mystery","christmas stories","romantic comedy","contemporary fiction",
-				"magical realism","romance","sagas","family life","drama"],
+            "genres": ["magical realism","christmas stories","family life","sagas","mystery","romantic comedy",
+				"contemporary fiction","drama","romance","humorous"],
             "sentiment": 0.6, 
             "ingredients": [
                 ""
             ], 
             "instructions": "RumChata is a cream liqueuer known for its blend of Carribean rum and horchata, a traditional Mexican drink made from rice, vanilla, and cinnamon. It can be enjoyed straight from the refigerator or poured over ice.", 
-            "allergens": ["lactose"]
+            "allergens": ["lactose"],
+            "image": "rumchata", 
+            "no match drink": false
         }, 
         {
             "name": "Tequila", 
             "type": "Spirits", 
             "key genres": ["mexico"],
-            "genres": ["criminals","mystery","action","romantic comedy","magical realism","crime fiction",
-				"19th century","mexico","thriller","travel","historical fiction","adventure","westerns"],
+            "genres": ["19th century","action","magical realism","travel","crime fiction","thriller",
+				"historical fiction","adventure","mystery","criminals","westerns","romantic comedy","mexico"],
             "sentiment": 0.3, 
             "ingredients": [
                 "Citrus wedge (optional)", 
                 "Salt (optional)"
             ], 
             "instructions": "Tequila is usually enjoyed by licking salt, taking the shot, then biting into a wedge of lime or lemon.", 
-            "allergens": []
+            "allergens": [], 
+            "image": "shot", 
+            "no match drink": false
         }, 
         {
             "name": "Gin", 
             "type": "Spirits", 
             "key genres": ["steampunk","hard-boiled","noir"],
-            "genres": ["great britain","17th century","england","20th century","espionage","noir","classics",
-				"travel","thriller","steampunk","historical fiction","adventure","hard-boiled"],
+            "genres": ["17th century","travel","hard-boiled","steampunk","thriller","historical fiction",
+				"classics","adventure","20th century","great britain","espionage","england","noir"],
             "sentiment": -0.5, 
             "ingredients": [
-                "TBA"
+                ""
             ], 
-            "instructions": "TBA", 
-            "allergens": []
+            "instructions": "", 
+            "allergens": [], 
+            "image": "shot", 
+            "no match drink": false
         }, 
         {
             "name": "White Rum", 
             "type": "Spirits", 
             "key genres": ["caribbean area","pirates","colonial period"],
-            "genres": ["world war i","colonial period","pirates","historical romance","sailors","voyages",
-				"1910s","18th century","romance","caribbean area","travel","sea stories","historical fiction","adventure"
-				],
+            "genres": ["caribbean area","historical romance","sailors","travel","voyages","sea stories",
+				"pirates","1910s","18th century","historical fiction","adventure","world war i","colonial period",
+				"romance"],
             "sentiment": 0.7, 
             "ingredients": [
                 ""
             ], 
             "instructions": "White rum is a popular spirit often served in a variety of cocktails and is rarely enjoyed by itself.", 
-            "allergens": []
+            "allergens": [], 
+            "image": "shot", 
+            "no match drink": false
         }, 
         {
             "name": "Bacardi", 
             "type": "Spirits", 
             "key genres": ["cuba","pirates","caribbean area"],
-            "genres": ["cuba","humorous","pirates","romance","caribbean area","travel","adventure"],
+            "genres": ["caribbean area","travel","pirates","adventure","cuba","romance","humorous"],
             "sentiment": 0.4, 
             "ingredients": [
                 ""
             ], 
             "instructions": "Bacardi is a brand of rum that is typically enjoyed with mixers. Although it can be taken as a shot, it is commonly served with coke.", 
-            "allergens": []
+            "allergens": [], 
+            "image": "shot", 
+            "no match drink": false
         }, 
         {
             "name": "Bourbon", 
             "type": "Spirits", 
             "key genres": ["southern gothic","steampunk","sagas","hard-boiled"],
-            "genres": ["political","biography & memoir","action","vampires","southern gothic","sagas",
-				"19th century","science fiction","united states","dystopian","steampunk","hard science fiction","space travel",
-				"kentucky","hard-boiled","westerns","horror"],
+            "genres": ["19th century","action","dystopian","biography & memoir","hard-boiled","united states",
+				"steampunk","hard science fiction","horror","vampires","science fiction","space travel","westerns",
+				"kentucky","business","political","southern gothic","sagas"],
             "sentiment": 0.7, 
             "ingredients": [
                 ""
             ], 
             "instructions": "Bourbon is an American whiskey that is best enjoyed on the rocks (over ice).", 
-            "allergens": ["gluten"]
+            "allergens": ["gluten"],
+            "image": "brandy", 
+            "no match drink": false
         }, 
         {
             "name": "Absinthe", 
             "type": "Spirits", 
             "key genres": ["steampunk","occult","ghosts"],
-            "genres": ["mystery","biography & memoir","paranormal","magicians","19th century","occult",
-				"science fiction","ghosts","psychological","demons","thriller","steampunk","hard science fiction",
-				"demonology","historical fiction","france","horror"],
+            "genres": ["occult","magicians","19th century","france","biography & memoir","steampunk",
+				"thriller","demons","historical fiction","horror","science fiction","ghosts","psychological","paranormal",
+				"mystery","demonology","hard science fiction"],
             "sentiment": -0.5, 
             "ingredients": [
                 "Sugar cube", 
@@ -1244,47 +1415,55 @@
                 "Fountain or carafe (for dripping water)"
             ], 
             "instructions": "There is a unique process to enjoying absinthe that involves sugar and cold water. Pour 1 to 1.5 ounces of absinthe into an absinthe glass. Rest the absinthe spoon across the rim of the glass, with a sugar cube placed on top of it. Slowly drip cold water onto the sugar cube in a thin stream to gradually dissolve the sugar and mix with the absinthe. Enjoy!", 
-            "allergens": []
+            "allergens": [], 
+            "image": "absinthe", 
+            "no match drink": false
         }, 
         {
             "name": "Cura\u00e7ao", 
             "type": "Spirits", 
             "key genres": ["caribbean area"],
-            "genres": ["mystery","romance","caribbean area","science fiction","travel","space travel",
-				"adventure"],
+            "genres": ["caribbean area","travel","science fiction","adventure","mystery","romance","space travel"
+				],
             "sentiment": 0.7, 
             "ingredients": [
                 ""
             ], 
             "instructions": "Cura\u00e7ao is a citrus-flavored liqueur used in a wide range of cocktails, but can be enjoyed in shots and shooters or with a citrus slice.", 
-            "allergens": []
+            "allergens": [], 
+            "image": "curacao", 
+            "no match drink": false
         }, 
         {
             "name": "Brandy", 
             "type": "Spirits", 
             "key genres": ["world war i","world war ii"],
-            "genres": ["20th century","adventure","1940s","17th century","romantic suspense","soviet union",
-				"world war ii","nineteen forties","19th century","thriller","historical romance","espionage","romance",
-				"sagas","mystery","world war i","noir","18th century","classics","historical fiction","1910s"],
+            "genres": ["17th century","19th century","18th century","1910s","classics","soviet union",
+				"1940s","thriller","world war ii","romantic suspense","adventure","historical romance","historical fiction",
+				"world war i","noir","sagas","mystery","20th century","espionage","nineteen forties","romance"],
             "sentiment": 0.6, 
             "ingredients": [
                 ""
             ], 
             "instructions": "Brandy is a distilled wine served in a snifter or tulip glass, sometimes on the rocks (over ice).", 
-            "allergens": []
+            "allergens": [], 
+            "image": "brandy", 
+            "no match drink": false
         }, 
         {
             "name": "Hard Cider", 
             "type": "Wine", 
             "key genres": [], 
-            "genres": ["humorous","colonial period","epic","18th century","contemporary fiction","19th century",
-				"fantasy","historical fiction","adventure","historical fantasy","westerns"],
+            "genres": ["19th century","18th century","epic","historical fiction","adventure","historical fantasy",
+				"fantasy","westerns","colonial period","contemporary fiction","humorous"],
             "sentiment": 0.7, 
             "ingredients": [
                 ""
             ], 
             "instructions": "Hard cider is commonly served chilled straight from the bottle or can.", 
-            "allergens": []
+            "allergens": [], 
+            "image": "cider", 
+            "no match drink": true
         }
     ]
 }

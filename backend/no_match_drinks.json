@@ -1,0 +1,131 @@
+[{"name": "Gimlet","type": "Cocktail","key genres": ["noir","hard-boiled"],
+        "genres": ["mystery & detective","biography & memoir","hard-boiled","nineteen sixties","1960s",
+				"1940s","thriller","historical fiction","world war ii","mystery","20th century","espionage","nineteen forties",
+				"noir"],
+        "sentiment": 0.6, 
+        "ingredients": [
+            "2 oz gin", 
+            "3/4 oz freshly squeezed lime juice", 
+            "3/4 oz simple syrup", 
+            "Lime wheel or twist (for garnish)", 
+            "Ice"
+        ], 
+        "instructions": "A Gimlet is a classic cocktail known for its simplicity and refreshing taste. To make this tangy cocktail, start by filling the cocktail shaker with ice. Add the gin, freshly squeezed lime juice, and simple syrup to the shaker. Shake well for about 15-20 seconds to chill the mixture. Strain the mixture into a chilled cocktail glass (such as a coupe glass or a martini glass) over fresh ice. Garnish the drink with a lime wheel or a twist.", 
+        "allergens": [], 
+        "image": "TBA", 
+        "no match drink": true
+    }, 
+    {
+        "name": "Gin and Tonic", 
+        "type": "Cocktail", 
+        "key genres": ["world war i","steampunk","england","great britain","world war ii","noir"],
+        "genres": ["mystery & detective","1910s","classics","psychological","great britain","nineteen sixties",
+				"travel","1940s","thriller","world war ii","adventure","england","biography & memoir","love in adolescence",
+				"1960s","domestic fiction","world war i","romantic comedy","hard science fiction","noir","1930s",
+				"new england","steampunk","nineteen thirties","mystery","20th century","business","nineteen forties"
+				],
+        "sentiment": 0.7, 
+        "ingredients": [
+            "2 oz. gin", 
+            "4 oz. tonic water", 
+            "Lime wedge for garnish", 
+            "Ice"
+        ], 
+        "instructions": "The Gin and Tonic is a classic cocktail with a signature copper mug presentation. To craft this drink, start by filling a copper mug or highball glass with ice. Squeeze the juice from half a lime into the glass, and drop the spent lime shell in. Then, pour in 2 oz. of gin. Top it off with approximately 4 oz. of tonic water, or adjust to your preferred level of tonic flavor. Give it a gentle stir to mix the ingredients. To garnish, add a lime wheel or wedge for an extra burst of citrus aroma. The Gin and Tonic is known for its crisp and tangy taste, making it a popular choice for a refreshing and enjoyable cocktail.", 
+        "allergens": [], 
+        "image": "TBA", 
+        "no match drink": true
+    }, 
+    {
+        "name": "Merlot", 
+        "type": "Wine", 
+        "key genres": ["erotica","france"],
+        "genres": ["france","adult romance","dystopian","gothic","family life","erotica","vampires","science fiction",
+				"psychological","mystery","business","political","romance"],
+        "sentiment": 0.6, 
+        "ingredients": [
+            ""
+        ], 
+        "instructions": "Pour yourself a glass!", 
+        "allergens": [], 
+        "image": "redWine", 
+        "no match drink": true
+    }, 
+    {
+        "name": "Cabernet Sauvignon", 
+        "type": "Wine", 
+        "key genres": [], 
+        "genres": ["france","adult romance","action","unrequited love","dystopian","united states","hard science fiction",
+				"epic","erotica","vampires","science fiction","psychological","historical fiction","mystery","california",
+				"business","political","space travel"],
+        "sentiment": 0.6, 
+        "ingredients": [
+            ""
+        ], 
+        "instructions": "Pour yourself a glass!", 
+        "allergens": [], 
+        "image": "redWine", 
+        "no match drink": true
+    }, 
+    {
+        "name": "Malbec", 
+        "type": "Wine", 
+        "key genres": ["argentina"],
+        "genres": ["france","action","paranormal romance","mystery & detective","dystopian","gothic",
+				"horror","vampires","paranormal","mystery","argentina","romance"],
+        "sentiment": 0.6, 
+        "ingredients": [
+            ""
+        ], 
+        "instructions": "Pour yourself a glass!", 
+        "allergens": [], 
+        "image": "redWine", 
+        "no match drink": true
+    }, 
+    {
+        "name": "Pilsner", 
+        "type": "Beer", 
+        "key genres": ["germany"],
+        "genres": ["adventure","mystery","contemporary fiction","humorous","germany","friendship in adolescence",
+				"male friendship"],
+        "sentiment": 0.6, 
+        "ingredients": [
+            ""
+        ], 
+        "instructions": "Pilsner is best served cold in a tall narrow glass. When pouring, aim for a moderate and controlled pour to achieve a good balance between beer and head.", 
+        "allergens": ["gluten"],
+        "no match drink": true
+    }, 
+    {
+        "name": "Lager", 
+        "type": "Beer", 
+        "key genres": ["sports","friendship"],
+        "genres": ["friendship in adolescence","1950s","nineteen sixties","1940s","friendship","adventure",
+				"1960s","domestic fiction","nineteen fifties","humorous","1930s","female friendship","adolescence",
+				"nineteen thirties","male friendship","mystery","contemporary fiction","nineteen forties","sports"
+				],
+        "sentiment": 0.5, 
+        "ingredients": [
+            "Lemon or lime garnish (optional)"
+        ], 
+        "instructions": "Lager is best served cold. Aim for a moderate and controlled pour to minimize excessive foaming, resulting in a nice, frothy head. Add lemon or lime garnish if desired.", 
+        "allergens": ["gluten"],
+        "image": "beer", 
+        "no match drink": true
+    }, 
+    {
+        "name": "Hard Cider", 
+        "type": "Wine", 
+        "key genres": [], 
+        "genres": ["19th century","18th century","epic","historical fiction","adventure","historical fantasy",
+				"fantasy","westerns","colonial period","contemporary fiction","humorous"],
+        "sentiment": 0.7, 
+        "ingredients": [
+            ""
+        ], 
+        "instructions": "Hard cider is commonly served chilled straight from the bottle or can.", 
+        "allergens": [], 
+        "image": "cider", 
+        "no match drink": true
+    }
+]
