@@ -18,7 +18,8 @@
             ], 
             "instructions": "An Old Fashioned is a timeless classic cocktail. To craft this iconic drink, start by placing a sugar cube in an old-fashioned glass and saturating it with 2 dashes of Angostura bitters. If you prefer a sweeter variant, add a few dashes of plain water to help dissolve the sugar. Gently muddle the sugar and bitters until the sugar is dissolved. Fill the glass with ice cubes, and then pour in 2 oz. of your choice of bourbon or rye whiskey. Stir the mixture gently to combine the ingredients, and garnish with a twist of orange or lemon peel, expressing the citrus oils over the drink for an added aroma. Alternatively, you can use an olive as a garnish. The result is a beautifully simple yet sophisticated cocktail that's all about savoring the rich flavors of the whiskey.", 
             "allergens": ["gluten"],
-            "image": "TBA"
+            "image": "TBA", 
+            "no match drink": false
         }, 
         {
             "name": "Margarita", 
@@ -37,8 +38,9 @@
                 "Ice"
             ], 
             "instructions": "A Margarita is a popular and classic cocktail known for its refreshing taste. To make this iconic drink, use the following ingredients: Prepare the glass by running a lime wedge around the rim, then dip the rim into salt to coat it. Fill the glass with ice. Fill a cocktail shaker with ice. Add the tequila, freshly squeezed lime juice, orange liqueur, and simple syrup (if using) to the shaker. Shake well for about 15-20 seconds to chill the mixture. Strain the mixture into the prepared glass over fresh ice. Garnish with a lime wedge.", 
-            "allergens": [],
-            "image": "TBA"
+            "allergens": [], 
+            "image": "TBA", 
+            "no match drink": false
         }, 
         {
             "name": "Manhattan", 
@@ -57,7 +59,8 @@
             ], 
             "instructions": "A Manhattan is a classic cocktail that's been around for well over a century. It's known for its simple yet sophisticated taste. To make a Manhattan, follow this simple recipe: Fill a mixing glass or cocktail shaker with ice. Pour in the rye whiskey, sweet vermouth, and add the dashes of Angostura bitters. Stir well (for about 30 seconds) or shake gently to chill the mixture. Strain the mixture into a chilled cocktail glass (typically a coupe glass or a martini glass). Garnish the drink with a maraschino cherry or an orange twist. You can express the oils from the orange twist over the drink by giving it a gentle twist to release the aroma.", 
             "allergens": ["gluten"],
-            "image": "TBA"
+            "image": "TBA", 
+            "no match drink": false
         }, 
         {
             "name": "Martini", 
@@ -74,8 +77,9 @@
                 "Ice"
             ], 
             "instructions": "The martini is one of the most iconic cocktails of all time. To craft this classic drink, start by chilling a cocktail glass in the freezer for at least 10 minutes. Then, fill a mixing glass with ice cubes and pour in 2 oz. of gin or vodka. Add 1/2 oz. of dry vermouth, and stir the mixture gently to combine the ingredients. Next, strain the mixture into the chilled cocktail glass. Garnish with a lemon twist or olive, and serve. The result is a beautifully simple yet sophisticated cocktail that's all about savoring the rich flavors of the liquor.", 
-            "allergens": [],
-            "image": "TBA"
+            "allergens": [], 
+            "image": "TBA", 
+            "no match drink": false
         }, 
         {
             "name": "Pi\u00f1a Colada", 
@@ -93,8 +97,9 @@
                 "Pineapple slice and maraschino cherry for garnish"
             ], 
             "instructions": "The pi\u00f1a colada is a classic tropical cocktail with rum, pineapple and coconut milk. To make a pi\u00f1a colada, start by adding 2 oz. of white rum, 3 oz. of pineapple juice and 1 oz. of coconut cream to a blender. Then, add 1 cup of crushed ice and blend the mixture until it's smooth. Pour the drink into a glass, and garnish with a pineapple slice and maraschino cherry. The result is a beautifully simple yet sophisticated cocktail that's all about savoring the rich flavors of the liquor.", 
-            "allergens": [],
-            "image": "TBA"
+            "allergens": [], 
+            "image": "TBA", 
+            "no match drink": false
         }, 
         {
             "name": "Blue Lagoon", 
@@ -110,8 +115,9 @@
                 "Ice"
             ], 
             "instructions": "The Blue Lagoon is a classic cocktail with vodka, blue cura\u00e7ao and lemonade. To make a Blue Lagoon, start by adding 1 1/2 oz. of vodka and 1/2 oz. of blue cura\u00e7ao to a highball glass filled with ice. Then, fill the glass with lemonade and stir the mixture gently to combine the ingredients. Garnish with a lemon slice and maraschino cherry, and serve. The result is a beautifully simple yet sophisticated cocktail that's all about savoring the rich flavors of the liquor.", 
-            "allergens": [],
-            "image": "TBA"
+            "allergens": [], 
+            "image": "TBA", 
+            "no match drink": false
         }, 
         {
             "name": "Mojito", 
@@ -130,8 +136,9 @@
                 "Ice"
             ], 
             "instructions": "The mojito is a classic Cuban cocktail with rum, mint and lime juice. To make a mojito, start by adding 2 oz. of white rum, 1 oz. of lime juice, 2 tsp. of sugar and 6 mint leaves to a highball glass. Then, gently muddle the mint leaves with a muddler or wooden spoon. Next, fill the glass with ice cubes and top it off with club soda. Stir the mixture gently to combine the ingredients, and garnish with a mint sprig. The result is a beautifully simple yet sophisticated cocktail that's all about savoring the rich flavors of the liquor.", 
-            "allergens": [],
-            "image": "TBA"
+            "allergens": [], 
+            "image": "TBA", 
+            "no match drink": false
         }, 
         {
             "name": "Bloody Mary", 
@@ -153,7 +160,8 @@
             ], 
             "instructions": "The Bloody Mary is a classic brunch cocktail with vodka, tomato juice and a combination of spices and flavorings. To make a Bloody Mary, start by adding 1 1/2 oz. of vodka, 3 oz. of tomato juice and 1/2 oz. of lemon juice to a highball glass. Then, add a few dashes of Worcestershire sauce, Tabasco sauce, celery salt and pepper. Stir the mixture gently to combine the ingredients, and garnish with a celery stalk and lemon wedge. The result is a beautifully simple yet sophisticated cocktail that's all about savoring the rich flavors of the liquor.", 
             "allergens": ["soy","gluten","fish","shellfish"],
-            "image": "TBA"
+            "image": "TBA", 
+            "no match drink": false
         }, 
         {
             "name": "Cosmopolitan", 
@@ -171,8 +179,9 @@
                 "Ice"
             ], 
             "instructions": "The cosmopolitan is a classic cocktail with vodka, triple sec, cranberry juice and lime juice. To make a cosmopolitan, start by adding 1 1/2 oz. of vodka, 1 oz. of cranberry juice, 1/2 oz. of triple sec and 1/2 oz. of lime juice to a cocktail shaker filled with ice. Then, shake the mixture vigorously for 10 to 15 seconds. Strain the mixture into a chilled cocktail glass, and garnish with a lime wedge. The result is a beautifully simple yet sophisticated cocktail that's all about savoring the rich flavors of the liquor.", 
-            "allergens": [],
-            "image": "TBA"
+            "allergens": [], 
+            "image": "TBA", 
+            "no match drink": false
         }, 
         {
             "name": "Aperol Spritz", 
@@ -189,8 +198,9 @@
                 "Ice"
             ], 
             "instructions": "The Aperol spritz is a classic Italian cocktail with Prosecco, Aperol and soda water. To make an Aperol spritz, start by adding 3 oz. of Prosecco, 2 oz. of Aperol and 1 oz. of soda water to a wine glass filled with ice. Then, stir the mixture gently to combine the ingredients, and garnish with an orange slice. The result is a beautifully simple yet sophisticated cocktail that's all about savoring the rich flavors of the liquor.", 
-            "allergens": [],
-            "image": "TBA"
+            "allergens": [], 
+            "image": "TBA", 
+            "no match drink": false
         }, 
         {
             "name": "Moscow Mule", 
@@ -207,8 +217,9 @@
                 "Ice"
             ], 
             "instructions": "The Moscow Mule is a refreshing and zesty cocktail with a signature copper mug presentation. To craft this drink, start by filling a copper mug or highball glass with ice. Squeeze the juice from half a lime into the glass, and drop the spent lime shell in. Then, pour in 2 oz. of vodka. Top it off with approximately 4 oz. of ginger beer, or adjust to your preferred level of ginger flavor. Give it a gentle stir to mix the ingredients. To garnish, add a lime wheel or wedge for an extra burst of citrus aroma. The Moscow Mule is known for its crisp and tangy taste, making it a popular choice for a refreshing and enjoyable cocktail.", 
-            "allergens": [],
-            "image": "TBA"
+            "allergens": [], 
+            "image": "TBA", 
+            "no match drink": false
         }, 
         {
             "name": "Pan-Galactic Gargle Blaster", 
@@ -228,8 +239,9 @@
                 "Lemon twist for garnish"
             ], 
             "instructions": "The Pan-Galactic Gargle Blaster is a cocktail inspired by Douglas Adams' \"The Hitchhiker's Guide to the Galaxy\" series. Fill a shaker with ice cubes. Add the gin, Blue Curacao, Peach Schnapps, Goldschlager, and orange juice to the shaker. Shake the ingredients well to chill the mixture. Strain the mixture into a highball or martini glass filled with ice. Top it off with a splash of club soda for effervescence. Garnish with a twist of lemon.", 
-            "allergens": [],
-            "image": "TBA"
+            "allergens": [], 
+            "image": "TBA", 
+            "no match drink": false
         }, 
         {
             "name": "Death in the Afternoon", 
@@ -243,8 +255,9 @@
                 "4 oz Champagne"
             ], 
             "instructions": "The \"Death in the Afternoon\" is a classic cocktail created by Ernest Hemingway. Here's how you can make it: Pour the absinthe into a Champagne flute. Top it off with Champagne.Stir gently to mix, or leave it layered for a more visual effect. Optionally, you can garnish with a lemon twist.", 
-            "allergens": [],
-            "image": "TBA"
+            "allergens": [], 
+            "image": "TBA", 
+            "no match drink": false
         }, 
         {
             "name": "Espresso Martini", 
@@ -261,8 +274,9 @@
                 "Ice"
             ], 
             "instructions": "The espresso martini is a classic cocktail with vodka, Kahl\u00faa and espresso. To make an espresso martini, start by adding 1 1/2 oz. of vodka, 1 oz. of Kahl\u00faa and 1 oz. of espresso to a cocktail shaker filled with ice. Then, shake the mixture vigorously for 10 to 15 seconds. Strain the mixture into a chilled cocktail glass, and garnish with 3 coffee beans. The result is a beautifully simple yet sophisticated cocktail that's all about savoring the rich flavors of the liquor.", 
-            "allergens": [],
-            "image": "TBA"
+            "allergens": [], 
+            "image": "TBA", 
+            "no match drink": false
         }, 
         {
             "name": "Vodka Cranberry", 
@@ -278,8 +292,9 @@
                 "Ice"
             ], 
             "instructions": "The vodka cranberry is a classic cocktail with vodka and cranberry juice. To make a vodka cranberry, start by adding 2 oz. of vodka and 4 oz. of cranberry juice to a highball glass filled with ice. Then, stir the mixture gently to combine the ingredients, and garnish with a lime wedge. The result is a beautifully simple yet sophisticated cocktail that's all about savoring the rich flavors of the liquor.", 
-            "allergens": [],
-            "image": "TBA"
+            "allergens": [], 
+            "image": "TBA", 
+            "no match drink": false
         }, 
         {
             "name": "Sex on the Beach", 
@@ -297,8 +312,9 @@
                 "Ice"
             ], 
             "instructions": "Sex on the Beach is a tropical and fruity cocktail that's both colorful and delightful. To create this cocktail, start by filling a highball glass with ice. Pour in 1.5 oz. of vodka and 3/4 oz. of peach schnapps. Add 2 oz. of cranberry juice and 2 oz. of orange juice. Give it a gentle stir to mix the ingredients and create the vibrant layered look. To garnish, you can add a maraschino cherry and a slice of orange or a twist of orange peel. The result is a sweet and fruity concoction that's perfect for sipping by the beach or on a sunny day. Enjoy your Sex on the Beach!", 
-            "allergens": [],
-            "image": "TBA"
+            "allergens": [], 
+            "image": "TBA", 
+            "no match drink": false
         }, 
         {
             "name": "Sangria", 
@@ -318,8 +334,9 @@
                 "Ice"
             ], 
             "instructions": "Sangria is a classic cocktail with red wine, brandy and fruit. To make sangria, start by combining the red wine, brandy, or orange liqueur, and sugar. Stir well to dissolve the sugar. Add the mixed chopped fruits, orange slices, and lemon slices. Mix gently. Cover the mixture and refridgerate for at least 2-4 hours. To serve, fill glasses with ice. Pour the sangria into the glasses, making sure to include some fruit pieces in each serving. Top each glass with a splash of carbonated water or lemon-lime soda for a bit of fizz (optional).", 
-            "allergens": [],
-            "image": "TBA"
+            "allergens": [], 
+            "image": "TBA", 
+            "no match drink": false
         }, 
         {
             "name": "Sonic Screwdriver", 
@@ -335,8 +352,9 @@
                 "Ice"
             ], 
             "instructions": "The Sonic Screwdriver is a refreshing and zesty cocktail with a signature copper mug presentation. To craft this drink, start by filling a copper mug or highball glass with ice. Squeeze the juice from half a lime into the glass, and drop the spent lime shell in. Then, pour in 2 oz. of vodka. Top it off with approximately 4 oz. of ginger beer, or adjust to your preferred level of ginger flavor. Give it a gentle stir to mix the ingredients. To garnish, add a lime wheel or wedge for an extra burst of citrus aroma. The Sonic Screwdriver is known for its crisp and tangy taste, making it a popular choice for a refreshing and enjoyable cocktail.", 
-            "allergens": [],
-            "image": "TBA"
+            "allergens": [], 
+            "image": "TBA", 
+            "no match drink": false
         }, 
         {
             "name": "Gimlet", 
@@ -354,8 +372,9 @@
                 "Ice"
             ], 
             "instructions": "A Gimlet is a classic cocktail known for its simplicity and refreshing taste. To make this tangy cocktail, start by filling the cocktail shaker with ice. Add the gin, freshly squeezed lime juice, and simple syrup to the shaker. Shake well for about 15-20 seconds to chill the mixture. Strain the mixture into a chilled cocktail glass (such as a coupe glass or a martini glass) over fresh ice. Garnish the drink with a lime wheel or a twist.", 
-            "allergens": [],
-            "image": "TBA"
+            "allergens": [], 
+            "image": "TBA", 
+            "no match drink": true
         }, 
         {
             "name": "Spiced Wine", 
@@ -380,8 +399,9 @@
                 "1 tsp. juniper berries"
             ], 
             "instructions": "Spiced wine is a classic cocktail with red wine, brandy and spices. To make spiced wine, start by adding 1/4 cup of brandy and 1/4 cup of honey to a saucepan. Then, add 1 sliced orange, 1 sliced lemon and 1 sliced lime. Next, add 1 cinnamon stick, 1 star anise, 1 tsp. of whole cloves, 1 tsp. of whole allspice, 1 tsp. of whole black peppercorns, 1 tsp. of whole cardamom pods and 1 tsp. of juniper berries. Finally, pour in 1 bottle of red wine. Heat the mixture over medium heat until it reaches a simmer. Then, reduce the heat to low and simmer for 15 minutes. Strain the mixture into a pitcher, and serve warm. The result is a beautifully simple yet sophisticated cocktail that's all about savoring the rich flavors of the liquor.", 
-            "allergens": [],
-            "image": "TBA"
+            "allergens": [], 
+            "image": "TBA", 
+            "no match drink": false
         }, 
         {
             "name": "Negroni", 
@@ -399,8 +419,9 @@
                 "Ice"
             ], 
             "instructions": "A Negroni is a bold, classic Italian cocktail known for its balance of bitter and sweet flavors. To make a Negroni: Fill a mixing glass or a shaker with ice. Add the gin, Campari, and sweet vermouth to the shaker. Stir well for about 20-30 seconds to chill the mixture. Some variations involve stirring over ice for dilution. Strain the mixture into a rocks glass filled with ice or into a chilled cocktail glass. Express the oils from the orange peel over the drink by holding it over the glass and giving it a gentle twist. Then, garnish the drink with the peel.", 
-            "allergens": [],
-            "image": "TBA"
+            "allergens": [], 
+            "image": "TBA", 
+            "no match drink": false
         }, 
         {
             "name": "Gin and Tonic", 
@@ -419,8 +440,9 @@
                 "Ice"
             ], 
             "instructions": "The Gin and Tonic is a classic cocktail with a signature copper mug presentation. To craft this drink, start by filling a copper mug or highball glass with ice. Squeeze the juice from half a lime into the glass, and drop the spent lime shell in. Then, pour in 2 oz. of gin. Top it off with approximately 4 oz. of tonic water, or adjust to your preferred level of tonic flavor. Give it a gentle stir to mix the ingredients. To garnish, add a lime wheel or wedge for an extra burst of citrus aroma. The Gin and Tonic is known for its crisp and tangy taste, making it a popular choice for a refreshing and enjoyable cocktail.", 
-            "allergens": [],
-            "image": "TBA"
+            "allergens": [], 
+            "image": "TBA", 
+            "no match drink": true
         }, 
         {
             "name": "Dark and Stormy", 
@@ -437,8 +459,9 @@
                 "Ice"
             ], 
             "instructions": "The Dark and Stormy is a classic cocktail with a signature copper mug presentation. To craft this drink, start by filling a copper mug or highball glass with ice. Squeeze the juice from half a lime into the glass, and drop the spent lime shell in. Then, pour in 2 oz. of dark rum. Top it off with approximately 3 oz. of ginger beer, or adjust to your preferred level of ginger flavor. Give it a gentle stir to mix the ingredients. To garnish, add a lime wheel or wedge for an extra burst of citrus aroma. The Dark and Stormy is known for its crisp and tangy taste, making it a popular choice for a refreshing and enjoyable cocktail.", 
-            "allergens": [],
-            "image": "TBA"
+            "allergens": [], 
+            "image": "TBA", 
+            "no match drink": false
         }, 
         {
             "name": "Corpse Reviver #2", 
@@ -456,8 +479,9 @@
                 "Lemon twist for garnish"
             ], 
             "instructions": "The Corpse Reviver #2 is a classic cocktail that dates back to the 1930s and is part of the family of \"Corpse Reviver\" cocktails meant to, as the name suggests, revive the spirits. Here's the recipe for the Corpse Reviver #2: Fill a shaker with ice. Add the gin, Cointreau, Lillet Blanc, and fresh lemon juice to the shaker. Shake well to chill the ingredients. Rinse a chilled cocktail glass with a small amount of absinthe, discarding the excess. Strain the shaken mixture into the prepared glass. Garnish with a lemon twist.", 
-            "allergens": [],
-            "image": "TBA"
+            "allergens": [], 
+            "image": "TBA", 
+            "no match drink": false
         }, 
         {
             "name": "Mimosa", 
@@ -472,8 +496,9 @@
                 "Orange slice or twist (for garnish)"
             ], 
             "instructions": "A Mimosa is a classic and popular cocktail. To make this refreshing drink, follow this recipe: Chill the orange juice and the champagne or sparkling wine in advance. In a champagne flute or a wine glass, pour the chilled orange juice. Top it off with the chilled champagne or sparkling wine. Gently stir to combine, though some prefer to leave it unstirred to maintain the bubbly effervescence. Garnish the drink with an orange slice or twist.", 
-            "allergens": [],
-            "image": "TBA"
+            "allergens": [], 
+            "image": "TBA", 
+            "no match drink": false
         }, 
         {
             "name": "Daiquiri", 
@@ -491,8 +516,9 @@
                 "Ice"
             ], 
             "instructions": "A Daiquiri is a classic cocktail known for its simplicity and refreshing taste. To make a classic Daiquiri, fill a cocktail shaker with ice. Add the white rum, freshly squeezed lime juice, and simple syrup to the shaker. Shake well for about 15-20 seconds to chill the mixture. Strain the mixture into a chilled cocktail glass, such as a coupe glass or a martini glass. Garnish the drink with a lime wheel or wedge.", 
-            "allergens": [],
-            "image": "TBA"
+            "allergens": [], 
+            "image": "TBA", 
+            "no match drink": false
         }, 
         {
             "name": "Irish Coffee", 
@@ -509,7 +535,8 @@
             ], 
             "instructions": "Irish coffee is a warm and comforting cocktail that combines coffee, Irish whiskey, sugar, and topped with whipped cream. To make Irish Coffee, start by brewing your favorite coffee. Pour it into a pre-warmed glass or mug. Add the brown sugar to the hot coffee and stir until dissolved. Stir in the Irish whiskey. Top the coffee with a generous dollop of whipped cream. You can garnish the whipped cream with a sprinkle of cocoa powder or nutmeg for added flavor if desired. The key to a good Irish coffee is using freshly brewed hot coffee, quality Irish whiskey, and properly whipped cream to top it off.", 
             "allergens": ["gluten","lactose"],
-            "image": "TBA"
+            "image": "TBA", 
+            "no match drink": false
         }, 
         {
             "name": "Paloma", 
@@ -527,8 +554,9 @@
                 "Ice"
             ], 
             "instructions": "A Paloma is a refreshing and popular cocktail that originates from Mexico. Follow this recipe to make a Paloma: Fill the glass with ice. In a shaker, combine the tequila, freshly squeezed lime juice, and grapefruit juice. Shake well to mix the ingredients thoroughly. Strain the mixture into the prepared glass over ice. If using grapefruit soda, top off the glass with it. If not, use grapefruit juice and add soda water. Garnish the drink with a lime wedge or wheel.", 
-            "allergens": [],
-            "image": "TBA"
+            "allergens": [], 
+            "image": "TBA", 
+            "no match drink": false
         }, 
         {
             "name": "Pisco Sour", 
@@ -547,7 +575,8 @@
             ], 
             "instructions": "The Pisco Sour is a classic cocktail that originated in Peru and Chile. It is known for its balance of sweet, sour, and the frothy texture provided by the egg white. To make it: In a cocktail shaker, combine the Pisco, fresh lime juice, simple syrup, and egg white. Dry shake (shake without ice) vigorously for about 10-15 seconds. This helps create a frothy texture from the egg white. Add ice to the shaker and shake again for another 10-15 seconds to chill the mixture. Strain the cocktail into a chilled glass, typically a rocks glass or a sour glass. Garnish the foam on top with a few drops of Angostura bitters.", 
             "allergens": ["egg"],
-            "image": "TBA"
+            "image": "TBA", 
+            "no match drink": false
         }, 
         {
             "name": "Alien Brain Hemorrhage", 
@@ -564,7 +593,8 @@
             ], 
             "instructions": "The Alien Brain Hemorrhage is a visually striking and slightly eerie shooter cocktail known for its layered appearance, resembling a brain floating in a colorful liquid. Here's how to make it: Chill a shot glass in the freezer. Pour the Peach Schnapps into the shot glass, filling it about halfway. Gently pour the Baileys Irish Cream on top of the Peach Schnapps. It should form a layer on the surface. Carefully add the Blue Curacao on top of the Baileys layer. It should also form a separate layer. Finally, drop a few drops of Grenadine into the center of the shot. The Grenadine will sink and create the \"hemorrhage\" effect.", 
             "allergens": ["lactose"],
-            "image": "TBA"
+            "image": "TBA", 
+            "no match drink": false
         }, 
         {
             "name": "Amaretto Sour", 
@@ -582,7 +612,8 @@
             ], 
             "instructions": "The Amaretto Sour is known for its smooth and slightly sweet taste, balanced by the tartness of the fresh lemon juice. Start by filling a shaker with ice. Add the Amaretto, fresh lemon juice, and simple syrup to the shaker. Shake the ingredients well to chill the mixture. Strain the mixture into a rocks glass filled with ice. Garnish with a lemon slice or a cherry if desired.", 
             "allergens": ["tree nuts"],
-            "image": "TBA"
+            "image": "TBA", 
+            "no match drink": false
         }, 
         {
             "name": "Long Island Iced Tea", 
@@ -605,8 +636,9 @@
                 "Lemon wedge for garnish"
             ], 
             "instructions": "The Long Island Iced Tea is a popular and potent cocktail known for its mix of multiple spirits. Despite its name, it doesn't contain any actual tea. Here's a classic recipe for a Long Island Iced Tea: Fill a shaker with ice cubes. Add the vodka, tequila, rum, gin, triple sec, fresh lemon juice, and simple syrup to the shaker. Shake the ingredients well to chill the mixture. Strain the mixture into a highball glass filled with ice. Top off with cola to your desired level, leaving some room at the top. Stir gently to combine the ingredients. Garnish with a lemon wedge.", 
-            "allergens": [],
-            "image": "TBA"
+            "allergens": [], 
+            "image": "TBA", 
+            "no match drink": false
         }, 
         {
             "name": "Mai Tai", 
@@ -626,7 +658,8 @@
             ], 
             "instructions": "The Mai Tai is a classic tropical cocktail known for its refreshing and fruity flavor. There are different variations of the Mai Tai, but here's a common recipe: Fill a shaker with ice cubes. Add the white rum, fresh lime juice, orange liqueur, and Orgeat syrup to the shaker. Shake the ingredients well to chill the mixture. Strain the mixture into an Old Fashioned glass filled with crushed ice. Float the dark rum on top by gently pouring it over the back of a spoon. Garnish with a mint sprig and a lime wheel.", 
             "allergens": ["tree nuts"],
-            "image": "TBA"
+            "image": "TBA", 
+            "no match drink": false
         }, 
         {
             "name": "Whiskey Sour", 
@@ -644,7 +677,8 @@
             ], 
             "instructions": "The Whiskey Sour is a classic cocktail that allows the flavor of the whiskey to shine through. To make it, start by filling a shaker with ice cubes. Add the whiskey, fresh lemon juice, and simple syrup to the shaker. Shake the ingredients well to chill the mixture. Strain the mixture into a rocks glass filled with ice. Optionally, garnish with a lemon slice or cherry.", 
             "allergens": ["gluten"],
-            "image": "TBA"
+            "image": "TBA", 
+            "no match drink": false
         }, 
         {
             "name": "French 75", 
@@ -662,8 +696,9 @@
                 "Lemon twist for garnish"
             ], 
             "instructions": "The French 75 is a delightful and refreshing cocktail, and it's perfect for celebrations or as a sophisticated sipper. To make it, start by filling a shaker with ice cubes. Add the gin, fresh lemon juice, and simple syrup to the shaker. Shake the ingredients well to chill the mixture. Strain the mixture into a Champagne flute or a Collins glass filled with ice. Top off with Champagne or sparkling wine. Gently stir to combine. Garnish with a lemon twist.", 
-            "allergens": [],
-            "image": "TBA"
+            "allergens": [], 
+            "image": "TBA", 
+            "no match drink": false
         }, 
         {
             "name": "Vampire's Kiss", 
@@ -681,8 +716,9 @@
                 "Blackberries or a cherry for garnish"
             ], 
             "instructions": "The Vampire's Kiss is characterized by its vibrant red color and sweet-tart flavor profile. Start by filling a shaker with ice cubes. Add the vodka, cranberry juice, grenadine, and triple sec to the shaker. Shake the ingredients well to chill the mixture. Strain the mixture into a martini glass or a rocks glass filled with ice. Garnish with a few blackberries or a cherry.", 
-            "allergens": [],
-            "image": "TBA"
+            "allergens": [], 
+            "image": "TBA", 
+            "no match drink": false
         }, 
         {
             "name": "Black Magic Cocktail", 
@@ -700,8 +736,9 @@
                 "Orange twist or slice for garnish (optional)"
             ], 
             "instructions": "The Black Magic cocktail is known for its dark and mysterious appearance. Here's a simple recipe to make a Black Magic cocktail: Fill a shaker with ice cubes. Add the black vodka, coffee liqueur, and orange liqueur to the shaker. Shake the ingredients well to chill the mixture. Strain the mixture into a rocks glass filled with ice. Optionally, garnish with an orange twist or slice.", 
-            "allergens": [],
-            "image": "TBA"
+            "allergens": [], 
+            "image": "TBA", 
+            "no match drink": false
         }, 
         {
             "name": "The Zombie", 
@@ -725,8 +762,9 @@
                 "Pineapple slice, cherry, and mint sprig for garnish"
             ], 
             "instructions": "The Zombie cocktail is a classic tiki drink known for its strong and fruity flavors. Here's a recipe for making a Zombie cocktail: In a shaker, combine the light rum, dark rum, apricot brandy, lime juice, pineapple juice, passion fruit juice (or syrup), grenadine, and a dash of Angostura bitters. Fill the shaker with ice and shake the ingredients well to chill the mixture. Strain the mixture into a tall glass filled with crushed ice. Float the 151-proof rum on top by gently pouring it over the back of a spoon to create a layered effect. Garnish with a pineapple slice, cherry, and a mint sprig.", 
-            "allergens": [],
-            "image": "TBA"
+            "allergens": [], 
+            "image": "TBA", 
+            "no match drink": false
         }, 
         {
             "name": "Witches' Brew", 
@@ -749,8 +787,9 @@
                 "Optional: Dry ice (for a smoky effect, handle dry ice with care)"
             ], 
             "instructions": "A Witches' Brew is often a Halloween-themed punch or cocktail with a spooky and colorful presentation. In a large punch bowl, combine the black vodka, triple sec, blackberry schnapps, cranberry juice, lime juice, and simple syrup. Stir well to mix the ingredients. Add ice cubes to the punch bowl. Pour in the ginger ale or lemon-lime soda and stir gently. Garnish the punch with gummy worms, gummy eyeballs, or other Halloween-themed candies. If you want to add a smoky effect, carefully add small pieces of dry ice to the punch. Remember to handle dry ice with care, using gloves or tongs, and never ingest it. Serve the witches' brew in individual glasses.", 
-            "allergens": [],
-            "image": "TBA"
+            "allergens": [], 
+            "image": "TBA", 
+            "no match drink": false
         }, 
         {
             "name": "Astro Pop", 
@@ -766,8 +805,9 @@
                 "1/2 oz Blue Curacao liqueur"
             ], 
             "instructions": "An Astro Pop is a cocktail typically served in a test tube. To make it, add vodka and sour mix to a tumbler with ice to chill. Shake the ingredients and pour in a large shot glass. Use Grenadine and allow to sink to the bottom of the glass. Make sure to pour slowly down the inside of the glass so the finished product is red, blue, and white from bottom to top.", 
-            "allergens": [],
-            "image": "TBA"
+            "allergens": [], 
+            "image": "TBA", 
+            "no match drink": false
         }, 
         {
             "name": "Tequila Sunrise", 
@@ -784,8 +824,9 @@
                 "Orange slice and maraschino cherry for garnish"
             ], 
             "instructions": "The Tequila Sunrise is a classic cocktail known for its vibrant appearance, with shades resembling a sunrise. Here's a simple recipe for making a Tequila Sunrise: Fill a highball glass with ice cubes. Pour the tequila and orange juice into the glass. Stir the mixture gently to combine. Slowly pour the grenadine syrup over the back of a spoon or by drizzling it down the side of the glass. This will allow the grenadine to settle at the bottom of the glass and gradually rise to create the sunrise effect. Do not stir after adding the grenadine, allowing it to naturally mix with the other ingredients. Garnish with an orange slice and a maraschino cherry. Optionally, you can use a straw to gently stir the colors together before drinking.", 
-            "allergens": [],
-            "image": "TBA"
+            "allergens": [], 
+            "image": "TBA", 
+            "no match drink": false
         }, 
         {
             "name": "Moscato", 
@@ -798,8 +839,9 @@
                 ""
             ], 
             "instructions": "Pour yourself a glass!", 
-            "allergens": [],
-            "image": "rose"
+            "allergens": [], 
+            "image": "rose", 
+            "no match drink": false
         }, 
         {
             "name": "Pinot Noir", 
@@ -812,8 +854,9 @@
                 ""
             ], 
             "instructions": "Pour yourself a glass!", 
-            "allergens": [],
-            "image": "redWine"
+            "allergens": [], 
+            "image": "redWine", 
+            "no match drink": false
         }, 
         {
             "name": "Merlot", 
@@ -826,8 +869,9 @@
                 ""
             ], 
             "instructions": "Pour yourself a glass!", 
-            "allergens": [],
-            "image": "redWine"
+            "allergens": [], 
+            "image": "redWine", 
+            "no match drink": true
         }, 
         {
             "name": "Ros\u00e9", 
@@ -840,8 +884,9 @@
                 ""
             ], 
             "instructions": "Pour yourself a glass!", 
-            "allergens": [],
-            "image": "rose"
+            "allergens": [], 
+            "image": "rose", 
+            "no match drink": false
         }, 
         {
             "name": "Chardonnay", 
@@ -854,8 +899,9 @@
                 ""
             ], 
             "instructions": "Pour yourself a glass!", 
-            "allergens": [],
-            "image": "whiteWine"
+            "allergens": [], 
+            "image": "whiteWine", 
+            "no match drink": false
         }, 
         {
             "name": "Dry Vermouth", 
@@ -868,8 +914,9 @@
                 ""
             ], 
             "instructions": "Pour yourself a glass!", 
-            "allergens": [],
-            "image": "martini"
+            "allergens": [], 
+            "image": "martini", 
+            "no match drink": false
         }, 
         {
             "name": "Sherry", 
@@ -883,8 +930,9 @@
                 ""
             ], 
             "instructions": "Pour yourself a glass!", 
-            "allergens": [],
-            "image": "redWine"
+            "allergens": [], 
+            "image": "redWine", 
+            "no match drink": false
         }, 
         {
             "name": "Champagne", 
@@ -898,8 +946,9 @@
                 ""
             ], 
             "instructions": "Pour yourself a glass!", 
-            "allergens": [],
-            "image": "champagne"
+            "allergens": [], 
+            "image": "champagne", 
+            "no match drink": false
         }, 
         {
             "name": "Tempranillo", 
@@ -913,8 +962,9 @@
                 ""
             ], 
             "instructions": "Pour yourself a glass!", 
-            "allergens": [],
-            "image": "redWine"
+            "allergens": [], 
+            "image": "redWine", 
+            "no match drink": false
         }, 
         {
             "name": "Zinfandel", 
@@ -928,8 +978,9 @@
                 ""
             ], 
             "instructions": "Pour yourself a glass!", 
-            "allergens": [],
-            "image": "redWine"
+            "allergens": [], 
+            "image": "redWine", 
+            "no match drink": false
         }, 
         {
             "name": "Prosecco", 
@@ -942,8 +993,9 @@
                 ""
             ], 
             "instructions": "Pour yourself a glass!", 
-            "allergens": [],
-            "image": "champagne"
+            "allergens": [], 
+            "image": "champagne", 
+            "no match drink": false
         }, 
         {
             "name": "Cabernet Sauvignon", 
@@ -957,8 +1009,9 @@
                 ""
             ], 
             "instructions": "Pour yourself a glass!", 
-            "allergens": [],
-            "image": "redWine"
+            "allergens": [], 
+            "image": "redWine", 
+            "no match drink": true
         }, 
         {
             "name": "Syrah", 
@@ -971,8 +1024,9 @@
                 ""
             ], 
             "instructions": "Pour yourself a glass!", 
-            "allergens": [],
-            "image": "redWine"
+            "allergens": [], 
+            "image": "redWine", 
+            "no match drink": false
         }, 
         {
             "name": "Malbec", 
@@ -985,8 +1039,9 @@
                 ""
             ], 
             "instructions": "Pour yourself a glass!", 
-            "allergens": [],
-            "image": "redWine"
+            "allergens": [], 
+            "image": "redWine", 
+            "no match drink": true
         }, 
         {
             "name": "Mead", 
@@ -1002,9 +1057,24 @@
                 "Herbs (Optional)"
             ], 
             "instructions": "Mead is an alcoholic beverage created by fermenting honey with water, and any of the ingredients above can be added to flavor it!", 
-            "allergens": [],
-            "image": "whiteWine"
+            "allergens": [], 
+            "image": "whiteWine", 
+            "no match drink": false
         }, 
+        {
+            "name": "Pilsner", 
+            "type": "Beer", 
+            "key genres": ["germany"],
+            "genres": ["adventure","mystery", "contemporary fiction", "humorous", "germany", "friendship in adolescence",
+                "male friendship"],
+            "sentiment": 0.6, 
+            "ingredients": [
+                ""
+            ], 
+            "instructions": "Pilsner is best served cold in a tall narrow glass. When pouring, aim for a moderate and controlled pour to achieve a good balance between beer and head.", 
+            "allergens": ["gluten"],
+            "no match drink": true
+        },
         {
             "name": "Stout", 
             "type": "Beer", 
@@ -1018,7 +1088,8 @@
             ], 
             "instructions": "Pop open a bottle. Pour chilled at an angle in a pint glass to promote a creamy head.", 
             "allergens": ["gluten"],
-            "image": "beer"
+            "image": "beer", 
+            "no match drink": false
         }, 
         {
             "name": "IPA", 
@@ -1032,7 +1103,8 @@
             ], 
             "instructions": "Serve IPA cool, but not ice-cold. Aim for a moderate, controlled pour. Pouring too aggressively can result in excessive foam, and a healthy head is desired to enhance the beer's aroma.", 
             "allergens": ["gluten"],
-            "image": "beer"
+            "image": "beer", 
+            "no match drink": false
         }, 
         {
             "name": "Guinness", 
@@ -1046,7 +1118,8 @@
             ], 
             "instructions": "Serve slightly chilled in a pint glass using the double pour process. For the first pour, fill the glass three-quarters full. Let the beer settle before topping it off with the second pour, which completes the filling of the glass and allows the creamy head to form.", 
             "allergens": ["gluten"],
-            "image": "beer"
+            "image": "beer", 
+            "no match drink": false
         }, 
         {
             "name": "Lager", 
@@ -1062,7 +1135,8 @@
             ], 
             "instructions": "Lager is best served cold. Aim for a moderate and controlled pour to minimize excessive foaming, resulting in a nice, frothy head. Add lemon or lime garnish if desired.", 
             "allergens": ["gluten"],
-            "image": "beer"
+            "image": "beer", 
+            "no match drink": true
         }, 
         {
             "name": "Porter", 
@@ -1076,7 +1150,8 @@
             ], 
             "instructions": "Porter is best served at a slightly warmer temperature. When pouring, aim for a moderate and controlled pour to achieve a good balance between beer and head.", 
             "allergens": ["gluten"],
-            "image": "beer"
+            "image": "beer", 
+            "no match drink": false
         }, 
         {
             "name": "Ale", 
@@ -1091,7 +1166,8 @@
             ], 
             "instructions": "Depending on what style of ale you are drinking, desired temperature can vary. In general, it is served at a slightly warmer temperature, and should be poured in a controlled manner.", 
             "allergens": ["gluten"],
-            "image": "beer"
+            "image": "beer", 
+            "no match drink": false
         }, 
         {
             "name": "Soju", 
@@ -1105,8 +1181,9 @@
                 ""
             ], 
             "instructions": "Soju is a traditional Korean distilled spirit with a mild flavor. It is best enjoyed straight out of the refrigerator and poured as a shot. There are several flavors of soju (typically fruit flavors) that can be served either the same way or in a cocktail.", 
-            "allergens": [],
-            "image": "shot"
+            "allergens": [], 
+            "image": "shot", 
+            "no match drink": false
         }, 
         {
             "name": "Green Chartreuse", 
@@ -1120,8 +1197,9 @@
                 ""
             ], 
             "instructions": "Green Chartreuse is a herbal liqueur that is typically served chilled in a small liqueur glass. Its intense flavors are usually enjoyed after a meal.", 
-            "allergens": [],
-            "image": "greenChartreuse"
+            "allergens": [], 
+            "image": "greenChartreuse", 
+            "no match drink": false
         }, 
         {
             "name": "Vodka", 
@@ -1135,8 +1213,9 @@
                 "Lemon wedge (optional)"
             ], 
             "instructions": "Vodka is often served in a shot glass. Enjoy taking a shot with a chaser or a lemon wedge.", 
-            "allergens": [],
-            "image": "shot"
+            "allergens": [], 
+            "image": "shot", 
+            "no match drink": false
         }, 
         {
             "name": "Baileys", 
@@ -1150,7 +1229,8 @@
             ], 
             "instructions": "Baileys is a creamy liqueur often served chilled, and is popularly enjoyed in coffee. It also pairs well with dessert, such as ice cream and cheesecake.", 
             "allergens": ["lactose","gluten"],
-            "image": "rumchata"
+            "image": "rumchata", 
+            "no match drink": false
         }, 
         {
             "name": "Poit\u00edn", 
@@ -1164,7 +1244,8 @@
             ], 
             "instructions": "Poit\u00edn is best consumed at room temperature. Some people prefer it chilled or add a small amount of water.", 
             "allergens": ["gluten"],
-            "image": "shot"
+            "image": "shot", 
+            "no match drink": false
         }, 
         {
             "name": "Dark Rum", 
@@ -1178,8 +1259,9 @@
                 ""
             ], 
             "instructions": "Dark rum is can be enjoyed at room temperature, over ice, or added to hot beverages during colder months.", 
-            "allergens": [],
-            "image": "whiskey"
+            "allergens": [], 
+            "image": "whiskey", 
+            "no match drink": false
         }, 
         {
             "name": "Witbier", 
@@ -1193,7 +1275,8 @@
             ], 
             "instructions": "Witbier is a Belgian-style wheat beer best served chilled, but not too cold. Aim for a controlled pour to create a moderate and froty head by pouring down the side of the glass initially then straightening the glass as you pour.", 
             "allergens": ["gluten"],
-            "image": "beer"
+            "image": "beer", 
+            "no match drink": false
         }, 
         {
             "name": "Whiskey", 
@@ -1208,7 +1291,8 @@
             ], 
             "instructions": "Whiskey is usually served on the rocks (over ice) in a snifter or tulip glass.", 
             "allergens": ["gluten"],
-            "image": "whiskey"
+            "image": "whiskey", 
+            "no match drink": false
         }, 
         {
             "name": "Malt Liquor", 
@@ -1222,7 +1306,8 @@
             ], 
             "instructions": "Malt liquor is sometimes enjoyed straight from the container, but can also be poured into a pint glass or beer mug to appreciate its color, carbonation, and aroma.", 
             "allergens": ["gluten"],
-            "image": "brandy"
+            "image": "brandy", 
+            "no match drink": false
         }, 
         {
             "name": "RumChata", 
@@ -1236,7 +1321,8 @@
             ], 
             "instructions": "RumChata is a cream liqueuer known for its blend of Carribean rum and horchata, a traditional Mexican drink made from rice, vanilla, and cinnamon. It can be enjoyed straight from the refigerator or poured over ice.", 
             "allergens": ["lactose"],
-            "image": "rumchata"
+            "image": "rumchata", 
+            "no match drink": false
         }, 
         {
             "name": "Tequila", 
@@ -1250,8 +1336,9 @@
                 "Salt (optional)"
             ], 
             "instructions": "Tequila is usually enjoyed by licking salt, taking the shot, then biting into a wedge of lime or lemon.", 
-            "allergens": [],
-            "image": "shot"
+            "allergens": [], 
+            "image": "shot", 
+            "no match drink": false
         }, 
         {
             "name": "Gin", 
@@ -1263,9 +1350,10 @@
             "ingredients": [
                 ""
             ], 
-            "instructions": "",
-            "allergens": [],
-            "image": "shot"
+            "instructions": "", 
+            "allergens": [], 
+            "image": "shot", 
+            "no match drink": false
         }, 
         {
             "name": "White Rum", 
@@ -1279,8 +1367,9 @@
                 ""
             ], 
             "instructions": "White rum is a popular spirit often served in a variety of cocktails and is rarely enjoyed by itself.", 
-            "allergens": [],
-            "image": "shot"
+            "allergens": [], 
+            "image": "shot", 
+            "no match drink": false
         }, 
         {
             "name": "Bacardi", 
@@ -1292,8 +1381,9 @@
                 ""
             ], 
             "instructions": "Bacardi is a brand of rum that is typically enjoyed with mixers. Although it can be taken as a shot, it is commonly served with coke.", 
-            "allergens": [],
-            "image": "shot"
+            "allergens": [], 
+            "image": "shot", 
+            "no match drink": false
         }, 
         {
             "name": "Bourbon", 
@@ -1308,7 +1398,8 @@
             ], 
             "instructions": "Bourbon is an American whiskey that is best enjoyed on the rocks (over ice).", 
             "allergens": ["gluten"],
-            "image": "brandy"
+            "image": "brandy", 
+            "no match drink": false
         }, 
         {
             "name": "Absinthe", 
@@ -1324,8 +1415,9 @@
                 "Fountain or carafe (for dripping water)"
             ], 
             "instructions": "There is a unique process to enjoying absinthe that involves sugar and cold water. Pour 1 to 1.5 ounces of absinthe into an absinthe glass. Rest the absinthe spoon across the rim of the glass, with a sugar cube placed on top of it. Slowly drip cold water onto the sugar cube in a thin stream to gradually dissolve the sugar and mix with the absinthe. Enjoy!", 
-            "allergens": [],
-            "image": "absinthe"
+            "allergens": [], 
+            "image": "absinthe", 
+            "no match drink": false
         }, 
         {
             "name": "Cura\u00e7ao", 
@@ -1338,8 +1430,9 @@
                 ""
             ], 
             "instructions": "Cura\u00e7ao is a citrus-flavored liqueur used in a wide range of cocktails, but can be enjoyed in shots and shooters or with a citrus slice.", 
-            "allergens": [],
-            "image": "curacao"
+            "allergens": [], 
+            "image": "curacao", 
+            "no match drink": false
         }, 
         {
             "name": "Brandy", 
@@ -1353,8 +1446,9 @@
                 ""
             ], 
             "instructions": "Brandy is a distilled wine served in a snifter or tulip glass, sometimes on the rocks (over ice).", 
-            "allergens": [],
-            "image": "brandy"
+            "allergens": [], 
+            "image": "brandy", 
+            "no match drink": false
         }, 
         {
             "name": "Hard Cider", 
@@ -1367,8 +1461,9 @@
                 ""
             ], 
             "instructions": "Hard cider is commonly served chilled straight from the bottle or can.", 
-            "allergens": [],
-            "image": "cider"
+            "allergens": [], 
+            "image": "cider", 
+            "no match drink": true
         }
     ]
 }

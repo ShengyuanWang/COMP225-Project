@@ -1,21 +1,5 @@
 import json
 
-def update_no_match_drinks():
-    """ """
-    with open('book-alcohol-pairings.json', 'r') as f:
-        input_data = json.load(f)
-    
-    no_match_drinks = []
-    for d in input_data["alcohols"]:
-        if d["no match drink"] == True:
-            no_match_drinks.append(d)
-    
-    with open('no_match_drinks.json', 'w') as output_file:
-        json.dump(no_match_drinks, output_file, indent=4)
-    
-    with open('../no_match_drinks.json', 'w') as output_file:
-        json.dump(no_match_drinks, output_file, indent=4)
-
 def update_synonyms_lookup():
     """ Using the synonyms.json file, updates the synonyms_lookup.json file that 
     app.py uses since it is more efficent
@@ -118,6 +102,25 @@ def format_lists_json(json_string):
             fixed_lines.append(line)
     return '\n'.join(fixed_lines)
 
+def update_no_match_drinks():
+    """ """
+    with open('book-alcohol-pairings.json', 'r') as f:
+        input_data = json.load(f)
+    
+    no_match_drinks = []
+    for d in input_data["alcohols"]:
+        if d["no match drink"] == True:
+            no_match_drinks.append(d)
+    
+    json_string = json.dumps(no_match_drinks, indent=4, separators=(', ', ': '))
+    formatted_json = format_lists_json(json_string)
+    
+    with open('no_match_drinks.json', 'w') as json_file:
+        json_file.write(formatted_json)
+    
+    with open('../no_match_drinks.json', 'w') as json_file:
+        json_file.write(formatted_json)
+
 def clean_up_synonyms_in_json():
     """ Using the synonyms.json file, removes synonyms from the json. 
     Updates both alcohol json files. Be careful when using. """
@@ -168,11 +171,9 @@ def add_new_key_to_json(key, value):
     with open('../book-alcohol-pairings.json', 'w') as json_file:
         json_file.write(formatted_json)
 
-# run after updates to json 
-collect_key_genres()
+# run to update data files
 collect_genre_frequency()
+collect_key_genres()
 collect_all_genres()
-# update_no_match_drinks() # not yet implemented 
-
-# run after updates to synonyms 
+update_no_match_drinks() 
 update_synonyms_lookup()

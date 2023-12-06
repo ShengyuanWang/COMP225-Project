@@ -1,6 +1,6 @@
 <template>
   <div class="search">
-    <Qinput move place="350"></Qinput>
+    <Qinput move place="350" place-holder="Please type in the book name"></Qinput>
   </div>
 </template>
 
