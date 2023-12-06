@@ -1212,7 +1212,7 @@
                 ""
             ], 
             "instructions": "TBA",
-            "allergens": [], 
+            "allergens": ["gluten"], 
             "image": "shot", 
             "no match drink": false
         }, 
