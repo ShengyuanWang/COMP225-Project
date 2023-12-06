@@ -992,10 +992,10 @@
         {
             "name": "Lager", 
             "type": "Beer", 
-            "key genres": ["sports","friendship"],
+            "key genres": ["sports","friendship","germany"],
             "genres": ["friendship in adolescence","1950s","nineteen sixties","1940s","friendship","adventure",
 				"1960s","domestic fiction","nineteen fifties","humorous","1930s","female friendship","adolescence",
-				"nineteen thirties","male friendship","mystery","contemporary fiction","nineteen forties","sports"
+				"nineteen thirties","male friendship","mystery","contemporary fiction","nineteen forties","sports","germany"
 				],
             "sentiment": 0.5, 
             "ingredients": [
