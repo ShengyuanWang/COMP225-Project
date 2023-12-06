@@ -1,35 +1,35 @@
 [
     [
         "mystery",
-        59
+        61
+    ],
+    [
+        "historical fiction",
+        40
+    ],
+    [
+        "adventure",
+        39
     ],
     [
         "romance",
         39
     ],
     [
-        "historical fiction",
-        38
-    ],
-    [
-        "adventure",
-        38
-    ],
-    [
         "travel",
-        35
+        37
     ],
     [
         "thriller",
-        33
-    ],
-    [
-        "humorous",
-        23
+        34
     ],
     [
         "contemporary fiction",
-        23
+        26
+    ],
+    [
+        "humorous",
+        24
     ],
     [
         "romantic comedy",
@@ -88,6 +88,10 @@
         11
     ],
     [
+        "historical romance",
+        11
+    ],
+    [
         "vampires",
         11
     ],
@@ -97,6 +101,10 @@
     ],
     [
         "family life",
+        11
+    ],
+    [
+        "historical fantasy",
         11
     ],
     [
@@ -112,11 +120,11 @@
         10
     ],
     [
-        "historical romance",
-        10
+        "hard-boiled",
+        9
     ],
     [
-        "hard-boiled",
+        "business",
         9
     ],
     [
@@ -133,10 +141,6 @@
     ],
     [
         "romantic suspense",
-        9
-    ],
-    [
-        "historical fantasy",
         9
     ],
     [
@@ -180,11 +184,11 @@
         8
     ],
     [
-        "psychological",
-        7
+        "epic",
+        8
     ],
     [
-        "business",
+        "psychological",
         7
     ],
     [
@@ -197,10 +201,6 @@
     ],
     [
         "voyages",
-        7
-    ],
-    [
-        "epic",
         7
     ],
     [
@@ -404,6 +404,10 @@
         3
     ],
     [
+        "friendship in adolescence",
+        3
+    ],
+    [
         "christmas stories",
         3
     ],
@@ -440,11 +444,11 @@
         2
     ],
     [
-        "friendship in adolescence",
+        "vikings",
         2
     ],
     [
-        "vikings",
+        "male friendship",
         2
     ],
     [
@@ -504,11 +508,35 @@
         1
     ],
     [
-        "male friendship",
+        "germany",
         1
     ],
     [
         "korea",
+        1
+    ],
+    [
+        "japan",
+        1
+    ],
+    [
+        "ukiyoe",
+        1
+    ],
+    [
+        "samurai",
+        1
+    ],
+    [
+        "kurosawa",
+        1
+    ],
+    [
+        "china",
+        1
+    ],
+    [
+        "qing dynasty ",
         1
     ],
     [

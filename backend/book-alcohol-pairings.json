@@ -1201,6 +1201,22 @@
             "no match drink": false
         }, 
         {
+            "name": "Moonshine", 
+            "type": "Spirits", 
+            "key genres": ["united states","prohibition","appalachian region"],
+            "genres": ["united states","prohibition","great depression","historical fiction","westerns","illicit distilling",
+                "southern states","adventure","crime fiction","mystery & detective","noir","mountain life","great smoky mountains",
+                "appalachian region"],
+            "sentiment": 0, 
+            "ingredients": [
+                ""
+            ], 
+            "instructions": "TBA",
+            "allergens": [], 
+            "image": "shot", 
+            "no match drink": false
+        }, 
+        {
             "name": "Baijiu", 
             "type": "Spirits", 
             "key genres": ["china","business"],
@@ -1311,10 +1327,10 @@
         {
             "name": "Whiskey", 
             "type": "Spirits", 
-            "key genres": ["southern gothic","westerns","urban fantasy","hard-boiled"],
+            "key genres": ["southern gothic","westerns","urban fantasy","hard-boiled","southern states"],
             "genres": ["19th century","action","gothic","18th century","werewolves","classics","paranormal",
 				"southern gothic","urban fantasy","horror","science fiction","adventure","celtic mythology","biography & memoir",
-				"hard-boiled","historical fiction","demons","westerns","urban","political"],
+				"hard-boiled","historical fiction","demons","westerns","urban","political","southern states"],
             "sentiment": 0.6, 
             "ingredients": [
                 ""
@@ -1418,10 +1434,10 @@
         {
             "name": "Bourbon", 
             "type": "Spirits", 
-            "key genres": ["southern gothic","steampunk","sagas","hard-boiled"],
+            "key genres": ["southern gothic","steampunk","sagas","hard-boiled","southern states"],
             "genres": ["19th century","action","dystopian","biography & memoir","hard-boiled","united states",
 				"steampunk","hard science fiction","horror","vampires","science fiction","space travel","westerns",
-				"kentucky","business","political","southern gothic","sagas"],
+				"kentucky","business","political","southern gothic","sagas","southern states"],
             "sentiment": 0.7, 
             "ingredients": [
                 ""
