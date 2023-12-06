@@ -1,0 +1,104 @@
+
+[
+    {
+        "name": "Pilsner", 
+        "type": "Beer", 
+        "key genres": [],
+        "genres": ["adventure","mystery", "contemporary fiction", "humorous"],
+        "sentiment": 0.6, 
+        "ingredients": [
+            ""
+        ], 
+        "instructions": "Porter is best served cold in a tall narrow glass. When pouring, aim for a moderate and controlled pour to achieve a good balance between beer and head.", 
+        "allergens": ["gluten"]
+    },
+    {
+        "name": "Malbec", 
+        "type": "Wine", 
+        "key genres": ["argentina"],
+        "genres": ["france","action","paranormal romance","mystery & detective","dystopian","gothic",
+            "horror","vampires","paranormal","mystery","argentina","romance"],
+        "sentiment": 0.4, 
+        "ingredients": [
+            ""
+        ], 
+        "instructions": "Pour yourself a glass!", 
+        "allergens": []
+    }, 
+    {
+        "name": "Gin and Tonic", 
+        "type": "Cocktail", 
+        "key genres": ["world war i","steampunk","england","great britain","world war ii","noir"],
+        "genres": ["mystery & detective","1910s","classics","psychological","great britain","nineteen sixties",
+            "travel","1940s","thriller","world war ii","adventure","england","biography & memoir","love in adolescence",
+            "1960s","domestic fiction","world war i","romantic comedy","hard science fiction","noir","1930s",
+            "new england","steampunk","nineteen thirties","mystery","20th century","business","nineteen forties"
+            ],
+        "sentiment": 0.7, 
+        "ingredients": [
+            "2 oz. gin", 
+            "4 oz. tonic water", 
+            "Lime wedge for garnish", 
+            "Ice"
+        ], 
+        "instructions": "The Gin and Tonic is a classic cocktail with a signature copper mug presentation. To craft this drink, start by filling a copper mug or highball glass with ice. Squeeze the juice from half a lime into the glass, and drop the spent lime shell in. Then, pour in 2 oz. of gin. Top it off with approximately 4 oz. of tonic water, or adjust to your preferred level of tonic flavor. Give it a gentle stir to mix the ingredients. To garnish, add a lime wheel or wedge for an extra burst of citrus aroma. The Gin and Tonic is known for its crisp and tangy taste, making it a popular choice for a refreshing and enjoyable cocktail.", 
+        "allergens": []
+    },
+    {
+        "name": "Whiskey Sour", 
+        "type": "Cocktail", 
+        "key genres": ["steampunk","unrequited love"],
+        "genres": ["unrequited love","biography & memoir","1960s","steampunk","family life","historical fiction",
+            "classics","adventure","nineteen thirties","20th century","nineteen sixties","1930s"],
+        "sentiment": 0.7, 
+        "ingredients": [
+            "2 oz Bourbon or Rye whiskey", 
+            "3/4 oz Fresh lemon juice", 
+            "1/2 oz Simple syrup", 
+            "Ice cubes", 
+            "Lemon slice or cherry for garnish (optional)"
+        ], 
+        "instructions": "The Whiskey Sour is a classic cocktail that allows the flavor of the whiskey to shine through. To make it, start by filling a shaker with ice cubes. Add the whiskey, fresh lemon juice, and simple syrup to the shaker. Shake the ingredients well to chill the mixture. Strain the mixture into a rocks glass filled with ice. Optionally, garnish with a lemon slice or cherry.", 
+        "allergens": ["gluten"]
+    }, 
+    {
+        "name": "Merlot", 
+        "type": "Wine", 
+        "key genres": ["erotica","france"],
+        "genres": ["france","adult romance","dystopian","gothic","family life","erotica","vampires",
+            "science fiction","psychological","mystery","business","political","romance"],
+        "sentiment": 0.6, 
+        "ingredients": [
+            ""
+        ], 
+        "instructions": "Pour yourself a glass!", 
+        "allergens": []
+    }, 
+    {
+        "name": "Cabernet Sauvignon", 
+        "type": "Wine", 
+        "key genres": [], 
+        "genres": ["france","adult romance","action","unrequited love","dystopian","united states",
+            "hard science fiction","epic","erotica","vampires","science fiction","psychological","historical fiction",
+            "mystery","california","business","political","space travel"],
+        "sentiment": 0.6, 
+        "ingredients": [
+            ""
+        ], 
+        "instructions": "Pour yourself a glass!", 
+        "allergens": []
+    }, 
+    {
+        "name": "Hard Cider", 
+        "type": "Wine", 
+        "key genres": [], 
+        "genres": ["19th century","18th century","epic","historical fiction","adventure","historical fantasy",
+            "fantasy","westerns","colonial period","contemporary fiction","humorous"],
+        "sentiment": 0.7, 
+        "ingredients": [
+            ""
+        ], 
+        "instructions": "Hard cider is commonly served chilled straight from the bottle or can.", 
+        "allergens": []
+    }
+]
