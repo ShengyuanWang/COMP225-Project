@@ -22,7 +22,7 @@
         "genres": ["mystery & detective","1910s","classics","psychological","great britain","nineteen sixties",
 				"travel","1940s","thriller","world war ii","adventure","england","biography & memoir","love in adolescence",
 				"1960s","domestic fiction","world war i","romantic comedy","hard science fiction","noir","1930s",
-				"new england","steampunk","nineteen thirties","mystery","20th century","business","nineteen forties"
+				"new england","steampunk","nineteen thirties","mystery","20th century","business","poetry","nineteen forties"
 				],
         "sentiment": 0.7, 
         "ingredients": [
@@ -41,7 +41,7 @@
         "type": "Wine", 
         "key genres": ["erotica","france"],
         "genres": ["france","adult romance","dystopian","gothic","family life","erotica","vampires","science fiction",
-				"psychological","mystery","business","political","romance"],
+				"psychological","mystery","business","political","romance","poetry"],
         "sentiment": 0.6, 
         "ingredients": [
             ""
@@ -57,7 +57,7 @@
         "key genres": [], 
         "genres": ["france","adult romance","action","unrequited love","dystopian","united states","hard science fiction",
 				"epic","erotica","vampires","science fiction","psychological","historical fiction","mystery","california",
-				"business","political","space travel"],
+				"business","political","space travel","poetry"],
         "sentiment": 0.6, 
         "ingredients": [
             ""
@@ -118,7 +118,8 @@
         "type": "Wine", 
         "key genres": [], 
         "genres": ["19th century","18th century","epic","historical fiction","adventure","historical fantasy",
-				"fantasy","westerns","colonial period","contemporary fiction","humorous"],
+				"fantasy","westerns","colonial period","contemporary fiction","humorous","frontier and pioneer life"
+				],
         "sentiment": 0.7, 
         "ingredients": [
             ""

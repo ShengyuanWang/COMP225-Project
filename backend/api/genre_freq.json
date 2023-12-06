@@ -1,27 +1,27 @@
 [
     [
         "mystery",
-        61
+        63
     ],
     [
         "historical fiction",
-        40
-    ],
-    [
-        "adventure",
-        39
+        43
     ],
     [
         "romance",
-        39
+        41
+    ],
+    [
+        "adventure",
+        40
     ],
     [
         "travel",
-        37
+        38
     ],
     [
         "thriller",
-        34
+        36
     ],
     [
         "contemporary fiction",
@@ -32,16 +32,16 @@
         24
     ],
     [
+        "mystery & detective",
+        22
+    ],
+    [
         "romantic comedy",
         22
     ],
     [
         "biography & memoir",
         21
-    ],
-    [
-        "mystery & detective",
-        20
     ],
     [
         "20th century",
@@ -52,16 +52,20 @@
         19
     ],
     [
+        "noir",
+        18
+    ],
+    [
         "fantasy",
         18
     ],
     [
-        "noir",
-        16
+        "classics",
+        17
     ],
     [
-        "classics",
-        15
+        "19th century",
+        14
     ],
     [
         "horror",
@@ -72,7 +76,15 @@
         13
     ],
     [
-        "19th century",
+        "1960s",
+        12
+    ],
+    [
+        "historical romance",
+        12
+    ],
+    [
+        "vampires",
         12
     ],
     [
@@ -80,19 +92,15 @@
         12
     ],
     [
+        "nineteen sixties",
+        11
+    ],
+    [
         "1940s",
         11
     ],
     [
         "nineteen forties",
-        11
-    ],
-    [
-        "historical romance",
-        11
-    ],
-    [
-        "vampires",
         11
     ],
     [
@@ -112,19 +120,15 @@
         10
     ],
     [
-        "nineteen sixties",
-        10
-    ],
-    [
-        "1960s",
-        10
-    ],
-    [
         "hard-boiled",
         9
     ],
     [
         "business",
+        9
+    ],
+    [
+        "united states",
         9
     ],
     [
@@ -153,6 +157,10 @@
     ],
     [
         "action",
+        8
+    ],
+    [
+        "poetry",
         8
     ],
     [
@@ -188,11 +196,15 @@
         8
     ],
     [
+        "gothic",
+        8
+    ],
+    [
         "psychological",
         7
     ],
     [
-        "united states",
+        "espionage",
         7
     ],
     [
@@ -201,10 +213,6 @@
     ],
     [
         "voyages",
-        7
-    ],
-    [
-        "gothic",
         7
     ],
     [
@@ -220,12 +228,40 @@
         6
     ],
     [
-        "espionage",
+        "1920s",
+        6
+    ],
+    [
+        "1930s",
+        6
+    ],
+    [
+        "nineteen thirties",
+        6
+    ],
+    [
+        "italy",
+        6
+    ],
+    [
+        "spain",
         6
     ],
     [
         "occult",
         6
+    ],
+    [
+        "southern gothic",
+        6
+    ],
+    [
+        "westerns",
+        6
+    ],
+    [
+        "prohibition",
+        5
     ],
     [
         "sports",
@@ -236,15 +272,7 @@
         5
     ],
     [
-        "1930s",
-        5
-    ],
-    [
         "unrequited love",
-        5
-    ],
-    [
-        "nineteen thirties",
         5
     ],
     [
@@ -253,14 +281,6 @@
     ],
     [
         "demonology",
-        5
-    ],
-    [
-        "italy",
-        5
-    ],
-    [
-        "spain",
         5
     ],
     [
@@ -276,10 +296,6 @@
         5
     ],
     [
-        "southern gothic",
-        5
-    ],
-    [
         "ireland",
         5
     ],
@@ -292,12 +308,20 @@
         5
     ],
     [
+        "crime fiction",
+        5
+    ],
+    [
         "magical realism",
         5
     ],
     [
         "17th century",
         5
+    ],
+    [
+        "nineteen twenties",
+        4
     ],
     [
         "satire",
@@ -344,10 +368,6 @@
         4
     ],
     [
-        "crime fiction",
-        4
-    ],
-    [
         "criminals",
         4
     ],
@@ -357,6 +377,10 @@
     ],
     [
         "pirates",
+        4
+    ],
+    [
+        "southern states",
         4
     ],
     [
@@ -372,15 +396,7 @@
         4
     ],
     [
-        "westerns",
-        4
-    ],
-    [
-        "nineteen twenties",
-        3
-    ],
-    [
-        "1920s",
+        "great depression",
         3
     ],
     [
@@ -412,12 +428,12 @@
         3
     ],
     [
-        "colonial period",
+        "frontier and pioneer life",
         3
     ],
     [
-        "great depression",
-        2
+        "colonial period",
+        3
     ],
     [
         "n.y.",
@@ -441,6 +457,10 @@
     ],
     [
         "dark magic",
+        2
+    ],
+    [
+        "kentucky",
         2
     ],
     [
@@ -492,6 +512,14 @@
         1
     ],
     [
+        "mississippi",
+        1
+    ],
+    [
+        "united states civil war",
+        1
+    ],
+    [
         "australia",
         1
     ],
@@ -532,6 +560,22 @@
         1
     ],
     [
+        "illicit distilling",
+        1
+    ],
+    [
+        "mountain life",
+        1
+    ],
+    [
+        "great smoky mountains",
+        1
+    ],
+    [
+        "appalachian region",
+        1
+    ],
+    [
         "china",
         1
     ],
@@ -553,10 +597,6 @@
     ],
     [
         "jamaica",
-        1
-    ],
-    [
-        "kentucky",
         1
     ]
 ]
