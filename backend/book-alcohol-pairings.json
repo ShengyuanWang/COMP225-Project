@@ -6,7 +6,7 @@
             "key genres": ["great depression","noir","hard-boiled","business"],
             "genres": ["19th century","1950s","mystery & detective","action","1910s","classics","psychological",
 				"nineteen twenties","biography & memoir","hard-boiled","historical fiction","great depression","nineteen fifties",
-				"noir","dystopian","1920s","mystery","20th century","business"],
+				"noir","dystopian","1920s","mystery","20th century","business","prohibition","poetry"],
             "sentiment": 0.6, 
             "ingredients": [
                 "2 oz. bourbon or rye whiskey", 
@@ -47,7 +47,7 @@
             "type": "Cocktail", 
             "key genres": ["n.y.","urban"],
             "genres": ["nineteen twenties","19th century","n.y.","mystery & detective","biography & memoir",
-				"1920s","united states","thriller","historical fiction","mystery","20th century","espionage","urban"
+				"1920s","united states","thriller","historical fiction","mystery","20th century","espionage","urban","prohibition"
 				],
             "sentiment": 0.6, 
             "ingredients": [
@@ -248,7 +248,7 @@
             "type": "Cocktail", 
             "key genres": ["hemingway"],
             "genres": ["travel","historical fiction","horror","classics","adventure","mystery","20th century",
-				"hemingway"],
+				"hemingway","1920s","nineteen twenties"],
             "sentiment": 0.2, 
             "ingredients": [
                 "1 1/2 oz Absinthe", 
@@ -430,7 +430,7 @@
             "genres": ["mystery & detective","1910s","classics","psychological","great britain","nineteen sixties",
 				"travel","1940s","thriller","world war ii","adventure","england","biography & memoir","love in adolescence",
 				"1960s","domestic fiction","world war i","romantic comedy","hard science fiction","noir","1930s",
-				"new england","steampunk","nineteen thirties","mystery","20th century","business","nineteen forties"
+				"new england","steampunk","nineteen thirties","mystery","20th century","business","poetry","nineteen forties"
 				],
             "sentiment": 0.7, 
             "ingredients": [
@@ -468,7 +468,8 @@
             "type": "Cocktail", 
             "key genres": ["occult","ghosts","zombies"],
             "genres": ["occult","mystery & detective","zombies","dystopian","1940s","historical fiction",
-				"horror","great depression","ghosts","paranormal","mystery","nineteen forties"],
+				"horror","great depression","ghosts","paranormal","mystery","nineteen forties","nineteen thirties",
+                "1930s"],
             "sentiment": 0.2, 
             "ingredients": [
                 "3/4 oz Gin", 
@@ -683,9 +684,9 @@
         {
             "name": "French 75", 
             "type": "Cocktail", 
-            "key genres": ["1920s"],
+            "key genres": ["1920s","prohibition"],
             "genres": ["nineteen twenties","historical romance","mystery & detective","biography & memoir",
-				"1920s","historical fiction","classics","mystery","20th century","romance"],
+				"1920s","historical fiction","classics","mystery","20th century","romance","prohibition"],
             "sentiment": 0.8, 
             "ingredients": [
                 "1 1/2 oz Gin", 
@@ -796,7 +797,7 @@
             "type": "Cocktail", 
             "key genres": ["aliens","space travel"],
             "genres": ["aliens","magical realism","travel","voyages","science fiction","space travel",
-				"adventure","fantasy","humorous"],
+				"adventure","fantasy","humorous","1960s","nineteen sixties"],
             "sentiment": 0.6, 
             "ingredients": [
                 "1 oz Absolut Raspberri vodka", 
@@ -824,6 +825,22 @@
                 "Orange slice and maraschino cherry for garnish"
             ], 
             "instructions": "The Tequila Sunrise is a classic cocktail known for its vibrant appearance, with shades resembling a sunrise. Here's a simple recipe for making a Tequila Sunrise: Fill a highball glass with ice cubes. Pour the tequila and orange juice into the glass. Stir the mixture gently to combine. Slowly pour the grenadine syrup over the back of a spoon or by drizzling it down the side of the glass. This will allow the grenadine to settle at the bottom of the glass and gradually rise to create the sunrise effect. Do not stir after adding the grenadine, allowing it to naturally mix with the other ingredients. Garnish with an orange slice and a maraschino cherry. Optionally, you can use a straw to gently stir the colors together before drinking.", 
+            "allergens": [], 
+            "image": "TBA", 
+            "no match drink": false
+        }, 
+        {
+            "name": "Mint Julep", 
+            "type": "Cocktail", 
+            "key genres": ["southern states","southern gothic"], 
+            "genres": ["historical fiction","classics","southern states","united states","1920s","1960s","westerns",
+                "19th century","kentucky","mississippi","romance","historical romance","southern gothic","gothic",
+                "mystery","thriller","united states civil war"],
+            "sentiment": 0.4, 
+            "ingredients": [
+                "TBA"
+            ], 
+            "instructions": "TBA",
             "allergens": [], 
             "image": "TBA", 
             "no match drink": false
@@ -863,7 +880,7 @@
             "type": "Wine", 
             "key genres": ["erotica","france"],
             "genres": ["france","adult romance","dystopian","gothic","family life","erotica","vampires",
-				"science fiction","psychological","mystery","business","political","romance"],
+				"science fiction","psychological","mystery","business","political","romance","poetry"],
             "sentiment": 0.6, 
             "ingredients": [
                 ""
@@ -915,7 +932,22 @@
             ], 
             "instructions": "Pour yourself a glass!", 
             "allergens": [], 
-            "image": "martini", 
+            "image": "whiteWine", 
+            "no match drink": false
+        }, 
+        {
+            "name": "Sweet Vermouth", 
+            "type": "Wine", 
+            "key genres": ["noir"],
+            "genres": ["spain","italy","romance","vampires","classics","mystery & detective","mystery","noir",
+                "historical fiction","19th century","espionage","thriller","travel","poetry"],
+            "sentiment": 0.6, 
+            "ingredients": [
+                ""
+            ], 
+            "instructions": "Pour yourself a glass!", 
+            "allergens": [], 
+            "image": "redWine", 
             "no match drink": false
         }, 
         {
@@ -940,7 +972,7 @@
             "key genres": ["france","first loves"],
             "genres": ["france","19th century","biography & memoir","love in adolescence","first loves",
 				"steampunk","adolescence","family life","erotica","romantic comedy","contemporary fiction","romance",
-				"humorous"],
+				"humorous","1920s","prohibition","poetry"],
             "sentiment": 1, 
             "ingredients": [
                 ""
@@ -987,7 +1019,7 @@
             "type": "Wine", 
             "key genres": ["romantic comedy","first loves"],
             "genres": ["travel","love in adolescence","first loves","steampunk","adolescence","family life",
-				"adventure","italy","romantic comedy","contemporary fiction","romance","humorous"],
+				"adventure","italy","romantic comedy","contemporary fiction","romance","humorous","poetry"],
             "sentiment": 0.9, 
             "ingredients": [
                 ""
@@ -1003,7 +1035,7 @@
             "key genres": [], 
             "genres": ["france","adult romance","action","unrequited love","dystopian","united states",
 				"hard science fiction","epic","erotica","vampires","science fiction","psychological","historical fiction",
-				"mystery","california","business","political","space travel"],
+				"mystery","california","business","political","space travel","poetry"],
             "sentiment": 0.6, 
             "ingredients": [
                 ""
@@ -1206,7 +1238,7 @@
             "key genres": ["united states","prohibition","appalachian region"],
             "genres": ["united states","prohibition","great depression","historical fiction","westerns","illicit distilling",
                 "southern states","adventure","crime fiction","mystery & detective","noir","mountain life","great smoky mountains",
-                "appalachian region"],
+                "appalachian region","frontier and pioneer life"],
             "sentiment": 0, 
             "ingredients": [
                 ""
@@ -1330,7 +1362,7 @@
             "key genres": ["southern gothic","westerns","urban fantasy","hard-boiled","southern states"],
             "genres": ["19th century","action","gothic","18th century","werewolves","classics","paranormal",
 				"southern gothic","urban fantasy","horror","science fiction","adventure","celtic mythology","biography & memoir",
-				"hard-boiled","historical fiction","demons","westerns","urban","political","southern states"],
+				"hard-boiled","historical fiction","demons","westerns","urban","political","southern states","frontier and pioneer life"],
             "sentiment": 0.6, 
             "ingredients": [
                 ""
@@ -1453,7 +1485,7 @@
             "key genres": ["steampunk","occult","ghosts"],
             "genres": ["occult","magicians","19th century","france","biography & memoir","steampunk",
 				"thriller","demons","historical fiction","horror","science fiction","ghosts","psychological","paranormal",
-				"mystery","demonology","hard science fiction"],
+				"mystery","demonology","hard science fiction","poetry"],
             "sentiment": -0.5, 
             "ingredients": [
                 "Sugar cube", 
@@ -1501,7 +1533,7 @@
             "type": "Wine", 
             "key genres": [], 
             "genres": ["19th century","18th century","epic","historical fiction","adventure","historical fantasy",
-				"fantasy","westerns","colonial period","contemporary fiction","humorous"],
+				"fantasy","westerns","colonial period","contemporary fiction","humorous","frontier and pioneer life"],
             "sentiment": 0.7, 
             "ingredients": [
                 ""
