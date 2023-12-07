@@ -1,35 +1,39 @@
 [
     [
         "mystery",
-        59
-    ],
-    [
-        "romance",
-        39
+        63
     ],
     [
         "historical fiction",
-        38
+        43
+    ],
+    [
+        "romance",
+        41
     ],
     [
         "adventure",
-        38
+        40
     ],
     [
         "travel",
-        35
+        38
     ],
     [
         "thriller",
-        33
-    ],
-    [
-        "humorous",
-        23
+        36
     ],
     [
         "contemporary fiction",
-        23
+        26
+    ],
+    [
+        "humorous",
+        24
+    ],
+    [
+        "mystery & detective",
+        22
     ],
     [
         "romantic comedy",
@@ -40,10 +44,6 @@
         21
     ],
     [
-        "mystery & detective",
-        20
-    ],
-    [
         "20th century",
         20
     ],
@@ -52,16 +52,20 @@
         19
     ],
     [
+        "noir",
+        18
+    ],
+    [
         "fantasy",
         18
     ],
     [
-        "noir",
-        16
+        "classics",
+        17
     ],
     [
-        "classics",
-        15
+        "19th century",
+        14
     ],
     [
         "horror",
@@ -72,7 +76,15 @@
         13
     ],
     [
-        "19th century",
+        "1960s",
+        12
+    ],
+    [
+        "historical romance",
+        12
+    ],
+    [
+        "vampires",
         12
     ],
     [
@@ -80,15 +92,15 @@
         12
     ],
     [
+        "nineteen sixties",
+        11
+    ],
+    [
         "1940s",
         11
     ],
     [
         "nineteen forties",
-        11
-    ],
-    [
-        "vampires",
         11
     ],
     [
@@ -100,23 +112,23 @@
         11
     ],
     [
+        "historical fantasy",
+        11
+    ],
+    [
         "dystopian",
         10
     ],
     [
-        "nineteen sixties",
-        10
-    ],
-    [
-        "1960s",
-        10
-    ],
-    [
-        "historical romance",
-        10
-    ],
-    [
         "hard-boiled",
+        9
+    ],
+    [
+        "business",
+        9
+    ],
+    [
+        "united states",
         9
     ],
     [
@@ -136,10 +148,6 @@
         9
     ],
     [
-        "historical fantasy",
-        9
-    ],
-    [
         "steampunk",
         9
     ],
@@ -149,6 +157,10 @@
     ],
     [
         "action",
+        8
+    ],
+    [
+        "poetry",
         8
     ],
     [
@@ -180,15 +192,19 @@
         8
     ],
     [
+        "epic",
+        8
+    ],
+    [
+        "gothic",
+        8
+    ],
+    [
         "psychological",
         7
     ],
     [
-        "business",
-        7
-    ],
-    [
-        "united states",
+        "espionage",
         7
     ],
     [
@@ -197,14 +213,6 @@
     ],
     [
         "voyages",
-        7
-    ],
-    [
-        "epic",
-        7
-    ],
-    [
-        "gothic",
         7
     ],
     [
@@ -220,12 +228,40 @@
         6
     ],
     [
-        "espionage",
+        "1920s",
+        6
+    ],
+    [
+        "1930s",
+        6
+    ],
+    [
+        "nineteen thirties",
+        6
+    ],
+    [
+        "italy",
+        6
+    ],
+    [
+        "spain",
         6
     ],
     [
         "occult",
         6
+    ],
+    [
+        "southern gothic",
+        6
+    ],
+    [
+        "westerns",
+        6
+    ],
+    [
+        "prohibition",
+        5
     ],
     [
         "sports",
@@ -236,15 +272,7 @@
         5
     ],
     [
-        "1930s",
-        5
-    ],
-    [
         "unrequited love",
-        5
-    ],
-    [
-        "nineteen thirties",
         5
     ],
     [
@@ -253,14 +281,6 @@
     ],
     [
         "demonology",
-        5
-    ],
-    [
-        "italy",
-        5
-    ],
-    [
-        "spain",
         5
     ],
     [
@@ -276,10 +296,6 @@
         5
     ],
     [
-        "southern gothic",
-        5
-    ],
-    [
         "ireland",
         5
     ],
@@ -292,12 +308,20 @@
         5
     ],
     [
+        "crime fiction",
+        5
+    ],
+    [
         "magical realism",
         5
     ],
     [
         "17th century",
         5
+    ],
+    [
+        "nineteen twenties",
+        4
     ],
     [
         "satire",
@@ -344,10 +368,6 @@
         4
     ],
     [
-        "crime fiction",
-        4
-    ],
-    [
         "criminals",
         4
     ],
@@ -357,6 +377,10 @@
     ],
     [
         "pirates",
+        4
+    ],
+    [
+        "southern states",
         4
     ],
     [
@@ -372,15 +396,7 @@
         4
     ],
     [
-        "westerns",
-        4
-    ],
-    [
-        "nineteen twenties",
-        3
-    ],
-    [
-        "1920s",
+        "great depression",
         3
     ],
     [
@@ -404,16 +420,20 @@
         3
     ],
     [
+        "friendship in adolescence",
+        3
+    ],
+    [
         "christmas stories",
+        3
+    ],
+    [
+        "frontier and pioneer life",
         3
     ],
     [
         "colonial period",
         3
-    ],
-    [
-        "great depression",
-        2
     ],
     [
         "n.y.",
@@ -440,11 +460,15 @@
         2
     ],
     [
-        "friendship in adolescence",
+        "kentucky",
         2
     ],
     [
         "vikings",
+        2
+    ],
+    [
+        "male friendship",
         2
     ],
     [
@@ -488,6 +512,14 @@
         1
     ],
     [
+        "mississippi",
+        1
+    ],
+    [
+        "united states civil war",
+        1
+    ],
+    [
         "australia",
         1
     ],
@@ -504,11 +536,51 @@
         1
     ],
     [
-        "male friendship",
+        "germany",
         1
     ],
     [
         "korea",
+        1
+    ],
+    [
+        "japan",
+        1
+    ],
+    [
+        "ukiyoe",
+        1
+    ],
+    [
+        "samurai",
+        1
+    ],
+    [
+        "kurosawa",
+        1
+    ],
+    [
+        "illicit distilling",
+        1
+    ],
+    [
+        "mountain life",
+        1
+    ],
+    [
+        "great smoky mountains",
+        1
+    ],
+    [
+        "appalachian region",
+        1
+    ],
+    [
+        "china",
+        1
+    ],
+    [
+        "qing dynasty ",
         1
     ],
     [
@@ -525,10 +597,6 @@
     ],
     [
         "jamaica",
-        1
-    ],
-    [
-        "kentucky",
         1
     ]
 ]
