@@ -10,11 +10,12 @@ const key = computed(() => {
 </script>
 
 <template>
-<div class="fullscreen">
-  <Menu></Menu>
-  <router-view :key="key"></router-view>
+<!--<div class="fullscreen">-->
+<!--  <Menu></Menu>-->
+<!--  <router-view :key="key"></router-view>-->
 
-</div>
+<!--</div>-->
+<router-view :key="key"></router-view>
 </template>
 
 <style scoped>

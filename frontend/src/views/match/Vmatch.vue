@@ -31,14 +31,20 @@ onMounted(()=>{
 </script>
 
 <template>
-  <div class="header">
-    <Qinput place="40" :place-holder="placeHolder" :input="input"></Qinput>
-  </div>
-  <div class="loading" v-show="!showResult">
-    <h1 style="padding-left: 20vw; padding-top: 20vh; font-size: 40px">Loading Result ....</h1>
-  </div>
-  <div class="match_result" v-show="showResult">
-    <MatchResult url="https://i.ibb.co/989gpGR/drink1.png" :name=name :rating=stars :description=description></MatchResult>
+
+
+  <div class="fullscreen">
+    <Menu></Menu>
+    <div class="header">
+      <Qinput place="40" :place-holder="placeHolder" :input="input"></Qinput>
+    </div>
+    <div class="loading" v-show="!showResult">
+      <h1 style="padding-left: 20vw; padding-top: 20vh; font-size: 40px">Loading Result ....</h1>
+    </div>
+    <div class="match_result" v-show="showResult">
+      <MatchResult url="https://i.ibb.co/989gpGR/drink1.png" :name=name :rating=stars :description=description></MatchResult>
+    </div>
+
   </div>
 </template>
 

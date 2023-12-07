@@ -11,16 +11,16 @@ const props = defineProps({
 
 <template>
   <!--  detailed drink starts here-->
-  <div class="pic">
-    <el-image :src="props.url" fit="cover" alt="Alcohol Image Onload"/>
-  </div>
-  <div class="pic">
-    <div class="name"><h1>{{ props.name }}</h1></div>
-    <div class="description">
-      <p style="font-size: 1.2vw;">{{description}}</p>
+    <div class="pic">
+      <el-image :src="props.url" fit="cover" alt="Alcohol Image Onload"/>
     </div>
-  </div>
-  <!--  detailed drink ends here-->
+    <div class="pic">
+      <div class="name"><h1>{{ props.name }}</h1></div>
+      <div class="description">
+        <p style="font-size: 1.2vw;">{{description}}</p>
+      </div>
+    </div>
+
 </template>
 
 <style scoped>

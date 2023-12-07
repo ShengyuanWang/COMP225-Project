@@ -75,6 +75,17 @@ const clickMatch = () => {
   router.push({ path: 'search'})
 }
 
+const goHome = () => {
+  console.log('Go Home');
+  router.push({path: 'search'})
+}
+
+const emits = defineEmits(['childClick'])
+const toEmit = () =>{
+  // 触发父组件事件childClick并携带参数
+  emits('childClick', preference)
+}
+
 
 </script>
 
@@ -82,6 +93,8 @@ const clickMatch = () => {
 <template>
   <div class="menu" :style="{width: w+ 'vw', backgroundColor:menuColor}">
       <button name='menu-bar' @click="handleCollapse" class="menu_icon" :style="{marginLeft:w-4.5+'vw',marginRight:'2vw',height:'4vh',width:'3vw'}"></button>
+      <el-button type="primary" :style="{marginLeft:w-5.5+'vw',marginRight:'2vw',height:'4vh',width:'5vw', marginTop:'4vh', backgroundColor:'#998871', color:'#00000'}" @click="goHome">Home</el-button>
+
     <div v-if="!isCollapse && !showPreference">
       <h1 @click="clickMatch()">Menu</h1>
       <el-menu
@@ -115,7 +128,7 @@ const clickMatch = () => {
       </el-menu>
       <h1>Preference</h1>
       <div class="check">
-        <p><el-checkbox v-model="preference.beer" label="Beer" size="large" style="color: black"/></p>
+        <p><el-checkbox v-model="preference.beer" label="Beer" size="large" style="color: black" @click="toEmit"/></p>
         <p><el-checkbox v-model="preference.wine" label="Wine" size="large" style="color: black"/></p>
         <p><el-checkbox v-model="preference.spirits" label="Spirits" size="large" style="color: black"/></p>
         <p><el-checkbox v-model="preference.cocktails" label="Cocktails" size="large" style="color: black"/></p>

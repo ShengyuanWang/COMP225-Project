@@ -51,19 +51,25 @@ onBeforeMount(()=>{
 </script>
 
 <template>
-<perfect-scrollbar class="show" v-if="show===1">
-  <div class="drink-table" >
-    <drink-item v-for="drink in drinks"
-                :name="drink.name"
-                :instruction="drink.ingredients"
-                :description="drink.description"
-                url="https://firebasestorage.googleapis.com/v0/b/comp225-810dc.appspot.com/o/images%2FredWine.png?alt=media&token=2af7d5ed-b1e1-4382-95fe-2cdcc62fa79e"
-                @click="getData(drink)"
-    >{{drink.name}}}</drink-item>
-    <br>
-    <div style="width: 90%">aaaa</div>
+
+
+  <div class="fullscreen">
+    <Menu></Menu>
+    <perfect-scrollbar class="show" v-if="show===1">
+      <div class="drink-table" >
+        <drink-item v-for="drink in drinks"
+                    :name="drink.name"
+                    :instruction="drink.ingredients"
+                    :description="drink.description"
+                    url="https://firebasestorage.googleapis.com/v0/b/comp225-810dc.appspot.com/o/images%2FredWine.png?alt=media&token=2af7d5ed-b1e1-4382-95fe-2cdcc62fa79e"
+                    @click="getData(drink)"
+        >{{drink.name}}}</drink-item>
+        <br>
+        <div style="width: 90%">sssss</div>
+      </div>
+    </perfect-scrollbar>
+
   </div>
-</perfect-scrollbar>
 </template>
 
 <style scoped>
