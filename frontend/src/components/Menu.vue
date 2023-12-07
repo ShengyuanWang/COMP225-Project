@@ -11,7 +11,7 @@ const isCollapse = ref(true) // const for side-menu collapse action
 const w = ref(6) // handle the distance to the left for the icon vw
 const menuColor = ref('#C3BCB3') // handle the color for the menu
 
-// array for drink preference | default : false
+// array for drink preference | default : true
 const preference  = ref({
   beer: true,
   wine: true,
@@ -21,11 +21,13 @@ const preference  = ref({
 
 // array for allergy preference | default : false
 const allergy  = ref({
+  gluten: false,
+  lactose: false,
+  egg: false,
   treenuts: false,
-  peanuts: false,
   soy: false,
-  seasame: false,
-  other: false
+  shellfish: false,
+  fish: false
 })
 
 // function for handle the collapse action for the sub-menu
@@ -120,17 +122,17 @@ const clickMatch = () => {
       </div>
       <h1>Allergies</h1>
       <div class="check">
-        <p><el-checkbox v-model="allergy.treenuts" label="Tree Nuts" size="large" style="color: black"/></p>
-        <p><el-checkbox v-model="allergy.peanuts" label="Peanuts" size="large" style="color: black"/></p>
-        <p><el-checkbox v-model="allergy.soy" label="Soy" size="large" style="color: black"/></p>
-        <p><el-checkbox v-model="allergy.seasame" label="Seasame" size="large" style="color: black"/></p>
-        <p><el-checkbox v-model="allergy.other" label="Other" size="large" style="color: black"/></p>
+        <p><el-checkbox v-model="allergy.gluten" label="Gluten" size="large" style="color: black"/></p>
+        <p><el-checkbox v-model="allergy.lactose" label="Lactose" size="large" style="color: black"/></p>
+        <p><el-checkbox v-model="allergy.egg" label="Egg" size="large" style="color: black"/></p>
+        <p><el-checkbox v-model="allergy.seasame" label="Tree Nuts" size="large" style="color: black"/></p>
+        <p><el-checkbox v-model="allergy.other" label="Soy" size="large" style="color: black"/></p>
+        <p><el-checkbox v-model="allergy.other" label="Shellfish" size="large" style="color: black"/></p>
+        <p><el-checkbox v-model="allergy.other" label="Fish" size="large" style="color: black"/></p>
       </div>
     </div>
   </div>
 </template>
-
-
 
 <style>
 .el-menu-vertical-demo:not(.el-menu--collapse) {
