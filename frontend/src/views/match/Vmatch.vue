@@ -12,6 +12,8 @@ const stars = route.query.stars;
 const name = route.query.name;
 const description = route.query.description;
 const showResult = ref(false)
+const placeHolder = route.query.book;
+const input = route.query.input;
 const show = () => {
   showResult.value = true
 
@@ -30,7 +32,7 @@ onMounted(()=>{
 
 <template>
   <div class="header">
-    <Qinput place="40"></Qinput>
+    <Qinput place="40" :place-holder="placeHolder" :input="input"></Qinput>
   </div>
   <div class="loading" v-show="!showResult">
     <h1 style="padding-left: 20vw; padding-top: 20vh; font-size: 40px">Loading Result ....</h1>

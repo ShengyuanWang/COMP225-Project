@@ -8,11 +8,14 @@ const {proxy} = getCurrentInstance()
 // set the props for the search bar
 const props = defineProps({
   move: Boolean, // whether it should move
-  place: String // the place of the search bar
+  place: String, // the place of the search bar
+  placeHolder: String, // the Place holder
+  input: String
 })
 const place = ref(props.place)  // placeholder
 const value = ref('Books')
-const input = ref('')
+const input = ref(props.input)
+const placeHolder = ref(props.placeHolder)
 // 400 default 35 active
 const data = [
   {
@@ -32,7 +35,7 @@ const onClick  = () => {
     console.log(api)
     console.log('finish')
     console.log(res)
-    router.push({path:'match', query: {name:res.data.name, url:'https://i.ibb.co/989gpGR/drink1.png', stars:'5', description:res.data.instructions}})
+    router.push({path:'match', query: {name:res.data.name, url:'https://i.ibb.co/989gpGR/drink1.png', stars:'5', description:res.data.instructions, book:input.value, input:input.value}})
   }).catch((err)=>{
     console.log(err)
   })
@@ -44,7 +47,7 @@ const onClick  = () => {
     <div class="mt-4">
       <el-input
           v-model="input"
-          placeholder="Please input the name of the book"
+          :placeholder="placeHolder"
           class="input-with-select"
           size="large"
           @keyup.enter="onClick"
