@@ -101,6 +101,7 @@ class Pairing:
         pairing["type"] = pairing_dict["type"]
         pairing["ingredients"] = pairing_dict["ingredients"]
         pairing["instructions"] = pairing_dict["instructions"]
+        pairing["image"] = pairing_dict["image"]
         
         if self.no_match_found:
             pairing["notes"] = "We couldn’t find much information for your book, so the match is based just on the title you entered."
@@ -164,10 +165,10 @@ class Pairing:
         random.shuffle(drinks_copy)
         return drinks_copy[:4]        
     
-    def reduce_drink_dict(self, drink_dict):
+    def reduce_drink_dict(self, drink_dict, keys=["name", "type", "ingredients", "instructions", "image"]):
         """Takes a drink dict and returns a drink only containing the keys 
-        needed for the pairing object """
-        return {key: drink_dict[key] for key in ["name", "type", "ingredients", "instructions"] 
+        specified """
+        return {key: drink_dict[key] for key in keys 
                 if key in drink_dict}
     
     def get_top_drink_matches(self, drink_heap, sentiment, range=.2, number_of_matches=4):

@@ -29,6 +29,7 @@ def test_get_pairing_json_obj():
     assert type(valid_dict["type"]) is str 
     assert type(valid_dict["ingredients"]) is list 
     assert type(valid_dict["instructions"]) is str 
+    assert type(valid_dict["image"]) is str 
     assert valid_dict["title"] == "Dune"
     assert valid_dict["authors"] == ["Frank Herbert"]
     assert set(valid_dict["genres"]) == set(["science fiction", "science fiction"])
@@ -46,6 +47,7 @@ def test_get_pairing_json_obj():
     assert type(invalid_dict["type"]) is str 
     assert type(invalid_dict["ingredients"]) is list 
     assert type(invalid_dict["instructions"]) is str 
+    assert type(invalid_dict["image"]) is str 
     assert invalid_dict["title"] == ""
     assert invalid_dict["authors"] == []
     assert invalid_dict["genres"] == []
