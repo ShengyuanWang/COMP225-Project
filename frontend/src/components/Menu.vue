@@ -78,6 +78,13 @@ const goHome = () => {
   router.push({path: 'search'})
 }
 
+const emits = defineEmits(['childClick'])
+const toEmit = () =>{
+  // 触发父组件事件childClick并携带参数
+  emits('childClick', preference)
+}
+
+
 </script>
 
 
@@ -119,7 +126,7 @@ const goHome = () => {
       </el-menu>
       <h1>Preference</h1>
       <div class="check">
-        <p><el-checkbox v-model="preference.beer" label="Beer" size="large" style="color: black"/></p>
+        <p><el-checkbox v-model="preference.beer" label="Beer" size="large" style="color: black" @click="toEmit"/></p>
         <p><el-checkbox v-model="preference.wine" label="Wine" size="large" style="color: black"/></p>
         <p><el-checkbox v-model="preference.spirits" label="Spirits" size="large" style="color: black"/></p>
         <p><el-checkbox v-model="preference.cocktails" label="Cocktails" size="large" style="color: black"/></p>

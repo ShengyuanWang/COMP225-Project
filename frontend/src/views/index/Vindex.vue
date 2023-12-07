@@ -27,22 +27,27 @@
 </script>
 
 <template>
-  <div>
-    <div style="display: flex; justify-content: center; align-items: center; position: relative;">
-      <div class="title">
-        <h1 style="font-size: 7vw" v-if="obj.underage">BOOK + JUICE</h1> <h1 style="font-size: min(7vw, 10vh)" v-else>BOOK + WINE</h1>
+
+  <div class="fullscreen">
+    <Menu></Menu>
+    <div>
+      <div style="display: flex; justify-content: center; align-items: center; position: relative;">
+        <div class="title">
+          <h1 style="font-size: 7vw" v-if="obj.underage">BOOK + JUICE</h1> <h1 style="font-size: min(7vw, 10vh)" v-else>BOOK + WINE</h1>
+        </div>
       </div>
-    </div>
-    <div class="center">
-      <img src="/src/assets/logo.png" alt="Group Logo">
-    </div>
-    <div class="pop-up">
-      <h2 class="question"> Are you over 21 ?</h2>
       <div class="center">
-        <div class="btn"><el-button type="primary" size="large" @click="onClickYes()"><p>Yes</p></el-button></div>
-        <div class="btn"><el-button type="primary" size="large" @click="onClickNo()"><p>No</p></el-button></div>
+        <img src="/src/assets/logo.png" alt="Group Logo">
+      </div>
+      <div class="pop-up">
+        <h2 class="question"> Are you over 21 ?</h2>
+        <div class="center">
+          <div class="btn"><el-button type="primary" size="large" @click="onClickYes()"><p>Yes</p></el-button></div>
+          <div class="btn"><el-button type="primary" size="large" @click="onClickNo()"><p>No</p></el-button></div>
+        </div>
       </div>
     </div>
+
   </div>
 </template>
 

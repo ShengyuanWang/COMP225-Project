@@ -6,7 +6,12 @@ const name = route.query.liquid
 </script>
 
 <template>
-  <DrinkPic :liquid=name></DrinkPic>
+  <div class="fullscreen">
+    <Menu></Menu>
+    <DrinkPic :liquid=name></DrinkPic>
+
+  </div>
+
 </template>
 
 <style>

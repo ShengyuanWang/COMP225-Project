@@ -11,11 +11,16 @@ let description = route.query.description;
 </script>
 
 <template>
-  <div class="header">
-    <Qinput place="40"></Qinput>
-  </div>
-  <div class="match_result">
-    <Detail url="https://i.ibb.co/989gpGR/drink1.png" :name=name :instruction=instruction :description=description></Detail>
+
+  <div class="fullscreen">
+    <Menu></Menu>
+    <div class="header">
+      <Qinput place="40"></Qinput>
+    </div>
+    <div class="match_result">
+      <Detail url="https://i.ibb.co/989gpGR/drink1.png" :name=name :instruction=instruction :description=description></Detail>
+    </div>
+
   </div>
 </template>
 
