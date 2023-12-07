@@ -47,7 +47,8 @@
             "type": "Cocktail", 
             "key genres": ["n.y.","urban"],
             "genres": ["nineteen twenties","19th century","n.y.","mystery & detective","biography & memoir",
-				"1920s","united states","thriller","historical fiction","mystery","20th century","espionage","urban","prohibition"
+				"1920s","united states","thriller","historical fiction","mystery","20th century","espionage",
+                "urban","prohibition","mixology"
 				],
             "sentiment": 0.6, 
             "ingredients": [
@@ -362,7 +363,7 @@
             "key genres": ["noir","hard-boiled"],
             "genres": ["mystery & detective","biography & memoir","hard-boiled","nineteen sixties","1960s",
 				"1940s","thriller","historical fiction","world war ii","mystery","20th century","espionage","nineteen forties",
-				"noir"],
+				"noir","mixology"],
             "sentiment": 0.6, 
             "ingredients": [
                 "2 oz gin", 
@@ -409,7 +410,7 @@
             "key genres": ["italy","espionage","noir"],
             "genres": ["unrequited love","mystery & detective","biography & memoir","dystopian","hard-boiled",
 				"1940s","thriller","historical fiction","mystery","20th century","italy","espionage","nineteen forties",
-				"noir"],
+				"noir","mixology"],
             "sentiment": 0.5, 
             "ingredients": [
                 "1 oz gin", 
@@ -469,7 +470,7 @@
             "key genres": ["occult","ghosts","zombies"],
             "genres": ["occult","mystery & detective","zombies","dystopian","1940s","historical fiction",
 				"horror","great depression","ghosts","paranormal","mystery","nineteen forties","nineteen thirties",
-                "1930s"],
+                "1930s","mixology"],
             "sentiment": 0.2, 
             "ingredients": [
                 "3/4 oz Gin", 
@@ -622,7 +623,7 @@
             "key genres": ["long island","erotica","southern gothic","noir"],
             "genres": ["n.y.","adult romance","crime fiction","united states","thriller","epic","erotica",
 				"classics","romantic suspense","psychological","long island","historical fiction","mystery","criminals",
-				"fantasy","southern gothic","drama","noir"],
+				"fantasy","southern gothic","drama","noir","mixology"],
             "sentiment": -0.15, 
             "ingredients": [
                 "1/2 oz Vodka", 
@@ -686,7 +687,7 @@
             "type": "Cocktail", 
             "key genres": ["1920s","prohibition"],
             "genres": ["nineteen twenties","historical romance","mystery & detective","biography & memoir",
-				"1920s","historical fiction","classics","mystery","20th century","romance","prohibition"],
+				"1920s","historical fiction","classics","mystery","20th century","romance","prohibition","mixology"],
             "sentiment": 0.8, 
             "ingredients": [
                 "1 1/2 oz Gin", 
@@ -826,7 +827,7 @@
             ], 
             "instructions": "The Tequila Sunrise is a classic cocktail known for its vibrant appearance, with shades resembling a sunrise. Here's a simple recipe for making a Tequila Sunrise: Fill a highball glass with ice cubes. Pour the tequila and orange juice into the glass. Stir the mixture gently to combine. Slowly pour the grenadine syrup over the back of a spoon or by drizzling it down the side of the glass. This will allow the grenadine to settle at the bottom of the glass and gradually rise to create the sunrise effect. Do not stir after adding the grenadine, allowing it to naturally mix with the other ingredients. Garnish with an orange slice and a maraschino cherry. Optionally, you can use a straw to gently stir the colors together before drinking.", 
             "allergens": [], 
-            "image": "tequilaSunrise",
+            "image": "TBA", 
             "no match drink": false
         }, 
         {
@@ -1268,7 +1269,7 @@
             "type": "Spirits", 
             "key genres": ["witches","magic","occult","space travel"],
             "genres": ["occult","magicians","travel","france","magic","thriller","18th century","historical fiction",
-				"horror","science fiction","witches","paranormal","mystery","fantasy","historical fantasy","space travel"
+				"horror","science fiction","witches","paranormal","mystery","fantasy","historical fantasy","space travel","mixology"
 				],
             "sentiment": 0.4, 
             "ingredients": [
@@ -1285,7 +1286,7 @@
             "key genres": ["soviet union","russia","poland","ukraine"],
             "genres": ["19th century","travel","biography & memoir","soviet union","1940s","18th century",
 				"world war ii","historical fiction","northern europe in fiction","poland","ukraine","mystery","20th century",
-				"russia","contemporary fiction","nineteen forties","noir"],
+				"russia","contemporary fiction","nineteen forties","noir","vodka","mixology"],
             "sentiment": -0.2, 
             "ingredients": [
                 "Lemon wedge (optional)"
@@ -1362,7 +1363,7 @@
             "key genres": ["southern gothic","westerns","urban fantasy","hard-boiled","southern states"],
             "genres": ["19th century","action","gothic","18th century","werewolves","classics","paranormal",
 				"southern gothic","urban fantasy","horror","science fiction","adventure","celtic mythology","biography & memoir",
-				"hard-boiled","historical fiction","demons","westerns","urban","political","southern states","frontier and pioneer life"],
+				"hard-boiled","historical fiction","demons","westerns","urban","political","southern states","frontier and pioneer life","whiskey"],
             "sentiment": 0.6, 
             "ingredients": [
                 ""
