@@ -466,8 +466,8 @@ class Utils():
         """takes in the list of genres and turns all of the date genres into century genres. Works for single dates and date ranges. 
         Returns the updated list of genres"""
         updated_date_genres = []
-        # print('OG list')
-        # print(list_of_genres)
+        #print('OG list')
+        #print(list_of_genres)
         for genre_x in list_of_genres:
             if 'early works to 1800' in genre_x:
                 updated_date_genres.append(genre_x)
@@ -475,6 +475,15 @@ class Utils():
                 #'world war ii'/'20th century' for '1939-1945'
                 updated_date_genres.append('world war ii')
                 updated_date_genres.append('20th century')
+                updated_date_genres.append('1940s')
+            elif '1929-1939' in genre_x:
+                updated_date_genres.append('great depression')
+                updated_date_genres.append('20th century')
+                updated_date_genres.append('1930s')
+            elif '1920-1933' in genre_x:
+                updated_date_genres.append('prohibition')
+                updated_date_genres.append('20th century')
+                updated_date_genres.append('1920s')
             elif '1914-1918' in genre_x:
                 #'world war i'/'20th century' for '1914-1918'
                 updated_date_genres.append('world war i')
