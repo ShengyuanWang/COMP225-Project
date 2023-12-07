@@ -8,7 +8,9 @@ const props = defineProps({
   url: String, // the url for the image
   name: String, // the name of drink item
   rating: Number, // the rating for the match
-  description: String // the description for the match
+  description: String, // the description for the match
+  ingredients: Array,
+  notes: String
 
 })
 
@@ -54,6 +56,19 @@ const clickChange = () => {
     <div class="description">
       <p>{{description}}</p>
     </div>
+
+    <div v-if="ingredients.length >= 1" class="description">
+      <p>Ingredients:</p>
+      <ul>
+        <li v-for="(ingredient, index) in ingredients" :key="index">{{ ingredient }}</li>
+      </ul>
+    </div>
+
+
+    <div class="description">
+      <p>{{notes}}</p>
+    </div>
+
 <!--    <div class="btns">-->
 <!--      <span class="btn" @click="clickDownload"><el-icon size="3vw" color="Black"><Download /></el-icon></span>-->
 <!--      <span class="btn" @click="clickShare"><el-icon size="3vw" color="Black"><Share /></el-icon></span>-->

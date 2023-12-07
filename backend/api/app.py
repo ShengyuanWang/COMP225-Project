@@ -62,8 +62,9 @@ def get_alcohol(types):
 
 class Pairing:
     def __init__ (self, user_input, user_allergies=[], user_types=["Beer", "Wine", "Spirits", "Cocktail"], alcohol_data_file="book-alcohol-pairings.json", synonyms_data_file="synonyms_lookup.json",  no_match_drinks="no_match_drinks.json", api_key=API_KEY, official_genres=GENRES):
-        """ This class represents a book. Once an object of this class is initiated, that object can be
-        used to query book data and get pairings for the book.
+        """ This class represents a pairing. It passes a json object reprsenting the pairing to the frontend.
+        To make the pairing, it creates an instance of the book class in order to be able to get all the book
+        data it needs to make an accurate pairing."
         
         Keyword arguments:
         user_input -- string of title inputted by user
@@ -81,7 +82,7 @@ class Pairing:
         with open(no_match_drinks, "r") as f:
             self.no_match_drinks = json.load(f)
 
-        self.book = Book(user_input, official_genres=official_genres, synonyms_data_file=synonyms_data_file)
+        self.book = Book(user_input, official_genres=official_genres, synonyms_data_file=synonyms_data_file, api_key=api_key)
         self.no_match_found = False
     
     def get_pairing_json_obj(self):
@@ -104,7 +105,7 @@ class Pairing:
         pairing["image"] = pairing_dict["image"]
         
         if self.no_match_found:
-            pairing["notes"] = "We couldn’t find much information for your book, so the match is based just on the title you entered."
+            pairing["notes"] = "We couldn’t find much information for your book, so this match is just our best guess."
         else:
             pairing["notes"] = ""
         
@@ -203,7 +204,7 @@ class Pairing:
 class Book:
     def __init__ (self, user_input, api_key=API_KEY, official_genres=GENRES, synonyms_data_file="synonyms_lookup.json"):
         """ This class represents a book. Once an object of this class is initiated, that object can be
-        used to query book data and get pairings for the book.
+        used to query book data. 
         
         Keyword arguments:
         user_input -- string of title inputted by user
@@ -339,6 +340,7 @@ class Book:
 
 class APICalls():
     def __init__(self, user_input, api_key=API_KEY, official_genres=GENRES, synonyms_data_file="synonyms_lookup.json"):
+        """This class contains methods that perform API calls to get the data needed to make pairings"""
         self.user_input = user_input 
         self.api_key = api_key
         self.utils = Utils(official_genres, synonyms_data_file)
@@ -424,6 +426,7 @@ class APICalls():
   
 class Utils():
     def __init__(self, official_genres=GENRES, synonyms_data_file="synonyms_lookup.json"):
+        """ This class contains useful util methods. """
         with open(synonyms_data_file, "r") as f:
             self.synonyms = json.load(f)
         self.official_genres = official_genres
