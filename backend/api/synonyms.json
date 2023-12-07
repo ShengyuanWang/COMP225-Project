@@ -4,7 +4,7 @@
     "werewolves":["werewolves in fiction"],
     "aliens": ["extraterrestrial beings","human-alien encounters","alien contact"],
     "vikings": ["vikings in fiction"],
-    "korea": ["korea in fiction","korean fiction","korea ","koreans"],
+    "korea": ["korea in fiction","korean fiction","korea ","koreans","korean americans in fiction","korean americans","korean american","korean mythology","korean folk literature","korean american businesspeople","korean american business enterprises","republic of korea"],
     "steampunk": ["steampunk fiction"],
     "paranormal": ["paranormal fiction","supernatural"],
     "occult": ["occult & supernatural","occult fiction","occultism","irish occult fiction"],
@@ -80,8 +80,8 @@
     "noir":["american noir fiction"],
     "germany":["germany in fiction"],
     "sea stories":["sailors","sailors in fiction"],
-    "china":["china in fiction","chinese fiction"],
-    "japan":["japan in fiction","japanese fiction"],
+    "china":["china in fiction","chinese fiction","chinese american","chinese mythology","chinese folk literature","chinese americans","chinese americans in fiction"],
+    "japan":["japan in fiction","japanese fiction","japanese american","japanese mythology","japanese folk literature","japanese americans","japanese americans in fiction"],
     "southern states":["southern life"],
     "mountain life":["mountain life in fiction"],
     "appalachian region":["appalachian mountains","appalachians ","southern appalachian region in fiction","southern appalachian region","appalachian trail"],
@@ -92,5 +92,6 @@
     "1960s":["nineteen sixties"],
     "united states civil war":["american civil war "],
     "poetry":["juvenile poetry","children's poetry","poets","poetry slams","women poets","poetry ","poetic works by one author","american poetry"],
-    "n.y.":["n.y.)"]
+    "n.y.":["n.y.)"],
+    "mixology":["cocktails","alcohol","alcoholic beverages","wine & spirits","bartending","beverages","bars ","drinking establishments","liquors"]
 }
