@@ -138,10 +138,10 @@ const toEmit = () =>{
         <p><el-checkbox v-model="allergy.gluten" label="Gluten" size="large" style="color: black"/></p>
         <p><el-checkbox v-model="allergy.lactose" label="Lactose" size="large" style="color: black"/></p>
         <p><el-checkbox v-model="allergy.egg" label="Egg" size="large" style="color: black"/></p>
-        <p><el-checkbox v-model="allergy.seasame" label="Tree Nuts" size="large" style="color: black"/></p>
-        <p><el-checkbox v-model="allergy.other" label="Soy" size="large" style="color: black"/></p>
-        <p><el-checkbox v-model="allergy.other" label="Shellfish" size="large" style="color: black"/></p>
-        <p><el-checkbox v-model="allergy.other" label="Fish" size="large" style="color: black"/></p>
+        <p><el-checkbox v-model="allergy.treenut" label="Tree Nuts" size="large" style="color: black"/></p>
+        <p><el-checkbox v-model="allergy.soy" label="Soy" size="large" style="color: black"/></p>
+        <p><el-checkbox v-model="allergy.shellfish" label="Shellfish" size="large" style="color: black"/></p>
+        <p><el-checkbox v-model="allergy.fish" label="Fish" size="large" style="color: black"/></p>
       </div>
     </div>
   </div>
