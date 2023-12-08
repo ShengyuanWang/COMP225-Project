@@ -102,7 +102,7 @@ class Pairing:
         pairing["type"] = pairing_dict["type"]
         pairing["ingredients"] = pairing_dict["ingredients"]
         pairing["instructions"] = pairing_dict["instructions"]
-        #pairing["image"] = pairing_dict["image"]
+        pairing["image"] = pairing_dict["image"]
         
         if self.no_match_found:
             pairing["notes"] = "We couldn’t find much information for your book, so this match is just our best guess."
@@ -166,7 +166,7 @@ class Pairing:
         random.shuffle(drinks_copy)
         return drinks_copy[:4]        
     
-    def reduce_drink_dict(self, drink_dict, keys=["name", "type", "ingredients", "instructions"]):
+    def reduce_drink_dict(self, drink_dict, keys=["name", "type", "ingredients", "instructions", "image"]):
         """Takes a drink dict and returns a drink only containing the keys 
         specified """
         return {key: drink_dict[key] for key in keys 
