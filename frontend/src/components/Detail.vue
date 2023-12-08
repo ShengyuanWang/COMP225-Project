@@ -4,8 +4,9 @@ const props = defineProps({
   url: String, // the url for the image
   name: String, // the name of the drink
   rating: Number, // the rating for the matching drink
-  instruction: Array, // the instructions for how to make the drink
-  description: String, // the description for the drink
+  ingredients: Array, // the instructions for how to make the drink
+  instructions: String, // the description for the drink,
+  genres: Array 
 })
 </script>
 
@@ -16,11 +17,19 @@ const props = defineProps({
     </div>
     <div class="pic">
       <div class="name"><h1>{{ props.name }}</h1></div>
-      <div class="description">
-        <p style="font-size: 1.2vw;">{{description}}</p>
+      <div style="font-size: 1vw;" class="description">
+        <p> {{instructions}} </p>
+      </div>
+      <div v-if="ingredients.length > 1" style="font-size: 1vw;" class="description">
+        <p> Ingredients: </p>
+         <ul>
+          <li v-for="item in props.ingredients.slice(0, 4)">{{ item }}</li>
+        </ul>
+      </div>
+      <div style="font-size: 1vw;" class="description"> 
+        <p> Related book genres: {{genres.join(", ") }}</p>
       </div>
     </div>
-
 </template>
 
 <style scoped>

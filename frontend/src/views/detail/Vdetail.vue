@@ -6,8 +6,10 @@ const route = useRoute()
 
 // get the data from route url
 let name = route.query.name;
-let instruction = route.query.instruction;
-let description = route.query.description;
+let instructions = route.query.instructions;
+let ingredients = route.query.ingredients;
+let genres = route.query.genres;
+
 </script>
 
 <template>
@@ -18,7 +20,7 @@ let description = route.query.description;
       <Qinput place="40"></Qinput>
     </div>
     <div class="match_result">
-      <Detail url="https://i.ibb.co/989gpGR/drink1.png" :name=name :instruction=instruction :description=description></Detail>
+      <Detail url="https://i.ibb.co/989gpGR/drink1.png" :name=name :instructions=instructions :ingredients=ingredients :genres=genres></Detail>
     </div>
 
   </div>

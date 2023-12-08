@@ -2,7 +2,8 @@
 // set up props for Drink items
 const props = defineProps({
   name: String, // the name of the drink
-  instruction: Array, // the instruction about how to make the drink
+  ingredients: Array, // the instruction about how to make the drink
+  instructions: String, // the instruction about how to make the drink
   url: String // the url for the image of the drink
 })
 </script>
@@ -15,9 +16,10 @@ const props = defineProps({
         {{ props.name }}
       </h1>
       <div class="instruction">
-        <ul>
-          <li v-for="item in props.instruction.slice(0, 4)">{{ item }}</li>
+        <ul v-if="ingredients.length > 1">
+          <li v-for="item in props.ingredients.slice(0, 4)">{{ item }}</li>
         </ul>
+        <p v-if="ingredients.length <= 1"> {{ props.instructions}}</p>
       </div>
     </div>
   </div>
