@@ -44,6 +44,10 @@
         21
     ],
     [
+        "cooking",
+        21
+    ],
+    [
         "20th century",
         20
     ],
@@ -88,6 +92,10 @@
         12
     ],
     [
+        "family life",
+        12
+    ],
+    [
         "paranormal",
         12
     ],
@@ -105,10 +113,6 @@
     ],
     [
         "adult romance",
-        11
-    ],
-    [
-        "family life",
         11
     ],
     [
@@ -133,6 +137,10 @@
     ],
     [
         "urban",
+        9
+    ],
+    [
+        "mixology",
         9
     ],
     [
@@ -248,6 +256,10 @@
         6
     ],
     [
+        "sagas",
+        6
+    ],
+    [
         "occult",
         6
     ],
@@ -289,10 +301,6 @@
     ],
     [
         "magicians",
-        5
-    ],
-    [
-        "sagas",
         5
     ],
     [
@@ -596,7 +604,19 @@
         1
     ],
     [
+        "vodka",
+        1
+    ],
+    [
         "jamaica",
+        1
+    ],
+    [
+        "whiskey",
+        1
+    ],
+    [
+        "mexican cuisine",
         1
     ]
 ]

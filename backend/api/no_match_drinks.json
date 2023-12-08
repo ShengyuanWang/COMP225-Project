@@ -1,7 +1,7 @@
 [{"name": "Gimlet","type": "Cocktail","key genres": ["noir","hard-boiled"],
         "genres": ["mystery & detective","biography & memoir","hard-boiled","nineteen sixties","1960s",
 				"1940s","thriller","historical fiction","world war ii","mystery","20th century","espionage","nineteen forties",
-				"noir"],
+				"noir","mixology"],
         "sentiment": 0.6, 
         "ingredients": [
             "2 oz gin", 
@@ -57,7 +57,7 @@
         "key genres": [], 
         "genres": ["france","adult romance","action","unrequited love","dystopian","united states","hard science fiction",
 				"epic","erotica","vampires","science fiction","psychological","historical fiction","mystery","california",
-				"business","political","space travel","poetry"],
+				"business","political","space travel","poetry","cooking"],
         "sentiment": 0.6, 
         "ingredients": [
             ""

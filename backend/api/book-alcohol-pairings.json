@@ -4,9 +4,9 @@
             "name": "Old Fashioned", 
             "type": "Cocktail", 
             "key genres": ["great depression","noir","hard-boiled","business"],
-            "genres": ["19th century","1950s","mystery & detective","action","1910s","classics","psychological",
-				"nineteen twenties","biography & memoir","hard-boiled","historical fiction","great depression","nineteen fifties",
-				"noir","dystopian","1920s","mystery","20th century","business","prohibition","poetry"],
+            "genres": ["19th century","1950s","mystery & detective","action","1910s","classics","psychological","biography & memoir",
+                "hard-boiled","historical fiction","great depression","noir","dystopian","1920s","mystery","20th century","business",
+                "prohibition","poetry"],
             "sentiment": 0.6, 
             "ingredients": [
                 "2 oz. bourbon or rye whiskey", 
@@ -25,8 +25,8 @@
             "name": "Margarita", 
             "type": "Cocktail", 
             "key genres": ["romantic comedy"],
-            "genres": ["travel","humorous","satire","adventure","20th century","romantic comedy","contemporary fiction",
-				"mexico","romance","sports"],
+            "genres": ["travel","humorous","satire","adventure","20th century","romantic comedy","contemporary fiction","mexico","romance",
+                "sports"],
             "sentiment": 0.7, 
             "ingredients": [
                 "2 oz tequila", 
@@ -46,10 +46,8 @@
             "name": "Manhattan", 
             "type": "Cocktail", 
             "key genres": ["n.y.","urban"],
-            "genres": ["nineteen twenties","19th century","n.y.","mystery & detective","biography & memoir",
-				"1920s","united states","thriller","historical fiction","mystery","20th century","espionage",
-                "urban","prohibition","mixology"
-				],
+            "genres": ["19th century","n.y.","mystery & detective","biography & memoir","1920s","united states","thriller",
+                "historical fiction","mystery","20th century","espionage","urban","prohibition","mixology"],
             "sentiment": 0.6, 
             "ingredients": [
                 "2 oz rye whiskey or bourbon", 
@@ -67,9 +65,8 @@
             "name": "Martini", 
             "type": "Cocktail", 
             "key genres": ["unrequited love"],
-            "genres": ["1950s","1910s","psychological","nineteen sixties","1940s","world war ii","science fiction",
-				"hard-boiled","1960s","nineteen fifties","hard science fiction","1930s","unrequited love","nineteen thirties",
-				"mystery","20th century","business","urban","nineteen forties","romance"],
+            "genres": ["1950s","1910s","psychological","1940s","world war ii","science fiction","hard-boiled","1960s",
+                "hard science fiction","1930s","unrequited love","mystery","20th century","business","urban","romance"],
             "sentiment": 0.7, 
             "ingredients": [
                 "2 oz. gin or vodka", 
@@ -86,9 +83,8 @@
             "name": "Pi\u00f1a Colada", 
             "type": "Cocktail", 
             "key genres": ["puerto rico","caribbean area","romantic comedy"],
-            "genres": ["caribbean area","travel","historical romance","puerto rico","1960s","friendship",
-				"contemporary fiction","adventure","cuba","nineteen sixties","humorous","romance","female friendship",
-				"romantic comedy"],
+            "genres": ["caribbean area","travel","historical romance","puerto rico","1960s","friendship","contemporary fiction","adventure",
+                "cuba","humorous","romance","female friendship","romantic comedy"],
             "sentiment": 0.8, 
             "ingredients": [
                 "2 oz. white rum", 
@@ -124,8 +120,7 @@
             "name": "Mojito", 
             "type": "Cocktail", 
             "key genres": ["caribbean area"],
-            "genres": ["caribbean area","love in adolescence","adolescence","adventure","cuba","romantic comedy",
-				"romance","humorous"],
+            "genres": ["caribbean area","love in adolescence","adolescence","adventure","cuba","romantic comedy","romance","humorous"],
             "sentiment": 0.7, 
             "ingredients": [
                 "2 oz. white rum", 
@@ -145,8 +140,8 @@
             "name": "Bloody Mary", 
             "type": "Cocktail", 
             "key genres": ["vampires","dracula","demonology"],
-            "genres": ["france","travel","zombies","dracula","thriller","demons","horror","classics",
-				"vampires","demonology","mystery","20th century"],
+            "genres": ["france","travel","zombies","dracula","thriller","demons","horror","classics","vampires","demonology","mystery",
+                "20th century"],
             "sentiment": 0.5, 
             "ingredients": [
                 "1 1/2 oz. vodka", 
@@ -168,8 +163,8 @@
             "name": "Cosmopolitan", 
             "type": "Cocktail", 
             "key genres": ["urban fantasy"],
-            "genres": ["mystery & detective","friendship","urban fantasy","mystery","20th century","urban",
-				"contemporary fiction","romance","female friendship","cooking"],
+            "genres": ["mystery & detective","friendship","urban fantasy","mystery","20th century","urban","contemporary fiction","romance",
+                "female friendship","cooking"],
             "sentiment": 0.8, 
             "ingredients": [
                 "1 1/2 oz. vodka", 
@@ -188,8 +183,8 @@
             "name": "Aperol Spritz", 
             "type": "Cocktail", 
             "key genres": [], 
-            "genres": ["travel","biography & memoir","contemporary fiction","fantasy","20th century",
-				"italy","romantic comedy","humorous","urban","romance","female friendship"],
+            "genres": ["travel","biography & memoir","contemporary fiction","fantasy","20th century","italy","romantic comedy","humorous",
+                "urban","romance","female friendship"],
             "sentiment": 0.7, 
             "ingredients": [
                 "3 oz. Prosecco", 
@@ -207,8 +202,8 @@
             "name": "Moscow Mule", 
             "type": "Cocktail", 
             "key genres": ["romantic comedy"],
-            "genres": ["travel","historical romance","voyages","1940s","historical fiction","adventure",
-				"mystery","20th century","romantic comedy","nineteen forties","romance","humorous"],
+            "genres": ["travel","historical romance","voyages","1940s","historical fiction","adventure","mystery","20th century",
+                "romantic comedy","romance","humorous"],
             "sentiment": 0.7, 
             "ingredients": [
                 "2 oz. vodka", 
@@ -226,8 +221,7 @@
             "name": "Pan-Galactic Gargle Blaster", 
             "type": "Cocktail", 
             "key genres": ["comic science fiction","aliens","vogons"],
-            "genres": ["aliens","vogons","science fiction","satire","space travel","adventure","fantasy",
-				"comic science fiction","humorous"],
+            "genres": ["aliens","vogons","science fiction","satire","space travel","adventure","fantasy","comic science fiction","humorous"],
             "sentiment": 0.8, 
             "ingredients": [
                 "1 1/2 oz Gin", 
@@ -248,8 +242,7 @@
             "name": "Death in the Afternoon", 
             "type": "Cocktail", 
             "key genres": ["hemingway"],
-            "genres": ["travel","historical fiction","horror","classics","adventure","mystery","20th century",
-				"hemingway","1920s","nineteen twenties"],
+            "genres": ["travel","historical fiction","horror","classics","adventure","mystery","20th century","hemingway","1920s"],
             "sentiment": 0.2, 
             "ingredients": [
                 "1 1/2 oz Absinthe", 
@@ -264,8 +257,8 @@
             "name": "Espresso Martini", 
             "type": "Cocktail", 
             "key genres": ["noir"],
-            "genres": ["travel","mystery & detective","thriller","historical fiction","science fiction",
-				"mystery","contemporary fiction","drama","noir"],
+            "genres": ["travel","mystery & detective","thriller","historical fiction","science fiction","mystery","contemporary fiction",
+                "drama","noir","cooking"],
             "sentiment": 0.8, 
             "ingredients": [
                 "1 1/2 oz. vodka", 
@@ -283,8 +276,7 @@
             "name": "Vodka Cranberry", 
             "type": "Cocktail", 
             "key genres": ["romantic comedy"],
-            "genres": ["thriller","romantic suspense","adventure","mystery","romantic comedy","romance",
-				"humorous"],
+            "genres": ["thriller","romantic suspense","adventure","mystery","romantic comedy","romance","humorous"],
             "sentiment": 0.7, 
             "ingredients": [
                 "2 oz. vodka", 
@@ -301,8 +293,8 @@
             "name": "Sex on the Beach", 
             "type": "Cocktail", 
             "key genres": ["erotica","romantic comedy"],
-            "genres": ["adult romance","travel","friendship","thriller","erotica","romantic suspense",
-				"contemporary fiction","mystery","romantic comedy","humorous","romance","female friendship","mixology","cooking"],
+            "genres": ["adult romance","travel","friendship","thriller","erotica","romantic suspense","contemporary fiction","mystery",
+                "romantic comedy","humorous","romance","female friendship","mixology","cooking"],
             "sentiment": 0.7, 
             "ingredients": [
                 "1 1/2 oz. vodka", 
@@ -321,8 +313,8 @@
             "name": "Sangria", 
             "type": "Cocktail", 
             "key genres": ["vampires","spain"],
-            "genres": ["adult romance","travel","spain","love in adolescence","domestic fiction","family life",
-				"thriller","vampires","romantic suspense","adventure","mystery","contemporary fiction","romance"],
+            "genres": ["adult romance","travel","spain","love in adolescence","domestic fiction","family life","thriller","vampires",
+                "romantic suspense","adventure","mystery","contemporary fiction","romance"],
             "sentiment": 0.6, 
             "ingredients": [
                 "1 bottle of red wine", 
@@ -343,8 +335,7 @@
             "name": "Sonic Screwdriver", 
             "type": "Cocktail", 
             "key genres": [], 
-            "genres": ["travel","voyages","epic","science fiction","adventure","fantasy","space travel"
-				],
+            "genres": ["travel","voyages","epic","science fiction","adventure","fantasy","space travel"],
             "sentiment": 0.7, 
             "ingredients": [
                 "1 1/2 oz. vodka", 
@@ -361,9 +352,8 @@
             "name": "Gimlet", 
             "type": "Cocktail", 
             "key genres": ["noir","hard-boiled"],
-            "genres": ["mystery & detective","biography & memoir","hard-boiled","nineteen sixties","1960s",
-				"1940s","thriller","historical fiction","world war ii","mystery","20th century","espionage","nineteen forties",
-				"noir","mixology"],
+            "genres": ["mystery & detective","biography & memoir","hard-boiled","1960s","1940s","thriller","historical fiction",
+                "world war ii","mystery","20th century","espionage","noir","mixology"],
             "sentiment": 0.6, 
             "ingredients": [
                 "2 oz gin", 
@@ -381,8 +371,8 @@
             "name": "Spiced Wine", 
             "type": "Cocktail", 
             "key genres": ["friendship","magic","middle ages","sagas"],
-            "genres": ["magicians","ancient","magic","friendship","family life","demons","historical fiction",
-				"witches","sagas","adventure","historical fantasy","fantasy","wizards","middle ages","cooking"],
+            "genres": ["magicians","ancient","magic","friendship","family life","demons","historical fiction","witches","sagas","adventure",
+                "historical fantasy","fantasy","wizards","middle ages","cooking"],
             "sentiment": 0.5, 
             "ingredients": [
                 "1 bottle of red wine", 
@@ -408,9 +398,8 @@
             "name": "Negroni", 
             "type": "Cocktail", 
             "key genres": ["italy","espionage","noir"],
-            "genres": ["unrequited love","mystery & detective","biography & memoir","dystopian","hard-boiled",
-				"1940s","thriller","historical fiction","mystery","20th century","italy","espionage","nineteen forties",
-				"noir","mixology"],
+            "genres": ["unrequited love","mystery & detective","biography & memoir","dystopian","hard-boiled","1940s","thriller",
+                "historical fiction","mystery","20th century","italy","espionage","noir","mixology"],
             "sentiment": 0.5, 
             "ingredients": [
                 "1 oz gin", 
@@ -428,11 +417,9 @@
             "name": "Gin and Tonic", 
             "type": "Cocktail", 
             "key genres": ["world war i","steampunk","england","great britain","world war ii","noir"],
-            "genres": ["mystery & detective","1910s","classics","psychological","great britain","nineteen sixties",
-				"travel","1940s","thriller","world war ii","adventure","england","biography & memoir","love in adolescence",
-				"1960s","domestic fiction","world war i","romantic comedy","hard science fiction","noir","1930s",
-				"new england","steampunk","nineteen thirties","mystery","20th century","business","poetry","nineteen forties"
-				],
+            "genres": ["mystery & detective","1910s","classics","psychological","great britain","travel","1940s","thriller","world war ii",
+                "adventure","england","biography & memoir","love in adolescence","1960s","domestic fiction","world war i","romantic comedy",
+                "hard science fiction","noir","1930s","new england","steampunk","mystery","20th century","business","poetry","cooking","mixology"],
             "sentiment": 0.7, 
             "ingredients": [
                 "2 oz. gin", 
@@ -449,9 +436,8 @@
             "name": "Dark and Stormy", 
             "type": "Cocktail", 
             "key genres": ["southern gothic"],
-            "genres": ["occult","action","dystopian","gothic","thriller","demons","historical fiction",
-				"werewolves","urban fantasy","ghosts","demonology","mystery","urban","southern gothic","new england"
-				],
+            "genres": ["occult","action","dystopian","gothic","thriller","demons","historical fiction","werewolves","urban fantasy","ghosts",
+                "demonology","mystery","urban","southern gothic","new england"],
             "sentiment": 0.6, 
             "ingredients": [
                 "2 oz. dark rum", 
@@ -468,9 +454,8 @@
             "name": "Corpse Reviver #2", 
             "type": "Cocktail", 
             "key genres": ["occult","ghosts","zombies"],
-            "genres": ["occult","mystery & detective","zombies","dystopian","1940s","historical fiction",
-				"horror","great depression","ghosts","paranormal","mystery","nineteen forties","nineteen thirties",
-                "1930s","mixology"],
+            "genres": ["occult","mystery & detective","zombies","dystopian","1940s","historical fiction","horror","great depression","ghosts",
+                "paranormal","mystery","1930s","mixology"],
             "sentiment": 0.2, 
             "ingredients": [
                 "3/4 oz Gin", 
@@ -489,8 +474,8 @@
             "name": "Mimosa", 
             "type": "Cocktail", 
             "key genres": ["romantic comedy","friendship"],
-            "genres": ["travel","mystery & detective","friendship","domestic fiction","contemporary fiction",
-				"mystery","romantic comedy","humorous","romance","female friendship","cooking"],
+            "genres": ["travel","mystery & detective","friendship","domestic fiction","contemporary fiction","mystery","romantic comedy",
+                "humorous","romance","female friendship","cooking"],
             "sentiment": 0.7, 
             "ingredients": [
                 "2 oz orange juice", 
@@ -506,9 +491,8 @@
             "name": "Daiquiri", 
             "type": "Cocktail", 
             "key genres": ["caribbean area","cuba","romantic comedy","1940s"],
-            "genres": ["caribbean area","travel","love in adolescence","1940s","1960s","adolescence",
-				"adventure","mystery","cuba","nineteen sixties","nineteen forties","romance","humorous","romantic comedy"
-				],
+            "genres": ["caribbean area","travel","love in adolescence","1940s","1960s","adolescence","adventure","mystery","cuba","romance",
+                "humorous","romantic comedy"],
             "sentiment": 0.7, 
             "ingredients": [
                 "2 oz white rum", 
@@ -526,8 +510,7 @@
             "name": "Irish Coffee", 
             "type": "Cocktail", 
             "key genres": ["ireland"],
-            "genres": ["travel","ireland","biography & memoir","classics","mystery","romantic comedy",
-				"romance","sports"],
+            "genres": ["travel","ireland","biography & memoir","classics","mystery","romantic comedy","romance","sports"],
             "sentiment": 0.8, 
             "ingredients": [
                 "1 1/2 oz Irish whiskey", 
@@ -544,8 +527,8 @@
             "name": "Paloma", 
             "type": "Cocktail", 
             "key genres": ["mexico","romantic comedy"],
-            "genres": ["travel","biography & memoir","thriller","romantic suspense","satire","adventure",
-				"mystery","romantic comedy","mexico","romance","humorous"],
+            "genres": ["travel","biography & memoir","thriller","romantic suspense","satire","adventure","mystery","romantic comedy","mexico",
+                "romance","humorous"],
             "sentiment": 0.7, 
             "ingredients": [
                 "2 oz tequila (blanco or reposado)", 
@@ -564,8 +547,7 @@
             "name": "Pisco Sour", 
             "type": "Cocktail", 
             "key genres": [], 
-            "genres": ["travel","biography & memoir","thriller","historical fiction","chile","peru","adventure",
-				"mystery"],
+            "genres": ["travel","biography & memoir","thriller","historical fiction","chile","peru","adventure","mystery"],
             "sentiment": 0.8, 
             "ingredients": [
                 "2 oz Pisco", 
@@ -584,8 +566,8 @@
             "name": "Alien Brain Hemorrhage", 
             "type": "Cocktail", 
             "key genres": ["aliens","zombies","space travel"],
-            "genres": ["aliens","zombies","paranormal fiction suspense & thriller","supernatural thrillers",
-				"thriller","horror","science fiction","paranormal","fantasy","space travel"],
+            "genres": ["aliens","zombies","paranormal fiction suspense & thriller","supernatural thrillers","thriller","horror",
+                "science fiction","paranormal","fantasy","space travel"],
             "sentiment": 0.4, 
             "ingredients": [
                 "1/2 oz Peach Schnapps", 
@@ -602,8 +584,8 @@
             "name": "Amaretto Sour", 
             "type": "Cocktail", 
             "key genres": [], 
-            "genres": ["adult romance","historical romance","biography & memoir","thriller","historical fiction",
-				"romantic suspense","satire","mystery","20th century","romantic comedy","romance","humorous"],
+            "genres": ["adult romance","historical romance","biography & memoir","thriller","historical fiction","romantic suspense","satire",
+                "mystery","20th century","romantic comedy","romance","humorous"],
             "sentiment": 0.8, 
             "ingredients": [
                 "2 oz Amaretto", 
@@ -646,8 +628,8 @@
             "name": "Mai Tai", 
             "type": "Cocktail", 
             "key genres": [], 
-            "genres": ["1950s","travel","biography & memoir","historical romance","1960s","historical fiction",
-				"adventure","mystery","20th century","nineteen fifties","nineteen sixties","romance"],
+            "genres": ["1950s","travel","biography & memoir","historical romance","1960s","historical fiction","adventure","mystery",
+                "20th century","romance"],
             "sentiment": 0.7, 
             "ingredients": [
                 "2 oz White rum", 
@@ -668,7 +650,7 @@
             "type": "Cocktail", 
             "key genres": ["steampunk","unrequited love"],
             "genres": ["unrequited love","biography & memoir","1960s","steampunk","family life","historical fiction",
-				"classics","adventure","nineteen thirties","20th century","nineteen sixties","1930s"],
+				"classics","adventure","20th century","1930s"],
             "sentiment": 0.7, 
             "ingredients": [
                 "2 oz Bourbon or Rye whiskey", 
@@ -686,8 +668,8 @@
             "name": "French 75", 
             "type": "Cocktail", 
             "key genres": ["1920s","prohibition"],
-            "genres": ["nineteen twenties","historical romance","mystery & detective","biography & memoir",
-				"1920s","historical fiction","classics","mystery","20th century","romance","prohibition","mixology"],
+            "genres": ["historical romance","mystery & detective","biography & memoir","1920s","historical fiction","classics","mystery",
+                "20th century","romance","prohibition","mixology"],
             "sentiment": 0.8, 
             "ingredients": [
                 "1 1/2 oz Gin", 
@@ -706,8 +688,7 @@
             "name": "Vampire's Kiss", 
             "type": "Cocktail", 
             "key genres": ["vampires","gothic","dracula"],
-            "genres": ["paranormal romance","dracula","gothic","demons","horror","vampires","demonology",
-				"paranormal","fantasy","romance"],
+            "genres": ["paranormal romance","dracula","gothic","demons","horror","vampires","demonology","paranormal","fantasy","romance"],
             "sentiment": 0.4, 
             "ingredients": [
                 "1 1/2 oz Vodka", 
@@ -747,8 +728,7 @@
             "type": "Cocktail",
             "key genres": ["zombies","frankenstein "],
             "genres": ["1950s","travel","zombies","frankenstein ","mystery & detective","pirates","paranormal fiction suspense & thriller",
-				"1960s","supernatural thrillers","thriller","horror","adventure","paranormal","mystery","20th century",
-				"nineteen fifties","nineteen sixties"],
+				"1960s","supernatural thrillers","thriller","horror","adventure","paranormal","mystery","20th century"],
             "sentiment": 0.5, 
             "ingredients": [
                 "1 1/2 oz Light rum",
@@ -797,8 +777,7 @@
             "name": "Astro Pop",
             "type": "Cocktail",
             "key genres": ["aliens","space travel"],
-            "genres": ["aliens","magical realism","travel","voyages","science fiction","space travel",
-				"adventure","fantasy","humorous","1960s","nineteen sixties"],
+            "genres": ["aliens","magical realism","travel","voyages","science fiction","space travel","adventure","fantasy","humorous","1960s"],
             "sentiment": 0.6,
             "ingredients": [
                 "1 oz Absolut Raspberri vodka",
@@ -815,8 +794,7 @@
             "name": "Tequila Sunrise", 
             "type": "Cocktail", 
             "key genres": [], 
-            "genres": ["travel","adventure","mystery","california","contemporary fiction","mexico","romance"
-				],
+            "genres": ["travel","adventure","mystery","california","contemporary fiction","mexico","romance"],
             "sentiment": 0.65, 
             "ingredients": [
                 "2 oz Tequila", 
@@ -865,8 +843,7 @@
             "name": "Pinot Noir", 
             "type": "Wine", 
             "key genres": ["erotica"],
-            "genres": ["france","adult romance","mystery & detective","united states","family life","erotica",
-				"vampires","mystery","romance"],
+            "genres": ["france","adult romance","mystery & detective","united states","family life","erotica","vampires","mystery","romance"],
             "sentiment": 0.6, 
             "ingredients": [
                 ""
@@ -925,8 +902,8 @@
             "name": "Dry Vermouth", 
             "type": "Wine", 
             "key genres": ["noir"],
-            "genres": ["france","mystery & detective","spain","thriller","historical fiction","science fiction",
-				"mystery","italy","espionage","noir"],
+            "genres": ["france","mystery & detective","spain","thriller","historical fiction","science fiction","mystery","italy","espionage",
+                "noir"],
             "sentiment": -0.5, 
             "ingredients": [
                 ""
@@ -1098,8 +1075,8 @@
             "name": "Pilsner", 
             "type": "Beer", 
             "key genres": ["germany"],
-            "genres": ["adventure","mystery", "contemporary fiction", "humorous", "germany", "friendship in adolescence",
-                "male friendship"],
+            "genres": ["adventure","mystery","contemporary fiction","humorous","germany","friendship in adolescence","male friendship",
+                "friendship"],
             "sentiment": 0.6, 
             "ingredients": [
                 ""
@@ -1112,9 +1089,8 @@
             "name": "Stout", 
             "type": "Beer", 
             "key genres": [], 
-            "genres": ["17th century","hard-boiled","christmas stories","gothic","steampunk","thriller",
-				"horror","18th century","classics","science fiction","historical fiction","adventure","mystery","hard science fiction",
-				"celtic mythology","noir"],
+            "genres": ["17th century","hard-boiled","christmas stories","gothic","steampunk","thriller","horror","18th century","classics",
+                "science fiction","historical fiction","adventure","mystery","hard science fiction","celtic mythology","noir"],
             "sentiment": 0.6, 
             "ingredients": [
                 ""
@@ -1128,8 +1104,8 @@
             "name": "IPA", 
             "type": "Beer", 
             "key genres": ["sports","urban"],
-            "genres": ["action","biography & memoir","family life","thriller","science fiction","adventure",
-				"mystery","urban","noir","sports","new england"],
+            "genres": ["action","biography & memoir","family life","thriller","science fiction","adventure","mystery","urban","noir","sports",
+                "new england"],
             "sentiment": -0.3, 
             "ingredients": [
                 ""
@@ -1143,8 +1119,7 @@
             "name": "Guinness", 
             "type": "Beer", 
             "key genres": ["ireland"],
-            "genres": ["ireland","thriller","historical fiction","classics","mystery","fantasy","historical fantasy",
-				"drama"],
+            "genres": ["ireland","thriller","historical fiction","classics","mystery","fantasy","historical fantasy","drama"],
             "sentiment": 0.6, 
             "ingredients": [
                 ""
@@ -1158,10 +1133,8 @@
             "name": "Lager", 
             "type": "Beer", 
             "key genres": ["sports","friendship"],
-            "genres": ["friendship in adolescence","1950s","nineteen sixties","1940s","friendship","adventure",
-				"1960s","domestic fiction","nineteen fifties","humorous","1930s","female friendship","adolescence",
-				"nineteen thirties","male friendship","mystery","contemporary fiction","nineteen forties","sports"
-				],
+            "genres": ["friendship in adolescence","1950s","1940s","friendship","adventure","1960s","domestic fiction","humorous","1930s",
+                "female friendship","adolescence","male friendship","mystery","contemporary fiction","sports"],
             "sentiment": 0.5, 
             "ingredients": [
                 "Lemon or lime garnish (optional)"
@@ -1191,8 +1164,7 @@
             "type": "Beer", 
             "key genres": ["vikings"],
             "genres": ["1950s","travel","voyages","1940s","1960s","epic","historical fiction","vikings",
-				"adventure","nineteen thirties","mystery","fantasy","nineteen fifties","historical fantasy","nineteen sixties",
-				"nineteen forties","1930s","middle ages"],
+				"adventure","mystery","fantasy","historical fantasy","1930s","middle ages"],
             "sentiment": 0.5, 
             "ingredients": [
                 ""
@@ -1205,10 +1177,10 @@
         {
             "name": "Soju", 
             "type": "Spirits", 
-            "key genres": ["korea","business"],
+            "key genres": ["korea","business","korean cuisine"],
             "genres": ["comic science fiction","korea","travel","magical realism","love in adolescence",
 				"adolescence","family life","thriller","historical fiction","science fiction","mystery","historical fantasy",
-				"business","romantic comedy","contemporary fiction","sagas","cooking"],
+				"business","romantic comedy","contemporary fiction","sagas","cooking","korean cuisine"],
             "sentiment": 0.5, 
             "ingredients": [
                 ""
@@ -1221,9 +1193,9 @@
         {
             "name": "Sake", 
             "type": "Spirits", 
-            "key genres": ["japan","business","samurai"],
-            "genres": ["japan","business","ukiyoe","samurai","travel","historical fantasy","historical fiction",
-                "historical romance","contemporary fiction","kurosawa","cooking"],
+            "key genres": ["japan","business","samurai","japanese cuisine"],
+            "genres": ["japan","business","ukiyoe","samurai","travel","historical fantasy","historical fiction","historical romance",
+                "contemporary fiction","kurosawa","cooking","japanese cuisine"],
             "sentiment": 0.2, 
             "ingredients": [
                 ""
@@ -1252,9 +1224,9 @@
         {
             "name": "Baijiu", 
             "type": "Spirits", 
-            "key genres": ["china","business"],
+            "key genres": ["china","business","chinese cuisine"],
             "genres": ["china","business","historical fiction","travel","mystery","thriller","epic","contemporary fiction",
-                "historical fantasy","qing dynasty ","cooking"],
+                "historical fantasy","qing dynasty ","cooking","chinese cuisine"],
             "sentiment": 0, 
             "ingredients": [
                 ""
@@ -1270,8 +1242,7 @@
             "key genres": ["witches","magic","occult","space travel"],
             "genres": ["occult","magicians","travel","france","magic","thriller","18th century","historical fiction",
 				"horror","science fiction","witches","paranormal","mystery","fantasy","historical fantasy","space travel",
-                "mixology","cooking"
-				],
+                "mixology","cooking"],
             "sentiment": 0.4, 
             "ingredients": [
                 ""
@@ -1287,7 +1258,7 @@
             "key genres": ["soviet union","russia","poland","ukraine"],
             "genres": ["19th century","travel","biography & memoir","soviet union","1940s","18th century",
 				"world war ii","historical fiction","northern europe in fiction","poland","ukraine","mystery","20th century",
-				"russia","contemporary fiction","nineteen forties","noir","vodka","mixology"],
+				"russia","contemporary fiction","noir","vodka","mixology"],
             "sentiment": -0.2, 
             "ingredients": [
                 "Lemon wedge (optional)"
@@ -1301,8 +1272,8 @@
             "name": "Baileys", 
             "type": "Spirits", 
             "key genres": ["ireland","christmas stories"],
-            "genres": ["ireland","christmas stories","friendship","classics","mystery","contemporary fiction",
-				"romance","female friendship","cooking"],
+            "genres": ["ireland","christmas stories","friendship","classics","mystery","contemporary fiction","romance","female friendship",
+                "cooking"],
             "sentiment": 0.75, 
             "ingredients": [
                 ""
@@ -1316,8 +1287,8 @@
             "name": "Poit\u00edn", 
             "type": "Spirits", 
             "key genres": ["ireland","celtic mythology"],
-            "genres": ["mystery & detective","ireland","crime fiction","thriller","historical fiction",
-				"mystery","criminals","fantasy","celtic mythology","drama","cooking"],
+            "genres": ["mystery & detective","ireland","crime fiction","thriller","historical fiction","mystery","criminals","fantasy",
+                "celtic mythology","drama","cooking"],
             "sentiment": 0.5, 
             "ingredients": [
                 ""
@@ -1333,7 +1304,7 @@
             "key genres": ["pirates","caribbean area","colonial period"],
             "genres": ["pirates","18th century","1910s","werewolves","southern gothic","caribbean area",
 				"travel","sailors","thriller","adventure","jamaica","voyages","world war i","colonial period","puerto rico",
-				"noir","sea stories","demons","mystery","cuba"],
+				"noir","sea stories","demons","mystery","cuba","cooking","mixology"],
             "sentiment": 0.6, 
             "ingredients": [
                 ""
@@ -1347,8 +1318,7 @@
             "name": "Witbier", 
             "type": "Beer", 
             "key genres": [], 
-            "genres": ["travel","biography & memoir","contemporary fiction","mystery","romantic comedy",
-				"humorous","romance","female friendship"],
+            "genres": ["travel","biography & memoir","contemporary fiction","mystery","romantic comedy","humorous","romance","female friendship"],
             "sentiment": 0.7, 
             "ingredients": [
                 ""
@@ -1362,9 +1332,9 @@
             "name": "Whiskey", 
             "type": "Spirits", 
             "key genres": ["southern gothic","westerns","urban fantasy","hard-boiled","southern states"],
-            "genres": ["19th century","action","gothic","18th century","werewolves","classics","paranormal",
-				"southern gothic","urban fantasy","horror","science fiction","adventure","celtic mythology","biography & memoir",
-				"hard-boiled","historical fiction","demons","westerns","urban","political","southern states","frontier and pioneer life","whiskey"],
+            "genres": ["19th century","action","gothic","18th century","werewolves","classics","paranormal","southern gothic","urban fantasy",
+                "horror","science fiction","adventure","celtic mythology","biography & memoir","hard-boiled","historical fiction","demons",
+                "westerns","urban","political","southern states","frontier and pioneer life","whiskey"],
             "sentiment": 0.6, 
             "ingredients": [
                 ""
@@ -1393,8 +1363,8 @@
             "name": "RumChata", 
             "type": "Spirits", 
             "key genres": ["christmas stories"],
-            "genres": ["magical realism","christmas stories","family life","sagas","mystery","romantic comedy",
-				"contemporary fiction","drama","romance","humorous","cooking"],
+            "genres": ["magical realism","christmas stories","family life","sagas","mystery","romantic comedy","contemporary fiction","drama",
+                "romance","humorous","cooking"],
             "sentiment": 0.6, 
             "ingredients": [
                 ""
@@ -1409,7 +1379,7 @@
             "type": "Spirits", 
             "key genres": ["mexico"],
             "genres": ["19th century","action","magical realism","travel","crime fiction","thriller","family life","sagas",
-				"historical fiction","adventure","mystery","criminals","westerns","romantic comedy","mexico","cooking"],
+				"historical fiction","adventure","mystery","criminals","westerns","romantic comedy","mexico","cooking","mexican cuisine"],
             "sentiment": 0.3, 
             "ingredients": [
                 "Citrus wedge (optional)", 
@@ -1424,8 +1394,8 @@
             "name": "Gin", 
             "type": "Spirits", 
             "key genres": ["steampunk","hard-boiled","noir"],
-            "genres": ["17th century","travel","hard-boiled","steampunk","thriller","historical fiction",
-				"classics","adventure","20th century","great britain","espionage","england","noir"],
+            "genres": ["17th century","travel","hard-boiled","steampunk","thriller","historical fiction","classics","adventure","20th century",
+                "great britain","espionage","england","noir"],
             "sentiment": -0.5, 
             "ingredients": [
                 ""
@@ -1519,7 +1489,7 @@
             "key genres": ["world war i","world war ii"],
             "genres": ["17th century","19th century","18th century","1910s","classics","soviet union",
 				"1940s","thriller","world war ii","romantic suspense","adventure","historical romance","historical fiction",
-				"world war i","noir","sagas","mystery","20th century","espionage","nineteen forties","romance","cooking"],
+				"world war i","noir","sagas","mystery","20th century","espionage","romance","cooking"],
             "sentiment": 0.6, 
             "ingredients": [
                 ""
