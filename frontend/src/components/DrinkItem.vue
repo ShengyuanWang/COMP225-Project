@@ -25,7 +25,7 @@ const props = defineProps({
   </div>
 </template>
 
-<style scoped>
+<style>
 .drink-item {
   width: 20vw;
   height: 65vh;
@@ -33,6 +33,11 @@ const props = defineProps({
   margin-right: 1vw;
   box-shadow: 1vh 0.5vh 0.5vh #968163;
 }
+
+.drink-item:hover {
+  box-shadow: 1vh 0.5vh 0.5vh #111111;
+}
+
 .drink-image {
   width: 100%;
   height: 35vh;
