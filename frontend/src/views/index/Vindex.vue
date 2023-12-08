@@ -73,6 +73,7 @@
 
 .center img {
   width: min(30vw, 40vh);
+  height: min(30vw, 40vh);
 }
 
 .question {
