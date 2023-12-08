@@ -71,7 +71,7 @@
     "kentucky":["kentucky in fiction"],
     "mississippi":["mississippi in fiction"],
     "new england":["new england in fiction"],
-    "family life":["family life in fiction"],
+    "family life":["family life in fiction","family","family in fiction"],
     "westerns":["western stories","cowboys","western","west ","cow-boys"],
     "demons":["demons in fiction"],
     "paranormal romance":["paranormal romance stories"],
@@ -94,5 +94,9 @@
     "poetry":["juvenile poetry","children's poetry","poets","poetry slams","women poets","poetry ","poetic works by one author","american poetry"],
     "n.y.":["n.y.)"],
     "mixology":["cocktails","alcohol","alcoholic beverages","wine & spirits","bartending","beverages","bars ","drinking establishments","liquors"],
-    "cooking":["cooks","cookery","cooking & food","food","cooking ","cookbooks","recipes","gastronomy"]
+    "cooking":["cooks","cookery","cooking & food","food","cooking ","cookbooks","cookbook","recipes","gastronomy","food in literature"],
+    "mexican cuisine":["mexican cooking","mexican cookery"],
+    "korean cuisine":["korean cooking","korean cookery"],
+    "chinese cuisine":["chinese cooking","chinese cookery"],
+    "japanese cuisine":["japanese cooking","japanese cookery"]
 }
