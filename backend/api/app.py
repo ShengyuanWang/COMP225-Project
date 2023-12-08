@@ -320,8 +320,9 @@ class Book:
         thumnbail was found.
         """
         if "imageLinks" in list(self.data.keys()):
-            if "smallThumbnail" in list(self.data["imageLinks"].keys()):
-                return self.data["imageLinks"]["smallThumbnail"]
+            print(self.data["imageLinks"])
+            if "thumbnail" in list(self.data["imageLinks"].keys()):
+                return self.data["imageLinks"]["thumbnail"]
         return ""
 
     def get_isbn(self):
