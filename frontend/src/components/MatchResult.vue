@@ -57,7 +57,7 @@ const clickChange = () => {
       <p>{{description}}</p>
     </div>
 
-    <div v-if="ingredients.length >= 1" class="description">
+    <div v-if="ingredients.length > 1" class="description">
       <p>Ingredients:</p>
       <ul>
         <li v-for="(ingredient, index) in ingredients" :key="index">{{ ingredient }}</li>
