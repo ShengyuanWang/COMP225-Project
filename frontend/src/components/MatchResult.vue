@@ -12,7 +12,7 @@ const props = defineProps({
 <template>
   <!--  detailed drink starts here-->
   <div className="pic">
-    <el-image :src="props.url" fit="cover" alt="Alcohol Image Onload"/>
+    <el-image :src="props.url" fit="cover" alt="Alcohol Image Onload" style="width: 100%;height: 100%"/>
   </div>
   <div className="pic">
     <div className="name"><h1>{{ props.name }}</h1></div>
