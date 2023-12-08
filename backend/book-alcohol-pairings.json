@@ -169,7 +169,7 @@
             "type": "Cocktail", 
             "key genres": ["urban fantasy"],
             "genres": ["mystery & detective","friendship","urban fantasy","mystery","20th century","urban",
-				"contemporary fiction","romance","female friendship"],
+				"contemporary fiction","romance","female friendship","cooking"],
             "sentiment": 0.8, 
             "ingredients": [
                 "1 1/2 oz. vodka", 
@@ -302,7 +302,7 @@
             "type": "Cocktail", 
             "key genres": ["erotica","romantic comedy"],
             "genres": ["adult romance","travel","friendship","thriller","erotica","romantic suspense",
-				"contemporary fiction","mystery","romantic comedy","humorous","romance","female friendship"],
+				"contemporary fiction","mystery","romantic comedy","humorous","romance","female friendship","mixology","cooking"],
             "sentiment": 0.7, 
             "ingredients": [
                 "1 1/2 oz. vodka", 
@@ -382,7 +382,7 @@
             "type": "Cocktail", 
             "key genres": ["friendship","magic","middle ages","sagas"],
             "genres": ["magicians","ancient","magic","friendship","family life","demons","historical fiction",
-				"witches","sagas","adventure","historical fantasy","fantasy","wizards","middle ages"],
+				"witches","sagas","adventure","historical fantasy","fantasy","wizards","middle ages","cooking"],
             "sentiment": 0.5, 
             "ingredients": [
                 "1 bottle of red wine", 
@@ -490,7 +490,7 @@
             "type": "Cocktail", 
             "key genres": ["romantic comedy","friendship"],
             "genres": ["travel","mystery & detective","friendship","domestic fiction","contemporary fiction",
-				"mystery","romantic comedy","humorous","romance","female friendship"],
+				"mystery","romantic comedy","humorous","romance","female friendship","cooking"],
             "sentiment": 0.7, 
             "ingredients": [
                 "2 oz orange juice", 
@@ -836,7 +836,7 @@
             "key genres": ["southern states","southern gothic"], 
             "genres": ["historical fiction","classics","southern states","united states","1920s","1960s","westerns",
                 "19th century","kentucky","mississippi","romance","historical romance","southern gothic","gothic",
-                "mystery","thriller","united states civil war"],
+                "mystery","thriller","united states civil war","cooking"],
             "sentiment": 0.4, 
             "ingredients": [
                 "TBA"
@@ -911,7 +911,7 @@
             "type": "Wine", 
             "key genres": ["france"],
             "genres": ["france","historical romance","mystery & detective","united states","domestic fiction",
-				"family life","historical fiction","mystery","contemporary fiction","drama","romance"],
+				"family life","historical fiction","mystery","contemporary fiction","drama","romance","cooking"],
             "sentiment": 0.6, 
             "ingredients": [
                 ""
@@ -957,7 +957,7 @@
             "key genres": ["spain","england"],
             "genres": ["17th century","19th century","historical romance","mystery & detective","spain",
 				"18th century","historical fiction","mystery","great britain","romantic comedy","england","romance",
-				"humorous"],
+				"humorous","cooking"],
             "sentiment": 0.5, 
             "ingredients": [
                 ""
@@ -973,7 +973,7 @@
             "key genres": ["france","first loves"],
             "genres": ["france","19th century","biography & memoir","love in adolescence","first loves",
 				"steampunk","adolescence","family life","erotica","romantic comedy","contemporary fiction","romance",
-				"humorous","1920s","prohibition","poetry"],
+				"humorous","1920s","prohibition","poetry","cooking"],
             "sentiment": 1, 
             "ingredients": [
                 ""
@@ -1005,7 +1005,7 @@
             "key genres": [], 
             "genres": ["adult romance","historical romance","paranormal romance","paranormal fiction suspense & thriller",
 				"united states","supernatural thrillers","thriller","erotica","historical fiction","vampires","romantic suspense",
-				"adventure","paranormal","mystery","california","contemporary fiction","drama","romance"],
+				"adventure","paranormal","mystery","california","contemporary fiction","drama","romance","cooking"],
             "sentiment": 0.6, 
             "ingredients": [
                 ""
@@ -1036,7 +1036,7 @@
             "key genres": [], 
             "genres": ["france","adult romance","action","unrequited love","dystopian","united states",
 				"hard science fiction","epic","erotica","vampires","science fiction","psychological","historical fiction",
-				"mystery","california","business","political","space travel","poetry"],
+				"mystery","california","business","political","space travel","poetry","cooking"],
             "sentiment": 0.6, 
             "ingredients": [
                 ""
@@ -1208,7 +1208,7 @@
             "key genres": ["korea","business"],
             "genres": ["comic science fiction","korea","travel","magical realism","love in adolescence",
 				"adolescence","family life","thriller","historical fiction","science fiction","mystery","historical fantasy",
-				"business","romantic comedy","contemporary fiction","sagas"],
+				"business","romantic comedy","contemporary fiction","sagas","cooking"],
             "sentiment": 0.5, 
             "ingredients": [
                 ""
@@ -1223,7 +1223,7 @@
             "type": "Spirits", 
             "key genres": ["japan","business","samurai"],
             "genres": ["japan","business","ukiyoe","samurai","travel","historical fantasy","historical fiction",
-                "historical romance","contemporary fiction","kurosawa"],
+                "historical romance","contemporary fiction","kurosawa","cooking"],
             "sentiment": 0.2, 
             "ingredients": [
                 ""
@@ -1254,7 +1254,7 @@
             "type": "Spirits", 
             "key genres": ["china","business"],
             "genres": ["china","business","historical fiction","travel","mystery","thriller","epic","contemporary fiction",
-                "historical fantasy","qing dynasty "],
+                "historical fantasy","qing dynasty ","cooking"],
             "sentiment": 0, 
             "ingredients": [
                 ""
@@ -1269,7 +1269,8 @@
             "type": "Spirits", 
             "key genres": ["witches","magic","occult","space travel"],
             "genres": ["occult","magicians","travel","france","magic","thriller","18th century","historical fiction",
-				"horror","science fiction","witches","paranormal","mystery","fantasy","historical fantasy","space travel","mixology"
+				"horror","science fiction","witches","paranormal","mystery","fantasy","historical fantasy","space travel",
+                "mixology","cooking"
 				],
             "sentiment": 0.4, 
             "ingredients": [
@@ -1301,7 +1302,7 @@
             "type": "Spirits", 
             "key genres": ["ireland","christmas stories"],
             "genres": ["ireland","christmas stories","friendship","classics","mystery","contemporary fiction",
-				"romance","female friendship"],
+				"romance","female friendship","cooking"],
             "sentiment": 0.75, 
             "ingredients": [
                 ""
@@ -1316,7 +1317,7 @@
             "type": "Spirits", 
             "key genres": ["ireland","celtic mythology"],
             "genres": ["mystery & detective","ireland","crime fiction","thriller","historical fiction",
-				"mystery","criminals","fantasy","celtic mythology","drama"],
+				"mystery","criminals","fantasy","celtic mythology","drama","cooking"],
             "sentiment": 0.5, 
             "ingredients": [
                 ""
@@ -1393,7 +1394,7 @@
             "type": "Spirits", 
             "key genres": ["christmas stories"],
             "genres": ["magical realism","christmas stories","family life","sagas","mystery","romantic comedy",
-				"contemporary fiction","drama","romance","humorous"],
+				"contemporary fiction","drama","romance","humorous","cooking"],
             "sentiment": 0.6, 
             "ingredients": [
                 ""
@@ -1407,8 +1408,8 @@
             "name": "Tequila", 
             "type": "Spirits", 
             "key genres": ["mexico"],
-            "genres": ["19th century","action","magical realism","travel","crime fiction","thriller",
-				"historical fiction","adventure","mystery","criminals","westerns","romantic comedy","mexico"],
+            "genres": ["19th century","action","magical realism","travel","crime fiction","thriller","family life","sagas",
+				"historical fiction","adventure","mystery","criminals","westerns","romantic comedy","mexico","cooking"],
             "sentiment": 0.3, 
             "ingredients": [
                 "Citrus wedge (optional)", 
@@ -1440,7 +1441,7 @@
             "key genres": ["caribbean area","pirates","colonial period"],
             "genres": ["caribbean area","historical romance","sailors","travel","voyages","sea stories",
 				"pirates","1910s","18th century","historical fiction","adventure","world war i","colonial period",
-				"romance"],
+				"romance","cooking"],
             "sentiment": 0.7, 
             "ingredients": [
                 ""
@@ -1502,8 +1503,7 @@
             "name": "Cura\u00e7ao", 
             "type": "Spirits", 
             "key genres": ["caribbean area"],
-            "genres": ["caribbean area","travel","science fiction","adventure","mystery","romance","space travel"
-				],
+            "genres": ["caribbean area","travel","science fiction","adventure","mystery","romance","space travel","cooking"],
             "sentiment": 0.7, 
             "ingredients": [
                 ""
@@ -1519,7 +1519,7 @@
             "key genres": ["world war i","world war ii"],
             "genres": ["17th century","19th century","18th century","1910s","classics","soviet union",
 				"1940s","thriller","world war ii","romantic suspense","adventure","historical romance","historical fiction",
-				"world war i","noir","sagas","mystery","20th century","espionage","nineteen forties","romance"],
+				"world war i","noir","sagas","mystery","20th century","espionage","nineteen forties","romance","cooking"],
             "sentiment": 0.6, 
             "ingredients": [
                 ""
