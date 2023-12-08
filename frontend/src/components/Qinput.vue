@@ -36,7 +36,7 @@ const onClick  = () => {
     console.log('finish')
     console.log(res)
     console.log("notes:")
-    console.log(res.data.notes)
+    console.log(res.data)
     router.push({path:'match', query: {name:res.data.name, url:'https://i.ibb.co/989gpGR/drink1.png', stars:'5', description:res.data.instructions, ingredients:res.data.ingredients, notes:res.data.notes, book:input.value, input:input.value}})
   }).catch((err)=>{
     console.log(err)

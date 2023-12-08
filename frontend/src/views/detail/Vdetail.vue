@@ -20,7 +20,12 @@ let genres = route.query.genres;
       <Qinput place="40"></Qinput>
     </div>
     <div class="match_result">
-      <Detail url="https://i.ibb.co/989gpGR/drink1.png" :name=name :instructions=instructions :ingredients=ingredients :genres=genres></Detail>
+      <Detail url="https://i.ibb.co/989gpGR/drink1.png"
+              :name=name
+              :instructions=instructions
+              :ingredients=ingredients
+              :genres=genres>
+      </Detail>
     </div>
 
   </div>

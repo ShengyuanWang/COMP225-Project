@@ -44,7 +44,13 @@ onMounted(()=>{
       <h1 style="padding-left: 20vw; padding-top: 20vh; font-size: 40px">Loading Result ....</h1>
     </div>
     <div class="match_result" v-show="showResult">
-      <MatchResult url="https://i.ibb.co/989gpGR/drink1.png" :name=name :rating=stars :description=description :ingredients=ingredients :notes=notes></MatchResult>
+      <MatchResult url="https://i.ibb.co/989gpGR/drink1.png"
+                   :name=name
+                   :rating=stars
+                   :description=description
+                   :ingredients=ingredients
+                   :notes=notes>
+      </MatchResult>
     </div>
 
   </div>
