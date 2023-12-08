@@ -171,9 +171,32 @@ def add_new_key_to_json(key, value):
     with open('../book-alcohol-pairings.json', 'w') as json_file:
         json_file.write(formatted_json)
 
+def check_book_alcohol_pairing_json():
+    with open('book-alcohol-pairings.json', 'r') as f:
+        input_data1 = json.load(f)
+    
+    with open('book-alcohol-pairings.json', 'r') as f:
+        input_data2 = json.load(f)
+    
+    for entry1, entry2 in zip(input_data1["alcohols"], input_data2["alcohols"]):
+        if entry1 != entry2:
+            raise ValueError(f"There is a difference in the two json files.")
+
+        entry_keys = list(entry1.keys())
+        if entry_keys != ['name', 'type', 'key genres', 'genres', 'sentiment', 'ingredients', 'instructions', 'allergens', 'image', 'no match drink']:
+                if "name" in entry_keys:
+                    name = entry1["name"]
+                else:
+                    name = "[name missing]"
+                
+                raise ValueError(f"There is a key missing in {name}, it has these keys: {entry_keys}")
+
+    print("sucess")
+
 # run to update data files
-collect_genre_frequency()
-collect_key_genres()
-collect_all_genres()
-update_no_match_drinks() 
-update_synonyms_lookup()
+# collect_genre_frequency()
+# collect_key_genres()
+# collect_all_genres()
+# update_no_match_drinks() 
+# update_synonyms_lookup()
+check_book_alcohol_pairing_json()

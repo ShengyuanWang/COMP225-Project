@@ -1042,8 +1042,8 @@
             "name": "Malbec", 
             "type": "Wine", 
             "key genres": ["argentina"],
-            "genres": ["france","action","paranormal romance","mystery & detective","dystopian","gothic",
-				"horror","vampires","paranormal","mystery","argentina","romance"],
+            "genres": ["france","action","paranormal romance","mystery & detective","dystopian","gothic","horror","vampires","paranormal",
+                "mystery","argentina","romance"],
             "sentiment": 0.6, 
             "ingredients": [
                 ""
@@ -1076,13 +1076,14 @@
             "type": "Beer", 
             "key genres": ["germany"],
             "genres": ["adventure","mystery","contemporary fiction","humorous","germany","friendship in adolescence","male friendship",
-                "friendship"],
+                "friendship","united states","mexico"],
             "sentiment": 0.6, 
             "ingredients": [
                 ""
             ], 
             "instructions": "Pilsner is best served cold in a tall narrow glass. When pouring, aim for a moderate and controlled pour to achieve a good balance between beer and head.", 
             "allergens": ["gluten"],
+            "image": "TBA",
             "no match drink": true
         },
         {
@@ -1090,7 +1091,8 @@
             "type": "Beer", 
             "key genres": [], 
             "genres": ["17th century","hard-boiled","christmas stories","gothic","steampunk","thriller","horror","18th century","classics",
-                "science fiction","historical fiction","adventure","mystery","hard science fiction","celtic mythology","noir"],
+                "science fiction","historical fiction","adventure","mystery","hard science fiction","celtic mythology","noir","ireland",
+                "great britain","russia"],
             "sentiment": 0.6, 
             "ingredients": [
                 ""
@@ -1105,7 +1107,7 @@
             "type": "Beer", 
             "key genres": ["sports","urban"],
             "genres": ["action","biography & memoir","family life","thriller","science fiction","adventure","mystery","urban","noir","sports",
-                "new england"],
+                "new england","united states","great britain","australia","england"],
             "sentiment": -0.3, 
             "ingredients": [
                 ""
@@ -1134,7 +1136,7 @@
             "type": "Beer", 
             "key genres": ["sports","friendship"],
             "genres": ["friendship in adolescence","1950s","1940s","friendship","adventure","1960s","domestic fiction","humorous","1930s",
-                "female friendship","adolescence","male friendship","mystery","contemporary fiction","sports"],
+                "female friendship","adolescence","male friendship","mystery","contemporary fiction","sports","india","mexico","japan"],
             "sentiment": 0.5, 
             "ingredients": [
                 "Lemon or lime garnish (optional)"
@@ -1149,7 +1151,7 @@
             "type": "Beer", 
             "key genres": ["steampunk"],
             "genres": ["19th century","steampunk","historical fiction","horror","classics","northern europe in fiction",
-				"ghosts","adventure","mystery","fantasy","historical fantasy","hard science fiction","noir"],
+				"ghosts","adventure","mystery","fantasy","historical fantasy","hard science fiction","noir","great britain","england"],
             "sentiment": 0.4, 
             "ingredients": [
                 ""
@@ -1164,7 +1166,7 @@
             "type": "Beer", 
             "key genres": ["vikings"],
             "genres": ["1950s","travel","voyages","1940s","1960s","epic","historical fiction","vikings",
-				"adventure","mystery","fantasy","historical fantasy","1930s","middle ages"],
+				"adventure","mystery","fantasy","historical fantasy","1930s","middle ages","great britain","england","ireland"],
             "sentiment": 0.5, 
             "ingredients": [
                 ""
