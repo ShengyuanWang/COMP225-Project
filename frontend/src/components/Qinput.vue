@@ -37,7 +37,19 @@ const onClick  = () => {
     console.log(res)
     console.log("notes:")
     console.log(res.data)
-    router.push({path:'match', query: {name:res.data.name, url:'https://i.ibb.co/989gpGR/drink1.png', stars:'5', description:res.data.instructions, ingredients:res.data.ingredients, notes:res.data.notes, book:input.value, input:input.value}})
+    router.push({path:'match',
+      query: {name:res.data.name,
+        url:'https://i.ibb.co/989gpGR/drink1.png',
+        stars:'5',
+        description:res.data.instructions,
+        ingredients:res.data.ingredients,
+        notes:res.data.notes,
+        book:input.value,
+        input:input.value,
+        coverLink: res.data.cover_link,
+        title: res.data.title,
+        author: res.data.author
+      }})
   }).catch((err)=>{
     console.log(err)
   })

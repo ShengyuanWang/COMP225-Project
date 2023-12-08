@@ -16,6 +16,9 @@ const ingredients = route.query.ingredients;
 const showResult = ref(false)
 const placeHolder = route.query.book;
 const input = route.query.input;
+const coverLink = route.query.coverLink;
+const title = route.query.title;
+const author = route.query.author;
 const show = () => {
   showResult.value = true
 
@@ -49,7 +52,11 @@ onMounted(()=>{
                    :rating=stars
                    :description=description
                    :ingredients=ingredients
-                   :notes=notes>
+                   :notes=notes
+                   :coverLink=coverLink
+                   :title=title
+                   :author=author
+      >
       </MatchResult>
     </div>
 
