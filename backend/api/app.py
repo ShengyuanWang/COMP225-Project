@@ -42,11 +42,17 @@ def get_book():
                                 pairing=pairing.get_top_pairings()[0],  sentiment=book.get_sentiment())
     return render_template("home.html")
 
-@app.route('/test/<bookname>', methods=["GET"])
-def search1(bookname):
+@app.route('/test/<bookname>/<user_types>/<user_allergies>', methods=["GET"])
+def search1(bookname, user_types, user_allergies):
     """Return pairing dictonary for testing of frontend intergration."""
     bookname = bookname.replace("%20", " ")
-    pairing = Pairing(bookname)
+    user_types = user_types.split(",")
+    user_allergies = user_allergies.split(",")
+    if user_types == ["Nan"]:
+        user_types = []
+    if user_allergies == ["Nan"]:
+        user_allergies = []
+    pairing = Pairing(bookname, user_types=user_types, user_allergies=user_allergies)
     return pairing.get_pairing_json_obj()
 
 @app.route('/getAlcohol/<types>', methods=["GET"])
