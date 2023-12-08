@@ -16,7 +16,7 @@
     "travel": ["travels","description and travel","voyages and travels","travel writers","travelers","travelers in literature"],
     "soviet union": ["soviet union in fiction","soviet union. in fiction"],
     "russia": ["russia in fiction","russia "],
-    "ireland": ["ireland in fiction","ireland)"],
+    "ireland": ["ireland in fiction","ireland)","irish in fiction"],
     "mexico": ["mexico in fiction"],
     "cuba": ["cuba in fiction"],
     "drama": ["drama ","dramatic works by one author","british and irish drama "],
@@ -56,10 +56,10 @@
     "criminals":["criminals in fiction"],
     "voyages": ["quest","quests","voyage","quests "],
     "zombies": ["zombies in fiction"],
-    "adolescence": ["coming of age","adolescent"],
+    "adolescence": ["coming of age","adolescent","adolescence & coming of age"],
     "epic": ["epic fiction","high fantasy","epic fantasy","epic literature"],
     "political":["political fiction","political science","english political fiction","politics","political satire"],
-    "united states": ["usa","united states. in fiction","united states in fiction","u.s.","americans"],
+    "united states": ["usa","united states. in fiction","united states in fiction","u.s.","americans","american","american fiction","american literature"],
     "great britain":["great britain in fiction"],
     "ukraine":["ukraine in fiction"],
     "poland":["poland in fiction"],
@@ -98,5 +98,6 @@
     "mexican cuisine":["mexican cooking","mexican cookery"],
     "korean cuisine":["korean cooking","korean cookery"],
     "chinese cuisine":["chinese cooking","chinese cookery"],
-    "japanese cuisine":["japanese cooking","japanese cookery"]
+    "japanese cuisine":["japanese cooking","japanese cookery"],
+    "india":["india in fiction","partition of india","indic fiction "]
 }
