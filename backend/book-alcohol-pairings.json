@@ -220,8 +220,8 @@
         {
             "name": "Pan-Galactic Gargle Blaster", 
             "type": "Cocktail", 
-            "key genres": ["comic science fiction","aliens","vogons"],
-            "genres": ["aliens","vogons","science fiction","satire","space travel","adventure","fantasy","comic science fiction","humorous"],
+            "key genres": ["comic science fiction","aliens","vogons","trilogy of five","arthur dent "],
+            "genres": ["aliens","vogons","science fiction","satire","space travel","adventure","fantasy","comic science fiction","humorous","trilogy of five","arthur dent "],
             "sentiment": 0.8, 
             "ingredients": [
                 "1 1/2 oz Gin", 
@@ -710,9 +710,9 @@
             "name": "Black Magic Cocktail", 
             "type": "Cocktail", 
             "key genres": ["witches","occult","demons","wizards","dark magic","gothic","demonology"],
-            "genres": ["magicians","mystery & detective","paranormal fiction suspense & thriller","gothic",
-				"supernatural thrillers","epic","paranormal","wizards","magic","thriller","occult","hard-boiled",
-				"witches","demonology","fantasy","noir","demons","mystery","dark magic","thrillers & mystery"],
+            "genres": ["magicians","paranormal fiction suspense & thriller","gothic",
+				"supernatural thrillers","epic","paranormal","wizards","magic","thriller","occult",
+				"witches","demonology","fantasy","demons","mystery","dark magic","thrillers & mystery"],
             "sentiment": 0.4, 
             "ingredients": [
                 "2 oz Black vodka (like Blavod or any other black vodka)", 
