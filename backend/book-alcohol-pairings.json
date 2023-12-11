@@ -715,10 +715,10 @@
         {
             "name": "Black Magic Cocktail",
             "type": "Cocktail",
-            "key genres": ["witches","occult","demons","wizards","dark magic","gothic","demonology"],
+            "key genres": ["witches","occult","demons","wizards","dark fantasy","gothic","demonology"],
             "genres": ["magicians","paranormal fiction suspense & thriller","gothic",
 				"supernatural thrillers","epic","paranormal","wizards","magic","thriller","occult",
-				"witches","demonology","fantasy","demons","mystery","dark magic","thrillers & mystery"],
+				"witches","demonology","fantasy","demons","mystery","dark fantasy","thrillers & mystery"],
             "sentiment": 0.4,
             "ingredients": [
                 "2 oz Black vodka (like Blavod or any other black vodka)",
@@ -760,10 +760,10 @@
         {
             "name": "Witches' Brew",
             "type": "Cocktail",
-            "key genres": ["witches","dark magic","wizards","magic","urban fantasy"],
+            "key genres": ["witches","dark fantasy","wizards","magic","urban fantasy"],
             "genres": ["occult","magicians","magical realism","magic","paranormal fiction suspense & thriller",
 				"supernatural thrillers","thriller","urban fantasy","horror","witches","paranormal","mystery","fantasy",
-				"urban","dark magic","wizards","thrillers & mystery"],
+				"urban","dark fantasy","wizards","thrillers & mystery"],
             "sentiment": 0.5,
             "ingredients": [
                 "2 cups black vodka",

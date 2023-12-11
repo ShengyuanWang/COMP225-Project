@@ -24,7 +24,7 @@
     "erotica": ["erotic stories","erotic passion","erotic fiction"],
     "italy": ["italy in fiction","italians","italian americans","italian americans in fiction"],
     "australia": ["australia in fiction"],
-    "dystopian": ["dystopian fiction","dystopias","dystopian plays"],
+    "dystopian": ["dystopian fiction","dystopias","dystopian plays","totalitarianism"],
     "first loves": ["first loves in fiction"],
     "friendship": ["friendship in fiction"],
     "magical realism": ["magic realism"], 
@@ -47,7 +47,7 @@
     "biography & memoir": ["biographical","biographies","biography","biography & autobiography","personal narratives","memoir","personal memoirs","autobiographical fiction","lgbtq biography and memoir","american personal narratives","canadian personal narratives"],
     "adventure": ["action & adventure","action & adventure fiction","adventure stories","adventure and adventurers","adventure fiction","adventure and adventurers in fiction","adventurers","action and adventure fiction","explorers","women explorers","english adventure stories","discovery and exploration","spanish adventure fiction"],
     "humorous": ["comedy","humor","humour","humorous fiction","humorous stories","wit and humour","american humorous stories","american wit and humor"],
-    "fantasy": ["fantasy fiction","fantasy in fiction","fantastic fiction","fantasy genre","teen fantasy fiction","american fantasy fiction","english fantasy fiction","english fantasy literature"],
+    "fantasy": ["fantasy fiction","fantasy in fiction","fantastic fiction","fantasy genre","teen fantasy fiction","american fantasy fiction","english fantasy fiction","english fantasy literature","canadian fantasy fiction"],
     "gothic": ["gothic fiction","gothic & horror","gothic horror","england gothic fiction"],
     "mystery & detective": ["detective","women detectives","detectives","criminal investigation","investigation","p.i.","private investigators","private investigator","private investigators in fiction","women private investigators","mystery and detective stories","detective and mystery stories","detective fiction","mystery & detective fiction","mysteries & detective stories","english detective and mystery stories","american detective and mystery stories","government investigators","government investigators in fiction","young women detective and mystery stories","young womendetective and mystery stories"],
     "horror": ["horror fiction","horror stories","horror tales","horror and ghost stories","english horror tales","horror films","american horror tales"],
@@ -82,7 +82,7 @@
     "germany":["germany in fiction"],
     "sea stories":["sailors","sailors in fiction"],
     "china":["china in fiction","chinese fiction","chinese american","chinese mythology","chinese folk literature","chinese folklore","chinese american families","chinese americans","chinese americans in fiction","chinese american women","chinese american women in fiction"],
-    "japan":["japan in fiction","japanese fiction","japanese american","japanese american women","japanese folklore","japanese american women in fiction","japanese american families","japanese mythology","japanese folk literature","japanese americans","japanese americans in fiction"],
+    "japan":["japan in fiction","japanese fiction","japanese language","translations from japanese","japanese american","japanese american women","japanese folklore","japanese american women in fiction","japanese american families","japanese mythology","japanese folk literature","japanese americans","japanese americans in fiction"],
     "southern states":["southern life"],
     "mountain life":["mountain life in fiction"],
     "appalachian region":["appalachian mountains","appalachians ","southern appalachian region in fiction","southern appalachian region","appalachian trail"],
@@ -92,7 +92,7 @@
     "1950s":["nineteen fifties"],
     "1960s":["nineteen sixties"],
     "united states civil war":["american civil war "],
-    "poetry":["juvenile poetry","children's poetry","poets","poetry slams","women poets","poetry ","poetic works by one author","american poetry"],
+    "poetry":["juvenile poetry","children's poetry","poets","poetry slams","women poets","poetry ","poetic works by one author","american poetry","japanese poetry","english poetry","haiku"],
     "n.y.":["n.y.)"],
     "mixology":["cocktails","alcohol","alcoholic beverages","wine & spirits","bartending","beverages","bars ","drinking establishments","liquors"],
     "cooking":["cooks","cookery","chefs","cooking & food","food","cooking ","cookbooks","cookbook","european cooking","european cookery","international cookery","international cooking","recipes","gastronomy","food in literature","quick and easy cooking","cooking techniques"],
@@ -108,5 +108,6 @@
     "thrillers & mystery":["mystery and suspense stories","mystery and suspense"],
     "scandinavia":["scandinavia in fiction","scandinavians","scandinavian","scandinavian comparative literature","journalists sweden stockholm fiction","swedish fiction","computer hackers sweden stockholm fiction","sweden","sweden in fiction","norway","norway in fiction","denmark","denmark in fiction","iceland","iceland in fiction"],
     "christmas stories":["christmas","santa claus"],
-    "punk culture":["punk","punk "]
+    "punk culture":["punk","punk "],
+    "dark fantasy":["dark magic"]
 }
