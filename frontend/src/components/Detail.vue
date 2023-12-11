@@ -1,19 +1,25 @@
 <script setup>
 // set up the props for passing in variables
+import DrinkPic from "@/components/DrinkPic.vue";
+
 const props = defineProps({
   url: String, // the url for the image
   name: String, // the name of the drink
   rating: Number, // the rating for the matching drink
   ingredients: Array, // the instructions for how to make the drink
   instructions: String, // the description for the drink,
-  genres: Array 
+  genres: Array,
+  image: String
 })
+
+
 </script>
 
 <template>
   <!--  detailed drink starts here-->
-    <div class="pic">
-      <el-image :src="props.url" fit="cover" alt="Alcohol Image Onload" style="width: 100%;height: 100%"/>
+    <div class="pic" style="text-align: center">
+<!--      <el-image :src="props.url" fit="cover" alt="Alcohol Image Onload" style="width: 100%;height: 100%"/>-->
+      <DrinkPic :liquid="props.image" style="height: 100% "></DrinkPic>
     </div>
     <div class="pic">
       <div class="name"><h1>{{ props.name }}</h1></div>

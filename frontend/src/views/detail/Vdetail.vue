@@ -2,6 +2,7 @@
 // import the required packages
 import Qinput from "@/components/Qinput.vue";
 import { useRoute } from 'vue-router'
+import {onMounted} from "vue";
 const route = useRoute()
 
 // get the data from route url
@@ -9,6 +10,9 @@ let name = route.query.name;
 let instructions = route.query.instructions;
 let ingredients = route.query.ingredients;
 let genres = route.query.genres;
+let image = route.query.liquid;
+
+
 
 </script>
 
@@ -24,7 +28,8 @@ let genres = route.query.genres;
               :name=name
               :instructions=instructions
               :ingredients=ingredients
-              :genres=genres>
+              :genres=genres
+              :image=image>
       </Detail>
     </div>
 

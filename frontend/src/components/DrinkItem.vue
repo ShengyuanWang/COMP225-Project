@@ -1,25 +1,38 @@
 <script setup>
+import {ref} from "vue";
+import DrinkPic from "@/components/DrinkPic.vue";
 // set up props for Drink items
 const props = defineProps({
   name: String, // the name of the drink
   ingredients: Array, // the instruction about how to make the drink
   instructions: String, // the instruction about how to make the drink
-  url: String // the url for the image of the drink
+  url: String, // the url for the image of the drink
+  liquid: String
 })
+
+const image = ref('')
+if (props.liquid === 'TBA') {
+  image.value = 'blackMagic'
+} else {
+  image.value = props.liquid
+}
+
+console.log(image.value)
 </script>
 
 <template>
   <div class="drink-item">
-    <div class="drink-image"> <img :src="props.url" alt="Alcohol Image Onload"/></div>
+<!--    <div class="drink-image"> <img :src="props.url" alt="Alcohol Image Onload"/></div>-->
+    <div class="drink-image"> <DrinkPic :liquid=image style="height: 100%; aspect-ratio: 1/2;"></DrinkPic></div>
     <div class="drink-instructions">
       <h1 class="drink-name">
         {{ props.name }}
       </h1>
       <div class="instruction">
-        <ul v-if="ingredients.length > 1">
+        <ul v-if="props.ingredients && props.ingredients.length > 1">
           <li v-for="item in props.ingredients.slice(0, 4)">{{ item }}</li>
         </ul>
-        <p v-if="ingredients.length <= 1"> {{ props.instructions}}</p>
+        <p v-if=" props.ingredients && props.ingredients.length <= 1"> {{ props.instructions}}</p>
       </div>
     </div>
   </div>
