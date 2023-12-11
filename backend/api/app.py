@@ -101,9 +101,11 @@ class Pairing:
         pairing["authors"] = self.book.get_authors()
         pairing["genres"] = self.book.get_filtered_genres()
         pairing["cover_link"] = self.book.get_cover_link()
+
         
         top_pairings = self.get_top_pairings()
         pairing_dict = top_pairings[0]
+        print(pairing_dict.keys())
         pairing["name"] = pairing_dict["name"]
         pairing["type"] = pairing_dict["type"]
         pairing["ingredients"] = pairing_dict["ingredients"]
@@ -128,10 +130,10 @@ class Pairing:
         top_pairings = self.get_top_drink_matches(all_drinks, sentiment)
         
         if len(top_pairings) > 0:
-            return [self.reduce_drink_dict(pairing) for pairing in top_pairings]
+            return [pairing for pairing in top_pairings]
         else:
             self.no_match_found = True
-            return [self.reduce_drink_dict(pairing) for pairing in self.get_no_match_drinks()]     
+            return [pairing for pairing in self.get_no_match_drinks()]     
        
     def get_matching_drinks(self):
         """ Return priority queue of drinks that match book based on data in json file. 
@@ -171,12 +173,6 @@ class Pairing:
         drinks_copy = self.no_match_drinks[:]
         random.shuffle(drinks_copy)
         return drinks_copy[:4]        
-    
-    def reduce_drink_dict(self, drink_dict, keys=["name", "type", "ingredients", "instructions", "image"]):
-        """Takes a drink dict and returns a drink only containing the keys 
-        specified """
-        return {key: drink_dict[key] for key in keys 
-                if key in drink_dict}
     
     def get_top_drink_matches(self, drink_heap, sentiment, range=.2, number_of_matches=4):
         """ Takes the max heap of the drink and returns the drink data dicts that share the 
@@ -320,7 +316,6 @@ class Book:
         thumnbail was found.
         """
         if "imageLinks" in list(self.data.keys()):
-            print(self.data["imageLinks"])
             if "thumbnail" in list(self.data["imageLinks"].keys()):
                 return self.data["imageLinks"]["thumbnail"]
         return ""
@@ -370,14 +365,15 @@ class APICalls():
             counter = 0
             for entry in data:
                 volume_info = entry.get('volumeInfo', {})
-                isbn = volume_info.get('industryIdentifiers', [])[0]
-                if isbn.get("type") == "ISBN_13":
-                    if counter == 0:
-                        title = self.utils.filter_title(volume_info["title"])
-                        isbns.append(isbn.get("identifier"))
-                    if self.utils.filter_title(volume_info["title"]) == title:
-                        isbns.append(isbn.get("identifier"))
-                    counter += 1
+                isbns_found = volume_info.get('industryIdentifiers', [])
+                for isbn in isbns_found:
+                    if isbn.get("type") == "ISBN_13":
+                        if counter == 0:
+                            title = self.utils.filter_title(volume_info["title"])
+                            isbns.append(isbn.get("identifier"))
+                        if self.utils.filter_title(volume_info["title"]) == title:
+                            isbns.append(isbn.get("identifier"))
+                        counter += 1
             return isbns
         except:
             return isbns
