@@ -195,8 +195,8 @@ def check_book_alcohol_pairing_json():
 
 # run to update data files
 # collect_genre_frequency()
-# collect_key_genres()
-# collect_all_genres()
+collect_key_genres()
+collect_all_genres()
 # update_no_match_drinks() 
-# update_synonyms_lookup()
+update_synonyms_lookup()
 check_book_alcohol_pairing_json()
