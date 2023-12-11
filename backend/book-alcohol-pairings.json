@@ -403,7 +403,8 @@
             "type": "Cocktail", 
             "key genres": ["italy","espionage","noir","italian cooking"],
             "genres": ["unrequited love","mystery & detective","biography & memoir","dystopian","hard-boiled","1940s","thriller",
-                "historical fiction","mystery","20th century","italy","espionage","noir","mixology","thrillers & mystery","italian cooking"],
+                "historical fiction","mystery","20th century","italy","espionage","noir","mixology","thrillers & mystery","italian cooking",
+                "punk culture"],
             "sentiment": 0.5, 
             "ingredients": [
                 "1 oz gin", 
@@ -1470,10 +1471,10 @@
         {
             "name": "Bourbon", 
             "type": "Spirits", 
-            "key genres": ["southern gothic","steampunk","sagas","hard-boiled","southern states"],
+            "key genres": ["southern gothic","steampunk","sagas","hard-boiled","southern states","punk culture"],
             "genres": ["19th century","action","dystopian","biography & memoir","hard-boiled","united states",
 				"steampunk","hard science fiction","horror","vampires","science fiction","space travel","westerns",
-				"kentucky","business","political","southern gothic","sagas","southern states"],
+				"kentucky","business","political","southern gothic","sagas","southern states","punk culture"],
             "sentiment": 0.7, 
             "ingredients": [
                 ""
@@ -1486,10 +1487,10 @@
         {
             "name": "Absinthe", 
             "type": "Spirits", 
-            "key genres": ["steampunk","occult","ghosts"],
+            "key genres": ["steampunk","occult","ghosts","punk culture"],
             "genres": ["occult","magicians","19th century","france","biography & memoir","steampunk",
 				"thriller","demons","historical fiction","horror","science fiction","ghosts","psychological","paranormal",
-				"mystery","demonology","hard science fiction","poetry","thrillers & mystery"],
+				"mystery","demonology","hard science fiction","poetry","thrillers & mystery","punk culture"],
             "sentiment": -0.5, 
             "ingredients": [
                 "Sugar cube", 
