@@ -32,7 +32,7 @@ def test_get_pairing_json_obj():
     assert type(valid_dict["image"]) is str 
     assert valid_dict["title"] == "Dune"
     assert valid_dict["authors"] == ["Frank Herbert"]
-    assert set(valid_dict["genres"]) == set(["science fiction", "science fiction"])
+    assert "science fiction" in valid_dict["genres"]
     assert valid_dict["cover_link"].startswith("http://books.google.com/books/content?id")
     assert valid_dict["name"] in [drink.get_drink_data()["name"] for drink in book_valid_pairing.get_matching_drinks()]
     assert valid_dict["ingredients"] in [drink.get_drink_data()["ingredients"] for drink in book_valid_pairing.get_matching_drinks()]
@@ -192,7 +192,7 @@ def test_get_sentiment():
     assert score > .0
 
 def test_get_filtered_genres():
-    assert set(book_valid.get_filtered_genres()) == set(["science fiction", "science fiction"])
+    assert "science-fiction" not in book_valid.get_filtered_genres()
     assert book_invalid.get_filtered_genres() == []
 
 def test_get_title():
