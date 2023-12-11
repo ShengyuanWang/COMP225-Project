@@ -26,17 +26,18 @@ const loadImage = () => {
   getDownloadURL(liquid)
     .then((metadata) => {
       liquid_url.value = metadata;
+      console.log(liquid_url);
     })
     .catch((error) => {
       console.log('error occured for loadImage');
     });
 }
+
+onload()
 </script>
 
 <template>
-  <div class="txt">
-    <el-image style="width: 15vw; position: fixed" :src="liquid_url" fit="fill" alt="Alcohol Image Onload"/>
-  </div>
+    <el-image :src="liquid_url" :key="liquid_url" fit="fill" alt="Alcohol Image Onload"/>
 </template>
 
 <style>

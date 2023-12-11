@@ -36,8 +36,8 @@ const types = ref({  Beer: true,
   Cocktails: true});
 // 父组件传递过来事件
 
-const findTypes = ref('')
-const findAllergies = ref('')
+const findTypes = ref('Beer,Wine,Spirits,Cocktails')
+const findAllergies = ref('Nan')
 
 const childValFn = (e)=>{
   //接收子组件传递给父组件的值
