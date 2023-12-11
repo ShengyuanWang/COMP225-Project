@@ -401,9 +401,9 @@
         {
             "name": "Negroni", 
             "type": "Cocktail", 
-            "key genres": ["italy","espionage","noir"],
+            "key genres": ["italy","espionage","noir","italian cooking"],
             "genres": ["unrequited love","mystery & detective","biography & memoir","dystopian","hard-boiled","1940s","thriller",
-                "historical fiction","mystery","20th century","italy","espionage","noir","mixology","thrillers & mystery"],
+                "historical fiction","mystery","20th century","italy","espionage","noir","mixology","thrillers & mystery","italian cooking"],
             "sentiment": 0.5, 
             "ingredients": [
                 "1 oz gin", 
@@ -424,7 +424,7 @@
             "genres": ["mystery & detective","1910s","classics","psychological","great britain","travel","1940s","thriller","world war ii",
                 "adventure","england","biography & memoir","love in adolescence","1960s","domestic fiction","world war i","romantic comedy",
                 "hard science fiction","noir","1930s","new england","steampunk","mystery","20th century","business","poetry","cooking","mixology",
-                "historical fiction","historical adventure","thrillers & mystery"],
+                "historical fiction","historical adventure","thrillers & mystery","english cooking"],
             "sentiment": 0.7, 
             "ingredients": [
                 "2 oz. gin", 
@@ -516,9 +516,8 @@
         {
             "name": "Irish Coffee", 
             "type": "Cocktail", 
-            "key genres": ["ireland"],
-            "genres": ["travel","ireland","biography & memoir","classics","mystery","romantic comedy",
-				"romance","sports"],
+            "key genres": ["ireland","irish cooking"],
+            "genres": ["travel","ireland","biography & memoir","classics","mystery","romantic comedy","romance","sports","irish cooking"],
             "sentiment": 0.8, 
             "ingredients": [
                 "1 1/2 oz Irish whiskey", 
@@ -854,9 +853,8 @@
         {
             "name": "Pinot Noir", 
             "type": "Wine", 
-            "key genres": ["erotica"],
-            "genres": ["france","adult romance","mystery & detective","united states","family life","erotica",
-				"vampires","mystery","romance"],
+            "key genres": ["erotica","adult romance"],
+            "genres": ["france","french cooking","adult romance","mystery & detective","united states","family life","erotica","vampires","mystery","romance"],
             "sentiment": 0.6, 
             "ingredients": [
                 ""
@@ -960,10 +958,10 @@
         {
             "name": "Champagne", 
             "type": "Wine", 
-            "key genres": ["france","first loves"],
+            "key genres": ["france","first loves","french cooking"],
             "genres": ["france","19th century","biography & memoir","love in adolescence","first loves",
 				"steampunk","adolescence","family life","erotica","romantic comedy","contemporary fiction","romance",
-				"humorous","1920s","prohibition","poetry"],
+				"humorous","1920s","prohibition","poetry","cooking","french cooking"],
             "sentiment": 1, 
             "ingredients": [
                 ""
@@ -1010,7 +1008,7 @@
             "type": "Wine", 
             "key genres": ["romantic comedy","first loves"],
             "genres": ["travel","love in adolescence","first loves","steampunk","adolescence","family life",
-				"adventure","italy","romantic comedy","contemporary fiction","romance","humorous","poetry"],
+				"adventure","italy","romantic comedy","contemporary fiction","romance","humorous","poetry","italian cooking"],
             "sentiment": 0.9, 
             "ingredients": [
                 ""
@@ -1105,7 +1103,7 @@
             "key genres": [], 
             "genres": ["17th century","hard-boiled","christmas stories","gothic","steampunk","thriller","horror","18th century","classics",
                 "science fiction","historical fiction","adventure","mystery","hard science fiction","celtic mythology","noir","ireland",
-                "great britain","russia","historical adventure"],
+                "great britain","russia","historical adventure","english cooking"],
             "sentiment": 0.6, 
             "ingredients": [
                 ""
@@ -1134,7 +1132,7 @@
             "name": "Guinness", 
             "type": "Beer", 
             "key genres": ["ireland"],
-            "genres": ["ireland","thriller","historical fiction","classics","mystery","fantasy","historical fantasy","drama","thrillers & mystery"],
+            "genres": ["ireland","thriller","historical fiction","classics","mystery","fantasy","historical fantasy","irish cooking","drama","thrillers & mystery"],
             "sentiment": 0.6, 
             "ingredients": [
                 ""
@@ -1165,7 +1163,7 @@
             "key genres": ["steampunk"],
             "genres": ["19th century","steampunk","historical fiction","horror","classics","northern europe in fiction",
 				"ghosts","adventure","mystery","fantasy","historical fantasy","hard science fiction","noir","great britain","england",
-                "historical adventure"],
+                "historical adventure","english cooking"],
             "sentiment": 0.4, 
             "ingredients": [
                 ""
@@ -1193,10 +1191,10 @@
         {
             "name": "Soju", 
             "type": "Spirits", 
-            "key genres": ["korea","business"],
+            "key genres": ["korea","business","korean cooking"],
             "genres": ["comic science fiction","korea","travel","magical realism","love in adolescence",
 				"adolescence","family life","thriller","historical fiction","science fiction","mystery","historical fantasy",
-				"business","romantic comedy","contemporary fiction","sagas","cooking","korean cuisine","thrillers & mystery"],
+				"business","romantic comedy","contemporary fiction","sagas","korean cooking","thrillers & mystery"],
             "sentiment": 0.5, 
             "ingredients": [
                 ""
@@ -1209,9 +1207,9 @@
         {
             "name": "Sake", 
             "type": "Spirits", 
-            "key genres": ["japan","business","samurai"],
-            "genres": ["japan","business","ukiyoe","samurai","travel","historical fantasy","historical fiction",
-                "historical romance","contemporary fiction","kurosawa"],
+            "key genres": ["japan","business","samurai","japanese cooking"],
+            "genres": ["japan","business","ukiyoe","samurai","travel","historical fantasy","historical fiction","historical romance",
+                "contemporary fiction","kurosawa","japanese cooking"],
             "sentiment": 0.2, 
             "ingredients": [
                 ""
@@ -1240,9 +1238,9 @@
         {
             "name": "Baijiu", 
             "type": "Spirits", 
-            "key genres": ["china","business"],
+            "key genres": ["china","business","chinese cooking"],
             "genres": ["china","business","historical fiction","travel","mystery","thriller","epic","contemporary fiction",
-                "historical fantasy","qing dynasty ","cooking","chinese cuisine","thrillers & mystery"],
+                "historical fantasy","qing dynasty ","chinese cooking","thrillers & mystery"],
             "sentiment": 0, 
             "ingredients": [
                 ""
@@ -1258,7 +1256,7 @@
             "key genres": ["witches","magic","occult","space travel"],
             "genres": ["occult","magicians","travel","france","magic","thriller","18th century","historical fiction",
 				"horror","science fiction","witches","paranormal","mystery","fantasy","historical fantasy","space travel",
-                "mixology","cooking","thrillers & mystery"],
+                "mixology","cooking","thrillers & mystery","french cooking"],
             "sentiment": 0.4, 
             "ingredients": [
                 ""
@@ -1304,8 +1302,8 @@
             "name": "Baileys", 
             "type": "Spirits", 
             "key genres": ["ireland","christmas stories"],
-            "genres": ["ireland","christmas stories","friendship","classics","mystery","contemporary fiction",
-				"romance","female friendship"],
+            "genres": ["ireland","christmas stories","friendship","classics","mystery","contemporary fiction","romance","female friendship",
+                "cooking","english cooking","irish cooking"],
             "sentiment": 0.75, 
             "ingredients": [
                 ""
@@ -1320,7 +1318,7 @@
             "type": "Spirits", 
             "key genres": ["ireland","celtic mythology"],
             "genres": ["mystery & detective","ireland","crime fiction","thriller","historical fiction","mystery","criminals","fantasy",
-                "celtic mythology","drama","cooking","crime mystery","thrillers & mystery"],
+                "celtic mythology","drama","crime mystery","thrillers & mystery","irish cooking"],
             "sentiment": 0.5, 
             "ingredients": [
                 ""
@@ -1412,7 +1410,7 @@
             "type": "Spirits", 
             "key genres": ["mexico"],
             "genres": ["19th century","action","magical realism","travel","crime fiction","thriller","family life","sagas",
-				"historical fiction","adventure","mystery","criminals","westerns","romantic comedy","mexico","cooking","mexican cuisine",
+				"historical fiction","adventure","mystery","criminals","westerns","romantic comedy","mexico","mexican cooking",
                 "historical adventure","crime mystery","thrillers & mystery"],
             "sentiment": 0.3, 
             "ingredients": [
@@ -1537,9 +1535,10 @@
         {
             "name": "Hard Cider", 
             "type": "Wine", 
-            "key genres": [], 
+            "key genres": ["historical adventure"], 
             "genres": ["19th century","18th century","epic","historical fiction","adventure","historical fantasy",
-				"fantasy","westerns","colonial period","contemporary fiction","humorous","frontier and pioneer life","historical adventure"],
+				"fantasy","westerns","colonial period","contemporary fiction","humorous","frontier and pioneer life",
+                "historical adventure","english cooking","irish cooking","cooking"],
             "sentiment": 0.7, 
             "ingredients": [
                 ""
