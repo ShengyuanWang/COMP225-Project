@@ -25,8 +25,7 @@
             "name": "Margarita", 
             "type": "Cocktail", 
             "key genres": ["romantic comedy"],
-            "genres": ["travel","humorous","satire","adventure","20th century","romantic comedy","contemporary fiction",
-				"mexico","romance","sports"],
+            "genres": ["travel","humorous","satire","adventure","20th century","romantic comedy","contemporary fiction","mexico","romance","sports"],
             "sentiment": 0.7, 
             "ingredients": [
                 "2 oz tequila", 
@@ -165,8 +164,8 @@
             "name": "Cosmopolitan", 
             "type": "Cocktail", 
             "key genres": ["urban fantasy"],
-            "genres": ["mystery & detective","friendship","urban fantasy","mystery","20th century","urban",
-				"contemporary fiction","romance","female friendship"],
+            "genres": ["mystery & detective","friendship","urban fantasy","mystery","20th century","urban","contemporary fiction","romance","female friendship",
+                "contemporary fantasy"],
             "sentiment": 0.8, 
             "ingredients": [
                 "1 1/2 oz. vodka", 
@@ -186,7 +185,7 @@
             "type": "Cocktail", 
             "key genres": [], 
             "genres": ["travel","biography & memoir","contemporary fiction","fantasy","20th century",
-				"italy","romantic comedy","humorous","urban","romance","female friendship"],
+				"italy","romantic comedy","humorous","urban","romance","female friendship","contemporary fantasy"],
             "sentiment": 0.7, 
             "ingredients": [
                 "3 oz. Prosecco", 
@@ -314,7 +313,7 @@
         {
             "name": "Sangria", 
             "type": "Cocktail", 
-            "key genres": ["vampires","spain"],
+            "key genres": ["vampires","spain","poetry"],
             "genres": ["adult romance","travel","spain","love in adolescence","domestic fiction","family life","thriller","vampires",
                 "romantic suspense","adventure","mystery","contemporary fiction","romance","thrillers & mystery","historical fiction",
                 "historical romance","historical adventure","cooking","poetry"],
@@ -805,8 +804,7 @@
             "name": "Tequila Sunrise", 
             "type": "Cocktail", 
             "key genres": [], 
-            "genres": ["travel","adventure","mystery","california","contemporary fiction","mexico","romance"
-				],
+            "genres": ["travel","adventure","mystery","california","contemporary fiction","mexico","romance"],
             "sentiment": 0.65, 
             "ingredients": [
                 "2 oz Tequila", 
@@ -1349,8 +1347,7 @@
             "name": "Witbier", 
             "type": "Beer", 
             "key genres": [], 
-            "genres": ["travel","biography & memoir","contemporary fiction","mystery","romantic comedy",
-				"humorous","romance","female friendship"],
+            "genres": ["travel","biography & memoir","contemporary fiction","mystery","romantic comedy","humorous","romance","female friendship"],
             "sentiment": 0.7, 
             "ingredients": [
                 ""
@@ -1539,7 +1536,7 @@
             "key genres": ["historical adventure"], 
             "genres": ["19th century","18th century","epic","historical fiction","adventure","historical fantasy",
 				"fantasy","westerns","colonial period","contemporary fiction","humorous","frontier and pioneer life",
-                "historical adventure","english cooking","irish cooking","cooking"],
+                "historical adventure","english cooking","irish cooking","cooking","contemporary fantasy"],
             "sentiment": 0.7, 
             "ingredients": [
                 ""
