@@ -424,7 +424,7 @@
             "genres": ["mystery & detective","1910s","classics","psychological","great britain","travel","1940s","thriller","world war ii",
                 "adventure","england","biography & memoir","love in adolescence","1960s","domestic fiction","world war i","romantic comedy",
                 "hard science fiction","noir","1930s","new england","steampunk","mystery","20th century","business","poetry","cooking","mixology",
-                "historical fiction","historical adventure","thrillers & mystery","english cooking"],
+                "historical fiction","historical adventure","thrillers & mystery","english cooking","psychological thriller"],
             "sentiment": 0.7,
             "ingredients": [
                 "2 oz. gin",
@@ -613,7 +613,7 @@
             "key genres": ["long island","erotica","southern gothic","noir"],
             "genres": ["n.y.","adult romance","crime fiction","united states","thriller","epic","erotica",
 				"classics","romantic suspense","psychological","long island","historical fiction","mystery","criminals",
-				"fantasy","southern gothic","drama","noir","mixology","crime mystery","thrillers & mystery"],
+				"fantasy","southern gothic","drama","noir","mixology","crime mystery","thrillers & mystery","psychological thriller"],
             "sentiment": -0.15,
             "ingredients": [
                 "1/2 oz Vodka",
@@ -1487,7 +1487,7 @@
             "key genres": ["steampunk","occult","ghosts","punk culture"],
             "genres": ["occult","magicians","19th century","france","biography & memoir","steampunk",
 				"thriller","demons","historical fiction","horror","science fiction","ghosts","psychological","paranormal",
-				"mystery","demonology","hard science fiction","poetry","thrillers & mystery","punk culture"],
+				"mystery","demonology","hard science fiction","poetry","thrillers & mystery","punk culture","psychological thriller"],
             "sentiment": -0.5, 
             "ingredients": [
                 "Sugar cube",
