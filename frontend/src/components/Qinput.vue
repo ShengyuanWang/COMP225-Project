@@ -10,12 +10,17 @@ const props = defineProps({
   move: Boolean, // whether it should move
   place: String, // the place of the search bar
   placeHolder: String, // the Place holder
-  input: String
+  input: String,
+  findAllergies: String,
+  findTypes: String
 })
+
 const place = ref(props.place)  // placeholder
 const value = ref('Books')
 const input = ref(props.input)
 const placeHolder = ref(props.placeHolder)
+const findTypes = ref(props.findTypes)
+const findAllergies = ref(props.findAllergies)
 // 400 default 35 active
 const data = [
   {
@@ -24,36 +29,48 @@ const data = [
 ]
 
 
+
+
+
 // functions
 const onClick  = () => {
+
   if (props.move) {
     place.value = 60;
   }
-  var api="https://comp-225-project-backend.vercel.app/test/" + input.value;
-  // use axios to get
-  proxy.axios.get(api).then((res)=>{
-    console.log(api)
-    console.log('finish')
-    console.log(res)
-    console.log("notes:")
-    console.log(res.data)
-    router.push({path:'match',
-      query: {name:res.data.name,
-        url:'https://i.ibb.co/989gpGR/drink1.png',
-        stars:'5',
-        description:res.data.instructions,
-        ingredients:res.data.ingredients,
-        notes:res.data.notes,
-        book:input.value,
-        input:input.value,
-        coverLink: res.data.cover_link,
-        title: res.data.title,
-        author: res.data.author
-      }})
-  }).catch((err)=>{
-    console.log(err)
-  })
-}
+
+  console.log('qinput')
+  console.log(props)
+
+
+    var api = "https://comp-225-project-backend.vercel.app/test/" + input.value + '/' + props.findTypes + '/' + props.findAllergies;
+    // use axios to get
+    proxy.axios.get(api).then((res) => {
+      console.log(api)
+      // console.log('finish')
+      // console.log(res)
+      // console.log("notes:")
+      // console.log(res.data)
+      router.push({
+        path: 'match',
+        query: {
+          name: res.data.name,
+          url: 'https://i.ibb.co/989gpGR/drink1.png',
+          stars: '5',
+          description: res.data.instructions,
+          ingredients: res.data.ingredients,
+          notes: res.data.notes,
+          book: input.value,
+          input: input.value,
+          coverLink: res.data.cover_link,
+          title: res.data.title,
+          author: res.data.author
+        }
+      })
+    }).catch((err) => {
+      console.log(err)
+    })
+  }
 </script>
 
 <template>
@@ -74,7 +91,7 @@ const onClick  = () => {
 <!--          </el-select>-->
         </template>
         <template #append  >
-          <el-button :icon="Search" size="large" type="primary" @click="onClick"/>
+          <el-button :icon="Search" size="large" type="primary" @click="onClick(props)"/>
         </template>
       </el-input>
     </div>

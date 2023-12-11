@@ -13,10 +13,10 @@ const menuColor = ref('#C3BCB3') // handle the color for the menu
 
 // array for drink preference | default : true
 const preference  = ref({
-  beer: true,
-  wine: true,
-  spirits: true,
-  cocktails: true
+  Beer: true,
+  Wine: true,
+  Spirits: true,
+  Cocktails: true
 })
 
 // array for allergy preference | default : false
@@ -63,8 +63,8 @@ const setPreference = () => {
 
 // function handle the action on click the menu icon
 const clickMenu = (gene) => {
-  console.log('Click Menu');
-  console.log(route.fullPath);
+  // console.log('Click Menu');
+  // console.log(route.fullPath);
   router.push({ path: 'show', query: {type: gene}});
   console.log(route.fullPath);
 }
@@ -83,7 +83,8 @@ const goHome = () => {
 const emits = defineEmits(['childClick'])
 const toEmit = () =>{
   // 触发父组件事件childClick并携带参数
-  emits('childClick', preference)
+  console.log(preference.value)
+  emits('childClick', {preference, allergy})
 }
 
 
@@ -128,21 +129,22 @@ const toEmit = () =>{
       </el-menu>
       <h1>Preference</h1>
       <div class="check">
-        <p><el-checkbox v-model="preference.beer" label="Beer" size="large" style="color: black" @click="toEmit"/></p>
-        <p><el-checkbox v-model="preference.wine" label="Wine" size="large" style="color: black"/></p>
-        <p><el-checkbox v-model="preference.spirits" label="Spirits" size="large" style="color: black"/></p>
-        <p><el-checkbox v-model="preference.cocktails" label="Cocktails" size="large" style="color: black"/></p>
+        <p><el-checkbox v-model="preference.Beer" label="Beer" size="large" style="color: black" @click="toEmit"/></p>
+        <p><el-checkbox v-model="preference.Wine" label="Wine" size="large" style="color: black" @click="toEmit"/></p>
+        <p><el-checkbox v-model="preference.Spirits" label="Spirits" size="large" style="color: black" @click="toEmit"/></p>
+        <p><el-checkbox v-model="preference.Cocktails" label="Cocktails" size="large" style="color: black" @click="toEmit"/></p>
       </div>
       <h1>Allergies</h1>
       <div class="check">
-        <p><el-checkbox v-model="allergy.gluten" label="Gluten" size="large" style="color: black"/></p>
-        <p><el-checkbox v-model="allergy.lactose" label="Lactose" size="large" style="color: black"/></p>
-        <p><el-checkbox v-model="allergy.egg" label="Egg" size="large" style="color: black"/></p>
-        <p><el-checkbox v-model="allergy.treenut" label="Tree Nuts" size="large" style="color: black"/></p>
-        <p><el-checkbox v-model="allergy.soy" label="Soy" size="large" style="color: black"/></p>
-        <p><el-checkbox v-model="allergy.shellfish" label="Shellfish" size="large" style="color: black"/></p>
-        <p><el-checkbox v-model="allergy.fish" label="Fish" size="large" style="color: black"/></p>
+        <p><el-checkbox v-model="allergy.gluten" label="Gluten" size="large" style="color: black" @click="toEmit"/></p>
+        <p><el-checkbox v-model="allergy.lactose" label="Lactose" size="large" style="color: black" @click="toEmit"/></p>
+        <p><el-checkbox v-model="allergy.egg" label="Egg" size="large" style="color: black" @click="toEmit"/></p>
+        <p><el-checkbox v-model="allergy.treenut" label="Tree Nuts" size="large" style="color: black" @click="toEmit"/></p>
+        <p><el-checkbox v-model="allergy.soy" label="Soy" size="large" style="color: black" @click="toEmit"/></p>
+        <p><el-checkbox v-model="allergy.shellfish" label="Shellfish" size="large" style="color: black" @click="toEmit"/></p>
+        <p><el-checkbox v-model="allergy.fish" label="Fish" size="large" style="color: black" @click="toEmit"/></p>
       </div>
+      <button class="check" @click="toEmit">Save</button>
     </div>
   </div>
 </template>
