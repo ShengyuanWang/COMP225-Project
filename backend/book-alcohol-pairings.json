@@ -4,9 +4,9 @@
             "name": "Old Fashioned", 
             "type": "Cocktail", 
             "key genres": ["great depression","noir","hard-boiled","business"],
-            "genres": ["19th century","1950s","mystery & detective","action","1910s","classics","psychological","biography & memoir",
-                "hard-boiled","historical fiction","great depression","noir","dystopian","1920s","mystery","20th century","business",
-                "prohibition","poetry"],
+            "genres": ["19th century","1950s","mystery & detective","action","1910s","classics","psychological",
+				"nineteen twenties","biography & memoir","hard-boiled","historical fiction","great depression","nineteen fifties",
+				"noir","dystopian","1920s","mystery","20th century","business","prohibition","poetry"],
             "sentiment": 0.6, 
             "ingredients": [
                 "2 oz. bourbon or rye whiskey", 
@@ -25,8 +25,8 @@
             "name": "Margarita", 
             "type": "Cocktail", 
             "key genres": ["romantic comedy"],
-            "genres": ["travel","humorous","satire","adventure","20th century","romantic comedy","contemporary fiction","mexico","romance",
-                "sports"],
+            "genres": ["travel","humorous","satire","adventure","20th century","romantic comedy","contemporary fiction",
+				"mexico","romance","sports"],
             "sentiment": 0.7, 
             "ingredients": [
                 "2 oz tequila", 
@@ -65,8 +65,9 @@
             "name": "Martini", 
             "type": "Cocktail", 
             "key genres": ["unrequited love"],
-            "genres": ["1950s","1910s","psychological","1940s","world war ii","science fiction","hard-boiled","1960s",
-                "hard science fiction","1930s","unrequited love","mystery","20th century","business","urban","romance"],
+            "genres": ["1950s","1910s","psychological","nineteen sixties","1940s","world war ii","science fiction",
+				"hard-boiled","1960s","nineteen fifties","hard science fiction","1930s","unrequited love","nineteen thirties",
+				"mystery","20th century","business","urban","nineteen forties","romance"],
             "sentiment": 0.7, 
             "ingredients": [
                 "2 oz. gin or vodka", 
@@ -120,7 +121,8 @@
             "name": "Mojito", 
             "type": "Cocktail", 
             "key genres": ["caribbean area"],
-            "genres": ["caribbean area","love in adolescence","adolescence","adventure","cuba","romantic comedy","romance","humorous"],
+            "genres": ["caribbean area","love in adolescence","adolescence","adventure","cuba","romantic comedy",
+				"romance","humorous"],
             "sentiment": 0.7, 
             "ingredients": [
                 "2 oz. white rum", 
@@ -163,8 +165,8 @@
             "name": "Cosmopolitan", 
             "type": "Cocktail", 
             "key genres": ["urban fantasy"],
-            "genres": ["mystery & detective","friendship","urban fantasy","mystery","20th century","urban","contemporary fiction","romance",
-                "female friendship","cooking"],
+            "genres": ["mystery & detective","friendship","urban fantasy","mystery","20th century","urban",
+				"contemporary fiction","romance","female friendship"],
             "sentiment": 0.8, 
             "ingredients": [
                 "1 1/2 oz. vodka", 
@@ -183,8 +185,8 @@
             "name": "Aperol Spritz", 
             "type": "Cocktail", 
             "key genres": [], 
-            "genres": ["travel","biography & memoir","contemporary fiction","fantasy","20th century","italy","romantic comedy","humorous",
-                "urban","romance","female friendship"],
+            "genres": ["travel","biography & memoir","contemporary fiction","fantasy","20th century",
+				"italy","romantic comedy","humorous","urban","romance","female friendship"],
             "sentiment": 0.7, 
             "ingredients": [
                 "3 oz. Prosecco", 
@@ -336,7 +338,8 @@
             "name": "Sonic Screwdriver", 
             "type": "Cocktail", 
             "key genres": [], 
-            "genres": ["travel","voyages","epic","science fiction","adventure","fantasy","space travel"],
+            "genres": ["travel","voyages","epic","science fiction","adventure","fantasy","space travel"
+				],
             "sentiment": 0.7, 
             "ingredients": [
                 "1 1/2 oz. vodka", 
@@ -456,8 +459,9 @@
             "name": "Corpse Reviver #2", 
             "type": "Cocktail", 
             "key genres": ["occult","ghosts","zombies"],
-            "genres": ["occult","mystery & detective","zombies","dystopian","1940s","historical fiction","horror","great depression","ghosts",
-                "paranormal","mystery","1930s","mixology"],
+            "genres": ["occult","mystery & detective","zombies","dystopian","1940s","historical fiction",
+				"horror","great depression","ghosts","paranormal","mystery","nineteen forties","nineteen thirties",
+                "1930s"],
             "sentiment": 0.2, 
             "ingredients": [
                 "3/4 oz Gin", 
@@ -476,8 +480,8 @@
             "name": "Mimosa", 
             "type": "Cocktail", 
             "key genres": ["romantic comedy","friendship"],
-            "genres": ["travel","mystery & detective","friendship","domestic fiction","contemporary fiction","mystery","romantic comedy",
-                "humorous","romance","female friendship","cooking"],
+            "genres": ["travel","mystery & detective","friendship","domestic fiction","contemporary fiction",
+				"mystery","romantic comedy","humorous","romance","female friendship"],
             "sentiment": 0.7, 
             "ingredients": [
                 "2 oz orange juice", 
@@ -493,8 +497,9 @@
             "name": "Daiquiri", 
             "type": "Cocktail", 
             "key genres": ["caribbean area","cuba","romantic comedy","1940s"],
-            "genres": ["caribbean area","travel","love in adolescence","1940s","1960s","adolescence","adventure","mystery","cuba","romance",
-                "humorous","romantic comedy"],
+            "genres": ["caribbean area","travel","love in adolescence","1940s","1960s","adolescence",
+				"adventure","mystery","cuba","nineteen sixties","nineteen forties","romance","humorous","romantic comedy"
+				],
             "sentiment": 0.7, 
             "ingredients": [
                 "2 oz white rum", 
@@ -512,7 +517,8 @@
             "name": "Irish Coffee", 
             "type": "Cocktail", 
             "key genres": ["ireland"],
-            "genres": ["travel","ireland","biography & memoir","classics","mystery","romantic comedy","romance","sports"],
+            "genres": ["travel","ireland","biography & memoir","classics","mystery","romantic comedy",
+				"romance","sports"],
             "sentiment": 0.8, 
             "ingredients": [
                 "1 1/2 oz Irish whiskey", 
@@ -569,8 +575,8 @@
             "name": "Alien Brain Hemorrhage", 
             "type": "Cocktail", 
             "key genres": ["aliens","zombies","space travel"],
-            "genres": ["aliens","zombies","paranormal fiction suspense & thriller","supernatural thrillers","thriller","horror",
-                "science fiction","paranormal","fantasy","space travel"],
+            "genres": ["aliens","zombies","paranormal fiction suspense & thriller","supernatural thrillers",
+				"thriller","horror","science fiction","paranormal","fantasy","space travel"],
             "sentiment": 0.4, 
             "ingredients": [
                 "1/2 oz Peach Schnapps", 
@@ -580,7 +586,7 @@
             ], 
             "instructions": "The Alien Brain Hemorrhage is a visually striking and slightly eerie shooter cocktail known for its layered appearance, resembling a brain floating in a colorful liquid. Here's how to make it: Chill a shot glass in the freezer. Pour the Peach Schnapps into the shot glass, filling it about halfway. Gently pour the Baileys Irish Cream on top of the Peach Schnapps. It should form a layer on the surface. Carefully add the Blue Curacao on top of the Baileys layer. It should also form a separate layer. Finally, drop a few drops of Grenadine into the center of the shot. The Grenadine will sink and create the \"hemorrhage\" effect.", 
             "allergens": ["lactose"],
-            "image": "TBA", 
+            "image": "alien",
             "no match drink": false
         }, 
         {
@@ -599,7 +605,7 @@
             ], 
             "instructions": "The Amaretto Sour is known for its smooth and slightly sweet taste, balanced by the tartness of the fresh lemon juice. Start by filling a shaker with ice. Add the Amaretto, fresh lemon juice, and simple syrup to the shaker. Shake the ingredients well to chill the mixture. Strain the mixture into a rocks glass filled with ice. Garnish with a lemon slice or a cherry if desired.", 
             "allergens": ["tree nuts"],
-            "image": "TBA", 
+            "image": "whiskeySour",
             "no match drink": false
         }, 
         {
@@ -624,7 +630,7 @@
             ], 
             "instructions": "The Long Island Iced Tea is a popular and potent cocktail known for its mix of multiple spirits. Despite its name, it doesn't contain any actual tea. Here's a classic recipe for a Long Island Iced Tea: Fill a shaker with ice cubes. Add the vodka, tequila, rum, gin, triple sec, fresh lemon juice, and simple syrup to the shaker. Shake the ingredients well to chill the mixture. Strain the mixture into a highball glass filled with ice. Top off with cola to your desired level, leaving some room at the top. Stir gently to combine the ingredients. Garnish with a lemon wedge.", 
             "allergens": [], 
-            "image": "TBA", 
+            "image": "longIsland",
             "no match drink": false
         }, 
         {
@@ -645,7 +651,7 @@
             ], 
             "instructions": "The Mai Tai is a classic tropical cocktail known for its refreshing and fruity flavor. There are different variations of the Mai Tai, but here's a common recipe: Fill a shaker with ice cubes. Add the white rum, fresh lime juice, orange liqueur, and Orgeat syrup to the shaker. Shake the ingredients well to chill the mixture. Strain the mixture into an Old Fashioned glass filled with crushed ice. Float the dark rum on top by gently pouring it over the back of a spoon. Garnish with a mint sprig and a lime wheel.", 
             "allergens": ["tree nuts"],
-            "image": "TBA", 
+            "image": "maiTai",
             "no match drink": false
         }, 
         {
@@ -664,15 +670,15 @@
             ], 
             "instructions": "The Whiskey Sour is a classic cocktail that allows the flavor of the whiskey to shine through. To make it, start by filling a shaker with ice cubes. Add the whiskey, fresh lemon juice, and simple syrup to the shaker. Shake the ingredients well to chill the mixture. Strain the mixture into a rocks glass filled with ice. Optionally, garnish with a lemon slice or cherry.", 
             "allergens": ["gluten"],
-            "image": "TBA", 
+            "image": "whiskeySour",
             "no match drink": false
         }, 
         {
             "name": "French 75", 
             "type": "Cocktail", 
             "key genres": ["1920s","prohibition"],
-            "genres": ["historical romance","mystery & detective","biography & memoir","1920s","historical fiction","classics","mystery",
-                "20th century","romance","prohibition","mixology"],
+            "genres": ["nineteen twenties","historical romance","mystery & detective","biography & memoir",
+				"1920s","historical fiction","classics","mystery","20th century","romance","prohibition"],
             "sentiment": 0.8, 
             "ingredients": [
                 "1 1/2 oz Gin", 
@@ -684,14 +690,15 @@
             ], 
             "instructions": "The French 75 is a delightful and refreshing cocktail, and it's perfect for celebrations or as a sophisticated sipper. To make it, start by filling a shaker with ice cubes. Add the gin, fresh lemon juice, and simple syrup to the shaker. Shake the ingredients well to chill the mixture. Strain the mixture into a Champagne flute or a Collins glass filled with ice. Top off with Champagne or sparkling wine. Gently stir to combine. Garnish with a lemon twist.", 
             "allergens": [], 
-            "image": "TBA", 
+            "image": "french75",
             "no match drink": false
         }, 
         {
             "name": "Vampire's Kiss", 
             "type": "Cocktail", 
             "key genres": ["vampires","gothic","dracula"],
-            "genres": ["paranormal romance","dracula","gothic","demons","horror","vampires","demonology","paranormal","fantasy","romance"],
+            "genres": ["paranormal romance","dracula","gothic","demons","horror","vampires","demonology",
+				"paranormal","fantasy","romance"],
             "sentiment": 0.4, 
             "ingredients": [
                 "1 1/2 oz Vodka", 
@@ -703,7 +710,7 @@
             ], 
             "instructions": "The Vampire's Kiss is characterized by its vibrant red color and sweet-tart flavor profile. Start by filling a shaker with ice cubes. Add the vodka, cranberry juice, grenadine, and triple sec to the shaker. Shake the ingredients well to chill the mixture. Strain the mixture into a martini glass or a rocks glass filled with ice. Garnish with a few blackberries or a cherry.", 
             "allergens": [], 
-            "image": "TBA", 
+            "image": "vampiresKiss",
             "no match drink": false
         }, 
         {
@@ -780,7 +787,8 @@
             "name": "Astro Pop",
             "type": "Cocktail",
             "key genres": ["aliens","space travel"],
-            "genres": ["aliens","magical realism","travel","voyages","science fiction","space travel","adventure","fantasy","humorous","1960s"],
+            "genres": ["aliens","magical realism","travel","voyages","science fiction","space travel",
+				"adventure","fantasy","humorous","1960s","nineteen sixties"],
             "sentiment": 0.6,
             "ingredients": [
                 "1 oz Absolut Raspberri vodka",
@@ -797,7 +805,8 @@
             "name": "Tequila Sunrise", 
             "type": "Cocktail", 
             "key genres": [], 
-            "genres": ["travel","adventure","mystery","california","contemporary fiction","mexico","romance"],
+            "genres": ["travel","adventure","mystery","california","contemporary fiction","mexico","romance"
+				],
             "sentiment": 0.65, 
             "ingredients": [
                 "2 oz Tequila", 
@@ -808,7 +817,7 @@
             ], 
             "instructions": "The Tequila Sunrise is a classic cocktail known for its vibrant appearance, with shades resembling a sunrise. Here's a simple recipe for making a Tequila Sunrise: Fill a highball glass with ice cubes. Pour the tequila and orange juice into the glass. Stir the mixture gently to combine. Slowly pour the grenadine syrup over the back of a spoon or by drizzling it down the side of the glass. This will allow the grenadine to settle at the bottom of the glass and gradually rise to create the sunrise effect. Do not stir after adding the grenadine, allowing it to naturally mix with the other ingredients. Garnish with an orange slice and a maraschino cherry. Optionally, you can use a straw to gently stir the colors together before drinking.", 
             "allergens": [], 
-            "image": "TBA", 
+            "image": "tequilaSunrise",
             "no match drink": false
         }, 
         {
@@ -846,7 +855,8 @@
             "name": "Pinot Noir", 
             "type": "Wine", 
             "key genres": ["erotica"],
-            "genres": ["france","adult romance","mystery & detective","united states","family life","erotica","vampires","mystery","romance"],
+            "genres": ["france","adult romance","mystery & detective","united states","family life","erotica",
+				"vampires","mystery","romance"],
             "sentiment": 0.6, 
             "ingredients": [
                 ""
@@ -891,7 +901,7 @@
             "type": "Wine", 
             "key genres": ["france"],
             "genres": ["france","historical romance","mystery & detective","united states","domestic fiction",
-				"family life","historical fiction","mystery","contemporary fiction","drama","romance","cooking"],
+				"family life","historical fiction","mystery","contemporary fiction","drama","romance"],
             "sentiment": 0.6, 
             "ingredients": [
                 ""
@@ -937,7 +947,7 @@
             "key genres": ["spain","england"],
             "genres": ["17th century","19th century","historical romance","mystery & detective","spain",
 				"18th century","historical fiction","mystery","great britain","romantic comedy","england","romance",
-				"humorous","cooking"],
+				"humorous"],
             "sentiment": 0.5, 
             "ingredients": [
                 ""
@@ -953,7 +963,7 @@
             "key genres": ["france","first loves"],
             "genres": ["france","19th century","biography & memoir","love in adolescence","first loves",
 				"steampunk","adolescence","family life","erotica","romantic comedy","contemporary fiction","romance",
-				"humorous","1920s","prohibition","poetry","cooking"],
+				"humorous","1920s","prohibition","poetry"],
             "sentiment": 1, 
             "ingredients": [
                 ""
@@ -1016,7 +1026,7 @@
             "key genres": [], 
             "genres": ["france","adult romance","action","unrequited love","dystopian","united states",
 				"hard science fiction","epic","erotica","vampires","science fiction","psychological","historical fiction",
-				"mystery","california","business","political","space travel","poetry","cooking"],
+				"mystery","california","business","political","space travel","poetry"],
             "sentiment": 0.6, 
             "ingredients": [
                 ""
@@ -1183,7 +1193,7 @@
         {
             "name": "Soju", 
             "type": "Spirits", 
-            "key genres": ["korea","business","korean cuisine"],
+            "key genres": ["korea","business"],
             "genres": ["comic science fiction","korea","travel","magical realism","love in adolescence",
 				"adolescence","family life","thriller","historical fiction","science fiction","mystery","historical fantasy",
 				"business","romantic comedy","contemporary fiction","sagas","cooking","korean cuisine","thrillers & mystery"],
@@ -1199,9 +1209,9 @@
         {
             "name": "Sake", 
             "type": "Spirits", 
-            "key genres": ["japan","business","samurai","japanese cuisine"],
-            "genres": ["japan","business","ukiyoe","samurai","travel","historical fantasy","historical fiction","historical romance",
-                "contemporary fiction","kurosawa","cooking","japanese cuisine"],
+            "key genres": ["japan","business","samurai"],
+            "genres": ["japan","business","ukiyoe","samurai","travel","historical fantasy","historical fiction",
+                "historical romance","contemporary fiction","kurosawa"],
             "sentiment": 0.2, 
             "ingredients": [
                 ""
@@ -1230,7 +1240,7 @@
         {
             "name": "Baijiu", 
             "type": "Spirits", 
-            "key genres": ["china","business","chinese cuisine"],
+            "key genres": ["china","business"],
             "genres": ["china","business","historical fiction","travel","mystery","thriller","epic","contemporary fiction",
                 "historical fantasy","qing dynasty ","cooking","chinese cuisine","thrillers & mystery"],
             "sentiment": 0, 
@@ -1280,7 +1290,7 @@
             "key genres": ["soviet union","russia","poland","ukraine"],
             "genres": ["19th century","travel","biography & memoir","soviet union","1940s","18th century",
 				"world war ii","historical fiction","northern europe in fiction","poland","ukraine","mystery","20th century",
-				"russia","contemporary fiction","noir","vodka","mixology"],
+				"russia","contemporary fiction","nineteen forties","noir"],
             "sentiment": -0.2, 
             "ingredients": [
                 "Lemon wedge (optional)"
@@ -1294,8 +1304,8 @@
             "name": "Baileys", 
             "type": "Spirits", 
             "key genres": ["ireland","christmas stories"],
-            "genres": ["ireland","christmas stories","friendship","classics","mystery","contemporary fiction","romance","female friendship",
-                "cooking"],
+            "genres": ["ireland","christmas stories","friendship","classics","mystery","contemporary fiction",
+				"romance","female friendship"],
             "sentiment": 0.75, 
             "ingredients": [
                 ""
@@ -1340,7 +1350,8 @@
             "name": "Witbier", 
             "type": "Beer", 
             "key genres": [], 
-            "genres": ["travel","biography & memoir","contemporary fiction","mystery","romantic comedy","humorous","romance","female friendship"],
+            "genres": ["travel","biography & memoir","contemporary fiction","mystery","romantic comedy",
+				"humorous","romance","female friendship"],
             "sentiment": 0.7, 
             "ingredients": [
                 ""
@@ -1385,8 +1396,8 @@
             "name": "RumChata", 
             "type": "Spirits", 
             "key genres": ["christmas stories"],
-            "genres": ["magical realism","christmas stories","family life","sagas","mystery","romantic comedy","contemporary fiction","drama",
-                "romance","humorous","cooking"],
+            "genres": ["magical realism","christmas stories","family life","sagas","mystery","romantic comedy",
+				"contemporary fiction","drama","romance","humorous"],
             "sentiment": 0.6, 
             "ingredients": [
                 ""
@@ -1496,7 +1507,8 @@
             "name": "Cura\u00e7ao", 
             "type": "Spirits", 
             "key genres": ["caribbean area"],
-            "genres": ["caribbean area","travel","science fiction","adventure","mystery","romance","space travel","cooking"],
+            "genres": ["caribbean area","travel","science fiction","adventure","mystery","romance","space travel"
+				],
             "sentiment": 0.7, 
             "ingredients": [
                 ""

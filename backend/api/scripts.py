@@ -16,7 +16,7 @@ def update_synonyms_lookup():
         json.dump(transformed_data, f, indent=2)
     
 def collect_all_genres():
-    """" Extracts genres from key_genres and genres and makes json with all of them"""
+    """" Extracts genres from key_genres and genres and makes json with all of them """
     with open('book-alcohol-pairings.json') as input_file:
         data = json.load(input_file)
 
@@ -32,7 +32,7 @@ def collect_all_genres():
         json.dump(newList, output_file, indent=2)
     
 def collect_genre_frequency():
-    """" Counts how many times each genre appears in the json"""
+    """" Counts how many times each genre appears in the json """
 
     with open('book-alcohol-pairings.json') as input_file:
         data = json.load(input_file)
@@ -172,6 +172,9 @@ def add_new_key_to_json(key, value):
         json_file.write(formatted_json)
 
 def check_book_alcohol_pairing_json():
+    """ This function makes sure that the json drink entries are the same in each file
+    and also have all the correct keys.
+    """
     with open('book-alcohol-pairings.json', 'r') as f:
         input_data1 = json.load(f)
     
@@ -191,12 +194,12 @@ def check_book_alcohol_pairing_json():
                 
                 raise ValueError(f"There is a key missing in {name}, it has these keys: {entry_keys}")
 
-    print("sucess")
+    print("Sucess!")
 
 # run to update data files
-# collect_genre_frequency()
+collect_genre_frequency()
 collect_key_genres()
 collect_all_genres()
-# update_no_match_drinks() 
+update_no_match_drinks() 
 update_synonyms_lookup()
 check_book_alcohol_pairing_json()
