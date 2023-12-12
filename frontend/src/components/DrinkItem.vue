@@ -23,7 +23,7 @@ console.log(image.value)
 <template>
   <div class="drink-item">
 <!--    <div class="drink-image"> <img :src="props.url" alt="Alcohol Image Onload"/></div>-->
-    <div class="drink-image"> <DrinkPic :liquid=image style="height: 100%; aspect-ratio: 1/2;"></DrinkPic></div>
+    <div class="drink-image"> <DrinkPic :liquid=image style="height: 100%; text-align: left;"></DrinkPic></div>
     <div class="drink-instructions">
       <h1 class="drink-name">
         {{ props.name }}
@@ -56,7 +56,7 @@ console.log(image.value)
   height: 35vh;
   background-color: #D8C3A5;
   padding: 1vh;
-  text-align: center;
+  text-align: left;
 }
 
 img {

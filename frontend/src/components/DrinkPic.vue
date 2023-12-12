@@ -37,14 +37,17 @@ onload()
 </script>
 
 <template>
-    <el-image :src="liquid_url" :key="liquid_url" fit="fill" alt="Alcohol Image Onload"/>
+  <div class="txt">
+    <img :src="liquid_url" :key="liquid_url"  alt="Alcohol Image Onload" style="object-fit: scale-down"/>
+  </div>
 </template>
 
 <style>
 .txt {
-  margin: 6vw;
-  color: black;
-  height: 20vh;
-  width: 20vw;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  height: 100%;
+  width: 100%;
 }
 </style>
