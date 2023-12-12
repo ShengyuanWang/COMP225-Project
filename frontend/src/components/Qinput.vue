@@ -48,9 +48,14 @@ const onClick  = () => {
     proxy.axios.get(api).then((res) => {
       console.log(api)
       // console.log('finish')
-      // console.log(res)
+      console.log(res)
+      // console.log(res.data.rerolls)
       // console.log("notes:")
       // console.log(res.data)
+      let reRolls = []
+      for (let reroll in res.data.rerolls) {
+        reRolls.push(JSON.stringify(res.data.rerolls[reroll]))
+      }
       router.push({
         path: 'match',
         query: {
@@ -64,7 +69,9 @@ const onClick  = () => {
           input: input.value,
           coverLink: res.data.cover_link,
           title: res.data.title,
-          author: res.data.author
+          author: res.data.author,
+          reRolls: reRolls,
+          image: res.data.image
         }
       })
     }).catch((err) => {

@@ -25,9 +25,8 @@
             "name": "Margarita",
             "type": "Cocktail",
             "key genres": ["romantic comedy"],
-            "genres": ["travel","humorous","satire","adventure","20th century","romantic comedy","contemporary fiction",
-				"mexico","romance","sports"],
-            "sentiment": 0.7,
+            "genres": ["travel","humorous","satire","adventure","20th century","romantic comedy","contemporary fiction","mexico","romance","sports"],
+            "sentiment": 0.7, 
             "ingredients": [
                 "2 oz tequila",
                 "1 oz freshly squeezed lime juice",
@@ -165,9 +164,9 @@
             "name": "Cosmopolitan",
             "type": "Cocktail",
             "key genres": ["urban fantasy"],
-            "genres": ["mystery & detective","friendship","urban fantasy","mystery","20th century","urban",
-				"contemporary fiction","romance","female friendship"],
-            "sentiment": 0.8,
+            "genres": ["mystery & detective","friendship","urban fantasy","mystery","20th century","urban","contemporary fiction","romance","female friendship",
+                "contemporary fantasy"],
+            "sentiment": 0.8, 
             "ingredients": [
                 "1 1/2 oz. vodka",
                 "1 oz. cranberry juice",
@@ -186,8 +185,8 @@
             "type": "Cocktail",
             "key genres": [],
             "genres": ["travel","biography & memoir","contemporary fiction","fantasy","20th century",
-				"italy","romantic comedy","humorous","urban","romance","female friendship"],
-            "sentiment": 0.7,
+				"italy","romantic comedy","humorous","urban","romance","female friendship","contemporary fantasy"],
+            "sentiment": 0.7, 
             "ingredients": [
                 "3 oz. Prosecco",
                 "2 oz. Aperol",
@@ -312,9 +311,9 @@
             "no match drink": false
         },
         {
-            "name": "Sangria",
-            "type": "Cocktail",
-            "key genres": ["vampires","spain"],
+            "name": "Sangria", 
+            "type": "Cocktail", 
+            "key genres": ["vampires","spain","poetry"],
             "genres": ["adult romance","travel","spain","love in adolescence","domestic fiction","family life","thriller","vampires",
                 "romantic suspense","adventure","mystery","contemporary fiction","romance","thrillers & mystery","historical fiction",
                 "historical romance","historical adventure","cooking","poetry"],
@@ -403,8 +402,9 @@
             "type": "Cocktail",
             "key genres": ["italy","espionage","noir","italian cooking"],
             "genres": ["unrequited love","mystery & detective","biography & memoir","dystopian","hard-boiled","1940s","thriller",
-                "historical fiction","mystery","20th century","italy","espionage","noir","mixology","thrillers & mystery","italian cooking"],
-            "sentiment": 0.5,
+                "historical fiction","mystery","20th century","italy","espionage","noir","mixology","thrillers & mystery","italian cooking",
+                "punk culture"],
+            "sentiment": 0.5, 
             "ingredients": [
                 "1 oz gin",
                 "1 oz Campari",
@@ -424,7 +424,7 @@
             "genres": ["mystery & detective","1910s","classics","psychological","great britain","travel","1940s","thriller","world war ii",
                 "adventure","england","biography & memoir","love in adolescence","1960s","domestic fiction","world war i","romantic comedy",
                 "hard science fiction","noir","1930s","new england","steampunk","mystery","20th century","business","poetry","cooking","mixology",
-                "historical fiction","historical adventure","thrillers & mystery","english cooking"],
+                "historical fiction","historical adventure","thrillers & mystery","english cooking","psychological thriller"],
             "sentiment": 0.7,
             "ingredients": [
                 "2 oz. gin",
@@ -613,7 +613,7 @@
             "key genres": ["long island","erotica","southern gothic","noir"],
             "genres": ["n.y.","adult romance","crime fiction","united states","thriller","epic","erotica",
 				"classics","romantic suspense","psychological","long island","historical fiction","mystery","criminals",
-				"fantasy","southern gothic","drama","noir","mixology","crime mystery","thrillers & mystery"],
+				"fantasy","southern gothic","drama","noir","mixology","crime mystery","thrillers & mystery","psychological thriller"],
             "sentiment": -0.15,
             "ingredients": [
                 "1/2 oz Vodka",
@@ -715,10 +715,10 @@
         {
             "name": "Black Magic Cocktail",
             "type": "Cocktail",
-            "key genres": ["witches","occult","demons","wizards","dark magic","gothic","demonology"],
+            "key genres": ["witches","occult","demons","wizards","dark fantasy","gothic","demonology"],
             "genres": ["magicians","paranormal fiction suspense & thriller","gothic",
 				"supernatural thrillers","epic","paranormal","wizards","magic","thriller","occult",
-				"witches","demonology","fantasy","demons","mystery","dark magic","thrillers & mystery"],
+				"witches","demonology","fantasy","demons","mystery","dark fantasy","thrillers & mystery"],
             "sentiment": 0.4,
             "ingredients": [
                 "2 oz Black vodka (like Blavod or any other black vodka)",
@@ -760,10 +760,10 @@
         {
             "name": "Witches' Brew",
             "type": "Cocktail",
-            "key genres": ["witches","dark magic","wizards","magic","urban fantasy"],
+            "key genres": ["witches","dark fantasy","wizards","magic","urban fantasy"],
             "genres": ["occult","magicians","magical realism","magic","paranormal fiction suspense & thriller",
 				"supernatural thrillers","thriller","urban fantasy","horror","witches","paranormal","mystery","fantasy",
-				"urban","dark magic","wizards","thrillers & mystery"],
+				"urban","dark fantasy","wizards","thrillers & mystery"],
             "sentiment": 0.5,
             "ingredients": [
                 "2 cups black vodka",
@@ -801,12 +801,11 @@
             "no match drink": false
         },
         {
-            "name": "Tequila Sunrise",
-            "type": "Cocktail",
-            "key genres": [],
-            "genres": ["travel","adventure","mystery","california","contemporary fiction","mexico","romance"
-				],
-            "sentiment": 0.65,
+            "name": "Tequila Sunrise", 
+            "type": "Cocktail", 
+            "key genres": [], 
+            "genres": ["travel","adventure","mystery","california","contemporary fiction","mexico","romance"],
+            "sentiment": 0.65, 
             "ingredients": [
                 "2 oz Tequila",
                 "4 oz Orange juice",
@@ -1345,12 +1344,11 @@
             "no match drink": false
         },
         {
-            "name": "Witbier",
-            "type": "Beer",
-            "key genres": [],
-            "genres": ["travel","biography & memoir","contemporary fiction","mystery","romantic comedy",
-				"humorous","romance","female friendship"],
-            "sentiment": 0.7,
+            "name": "Witbier", 
+            "type": "Beer", 
+            "key genres": [], 
+            "genres": ["travel","biography & memoir","contemporary fiction","mystery","romantic comedy","humorous","romance","female friendship"],
+            "sentiment": 0.7, 
             "ingredients": [
                 ""
             ],
@@ -1468,13 +1466,13 @@
             "no match drink": false
         },
         {
-            "name": "Bourbon",
-            "type": "Spirits",
-            "key genres": ["southern gothic","steampunk","sagas","hard-boiled","southern states"],
+            "name": "Bourbon", 
+            "type": "Spirits", 
+            "key genres": ["southern gothic","steampunk","sagas","hard-boiled","southern states","punk culture"],
             "genres": ["19th century","action","dystopian","biography & memoir","hard-boiled","united states",
 				"steampunk","hard science fiction","horror","vampires","science fiction","space travel","westerns",
-				"kentucky","business","political","southern gothic","sagas","southern states"],
-            "sentiment": 0.7,
+				"kentucky","business","political","southern gothic","sagas","southern states","punk culture"],
+            "sentiment": 0.7, 
             "ingredients": [
                 ""
             ],
@@ -1484,13 +1482,13 @@
             "no match drink": false
         },
         {
-            "name": "Absinthe",
-            "type": "Spirits",
-            "key genres": ["steampunk","occult","ghosts"],
+            "name": "Absinthe", 
+            "type": "Spirits", 
+            "key genres": ["steampunk","occult","ghosts","punk culture"],
             "genres": ["occult","magicians","19th century","france","biography & memoir","steampunk",
 				"thriller","demons","historical fiction","horror","science fiction","ghosts","psychological","paranormal",
-				"mystery","demonology","hard science fiction","poetry","thrillers & mystery"],
-            "sentiment": -0.5,
+				"mystery","demonology","hard science fiction","poetry","thrillers & mystery","punk culture","psychological thriller"],
+            "sentiment": -0.5, 
             "ingredients": [
                 "Sugar cube",
                 "Cold water",
@@ -1538,7 +1536,7 @@
             "key genres": ["historical adventure"], 
             "genres": ["19th century","18th century","epic","historical fiction","adventure","historical fantasy",
 				"fantasy","westerns","colonial period","contemporary fiction","humorous","frontier and pioneer life",
-                "historical adventure","english cooking","irish cooking","cooking"],
+                "historical adventure","english cooking","irish cooking","cooking","contemporary fantasy"],
             "sentiment": 0.7, 
             "ingredients": [
                 ""

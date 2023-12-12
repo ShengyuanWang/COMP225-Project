@@ -17,9 +17,9 @@ const props = defineProps({
 
 <template>
   <!--  detailed drink starts here-->
-    <div class="pic" style="text-align: center">
+    <div class="pic" style="text-align: left;">
 <!--      <el-image :src="props.url" fit="cover" alt="Alcohol Image Onload" style="width: 100%;height: 100%"/>-->
-      <DrinkPic :liquid="props.image" style="height: 100% "></DrinkPic>
+      <DrinkPic :liquid="props.image" style="height: 100%;"></DrinkPic>
     </div>
     <div class="pic">
       <div class="name"><h1>{{ props.name }}</h1></div>

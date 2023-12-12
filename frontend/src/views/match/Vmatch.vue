@@ -19,6 +19,11 @@ const input = route.query.input;
 const coverLink = route.query.coverLink;
 const title = route.query.title;
 const author = route.query.author;
+const image= route.query.image;
+let reRoll = [];
+for ( let r = 0; r < route.query.reRolls.length; r+=1) {
+  reRoll.push(JSON.parse(route.query.reRolls[r]));
+}
 const show = () => {
   showResult.value = true
 }
@@ -41,7 +46,7 @@ const findAllergies = ref('Nan')
 
 const childValFn = (e)=>{
   //接收子组件传递给父组件的值
-  console.log(e)
+  // console.log(e)
   allergies.value = e.allergy.value;
   types.value = e.preference.value;
   let allergyList = [];
@@ -68,15 +73,19 @@ const childValFn = (e)=>{
     findTypes.value = 'Nan'
   }
 
-  console.log(findTypes, findAllergies)
+  // console.log(findTypes, findAllergies)
 }
 
 onMounted(()=>{
   setTimeout(() => {
     show()
   }, 2000);
-  console.log('mounted');
+  // console.log('mounted');
 })
+
+console.log(route.query)
+
+
 
 
 
@@ -103,6 +112,8 @@ onMounted(()=>{
                    :coverLink=coverLink
                    :title=title
                    :author=author
+                   :reRoll=reRoll
+                   :image=image
       >
       </MatchResult>
     </div>
