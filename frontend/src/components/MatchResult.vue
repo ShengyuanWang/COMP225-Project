@@ -48,6 +48,9 @@ const reroll = () => {
   drink.value = props.reRoll[reRollCnt.value];
   reRollCnt.value = (reRollCnt.value + 1) % props.reRoll.length
   console.log(drink.value)
+  if (drink.value.image === 'TBA') {
+    drink.value.image = 'negroni'
+  }
 }
 
 
