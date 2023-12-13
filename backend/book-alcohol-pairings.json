@@ -489,7 +489,7 @@
             ], 
             "instructions": "The Dark and Stormy is a classic cocktail with a signature copper mug presentation. To craft this drink, start by filling a copper mug or highball glass with ice. Squeeze the juice from half a lime into the glass, and drop the spent lime shell in. Then, pour in 2 oz. of dark rum. Top it off with approximately 3 oz. of ginger beer, or adjust to your preferred level of ginger flavor. Give it a gentle stir to mix the ingredients. To garnish, add a lime wheel or wedge for an extra burst of citrus aroma. The Dark and Stormy is known for its crisp and tangy taste, making it a popular choice for a refreshing and enjoyable cocktail.", 
             "allergens": [], 
-            "image": "TBA", 
+            "image": "dark",
             "no match drink": false, 
             "description": ""
         }, 
@@ -511,7 +511,7 @@
             ], 
             "instructions": "The Corpse Reviver #2 is a classic cocktail that dates back to the 1930s and is part of the family of \"Corpse Reviver\" cocktails meant to, as the name suggests, revive the spirits. Here's the recipe for the Corpse Reviver #2: Fill a shaker with ice. Add the gin, Cointreau, Lillet Blanc, and fresh lemon juice to the shaker. Shake well to chill the ingredients. Rinse a chilled cocktail glass with a small amount of absinthe, discarding the excess. Strain the shaken mixture into the prepared glass. Garnish with a lemon twist.", 
             "allergens": [], 
-            "image": "TBA", 
+            "image": "corpse",
             "no match drink": false, 
             "description": ""
         }, 
@@ -529,7 +529,7 @@
             ], 
             "instructions": "A Mimosa is a classic and popular cocktail. To make this refreshing drink, follow this recipe: Chill the orange juice and the champagne or sparkling wine in advance. In a champagne flute or a wine glass, pour the chilled orange juice. Top it off with the chilled champagne or sparkling wine. Gently stir to combine, though some prefer to leave it unstirred to maintain the bubbly effervescence. Garnish the drink with an orange slice or twist.", 
             "allergens": [], 
-            "image": "TBA", 
+            "image": "mimosa",
             "no match drink": false, 
             "description": ""
         }, 
@@ -550,7 +550,7 @@
             ], 
             "instructions": "A Daiquiri is a classic cocktail known for its simplicity and refreshing taste. To make a classic Daiquiri, fill a cocktail shaker with ice. Add the white rum, freshly squeezed lime juice, and simple syrup to the shaker. Shake well for about 15-20 seconds to chill the mixture. Strain the mixture into a chilled cocktail glass, such as a coupe glass or a martini glass. Garnish the drink with a lime wheel or wedge.", 
             "allergens": [], 
-            "image": "TBA", 
+            "image": "gimlet",
             "no match drink": false, 
             "description": ""
         }, 
@@ -857,6 +857,23 @@
             "instructions": "An Astro Pop is a cocktail typically served in a test tube. To make it, add vodka and sour mix to a tumbler with ice to chill. Shake the ingredients and pour in a large shot glass. Use Grenadine and allow to sink to the bottom of the glass. Make sure to pour slowly down the inside of the glass so the finished product is red, blue, and white from bottom to top.", 
             "allergens": [], 
             "image": "astroPop", 
+            "no match drink": false, 
+            "description": ""
+        }, 
+        {
+            "name": "Sazerac", 
+            "type": "Cocktail", 
+            "key genres": ["occult","southern gothic","new orleans ","louisiana"],
+            "genres": ["occult","historical fiction","paranormal","united states","southern states",
+                "19th century","southern gothic","cooking","1920s","mystery","thriller","thrillers & mystery",
+                "paranormal fiction suspense & thriller","mixology","new orleans ","louisiana"],
+            "sentiment": 0.5, 
+            "ingredients": [
+                ""
+            ], 
+            "instructions": "TBA",
+            "allergens": [], 
+            "image": "TBA", 
             "no match drink": false, 
             "description": ""
         }, 

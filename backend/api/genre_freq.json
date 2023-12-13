@@ -1,27 +1,31 @@
 [
     [
         "mystery",
-        63
+        65
     ],
     [
         "historical fiction",
-        43
+        49
+    ],
+    [
+        "adventure",
+        41
     ],
     [
         "romance",
         41
     ],
     [
-        "adventure",
-        40
-    ],
-    [
         "travel",
-        38
+        39
     ],
     [
         "thriller",
-        36
+        38
+    ],
+    [
+        "thrillers & mystery",
+        35
     ],
     [
         "contemporary fiction",
@@ -32,7 +36,15 @@
         24
     ],
     [
+        "historical adventure",
+        24
+    ],
+    [
         "mystery & detective",
+        22
+    ],
+    [
+        "biography & memoir",
         22
     ],
     [
@@ -40,19 +52,15 @@
         22
     ],
     [
-        "biography & memoir",
-        21
-    ],
-    [
-        "cooking",
-        21
-    ],
-    [
         "20th century",
         20
     ],
     [
         "science fiction",
+        20
+    ],
+    [
+        "fantasy",
         19
     ],
     [
@@ -60,31 +68,39 @@
         18
     ],
     [
-        "fantasy",
-        18
-    ],
-    [
         "classics",
         17
     ],
     [
+        "cooking",
+        17
+    ],
+    [
         "19th century",
-        14
+        15
     ],
     [
         "horror",
         14
     ],
     [
+        "historical romance",
+        13
+    ],
+    [
         "france",
         13
     ],
     [
-        "1960s",
+        "paranormal",
+        13
+    ],
+    [
+        "united states",
         12
     ],
     [
-        "historical romance",
+        "1960s",
         12
     ],
     [
@@ -96,19 +112,7 @@
         12
     ],
     [
-        "paranormal",
-        12
-    ],
-    [
-        "nineteen sixties",
-        11
-    ],
-    [
         "1940s",
-        11
-    ],
-    [
-        "nineteen forties",
         11
     ],
     [
@@ -124,15 +128,11 @@
         10
     ],
     [
-        "hard-boiled",
-        9
-    ],
-    [
         "business",
         9
     ],
     [
-        "united states",
+        "poetry",
         9
     ],
     [
@@ -141,6 +141,10 @@
     ],
     [
         "mixology",
+        9
+    ],
+    [
+        "friendship",
         9
     ],
     [
@@ -168,15 +172,11 @@
         8
     ],
     [
-        "poetry",
+        "hard-boiled",
         8
     ],
     [
         "hard science fiction",
-        8
-    ],
-    [
-        "friendship",
         8
     ],
     [
@@ -204,11 +204,19 @@
         8
     ],
     [
+        "great britain",
+        8
+    ],
+    [
         "gothic",
         8
     ],
     [
         "psychological",
+        7
+    ],
+    [
+        "1920s",
         7
     ],
     [
@@ -224,6 +232,22 @@
         7
     ],
     [
+        "england",
+        7
+    ],
+    [
+        "occult",
+        7
+    ],
+    [
+        "southern gothic",
+        7
+    ],
+    [
+        "ireland",
+        7
+    ],
+    [
         "1950s",
         6
     ],
@@ -232,19 +256,11 @@
         6
     ],
     [
-        "nineteen fifties",
-        6
-    ],
-    [
-        "1920s",
+        "mexico",
         6
     ],
     [
         "1930s",
-        6
-    ],
-    [
-        "nineteen thirties",
         6
     ],
     [
@@ -260,15 +276,23 @@
         6
     ],
     [
-        "occult",
+        "paranormal fiction suspense & thriller",
         6
     ],
     [
-        "southern gothic",
+        "crime fiction",
+        6
+    ],
+    [
+        "crime mystery",
         6
     ],
     [
         "westerns",
+        6
+    ],
+    [
+        "17th century",
         6
     ],
     [
@@ -304,11 +328,11 @@
         5
     ],
     [
-        "ireland",
+        "english cooking",
         5
     ],
     [
-        "paranormal fiction suspense & thriller",
+        "irish cooking",
         5
     ],
     [
@@ -316,27 +340,19 @@
         5
     ],
     [
-        "crime fiction",
-        5
-    ],
-    [
         "magical realism",
         5
     ],
     [
-        "17th century",
+        "southern states",
         5
-    ],
-    [
-        "nineteen twenties",
-        4
     ],
     [
         "satire",
         4
     ],
     [
-        "mexico",
+        "nineteen forties",
         4
     ],
     [
@@ -360,14 +376,6 @@
         4
     ],
     [
-        "great britain",
-        4
-    ],
-    [
-        "england",
-        4
-    ],
-    [
         "world war i",
         4
     ],
@@ -388,10 +396,6 @@
         4
     ],
     [
-        "southern states",
-        4
-    ],
-    [
         "first loves",
         4
     ],
@@ -408,6 +412,14 @@
         3
     ],
     [
+        "nineteen sixties",
+        3
+    ],
+    [
+        "contemporary fantasy",
+        3
+    ],
+    [
         "wizards",
         3
     ],
@@ -416,7 +428,15 @@
         3
     ],
     [
+        "punk culture",
+        3
+    ],
+    [
         "new england",
+        3
+    ],
+    [
+        "psychological thriller",
         3
     ],
     [
@@ -432,6 +452,14 @@
         3
     ],
     [
+        "french cooking",
+        3
+    ],
+    [
+        "vikings",
+        3
+    ],
+    [
         "christmas stories",
         3
     ],
@@ -444,7 +472,19 @@
         3
     ],
     [
+        "nineteen twenties",
+        2
+    ],
+    [
+        "nineteen fifties",
+        2
+    ],
+    [
         "n.y.",
+        2
+    ],
+    [
+        "nineteen thirties",
         2
     ],
     [
@@ -464,7 +504,11 @@
         2
     ],
     [
-        "dark magic",
+        "italian cooking",
+        2
+    ],
+    [
+        "dark fantasy",
         2
     ],
     [
@@ -472,11 +516,23 @@
         2
     ],
     [
-        "vikings",
+        "australia",
+        2
+    ],
+    [
+        "norse mythology",
         2
     ],
     [
         "male friendship",
+        2
+    ],
+    [
+        "russia",
+        2
+    ],
+    [
+        "japan",
         2
     ],
     [
@@ -500,6 +556,14 @@
         1
     ],
     [
+        "trilogy of five",
+        1
+    ],
+    [
+        "arthur dent ",
+        1
+    ],
+    [
         "hemingway",
         1
     ],
@@ -520,6 +584,14 @@
         1
     ],
     [
+        "new orleans ",
+        1
+    ],
+    [
+        "louisiana",
+        1
+    ],
+    [
         "mississippi",
         1
     ],
@@ -528,15 +600,7 @@
         1
     ],
     [
-        "australia",
-        1
-    ],
-    [
         "argentina",
-        1
-    ],
-    [
-        "norse mythology",
         1
     ],
     [
@@ -544,7 +608,15 @@
         1
     ],
     [
+        "tenth century",
+        1
+    ],
+    [
         "germany",
+        1
+    ],
+    [
+        "india",
         1
     ],
     [
@@ -552,7 +624,7 @@
         1
     ],
     [
-        "japan",
+        "korean cooking",
         1
     ],
     [
@@ -565,6 +637,10 @@
     ],
     [
         "kurosawa",
+        1
+    ],
+    [
+        "japanese cooking",
         1
     ],
     [
@@ -592,19 +668,19 @@
         1
     ],
     [
+        "chinese cooking",
+        1
+    ],
+    [
+        "scandinavia",
+        1
+    ],
+    [
         "poland",
         1
     ],
     [
         "ukraine",
-        1
-    ],
-    [
-        "russia",
-        1
-    ],
-    [
-        "vodka",
         1
     ],
     [
@@ -616,7 +692,7 @@
         1
     ],
     [
-        "mexican cuisine",
+        "mexican cooking",
         1
     ]
 ]
