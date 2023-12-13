@@ -590,7 +590,7 @@
             ], 
             "instructions": "A Paloma is a refreshing and popular cocktail that originates from Mexico. Follow this recipe to make a Paloma: Fill the glass with ice. In a shaker, combine the tequila, freshly squeezed lime juice, and grapefruit juice. Shake well to mix the ingredients thoroughly. Strain the mixture into the prepared glass over ice. If using grapefruit soda, top off the glass with it. If not, use grapefruit juice and add soda water. Garnish the drink with a lime wedge or wheel.", 
             "allergens": [], 
-            "image": "TBA", 
+            "image": "paloma",
             "no match drink": false, 
             "description": ""
         }, 
@@ -611,7 +611,7 @@
             ], 
             "instructions": "The Pisco Sour is a classic cocktail that originated in Peru and Chile. It is known for its balance of sweet, sour, and the frothy texture provided by the egg white. To make it: In a cocktail shaker, combine the Pisco, fresh lime juice, simple syrup, and egg white. Dry shake (shake without ice) vigorously for about 10-15 seconds. This helps create a frothy texture from the egg white. Add ice to the shaker and shake again for another 10-15 seconds to chill the mixture. Strain the cocktail into a chilled glass, typically a rocks glass or a sour glass. Garnish the foam on top with a few drops of Angostura bitters.", 
             "allergens": ["egg"],
-            "image": "TBA", 
+            "image": "piscoSour",
             "no match drink": false, 
             "description": ""
         }, 
