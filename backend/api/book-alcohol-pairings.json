@@ -434,7 +434,7 @@
             ],
             "instructions": "The Gin and Tonic is a classic cocktail with a signature copper mug presentation. To craft this drink, start by filling a copper mug or highball glass with ice. Squeeze the juice from half a lime into the glass, and drop the spent lime shell in. Then, pour in 2 oz. of gin. Top it off with approximately 4 oz. of tonic water, or adjust to your preferred level of tonic flavor. Give it a gentle stir to mix the ingredients. To garnish, add a lime wheel or wedge for an extra burst of citrus aroma. The Gin and Tonic is known for its crisp and tangy taste, making it a popular choice for a refreshing and enjoyable cocktail.",
             "allergens": [],
-            "image": "TBA",
+            "image": "mojito",
             "no match drink": true
         },
         {
@@ -801,11 +801,11 @@
             "no match drink": false
         },
         {
-            "name": "Tequila Sunrise", 
-            "type": "Cocktail", 
-            "key genres": [], 
+            "name": "Tequila Sunrise",
+            "type": "Cocktail",
+            "key genres": [],
             "genres": ["travel","adventure","mystery","california","contemporary fiction","mexico","romance"],
-            "sentiment": 0.65, 
+            "sentiment": 0.65,
             "ingredients": [
                 "2 oz Tequila",
                 "4 oz Orange juice",
@@ -1093,7 +1093,7 @@
             ],
             "instructions": "Pilsner is best served cold in a tall narrow glass. When pouring, aim for a moderate and controlled pour to achieve a good balance between beer and head.",
             "allergens": ["gluten"],
-            "image": "TBA",
+            "image": "beer",
             "no match drink": true
         },
         {
