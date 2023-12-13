@@ -256,6 +256,7 @@
   "great britain in fiction": "great britain",
   "ukraine in fiction": "ukraine",
   "poland in fiction": "poland",
+  "polish americans": "poland",
   "jamaica in fiction": "jamaica",
   "satirical literature": "satire",
   "english satire": "satire",
@@ -407,5 +408,6 @@
   "punk ": "punk culture",
   "dark magic": "dark fantasy",
   "military fantasy": "dark fantasy",
-  "louisiana in fiction": "louisiana"
+  "louisiana in fiction": "louisiana",
+  "la.": "louisiana"
 }
