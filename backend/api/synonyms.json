@@ -63,7 +63,7 @@
     "united states": ["usa","united states. in fiction","united states in fiction","u.s.","americans","american","american fiction","american fiction ","american literature"],
     "great britain":["great britain in fiction"],
     "ukraine":["ukraine in fiction"],
-    "poland":["poland in fiction"],
+    "poland":["poland in fiction","polish americans"],
     "jamaica":["jamaica in fiction"],
     "satire":["satirical literature","english satire","political satire"],
     "peru":["peru in fiction"],
@@ -110,5 +110,5 @@
     "christmas stories":["christmas","santa claus"],
     "punk culture":["punk","punk "],
     "dark fantasy":["dark magic","military fantasy"],
-    "louisiana":["louisiana in fiction"]
+    "louisiana":["louisiana in fiction","la."]
 }
