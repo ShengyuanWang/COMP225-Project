@@ -223,6 +223,13 @@ h2 {
   color: #992e22;
 }
 
+h3 {
+  font-size: 2.5vw;
+  margin-top: 0.5vh;
+  margin-left: 1.7vw;
+  color: #992e22;
+}
+
 menu {
   padding-inline-start: 0.5vw;
 }

@@ -99,10 +99,12 @@ class Pairing:
         pairing["user_input"] = self.book.get_user_input()
         pairing["title"] = self.book.get_title()
         pairing["authors"] = self.book.get_authors()
+        pairing["publisher"] = self.book.get_publisher()
+        pairing["publicationDate"] = self.book.get_publication_date()
+        pairing["bookDescription"] = self.book.get_description()
         pairing["genres"] = self.book.get_filtered_genres()
         pairing["cover_link"] = self.book.get_cover_link()
 
-        
         top_pairings = self.get_top_pairings()
         pairing_dict = top_pairings[0]
         print(pairing_dict.keys())

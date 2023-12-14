@@ -5,19 +5,22 @@ import DrinkPic from "@/components/DrinkPic.vue";
 const props = defineProps({
   url: String, // the url for the image
   name: String, // the name of the drink
-  description: String, // the rating for the matching drink
+  instructions: String, // the rating for the matching drink
   ingredients: Array, // the instructions for how to make the drink
   notes: String, // the description for the drink,
   coverLink: String,
   title:String,
-  author:String,
+  authors:Array,
+  publicationDate:String,
+  publisher:String,
+  bookDescription:String,
   reRoll: Array,
   image: String
 })
 
 const drink = ref({
   ingredients: props.ingredients,
-  instructions: props.description,
+  instructions: props.instructions,
   name: props.name,
   notes: props.notes,
   image: props.image
@@ -29,14 +32,14 @@ const reRollCnt = ref(1);
 
 const showDrink = ref(true);
 
-const buttonName = ref("Book");
+const buttonName = ref("Book Information");
 
 const changePage = () => {
-  if (buttonName.value === "Book") {
-    buttonName.value = "Drink"
+  if (buttonName.value === "Book Information") {
+    buttonName.value = "Pairing Information"
     showDrink.value = !showDrink.value;
   } else {
-    buttonName.value = "Book"
+    buttonName.value = "Book Information"
     showDrink.value = !showDrink.value;
 
   }
@@ -53,19 +56,48 @@ const reroll = () => {
   }
 }
 
+const formatAuthors = (authors_list) => {
+  const author_count = authors_list.length;
+  if (typeof(authors_list) == 'string') {
+    return `${authors_list}`; 
+  } else {
+    if (author_count == 1) {
+      return `${authors_list[0]}`;
+    } else if (author_count == 2) {
+      return `${authors_list[0]} and ${authors_list[1]}`;
+    }  else if (author_count > 2) {
+      return `${authors_list[0]} et al.`;
+    } else {
+      return '';  
+  }
+  }
+}
 
+const formatPublicationInfo = (name, date) => {
+  if (name != null && name != '' && date != null && date != '') {
+    return `Published by ${name} in ${date}`;
+  } else if (name != null && name != '') {
+    return `Published by ${name}`;
+  } else if (date != null && date != '' != null) {
+    return `Published in ${date}`;
+  } else {
+    return ``;
+  }
+}
 
 
 </script>
 
 <template>
   <!--  detailed drink starts here-->
-  <div v-show="showDrink" class="pic"  style="text-align: left;">
+  <div v-show="showDrink" class="pic" id="drink-image" style="text-align: left;">
     <DrinkPic :liquid=drink.image :key="drink.image"></DrinkPic>
 <!--    <el-image :src="props.url" fit="cover" alt="Alcohol Image Onload" style="width: 100%;height: 100%"/>-->
   </div>
   <div v-show="showDrink" className="pic">
-    <div className="name"><h1>{{ drink.name }}</h1></div>
+    <div className="name"><h1> Pairing: {{ drink.name }}</h1></div>
+    <div className="name" v-show="title != '' && authors.length > 0" ><h2> Book: {{ title }} by {{formatAuthors(authors)}}</h2></div>
+    <div className="name" v-show="title != '' && authors.length <= 0" ><h2> Book: {{ title }}</h2></div>
     <div style="font-size: 1vw;" className="description">
       <p> {{ drink.instructions }} </p>
     </div>
@@ -77,34 +109,59 @@ const reroll = () => {
     </div>
     <div v-show=" drink.notes && drink.notes.length > 0" style="font-size: 1vw;" className="description">
 <!--      <p> Related book genres: {{ genres.join(", ") }}</p>-->
-      <p>Notes: {{drink.notes}}</p>
+      <p>Note: {{drink.notes}}</p>
     </div>
     <div className="description">
       <button @click="changePage">{{buttonName}}</button>
-      <button @click="reroll">ReRoll</button>
+      <button @click="reroll">Reroll</button>
     </div>
   </div>
-  <div v-show="!showDrink" className="pic">
-    <el-image :src="coverLink" fit="cover" alt="Alcohol Image Onload" style="width: 100%;height: 100%"/>
+  <div v-show="!showDrink" className="pic" id="imageContainer">
+    <el-image :src="coverLink" fit="cover" alt="Alcohol Image Onload" style="width: 60%;height: 60%;"/>
   </div>
   <div v-show="!showDrink" className="pic">
-    <div className="name"><h1>{{ title }}</h1></div>
+    <div className="name" v-show="title != ''"><h1>{{ title }}</h1></div>
+    <div className="name" v-show="authors.length > 0"> <h2> By: {{formatAuthors(authors)}} </h2> </div>
+    <div className="name"><h3> {{ formatPublicationInfo(publisher, publicationDate) }} </h3></div>
     <div style="font-size: 1vw;" className="description">
-      <p> {{ author }} </p>
+      {{ description }}
     </div>
-
     <div className="description">
-      <button @click="changePage">{{buttonName}}</button>
+      <button class="bookInfo" @click="changePage">{{buttonName}}</button>
     </div>
   </div>
 </template>
 
 <style scoped>
+
+#imageContainer {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
 .description button {
   color: white;
+  font-size: 2.3vh;
   background-color: #992e22;
-  width: 5vw;
+  width: 15vw;
+  height: 5vh;
+  border: 1px solid white;
+  border-radius: 3px;
+  text-align: center;
+  margin: 1vh;
+  justify-items: center;
 }
+
+
+.bookInfo {
+  margin: 0 !important;
+}
+
+.description button:hover {
+  background-color: #87271d;
+}
+
 .pic {
   background-color: #e0ceb4;
   width: 50%;
@@ -115,7 +172,7 @@ const reroll = () => {
 
 .name {
   margin-top: 1vh;
-  font-size: 3vw;
+  font-size: 1vw;
   font-weight: normal;
   color: #992e22;
 }
@@ -129,10 +186,17 @@ h2 {
   font-weight: normal;
 }
 
+h3 {
+  font-size: 1.5vw;
+  font-weight: normal;
+}
+
 .description {
   margin-left: 2vw;
   margin-top: 2vh;
   font-size: 1vw;
   color: black;
+  position: flex;
+  justify-content: space-between;
 }
 </style>
