@@ -55,7 +55,7 @@ onBeforeMount(()=>{
 
   <div class="fullscreen">
     <Menu></Menu>
-    <perfect-scrollbar class="show" v-if="show===1">
+    <perfect-scrollbar class="show" v-if="show===1" :options="{ suppressScrollX: true }">
       <div class="drink-table" >
         <drink-item v-for="drink in drinks"
                     :name="drink.name" 
