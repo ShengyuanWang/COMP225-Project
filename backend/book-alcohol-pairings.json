@@ -47,10 +47,10 @@
         {
             "name": "Manhattan", 
             "type": "Cocktail", 
-            "key genres": ["n.y.","urban"],
+            "key genres": ["n.y.","urban","jazz"],
             "genres": ["19th century","n.y.","mystery & detective","biography & memoir","1920s","united states",
 				"thriller","historical fiction","mystery","20th century","espionage","urban","prohibition","mixology",
-				"thrillers & mystery"],
+				"thrillers & mystery","jazz"],
             "sentiment": 0.6, 
             "ingredients": [
                 "2 oz rye whiskey or bourbon", 
@@ -230,7 +230,7 @@
             ], 
             "instructions": "The Moscow Mule is a refreshing and zesty cocktail with a signature copper mug presentation. To craft this drink, start by filling a copper mug or highball glass with ice. Squeeze the juice from half a lime into the glass, and drop the spent lime shell in. Then, pour in 2 oz. of vodka. Top it off with approximately 4 oz. of ginger beer, or adjust to your preferred level of ginger flavor. Give it a gentle stir to mix the ingredients. To garnish, add a lime wheel or wedge for an extra burst of citrus aroma. The Moscow Mule is known for its crisp and tangy taste, making it a popular choice for a refreshing and enjoyable cocktail.", 
             "allergens": [], 
-            "image": "TBA", 
+            "image": "moscowMule",
             "no match drink": false, 
             "description": "The Moscow Mule is a refreshing and zesty cocktail with a signature copper mug presentation. It is made with vodka, lime juice and ginger beer."
         }, 
@@ -254,7 +254,7 @@
             ], 
             "instructions": "The Pan-Galactic Gargle Blaster is a cocktail inspired by Douglas Adams' \"The Hitchhiker's Guide to the Galaxy\" series. Fill a shaker with ice cubes. Add the gin, Blue Curacao, Peach Schnapps, Goldschlager, and orange juice to the shaker. Shake the ingredients well to chill the mixture. Strain the mixture into a highball or martini glass filled with ice. Top it off with a splash of club soda for effervescence. Garnish with a twist of lemon.", 
             "allergens": [], 
-            "image": "TBA", 
+            "image": "gargle",
             "no match drink": false, 
             "description": "The Pan-Galactic Gargle Blaster is a cocktail inspired by Douglas Adams' \"The Hitchhiker's Guide to the Galaxy\" series. It is a gin-based cocktail."
         }, 
@@ -383,10 +383,10 @@
         {
             "name": "Gimlet",
             "type": "Cocktail",
-            "key genres": ["noir","hard-boiled"],
+            "key genres": ["noir","hard-boiled","jazz"],
             "genres": ["mystery & detective","biography & memoir","hard-boiled","1960s","1940s","thriller",
-				"historical fiction","world war ii","mystery","20th century","espionage","noir","mixology","thrillers & mystery"
-				],
+				"historical fiction","world war ii","mystery","20th century","espionage","noir","mixology",
+                "thrillers & mystery","jazz"],
             "sentiment": 0.6,
             "ingredients": [
                 "2 oz gin",
@@ -426,17 +426,17 @@
             ], 
             "instructions": "Spiced wine is a classic cocktail with red wine, brandy and spices. To make spiced wine, start by adding 1/4 cup of brandy and 1/4 cup of honey to a saucepan. Then, add 1 sliced orange, 1 sliced lemon and 1 sliced lime. Next, add 1 cinnamon stick, 1 star anise, 1 tsp. of whole cloves, 1 tsp. of whole allspice, 1 tsp. of whole black peppercorns, 1 tsp. of whole cardamom pods and 1 tsp. of juniper berries. Finally, pour in 1 bottle of red wine. Heat the mixture over medium heat until it reaches a simmer. Then, reduce the heat to low and simmer for 15 minutes. Strain the mixture into a pitcher, and serve warm. The result is a beautifully simple yet sophisticated cocktail that's all about savoring the rich flavors of the liquor.", 
             "allergens": [], 
-            "image": "TBA", 
+            "image": "spicedWine",
             "no match drink": false, 
             "description": "Spiced wine is a classic cocktail with red wine, brandy and spices."
         }, 
         {
             "name": "Negroni",
             "type": "Cocktail",
-            "key genres": ["italy","espionage","noir","italian cooking"],
+            "key genres": ["italy","espionage","noir","italian cooking","jazz"],
             "genres": ["unrequited love","mystery & detective","biography & memoir","dystopian","hard-boiled",
 				"1940s","thriller","historical fiction","mystery","20th century","italy","espionage","noir","mixology",
-				"thrillers & mystery","italian cooking","punk culture"],
+				"thrillers & mystery","italian cooking","punk culture","jazz"],
             "sentiment": 0.5,
             "ingredients": [
                 "1 oz gin",
@@ -489,7 +489,7 @@
             ], 
             "instructions": "The Dark and Stormy is a classic cocktail with a signature copper mug presentation. To craft this drink, start by filling a copper mug or highball glass with ice. Squeeze the juice from half a lime into the glass, and drop the spent lime shell in. Then, pour in 2 oz. of dark rum. Top it off with approximately 3 oz. of ginger beer, or adjust to your preferred level of ginger flavor. Give it a gentle stir to mix the ingredients. To garnish, add a lime wheel or wedge for an extra burst of citrus aroma. The Dark and Stormy is known for its crisp and tangy taste, making it a popular choice for a refreshing and enjoyable cocktail.", 
             "allergens": [], 
-            "image": "TBA", 
+            "image": "dark",
             "no match drink": false, 
             "description": "The Dark and Stormy is a classic cocktail with a signature copper mug presentation. It is made with dark rum and ginger beer."
         }, 
@@ -511,7 +511,7 @@
             ], 
             "instructions": "The Corpse Reviver #2 is a cocktail that dates back to the 1930s and is part of the family of \"Corpse Reviver\" cocktails meant to, as the name suggests, revive the spirits. Here's the recipe for the Corpse Reviver #2: Fill a shaker with ice. Add the gin, Cointreau, Lillet Blanc, and fresh lemon juice to the shaker. Shake well to chill the ingredients. Rinse a chilled cocktail glass with a small amount of absinthe, discarding the excess. Strain the shaken mixture into the prepared glass. Garnish with a lemon twist.", 
             "allergens": [], 
-            "image": "TBA", 
+            "image": "corpse",
             "no match drink": false, 
             "description": "The Corpse Reviver #2 is a cocktail that dates back to the 1930s. It contains gin, Cointreau, Lillet Blanc, and lemon juice."
         }, 
@@ -550,10 +550,11 @@
             ], 
             "instructions": "A Daiquiri is a classic cocktail known for its simplicity and refreshing taste. To make a classic Daiquiri, fill a cocktail shaker with ice. Add the white rum, freshly squeezed lime juice, and simple syrup to the shaker. Shake well for about 15-20 seconds to chill the mixture. Strain the mixture into a chilled cocktail glass, such as a coupe glass or a martini glass. Garnish the drink with a lime wheel or wedge.", 
             "allergens": [], 
-            "image": "TBA", 
+            "image": "gimlet",
             "no match drink": false, 
             "description": "A Daiquiri is a classic cocktail known for its simplicity and refreshing taste. It combines white rum with lime juice and simple syrup."
-        }, 
+        },
+         
         {
             "name": "Irish Coffee",
             "type": "Cocktail",
@@ -569,7 +570,7 @@
             ],
             "instructions": "Irish coffee is a warm and comforting cocktail that combines coffee, Irish whiskey, sugar, and topped with whipped cream. To make Irish Coffee, start by brewing your favorite coffee. Pour it into a pre-warmed glass or mug. Add the brown sugar to the hot coffee and stir until dissolved. Stir in the Irish whiskey. Top the coffee with a generous dollop of whipped cream. You can garnish the whipped cream with a sprinkle of cocoa powder or nutmeg for added flavor if desired. The key to a good Irish coffee is using freshly brewed hot coffee, quality Irish whiskey, and properly whipped cream to top it off.",
             "allergens": ["gluten","lactose"],
-            "image": "TBA", 
+            "image": "irishCoffee",
             "no match drink": false, 
             "description": "Irish coffee is a warm and comforting cocktail that combines coffee, Irish whiskey, sugar, and topped with whipped cream."
         }, 
@@ -590,7 +591,7 @@
             ], 
             "instructions": "A Paloma is a refreshing and popular cocktail that originates from Mexico. Follow this recipe to make a Paloma: Fill the glass with ice. In a shaker, combine the tequila, freshly squeezed lime juice, and grapefruit juice. Shake well to mix the ingredients thoroughly. Strain the mixture into the prepared glass over ice. If using grapefruit soda, top off the glass with it. If not, use grapefruit juice and add soda water. Garnish the drink with a lime wedge or wheel.", 
             "allergens": [], 
-            "image": "TBA", 
+            "image": "paloma",
             "no match drink": false, 
             "description": "A Paloma is a refreshing and popular cocktail that originates from Mexico. It is made with tequila, lime juice, and grapefruit soda."
         }, 
@@ -611,7 +612,7 @@
             ],
             "instructions": "The Pisco Sour is a cocktail that originated in Peru and Chile. It is known for its balance of sweet, sour, and the frothy texture provided by the egg white. To make it: In a cocktail shaker, combine the Pisco, fresh lime juice, simple syrup, and egg white. Dry shake (shake without ice) vigorously for about 10-15 seconds. This helps create a frothy texture from the egg white. Add ice to the shaker and shake again for another 10-15 seconds to chill the mixture. Strain the cocktail into a chilled glass, typically a rocks glass or a sour glass. Garnish the foam on top with a few drops of Angostura bitters.",
             "allergens": ["egg"],
-            "image": "TBA", 
+            "image": "piscoSour",
             "no match drink": false, 
             "description": "The Pisco Sour is a cocktail that originated in Peru and Chile. It contains Pisco, lime juice, simple syrup."
         }, 
@@ -861,6 +862,24 @@
             "description": "An Astro Pop is a cocktail typically served in a test tube. It uses bsolut Raspberri vodka."
         }, 
         {
+            "name": "Sazerac", 
+            "type": "Cocktail", 
+            "key genres": ["occult","southern gothic","new orleans ","louisiana","hard-boiled","noir","jazz"],
+            "genres": ["occult","historical fiction","paranormal","united states","southern states",
+                "19th century","southern gothic","cooking","1920s","mystery","thriller","thrillers & mystery",
+                "paranormal fiction suspense & thriller","mixology","new orleans ","louisiana","hard-boiled","noir",
+                "mystery & detective","psychological thriller","psychological","jazz"],
+            "sentiment": 0.5, 
+            "ingredients": [
+                ""
+            ], 
+            "instructions": "TBA",
+            "allergens": [], 
+            "image": "sazerac", 
+            "no match drink": false, 
+            "description": ""
+        }, 
+        {
             "name": "Tequila Sunrise",
             "type": "Cocktail",
             "key genres": [],
@@ -967,9 +986,9 @@
         {
             "name": "Chardonnay", 
             "type": "Wine", 
-            "key genres": ["france"],
+            "key genres": ["france","domestic drama"],
             "genres": ["france","historical romance","mystery & detective","united states","domestic fiction",
-				"family life","historical fiction","mystery","contemporary fiction","drama","romance"],
+				"family life","historical fiction","mystery","contemporary fiction","drama","romance","domestic drama"],
             "sentiment": 0.6, 
             "ingredients": [
                 ""
@@ -1019,7 +1038,7 @@
             "key genres": ["spain","england"],
             "genres": ["17th century","19th century","historical romance","mystery & detective","spain",
 				"18th century","historical fiction","mystery","great britain","romantic comedy","england","romance",
-				"humorous"],
+				"humorous","english civil war"],
             "sentiment": 0.5, 
             "ingredients": [
                 ""
@@ -1189,8 +1208,7 @@
             "key genres": [], 
             "genres": ["17th century","hard-boiled","christmas stories","gothic","steampunk","thriller",
 				"horror","18th century","classics","science fiction","historical fiction","adventure","mystery","hard science fiction",
-				"celtic mythology","noir","ireland","great britain","russia","historical adventure","english cooking"
-				],
+				"celtic mythology","noir","ireland","great britain","russia","historical adventure","english cooking"],
             "sentiment": 0.6, 
             "ingredients": [
                 ""
@@ -1423,7 +1441,7 @@
         {
             "name": "Poit\u00edn", 
             "type": "Spirits", 
-            "key genres": ["ireland","celtic mythology"],
+            "key genres": ["ireland","celtic mythology","irish cooking"],
             "genres": ["mystery & detective","ireland","crime fiction","thriller","historical fiction",
 				"mystery","criminals","fantasy","celtic mythology","drama","crime mystery","thrillers & mystery",
 				"irish cooking"],
@@ -1546,8 +1564,7 @@
             "type": "Spirits", 
             "key genres": ["steampunk","hard-boiled","noir"],
             "genres": ["17th century","travel","hard-boiled","steampunk","thriller","historical fiction",
-				"classics","adventure","20th century","great britain","espionage","england","noir","historical adventure"
-				],
+				"classics","adventure","20th century","great britain","espionage","england","noir","historical adventure","english civil war"],
             "sentiment": -0.5, 
             "ingredients": [
                 ""

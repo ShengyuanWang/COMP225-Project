@@ -47,10 +47,10 @@
         {
             "name": "Manhattan", 
             "type": "Cocktail", 
-            "key genres": ["n.y.","urban"],
+            "key genres": ["n.y.","urban","jazz"],
             "genres": ["19th century","n.y.","mystery & detective","biography & memoir","1920s","united states",
 				"thriller","historical fiction","mystery","20th century","espionage","urban","prohibition","mixology",
-				"thrillers & mystery"],
+				"thrillers & mystery","jazz"],
             "sentiment": 0.6, 
             "ingredients": [
                 "2 oz rye whiskey or bourbon", 
@@ -383,10 +383,10 @@
         {
             "name": "Gimlet",
             "type": "Cocktail",
-            "key genres": ["noir","hard-boiled"],
+            "key genres": ["noir","hard-boiled","jazz"],
             "genres": ["mystery & detective","biography & memoir","hard-boiled","1960s","1940s","thriller",
-				"historical fiction","world war ii","mystery","20th century","espionage","noir","mixology","thrillers & mystery"
-				],
+				"historical fiction","world war ii","mystery","20th century","espionage","noir","mixology",
+                "thrillers & mystery","jazz"],
             "sentiment": 0.6,
             "ingredients": [
                 "2 oz gin",
@@ -433,10 +433,10 @@
         {
             "name": "Negroni",
             "type": "Cocktail",
-            "key genres": ["italy","espionage","noir","italian cooking"],
+            "key genres": ["italy","espionage","noir","italian cooking","jazz"],
             "genres": ["unrequited love","mystery & detective","biography & memoir","dystopian","hard-boiled",
 				"1940s","thriller","historical fiction","mystery","20th century","italy","espionage","noir","mixology",
-				"thrillers & mystery","italian cooking","punk culture"],
+				"thrillers & mystery","italian cooking","punk culture","jazz"],
             "sentiment": 0.5,
             "ingredients": [
                 "1 oz gin",
@@ -553,7 +553,8 @@
             "image": "TBA", 
             "no match drink": false, 
             "description": "A Daiquiri is a classic cocktail known for its simplicity and refreshing taste. It combines white rum with lime juice and simple syrup."
-        }, 
+        },
+         
         {
             "name": "Irish Coffee",
             "type": "Cocktail",
@@ -861,6 +862,24 @@
             "description": "An Astro Pop is a cocktail typically served in a test tube. It uses bsolut Raspberri vodka."
         }, 
         {
+            "name": "Sazerac", 
+            "type": "Cocktail", 
+            "key genres": ["occult","southern gothic","new orleans ","louisiana","hard-boiled","noir","jazz"],
+            "genres": ["occult","historical fiction","paranormal","united states","southern states",
+                "19th century","southern gothic","cooking","1920s","mystery","thriller","thrillers & mystery",
+                "paranormal fiction suspense & thriller","mixology","new orleans ","louisiana","hard-boiled","noir",
+                "mystery & detective","psychological thriller","psychological","jazz"],
+            "sentiment": 0.5, 
+            "ingredients": [
+                ""
+            ], 
+            "instructions": "TBA",
+            "allergens": [], 
+            "image": "sazerac", 
+            "no match drink": false, 
+            "description": ""
+        }, 
+        {
             "name": "Tequila Sunrise",
             "type": "Cocktail",
             "key genres": [],
@@ -967,9 +986,9 @@
         {
             "name": "Chardonnay", 
             "type": "Wine", 
-            "key genres": ["france"],
+            "key genres": ["france","domestic drama"],
             "genres": ["france","historical romance","mystery & detective","united states","domestic fiction",
-				"family life","historical fiction","mystery","contemporary fiction","drama","romance"],
+				"family life","historical fiction","mystery","contemporary fiction","drama","romance","domestic drama"],
             "sentiment": 0.6, 
             "ingredients": [
                 ""
@@ -1019,7 +1038,7 @@
             "key genres": ["spain","england"],
             "genres": ["17th century","19th century","historical romance","mystery & detective","spain",
 				"18th century","historical fiction","mystery","great britain","romantic comedy","england","romance",
-				"humorous"],
+				"humorous","english civil war"],
             "sentiment": 0.5, 
             "ingredients": [
                 ""
@@ -1189,8 +1208,7 @@
             "key genres": [], 
             "genres": ["17th century","hard-boiled","christmas stories","gothic","steampunk","thriller",
 				"horror","18th century","classics","science fiction","historical fiction","adventure","mystery","hard science fiction",
-				"celtic mythology","noir","ireland","great britain","russia","historical adventure","english cooking"
-				],
+				"celtic mythology","noir","ireland","great britain","russia","historical adventure","english cooking"],
             "sentiment": 0.6, 
             "ingredients": [
                 ""
@@ -1423,7 +1441,7 @@
         {
             "name": "Poit\u00edn", 
             "type": "Spirits", 
-            "key genres": ["ireland","celtic mythology"],
+            "key genres": ["ireland","celtic mythology","irish cooking"],
             "genres": ["mystery & detective","ireland","crime fiction","thriller","historical fiction",
 				"mystery","criminals","fantasy","celtic mythology","drama","crime mystery","thrillers & mystery",
 				"irish cooking"],
@@ -1546,8 +1564,7 @@
             "type": "Spirits", 
             "key genres": ["steampunk","hard-boiled","noir"],
             "genres": ["17th century","travel","hard-boiled","steampunk","thriller","historical fiction",
-				"classics","adventure","20th century","great britain","espionage","england","noir","historical adventure"
-				],
+				"classics","adventure","20th century","great britain","espionage","england","noir","historical adventure","english civil war"],
             "sentiment": -0.5, 
             "ingredients": [
                 ""

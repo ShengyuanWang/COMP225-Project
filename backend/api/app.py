@@ -192,8 +192,7 @@ class Pairing:
         else:
             top_matches = [drink_obj.get_drink_data() for drink_obj in heap_list[:len(heap_list)]]
 
-        threshold = .2
-        return sorted(top_matches, key=lambda drink_match: abs(drink_match["sentiment"] - sentiment) if abs(drink_match["sentiment"] - sentiment) < threshold else float('inf'))
+        return sorted(top_matches, key=lambda drink_match: abs(drink_match["sentiment"] - sentiment))
        
 
     def drink_heap_to_ordered_list(self, drink_heap):
