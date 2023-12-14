@@ -186,7 +186,7 @@ def check_book_alcohol_pairing_json():
             raise ValueError(f"There is a difference in the two json files.")
 
         entry_keys = list(entry1.keys())
-        if entry_keys != ['name', 'type', 'key genres', 'genres', 'sentiment', 'ingredients', 'instructions', 'allergens', 'image', 'no match drink']:
+        if entry_keys != ['name', 'type', 'key genres', 'genres', 'sentiment', 'ingredients', 'instructions', 'allergens', 'image', 'no match drink','description']:
                 if "name" in entry_keys:
                     name = entry1["name"]
                 else:
