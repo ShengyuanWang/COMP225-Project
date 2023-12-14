@@ -864,11 +864,11 @@
         {
             "name": "Sazerac", 
             "type": "Cocktail", 
-            "key genres": ["occult","southern gothic","new orleans ","louisiana","hard-boiled","noir"],
+            "key genres": ["occult","southern gothic","new orleans ","louisiana","hard-boiled","noir","jazz"],
             "genres": ["occult","historical fiction","paranormal","united states","southern states",
                 "19th century","southern gothic","cooking","1920s","mystery","thriller","thrillers & mystery",
                 "paranormal fiction suspense & thriller","mixology","new orleans ","louisiana","hard-boiled","noir",
-                "mystery & detective","psychological thriller","psychological"],
+                "mystery & detective","psychological thriller","psychological","jazz"],
             "sentiment": 0.5, 
             "ingredients": [
                 ""
