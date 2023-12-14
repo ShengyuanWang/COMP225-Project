@@ -45,6 +45,20 @@ console.log(image.value)
   box-shadow: 1vh 0.5vh 0.5vh #968163;
 }
 
+/* mobile formatting */
+@media screen and (max-width: 600px) {
+  .drink-item {
+    width: 80vw;
+  }
+}
+
+/* ipad formatting */
+@media screen and (max-width: 1200px) and  (min-width: 600px){
+  .drink-item {
+    width: 40vw;
+  }
+}
+
 .drink-item:hover {
   box-shadow: 1vh 0.5vh 0.5vh #111111;
 }
