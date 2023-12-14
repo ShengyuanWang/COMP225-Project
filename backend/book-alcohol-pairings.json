@@ -47,10 +47,10 @@
         {
             "name": "Manhattan", 
             "type": "Cocktail", 
-            "key genres": ["n.y.","urban"],
+            "key genres": ["n.y.","urban","jazz"],
             "genres": ["19th century","n.y.","mystery & detective","biography & memoir","1920s","united states",
 				"thriller","historical fiction","mystery","20th century","espionage","urban","prohibition","mixology",
-				"thrillers & mystery"],
+				"thrillers & mystery","jazz"],
             "sentiment": 0.6, 
             "ingredients": [
                 "2 oz rye whiskey or bourbon", 
@@ -383,10 +383,10 @@
         {
             "name": "Gimlet",
             "type": "Cocktail",
-            "key genres": ["noir","hard-boiled"],
+            "key genres": ["noir","hard-boiled","jazz"],
             "genres": ["mystery & detective","biography & memoir","hard-boiled","1960s","1940s","thriller",
-				"historical fiction","world war ii","mystery","20th century","espionage","noir","mixology","thrillers & mystery"
-				],
+				"historical fiction","world war ii","mystery","20th century","espionage","noir","mixology",
+                "thrillers & mystery","jazz"],
             "sentiment": 0.6,
             "ingredients": [
                 "2 oz gin",
@@ -433,10 +433,10 @@
         {
             "name": "Negroni",
             "type": "Cocktail",
-            "key genres": ["italy","espionage","noir","italian cooking"],
+            "key genres": ["italy","espionage","noir","italian cooking","jazz"],
             "genres": ["unrequited love","mystery & detective","biography & memoir","dystopian","hard-boiled",
 				"1940s","thriller","historical fiction","mystery","20th century","italy","espionage","noir","mixology",
-				"thrillers & mystery","italian cooking","punk culture"],
+				"thrillers & mystery","italian cooking","punk culture","jazz"],
             "sentiment": 0.5,
             "ingredients": [
                 "1 oz gin",
@@ -553,7 +553,8 @@
             "image": "gimlet",
             "no match drink": false, 
             "description": "A Daiquiri is a classic cocktail known for its simplicity and refreshing taste. It combines white rum with lime juice and simple syrup."
-        }, 
+        },
+         
         {
             "name": "Irish Coffee",
             "type": "Cocktail",
@@ -859,6 +860,24 @@
             "image": "astroPop", 
             "no match drink": false, 
             "description": "An Astro Pop is a cocktail typically served in a test tube. It uses bsolut Raspberri vodka."
+        }, 
+        {
+            "name": "Sazerac", 
+            "type": "Cocktail", 
+            "key genres": ["occult","southern gothic","new orleans ","louisiana","hard-boiled","noir","jazz"],
+            "genres": ["occult","historical fiction","paranormal","united states","southern states",
+                "19th century","southern gothic","cooking","1920s","mystery","thriller","thrillers & mystery",
+                "paranormal fiction suspense & thriller","mixology","new orleans ","louisiana","hard-boiled","noir",
+                "mystery & detective","psychological thriller","psychological","jazz"],
+            "sentiment": 0.5, 
+            "ingredients": [
+                ""
+            ], 
+            "instructions": "TBA",
+            "allergens": [], 
+            "image": "sazerac", 
+            "no match drink": false, 
+            "description": ""
         }, 
         {
             "name": "Tequila Sunrise",
