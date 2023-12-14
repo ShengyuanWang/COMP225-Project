@@ -40,7 +40,7 @@ const getData = (drink) => {
   //   //请求失败的回调函数
   //   console.log(err);
   // })
-  router.push({ path: 'detail', query: {name: drink.name, type: drink.type, genres:drink.genres, ingredients:drink.ingredients, instructions:drink.instructions, liquid:drink.image}});
+  router.push({ path: 'detail', query: {name: drink.name, type: drink.type, genres:drink.genres, ingredients:drink.ingredients, instructions:drink.instructions, description:drink.description, liquid:drink.image}});
 }
 
 
@@ -61,6 +61,7 @@ onBeforeMount(()=>{
                     :name="drink.name" 
                     :ingredients="drink.ingredients"
                     :instructions="drink.instructions"
+                    :description="drink.description"
                     :liquid="drink.image"
                     url="https://firebasestorage.googleapis.com/v0/b/comp225-810dc.appspot.com/o/images%2FredWine.png?alt=media&token=2af7d5ed-b1e1-4382-95fe-2cdcc62fa79e"
                     @click="getData(drink)"
