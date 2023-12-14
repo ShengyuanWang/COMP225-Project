@@ -967,9 +967,9 @@
         {
             "name": "Chardonnay", 
             "type": "Wine", 
-            "key genres": ["france"],
+            "key genres": ["france","domestic drama"],
             "genres": ["france","historical romance","mystery & detective","united states","domestic fiction",
-				"family life","historical fiction","mystery","contemporary fiction","drama","romance"],
+				"family life","historical fiction","mystery","contemporary fiction","drama","romance","domestic drama"],
             "sentiment": 0.6, 
             "ingredients": [
                 ""
@@ -1423,7 +1423,7 @@
         {
             "name": "Poit\u00edn", 
             "type": "Spirits", 
-            "key genres": ["ireland","celtic mythology"],
+            "key genres": ["ireland","celtic mythology","irish cooking"],
             "genres": ["mystery & detective","ireland","crime fiction","thriller","historical fiction",
 				"mystery","criminals","fantasy","celtic mythology","drama","crime mystery","thrillers & mystery",
 				"irish cooking"],
