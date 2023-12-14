@@ -1019,7 +1019,7 @@
             "key genres": ["spain","england"],
             "genres": ["17th century","19th century","historical romance","mystery & detective","spain",
 				"18th century","historical fiction","mystery","great britain","romantic comedy","england","romance",
-				"humorous"],
+				"humorous","english civil war"],
             "sentiment": 0.5, 
             "ingredients": [
                 ""
@@ -1189,8 +1189,7 @@
             "key genres": [], 
             "genres": ["17th century","hard-boiled","christmas stories","gothic","steampunk","thriller",
 				"horror","18th century","classics","science fiction","historical fiction","adventure","mystery","hard science fiction",
-				"celtic mythology","noir","ireland","great britain","russia","historical adventure","english cooking"
-				],
+				"celtic mythology","noir","ireland","great britain","russia","historical adventure","english cooking"],
             "sentiment": 0.6, 
             "ingredients": [
                 ""
@@ -1546,8 +1545,7 @@
             "type": "Spirits", 
             "key genres": ["steampunk","hard-boiled","noir"],
             "genres": ["17th century","travel","hard-boiled","steampunk","thriller","historical fiction",
-				"classics","adventure","20th century","great britain","espionage","england","noir","historical adventure"
-				],
+				"classics","adventure","20th century","great britain","espionage","england","noir","historical adventure","english civil war"],
             "sentiment": -0.5, 
             "ingredients": [
                 ""
