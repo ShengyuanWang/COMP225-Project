@@ -83,7 +83,7 @@
             "allergens": [], 
             "image": "martini", 
             "no match drink": false, 
-            "description": ""
+            "description": "The martini is one of the most iconic cocktails of all time, made with gin or vodka as well as dry vermouth."
         }, 
         {
             "name": "Pi\u00f1a Colada", 
@@ -104,7 +104,7 @@
             "allergens": [], 
             "image": "pinaColada", 
             "no match drink": false, 
-            "description": ""
+            "description": "The pi\u00f1a colada is a classic tropical cocktail with rum, pineapple and coconut milk."
         }, 
         {
             "name": "Blue Lagoon", 
@@ -123,7 +123,7 @@
             "allergens": [], 
             "image": "blueLagoon", 
             "no match drink": false, 
-            "description": ""
+            "description": "The Blue Lagoon is a classic cocktail with vodka, blue cura\u00e7ao and lemonade."
         }, 
         {
             "name": "Mojito", 
@@ -145,7 +145,7 @@
             "allergens": [], 
             "image": "mojito", 
             "no match drink": false, 
-            "description": ""
+            "description": "The mojito is a classic Cuban cocktail with rum, mint and lime juice."
         }, 
         {
             "name": "Bloody Mary", 
@@ -170,7 +170,7 @@
             "allergens": ["soy","gluten","fish","shellfish"],
             "image": "bloodyMary", 
             "no match drink": false, 
-            "description": ""
+            "description": "The Bloody Mary is a classic brunch cocktail with vodka, tomato juice and a combination of spices and flavorings."
         }, 
         {
             "name": "Cosmopolitan", 
@@ -191,7 +191,7 @@
             "allergens": [], 
             "image": "cosmopolitan", 
             "no match drink": false, 
-            "description": ""
+            "description": "The cosmopolitan is a classic cocktail with vodka, triple sec, cranberry juice and lime juice."
         }, 
         {
             "name": "Aperol Spritz", 
@@ -212,7 +212,7 @@
             "allergens": [], 
             "image": "aperolSpritz", 
             "no match drink": false, 
-            "description": ""
+            "description": "The Aperol spritz is a classic Italian cocktail with Prosecco, Aperol and soda water."
         }, 
         {
             "name": "Moscow Mule", 
@@ -232,7 +232,7 @@
             "allergens": [], 
             "image": "TBA", 
             "no match drink": false, 
-            "description": ""
+            "description": "The Moscow Mule is a refreshing and zesty cocktail with a signature copper mug presentation. It is made with vodka, lime juice and ginger beer."
         }, 
         {
             "name": "Pan-Galactic Gargle Blaster", 
@@ -256,7 +256,7 @@
             "allergens": [], 
             "image": "TBA", 
             "no match drink": false, 
-            "description": ""
+            "description": "The Pan-Galactic Gargle Blaster is a cocktail inspired by Douglas Adams' \"The Hitchhiker's Guide to the Galaxy\" series. It is a gin-based cocktail."
         }, 
         {
             "name": "Death in the Afternoon", 
@@ -273,7 +273,7 @@
             "allergens": [], 
             "image": "death", 
             "no match drink": false, 
-            "description": ""
+            "description": "The \"Death in the Afternoon\" is a classic cocktail created by Ernest Hemingway. It is a combination of Absinthe and Champagne."
         }, 
         {
             "name": "Espresso Martini", 
@@ -293,7 +293,7 @@
             "allergens": [], 
             "image": "espresso", 
             "no match drink": false, 
-            "description": ""
+            "description": "The espresso martini is a classic cocktail with vodka, Kahl\u00faa and espresso."
         }, 
         {
             "name": "Vodka Cranberry", 
@@ -312,7 +312,7 @@
             "allergens": [], 
             "image": "vodkaCran", 
             "no match drink": false, 
-            "description": ""
+            "description": "The vodka cranberry is a classic cocktail with vodka and cranberry juice."
         }, 
         {
             "name": "Sex on the Beach", 
@@ -334,7 +334,7 @@
             "allergens": [], 
             "image": "sob", 
             "no match drink": false, 
-            "description": ""
+            "description": "Sex on the Beach is a tropical and fruity cocktail that's both colorful and delightful. It contains vodka, peach schnapps, organge juice, and cranberry juice. "
         }, 
         {
             "name": "Sangria", 
@@ -359,7 +359,7 @@
             "allergens": [], 
             "image": "sangria", 
             "no match drink": false, 
-            "description": ""
+            "description": "Sangria is a classic Spanish cocktail with red wine, brandy and fruit that is often served in a large pitcher."
         }, 
         {
             "name": "Sonic Screwdriver", 
@@ -378,7 +378,7 @@
             "allergens": [], 
             "image": "sonic", 
             "no match drink": false, 
-            "description": ""
+            "description": "The Sonic Screwdriver is a refreshing and zesty cocktail with a signature copper mug presentation. It is made with orange juice and vodka."
         }, 
         {
             "name": "Gimlet", 
@@ -399,7 +399,7 @@
             "allergens": [], 
             "image": "gimlet", 
             "no match drink": true, 
-            "description": ""
+            "description": "A Gimlet is a classic cocktail known for its simplicity and refreshing taste. It combines gin with simple syrup and lime juice."
         }, 
         {
             "name": "Spiced Wine", 
@@ -428,7 +428,7 @@
             "allergens": [], 
             "image": "TBA", 
             "no match drink": false, 
-            "description": ""
+            "description": "Spiced wine is a classic cocktail with red wine, brandy and spices."
         }, 
         {
             "name": "Negroni", 
@@ -449,7 +449,7 @@
             "allergens": [], 
             "image": "negroni", 
             "no match drink": false, 
-            "description": ""
+            "description": "Negroni is a bold, classic Italian cocktail known for its balance of bitter and sweet flavors. It uses gin, Campari, and sweet vermouth."
         }, 
         {
             "name": "Gin and Tonic", 
@@ -491,7 +491,7 @@
             "allergens": [], 
             "image": "TBA", 
             "no match drink": false, 
-            "description": ""
+            "description": "The Dark and Stormy is a classic cocktail with a signature copper mug presentation. It is made with dark rum and ginger beer."
         }, 
         {
             "name": "Corpse Reviver #2", 
@@ -513,7 +513,7 @@
             "allergens": [], 
             "image": "TBA", 
             "no match drink": false, 
-            "description": ""
+            "description": "The Corpse Reviver #2 is a classic cocktail that dates back to the 1930s. It contains gin, Cointreau, Lillet Blanc, and lemon juice."
         }, 
         {
             "name": "Mimosa", 
@@ -537,7 +537,7 @@
             "name": "Daiquiri", 
             "type": "Cocktail", 
             "key genres": ["caribbean area","cuba","romantic comedy","1940s"],
-            "genres": ["caribbean area","travel","love in adolescence","1940s","1960s","adolescence",
+            "genres": ["caribbean area","new orleans ", "travel","love in adolescence","1940s","1960s","adolescence",
 				"adventure","mystery","cuba","nineteen sixties","nineteen forties","romance","humorous","romantic comedy"
 				],
             "sentiment": 0.7, 
@@ -552,7 +552,7 @@
             "allergens": [], 
             "image": "TBA", 
             "no match drink": false, 
-            "description": ""
+            "description": "A Daiquiri is a classic cocktail known for its simplicity and refreshing taste. It combines white rum with lime juice and simple syrup."
         }, 
         {
             "name": "Irish Coffee", 
@@ -571,7 +571,7 @@
             "allergens": ["gluten","lactose"],
             "image": "TBA", 
             "no match drink": false, 
-            "description": ""
+            "description": "Irish coffee is a warm and comforting cocktail that combines coffee, Irish whiskey, sugar, and topped with whipped cream."
         }, 
         {
             "name": "Paloma", 
@@ -592,7 +592,7 @@
             "allergens": [], 
             "image": "TBA", 
             "no match drink": false, 
-            "description": ""
+            "description": "A Paloma is a refreshing and popular cocktail that originates from Mexico. It is made with tequila, lime juice, and grapefruit soda."
         }, 
         {
             "name": "Pisco Sour", 
@@ -613,7 +613,7 @@
             "allergens": ["egg"],
             "image": "TBA", 
             "no match drink": false, 
-            "description": ""
+            "description": "The Pisco Sour is a classic cocktail that originated in Peru and Chile. It contains Pisco, lime juice, simple syrup."
         }, 
         {
             "name": "Alien Brain Hemorrhage", 
@@ -632,7 +632,7 @@
             "allergens": ["lactose"],
             "image": "alien", 
             "no match drink": false, 
-            "description": ""
+            "description": "The Alien Brain Hemorrhage is a visually striking and slightly eerie shooter cocktail. It uses  Peach Schnapps, Baileys, Blue Curacao and a few drops of Grenadine."
         }, 
         {
             "name": "Amaretto Sour", 
@@ -653,13 +653,13 @@
             "allergens": ["tree nuts"],
             "image": "whiskeySour", 
             "no match drink": false, 
-            "description": ""
+            "description": "The Amaretto Sour is known for its smooth and slightly sweet taste. It is made with Amaretto, lemon juice, and simple syrup."
         }, 
         {
             "name": "Long Island Iced Tea", 
             "type": "Cocktail", 
             "key genres": ["long island","erotica","southern gothic","noir"],
-            "genres": ["n.y.","adult romance","crime fiction","united states","thriller","epic","erotica",
+            "genres": ["n.y.","adult romance", "gritty", "crime fiction","united states","thriller","epic","erotica",
 				"classics","romantic suspense","psychological","long island","historical fiction","mystery","criminals",
 				"fantasy","southern gothic","drama","noir","mixology","crime mystery","thrillers & mystery","psychological thriller"
 				],
@@ -680,7 +680,7 @@
             "allergens": [], 
             "image": "longIsland", 
             "no match drink": false, 
-            "description": ""
+            "description": "The Long Island Iced Tea is a popular and potent cocktail known for its mix of multiple spirits."
         }, 
         {
             "name": "Mai Tai", 
@@ -702,7 +702,7 @@
             "allergens": ["tree nuts"],
             "image": "maiTai", 
             "no match drink": false, 
-            "description": ""
+            "description": "The Mai Tai is a classic tropical cocktail known for its refreshing and fruity flavor. It is includes both  white and dark rum."
         }, 
         {
             "name": "Whiskey Sour", 
@@ -722,7 +722,7 @@
             "allergens": ["gluten"],
             "image": "whiskeySour", 
             "no match drink": false, 
-            "description": ""
+            "description": "The Whiskey Sour is a classic whiskey cocktail. It combines Bourbon or Rye whiskey with lemon juice and simple syrup."
         }, 
         {
             "name": "French 75", 
@@ -743,7 +743,7 @@
             "allergens": [], 
             "image": "french75", 
             "no match drink": false, 
-            "description": ""
+            "description": "The French 75 is a delightful and refreshing cocktail, and it's perfect for celebrations. It uses gin, Champagne, lemon juice, and simple syrup."
         }, 
         {
             "name": "Vampire's Kiss", 
@@ -764,7 +764,7 @@
             "allergens": [], 
             "image": "vampiresKiss", 
             "no match drink": false, 
-            "description": ""
+            "description": "The Vampire's Kiss is characterized by its vibrant red color and sweet-tart flavor profile. It uses vodka, cranberry juice, grenadine, and triple sec."
         }, 
         {
             "name": "Black Magic Cocktail", 
@@ -786,14 +786,14 @@
             "allergens": [], 
             "image": "blackMagic", 
             "no match drink": false, 
-            "description": ""
+            "description": "The Black Magic cocktail is known for its dark and mysterious appearance. It uses black vodka and both orange and coffee liqueur."
         }, 
         {
             "name": "The Zombie", 
             "type": "Cocktail", 
             "key genres": ["zombies","frankenstein "],
             "genres": ["1950s","travel","zombies","frankenstein ","mystery & detective","pirates","paranormal fiction suspense & thriller",
-				"1960s","supernatural thrillers","thriller","horror","adventure","paranormal","mystery","20th century",
+				"1960s","supernatural thrillers", "gritty", "thriller","horror","adventure","paranormal","mystery","20th century",
 				"thrillers & mystery"],
             "sentiment": 0.5, 
             "ingredients": [
@@ -839,7 +839,7 @@
             "allergens": [], 
             "image": "witchesBrew", 
             "no match drink": false, 
-            "description": ""
+            "description": "A Witches' Brew is often a Halloween-themed punch or cocktail with a spooky and colorful presentation, made with black vodka."
         }, 
         {
             "name": "Astro Pop", 
@@ -858,7 +858,7 @@
             "allergens": [], 
             "image": "astroPop", 
             "no match drink": false, 
-            "description": ""
+            "description": "An Astro Pop is a cocktail typically served in a test tube. It uses bsolut Raspberri vodka."
         }, 
         {
             "name": "Tequila Sunrise", 
@@ -878,7 +878,7 @@
             "allergens": [], 
             "image": "tequilaSunrise", 
             "no match drink": false, 
-            "description": ""
+            "description": "The Tequila Sunrise is a classic cocktail known for its vibrant appearance, with shades resembling a sunrise."
         }, 
         {
             "name": "Mint Julep", 
@@ -911,7 +911,7 @@
             "allergens": [], 
             "image": "rose", 
             "no match drink": false, 
-            "description": ""
+            "description": "Moscato is a sweet and aromatic white wine, known for its light, fruity flavors and floral notes."
         }, 
         {
             "name": "Pinot Noir", 
@@ -927,7 +927,7 @@
             "allergens": [], 
             "image": "redWine", 
             "no match drink": false, 
-            "description": ""
+            "description": "Pinot Noir is a red wine with a delicate and complex profile, featuring flavors of red berries, earthy undertones, and a smooth, light texture."
         }, 
         {
             "name": "Merlot", 
@@ -943,7 +943,7 @@
             "allergens": [], 
             "image": "redWine", 
             "no match drink": true, 
-            "description": ""
+            "description": "Merlot is a red wine characterized by its velvety texture, medium to full body, and flavors of ripe plum, cherry, and herbal notes"
         }, 
         {
             "name": "Ros\u00e9", 
@@ -959,7 +959,7 @@
             "allergens": [], 
             "image": "rose", 
             "no match drink": false, 
-            "description": ""
+            "description": "Rosé is a pink wine with a delightful balance of fresh acidity and fruity notes, typically showcasing flavors of strawberries, raspberries, and sometimes citrus"
         }, 
         {
             "name": "Chardonnay", 
@@ -975,7 +975,7 @@
             "allergens": [], 
             "image": "whiteWine", 
             "no match drink": false, 
-            "description": ""
+            "description": "Chardonnay is a white wine that exhibits a diverse spectrum of styles, from oaked and buttery to unoaked and crisp, often featuring flavors of green apple, citrus, and vanilla."
         }, 
         {
             "name": "Dry Vermouth", 
@@ -991,7 +991,7 @@
             "allergens": [], 
             "image": "whiteWine", 
             "no match drink": false, 
-            "description": ""
+            "description": "Dry Vermouth is a fortified and aromatized white wine with herbal and botanical infusions, imparting a subtle bitterness and complex flavor profile."
         }, 
         {
             "name": "Sweet Vermouth", 
@@ -1008,7 +1008,7 @@
             "allergens": [], 
             "image": "redWine", 
             "no match drink": false, 
-            "description": ""
+            "description": "Sweet Vermouth is a fortified red wine infused with a blend of aromatic herbs and spices, offering a rich and slightly sweet profile with notes of dark fruits, caramel, and botanicals"
         }, 
         {
             "name": "Sherry", 
@@ -1025,7 +1025,7 @@
             "allergens": [], 
             "image": "redWine", 
             "no match drink": false, 
-            "description": ""
+            "description": "Sherry is a fortified wine hailing from Spain, featuring a wide range of styles from dry to sweet, with distinctive nutty, briny, and sometimes fruity flavors"
         }, 
         {
             "name": "Champagne", 
@@ -1042,7 +1042,7 @@
             "allergens": [], 
             "image": "champagne", 
             "no match drink": false, 
-            "description": ""
+            "description": "Champagne is a sparkling wine from the Champagne region of France, celebrated for its effervescence, crisp acidity, and notes of citrus, apple, and brioche, often associated with joyous celebrations and toasts."
         }, 
         {
             "name": "Tempranillo", 
@@ -1059,7 +1059,7 @@
             "allergens": [], 
             "image": "redWine", 
             "no match drink": false, 
-            "description": ""
+            "description": "Tempranillo is a red wine grape variety originating from Spain, producing wines with flavors of red berries and plum, known for its versatility."
         }, 
         {
             "name": "Zinfandel", 
@@ -1077,7 +1077,7 @@
             "allergens": [], 
             "image": "redWine", 
             "no match drink": false, 
-            "description": ""
+            "description": "Zinfandel is a red wine with bold and jammy characteristics, often showcasing flavors of blackberry, raspberry, and pepper."
         }, 
         {
             "name": "Prosecco", 
@@ -1094,7 +1094,7 @@
             "allergens": [], 
             "image": "champagne", 
             "no match drink": false, 
-            "description": ""
+            "description": "Prosecco is a sparkling white wine from Italy, renowned for its light and effervescent character, featuring crisp acidity, floral notes, and flavors of green apple and pear"
         }, 
         {
             "name": "Cabernet Sauvignon", 
@@ -1162,7 +1162,7 @@
             "allergens": [], 
             "image": "whiteWine", 
             "no match drink": false, 
-            "description": ""
+            "description": "Mead is an alcoholic beverage created by fermenting honey with water."
         }, 
         {
             "name": "Pilsner", 
@@ -1178,7 +1178,7 @@
             "allergens": ["gluten"],
             "image": "beer", 
             "no match drink": true, 
-            "description": ""
+            "description": "Pislner is a type of pale lager orignating in the Czech Republic. It has a crisp and dry taste."
         }, 
         {
             "name": "Stout", 
@@ -1196,7 +1196,7 @@
             "allergens": ["gluten"],
             "image": "beer", 
             "no match drink": false, 
-            "description": ""
+            "description": "A stout is a dark beer very similar to a porter, but usally with a higher alcohol content."
         }, 
         {
             "name": "IPA", 
@@ -1213,7 +1213,7 @@
             "allergens": ["gluten"],
             "image": "beer", 
             "no match drink": false, 
-            "description": ""
+            "description": "An IPA, or Indian Pale Ale, is a type of pale ale known for its high alcohol content."
         }, 
         {
             "name": "Guinness", 
@@ -1229,13 +1229,13 @@
             "allergens": ["gluten"],
             "image": "beer", 
             "no match drink": false, 
-            "description": ""
+            "description": "A Guinness is a classic irish beer."
         }, 
         {
             "name": "Lager", 
             "type": "Beer", 
             "key genres": ["sports","friendship"],
-            "genres": ["friendship in adolescence","1950s","1940s","friendship","adventure","1960s","domestic fiction",
+            "genres": ["friendship in adolescence","1950s", "gritty", "1940s","friendship","adventure","1960s","domestic fiction",
 				"humorous","1930s","female friendship","adolescence","male friendship","mystery","contemporary fiction",
 				"sports","india","mexico","japan"],
             "sentiment": 0.5, 
@@ -1246,7 +1246,7 @@
             "allergens": ["gluten"],
             "image": "beer", 
             "no match drink": true, 
-            "description": ""
+            "description": "A Lager is a light beer orignally from Bavaria."
         }, 
         {
             "name": "Porter", 
@@ -1263,7 +1263,7 @@
             "allergens": ["gluten"],
             "image": "beer", 
             "no match drink": false, 
-            "description": ""
+            "description": "Porter is a dark beer made by using brown malt."
         }, 
         {
             "name": "Ale", 
@@ -1280,7 +1280,7 @@
             "allergens": ["gluten"],
             "image": "beer", 
             "no match drink": false, 
-            "description": ""
+            "description": "Ale is a lighter beer that is full-bodied and fruity."
         }, 
         {
             "name": "Soju", 
@@ -1298,7 +1298,7 @@
             "allergens": [], 
             "image": "shot", 
             "no match drink": false, 
-            "description": ""
+            "description": "Soju is a traditional Korean distilled spirit with a mild flavor."
         }, 
         {
             "name": "Sake", 
@@ -1328,11 +1328,11 @@
             "ingredients": [
                 ""
             ], 
-            "instructions": "TBA", 
+            "instructions": "Moonshine is a high-proof spirit that is usally made illegally. It is most often a type of Whiskey. It can be consumed as a shot.", 
             "allergens": ["gluten"],
             "image": "shot", 
             "no match drink": false, 
-            "description": ""
+            "description": "Moonshine is a high-proof spirit that is usally made illegally."
         }, 
         {
             "name": "Baijiu", 
@@ -1344,11 +1344,11 @@
             "ingredients": [
                 ""
             ], 
-            "instructions": "TBA", 
+            "instructions": "Baijiu is a high-alcohol content Chinese spirit usually made from sorghum. It is served room temperature in small glasses, often as part of a toast.", 
             "allergens": ["gluten"],
             "image": "shot", 
             "no match drink": false, 
-            "description": ""
+            "description": "Baijiu is a high-alcohol content Chinese spirit usually made from sorghum."
         }, 
         {
             "name": "Green Chartreuse", 
@@ -1361,14 +1361,14 @@
             "ingredients": [
                 ""
             ], 
-            "instructions": "Green Chartreuse is a herbal liqueur that is typically served chilled in a small liqueur glass. Its intense flavors are usually enjoyed after a meal.", 
+            "instructions": "Green Chartreuse is a herbal liqueur made by Grande Chartreuse monastery. It is typically served chilled in a small liqueur glass. Its intense flavors are usually enjoyed after a meal.", 
             "allergens": [], 
             "image": "greenChartreuse", 
             "no match drink": false, 
-            "description": ""
+            "description": "Green Chartreuse is a herbal liqueur made by Grande Chartreuse monastery."
         }, 
         {
-            "name": "Aquavit", 
+            "name": "Akvavit", 
             "type": "Spirits", 
             "key genres": ["scandinavia","vikings","noir"],
             "genres": ["scandinavia","vikings","cooking","mystery & detective","mystery","noir","crime fiction",
@@ -1378,11 +1378,11 @@
             "ingredients": [
                 ""
             ], 
-            "instructions": "TBA", 
+            "instructions": "Akvavit is a scandinavia spirit made from grain or potatoes. It is drunken either during festive occasions or as an aperitif. It is served in a shot glass, and can be either served chilled and taken as a shot, or it can be served room temperature and enjoyed slowly.", 
             "allergens": ["gluten"],
             "image": "shot", 
             "no match drink": false, 
-            "description": ""
+            "description": "Akvavit is a scandinavia spirit made from grain or potatoes. It is drunken either during festive occasions or as an aperitif."
         }, 
         {
             "name": "Vodka", 
@@ -1395,11 +1395,11 @@
             "ingredients": [
                 "Lemon wedge (optional)"
             ], 
-            "instructions": "Vodka is often served in a shot glass. Enjoy taking a shot with a chaser or a lemon wedge.", 
+            "instructions": "Vodka is a classic and smooth spirit. It is often served in a shot glass. Enjoy taking a shot with a chaser or a lemon wedge.", 
             "allergens": [], 
             "image": "shot", 
             "no match drink": false, 
-            "description": ""
+            "description": "Vodka is a classic and smooth spirit."
         }, 
         {
             "name": "Baileys", 
@@ -1415,7 +1415,7 @@
             "allergens": ["lactose","gluten"],
             "image": "rumchata", 
             "no match drink": false, 
-            "description": ""
+            "description": "Baileys is a creamy liqueur often served chilled."
         }, 
         {
             "name": "Poit\u00edn", 
@@ -1428,11 +1428,11 @@
             "ingredients": [
                 ""
             ], 
-            "instructions": "Poit\u00edn is best consumed at room temperature. Some people prefer it chilled or add a small amount of water.", 
+            "instructions": "Poit\u00edn is an irish moonshine. It is best consumed at room temperature. Some people prefer it chilled or add a small amount of water.", 
             "allergens": ["gluten"],
             "image": "shot", 
             "no match drink": false, 
-            "description": ""
+            "description": "Poit\u00edn is an irish moonshine."
         }, 
         {
             "name": "Dark Rum", 
@@ -1446,11 +1446,11 @@
             "ingredients": [
                 ""
             ], 
-            "instructions": "Dark rum is can be enjoyed at room temperature, over ice, or added to hot beverages during colder months.", 
+            "instructions": "Dark rum is a dark-colored rum made with caramelized sugar or molasses. It can be enjoyed at room temperature, over ice, or added to hot beverages during colder months.", 
             "allergens": [], 
             "image": "whiskey", 
             "no match drink": false, 
-            "description": ""
+            "description": "Dark rum is a dark-colored rum made with caramelized sugar or molasses."
         }, 
         {
             "name": "Witbier", 
@@ -1466,7 +1466,7 @@
             "allergens": ["gluten"],
             "image": "beer", 
             "no match drink": false, 
-            "description": ""
+            "description": "Witbier is a Belgian-style wheat beer."
         }, 
         {
             "name": "Whiskey", 
@@ -1481,11 +1481,11 @@
             "ingredients": [
                 ""
             ], 
-            "instructions": "Whiskey is usually served on the rocks (over ice) in a snifter or tulip glass.", 
+            "instructions": "Whiskey is a classic spirit known for its complex taste. It is is usually served on the rocks (over ice) in a snifter or tulip glass.", 
             "allergens": ["gluten"],
             "image": "whiskey", 
             "no match drink": false, 
-            "description": ""
+            "description": "Whiskey is a classic spirit known for its complex taste."
         }, 
         {
             "name": "Malt Liquor", 
@@ -1498,11 +1498,11 @@
             "ingredients": [
                 ""
             ], 
-            "instructions": "Malt liquor is sometimes enjoyed straight from the container, but can also be poured into a pint glass or beer mug to appreciate its color, carbonation, and aroma.", 
+            "instructions": "Malt liquor is a type of high-alchohol content beer made with malted barley. Malt liquor is sometimes enjoyed straight from the container, but can also be poured into a pint glass or beer mug to appreciate its color, carbonation, and aroma.", 
             "allergens": ["gluten"],
             "image": "brandy", 
             "no match drink": false, 
-            "description": ""
+            "description": "Malt liquor is a type of high-alchohol content beer made with malted barley."
         }, 
         {
             "name": "RumChata", 
@@ -1518,7 +1518,7 @@
             "allergens": ["lactose"],
             "image": "rumchata", 
             "no match drink": false, 
-            "description": ""
+            "description": "RumChata is a cream liqueuer known for its blend of Carribean rum and horchata."
         }, 
         {
             "name": "Tequila", 
@@ -1532,11 +1532,11 @@
                 "Citrus wedge (optional)", 
                 "Salt (optional)"
             ], 
-            "instructions": "Tequila is usually enjoyed by licking salt, taking the shot, then biting into a wedge of lime or lemon.", 
+            "instructions": "Tequila is a classic Mexican spirit. It is is usually enjoyed by licking salt, taking the shot, then biting into a wedge of lime or lemon.", 
             "allergens": [], 
             "image": "shot", 
             "no match drink": false, 
-            "description": ""
+            "description": "Tequila is a classic Mexican spirit."
         }, 
         {
             "name": "Gin", 
@@ -1566,11 +1566,11 @@
             "ingredients": [
                 ""
             ], 
-            "instructions": "White rum is a popular spirit often served in a variety of cocktails and is rarely enjoyed by itself.", 
+            "instructions": "White rum is a popular spirit. It is a  a lighter colored rum that is on the sweeter side. White rum often served in a variety of cocktails and is rarely enjoyed by itself.", 
             "allergens": [], 
             "image": "shot", 
             "no match drink": false, 
-            "description": ""
+            "description": "White rum is a lighter colored rum that is on the sweeter side."
         }, 
         {
             "name": "Bacardi", 
@@ -1586,7 +1586,7 @@
             "allergens": [], 
             "image": "shot", 
             "no match drink": false, 
-            "description": ""
+            "description": "Bacardi is a well-known type of white rum."
         }, 
         {
             "name": "Bourbon", 
@@ -1604,7 +1604,7 @@
             "allergens": ["gluten"],
             "image": "brandy", 
             "no match drink": false, 
-            "description": ""
+            "description": "Bourbon is an American whiskey that is mostly made using corn."
         }, 
         {
             "name": "Absinthe", 
@@ -1624,7 +1624,7 @@
             "allergens": [], 
             "image": "absinthe", 
             "no match drink": false, 
-            "description": ""
+            "description": "Absinthe is an anise-flavored spirit."
         }, 
         {
             "name": "Cura\u00e7ao", 
@@ -1640,7 +1640,7 @@
             "allergens": [], 
             "image": "curacao", 
             "no match drink": false, 
-            "description": ""
+            "description": "Cura\u00e7ao is a citrus-flavored liqueur."
         }, 
         {
             "name": "Brandy", 
@@ -1658,7 +1658,7 @@
             "allergens": [], 
             "image": "brandy", 
             "no match drink": false, 
-            "description": ""
+            "description": "Brandy is a spirit made by distilling wine."
         }, 
         {
             "name": "Hard Cider", 
@@ -1671,11 +1671,11 @@
             "ingredients": [
                 ""
             ], 
-            "instructions": "Hard cider is commonly served chilled straight from the bottle or can.", 
+            "instructions": "Hard cider is made from fermented apple juice. It is commonly served chilled straight from the bottle or can.", 
             "allergens": [], 
             "image": "cider", 
             "no match drink": true, 
-            "description": ""
+            "description": "Hard cider is made from fermented apple juice."
         }
     ]
 }
