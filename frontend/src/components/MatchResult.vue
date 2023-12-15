@@ -75,11 +75,13 @@ const formatAuthors = (authors_list) => {
 
 const formatPublicationInfo = (name, date) => {
   if (name != null && name != '' && date != null && date != '') {
-    return `Published by ${name} in ${date}`;
+    const [year] = date.split("-");
+    return `Published by ${name} in ${year}`;
   } else if (name != null && name != '') {
     return `Published by ${name}`;
-  } else if (date != null && date != '' != null) {
-    return `Published in ${date}`;
+  } else if (date != null && date != '') {
+    const [year] = date.split("-");
+    return `Published in ${year}`;
   } else {
     return ``;
   }
@@ -116,15 +118,16 @@ const formatPublicationInfo = (name, date) => {
       <button @click="reroll">Reroll</button>
     </div>
   </div>
-  <div v-show="!showDrink" className="pic" id="imageContainer">
-    <el-image :src="coverLink" fit="cover" alt="Alcohol Image Onload" style="width: 60%;height: 60%;"/>
+  <div v-show="!showDrink && coverLink != ''" className="pic" id="imageContainer">
+    <el-image  :src="coverLink" fit="cover" alt="Alcohol Image Onload" style="width: 60%;height: 60%;"/>
   </div>
-  <div v-show="!showDrink" className="pic">
+  <div v-show="!showDrink" className="pic" :style="{ width: coverLink == '' ? '100%' : '50%', textAlign: title === '' ? 'center' : 'auto' }">
+    <div className="name" v-show="title === ''"> <h1> We couldn't find information on your book. </h1></div>
     <div className="name" v-show="title != ''"><h1>{{ title }}</h1></div>
     <div className="name" v-show="authors.length > 0"> <h2> By: {{formatAuthors(authors)}} </h2> </div>
     <div className="name"><h3> {{ formatPublicationInfo(publisher, publicationDate) }} </h3></div>
     <div style="font-size: 1vw;" className="description">
-      {{ description }}
+      {{ bookDescription }}
     </div>
     <div className="description">
       <button class="bookInfo" @click="changePage">{{buttonName}}</button>
@@ -133,7 +136,6 @@ const formatPublicationInfo = (name, date) => {
 </template>
 
 <style scoped>
-
 #imageContainer {
   display: flex;
   justify-content: center;
