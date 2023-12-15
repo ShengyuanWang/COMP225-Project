@@ -87,6 +87,21 @@ const formatPublicationInfo = (name, date) => {
   }
 }
 
+const trimDescription = (text) => {
+  const maxLength = 800;
+  if (text.length <= maxLength) {
+    return text;
+  } else {
+    const textSubString = text.substring(0, maxLength);
+    const lastPeriod = textSubString.lastIndexOf(' ');
+    if (lastPeriod !== -1) {
+      return '"' + textSubString.substring(0, lastPeriod) + '..."';
+    } else {
+      return '"' + textSubString + '..."';
+    }
+  }
+}
+
 
 </script>
 
@@ -122,12 +137,12 @@ const formatPublicationInfo = (name, date) => {
     <el-image  :src="coverLink" fit="cover" alt="Alcohol Image Onload" style="width: 60%;height: 60%;"/>
   </div>
   <div v-show="!showDrink" className="pic" :style="{ width: coverLink == '' ? '100%' : '50%', textAlign: title === '' ? 'center' : 'auto' }">
-    <div className="name" v-show="title === ''"> <h1> We couldn't find information on your book. </h1></div>
+    <div className="name" v-show="title === ''"> <h2> We couldn't find information on your book. </h2></div>
     <div className="name" v-show="title != ''"><h1>{{ title }}</h1></div>
-    <div className="name" v-show="authors.length > 0"> <h2> By: {{formatAuthors(authors)}} </h2> </div>
+    <div className="name" v-show="authors.length > 0"> <h2> By {{formatAuthors(authors)}} </h2> </div>
     <div className="name"><h3> {{ formatPublicationInfo(publisher, publicationDate) }} </h3></div>
     <div style="font-size: 1vw;" className="description">
-      {{ bookDescription }}
+      {{ trimDescription(bookDescription) }}
     </div>
     <div className="description">
       <button class="bookInfo" @click="changePage">{{buttonName}}</button>
@@ -181,6 +196,7 @@ const formatPublicationInfo = (name, date) => {
 
 h1 {
   font-size: 5vw;
+  line-height: 5vw;
 }
 
 h2 {
