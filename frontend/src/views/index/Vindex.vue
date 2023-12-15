@@ -66,7 +66,6 @@
   display: flex;
   justify-content: center; /* Center horizontally */
   align-items: center; /* Center vertically */
-  //width: 20vw; /* Optional: Makes the container the full height of the viewport for vertical centering */
   position: relative;
   margin: 2vh 3vw;
 }

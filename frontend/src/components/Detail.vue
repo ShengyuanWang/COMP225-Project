@@ -48,7 +48,7 @@ const props = defineProps({
   }
 
   .drinkImage{
-    height:50vh !important;
+    height:30vh !important;
   }
 
   .drinkInfo {

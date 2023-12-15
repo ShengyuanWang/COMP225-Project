@@ -167,10 +167,11 @@ const trimDescription = (text) => {
 
   .description {
     font-size: 2vw !important;
+    margin-bottom: 1vh;
   }
 
   .description button  {
-    width: 25vw !important;
+    width: 30vw !important;
   }
   .pairingImageContainer {
     width:100% !important;
