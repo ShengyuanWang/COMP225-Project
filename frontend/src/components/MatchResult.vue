@@ -107,11 +107,11 @@ const trimDescription = (text) => {
 
 <template>
   <!--  detailed drink starts here-->
-  <div v-show="showDrink" class="pic" id="drink-image" style="text-align: left;">
-    <DrinkPic :liquid=drink.image :key="drink.image"></DrinkPic>
+  <div v-show="showDrink" class="pic pairingImageContainer" id="drink-image" style="text-align: left;">
+    <DrinkPic :liquid=drink.image :key="drink.image" class="pairingImage"></DrinkPic>
 <!--    <el-image :src="props.url" fit="cover" alt="Alcohol Image Onload" style="width: 100%;height: 100%"/>-->
   </div>
-  <div v-show="showDrink" className="pic">
+  <div v-show="showDrink" className="pic pairingInfo">
     <div className="name"><h1> Pairing: {{ drink.name }}</h1></div>
     <div className="name" v-show="title != '' && authors.length > 0" ><h2> Book: {{ title }} by {{formatAuthors(authors)}}</h2></div>
     <div className="name" v-show="title != '' && authors.length <= 0" ><h2> Book: {{ title }}</h2></div>
@@ -128,15 +128,15 @@ const trimDescription = (text) => {
 <!--      <p> Related book genres: {{ genres.join(", ") }}</p>-->
       <p>Note: {{drink.notes}}</p>
     </div>
-    <div className="description">
+    <div className="description buttonContainer">
       <button @click="changePage">{{buttonName}}</button>
       <button @click="reroll">Reroll</button>
     </div>
   </div>
-  <div v-show="!showDrink && coverLink != ''" className="pic" id="imageContainer">
-    <el-image  :src="coverLink" fit="cover" alt="Alcohol Image Onload" style="width: 60%;height: 60%;"/>
+  <div v-show="!showDrink && coverLink != ''" className="pic imageContainer">
+    <el-image  :src="coverLink" fit="contain" alt="Alcohol Image Onload" style="width: 60%;height: 60%;"/>
   </div>
-  <div v-show="!showDrink" className="pic" :style="{ width: coverLink == '' ? '100%' : '50%', textAlign: title === '' ? 'center' : 'auto' }">
+  <div v-show="!showDrink" className="pic bookInfo" :style="{ width: coverLink == '' ? '100%' : '50%', textAlign: title === '' ? 'center' : 'auto' }">
     <div className="name" v-show="title === ''"> <h2> We couldn't find information on your book. </h2></div>
     <div className="name" v-show="title != ''"><h1>{{ title }}</h1></div>
     <div className="name" v-show="authors.length > 0"> <h2> By {{formatAuthors(authors)}} </h2> </div>
@@ -151,10 +151,64 @@ const trimDescription = (text) => {
 </template>
 
 <style scoped>
-#imageContainer {
+@media screen and (max-width: 800px) {
+  h1 {
+    font-size: 6vw !important;
+    line-height: 6vw !important;
+  }
+
+  h2 {
+    font-size: 3vw !important;
+  }
+
+  h3 {
+    font-size: 2.5vw !important;
+  }
+
+  .description {
+    font-size: 2vw !important;
+  }
+
+  .description button  {
+    width: 25vw !important;
+  }
+  .pairingImageContainer {
+    width:100% !important;
+    height: auto !important;
+  }
+
+  .pairingImage{
+      height:30vh !important;
+    }
+
+  .pairingInfo {
+    width:100% !important;
+  }
+
+  .imageContainer {
+    width:100% !important;
+    height: auto !important;
+  }
+
+  .imageContainer .el-image {
+    height: 25vh !important;
+  }
+
+  .bookInfo{
+    width: 100% !important;
+  }
+
+}
+
+.imageContainer {
   display: flex;
   justify-content: center;
   align-items: center;
+}
+
+.buttonContainer {
+  display: flex;
+  justify-content: space-between;
 }
 
 .description button {
@@ -162,7 +216,7 @@ const trimDescription = (text) => {
   font-size: 2.3vh;
   background-color: #992e22;
   width: 15vw;
-  height: 5vh;
+  height: 6vh;
   border: 1px solid white;
   border-radius: 3px;
   text-align: center;
