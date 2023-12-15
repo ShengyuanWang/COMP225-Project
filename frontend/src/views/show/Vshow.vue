@@ -74,6 +74,19 @@ onBeforeMount(()=>{
 </template>
 
 <style scoped>
+/* mobile formatting */
+@media screen and (max-width: 600px) {
+  .drink-item {
+    width: 80vw;
+  }
+}
+
+/* ipad formatting */
+@media screen and (max-width: 1200px) and  (min-width: 600px){
+  .drink-item {
+    width: 40vw;
+  }
+}
 .show {
   width: 95vw;
   height: 100%;

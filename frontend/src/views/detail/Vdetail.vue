@@ -21,7 +21,7 @@ let image = route.query.liquid;
   <div class="fullscreen">
     <Menu></Menu>
     <div class="header">
-      <Qinput place="40"></Qinput>
+      <Qinput place="40" place-holder="Enter book title"></Qinput>
     </div>
     <div class="match_result">
       <Detail url="https://i.ibb.co/989gpGR/drink1.png"

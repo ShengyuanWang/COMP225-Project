@@ -82,6 +82,16 @@ const onClick  = () => {
       console.log(err)
     })
   }
+  
+  const isMobile = () => {
+    console.log(screen.width)
+    if(screen.width <= 800) {
+      return true;
+    } else {
+      return false;
+    }
+  } 
+
 </script>
 
 <template>
@@ -94,7 +104,7 @@ const onClick  = () => {
           size="large"
           @keyup.enter="onClick"
       >
-        <template #prepend>
+        <template v-if="!isMobile()" #prepend div="bookLabel">
           <p>BOOK</p>
         </template>
         <template #append  >
@@ -106,6 +116,11 @@ const onClick  = () => {
 </template>
 
 <style scoped>
+@media screen and (max-width: 800px) {
+  .inp { 
+    width: 60vw !important;
+  }
+}
 .inp {
   width: 50vw;
   margin-left: auto;

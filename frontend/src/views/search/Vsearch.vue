@@ -66,7 +66,7 @@ const test = ()=> {
     <Menu @childClick="childValFn"></Menu>
     <div class="search" @click="test">
       <!--      <Qinput move place="350" place-holder="Please type in the book name" :allergies=allergies :types=types></Qinput>-->
-      <Qinput move place="350" place-holder="Please type in the book name" :find-allergies=findAllergies :find-types=findTypes></Qinput>
+      <Qinput move place="350" place-holder="Enter book title" :find-allergies=findAllergies :find-types=findTypes></Qinput>
 
     </div>
 

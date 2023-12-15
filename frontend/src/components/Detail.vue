@@ -17,11 +17,11 @@ const props = defineProps({
 
 <template>
   <!--  detailed drink starts here-->
-    <div class="pic" style="text-align: left;">
+    <div class="pic drinkImageContainer" style="text-align: left;">
 <!--      <el-image :src="props.url" fit="cover" alt="Alcohol Image Onload" style="width: 100%;height: 100%"/>-->
-      <DrinkPic :liquid="props.image" style="height: 100%;"></DrinkPic>
+      <DrinkPic :liquid="props.image" style="height: 100%;" class="drinkImage"></DrinkPic>
     </div>
-    <div class="pic">
+    <div class="pic drinkInfo">
       <div class="name"><h1>{{ props.name }}</h1></div>
       <div style="font-size: 1vw;" class="description">
         <p> {{instructions}} </p>
@@ -39,6 +39,27 @@ const props = defineProps({
 </template>
 
 <style scoped>
+
+/* mobile formatting */
+@media screen and (max-width: 800px) {
+  .drinkImageContainer {
+    width:100% !important;
+    height: auto !important;
+  }
+
+  .drinkImage{
+    height:50vh !important;
+  }
+
+  .drinkInfo {
+    width: 100% !important;
+  }
+
+  .drinkInfo .description {
+    font-size: 2.5vw !important;
+  }
+
+}
 .pic {
   background-color: #e0ceb4;
   width: 50%;
