@@ -10,7 +10,7 @@ const route = useRoute()
 // get the variables from route url
 const stars = route.query.stars;
 const name = route.query.name;
-const description = route.query.description;
+const instructions = route.query.instructions;
 const notes = route.query.notes;
 const ingredients = route.query.ingredients;
 const showResult = ref(false)
@@ -18,7 +18,10 @@ const placeHolder = route.query.book;
 const input = route.query.input;
 const coverLink = route.query.coverLink;
 const title = route.query.title;
-const author = route.query.author;
+const authors = route.query.authors;
+const bookDescription = route.query.bookDescription;
+const publisher = route.query.publisher;
+const publicationDate = route.query.publicationDate;
 const image= route.query.image;
 let reRoll = [];
 for ( let r = 0; r < route.query.reRolls.length; r+=1) {
@@ -106,12 +109,15 @@ console.log(route.query)
       <MatchResult url="https://i.ibb.co/989gpGR/drink1.png"
                    :name=name
                    :rating=stars
-                   :description=description
+                   :instructions=instructions
                    :ingredients=ingredients
                    :notes=notes
                    :coverLink=coverLink
                    :title=title
-                   :author=author
+                   :authors=authors
+                   :bookDescription=bookDescription
+                   :publisher=publisher
+                   :publicationDate=publicationDate
                    :reRoll=reRoll
                    :image=image
       >

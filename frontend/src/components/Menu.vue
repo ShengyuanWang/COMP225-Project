@@ -144,7 +144,7 @@ const toEmit = () =>{
         <p><el-checkbox v-model="allergy.shellfish" label="Shellfish" size="large" style="color: black" @click="toEmit"/></p>
         <p><el-checkbox v-model="allergy.fish" label="Fish" size="large" style="color: black" @click="toEmit"/></p>
       </div>
-      <el-button type="primary" :style="{marginLeft:'2vw', marginBottom:'1vh', height:'4vh',width:'5vw', backgroundColor:'#998871', color:'#00000'}"  @click="toEmit">Save</el-button>
+      <button class="check" @click="toEmit">Save</button>
     </div>
   </div>
 </template>
@@ -207,6 +207,7 @@ const toEmit = () =>{
   background-clip: content-box;
   background-color: black;
   margin-top: 1.8vh;
+  //margin-left: 10px;
 }
 
 
@@ -219,6 +220,13 @@ h1 {
 
 h2 {
   font-size: 1.5vw;
+  margin-left: 1.7vw;
+  color: #992e22;
+}
+
+h3 {
+  font-size: 2.5vw;
+  margin-top: 0.5vh;
   margin-left: 1.7vw;
   color: #992e22;
 }
