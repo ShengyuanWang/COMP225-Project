@@ -471,7 +471,7 @@
             "allergens": [],
             "image": "mojito",
             "no match drink": true,
-            "description": ""
+            "description": "The Gin and Tonic is a classic cocktail with a signature copper mug presentation."
         },
         {
             "name": "Dark and Stormy",
@@ -873,11 +873,11 @@
             "ingredients": [
                 ""
             ], 
-            "instructions": "TBA",
+            "instructions": "The Sazerac is a classic cocktail with a rich history, often regarded as one of the oldest American cocktails. It originated in New Orleans and has a distinctive flavor profile. Start by chilling an old-fashioned glass by placing it in the freezer or filling it with ice water. In a separate mixing glass, muddle a sugar cube with a few dashes of water to dissolve the sugar. Add the rye whiskey and the Peychaud's Bitters to the mixing glass with the dissolved sugar. Fill the mixing glass with ice and stir the mixture well to chill it. Discard the ice from the chilled old-fashioned glass and add a small amount of absinthe (or absinthe substitute). Swirl the glass to coat the interior with absinthe, then discard the excess. Strain the chilled whiskey mixture into the prepared glass. Express the oil from a lemon peel over the drink by holding it over the glass and giving it a twist. Optionally, drop the peel into the glass as a garnish.",
             "allergens": [], 
             "image": "sazerac", 
             "no match drink": false, 
-            "description": ""
+            "description": "The Sazerac is a classic cocktail with a rich history, often regarded as one of the oldest American cocktails. It originated in New Orleans and has a distinctive flavor profile."
         }, 
         {
             "name": "Tequila Sunrise",
