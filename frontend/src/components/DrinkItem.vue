@@ -73,7 +73,8 @@ img {
   width: 100%;
   height: 30vh;
   background-color: #dba858;
-  padding: 1.25vw;
+  padding: 1vh;
+  padding-left: 1vw;
 }
 
 .drink-name {
@@ -82,6 +83,7 @@ img {
   font-weight: bold;
   margin-left: auto !important;;
   line-height: 4vh;
+  margin-bottom: 1vh;
 }
 
 .instruction {
