@@ -48,15 +48,18 @@ const props = defineProps({
   }
 
   .drinkImage{
-    height:30vh !important;
+    height:25vh !important;
   }
 
   .drinkInfo {
     width: 100% !important;
+    height: auto;
+
   }
 
   .drinkInfo .description {
-    font-size: 2.5vw !important;
+    font-size: 2vw !important;
+    line-height: 2vh;
   }
 
 }

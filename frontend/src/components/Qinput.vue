@@ -84,7 +84,6 @@ const onClick  = () => {
   }
   
   const isMobile = () => {
-    console.log(screen.width)
     if(screen.width <= 800) {
       return true;
     } else {

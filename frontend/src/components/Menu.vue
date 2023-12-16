@@ -1,6 +1,7 @@
 <script setup>
 // import required packages
 import { ref } from 'vue'
+import { onMounted } from 'vue'; 
 import { useRouter, useRoute } from 'vue-router'
 const router = useRouter()
 const route = useRoute()
@@ -10,6 +11,13 @@ const showPreference = ref(false) // const for whether show the preference list
 const isCollapse = ref(true) // const for side-menu collapse action
 const w = ref(6) // handle the distance to the left for the icon vw
 const menuColor = ref('#C3BCB3') // handle the color for the menu
+
+onMounted(() => {
+    if(screen.width <= 800) {
+      w.value = 10
+      menuColor.value = '#C3BCB3'
+    }
+})
 
 // array for drink preference | default : true
 const preference  = ref({
@@ -45,14 +53,24 @@ const handleClose = (key, keyPath) => {
 const handleCollapse = () =>{
   isCollapse.value = !isCollapse.value
   showPreference.value = false
-  console.log(w);
-  if (w.value === 6) {
-    w.value = 22
-    menuColor.value = '#D8C3A5'
+  if(screen.width >= 800) {
+      if (w.value === 6 || w.value === 10) {
+      w.value = 22
+      menuColor.value = '#D8C3A5'
+    } else {
+      w.value = 6
+      menuColor.value = '#C3BCB3'
+    }
   } else {
-    w.value = 6
-    menuColor.value = '#C3BCB3'
+    if (w.value === 22 || w.value === 6 || w.value === 10) {
+      w.value = 60
+      menuColor.value = '#D8C3A5'
+    } else {
+      w.value = 10
+      menuColor.value = '#C3BCB3'
+    }
   }
+
 }
 
 // function to handle click action for the preference
@@ -87,16 +105,23 @@ const toEmit = () =>{
   emits('childClick', {preference, allergy})
 }
 
+const computeMenuIconMargin = () => {
+  if(screen.width <= 800) {
+    return w.value - 6
+  } else {
+    return w.value - 4.5
+  }
+}
 
 </script>
 
-
 <template>
-  <div class="menu" :style="{width: w+ 'vw', backgroundColor:menuColor}">
-      <button name='menu-bar' @click="handleCollapse" class="menu_icon" :style="{marginLeft:w-4.5+'vw',marginRight:'2vw',height:'4vh',width:'3vw'}"></button>
-      <el-button type="primary" :style="{marginLeft:w-5.5+'vw',marginRight:'2vw',height:'4vh',width:'5vw', marginTop:'4vh', backgroundColor:'#998871', color:'#00000'}" @click="goHome">Home</el-button>
+  <div class="menu" :style="{width: w + 'vw', backgroundColor:menuColor}">
+      <button name='menu-bar' @click="handleCollapse()" class="menu_icon" :style="{marginLeft:computeMenuIconMargin()+'vw'}"></button>
+      <el-button class="hideMobile" type="primary" :style="{marginLeft:w-5.5+'vw',marginRight:'2vw',width:'5vw', marginTop:'4vh', backgroundColor:'#998871', color:'#00000'}" @click="goHome">Home</el-button>
 
     <div v-if="!isCollapse && !showPreference">
+      <el-button class="hideDesktop mobileButton" type="primary" :style="{marginLeft:'2vw', marginBottom:'1vh', height:'4vh', backgroundColor:'#998871', color:'#00000'}"  @click="goHome">Home</el-button>
       <h1 @click="clickMatch()">Menu</h1>
       <el-menu
           default-active="2"
@@ -127,14 +152,14 @@ const toEmit = () =>{
           </template>
         </el-sub-menu>
       </el-menu>
-      <h1>Preference</h1>
+      <h1 class="small">Preference</h1>
       <div class="check">
         <p><el-checkbox v-model="preference.Beer" label="Beer" size="large" style="color: black" @click="toEmit"/></p>
         <p><el-checkbox v-model="preference.Wine" label="Wine" size="large" style="color: black" @click="toEmit"/></p>
         <p><el-checkbox v-model="preference.Spirits" label="Spirits" size="large" style="color: black" @click="toEmit"/></p>
         <p><el-checkbox v-model="preference.Cocktails" label="Cocktails" size="large" style="color: black" @click="toEmit"/></p>
       </div>
-      <h1>Allergies</h1>
+      <h1 class="small">Allergies</h1>
       <div class="check">
         <p><el-checkbox v-model="allergy.gluten" label="Gluten" size="large" style="color: black" @click="toEmit"/></p>
         <p><el-checkbox v-model="allergy.lactose" label="Lactose" size="large" style="color: black" @click="toEmit"/></p>
@@ -144,12 +169,66 @@ const toEmit = () =>{
         <p><el-checkbox v-model="allergy.shellfish" label="Shellfish" size="large" style="color: black" @click="toEmit"/></p>
         <p><el-checkbox v-model="allergy.fish" label="Fish" size="large" style="color: black" @click="toEmit"/></p>
       </div>
-      <el-button type="primary" :style="{marginLeft:'2vw', marginBottom:'1vh', height:'4vh',width:'5vw', backgroundColor:'#998871', color:'#00000'}"  @click="toEmit">Save</el-button>
+      <el-button class="mobileButton" type="primary" :style="{marginLeft:'2vw', marginBottom:'1vh', height:'4vh', backgroundColor:'#998871', color:'#00000'}"  @click="toEmit">Save</el-button>
     </div>
   </div>
 </template>
 
 <style>
+@media screen and (max-width: 800px) {
+  .menu {
+    z-index: 10 !important;
+  }
+  h1 {
+    font-size: 5vw !important;
+  }
+  a {
+    font-size: 3vw !important;
+  }
+
+  .small {
+    font-size: 4vw !important;
+  }
+
+  .menu_icon {
+    display: flex;
+    justify-content: center;
+  }
+
+  .el-checkbox__label {
+    font-size: 3vw !important;
+  }
+
+  .el-sub-menu__icon-arrow  {
+    margin-left: 15vw !important;
+  }
+
+  .hideMobile {
+    visibility: hidden;
+    width: 0 !important;
+    margin: 0 !important;
+  }
+
+  .hideDesktop{
+    visibility: visible !important;
+  }
+  .mobileButton{
+    width:12vw !important;
+  }
+}
+
+.mobileButton {
+  width:5vw;
+}
+.hideDesktop{
+  visibility: hidden;
+}
+
+.hideMobile{
+  height:4vh;
+}
+
+
 .el-menu-vertical-demo:not(.el-menu--collapse) {
   width: 20.5vw;
   min-height: 40vh;
@@ -168,7 +247,7 @@ const toEmit = () =>{
 
 .el-checkbox__label{
   height: 2.4vh;
-  font-size: 1vw !important;
+  font-size: 1vw;
 }
 
 .el-checkbox__input.is-checked .el-checkbox__inner,
@@ -195,6 +274,7 @@ const toEmit = () =>{
   z-index: 1;
   overflow-x: hidden;
   background-color: #D8C3A5;
+  width: w+'vw';
 }
 
 .menu_icon{
@@ -207,7 +287,8 @@ const toEmit = () =>{
   background-clip: content-box;
   background-color: black;
   margin-top: 1.8vh;
-  /* //margin-left: 10px; */
+  margin-right: 2vw;
+  width: 3vw;
 }
 
 
