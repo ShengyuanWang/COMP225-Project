@@ -109,8 +109,8 @@
         {
             "name": "Blue Lagoon", 
             "type": "Cocktail", 
-            "key_genres": ["aliens","space travel"],
-            "genres": ["travel","aliens","science fiction","adventure","romance","space travel"],
+            "key_genres": ["aliens","space travel","caribbean area"],
+            "genres": ["travel","aliens","science fiction","adventure","romance","space travel","caribbean area"],
             "sentiment": 0.8, 
             "ingredients": [
                 "1 1/2 oz. vodka", 
