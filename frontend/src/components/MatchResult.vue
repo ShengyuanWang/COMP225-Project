@@ -263,12 +263,12 @@ const formatIngredients = (ingredients ) => {
 }
 
 h1 {
-  font-size: 5vw;
+  font-size: 3vw;
   line-height: 5vw;
 }
 
 h2 {
-  font-size: 2vw;
+  font-size: 1.7vw;
   font-weight: normal;
 }
 
