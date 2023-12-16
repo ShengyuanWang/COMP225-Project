@@ -112,6 +112,7 @@ const formatGenres = (genres ) => {
 
 .drinkInfo h1 {
   font-size: 5vw;
+  line-height: 10vh;
   margin-left: 0 !important;
 }
 
