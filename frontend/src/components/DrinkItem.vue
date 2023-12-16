@@ -37,6 +37,12 @@ console.log(image.value)
 </template>
 
 <style>
+@media screen and (max-width: 800px) {
+.instruction {
+  font-size: 3vw !important;
+}
+
+}
 .drink-item {
   width: 20vw;
   height: 65vh;
@@ -75,6 +81,7 @@ img {
   color: #8c0e0f;
   font-weight: bold;
   margin-left: auto !important;;
+  line-height: 4vh;
 }
 
 .instruction {
