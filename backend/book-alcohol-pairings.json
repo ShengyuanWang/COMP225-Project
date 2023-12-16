@@ -175,7 +175,7 @@
         {
             "name": "Cosmopolitan", 
             "type": "Cocktail", 
-            "key_genres": ["urban fantasy"],
+            "key_genres": ["urban fantasy","urban"],
             "genres": ["mystery & detective","friendship","urban fantasy","mystery","20th century","urban",
 				"contemporary fiction","romance","female friendship","contemporary fantasy"],
             "sentiment": 0.8, 
