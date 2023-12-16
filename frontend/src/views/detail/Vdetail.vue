@@ -9,7 +9,7 @@ const route = useRoute()
 let name = route.query.name;
 let instructions = route.query.instructions;
 let ingredients = route.query.ingredients;
-let genres = route.query.genres;
+let key_genres = route.query.key_genres;
 let image = route.query.liquid;
 
 
@@ -28,7 +28,7 @@ let image = route.query.liquid;
               :name=name
               :instructions=instructions
               :ingredients=ingredients
-              :genres=genres
+              :key_genres=key_genres
               :image=image>
       </Detail>
     </div>

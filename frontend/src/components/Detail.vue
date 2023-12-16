@@ -8,7 +8,7 @@ const props = defineProps({
   rating: Number, // the rating for the matching drink
   ingredients: Array, // the instructions for how to make the drink
   instructions: String, // the description for the drink,
-  genres: Array,
+  key_genres: Array,
   image: String
 })
 
@@ -28,15 +28,13 @@ const formatIngredients = (ingredients, asList) => {
   }
 }
 
-const trimGenres = (genres ) => {
-  if (genres.length < 8) {
-    return genres.join(", ")
-  } else {
-    return genres.slice(0,8).join(", ")
-  }
+const formatGenres = (genres ) => {
+    if (typeof(genres) === 'string') {
+      return "Related book topic" + genres
+    } else {
+      return "Related book topics and keywords: " + genres.join(", ")
+    }
 }
-
-
 
 </script>
 
@@ -61,7 +59,7 @@ const trimGenres = (genres ) => {
         </ul>
       </div>
       <div style="font-size: 1vw;" class="description"> 
-        <p> Related book topics: {{trimGenres(genres)}}</p>
+        <p v-show="key_genres.length > 0"> {{formatGenres(key_genres) }}</p>
       </div>
     </div>
 </template>

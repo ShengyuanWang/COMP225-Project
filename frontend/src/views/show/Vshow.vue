@@ -40,7 +40,7 @@ const getData = (drink) => {
   //   //请求失败的回调函数
   //   console.log(err);
   // })
-  router.push({ path: 'detail', query: {name: drink.name, type: drink.type, genres:drink.genres, ingredients:drink.ingredients, instructions:drink.instructions, liquid:drink.image}});
+  router.push({ path: 'detail', query: {name: drink.name, type: drink.type, key_genres:drink.key_genres, ingredients:drink.ingredients, instructions:drink.instructions, liquid:drink.image}});
 }
 
 
