@@ -62,7 +62,7 @@ const handleCollapse = () => {
 
   if (screen.width >= 800) {
     if (w.value === 6 || w.value === 10) {
-      w.value = 15
+      w.value = 20
       menuColor.value = '#dba858'
     } else {
       w.value = 6
