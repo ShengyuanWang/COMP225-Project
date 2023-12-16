@@ -62,8 +62,8 @@ const handleCollapse = () =>{
       menuColor.value = '#C3BCB3'
     }
   } else {
-    if (w.value === 22 || w.value === 6 || w.value === 10) {
-      w.value = 60
+    if (w.value === 6 || w.value === 10) {
+      w.value = 40
       menuColor.value = '#D8C3A5'
     } else {
       w.value = 10
@@ -200,7 +200,7 @@ const computeMenuIconMargin = () => {
   }
 
   .el-sub-menu__icon-arrow  {
-    margin-left: 15vw !important;
+    margin-right: -5vw !important;
   }
 
   .hideMobile {

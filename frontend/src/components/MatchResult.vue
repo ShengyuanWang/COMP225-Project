@@ -102,6 +102,13 @@ const trimDescription = (text) => {
   }
 }
 
+const formatIngredients = (ingredients ) => {
+  if (typeof(ingredients) === 'string') {
+    return [ingredients]
+  } else {
+    return ingredients
+  }
+}
 
 </script>
 
@@ -118,10 +125,10 @@ const trimDescription = (text) => {
     <div style="font-size: 1vw;" className="description">
       <p> {{ drink.instructions }} </p>
     </div>
-    <div v-if="drink.ingredients && drink.ingredients.length > 1" style="font-size: 1vw;" className="description">
+    <div v-if="drink.ingredients && typeof(drink.ingredients) !== 'string' && drink.ingredients.length > 1" style="font-size: 1vw;" className="description">
       <p> Ingredients: </p>
       <ul>
-        <li v-for="item in drink.ingredients.slice(0, 4)">{{ item }}</li>
+        <li v-for="item in formatIngredients(drink.ingredients)">{{ item }}</li>
       </ul>
     </div>
     <div v-show=" drink.notes && drink.notes.length > 0" style="font-size: 1vw;" className="description">
@@ -167,7 +174,11 @@ const trimDescription = (text) => {
 
   .description {
     font-size: 2vw !important;
-    margin-bottom: 1vh;
+    margin-bottom: .6vh;
+  }
+
+  .buttonContainer {
+    margin-top: -1vw !important;
   }
 
   .description button  {
@@ -225,7 +236,9 @@ const trimDescription = (text) => {
   justify-items: center;
 }
 
-
+.buttonContainer {
+  margin: 0;
+}
 .bookInfo {
   margin: 0 !important;
 }

@@ -12,6 +12,23 @@ const props = defineProps({
   image: String
 })
 
+const formatIngredients = (ingredients ) => {
+  if (typeof(ingredients) === 'string') {
+    return [ingredients]
+  } else {
+    return ingredients
+  }
+}
+
+const trimGenres = (genres ) => {
+  if (genres.length < 8) {
+    return genres.join(",")
+  } else {
+    return genres.slice(0,8).join(", ")
+  }
+}
+
+
 
 </script>
 
@@ -29,11 +46,11 @@ const props = defineProps({
       <div v-if="ingredients.length > 1" style="font-size: 1vw;" class="description">
         <p> Ingredients: </p>
          <ul>
-          <li v-for="item in props.ingredients.slice(0, 4)">{{ item }}</li>
+          <li v-for="item in formatIngredients(props.ingredients)">{{ item }}</li>
         </ul>
       </div>
       <div style="font-size: 1vw;" class="description"> 
-        <p> Related book genres: {{genres.join(", ") }}</p>
+        <p> Related book topics: {{trimGenres(genres)}}</p>
       </div>
     </div>
 </template>
