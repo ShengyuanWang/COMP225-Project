@@ -12,17 +12,25 @@ const props = defineProps({
   image: String
 })
 
-const formatIngredients = (ingredients ) => {
-  if (typeof(ingredients) === 'string') {
-    return [ingredients]
+const formatIngredients = (ingredients, asList) => {
+  if (asList) {
+      if (typeof(ingredients) === 'string') {
+      return [ingredients]
+    } else {
+      return ingredients
+    }
   } else {
-    return ingredients
+    if (typeof(ingredients) === 'string') {
+      return ingredients
+    } else {
+      return ingredients.join(", ")
+    }
   }
 }
 
 const trimGenres = (genres ) => {
   if (genres.length < 8) {
-    return genres.join(",")
+    return genres.join(", ")
   } else {
     return genres.slice(0,8).join(", ")
   }
@@ -44,9 +52,12 @@ const trimGenres = (genres ) => {
         <p> {{instructions}} </p>
       </div>
       <div v-if="ingredients.length > 1" style="font-size: 1vw;" class="description">
-        <p> Ingredients: </p>
-         <ul>
-          <li v-for="item in formatIngredients(props.ingredients)">{{ item }}</li>
+        <p v-show="ingredients.length > 5"> 
+          Ingredients: {{ formatIngredients(props.ingredients, false) }}
+        </p>
+        <p v-show="ingredients.length <= 5"> Ingredients: </p>
+         <ul v-show="ingredients.length <= 5">
+          <li v-for="item in formatIngredients(props.ingredients, true)">{{ item }}</li>
         </ul>
       </div>
       <div style="font-size: 1vw;" class="description"> 

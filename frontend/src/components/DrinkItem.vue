@@ -6,6 +6,7 @@ const props = defineProps({
   name: String, // the name of the drink
   ingredients: Array, // the instruction about how to make the drink
   instructions: String, // the instruction about how to make the drink
+  description: String,
   url: String, // the url for the image of the drink
   liquid: String
 })
@@ -29,10 +30,7 @@ console.log(image.value)
         {{ props.name }}
       </h1>
       <div class="instruction">
-        <ul v-if="props.ingredients && props.ingredients.length > 1">
-          <li v-for="item in props.ingredients.slice(0, 4)">{{ item }}</li>
-        </ul>
-        <p v-if=" props.ingredients && props.ingredients.length <= 1"> {{ props.instructions}}</p>
+        <p>{{ props.description }}</p>
       </div>
     </div>
   </div>

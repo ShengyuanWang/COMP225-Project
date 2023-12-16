@@ -102,13 +102,22 @@ const trimDescription = (text) => {
   }
 }
 
-const formatIngredients = (ingredients ) => {
-  if (typeof(ingredients) === 'string') {
-    return [ingredients]
+const formatIngredients = (ingredients, asList) => {
+  if (asList) {
+      if (typeof(ingredients) === 'string') {
+      return [ingredients]
+    } else {
+      return ingredients
+    }
   } else {
-    return ingredients
+    if (typeof(ingredients) === 'string') {
+      return ingredients
+    } else {
+      return ingredients.join(", ")
+    }
   }
 }
+
 
 </script>
 
@@ -125,10 +134,13 @@ const formatIngredients = (ingredients ) => {
     <div style="font-size: 1vw;" className="description">
       <p> {{ drink.instructions }} </p>
     </div>
-    <div v-if="drink.ingredients && typeof(drink.ingredients) !== 'string' && drink.ingredients.length > 1" style="font-size: 1vw;" className="description">
-      <p> Ingredients: </p>
-      <ul>
-        <li v-for="item in formatIngredients(drink.ingredients)">{{ item }}</li>
+    <div v-if="drink.ingredients  && drink.ingredients.length > 1" style="font-size: 1vw;" className="description">
+      <p v-show="ingredients.length > 5"> 
+          Ingredients: {{ formatIngredients(props.ingredients, false) }}
+        </p>
+      <p v-show="ingredients.length <= 5"> Ingredients: </p>
+      <ul v-show="ingredients.length <= 5">
+        <li v-for="item in formatIngredients(drink.ingredients, true)">{{ item }}</li>
       </ul>
     </div>
     <div v-show=" drink.notes && drink.notes.length > 0" style="font-size: 1vw;" className="description">

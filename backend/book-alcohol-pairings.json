@@ -1009,11 +1009,11 @@
             "ingredients": [
                 ""
             ], 
-            "instructions": "Pour yourself a glass!", 
+            "instructions": "Dry Vermouth is a fortified and aromatized white wine with herbal and botanical infusions, imparting a subtle bitterness and complex flavor profile. Serve it chilled as an aperitif or add a splash of dry vermouth to enhance the complexity of your favorite cocktail.", 
             "allergens": [], 
             "image": "whiteWine", 
             "no match drink": false, 
-            "description": "Dry Vermouth is a fortified and aromatized white wine with herbal and botanical infusions, imparting a subtle bitterness and complex flavor profile. Serve it chilled as an aperitif or add a splash of dry vermouth to enhance the complexity of your favorite cocktail."
+            "description": "Dry Vermouth is a fortified and aromatized white wine with herbal and botanical infusions, imparting a subtle bitterness and complex flavor profile. "
         }, 
         {
             "name": "Sweet Vermouth", 

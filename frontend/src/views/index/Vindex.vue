@@ -30,10 +30,10 @@
 
   <div class="fullscreen">
     <Menu></Menu>
-    <div>
+    <div class="indexContainer">
       <div style="display: flex; justify-content: center; align-items: center; position: relative;">
         <div class="title">
-          <h1 style="font-size: 7vw" v-if="obj.underage">BOOK + JUICE</h1> <h1 style="font-size: min(7vw, 10vh)" v-else>BOOK + WINE</h1>
+          <h1 v-if="obj.underage">BOOK + JUICE</h1> <h1 v-else>BOOK + WINE</h1>
         </div>
       </div>
       <div class="center">
@@ -52,6 +52,29 @@
 </template>
 
 <style>
+@media screen and (max-width: 800px) {
+ .indexContainer {
+  margin-top: 10vh;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+ }
+
+ .center img {
+  width: min(40vw, 50vh) !important;
+  height: min(40vw, 50vh) !important;
+ }
+
+ h2 {
+  font-size: 3vw !important;
+ }
+
+ h1 {
+  font-size: min(8vw, 11vh) !important;
+  margin-right: 1vw !important;
+}
+
+}
 .title {
   color: #636466;
   font-size: 7vw;
@@ -88,5 +111,9 @@
 .center .el-button {
   background-color: #992e22 !important;
   border-color: #992e22 !important;
+}
+
+h1 {
+  font-size: min(7vw, 10vh);
 }
 </style>
