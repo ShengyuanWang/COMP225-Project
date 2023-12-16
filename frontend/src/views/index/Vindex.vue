@@ -65,11 +65,11 @@
   height: min(40vw, 50vh) !important;
  }
 
- h2 {
+ .indexContainer h2 {
   font-size: 3vw !important;
  }
 
- h1 {
+ .indexContainer h1 {
   font-size: min(8vw, 11vh) !important;
   margin-right: 1vw !important;
 }
@@ -113,7 +113,7 @@
   border-color: #992e22 !important;
 }
 
-h1 {
+.indexContainer h1 {
   font-size: min(7vw, 10vh);
 }
 </style>
