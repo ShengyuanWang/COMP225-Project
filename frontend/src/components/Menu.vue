@@ -152,7 +152,7 @@ const computeMenuIconMargin = () => {
           </template>
         </el-sub-menu>
       </el-menu>
-      <h1 class="small">Preference</h1>
+      <h1 class="small">Preferences</h1>
       <div class="check">
         <p><el-checkbox v-model="preference.Beer" label="Beer" size="large" style="color: black" @click="toEmit"/></p>
         <p><el-checkbox v-model="preference.Wine" label="Wine" size="large" style="color: black" @click="toEmit"/></p>
@@ -187,7 +187,7 @@ const computeMenuIconMargin = () => {
   }
 
   .small {
-    font-size: 4vw !important;
+    font-size: 3.5vw !important;
   }
 
   .menu_icon {
@@ -200,7 +200,7 @@ const computeMenuIconMargin = () => {
   }
 
   .el-sub-menu__icon-arrow  {
-    margin-right: -5vw !important;
+    margin-left: 8vw !important;
   }
 
   .hideMobile {

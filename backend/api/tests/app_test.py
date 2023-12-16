@@ -62,7 +62,7 @@ def test_get_pairing():
     assert type(valid_pairing["instructions"]) is str
     assert valid_pairing["name"] in [drink["name"] for drink in book_valid_pairing.get_top_drink_matches(book_valid_pairing.get_matching_drinks(), book_valid.get_sentiment())]
     assert valid_pairing["name"] in [drink.get_drink_data()["name"] for drink in book_valid_pairing.get_matching_drinks()]
-    assert valid_pairing["type"].lower() in ["beer", "wine", "cocktails", "spirits"]
+    assert valid_pairing["type"].lower() in ["beer", "wine", "cocktail", "spirits"]
     assert valid_pairing["ingredients"] in [drink.get_drink_data()["ingredients"] for drink in book_valid_pairing.get_matching_drinks()]
     assert valid_pairing["instructions"] in [drink.get_drink_data()["instructions"] for drink in book_valid_pairing.get_matching_drinks()]
 
@@ -79,7 +79,7 @@ def test_get_matching_drinks():
     drink_1 = valid_book_drinks[0].get_drink_data()
     assert len(book_multiversion_pairing.get_matching_drinks()) >= 3
     assert len(valid_book_drinks) >= 3
-    assert list(drink_1.keys()) == ["name", "type", "key genres", "genres", "sentiment", "ingredients", "instructions", "allergens", "image", "no match drink"]
+    assert list(drink_1.keys()) == ["name", "type", "key genres", "genres", "sentiment", "ingredients", "instructions", "allergens", "image", "no match drink", "description"]
     assert type(drink_1["name"]) is str
     assert type(drink_1["type"]) is str
     assert type(drink_1["genres"])is list
@@ -89,7 +89,7 @@ def test_get_matching_drinks():
     
     # testing allergy feature
     book_allergy_pairing = Pairing("On Great Fields", ["gluten"]) 
-    assert book_allergy_pairing.get_top_pairings()[0]["type"] in ["Cocktail", "Wine", "Spirits"]
+    assert book_allergy_pairing.get_top_pairings()[0]["type"] in ["Cocktails", "Wine", "Spirits"]
 
     # testing drink type feature
     book_beer_only_pairing = Pairing("Dune", [], ["Beer"]) 
