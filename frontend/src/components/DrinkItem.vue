@@ -52,7 +52,7 @@ console.log(image.value)
 .drink-image {
   width: 100%;
   height: 35vh;
-  background-color: #D8C3A5;
+  background-color: #000435;
   padding: 1vh;
   text-align: left;
 }
@@ -65,13 +65,13 @@ img {
 .drink-instructions {
   width: 100%;
   height: 30vh;
-  background-color: #c2ae91;
+  background-color: #dba858;
   padding: 1vh;
 }
 
 .drink-name {
   font-size: 1.5vw;
-  color: #992e22;
+  color: #8c0e0f;
   font-weight: bold;
 }
 

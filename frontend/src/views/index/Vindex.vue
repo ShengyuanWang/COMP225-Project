@@ -1,23 +1,29 @@
 <script setup>
   // import packages required
   import router from "../../router";
-  import {reactive} from 'vue';
+  import { ElNotification } from 'element-plus'
+  import {ref} from 'vue';
   // define objects
-  const obj = reactive({
-    underage: 0
+  const obj = ref({
+    clickable: false
   })
 
   // function for handling click yes btn
   const onClickYes = () => {
     console.log("click yes");
     router.push('search');
+    obj.clickable.value = true;
     return 0;
   }
 
   // function for handling click no btn
   const onClickNo = () => {
     console.log("click no");
-    obj.underage = 1;
+    ElNotification({
+      title: 'UnderAge',
+      message: 'You can not use the website for the underage issue!',
+      type: 'warning',
+    })
     return 0;
   }
 
@@ -29,11 +35,13 @@
 <template>
 
   <div class="fullscreen">
-    <Menu></Menu>
-    <div class="indexContainer">
+
+    <Menu :clickable="obj.clickable"></Menu>
+    <div>
       <div style="display: flex; justify-content: center; align-items: center; position: relative;">
         <div class="title">
-          <h1 v-if="obj.underage">BOOK + JUICE</h1> <h1 v-else>BOOK + WINE</h1>
+          <h1 style="font-size: min(7vw, 10vh); margin-left: 0">READ & SIP</h1>
+
         </div>
       </div>
       <div class="center">
@@ -41,7 +49,7 @@
       </div>
       <div class="pop-up">
         <h2 class="question"> Are you over 21 ?</h2>
-        <div class="center">
+        <div class="center" style="width: auto;">
           <div class="btn"><el-button type="primary" size="large" @click="onClickYes()"><p>Yes</p></el-button></div>
           <div class="btn"><el-button type="primary" size="large" @click="onClickNo()"><p>No</p></el-button></div>
         </div>
@@ -105,7 +113,7 @@
 }
 
 .btn {
-  margin-right: 3vw;
+  margin: 1vw 1vw 1vw 1vw;
 }
 
 .center .el-button {
