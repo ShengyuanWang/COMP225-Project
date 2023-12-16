@@ -66,19 +66,19 @@ img {
   width: 100%;
   height: 30vh;
   background-color: #dba858;
-  padding: 1vh;
+  padding: 1.25vw;
 }
 
 .drink-name {
-  font-size: 1.5vw;
+  font-size: 2vw;
   color: #8c0e0f;
   font-weight: bold;
+  margin-left: auto !important;;
 }
 
 .instruction {
   color: black;
-  font-size: 1.5vh;
-  padding-top: 1vh;
-  padding-left: 1vw;
+  font-size: 1vw;
+
 }
 </style>
