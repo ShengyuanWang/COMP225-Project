@@ -423,6 +423,7 @@
   "jazz music": "jazz",
   "blues musicians": "jazz",
   "blues": "jazz",
+  "blues music": "jazz",
   "country music": "folk music",
   "country & bluegrass": "folk music",
   "countrymusic": "folk music",
@@ -432,6 +433,5 @@
   "english folk songs": "folk music",
   "americana ": "folk music",
   "folk singers": "folk music",
-  "guthrie": "folk music",
-  "slavic folk songs": "folk music"
+  "guthrie": "folk music"
 }
