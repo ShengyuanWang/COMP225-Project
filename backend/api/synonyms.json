@@ -30,7 +30,7 @@
     "magical realism": ["magic realism"], 
     "france": ["france in fiction"],
     "spain": ["spain in fiction"],
-    "middle ages": ["classical & medieval","middle ages in fiction"],
+    "middle ages": ["classical & medieval","middle ages in fiction","medieval"],
     "argentina": ["argentina in fiction"],
     "espionage": ["spy stories","spies","women spies","english spy stories","german espionage"],
     "pirates": ["pirates in fiction"],
@@ -92,7 +92,7 @@
     "1950s":["nineteen fifties"],
     "1960s":["nineteen sixties"],
     "united states civil war":["american civil war "],
-    "poetry":["juvenile poetry","children's poetry","poets","poetry slams","women poets","poetry ","poetic works by one author","american poetry","japanese poetry","english poetry","haiku"],
+    "poetry":["juvenile poetry","children's poetry","poets","poetry slams","women poets","poetry ","poetic works by one author","medieval poetry","folk poetry","american poetry","japanese poetry","english poetry","haiku"],
     "n.y.":["n.y.)"],
     "mixology":["cocktails","alcohol","alcoholic beverages","wine & spirits","bartending","beverages","bars ","drinking establishments","liquors"],
     "cooking":["cooks","cookery","chefs","cooking & food","food","cooking ","cookbooks","cookbook","european cooking","european cookery","international cookery","international cooking","recipes","gastronomy","food in literature","quick and easy cooking","cooking techniques"],
@@ -112,5 +112,5 @@
     "dark fantasy":["dark magic","military fantasy"],
     "louisiana":["louisiana in fiction","la."],
     "jazz":["jazz musicians","jazz music","blues musicians","blues"],
-    "folk music":["country music","country & bluegrass","countrymusic","country musicians","bluegrass","folk songs","english folk songs","americana "]
+    "folk music":["country music","country & bluegrass","countrymusic","country musicians","bluegrass","folk songs","english folk songs","americana ","folk singers","guthrie","slavic folk songs","folk poetry"]
 }

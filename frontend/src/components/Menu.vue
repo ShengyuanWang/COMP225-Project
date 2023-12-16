@@ -192,6 +192,7 @@ const handleCollapse = () => {
   .menu {
     z-index: 10 !important;
   }
+
   h1 {
     font-size: 5vw !important;
   }
@@ -207,6 +208,8 @@ const handleCollapse = () => {
     display: flex;
     justify-content: center;
   }
+
+
 
   .el-checkbox__label {
     font-size: 2.5vw !important;
@@ -312,6 +315,9 @@ const handleCollapse = () => {
   width: 3vw;
 }
 
+.menu_icon:hover {
+  cursor: pointer;
+}
 
 h1 {
   font-size: 2.5vw;
