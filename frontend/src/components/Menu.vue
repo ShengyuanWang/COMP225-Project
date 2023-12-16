@@ -62,30 +62,23 @@ const handleCollapse = () => {
 
   if (screen.width >= 800) {
     if (w.value === 6 || w.value === 10) {
-      w.value = 22
-      menuColor.value = '#D8C3A5'
-    } else {
-      w.value = 6
-      menuColor.value = '#C3BCB3'
-    }
-  } else {
-    if (w.value === 6 || w.value === 10) {
-      w.value = 40
-      menuColor.value = '#D8C3A5'
-    } else {
-      w.value = 10
-      menuColor.value = '#C3BCB3'
-    }
-
-    console.log(w);
-    console.log(props.clickable)
-    if (w.value === 6) {
-      w.value = 22
+      w.value = 15
       menuColor.value = '#dba858'
     } else {
       w.value = 6
       menuColor.value = '#000435'
     }
+  } else {
+    if (w.value === 6 || w.value === 10) {
+      w.value = 40
+      menuColor.value = '#dba858'
+    } else {
+      w.value = 10
+      menuColor.value = '#000435'
+    }
+
+    console.log(w);
+    console.log(props.clickable)
 
   }
 }
@@ -216,11 +209,11 @@ const handleCollapse = () => {
   }
 
   .el-checkbox__label {
-    font-size: 3vw !important;
+    font-size: 2.5vw !important;
   }
 
   .el-sub-menu__icon-arrow  {
-    margin-left: 8vw !important;
+    margin-right: -10vw !important;
   }
 
   .hideMobile {
@@ -248,7 +241,11 @@ const handleCollapse = () => {
   height:4vh;
 }
 
-
+.el-sub-menu__title{
+  padding-right: 0 !important;
+  padding-left: 1vw !important;
+  width: 100% !important;
+}
 .el-menu-vertical-demo:not(.el-menu--collapse) {
   width: 20.5vw;
   min-height: 40vh;
@@ -268,6 +265,10 @@ const handleCollapse = () => {
 .el-checkbox__label{
   height: 2.4vh;
   font-size: 1vw;
+}
+
+.el-sub-menu{
+  width: 100%;
 }
 
 .el-checkbox__input.is-checked .el-checkbox__inner,
