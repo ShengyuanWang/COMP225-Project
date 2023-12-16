@@ -47,6 +47,7 @@ console.log(image.value)
 
 .drink-item:hover {
   box-shadow: 1vh 0.5vh 0.5vh #111111;
+  cursor: pointer;
 }
 
 .drink-image {
