@@ -132,6 +132,7 @@ class Pairing:
         top_pairings = self.get_top_drink_matches(all_drinks, sentiment)
         
         if len(top_pairings) > 0:
+            self.no_match_drinks = False
             return [pairing for pairing in top_pairings]
         else:
             self.no_match_found = True
@@ -222,8 +223,6 @@ class Book:
 
         with open(synonyms_data_file, "r") as f:
             self.synonyms = json.load(f)
-
-        self.no_match_found = False
   
         api_calls = APICalls(user_input, api_key, official_genres, synonyms_data_file)
 
