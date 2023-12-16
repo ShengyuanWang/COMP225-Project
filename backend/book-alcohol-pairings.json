@@ -1400,7 +1400,7 @@
             ], 
             "instructions": "Akvavit is a scandinavia spirit made from grain or potatoes. It is drunken either during festive occasions or as an aperitif. It is served in a shot glass, and can be either served chilled and taken as a shot, or it can be served room temperature and enjoyed slowly.", 
             "allergens": ["gluten"],
-            "image": "shot", 
+            "image": "aquavit", 
             "no match drink": false, 
             "description": "Akvavit is a scandinavia spirit made from grain or potatoes. It is drunken either during festive occasions or as an aperitif."
         }, 
