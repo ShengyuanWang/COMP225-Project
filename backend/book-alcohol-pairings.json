@@ -686,9 +686,9 @@
         {
             "name": "Mai Tai",
             "type": "Cocktail",
-            "key_genres": [],
+            "key_genres": ["caribbean area"],
             "genres": ["1950s","travel","biography & memoir","historical romance","1960s","historical fiction",
-				"adventure","mystery","20th century","romance","historical adventure"],
+				"adventure","mystery","20th century","romance","historical adventure","caribbean area"],
             "sentiment": 0.7,
             "ingredients": [
                 "2 oz White rum",
@@ -792,10 +792,10 @@
         {
             "name": "The Zombie",
             "type": "Cocktail",
-            "key_genres": ["zombies","frankenstein "],
+            "key_genres": ["zombies","frankenstein ","caribbean area"],
             "genres": ["1950s","travel","zombies","frankenstein ","mystery & detective","pirates","paranormal fiction suspense & thriller",
 				"1960s","supernatural thrillers", "gritty", "thriller","horror","adventure","paranormal","mystery","20th century",
-				"thrillers & mystery"],
+				"thrillers & mystery","caribbean area"],
             "sentiment": 0.5,
             "ingredients": [
                 "1 1/2 oz Light rum",
