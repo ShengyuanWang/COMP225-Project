@@ -6,11 +6,17 @@ import { useRouter, useRoute } from 'vue-router'
 const router = useRouter()
 const route = useRoute()
 
+const props = defineProps({
+  clickable: Boolean
+})
+
+
+
 // non-static variables
 const showPreference = ref(false) // const for whether show the preference list
 const isCollapse = ref(true) // const for side-menu collapse action
 const w = ref(6) // handle the distance to the left for the icon vw
-const menuColor = ref('#C3BCB3') // handle the color for the menu
+const menuColor = ref('#000435') // handle the color for the menu
 
 onMounted(() => {
     if(screen.width <= 800) {
@@ -50,11 +56,12 @@ const handleClose = (key, keyPath) => {
 }
 
 // function for handle the close action for the menu
-const handleCollapse = () =>{
+const handleCollapse = () => {
   isCollapse.value = !isCollapse.value
   showPreference.value = false
-  if(screen.width >= 800) {
-      if (w.value === 6 || w.value === 10) {
+
+  if (screen.width >= 800) {
+    if (w.value === 6 || w.value === 10) {
       w.value = 22
       menuColor.value = '#D8C3A5'
     } else {
@@ -69,56 +76,69 @@ const handleCollapse = () =>{
       w.value = 10
       menuColor.value = '#C3BCB3'
     }
-  }
 
+    console.log(w);
+    console.log(props.clickable)
+    if (w.value === 6) {
+      w.value = 22
+      menuColor.value = '#dba858'
+    } else {
+      w.value = 6
+      menuColor.value = '#000435'
+    }
+
+  }
 }
 
 // function to handle click action for the preference
-const setPreference = () => {
-  showPreference.value = true
-}
+  const setPreference = () => {
+    showPreference.value = true
+  }
 
 
 // function handle the action on click the menu icon
-const clickMenu = (gene) => {
-  // console.log('Click Menu');
-  // console.log(route.fullPath);
-  router.push({ path: 'show', query: {type: gene}});
-  console.log(route.fullPath);
-}
+  const clickMenu = (gene) => {
+    // console.log('Click Menu');
+    // console.log(route.fullPath);
+    router.push({path: 'show', query: {type: gene}});
+    console.log(route.fullPath);
+  }
 
 // function handle the click action for the search icon
-const clickMatch = () => {
-  console.log('Click Match')
-  router.push({ path: 'search'})
-}
-
-const goHome = () => {
-  console.log('Go Home');
-  router.push({path: 'search'})
-}
-
-const emits = defineEmits(['childClick'])
-const toEmit = () =>{
-  // 触发父组件事件childClick并携带参数
-  console.log(preference.value)
-  emits('childClick', {preference, allergy})
-}
-
-const computeMenuIconMargin = () => {
-  if(screen.width <= 800) {
-    return w.value - 6
-  } else {
-    return w.value - 4.5
+  const clickMatch = () => {
+    console.log('Click Match')
+    router.push({path: 'search'})
   }
-}
+
+  const goHome = () => {
+    console.log('Go Home');
+    router.push({path: 'search'})
+  }
+
+  const emits = defineEmits(['childClick'])
+  const toEmit = () => {
+    // 触发父组件事件childClick并携带参数
+    console.log(preference.value)
+    emits('childClick', {preference, allergy})
+  }
+
+  const computeMenuIconMargin = () => {
+    if (screen.width <= 800) {
+      return w.value - 6
+    } else {
+      return w.value - 4.5
+    }
+  }
+
 
 </script>
 
 <template>
+
   <div class="menu" :style="{width: w + 'vw', backgroundColor:menuColor}">
       <button name='menu-bar' @click="handleCollapse()" class="menu_icon" :style="{marginLeft:computeMenuIconMargin()+'vw'}"></button>
       <el-button class="hideMobile" type="primary" :style="{marginLeft:w-5.5+'vw',marginRight:'2vw',width:'5vw', marginTop:'4vh', backgroundColor:'#998871', color:'#00000'}" @click="goHome">Home</el-button>
+
 
     <div v-if="!isCollapse && !showPreference">
       <el-button class="hideDesktop mobileButton" type="primary" :style="{marginLeft:'2vw', marginBottom:'1vh', height:'4vh', backgroundColor:'#998871', color:'#00000'}"  @click="goHome">Home</el-button>
@@ -273,19 +293,19 @@ const computeMenuIconMargin = () => {
   overflow: auto;
   z-index: 1;
   overflow-x: hidden;
-  background-color: #D8C3A5;
-  width: w+'vw';
+  width: v-bind(w)+'vw';
+  background-color: #000435;
 }
 
 .menu_icon{
   height: 4vh;
-  border-top: 0.3vh solid black;
-  border-bottom: 0.3vh solid black;
+  border-top: 0.3vh solid white;
+  border-bottom: 0.3vh solid white;
   border-left: 0px;
   border-right: 0px;
   padding: 1.6vh 0;
   background-clip: content-box;
-  background-color: black;
+  background-color: white;
   margin-top: 1.8vh;
   margin-right: 2vw;
   width: 3vw;
