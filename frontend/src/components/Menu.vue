@@ -293,7 +293,7 @@ const handleCollapse = () => {
   overflow: auto;
   z-index: 1;
   overflow-x: hidden;
-  width: v-bind(w)+'vw';
+  width: w +'vw';
   background-color: #000435;
 }
 
