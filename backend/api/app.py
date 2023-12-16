@@ -158,7 +158,7 @@ class Pairing:
                         shared_genre_count = 0
                         unshared_genre_count = 0
                         for genre in book_genres:
-                            if genre in drink["key genres"] :
+                            if genre in drink["key_genres"] :
                                 shared_genre_count += 4
                             elif genre in drink["genres"]:
                                 shared_genre_count += 1
