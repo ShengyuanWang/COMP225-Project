@@ -1,5 +1,6 @@
 <script setup>
 // import the required packages
+import LoadAnimation from "@/components/LoadAnimation.vue";
 import {getCurrentInstance, ref} from 'vue'
 import { Search } from '@element-plus/icons-vue'
 import router from "@/router";
@@ -12,7 +13,8 @@ const props = defineProps({
   placeHolder: String, // the Place holder
   input: String,
   findAllergies: String,
-  findTypes: String
+  findTypes: String,
+  loadScreen: Boolean
 })
 
 const place = ref(props.place)  // placeholder
@@ -21,6 +23,7 @@ const input = ref(props.input)
 const placeHolder = ref(props.placeHolder)
 const findTypes = ref(props.findTypes)
 const findAllergies = ref(props.findAllergies)
+const onLoad = ref(false)
 // 400 default 35 active
 const data = [
   {
@@ -34,6 +37,8 @@ const data = [
 
 // functions
 const onClick  = () => {
+
+  onLoad.value = true
 
   if (props.move) {
     place.value = 60;
@@ -74,6 +79,7 @@ const onClick  = () => {
           bookDescription: res.data.bookDescription,
           publisher: res.data.publisher,
           publicationDate: res.data.publicationDate,
+          bookGenres: res.data.bookGenres,
           reRolls: reRolls,
           image: res.data.image
         }
@@ -111,6 +117,7 @@ const onClick  = () => {
         </template>
       </el-input>
     </div>
+    <LoadAnimation v-show="onLoad && props.loadScreen"></LoadAnimation>
   </div>
 </template>
 

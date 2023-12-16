@@ -67,7 +67,7 @@ onBeforeMount(()=>{
                     @click="getData(drink)"
         >{{drink.name}}}</drink-item>
         <br>
-        <div style="width: 90%">sssss</div>
+        <div style="width: 90%"></div>
       </div>
     </perfect-scrollbar>
 

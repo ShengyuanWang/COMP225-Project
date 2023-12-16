@@ -115,7 +115,7 @@ class Pairing:
         pairing["instructions"] = pairing_dict["instructions"]
         pairing["image"] = pairing_dict["image"]
         
-        if self.no_match_found:
+        if len(self.book.get_filtered_genres()) < 1:
             pairing["notes"] = "We couldn’t find much information for your book, so this match is just our best guess."
         else:
             pairing["notes"] = ""
@@ -133,10 +133,8 @@ class Pairing:
         top_pairings = self.get_top_drink_matches(all_drinks, sentiment)
         
         if len(top_pairings) > 0:
-            self.no_match_drinks = False
             return [pairing for pairing in top_pairings]
         else:
-            self.no_match_found = True
             return [pairing for pairing in self.get_no_match_drinks()]     
        
     def get_matching_drinks(self):

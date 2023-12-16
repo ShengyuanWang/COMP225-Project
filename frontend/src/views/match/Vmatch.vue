@@ -2,6 +2,7 @@
 // import required packages
 import Qinput from "@/components/Qinput.vue";
 import MatchResult from "@/components/MatchResult.vue";
+import LoadAnimation from "@/components/LoadAnimation.vue";
 import { useRoute } from 'vue-router'
 import {onBeforeMount, onMounted, ref} from 'vue'
 
@@ -100,11 +101,12 @@ console.log(route.query)
   <div class="fullscreen">
     <Menu @childClick="childValFn"></Menu>
     <div class="header">
-      <Qinput move place="60" place-holder="Enter book title" :find-allergies=findAllergies :find-types=findTypes></Qinput>
+      <Qinput move place="60" place-holder="Enter book title" :find-allergies=findAllergies :find-types=findTypes :loadSceen=false></Qinput>
     </div>
-    <div class="loading" v-show="!showResult">
+    <!-- <div class="loading" v-show="!showResult">
       <h1 style="padding-left: 20vw; padding-top: 20vh; font-size: 40px">Loading Result ....</h1>
-    </div>
+    </div> -->
+    <LoadAnimation v-show="!showResult"></LoadAnimation>
     <div class="match_result" v-show="showResult">
       <MatchResult url="https://i.ibb.co/989gpGR/drink1.png"
                    :name=name
