@@ -28,11 +28,17 @@ const formatIngredients = (ingredients, asList) => {
   }
 }
 
+function capitalizeWords(str) {
+    return str.replace(/\b\w|(?<=\b[i])i/g, function (match) {
+        return match.toUpperCase();
+    });
+}
+
 const formatGenres = (genres ) => {
     if (typeof(genres) === 'string') {
-      return "Related book topic" + genres
+      return "Related book topic" + capitalizeWords(genres)
     } else {
-      return "Related book topics and keywords: " + genres.join(", ")
+      return "Related book topics and keywords: " + genres.map(capitalizeWords).join(", ")
     }
 }
 
