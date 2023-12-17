@@ -130,11 +130,11 @@ const handleCollapse = () => {
 
   <div class="menu" :style="{width: w + 'vw', backgroundColor:menuColor}">
       <button name='menu-bar' @click="handleCollapse()" class="menu_icon" :style="{marginLeft:computeMenuIconMargin()+'vw'}"></button>
-      <el-button class="hideMobile" type="primary" :style="{marginLeft:w-5.5+'vw',marginRight:'2vw',width:'5vw', marginTop:'4vh', backgroundColor:'#998871', color:'#00000'}" @click="goHome">Home</el-button>
+      <el-button class="hideMobile" type="primary" :style="{marginLeft:w-5.5+'vw',marginRight:'2vw',width:'5vw', marginTop:'4vh', backgroundColor:'#801e18', color:'#00000'}" @click="goHome">Home</el-button>
 
 
     <div v-if="!isCollapse && !showPreference">
-      <el-button class="hideDesktop mobileButton" type="primary" :style="{marginLeft:'2vw', marginBottom:'1vh', height:'4vh', backgroundColor:'#998871', color:'#00000'}"  @click="goHome">Home</el-button>
+      <el-button class="hideDesktop mobileButton" type="primary" :style="{marginLeft:'2vw', marginBottom:'1vh', height:'4vh', backgroundColor:'#801e18', color:'#00000'}"  @click="goHome">Home</el-button>
       <h1 @click="clickMatch()">Menu</h1>
       <el-menu
           default-active="2"
@@ -182,7 +182,7 @@ const handleCollapse = () => {
         <p><el-checkbox v-model="allergy.shellfish" label="Shellfish" size="large" style="color: black" @click="toEmit"/></p>
         <p><el-checkbox v-model="allergy.fish" label="Fish" size="large" style="color: black" @click="toEmit"/></p>
       </div>
-      <el-button class="mobileButton" type="primary" :style="{marginLeft:'2vw', marginBottom:'1vh', height:'4vh', backgroundColor:'#998871', color:'#00000'}"  @click="toEmit">Save</el-button>
+      <el-button class="mobileButton" type="primary" :style="{marginLeft:'2vw', marginBottom:'1vh', height:'4vh', backgroundColor:'#801e18', color:'#00000'}"  @click="toEmit">Save</el-button>
     </div>
   </div>
 </template>
