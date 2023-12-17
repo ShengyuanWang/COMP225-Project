@@ -176,6 +176,7 @@ const formatIngredients = (ingredients, asList) => {
     line-height: 6vw !important;
   }
 
+
   h2 {
     font-size: 3vw !important;
   }
@@ -296,5 +297,10 @@ h3 {
   color: black;
   position: flex;
   justify-content: space-between;
+}
+
+
+button:hover {
+  cursor: pointer;
 }
 </style>
