@@ -41,7 +41,7 @@
       <div style="display: flex; justify-content: center; align-items: center; position: relative;">
         <div class="title">
           <h1 style="font-size: min(7vw, 10vh); margin-left: 0">READ & SIP</h1>
-
+          <h2 class="subtitle"> Get alcohol pairings for your favorite books! </h2>
         </div>
       </div>
       <div class="center">
@@ -110,6 +110,12 @@
   font-size: 2vw;
   text-align: center;
   color: black;
+}
+
+.subtitle{
+  font-size: 2vw;
+  text-align: center;
+  color: #992e22;
 }
 
 .btn {
