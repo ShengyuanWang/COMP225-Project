@@ -138,5 +138,10 @@ const onClick  = () => {
 img {
   width: 3.5vw;
 }
+
+p {
+  color: black;
+  font-weight: bolder;
+}
 </style>
 
