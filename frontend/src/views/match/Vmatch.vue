@@ -62,7 +62,7 @@ console.log(route.query)
   <div class="fullscreen">
     <Menu></Menu>
     <div class="header">
-      <Qinput move place="60" place-holder="placeHolder" :loadSceen=false></Qinput>
+      <Qinput move place="60" :place-holder="placeHolder" :loadSceen=false></Qinput>
     </div>
     <!-- <div class="loading" v-show="!showResult">
       <h1 style="padding-left: 20vw; padding-top: 20vh; font-size: 40px">Loading Result ....</h1>
