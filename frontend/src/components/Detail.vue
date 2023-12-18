@@ -117,7 +117,7 @@ const formatGenres = (genres ) => {
   margin-top: 1vh;
   font-size: 3vw;
   font-weight: normal;
-  color: #992e22;
+  color: #552036;
 }
 
 .drinkInfo h1 {
