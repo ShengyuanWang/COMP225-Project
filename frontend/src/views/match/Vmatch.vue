@@ -15,7 +15,7 @@ const instructions = route.query.instructions;
 const notes = route.query.notes;
 const ingredients = route.query.ingredients;
 const showResult = ref(false)
-const placeHolder = route.query.book;
+const placeHolder = ref(route.query.book);
 const input = route.query.input;
 const coverLink = route.query.coverLink;
 const title = route.query.title;
@@ -24,6 +24,7 @@ const bookDescription = route.query.bookDescription;
 const publisher = route.query.publisher;
 const publicationDate = route.query.publicationDate;
 const image= route.query.image;
+
 let reRoll = [];
 for ( let r = 0; r < route.query.reRolls.length; r+=1) {
   reRoll.push(JSON.parse(route.query.reRolls[r]));
@@ -101,7 +102,7 @@ console.log(route.query)
   <div class="fullscreen">
     <Menu @childClick="childValFn"></Menu>
     <div class="header">
-      <Qinput move place="60" place-holder="Enter book title" :find-allergies=findAllergies :find-types=findTypes :loadSceen=false></Qinput>
+      <Qinput move place="60" :place-holder="placeHolder" :find-allergies=findAllergies :find-types=findTypes :loadSceen=false></Qinput>
     </div>
     <!-- <div class="loading" v-show="!showResult">
       <h1 style="padding-left: 20vw; padding-top: 20vh; font-size: 40px">Loading Result ....</h1>
