@@ -5,6 +5,8 @@ import {getCurrentInstance, ref} from 'vue'
 import { Search } from '@element-plus/icons-vue'
 import router from "@/router";
 const {proxy} = getCurrentInstance()
+import { store } from '../store.js'
+
 
 // set the props for the search bar
 const props = defineProps({
@@ -32,6 +34,51 @@ const data = [
 ]
 
 
+const getTypes = () => {
+  const types = ref({
+        Beer: true,
+        Wine: true,
+        Spirits: true,
+        Cocktails: true}); 
+  types.value = store.preference
+  let typeList = [];
+  for (const item in types.value) {
+    if (types.value[item] === true) {
+      typeList.push(item)
+    }
+  }
+  if (typeList.length > 0) {
+    return typeList.join(',')
+  } else {
+    return 'Nan'
+  }
+}
+
+const getAllergies = () => {
+  const allergy = ref({
+        gluten: false,
+        lactose: false,
+        egg: false,
+        treenuts: false,
+        soy: false,
+        shellfish: false,
+        fish: false
+      });
+  allergy.value = store.allergy
+  let allergyList = [];
+  for (const item in allergy.value) {
+    if (allergy.value[item] === true) {
+      allergyList.push(item)
+    }
+  }
+  if (allergyList.length > 0) {
+    return allergyList.join(',')
+  } else {
+    return'Nan'
+  }
+}
+
+
 
 
 
@@ -48,12 +95,15 @@ const onClick  = () => {
   console.log(props)
 
 
-    var api = "https://comp-225-project-backend.vercel.app/test/" + input.value + '/' + props.findTypes + '/' + props.findAllergies;
+    var api = "https://comp-225-project-backend.vercel.app/test/" + input.value + '/' + getTypes() + '/' + getAllergies();
+    console.log(api)
+    console.log("stored values:")
+    console.log(store)
     // use axios to get
     proxy.axios.get(api).then((res) => {
-      console.log(api)
+      // console.log(api)
       // console.log('finish')
-      console.log(res)
+      // console.log(res)
       // console.log(res.data.rerolls)
       // console.log("notes:")
       // console.log(res.data)

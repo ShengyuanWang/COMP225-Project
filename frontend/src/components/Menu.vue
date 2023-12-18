@@ -1,6 +1,7 @@
 <script setup>
 // import required packages
 import { ref } from 'vue'
+import { store } from '../store.js'
 import { onMounted } from 'vue'; 
 import { useRouter, useRoute } from 'vue-router'
 const router = useRouter()
@@ -25,24 +26,8 @@ onMounted(() => {
     }
 })
 
-// array for drink preference | default : true
-const preference  = ref({
-  Beer: true,
-  Wine: true,
-  Spirits: true,
-  Cocktails: true
-})
-
-// array for allergy preference | default : false
-const allergy  = ref({
-  gluten: false,
-  lactose: false,
-  egg: false,
-  treenuts: false,
-  soy: false,
-  shellfish: false,
-  fish: false
-})
+ const preference = store.preference
+ const allergy  = store.allergy
 
 // function for handle the collapse action for the sub-menu
 const handleOpen = (key, keyPath) => {
@@ -114,11 +99,6 @@ const handleCollapse = () => {
   }
 
   const emits = defineEmits(['childClick'])
-  const toEmit = () => {
-    // 触发父组件事件childClick并携带参数
-    console.log(preference.value)
-    emits('childClick', {preference, allergy})
-  }
 
   const computeMenuIconMargin = () => {
     if (screen.width <= 800) {
@@ -126,6 +106,11 @@ const handleCollapse = () => {
     } else {
       return w.value - 4.5
     }
+  }
+
+  const  updateStore = () => {
+    store.allergy.value = allergy.value
+    store.preference.value = preference.value
   }
 
 
@@ -150,22 +135,21 @@ const handleCollapse = () => {
 
       <h1 class="small">Preferences</h1>
       <div class="check">
-        <p><el-checkbox v-model="preference.Beer" label="Beer" size="large" style="color: black" @click="toEmit"/></p>
-        <p><el-checkbox v-model="preference.Wine" label="Wine" size="large" style="color: black" @click="toEmit"/></p>
-        <p><el-checkbox v-model="preference.Spirits" label="Spirits" size="large" style="color: black" @click="toEmit"/></p>
-        <p><el-checkbox v-model="preference.Cocktails" label="Cocktails" size="large" style="color: black" @click="toEmit"/></p>
+        <p><el-checkbox v-model="preference.Beer" label="Beer" size="large" style="color: black" @click="updateStore"/></p>
+        <p><el-checkbox v-model="preference.Wine" label="Wine" size="large" style="color: black" @click="updateStore"/></p>
+        <p><el-checkbox v-model="preference.Spirits" label="Spirits" size="large" style="color: black" @click="updateStore"/></p>
+        <p><el-checkbox v-model="preference.Cocktails" label="Cocktails" size="large" style="color: black" @click="updateStore"/></p>
       </div>
       <h1 class="small">Allergies</h1>
       <div class="check">
-        <p><el-checkbox v-model="allergy.gluten" label="Gluten" size="large" style="color: black" @click="toEmit"/></p>
-        <p><el-checkbox v-model="allergy.lactose" label="Lactose" size="large" style="color: black" @click="toEmit"/></p>
-        <p><el-checkbox v-model="allergy.egg" label="Egg" size="large" style="color: black" @click="toEmit"/></p>
-        <p><el-checkbox v-model="allergy.treenut" label="Tree Nuts" size="large" style="color: black" @click="toEmit"/></p>
-        <p><el-checkbox v-model="allergy.soy" label="Soy" size="large" style="color: black" @click="toEmit"/></p>
-        <p><el-checkbox v-model="allergy.shellfish" label="Shellfish" size="large" style="color: black" @click="toEmit"/></p>
-        <p><el-checkbox v-model="allergy.fish" label="Fish" size="large" style="color: black" @click="toEmit"/></p>
+        <p><el-checkbox v-model="allergy.gluten" label="Gluten" size="large" style="color: black" @click="updateStore"/></p>
+        <p><el-checkbox v-model="allergy.lactose" label="Lactose" size="large" style="color: black" @click="updateStore"/></p>
+        <p><el-checkbox v-model="allergy.egg" label="Egg" size="large" style="color: black" @click="updateStore"/></p>
+        <p><el-checkbox v-model="allergy.treenut" label="Tree Nuts" size="large" style="color: black" @click="updateStore"/></p>
+        <p><el-checkbox v-model="allergy.soy" label="Soy" size="large" style="color: black" @click="updateStore"/></p>
+        <p><el-checkbox v-model="allergy.shellfish" label="Shellfish" size="large" style="color: black" @click="updateStore"/></p>
+        <p><el-checkbox v-model="allergy.fish" label="Fish" size="large" style="color: black" @click="updateStore"/></p>
       </div>
-      <el-button class="mobileButton" type="primary" :style="{marginLeft:'2vw', marginBottom:'1vh', height:'4vh', backgroundColor:'#801e18', color:'#00000'}"  @click="toEmit">Save</el-button>
     </div>
   </div>
 </template>

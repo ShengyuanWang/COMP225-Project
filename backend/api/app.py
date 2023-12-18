@@ -47,7 +47,6 @@ def search1(bookname, user_types, user_allergies):
     """Return pairing dictonary for testing of frontend intergration."""
     bookname = bookname.replace("%20", " ")
     user_types = user_types.split(",")
-    print(user_types)
     user_allergies = user_allergies.split(",")
     if user_types == ["Nan"]:
         user_types = []
