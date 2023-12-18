@@ -115,7 +115,7 @@
 .subtitle{
   font-size: 2vw;
   text-align: center;
-  color: #992e22;
+  color: #552036;
 }
 
 .btn {
