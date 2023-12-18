@@ -257,8 +257,7 @@
         {
             "name": "Pan-Galactic Gargle Blaster",
             "type": "Cocktails",
-            "key_genres": ["comic science fiction","aliens","vogons","trilogy of five","arthur dent "
-				],
+            "key_genres": ["comic science fiction","aliens","vogons","trilogy of five","arthur dent ", "science fiction"],
             "genres": ["aliens","vogons","science fiction","satire","space travel","adventure","fantasy",
 				"comic science fiction","humorous","trilogy of five","arthur dent "],
             "sentiment": 0.8,
