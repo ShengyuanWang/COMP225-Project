@@ -1,3 +1,5 @@
+<!-- This component is the loading animation for when users are waiting for pairings -->
+<!-- Loader css/html from: https://css-loaders.com/ -->
 <script setup>
 
 </script>

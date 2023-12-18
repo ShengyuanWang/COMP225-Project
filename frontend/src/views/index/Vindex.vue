@@ -1,3 +1,4 @@
+<!-- landing page -->
 <script setup>
   // import packages required
   import router from "../../router";
@@ -26,8 +27,6 @@
     })
     return 0;
   }
-
-
 
 
 </script>

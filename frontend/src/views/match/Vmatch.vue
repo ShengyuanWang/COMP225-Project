@@ -1,3 +1,4 @@
+<!-- page that shows match -->
 <script setup>
 // import required packages
 import Qinput from "@/components/Qinput.vue";
@@ -57,7 +58,6 @@ console.log(route.query)
 </script>
 
 <template>
-
 
   <div class="fullscreen">
     <Menu></Menu>

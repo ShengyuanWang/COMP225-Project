@@ -1,3 +1,4 @@
+<!-- This component contains the representation of the drink shown when users scroll the drink menu -->
 <script setup>
 import {ref} from "vue";
 import DrinkPic from "@/components/DrinkPic.vue";

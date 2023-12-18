@@ -1,5 +1,5 @@
 
-
+<!-- search / home  page  -->
 <script setup>
 import { ref } from 'vue';
 import {all} from "axios";
