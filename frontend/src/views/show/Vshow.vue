@@ -89,7 +89,7 @@ onBeforeMount(()=>{
   }
 }
 .show {
-  width: 95vw;
+  width: 100%;
   height: 100%;
   padding-left: 8vw;
   padding-top: 1vh;

@@ -93,12 +93,12 @@ const handleCollapse = () => {
     router.push({path: 'search'})
   }
 
-  // const emits = defineEmits(['childClick'])
-  // const toEmit = () => {
-  //   // 触发父组件事件childClick并携带参数
-  //   // console.log(preference.value)
-  //   // emits('childClick', {preference, allergy})
-  // }
+  const goAbout = () => {
+    console.log('Go About');
+    router.push({path: 'about'});
+  }
+
+  const emits = defineEmits(['childClick'])
 
   const computeMenuIconMargin = () => {
     if (screen.width <= 800) {
@@ -120,41 +120,19 @@ const handleCollapse = () => {
 
   <div class="menu" :style="{width: w + 'vw', backgroundColor:menuColor}">
       <button name='menu-bar' @click="handleCollapse()" class="menu_icon" :style="{marginLeft:computeMenuIconMargin()+'vw'}"></button>
-      <el-button class="hideMobile" type="primary" :style="{marginLeft:w-5.5+'vw',marginRight:'2vw',width:'5vw', marginTop:'4vh', backgroundColor:'#801e18', color:'#00000'}" @click="goHome">Home</el-button>
+      <el-button class="hideMobile home" type="primary" :style="{marginLeft:w-5.5+'vw',marginRight:'2vw',width:'5vw', marginTop:'4vh', backgroundColor:'#8b3e35', color:'#00000'}" @click="goHome">Home</el-button>
+      <el-button class="hideMobile home" type="primary" :style="{marginLeft:w-5.5+'vw',marginRight:'2vw',width:'5vw', marginTop:'2vh', backgroundColor:'#8b3e35', color:'#00000'}"  @click="goAbout">About</el-button>
 
 
     <div v-if="!isCollapse && !showPreference">
-      <el-button class="hideDesktop mobileButton" type="primary" :style="{marginLeft:'2vw', marginBottom:'1vh', height:'4vh', backgroundColor:'#801e18', color:'#00000'}"  @click="goHome">Home</el-button>
+      <el-button class="hideDesktop mobileButton" type="primary" :style="{marginLeft:'2vw', marginBottom:'1vh', height:'4vh', backgroundColor:'#8b3e35', color:'#00000'}"  @click="goHome">Home</el-button>
+      <el-button class="hideDesktop mobileButton" type="primary" :style="{marginLeft:'2vw', marginBottom:'1vh', height:'4vh', backgroundColor:'#8b3e35', color:'#00000'}"  @click="goAbout">About</el-button>
       <h1 @click="clickMatch()">Menu</h1>
-      <el-menu
-          default-active="2"
-          class="el-menu-vertical-demo el-collapse"
-          @open="handleOpen"
-          @close="handleClose"
-          :style="{marginLeft:'1vw', marginTop:'0.5vh', border:'none', backgroundColor:menuColor}"
-      >
-        <el-sub-menu index="1" @click="clickMenu('Cocktail')">
-          <template #title>
-            <a href="#">Cocktail</a>
-          </template>
-        </el-sub-menu>
+      <p class="menu_item" @click="clickMenu('Wine')"> Wine </p>
+      <p class="menu_item" @click="clickMenu('Cocktail')"> Cocktail </p>
+      <p class="menu_item" @click="clickMenu('Beer')"> Beer </p>
+      <p class="menu_item" @click="clickMenu('Spirits')"> Spirits </p>
 
-        <el-sub-menu index="2" @click="clickMenu('Wine')">
-          <template #title>
-            <a href="#">Wine</a>
-          </template>
-        </el-sub-menu>
-        <el-sub-menu index="3" @click="clickMenu('Beer')">
-          <template #title>
-            <a href="#">Beer</a>
-          </template>
-        </el-sub-menu>
-        <el-sub-menu index="4" @click="clickMenu('Spirits')">
-          <template #title>
-            <a href="#">Spirits</a>
-          </template>
-        </el-sub-menu>
-      </el-menu>
       <h1 class="small">Preferences</h1>
       <div class="check">
         <p><el-checkbox v-model="preference.Beer" label="Beer" size="large" style="color: black" @click="updateStore"/></p>
@@ -225,11 +203,16 @@ const handleCollapse = () => {
 .mobileButton {
   width:5vw;
 }
+
+.mobileButton:hover {
+  background-color: #7c3730;
+}
 .hideDesktop{
   visibility: hidden;
 }
 
 .hideMobile{
+  display: block;
   height:4vh;
 }
 
@@ -261,6 +244,10 @@ const handleCollapse = () => {
 
 .el-sub-menu{
   width: 100%;
+}
+
+.home:hover {
+  background-color: #7c3730;
 }
 
 .el-checkbox__input.is-checked .el-checkbox__inner,
@@ -306,6 +293,22 @@ const handleCollapse = () => {
 
 .menu_icon:hover {
   cursor: pointer;
+}
+
+.menu_item {
+
+  padding: 5px 10px 5px 10px;
+  margin-left: 20px;
+  //width: 100px;
+  color: black;
+  border-radius: 5px;
+
+}
+
+.menu_item:hover{
+  background-color: #8b3e35;
+  border: 1px solid white;
+  color: white;
 }
 
 h1 {
