@@ -41,7 +41,8 @@ npm run dev
 ## Backend
 
 **Framework**: `Flask`
-The backend uses flask. It pulls book data from the Google Books API and genre data from Open Library API in order to make pairings. Pairings are calculated by finidng the drink that has the most genres in common with a book. Drink key genres are weighted higher in this schema. If there are ties, the book's description is analyzed for its sentiment and thatis compared with the drink. All drink data was custom made for Read & Sip and is found in the book-alcohol-pairings.json file. Due to our hosting platform, there must be two versions of that file, one in backend and one in backend/api. 
+
+The backend uses flask. It pulls book data from the Google Books API and genre data from Open Library API in order to make pairings. Pairings are calculated by finidng the drink that has the most genres in common with a book. Drink key genres are weighted higher in this schema. If there are ties, the book's description is analyzed for its sentiment and that is compared with the drink. All drink data was custom made for Read & Sip and is found in the book-alcohol-pairings.json file. Due to our hosting platform, there must be two versions of that file, one in backend and one in backend/api. 
 
 
 ## Frontend

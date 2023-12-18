@@ -84,7 +84,7 @@
 
 }
 .title {
-  color: #552036;
+  color: #552036 !important;
   font-size: 7vw;
   text-align: center;
   font-weight: bold;
@@ -115,7 +115,7 @@
 .subtitle{
   font-size: 2vw;
   text-align: center;
-  color: #992e22;
+  color: #552036;
 }
 
 .btn {
