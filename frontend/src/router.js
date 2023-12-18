@@ -36,7 +36,7 @@ const routes = [
         name: 'Vdetail'
     },
     {
-        path: "/test",
+        path: "/about",
         component: Vtest,
         name: 'Vtest'
     }

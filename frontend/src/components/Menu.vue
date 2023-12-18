@@ -108,6 +108,11 @@ const handleCollapse = () => {
     router.push({path: 'search'})
   }
 
+  const goAbout = () => {
+    console.log('Go About');
+    router.push({path: 'about'});
+  }
+
   const emits = defineEmits(['childClick'])
   const toEmit = () => {
     // 触发父组件事件childClick并携带参数
@@ -131,10 +136,12 @@ const handleCollapse = () => {
   <div class="menu" :style="{width: w + 'vw', backgroundColor:menuColor}">
       <button name='menu-bar' @click="handleCollapse()" class="menu_icon" :style="{marginLeft:computeMenuIconMargin()+'vw'}"></button>
       <el-button class="hideMobile home" type="primary" :style="{marginLeft:w-5.5+'vw',marginRight:'2vw',width:'5vw', marginTop:'4vh', backgroundColor:'#8b3e35', color:'#00000'}" @click="goHome">Home</el-button>
+      <el-button class="hideMobile home" type="primary" :style="{marginLeft:w-5.5+'vw',marginRight:'2vw',width:'5vw', marginTop:'2vh', backgroundColor:'#8b3e35', color:'#00000'}"  @click="goAbout">About</el-button>
 
 
     <div v-if="!isCollapse && !showPreference">
       <el-button class="hideDesktop mobileButton" type="primary" :style="{marginLeft:'2vw', marginBottom:'1vh', height:'4vh', backgroundColor:'#8b3e35', color:'#00000'}"  @click="goHome">Home</el-button>
+      <el-button class="hideDesktop mobileButton" type="primary" :style="{marginLeft:'2vw', marginBottom:'1vh', height:'4vh', backgroundColor:'#8b3e35', color:'#00000'}"  @click="goAbout">About</el-button>
       <h1 @click="clickMatch()">Menu</h1>
       <p class="menu_item" @click="clickMenu('Wine')"> Wine </p>
       <p class="menu_item" @click="clickMenu('Cocktail')"> Cocktail </p>
@@ -221,6 +228,7 @@ const handleCollapse = () => {
 }
 
 .hideMobile{
+  display: block;
   height:4vh;
 }
 
