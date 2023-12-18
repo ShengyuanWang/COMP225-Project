@@ -3,9 +3,9 @@
         {
             "name": "Old Fashioned", 
             "type": "Cocktails", 
-            "key_genres": ["great depression","noir","hard-boiled","business"],
+            "key_genres": ["great depression","noir","hard-boiled","business","noir"],
             "genres": ["19th century","1950s","mystery & detective","action","1910s","classics","psychological",
-				"nineteen twenties","biography & memoir","hard-boiled","historical fiction","great depression","nineteen fifties",
+				"biography & memoir","hard-boiled","historical fiction","great depression",
 				"noir","dystopian","1920s","mystery","20th century","business","prohibition","poetry"],
             "sentiment": 0.6, 
             "ingredients": [
@@ -88,10 +88,10 @@
         {
             "name": "Martini", 
             "type": "Cocktails", 
-            "key_genres": ["unrequited love"],
-            "genres": ["1950s","1910s","psychological","nineteen sixties","1940s","world war ii","science fiction",
-				"hard-boiled","1960s","nineteen fifties","hard science fiction","1930s","unrequited love","nineteen thirties",
-				"mystery","20th century","business","urban","nineteen forties","romance"],
+            "key_genres": ["unrequited love","bond","hard-boiled"],
+            "genres": ["1950s","1910s","psychological","1940s","world war ii","science fiction",
+				"hard-boiled","1960s","hard science fiction","1930s","unrequited love","mystery & detective",
+				"mystery","20th century","business","urban","romance","bond"],
             "sentiment": 0.7, 
             "ingredients": [
                 "2 oz. gin or vodka", 
@@ -519,8 +519,7 @@
             "type": "Cocktails",
             "key_genres": ["occult","ghosts","zombies"],
             "genres": ["occult","mystery & detective","zombies","dystopian","1940s","historical fiction",
-				"horror","great depression","ghosts","paranormal","mystery","nineteen forties","nineteen thirties",
-				"1930s"],
+				"horror","great depression","ghosts","paranormal","mystery","1930s"],
             "sentiment": 0.2,
             "ingredients": [
                 "3/4 oz Gin",
@@ -559,7 +558,7 @@
             "type": "Cocktails",
             "key_genres": ["caribbean area","cuba","romantic comedy","1940s"],
             "genres": ["caribbean area","new orleans ", "travel","love in adolescence","1940s","1960s","adolescence",
-				"adventure","mystery","cuba","nineteen sixties","nineteen forties","romance","humorous","romantic comedy"
+				"adventure","mystery","cuba","romance","humorous","romantic comedy"
 				],
             "sentiment": 0.7,
             "ingredients": [
@@ -750,7 +749,7 @@
             "name": "French 75",
             "type": "Cocktails",
             "key_genres": ["1920s","prohibition"],
-            "genres": ["nineteen twenties","historical romance","mystery & detective","biography & memoir",
+            "genres": ["historical romance","mystery & detective","biography & memoir",
 				"1920s","historical fiction","classics","mystery","20th century","romance","prohibition"],
             "sentiment": 0.8,
             "ingredients": [
@@ -868,7 +867,7 @@
             "type": "Cocktails",
             "key_genres": ["aliens","space travel"],
             "genres": ["aliens","magical realism","travel","voyages","science fiction","space travel",
-				"adventure","fantasy","humorous","1960s","nineteen sixties"],
+				"adventure","fantasy","humorous","1960s"],
             "sentiment": 0.6,
             "ingredients": [
                 "1 oz Absolut Raspberri vodka",
@@ -1447,7 +1446,7 @@
             "key_genres": ["soviet union","russia","poland","ukraine"],
             "genres": ["19th century","travel","biography & memoir","soviet union","1940s","18th century",
 				"world war ii","historical fiction","northern europe in fiction","poland","ukraine","mystery","20th century",
-				"russia","contemporary fiction","nineteen forties","noir"],
+				"russia","contemporary fiction","noir"],
             "sentiment": -0.2, 
             "ingredients": [
                 "Lemon wedge (optional)"

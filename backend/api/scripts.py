@@ -22,7 +22,7 @@ def collect_all_genres():
 
     genre_list = []
     for x in data["alcohols"]:
-        genre_list+= x["genres"] + x["key genres"]
+        genre_list+= x["genres"] + x["key_genres"]
     newList = list(set(genre_list))
     
     with open('all_genres.json', 'w') as output_file:
@@ -57,7 +57,7 @@ def collect_key_genres():
 
     key_genre_list = []
     for x in key_data["alcohols"]:
-        key_genre_list+=x["key genres"]
+        key_genre_list+=x["key_genres"]
         print(x)
     newList =list(set(key_genre_list))
     
@@ -186,7 +186,7 @@ def check_book_alcohol_pairing_json():
             raise ValueError(f"There is a difference in the two json files.")
 
         entry_keys = list(entry1.keys())
-        if entry_keys != ['name', 'type', 'key genres', 'genres', 'sentiment', 'ingredients', 'instructions', 'allergens', 'image', 'no match drink','description']:
+        if entry_keys != ['name', 'type', 'key_genres', 'genres', 'sentiment', 'ingredients', 'instructions', 'allergens', 'image', 'no match drink','description']:
                 if "name" in entry_keys:
                     name = entry1["name"]
                 else:
