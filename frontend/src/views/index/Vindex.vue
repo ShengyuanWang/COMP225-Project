@@ -39,7 +39,7 @@
     <div style=" font-family: DMSerifText,serif !important;">
       <div style="display: flex; justify-content: center; align-items: center; position: relative;">
         <div class="title">
-          <h1 style="font-size: min(7vw, 10vh); margin-left: 0">READ & SIP</h1>
+          <h1 style="font-size: min(7vw, 10vh); margin-left: 0; color: #552036">READ & SIP</h1>
           <h2 class="subtitle"> Get alcohol pairings for your favorite books! </h2>
 
         </div>
