@@ -129,7 +129,7 @@ const handleCollapse = () => {
       <el-button class="hideDesktop mobileButton" type="primary" :style="{marginLeft:'2vw', marginBottom:'1vh', height:'4vh', backgroundColor:'#8b3e35', color:'#00000'}"  @click="goAbout">About</el-button>
       <h1 @click="clickMatch()">Menu</h1>
       <p class="menu_item" @click="clickMenu('Wine')"> Wine </p>
-      <p class="menu_item" @click="clickMenu('Cocktail')"> Cocktail </p>
+      <p class="menu_item" @click="clickMenu('Cocktails')"> Cocktails </p>
       <p class="menu_item" @click="clickMenu('Beer')"> Beer </p>
       <p class="menu_item" @click="clickMenu('Spirits')"> Spirits </p>
 
