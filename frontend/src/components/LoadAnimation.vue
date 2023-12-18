@@ -58,7 +58,7 @@
 .fountainG{
 	position:absolute;
 	top:0;
-	background-color:rgb(153,46,34);
+	background-color:#992e22;
 	width:22px;
 	height:22px;
 	animation-name:bounce_fountainG;
@@ -170,60 +170,60 @@
 @keyframes bounce_fountainG{
 	0%{
 	transform:scale(1);
-		background-color:rgb(153,46,34);
+		background-color:#992e22;
 	}
 
 	100%{
 	transform:scale(.3);
-		background-color:#EAE7DC;
+		background-color:#748cab;
 	}
 }
 
 @-o-keyframes bounce_fountainG{
 	0%{
 	-o-transform:scale(1);
-		background-color:rgb(153,46,34);
+		background-color:#992e22;
 	}
 
 	100%{
 	-o-transform:scale(.3);
-		background-color:#EAE7DC;
+		background-color:#748cab;
 	}
 }
 
 @-ms-keyframes bounce_fountainG{
 	0%{
 	-ms-transform:scale(1);
-		background-color:rgb(153,46,34);
+		background-color:#992e22;
 	}
 
 	100%{
 	-ms-transform:scale(.3);
-		background-color:#EAE7DC;
+		background-color:#748cab;
 	}
 }
 
 @-webkit-keyframes bounce_fountainG{
 	0%{
 	-webkit-transform:scale(1);
-		background-color:rgb(153,46,34);
+		background-color:#992e22;
 	}
 
 	100%{
 	-webkit-transform:scale(.3);
-		background-color:#EAE7DC;
+		background-color:#748cab;
 	}
 }
 
 @-moz-keyframes bounce_fountainG{
 	0%{
 	-moz-transform:scale(1);
-		background-color:rgb(153,46,34);
+		background-color:#992e22;
 	}
 
 	100%{
 	-moz-transform:scale(.3);
-		background-color:#EAE7DC;
+		background-color:#748cab;
 	}
 }
 
