@@ -38,7 +38,7 @@ onload()
 
 <template>
   <div class="txt">
-    <img :src="liquid_url" :key="liquid_url"  alt="Alcohol Image Onload" style="object-fit: scale-down"/>
+    <img :src="liquid_url" :key="liquid_url"  :alt="props.liquid" style="object-fit: scale-down"/>
   </div>
 </template>
 
