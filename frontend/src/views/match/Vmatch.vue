@@ -60,6 +60,7 @@ console.log(route.query)
 <template>
 
   <div class="fullscreen">
+    <!-- <perfect-scrollbar class="show" v-if="show===1"> -->
     <Menu></Menu>
     <div class="header">
       <Qinput move place="60" :place-holder="placeHolder" :loadSceen=false></Qinput>
@@ -85,14 +86,14 @@ console.log(route.query)
       >
       </MatchResult>
     </div>
-
+    <!-- </perfect-scrollbar> -->
   </div>
 </template>
 
 <style scoped>
 .header {
   height: 6vh;
-  width: 100%;
+  width: 100%;                                                                                               
 }
 
 .match_result {
