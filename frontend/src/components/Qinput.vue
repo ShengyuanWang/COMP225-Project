@@ -64,7 +64,7 @@ const getAllergies = () => {
         shellfish: false,
         fish: false
       });
-  allergy.value = store.allergy.value
+  allergy.value = store.allergy
   let allergyList = [];
   for (const item in allergy.value) {
     if (allergy.value[item] === true) {
