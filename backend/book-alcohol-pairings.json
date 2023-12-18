@@ -23,6 +23,26 @@
             "description": "An Old Fashioned is a timeless classic cocktail. It is made with  bourbon or rye whiskey."
         }, 
         {
+            "name": "Tinto de Verano",
+            "type": "Cocktail",
+            "key_genres": ["adult romance","spain"],
+            "genres": ["adult romance","travel","spain","love in adolescence","domestic fiction","family life","contemporary fiction","romance", "romantic comedey",
+                "humorous", "satire"],
+            "sentiment": 0.6,
+            "ingredients": [
+                "5 oz red wine, preferably tempranillo",
+                "5 oz sparkling lemonade",
+                "ice",
+                "1 slice of lemon (optional)",
+                "dash of sweet vermouth (optional)"
+            ], 
+            "instructions": "Tinto de Verano is a popular and easy Spanish summer cocktail made from wine and sparkling lemonade. To make it, add 5 oz of sparkling lemonade to 5 oz of wine. Add ice. Optionally top with a slice of lemon and add a dash of sweet vermouth.", 
+            "allergens": [], 
+            "image": "tintodeverano", 
+            "no match drink": false, 
+            "description": "Tinto de Verano is a popular and easy summer Spanish cocktial made from wine and sparkling lemonade."
+        }, 
+        {
             "name": "Margarita", 
             "type": "Cocktail", 
             "key_genres": ["romantic comedy"],
@@ -1048,6 +1068,22 @@
             "image": "redWine", 
             "no match drink": false, 
             "description": "Sherry is a fortified wine hailing from Spain, featuring a wide range of styles from dry to sweet, with distinctive nutty, briny, and sometimes fruity flavors."
+        }, 
+        {
+            "name": "Port", 
+            "type": "Wine", 
+            "key_genres": ["portugal"],
+            "genres": ["17th century","19th century","historical romance","mystery & detective","portugal",
+				"18th century","historical fiction","mystery","romance"],
+            "sentiment": 0.5, 
+            "ingredients": [
+                ""
+            ], 
+            "instructions": "Port is a sweet fortified red wine hailing from Portugal. It is a desert wine known for its rich, velvety texture and complex flavors, often featuring notes of dark fruits, chocolate, and spices. Serve Port slightly chilled in small, stemmed glasses after dinner, and savor its luscious flavors as a delightful digestif.", 
+            "allergens": [], 
+            "image": "redWine", 
+            "no match drink": false, 
+            "description": "Port is a sweet fortified red wine hailing from Portugal. It is a desert wine known for its rich, velvety texture and complex flavors."
         }, 
         {
             "name": "Champagne", 
