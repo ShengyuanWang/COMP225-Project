@@ -1,4 +1,4 @@
-[{"name": "Gimlet","type": "Cocktail","key genres": ["noir","hard-boiled","jazz"],
+[{"name": "Gimlet","type": "Cocktails","key_genres": ["noir","hard-boiled","jazz"],
         "genres": ["mystery & detective","biography & memoir","hard-boiled","1960s","1940s","thriller",
 				"historical fiction","world war ii","mystery","20th century","espionage","noir","mixology","thrillers & mystery",
 				"jazz"],
@@ -18,8 +18,8 @@
     }, 
     {
         "name": "Gin and Tonic", 
-        "type": "Cocktail", 
-        "key genres": ["world war i","steampunk","england","great britain","world war ii","noir"],
+        "type": "Cocktails", 
+        "key_genres": ["world war i","steampunk","england","great britain","world war ii","noir"],
         "genres": ["mystery & detective","1910s","classics","psychological","great britain","travel",
 				"1940s","thriller","world war ii","adventure","england","biography & memoir","love in adolescence",
 				"1960s","domestic fiction","world war i","romantic comedy","hard science fiction","noir","1930s",
@@ -36,12 +36,12 @@
         "allergens": [], 
         "image": "mojito", 
         "no match drink": true, 
-        "description": ""
+        "description": "The Gin and Tonic is a classic cocktail with a signature copper mug presentation."
     }, 
     {
         "name": "Merlot", 
         "type": "Wine", 
-        "key genres": ["erotica","france"],
+        "key_genres": ["erotica","france"],
         "genres": ["france","adult romance","dystopian","gothic","family life","erotica","vampires","science fiction",
 				"psychological","mystery","business","political","romance","poetry","folk music"],
         "sentiment": 0.6, 
@@ -57,7 +57,7 @@
     {
         "name": "Cabernet Sauvignon", 
         "type": "Wine", 
-        "key genres": [], 
+        "key_genres": [], 
         "genres": ["france","adult romance","action","unrequited love","dystopian","united states","hard science fiction",
 				"epic","erotica","vampires","science fiction","psychological","historical fiction","mystery","california",
 				"business","political","space travel","poetry","folk music"],
@@ -74,7 +74,7 @@
     {
         "name": "Malbec", 
         "type": "Wine", 
-        "key genres": ["argentina"],
+        "key_genres": ["argentina"],
         "genres": ["france","action","paranormal romance","mystery & detective","dystopian","gothic",
 				"horror","vampires","paranormal","mystery","argentina","romance","folk music"],
         "sentiment": 0.6, 
@@ -90,7 +90,7 @@
     {
         "name": "Pilsner", 
         "type": "Beer", 
-        "key genres": ["germany"],
+        "key_genres": ["germany"],
         "genres": ["adventure","mystery","contemporary fiction","humorous","germany","friendship in adolescence",
 				"male friendship","friendship","united states","mexico"],
         "sentiment": 0.6, 
@@ -106,7 +106,7 @@
     {
         "name": "Lager", 
         "type": "Beer", 
-        "key genres": ["sports","friendship"],
+        "key_genres": ["sports","friendship"],
         "genres": ["friendship in adolescence","1950s","gritty","1940s","friendship","adventure","1960s",
 				"domestic fiction","humorous","1930s","female friendship","adolescence","male friendship","mystery",
 				"contemporary fiction","sports","india","mexico","japan"],
@@ -123,7 +123,7 @@
     {
         "name": "Hard Cider", 
         "type": "Wine", 
-        "key genres": ["historical adventure"],
+        "key_genres": ["historical adventure"],
         "genres": ["19th century","18th century","epic","historical fiction","adventure","historical fantasy",
 				"fantasy","westerns","colonial period","contemporary fiction","humorous","frontier and pioneer life",
 				"historical adventure","english cooking","irish cooking","cooking","contemporary fantasy","folk music"
