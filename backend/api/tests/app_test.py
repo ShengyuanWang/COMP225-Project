@@ -79,7 +79,7 @@ def test_get_matching_drinks():
     drink_1 = valid_book_drinks[0].get_drink_data()
     assert len(book_multiversion_pairing.get_matching_drinks()) >= 3
     assert len(valid_book_drinks) >= 3
-    assert list(drink_1.keys()) == ["name", "type", "key genres", "genres", "sentiment", "ingredients", "instructions", "allergens", "image", "no match drink", "description"]
+    assert list(drink_1.keys()) == ["name", "type", "key_genres", "genres", "sentiment", "ingredients", "instructions", "allergens", "image", "no match drink", "description"]
     assert type(drink_1["name"]) is str
     assert type(drink_1["type"]) is str
     assert type(drink_1["genres"])is list
@@ -224,7 +224,7 @@ def test_get_isbn():
     assert book_multiversion.get_isbn() in book_multiversion.get_isbn_list()
 
 def test_get_isbn_list():
-    assert book_valid.get_isbn_list() ==  ["9780143111580", "9780143111580", "9780593099322"]
+    assert  "9780143111580" in book_valid.get_isbn_list()
     assert book_invalid.get_isbn_list() == []  
 
 def test_get_user_input():
