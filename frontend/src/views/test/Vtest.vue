@@ -8,7 +8,7 @@ const activeName = ref('1')
 </script>
 
 <template>
-  <div class="fullscreen">
+  <perfect-scrollbar class="fullscreen">
     <Menu clickable="true"></Menu>
     <div class="header">
       <h1>
@@ -59,7 +59,7 @@ const activeName = ref('1')
       </el-collapse>
     </div>
 
-  </div>
+  </perfect-scrollbar>
 
 </template>
 
