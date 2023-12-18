@@ -50,11 +50,11 @@ const formatGenres = (genres ) => {
 
 <template>
   <!--  detailed drink starts here-->
-    <div class="pic drinkImageContainer" style="text-align: left;">
+    <div class="pic drinkImageContainer" style="text-align: left; background-color: #0d113e">
 <!--      <el-image :src="props.url" fit="cover" alt="Alcohol Image Onload" style="width: 100%;height: 100%"/>-->
       <DrinkPic :liquid="props.image" style="height: 100%;" class="drinkImage"></DrinkPic>
     </div>
-    <div class="pic drinkInfo">
+    <div class="pic drinkInfo" style="background-color: #caa76c">
       <div class="name noPadding"><h1>{{ props.name }}</h1></div>
       <div class="noPadding description" style="font-size: 1vw;">
         <p> {{instructions}} </p>

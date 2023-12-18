@@ -157,10 +157,10 @@ const formatIngredients = (ingredients, asList) => {
       <button @click="reroll">Reroll</button>
     </div>
   </div>
-  <div v-show="!showDrink && coverLink != ''" className="pic imageContainer">
+  <div v-show="!showDrink && coverLink != ''" className="pic imageContainer" style="background-color: #0d113e">
     <el-image  :src="coverLink" fit="contain" alt="Alcohol Image Onload" style="width: 60%;height: 60%;"/>
   </div>
-  <div v-show="!showDrink" className="pic bookInfo" :style="{ width: coverLink == '' ? '100%' : '50%', textAlign: title === '' ? 'center' : 'auto' }">
+  <div v-show="!showDrink" className="pic bookInfo" :style="{ width: coverLink == '' ? '100%' : '50%', textAlign: title === '' ? 'center' : 'auto', backgroundColor: '#caa76b'}">
     <div className="name" v-show="title === ''"> <h2> We couldn't find information on your book. </h2></div>
     <div className="name" v-show="title != ''"><h1>{{ title }}</h1></div>
     <div className="name" v-show="authors.length > 0"> <h2> By {{formatAuthors(authors)}} </h2> </div>
