@@ -123,11 +123,11 @@ const formatIngredients = (ingredients, asList) => {
 
 <template>
   <!--  detailed drink starts here-->
-  <div v-show="showDrink" class="pic pairingImageContainer" id="drink-image" style="text-align: left;">
+  <div v-show="showDrink" class="pic pairingImageContainer" id="drink-image" style="text-align: left; background-color: #000435">
     <DrinkPic :liquid=drink.image :key="drink.image" class="pairingImage"></DrinkPic>
 <!--    <el-image :src="props.url" fit="cover" alt="Alcohol Image Onload" style="width: 100%;height: 100%"/>-->
   </div>
-  <div v-show="showDrink" className="pic pairingInfo">
+  <div v-show="showDrink" className="pic pairingInfo" style="background-color:#dba858">
     <div className="name"><h1> Pairing: {{ drink.name }}</h1></div>
     <div className="name" v-show="title != '' && authors.length > 0" ><h2> Book: {{ title }} by {{formatAuthors(authors)}}</h2></div>
     <div className="name" v-show="title != '' && authors.length <= 0" ><h2> Book: {{ title }}</h2></div>
@@ -175,6 +175,7 @@ const formatIngredients = (ingredients, asList) => {
     font-size: 6vw !important;
     line-height: 6vw !important;
   }
+
 
   h2 {
     font-size: 3vw !important;
@@ -296,5 +297,10 @@ h3 {
   color: black;
   position: flex;
   justify-content: space-between;
+}
+
+
+button:hover {
+  cursor: pointer;
 }
 </style>

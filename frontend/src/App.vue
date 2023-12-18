@@ -25,6 +25,6 @@ const key = computed(() => {
   left: 0;
   width: 100vw;
   height: 100vh;
-  background-color: #EAE7DC;
+  background-color: #748cab;
 }
 </style>

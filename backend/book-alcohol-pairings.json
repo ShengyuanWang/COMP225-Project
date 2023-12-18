@@ -216,7 +216,7 @@
         {
             "name": "Aperol Spritz", 
             "type": "Cocktail", 
-            "key_genres": [], 
+            "key_genres": ["italy"], 
             "genres": ["travel","biography & memoir","contemporary fiction","fantasy","20th century",
 				"italy","romantic comedy","humorous","urban","romance","female friendship","contemporary fantasy"
 				],
@@ -391,10 +391,11 @@
             "ingredients": [
                 "1 1/2 oz. vodka",
                 "5 oz. orange juice",
+                "1/2 oz Blue Curaçao",
                 "Orange slice for garnish",
                 "Ice"
             ], 
-            "instructions": "The Sonic Screwdriver is a refreshing and zesty cocktail with a signature copper mug presentation. To craft this drink, start by filling a copper mug or highball glass with ice. Squeeze the juice from half a lime into the glass, and drop the spent lime shell in. Then, pour in 2 oz. of vodka. Top it off with approximately 4 oz. of ginger beer, or adjust to your preferred level of ginger flavor. Give it a gentle stir to mix the ingredients. To garnish, add a lime wheel or wedge for an extra burst of citrus aroma. The Sonic Screwdriver is known for its crisp and tangy taste, making it a popular choice for a refreshing and enjoyable cocktail.", 
+            "instructions": "The Sonic Screwdriver is a refreshing and zesty cocktail with a signature copper mug presentation. To craft this drink, start by filling a copper mug or highball glass with ice. Squeeze the juice from half a lime into the glass, and drop the spent lime shell in. Fill a glass with ice, add vodka and orange juice. Slowly pour blue curaçao to create a layered effect. Give it a gentle stir to mix the ingredients. To garnish, add a lime wheel or wedge for an extra burst of citrus aroma. The Sonic Screwdriver is known for its crisp and tangy taste, making it a popular choice for a refreshing and enjoyable cocktail.", 
             "allergens": [], 
             "image": "sonic", 
             "no match drink": false, 

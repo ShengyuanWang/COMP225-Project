@@ -10,6 +10,7 @@ import axios from "axios";
 import PerfectScrollbar from 'vue3-perfect-scrollbar'
 import 'vue3-perfect-scrollbar/dist/vue3-perfect-scrollbar.css'
 import * as ElementPlusIconsVue from '@element-plus/icons-vue'
+import './assets/css/style.css'
 
 const app = createApp(App)
 for (const [key, component] of Object.entries(ElementPlusIconsVue)) {
