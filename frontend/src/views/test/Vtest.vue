@@ -1,3 +1,4 @@
+<!-- about page -->
 <script setup>
 import DrinkPic from "@/components/DrinkPic.vue";
 import { useRoute } from 'vue-router'

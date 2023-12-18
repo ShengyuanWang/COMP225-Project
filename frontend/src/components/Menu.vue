@@ -1,3 +1,4 @@
+<!-- This component contains the menu for the site -->
 <script setup>
 // import required packages
 import { ref } from 'vue'
@@ -73,11 +74,8 @@ const handleCollapse = () => {
     showPreference.value = true
   }
 
-
 // function handle the action on click the menu icon
   const clickMenu = (gene) => {
-    // console.log('Click Menu');
-    // console.log(route.fullPath);
     router.push({path: 'show', query: {type: gene}});
     console.log(route.fullPath);
   }
@@ -100,6 +98,7 @@ const handleCollapse = () => {
 
   const emits = defineEmits(['childClick'])
 
+  // function that calculates how big menu icon margin should be
   const computeMenuIconMargin = () => {
     if (screen.width <= 800) {
       return w.value - 6
@@ -108,11 +107,11 @@ const handleCollapse = () => {
     }
   }
 
+  // updates the stored date
   const  updateStore = () => {
     store.allergy.value = allergy.value
     store.preference.value = preference.value
   }
-
 
 </script>
 

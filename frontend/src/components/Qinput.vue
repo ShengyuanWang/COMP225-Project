@@ -1,3 +1,4 @@
+<!-- This component contains the search bar -->
 <script setup>
 // import the required packages
 import LoadAnimation from "@/components/LoadAnimation.vue";
@@ -33,7 +34,7 @@ const data = [
   }
 ]
 
-
+// gets the user drink type preferences from the store and formats them
 const getTypes = () => {
   const types = ref({
         Beer: true,
@@ -54,6 +55,7 @@ const getTypes = () => {
   }
 }
 
+// gets the user allergies from the store and formats them
 const getAllergies = () => {
   const allergy = ref({
         gluten: false,
@@ -78,11 +80,7 @@ const getAllergies = () => {
   }
 }
 
-
-
-
-
-// functions
+// search function 
 const onClick  = () => {
 
   onLoad.value = true
@@ -101,12 +99,6 @@ const onClick  = () => {
     console.log(store)
     // use axios to get
     proxy.axios.get(api).then((res) => {
-      // console.log(api)
-      // console.log('finish')
-      // console.log(res)
-      // console.log(res.data.rerolls)
-      // console.log("notes:")
-      // console.log(res.data)
       let reRolls = []
       for (let reroll in res.data.rerolls) {
         reRolls.push(JSON.stringify(res.data.rerolls[reroll]))
@@ -139,6 +131,7 @@ const onClick  = () => {
     })
   }
   
+  // checks if mobile for formatting purposes 
   const isMobile = () => {
     if(screen.width <= 800) {
       return true;

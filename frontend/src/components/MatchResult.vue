@@ -1,3 +1,4 @@
+<!-- This component contains the drink pairing -->
 <script setup>
 import {ref} from "vue";
 import DrinkPic from "@/components/DrinkPic.vue";
@@ -26,7 +27,6 @@ const drink = ref({
   image: props.image
 });
 
-// console.log(props)
 
 const reRollCnt = ref(1);
 
@@ -34,6 +34,7 @@ const showDrink = ref(true);
 
 const buttonName = ref("Book Information");
 
+// function to change page
 const changePage = () => {
   if (buttonName.value === "Book Information") {
     buttonName.value = "Pairing Information"
@@ -43,9 +44,9 @@ const changePage = () => {
     showDrink.value = !showDrink.value;
 
   }
-  // console.log("click")
 }
 
+// function to reroll pairing and show rerolled match
 const reroll = () => {
   console.log("click ReRoll")
   drink.value = props.reRoll[reRollCnt.value];
@@ -56,6 +57,7 @@ const reroll = () => {
   }
 }
 
+// formats author info
 const formatAuthors = (authors_list) => {
   const author_count = authors_list.length;
   if (typeof(authors_list) == 'string') {
@@ -73,6 +75,7 @@ const formatAuthors = (authors_list) => {
   }
 }
 
+// formats publication info
 const formatPublicationInfo = (name, date) => {
   if (name != null && name != '' && date != null && date != '') {
     const [year] = date.split("-");
@@ -87,6 +90,7 @@ const formatPublicationInfo = (name, date) => {
   }
 }
 
+// formats book description
 const trimDescription = (text) => {
   const maxLength = 800;
   if (text.length <= maxLength) {
@@ -102,6 +106,7 @@ const trimDescription = (text) => {
   }
 }
 
+// formats ingredients
 const formatIngredients = (ingredients, asList) => {
   if (asList) {
       if (typeof(ingredients) === 'string') {

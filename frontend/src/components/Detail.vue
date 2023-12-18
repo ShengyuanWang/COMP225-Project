@@ -1,3 +1,5 @@
+<!-- This component contains the detailed drink information that users see if they click 
+on a drink in the drink menu-->
 <script setup>
 // set up the props for passing in variables
 import DrinkPic from "@/components/DrinkPic.vue";
@@ -5,13 +7,13 @@ import DrinkPic from "@/components/DrinkPic.vue";
 const props = defineProps({
   url: String, // the url for the image
   name: String, // the name of the drink
-  rating: Number, // the rating for the matching drink
   ingredients: Array, // the instructions for how to make the drink
   instructions: String, // the description for the drink,
-  key_genres: Array,
-  image: String
+  key_genres: Array, // key genres for the drink
+  image: String // string with name of image
 })
 
+// formats the ingredients 
 const formatIngredients = (ingredients, asList) => {
   if (asList) {
       if (typeof(ingredients) === 'string') {
@@ -28,12 +30,14 @@ const formatIngredients = (ingredients, asList) => {
   }
 }
 
+// capializes words, used to format the related genres
 function capitalizeWords(str) {
     return str.replace(/\b\w|(?<=\b[i])i/g, function (match) {
         return match.toUpperCase();
     });
 }
 
+// formats the related genres
 const formatGenres = (genres ) => {
     if (typeof(genres) === 'string') {
       return "Related book topic" + capitalizeWords(genres)

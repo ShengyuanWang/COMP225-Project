@@ -527,6 +527,7 @@ class Utils():
         return updated_date_genres
     
     def get_decade_tag_range(self, start_year, end_year):
+        """ Helper function for combine_dates(). """
         if (1920>start_year>=1910) and (1920>end_year>=1910):
             return '1910s'
         elif (1930>start_year>=1920) and (1930>end_year>=1920):
@@ -543,6 +544,7 @@ class Utils():
             return ''
     
     def get_decade_tag(self, year):
+        """ Helper function for combine_dates(). """
         if 1920>year>=1910:
             return '1910s'
         elif 1930>year>=1920:
@@ -559,6 +561,7 @@ class Utils():
             return ''
     
     def get_century_tag(self, year):
+        """ Helper function for combine_dates(). """
         if 2000 > year >= 1900:
             return '20th century'
         if 1900 > year >= 1800:

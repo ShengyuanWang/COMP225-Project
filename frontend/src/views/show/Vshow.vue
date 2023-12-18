@@ -1,3 +1,4 @@
+<!-- Page that lets users browse drink menu of their choice -->
 <script setup>
 
 import {getCurrentInstance, ref, onBeforeMount} from "vue";

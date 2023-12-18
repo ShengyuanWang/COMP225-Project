@@ -1,3 +1,4 @@
+<!-- This component contains the picture of the drink -->
 <script setup>
 // default import from firebase
 import { storage } from '/src/firebase.js'
