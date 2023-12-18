@@ -281,7 +281,7 @@ const formatIngredients = (ingredients, asList) => {
 
 h1 {
   font-size: 3vw;
-  line-height: 3vh !important;
+  line-height: 4vh !important;
 }
 
 h2 {
