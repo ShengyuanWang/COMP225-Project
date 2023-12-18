@@ -244,7 +244,7 @@ const formatIngredients = (ingredients, asList) => {
 .description button {
   color: white;
   font-size: 2.3vh;
-  background-color: #992e22;
+  background-color: #552036;
   width: 15vw;
   height: 6vh;
   border: 1px solid white;
@@ -277,7 +277,7 @@ const formatIngredients = (ingredients, asList) => {
   margin-top: 1vh;
   font-size: 1vw;
   font-weight: normal;
-  color: #992e22;
+  color: #552036;
 }
 
 h1 {
