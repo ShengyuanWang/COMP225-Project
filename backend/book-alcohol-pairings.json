@@ -40,7 +40,7 @@
             "allergens": [], 
             "image": "tintodeverano", 
             "no match drink": false, 
-            "description": "Tinto de Verano is a popular and easy summer Spanish cocktial made from wine and sparkling lemonade."
+            "description": "Tinto de Verano is a popular and easy summer Spanish cocktail made from wine and sparkling lemonade."
         }, 
         {
             "name": "Margarita", 
@@ -932,11 +932,11 @@
                 ".5 ounce simple syrup (adjust to taste)",
                 "crushed ice"
             ],
-            "instructions": "A Mint Julep is a classic Southern cocktail made with mint and burbon. It is a refreshing and flavorful drink. To make a Mint Julep, Muddle the fresh mint leaves with the simple syrup in a glass or silver cup, then fill it with crushed ice, pour in the bourbon, stir gently, and garnish with a mint sprig before serving.",
+            "instructions": "A Mint Julep is a classic Southern cocktail made with mint and bourbon. It is a refreshing and flavorful drink. To make a Mint Julep, Muddle the fresh mint leaves with the simple syrup in a glass or silver cup, then fill it with crushed ice, pour in the bourbon, stir gently, and garnish with a mint sprig before serving.",
             "allergens": [],
             "image": "mintJulep",
             "no match drink": false, 
-            "description": "A Mint Julep is a classic Southern cocktail made with mint and burbon. It is a refreshing and flavorful drink."
+            "description": "A Mint Julep is a classic Southern cocktail made with mint and bourbon. It is a refreshing and flavorful drink."
         }, 
         {
             "name": "Moscato", 
@@ -1281,11 +1281,11 @@
             "ingredients": [
                 ""
             ], 
-            "instructions": "A Guinness is a classic irish beer. Serve slightly chilled in a pint glass using the double pour process. For the first pour, fill the glass three-quarters full. Let the beer settle before topping it off with the second pour, which completes the filling of the glass and allows the creamy head to form.", 
+            "instructions": "A Guinness is a classic Irish beer. Serve slightly chilled in a pint glass using the double pour process. For the first pour, fill the glass three-quarters full. Let the beer settle before topping it off with the second pour, which completes the filling of the glass and allows the creamy head to form.", 
             "allergens": ["gluten"],
             "image": "beer", 
             "no match drink": false, 
-            "description": "A Guinness is a classic irish beer."
+            "description": "A Guinness is a classic Irish beer."
         }, 
         {
             "name": "Lager", 
@@ -1433,11 +1433,11 @@
             "ingredients": [
                 ""
             ], 
-            "instructions": "Akvavit is a scandinavia spirit made from grain or potatoes. It is drunken either during festive occasions or as an aperitif. It is served in a shot glass, and can be either served chilled and taken as a shot, or it can be served room temperature and enjoyed slowly.", 
+            "instructions": "Akvavit is a scandinavian spirit made from grain or potatoes. It is drunken either during festive occasions or as an aperitif. It is served in a shot glass, and can be either served chilled and taken as a shot, or it can be served room temperature and enjoyed slowly.", 
             "allergens": ["gluten"],
             "image": "aquavit", 
             "no match drink": false, 
-            "description": "Akvavit is a scandinavia spirit made from grain or potatoes. It is drunken either during festive occasions or as an aperitif."
+            "description": "Akvavit is a scandinavian spirit made from grain or potatoes. It is drunken either during festive occasions or as an aperitif."
         }, 
         {
             "name": "Vodka", 
@@ -1483,11 +1483,11 @@
             "ingredients": [
                 ""
             ], 
-            "instructions": "Poit\u00edn is an irish moonshine. It is best consumed at room temperature. Some people prefer it chilled or add a small amount of water.", 
+            "instructions": "Poit\u00edn is an Irish moonshine. It is best consumed at room temperature. Some people prefer it chilled or add a small amount of water.", 
             "allergens": ["gluten"],
             "image": "shot", 
             "no match drink": false, 
-            "description": "Poit\u00edn is an irish moonshine."
+            "description": "Poit\u00edn is an Irish moonshine."
         }, 
         {
             "name": "Dark Rum", 
@@ -1569,11 +1569,11 @@
             "ingredients": [
                 ""
             ], 
-            "instructions": "RumChata is a cream liqueuer known for its blend of Carribean rum and horchata, a traditional Mexican drink made from rice, vanilla, and cinnamon. It can be enjoyed straight from the refigerator or poured over ice.", 
+            "instructions": "RumChata is a cream liqueur known for its blend of Carribean rum and horchata, a traditional Mexican drink made from rice, vanilla, and cinnamon. It can be enjoyed straight from the refigerator or poured over ice.", 
             "allergens": ["lactose"],
             "image": "rumchata", 
             "no match drink": false, 
-            "description": "RumChata is a cream liqueuer known for its blend of Carribean rum and horchata."
+            "description": "RumChata is a cream liqueur known for its blend of Carribean rum and horchata."
         }, 
         {
             "name": "Tequila", 
